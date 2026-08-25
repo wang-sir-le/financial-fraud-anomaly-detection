@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fraudx"
+version = "0.1.0"
+description = "Reproducible temporal and cost-sensitive financial fraud experiments"
+requires-python = ">=3.11"
+dependencies = [
+  "duckdb>=1.4",
+  "lightgbm>=4.6",
+  "matplotlib>=3.9",
+  "numpy>=2.0",
+  "pandas>=2.2",
+  "pyarrow>=17.0",
+  "PyYAML>=6.0",
+  "river>=0.23",
+  "scikit-learn>=1.6",
+  "scipy>=1.13",
+]
+
+[project.scripts]
+fraudx = "fraudx.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+disable_error_code = ["import-untyped"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

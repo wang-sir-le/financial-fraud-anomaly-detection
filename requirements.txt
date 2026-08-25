@@ -1,0 +1,10 @@
+duckdb>=1.4
+lightgbm>=4.6
+matplotlib>=3.9
+numpy>=2.0
+pandas>=2.2
+pyarrow>=17.0
+PyYAML>=6.0
+river>=0.23
+scikit-learn>=1.6
+scipy>=1.13

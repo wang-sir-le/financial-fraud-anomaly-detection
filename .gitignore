@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Raw and derived datasets are not redistributed
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/README.md
+train_transaction.csv
+train_identity.csv
+PS_20174392719_1491204439457_log.csv
+*.parquet
+*.npz
+*.pkl
+*.joblib
+*.model
+*.bin
+
+# Generated experiment artifacts
+outputs/*
+!outputs/README.md
+
+# Local caches, notebooks, and editor files
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Proprietary plotting project files
+*.opju

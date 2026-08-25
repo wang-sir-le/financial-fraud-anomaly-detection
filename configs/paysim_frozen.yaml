@@ -1,0 +1,82 @@
+seed: 42
+
+data:
+  path: data/raw/PS_20174392719_1491204439457_log.csv
+  processed_path: data/processed/paysim_safe_features.parquet
+  target: isFraud
+  time_column: step
+  train_fraction: 0.60
+  validation_fraction: 0.20
+  split_mode: row_fraction
+
+features:
+  windows: [1, 6, 24]
+  include_behavioral: true
+
+experiment:
+  feature_groups:
+    - raw_safe
+    - temporal_context
+    - recipient_frequency
+    - recipient_amount
+    - recipient_full
+    - recipient_full_with_pair
+  weighted_feature_group: recipient_full
+  save_selected_probabilities: true
+
+model:
+  num_leaves: 31
+  learning_rate: 0.05
+  n_estimators: 150
+  class_weights: [1.0, 1.5, 2.0, 3.0, 5.0, 10.0]
+  subsample: 0.8
+  colsample_bytree: 0.8
+
+risk:
+  false_negative_costs: [10.0, 50.0, 100.0, 500.0]
+  selection_false_negative_cost: 100.0
+  false_positive_cost: 1.0
+  maximum_alert_rates: [0.01, 0.03, 0.05]
+
+online:
+  enabled: false
+  label_delay: 1
+  max_rows: 50000
+
+robustness:
+  folds: 3
+  initial_train_fraction: 0.40
+  validation_fraction: 0.10
+  test_fraction: 0.10
+  false_negative_costs: [10.0, 50.0, 100.0]
+  maximum_alert_rates: [0.01, 0.03, 0.05]
+  primary_false_negative_cost: 100.0
+  primary_maximum_alert_rate: 0.03
+  false_negative_cost: 100.0
+  maximum_alert_rate: 0.03
+  models:
+    - {id: raw_safe, feature_group: raw_safe, weight: 1.0}
+    - {id: recipient_full, feature_group: recipient_full, weight: 1.0}
+    - {id: recipient_full_weight_2, feature_group: recipient_full, weight: 2.0}
+    - {id: recipient_full_weight_5, feature_group: recipient_full, weight: 5.0}
+    - {id: recipient_full_with_pair, feature_group: recipient_full_with_pair, weight: 1.0}
+
+multiseed:
+  seeds: [42, 52, 62, 72, 82]
+  false_negative_cost: 100.0
+  false_positive_cost: 1.0
+  maximum_alert_rate: 0.03
+
+calibration:
+  seeds: [42, 52, 62, 72, 82]
+  false_negative_cost: 100.0
+  false_positive_cost: 1.0
+  maximum_alert_rate: 0.03
+  ece_bins: 10
+
+explainability:
+  feature_group: recipient_full
+  scale_pos_weight: 2.0
+  sample_rows: 5000
+
+output_dir: outputs/paysim
