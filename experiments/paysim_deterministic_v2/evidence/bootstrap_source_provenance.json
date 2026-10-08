@@ -1,0 +1,13 @@
+{
+  "acquisition.py": "6206f004f9fae7e09f1426176a6f77083c47ba106b05990e98f4484f68fce78c",
+  "analysis.py": "eb0bfd5c4eca281a08977c6d143d6b6a679db367aaddea840ec943e88148c7a3",
+  "calibration.py": "abd10ba6db4724a5fc9e356a74eabca909c55b40affc7656d3ef7cef706620ee",
+  "comparison.py": "e92a6304e5c1abd26efacfcfd0aabde7268b6296ff1e890cd2f4447e55e0a792",
+  "preprocess.py": "46226bc1420513a98b79d0c985cf178971cb4010d3e46f911155447fb1e00975",
+  "primary.py": "2eef141cda714d5b68042d7e356c271f6253649736c89d38f0bfd058121e6e67",
+  "replay.py": "fdcbefec5b97058783730e3bb5fcedbb3104eb72bd8ffc4ca25e5c2b3da3d35f",
+  "training.py": "ce6dbb882d62bcdaffea3b02197e4bddedce625291aa62cf30ca5f6382952d46",
+  "verification.py": "2ae057e7de48561e8bb426123e62004502b97b7100dbef09c37cb3bf8ba3a14e",
+  "__init__.py": "be134bf803dd0540f98761b9c08370f307163b582a85dcf9e0da1bf5b5588554",
+  "__main__.py": "0b29d51193d290c8be0024770205fe92edc915084af16a0cae0f885b8aada17e"
+}

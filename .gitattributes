@@ -1,0 +1,5 @@
+# Preserve manifested source and figure bytes across platforms.
+* -text
+# Generated SVG path whitespace and unchanged historical EOF formatting are preserved.
+*.svg -whitespace
+experiments/merchant_history_s22/history/*.md whitespace=-blank-at-eof,cr-at-eol

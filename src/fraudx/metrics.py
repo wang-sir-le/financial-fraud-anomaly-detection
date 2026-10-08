@@ -107,6 +107,9 @@ def optimize_threshold(
     ``candidates`` remains part of the public interface for backward compatibility,
     but threshold search now evaluates every distinct score through the ROC operating
     points instead of a coarse quantile grid.
+    Ties require exact equality of the computed cost, followed by maximum integer
+    true positives, minimum integer alerts, and the highest threshold. Approximate
+    equality must not admit a more expensive operating point.
     """
     if candidates < 3:
         raise ValueError("At least three threshold candidates are required")
@@ -156,11 +159,9 @@ def optimize_threshold(
         raise ValueError("No threshold satisfies the requested operating constraints")
 
     best_cost = float(costs[eligible_indices].min())
-    tied = eligible_indices[np.isclose(costs[eligible_indices], best_cost)]
-    recalls = true_positives[tied] / positive_total
-    tied = tied[np.isclose(recalls, recalls.max())]
-    alert_rates = predicted_positives[tied] / labels.size
-    tied = tied[np.isclose(alert_rates, alert_rates.min())]
+    tied = eligible_indices[costs[eligible_indices] == best_cost]
+    tied = tied[true_positives[tied] == true_positives[tied].max()]
+    tied = tied[predicted_positives[tied] == predicted_positives[tied].min()]
     finite_tied = tied[np.isfinite(thresholds[tied])]
     selected_index = int(
         finite_tied[np.argmax(thresholds[finite_tied])]

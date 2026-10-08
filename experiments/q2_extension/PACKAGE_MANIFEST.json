@@ -1,0 +1,120 @@
+{
+  "scope": "compact public subset; historical full author artifacts are not implied",
+  "files": [
+    {
+      "path": "evidence/assessment/priority_sign_summary.csv",
+      "sha256": "cc3221f78e4a7e2ffb6d9866edc270cd0a74085671af5c86b415e7e389078699",
+      "bytes": 41235
+    },
+    {
+      "path": "evidence/audit/baseline_preservation.json",
+      "sha256": "e5294b98fcff789786b7b00ece70a41abbe2baa2e00f03f59e85330299fec116",
+      "bytes": 6088
+    },
+    {
+      "path": "evidence/audit/new_point_regression.json",
+      "sha256": "4b0e6a66e7d1ddeb991e0c3210029414b0206ade699f3b6bf0c32d783dde86a7",
+      "bytes": 124
+    },
+    {
+      "path": "evidence/b1/processing_effects_seed.csv",
+      "sha256": "45b00becd4249c35faca5646cd5ee0be3752d0bb08883f2f7371f991f64f9d8e",
+      "bytes": 9962
+    },
+    {
+      "path": "evidence/b1/score_tie_audit.csv",
+      "sha256": "ecc2eb085cad911968a97e8d0a7c9233ff958d3646517f761e04271b79640728",
+      "bytes": 6471
+    },
+    {
+      "path": "evidence/b1/stage_contrasts_fold.csv",
+      "sha256": "bb9c30350d0e71491a3d708c8e0aba22365ccf0bffc3447e6a76d895e63299eb",
+      "bytes": 2825
+    },
+    {
+      "path": "evidence/b2/calculation/component_intervals.csv",
+      "sha256": "20c4b3e0319a8eca4d63ab5177afcccde16ddf9291247704eb3fc0e5a53d5506",
+      "bytes": 20914
+    },
+    {
+      "path": "evidence/b2/calculation/invalid_replicates.csv",
+      "sha256": "c2ea84168084bbeb901b2bb868c9049557e1da6a9c31ce04f10b67f9319be759",
+      "bytes": 101
+    },
+    {
+      "path": "evidence/b2/calculation/kernel_provenance.json",
+      "sha256": "1cda7edea7df933ae6621e75b746b62b65d4c349ceb0614c304929dee2a80b40",
+      "bytes": 697
+    },
+    {
+      "path": "evidence/b2/calculation/legacy_regression.csv",
+      "sha256": "6169554385493aa50343ad27873842df17904a70e5b78abfd7a54495fab81c51",
+      "bytes": 6726
+    },
+    {
+      "path": "evidence/b2/calculation/processing_effect_intervals.csv",
+      "sha256": "001099c0ae826a39e860264ace8bf4e0c91fa21e7ce379e9a51f70df3011665d",
+      "bytes": 8370
+    },
+    {
+      "path": "evidence/b2/calculation/timing.csv",
+      "sha256": "a5a09857c7103ee30d2c7812e3cc7b0b3382f126d5250201801f9a061f007ab0",
+      "bytes": 32695
+    },
+    {
+      "path": "evidence/b3/priorities/shared_priority_summary.csv",
+      "sha256": "559601eec7b2d2e2e21c337a04b200d35538309006f18b1696ecf7b06c0b5a59",
+      "bytes": 25383
+    },
+    {
+      "path": "evidence/b3/profiles/capacity_contrasts_fold.csv",
+      "sha256": "1f44dfa8d332f8bd561c986aa81ad2d979b1d662b8f1f802a50090dfc001ac9a",
+      "bytes": 21086
+    },
+    {
+      "path": "evidence/b3/profiles/capacity_tie_model.csv",
+      "sha256": "7ce06370cc0d9e9e1324b0115d1b849bacc6cc8b620c277dccfe6ca69412b73b",
+      "bytes": 226017
+    },
+    {
+      "path": "HISTORICAL_FULL_BUNDLE_GUIDE.md",
+      "sha256": "f0ebf9801dc7aa889a814fb84732d716f6cc6be046e3c9d1b29ae8a7ad69755f",
+      "bytes": 6795
+    },
+    {
+      "path": "INPUT_ACCESS.md",
+      "sha256": "35896b3c6ab5991290bfc060711bfbdb35bc6c24a838eb29f4d6eebda0d25238",
+      "bytes": 5956
+    },
+    {
+      "path": "PAYSIM_REBUILD_DIAGNOSIS_ZH.md",
+      "sha256": "a7d7dc45af2630c34d9b3aa8856bddcb546611d7d2ac24c7113534c6913b31e9",
+      "bytes": 4017
+    },
+    {
+      "path": "protocol_effective.json",
+      "sha256": "c1246097d1bfe4fe634b21eaeaa8584af8afec1036dde653f009251e31348fee",
+      "bytes": 8523
+    },
+    {
+      "path": "README.md",
+      "sha256": "b535ba0159edf528dacdfbd82541c43d3450b819ef1df33e28ae0b2bb9a5107a",
+      "bytes": 858
+    },
+    {
+      "path": "REBUILD_REPORT.json",
+      "sha256": "afa47b7ab6a4843ca05a49a626b0faaea341ea0feae4a62d826c524396a4a6a7",
+      "bytes": 2202
+    },
+    {
+      "path": "reconstruction_discrepancies.csv",
+      "sha256": "48fc915ac8a7e52bd84aad8b2889ced5e9dd78acebb80ab4e0628824080de1ff",
+      "bytes": 1141
+    },
+    {
+      "path": "requirements-lock-windows-py311.txt",
+      "sha256": "8874e0b19ffa2872127cdf04f3ae21dede40ba050fae8849db31ae941deac30b",
+      "bytes": 178
+    }
+  ]
+}

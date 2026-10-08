@@ -1,0 +1,94 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-09-23T14:05:49.814430+00:00",
+  "config_sha256": "df5fd175e25816c368e2cfda32ef2c72275494b081eba96dc6e87a00f09990d9",
+  "completed_utc": "2026-09-23T14:08:59.663584+00:00",
+  "details": {
+    "block_cells": 9,
+    "seed_effect_rows": 225000,
+    "primary_draws": 15000,
+    "overall": "existing secondary equal-fold estimand only"
+  },
+  "files": [
+    {
+      "name": "all_block_seed_replicates.parquet",
+      "sha256": "f563841e64b602ed3cd35625e3f59ca6019fed482aff1ba7bbdb0caf15f90637",
+      "bytes": 8174447
+    },
+    {
+      "name": "block_sensitivity_summary.csv",
+      "sha256": "bb7a69d4c118c2f9a08cb846a4301e750bd4949e3d8f27ca45d92d25874d1470",
+      "bytes": 6941
+    },
+    {
+      "name": "paysim_fold1_L2_replicates.parquet",
+      "sha256": "41af09eb1c5f8a7101b15b34ee6ee9ac00ee3db489caa442cc6023c053805312",
+      "bytes": 292059
+    },
+    {
+      "name": "paysim_fold1_L4_replicates.parquet",
+      "sha256": "2ccefb026ea2226ffce3bf20ef575c7ed91a1747fc1c2ebb65cc655910512c1c",
+      "bytes": 293261
+    },
+    {
+      "name": "paysim_fold1_L8_replicates.parquet",
+      "sha256": "a81d320c582b5148c17cde49e64bc65b35e647161c0fc28b98f1cac98d8e63de",
+      "bytes": 293194
+    },
+    {
+      "name": "paysim_fold2_L2_replicates.parquet",
+      "sha256": "c2aa3ce5ec206f2be39e0b869e681ea5ec95f31993998f6d50f67b9533eab5bb",
+      "bytes": 288588
+    },
+    {
+      "name": "paysim_fold2_L3_replicates.parquet",
+      "sha256": "843418d65926b3f2798776535b1290efcb2cb587e9986b62361a9fb2f5f807d1",
+      "bytes": 290034
+    },
+    {
+      "name": "paysim_fold2_L6_replicates.parquet",
+      "sha256": "b22abdb30e6d4412a0ffb36613e6a95fee1c776205a7c1224748bcbbab24d9fe",
+      "bytes": 290996
+    },
+    {
+      "name": "paysim_fold3_L14_replicates.parquet",
+      "sha256": "012ea976c6fc6467879cac69eed9616de64111c79af9afcbbc0a7a1645450fdb",
+      "bytes": 297826
+    },
+    {
+      "name": "paysim_fold3_L4_replicates.parquet",
+      "sha256": "4c4630d3657ab3e5405e3bfcfaf5351dab598ee237489af7c9d3573cc9d62b2b",
+      "bytes": 298114
+    },
+    {
+      "name": "paysim_fold3_L7_replicates.parquet",
+      "sha256": "9eef85f93a922d0837d82afad32b261099648ad1560aa6283f47a411a21fcc96",
+      "bytes": 298960
+    },
+    {
+      "name": "temporal_dependence_diagnostics.csv",
+      "sha256": "19167b00752bcd9adeba337e5461a9cbad1fca37253f6afd7d148851c298cb37",
+      "bytes": 2010
+    },
+    {
+      "name": "timeblock_bootstrap_fold_summary.csv",
+      "sha256": "2c56c3724d7785a3af10c60aa2ea25eeff135a47638c194df5916b85047ca284",
+      "bytes": 2280
+    },
+    {
+      "name": "timeblock_bootstrap_overall_replicates.parquet",
+      "sha256": "cc3adbe3bc8ef1e7fba106cda5f70c9dfedd5aafa0732c01afcc054b50649bdf",
+      "bytes": 259466
+    },
+    {
+      "name": "timeblock_bootstrap_overall_summary.csv",
+      "sha256": "0ae028e64d91206a6dbf84405147673d53cffbfb58859e80340f042219cdfc5d",
+      "bytes": 996
+    },
+    {
+      "name": "timeblock_bootstrap_replicates.parquet",
+      "sha256": "178be2e57f91425c7598e0224779309b2eef8c6cfd826e52e29e214d2ff5a6fc",
+      "bytes": 836186
+    }
+  ]
+}

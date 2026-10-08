@@ -1,0 +1,2712 @@
+{
+  "figure": "S3",
+  "sources": [
+    {
+      "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\calibration\\calibration_curve_points.csv",
+      "sha256": "e609a6e3c28c4d07ba44bbfea3f198536f486a47bc0c37f255fbadf6e8cf452e"
+    }
+  ],
+  "selection": "model_id=recipient_full_weight_2; split=test; binning_method=uniform; sample_count>0. 450 total fixed bins; 299 nonempty; 50 nonempty bins below 10 observations.",
+  "notes": "All 45 fold×method×seed series remain separate; no pooling, new binning, fitting, ranking or probability recomputation. The 151 empty bins are omitted as originally. Lines connect retained points and can span empty bins.",
+  "original_extent_emu": {
+    "cx": 6035040,
+    "cy": 6283055
+  },
+  "figsize_inches": [
+    6.6,
+    6.871232502187227
+  ],
+  "rows": [
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 641535,
+      "mean_predicted_probability": 0.00042373033834490443,
+      "observed_fraud_rate": 0.0004489232855572962
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 266,
+      "mean_predicted_probability": 0.14102729163350375,
+      "observed_fraud_rate": 0.015037593984962405
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 39,
+      "mean_predicted_probability": 0.2538463816640864,
+      "observed_fraud_rate": 0.1794871794871795
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 25,
+      "mean_predicted_probability": 0.35216925572798435,
+      "observed_fraud_rate": 0.04
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 9,
+      "mean_predicted_probability": 0.44281331598980134,
+      "observed_fraud_rate": 0.1111111111111111
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 36,
+      "mean_predicted_probability": 0.5794670868259468,
+      "observed_fraud_rate": 0.2222222222222222
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 143,
+      "mean_predicted_probability": 0.6475438324277837,
+      "observed_fraud_rate": 0.06293706293706294
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 21,
+      "mean_predicted_probability": 0.7348461614831416,
+      "observed_fraud_rate": 0.09523809523809523
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 40,
+      "mean_predicted_probability": 0.8460073735572922,
+      "observed_fraud_rate": 0.45
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 547,
+      "mean_predicted_probability": 0.9943358250861537,
+      "observed_fraud_rate": 0.29250457038391225
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 642245,
+      "mean_predicted_probability": 0.000525256478208841,
+      "observed_fraud_rate": 0.0005870034021284713
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 20,
+      "mean_predicted_probability": 0.14837055602541535,
+      "observed_fraud_rate": 0.4
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 396,
+      "mean_predicted_probability": 0.2798512024049469,
+      "observed_fraud_rate": 0.28535353535353536
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 642091,
+      "mean_predicted_probability": 0.0005401584864725866,
+      "observed_fraud_rate": 0.0005139458425674865
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 570,
+      "mean_predicted_probability": 0.18466973681854054,
+      "observed_fraud_rate": 0.29473684210526313
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 641559,
+      "mean_predicted_probability": 0.0005125598949534115,
+      "observed_fraud_rate": 0.00043799557016579923
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 249,
+      "mean_predicted_probability": 0.1178933731228088,
+      "observed_fraud_rate": 0.004016064257028112
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 189,
+      "mean_predicted_probability": 0.26976294266747564,
+      "observed_fraud_rate": 0.09523809523809523
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 9,
+      "mean_predicted_probability": 0.3277779136143226,
+      "observed_fraud_rate": 0.2222222222222222
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 22,
+      "mean_predicted_probability": 0.4658144802508446,
+      "observed_fraud_rate": 0.09090909090909091
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 60,
+      "mean_predicted_probability": 0.5312093014969498,
+      "observed_fraud_rate": 0.05
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 19,
+      "mean_predicted_probability": 0.640111622741058,
+      "observed_fraud_rate": 0.2631578947368421
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 40,
+      "mean_predicted_probability": 0.7385774284257568,
+      "observed_fraud_rate": 0.075
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 17,
+      "mean_predicted_probability": 0.8555641690433438,
+      "observed_fraud_rate": 0.058823529411764705
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 497,
+      "mean_predicted_probability": 0.9970586245170439,
+      "observed_fraud_rate": 0.36619718309859156
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 642207,
+      "mean_predicted_probability": 0.00044278317269842054,
+      "observed_fraud_rate": 0.0005029530976772287
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 17,
+      "mean_predicted_probability": 0.13171824791256176,
+      "observed_fraud_rate": 0.058823529411764705
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 11,
+      "mean_predicted_probability": 0.267708131566104,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 3,
+      "sample_count": 426,
+      "mean_predicted_probability": 0.3045953233630621,
+      "observed_fraud_rate": 0.4084507042253521
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 642412,
+      "mean_predicted_probability": 0.0004991952065407124,
+      "observed_fraud_rate": 0.0005121324010136797
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 4,
+      "sample_count": 3,
+      "mean_predicted_probability": 0.4913788798484653,
+      "observed_fraud_rate": 0.6666666666666666
+    },
+    {
+      "fold": 1,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 5,
+      "sample_count": 246,
+      "mean_predicted_probability": 0.5655128524163968,
+      "observed_fraud_rate": 0.6788617886178862
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 642100,
+      "mean_predicted_probability": 0.0005149559079022602,
+      "observed_fraud_rate": 0.00044385609718112444
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 174,
+      "mean_predicted_probability": 0.13145213963381852,
+      "observed_fraud_rate": 0.12643678160919541
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 6,
+      "mean_predicted_probability": 0.2258306213179803,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 4,
+      "mean_predicted_probability": 0.3531489209466265,
+      "observed_fraud_rate": 0.25
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 7,
+      "mean_predicted_probability": 0.42544709608473924,
+      "observed_fraud_rate": 0.7142857142857143
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 2,
+      "mean_predicted_probability": 0.5163255705087517,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 13,
+      "mean_predicted_probability": 0.6543541754071881,
+      "observed_fraud_rate": 0.15384615384615385
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 35,
+      "mean_predicted_probability": 0.7451219970150039,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 23,
+      "mean_predicted_probability": 0.8451251656659361,
+      "observed_fraud_rate": 0.13043478260869565
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 297,
+      "mean_predicted_probability": 0.9912162462997391,
+      "observed_fraud_rate": 0.6060606060606061
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 642411,
+      "mean_predicted_probability": 0.00046875684956887437,
+      "observed_fraud_rate": 0.0005012367471914398
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 6,
+      "mean_predicted_probability": 0.15433968632873085,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Platt",
+      "bin_id": 6,
+      "sample_count": 244,
+      "mean_predicted_probability": 0.6195989346808854,
+      "observed_fraud_rate": 0.7213114754098361
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 642429,
+      "mean_predicted_probability": 0.00048551218045692106,
+      "observed_fraud_rate": 0.0005012227032092263
+    },
+    {
+      "fold": 1,
+      "seed": 62,
+      "calibration_method": "Isotonic",
+      "bin_id": 5,
+      "sample_count": 232,
+      "mean_predicted_probability": 0.5574424739809086,
+      "observed_fraud_rate": 0.7586206896551724
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 642104,
+      "mean_predicted_probability": 0.00042416803508956927,
+      "observed_fraud_rate": 0.0004687714139765521
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 84,
+      "mean_predicted_probability": 0.1533397099885958,
+      "observed_fraud_rate": 0.05952380952380952
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 96,
+      "mean_predicted_probability": 0.2622481339596115,
+      "observed_fraud_rate": 0.010416666666666666
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 74,
+      "mean_predicted_probability": 0.3656723870023384,
+      "observed_fraud_rate": 0.06756756756756757
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 10,
+      "mean_predicted_probability": 0.4391859124597726,
+      "observed_fraud_rate": 0.1
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 7,
+      "mean_predicted_probability": 0.5540602097032836,
+      "observed_fraud_rate": 0.2857142857142857
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 25,
+      "mean_predicted_probability": 0.6436790668248432,
+      "observed_fraud_rate": 0.4
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 8,
+      "mean_predicted_probability": 0.7442912056851341,
+      "observed_fraud_rate": 0.875
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 17,
+      "mean_predicted_probability": 0.8625480704592838,
+      "observed_fraud_rate": 0.6470588235294118
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 236,
+      "mean_predicted_probability": 0.9863165452322661,
+      "observed_fraud_rate": 0.6567796610169492
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 642483,
+      "mean_predicted_probability": 0.000564649294708663,
+      "observed_fraud_rate": 0.0005603261097959012
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 17,
+      "mean_predicted_probability": 0.15676054160619712,
+      "observed_fraud_rate": 0.8235294117647058
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 11,
+      "mean_predicted_probability": 0.2247938880898814,
+      "observed_fraud_rate": 0.09090909090909091
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 3,
+      "sample_count": 7,
+      "mean_predicted_probability": 0.35426006968299173,
+      "observed_fraud_rate": 0.8571428571428571
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 4,
+      "sample_count": 4,
+      "mean_predicted_probability": 0.4213747732110681,
+      "observed_fraud_rate": 1.0
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 7,
+      "sample_count": 139,
+      "mean_predicted_probability": 0.799710471612658,
+      "observed_fraud_rate": 0.8129496402877698
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 642360,
+      "mean_predicted_probability": 0.0005152117892048408,
+      "observed_fraud_rate": 0.0004857089482533159
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 2,
+      "mean_predicted_probability": 0.16442243475929996,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 2,
+      "sample_count": 39,
+      "mean_predicted_probability": 0.2161635531300196,
+      "observed_fraud_rate": 0.3333333333333333
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 3,
+      "sample_count": 2,
+      "mean_predicted_probability": 0.38994388276152614,
+      "observed_fraud_rate": 1.0
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 5,
+      "sample_count": 25,
+      "mean_predicted_probability": 0.5,
+      "observed_fraud_rate": 0.64
+    },
+    {
+      "fold": 1,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 6,
+      "sample_count": 233,
+      "mean_predicted_probability": 0.6015625,
+      "observed_fraud_rate": 0.6652360515021459
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 641263,
+      "mean_predicted_probability": 0.0003910852491522201,
+      "observed_fraud_rate": 0.00041948467321520187
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 446,
+      "mean_predicted_probability": 0.14532068207282356,
+      "observed_fraud_rate": 0.07399103139013453
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 376,
+      "mean_predicted_probability": 0.23967310398510727,
+      "observed_fraud_rate": 0.05053191489361702
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 113,
+      "mean_predicted_probability": 0.3435730552016452,
+      "observed_fraud_rate": 0.04424778761061947
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 31,
+      "mean_predicted_probability": 0.4323497529733325,
+      "observed_fraud_rate": 0.12903225806451613
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 31,
+      "mean_predicted_probability": 0.5177433713560305,
+      "observed_fraud_rate": 0.0967741935483871
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 15,
+      "mean_predicted_probability": 0.6485229990703532,
+      "observed_fraud_rate": 0.26666666666666666
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 25,
+      "mean_predicted_probability": 0.7556070213124064,
+      "observed_fraud_rate": 0.24
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 11,
+      "mean_predicted_probability": 0.847532441466334,
+      "observed_fraud_rate": 0.09090909090909091
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 350,
+      "mean_predicted_probability": 0.9942695467839928,
+      "observed_fraud_rate": 0.44
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 642363,
+      "mean_predicted_probability": 0.0004718553647844256,
+      "observed_fraud_rate": 0.000555760527925799
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 14,
+      "mean_predicted_probability": 0.13708182035692792,
+      "observed_fraud_rate": 0.35714285714285715
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 16,
+      "mean_predicted_probability": 0.25342523023928676,
+      "observed_fraud_rate": 0.1875
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 3,
+      "sample_count": 13,
+      "mean_predicted_probability": 0.35139490446533017,
+      "observed_fraud_rate": 0.15384615384615385
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 4,
+      "sample_count": 18,
+      "mean_predicted_probability": 0.45972393321364063,
+      "observed_fraud_rate": 0.05555555555555555
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 5,
+      "sample_count": 3,
+      "mean_predicted_probability": 0.5359942419368792,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 6,
+      "sample_count": 234,
+      "mean_predicted_probability": 0.650939709429264,
+      "observed_fraud_rate": 0.5555555555555556
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 642266,
+      "mean_predicted_probability": 0.0004887570439068317,
+      "observed_fraud_rate": 0.000518476768192618
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 180,
+      "mean_predicted_probability": 0.12215961636756198,
+      "observed_fraud_rate": 0.2111111111111111
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 2,
+      "sample_count": 35,
+      "mean_predicted_probability": 0.25135468724375737,
+      "observed_fraud_rate": 0.08571428571428572
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 3,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.3531206573620929,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 4,
+      "sample_count": 3,
+      "mean_predicted_probability": 0.48533824743721427,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 5,
+      "sample_count": 12,
+      "mean_predicted_probability": 0.5,
+      "observed_fraud_rate": 0.75
+    },
+    {
+      "fold": 1,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 6,
+      "sample_count": 164,
+      "mean_predicted_probability": 0.6701030927835053,
+      "observed_fraud_rate": 0.7012195121951219
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 602507,
+      "mean_predicted_probability": 0.0005330190310350097,
+      "observed_fraud_rate": 0.00030041144750185474
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 1521,
+      "mean_predicted_probability": 0.11171886646527796,
+      "observed_fraud_rate": 0.0190664036817883
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 142,
+      "mean_predicted_probability": 0.2254919439533366,
+      "observed_fraud_rate": 0.07042253521126761
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 76,
+      "mean_predicted_probability": 0.3345530844241507,
+      "observed_fraud_rate": 0.02631578947368421
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 26,
+      "mean_predicted_probability": 0.4470989822761263,
+      "observed_fraud_rate": 0.07692307692307693
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 20,
+      "mean_predicted_probability": 0.5499511028640012,
+      "observed_fraud_rate": 0.2
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 8,
+      "mean_predicted_probability": 0.6278480748630695,
+      "observed_fraud_rate": 0.25
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 705,
+      "mean_predicted_probability": 0.7491110135851436,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 67,
+      "mean_predicted_probability": 0.8579399677948971,
+      "observed_fraud_rate": 0.04477611940298507
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 438,
+      "mean_predicted_probability": 0.9916517597990968,
+      "observed_fraud_rate": 0.18036529680365296
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 605115,
+      "mean_predicted_probability": 0.00040831096206356835,
+      "observed_fraud_rate": 0.00038505077547243085
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 286,
+      "mean_predicted_probability": 0.12689901969891546,
+      "observed_fraud_rate": 0.0034965034965034965
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 10,
+      "mean_predicted_probability": 0.24550169806367003,
+      "observed_fraud_rate": 0.8
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 3,
+      "sample_count": 18,
+      "mean_predicted_probability": 0.34071562286788765,
+      "observed_fraud_rate": 0.6666666666666666
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 4,
+      "sample_count": 21,
+      "mean_predicted_probability": 0.4741423104420693,
+      "observed_fraud_rate": 0.8571428571428571
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 6,
+      "sample_count": 4,
+      "mean_predicted_probability": 0.6694161269824774,
+      "observed_fraud_rate": 0.75
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 7,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.7216356781862764,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 8,
+      "sample_count": 55,
+      "mean_predicted_probability": 0.8820684681731954,
+      "observed_fraud_rate": 0.6727272727272727
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 605401,
+      "mean_predicted_probability": 0.0004724862695067955,
+      "observed_fraud_rate": 0.0003865206697709452
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 2,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.2620575984688033,
+      "observed_fraud_rate": 1.0
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 4,
+      "sample_count": 19,
+      "mean_predicted_probability": 0.4827586206896552,
+      "observed_fraud_rate": 0.631578947368421
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 5,
+      "sample_count": 5,
+      "mean_predicted_probability": 0.5188320617286325,
+      "observed_fraud_rate": 0.8
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 6,
+      "sample_count": 84,
+      "mean_predicted_probability": 0.6455696202531644,
+      "observed_fraud_rate": 0.7261904761904762
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 602009,
+      "mean_predicted_probability": 0.0004528813661862963,
+      "observed_fraud_rate": 0.000305643271113887
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 46,
+      "mean_predicted_probability": 0.13395239232852618,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 726,
+      "mean_predicted_probability": 0.2233886592296889,
+      "observed_fraud_rate": 0.013774104683195593
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 13,
+      "mean_predicted_probability": 0.35289449831820224,
+      "observed_fraud_rate": 0.07692307692307693
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 12,
+      "mean_predicted_probability": 0.4441248243752068,
+      "observed_fraud_rate": 0.08333333333333333
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 970,
+      "mean_predicted_probability": 0.5645712327603871,
+      "observed_fraud_rate": 0.016494845360824743
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 23,
+      "mean_predicted_probability": 0.6355216048951792,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 5,
+      "mean_predicted_probability": 0.7457295631376025,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 18,
+      "mean_predicted_probability": 0.826666492409852,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 1688,
+      "mean_predicted_probability": 0.9993666236122558,
+      "observed_fraud_rate": 0.05924170616113744
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 605510,
+      "mean_predicted_probability": 0.00048083442732063853,
+      "observed_fraud_rate": 0.0005152681210880085
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 604896,
+      "mean_predicted_probability": 0.0003537825191279391,
+      "observed_fraud_rate": 0.00037031159075279056
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 436,
+      "mean_predicted_probability": 0.12757409922290244,
+      "observed_fraud_rate": 0.0045871559633027525
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 2,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.26144325644901906,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 3,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.3347685737236256,
+      "observed_fraud_rate": 1.0
+    },
+    {
+      "fold": 2,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 5,
+      "sample_count": 176,
+      "mean_predicted_probability": 0.5547445255474451,
+      "observed_fraud_rate": 0.48295454545454547
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 603013,
+      "mean_predicted_probability": 0.0004045006975539065,
+      "observed_fraud_rate": 0.0003101094006265205
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 30,
+      "mean_predicted_probability": 0.13753990371715058,
+      "observed_fraud_rate": 0.06666666666666667
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 206,
+      "mean_predicted_probability": 0.2861271971748553,
+      "observed_fraud_rate": 0.05339805825242718
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 18,
+      "mean_predicted_probability": 0.3425459180640005,
+      "observed_fraud_rate": 0.1111111111111111
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 22,
+      "mean_predicted_probability": 0.44027189796588234,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 5,
+      "mean_predicted_probability": 0.53496793157958,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 5,
+      "mean_predicted_probability": 0.6743665473967583,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 5,
+      "mean_predicted_probability": 0.7306510730500846,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 2,
+      "mean_predicted_probability": 0.8138382751597355,
+      "observed_fraud_rate": 0.5
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 2204,
+      "mean_predicted_probability": 0.9997438123136714,
+      "observed_fraud_rate": 0.04945553539019964
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 603725,
+      "mean_predicted_probability": 0.00038995627953539494,
+      "observed_fraud_rate": 0.00033955857385398983
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 1785,
+      "mean_predicted_probability": 0.14578977589931014,
+      "observed_fraud_rate": 0.05994397759103642
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 605251,
+      "mean_predicted_probability": 0.00045997715198539603,
+      "observed_fraud_rate": 0.00037339880479338324
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 2,
+      "mean_predicted_probability": 0.11418757996384325,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Isotonic",
+      "bin_id": 2,
+      "sample_count": 30,
+      "mean_predicted_probability": 0.21052631578947362,
+      "observed_fraud_rate": 0.03333333333333333
+    },
+    {
+      "fold": 2,
+      "seed": 62,
+      "calibration_method": "Isotonic",
+      "bin_id": 4,
+      "sample_count": 227,
+      "mean_predicted_probability": 0.4382022471910113,
+      "observed_fraud_rate": 0.3744493392070485
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 599426,
+      "mean_predicted_probability": 0.0006223755857912276,
+      "observed_fraud_rate": 0.0002952824869124796
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 862,
+      "mean_predicted_probability": 0.15169282060210526,
+      "observed_fraud_rate": 0.001160092807424594
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 318,
+      "mean_predicted_probability": 0.2496160101099563,
+      "observed_fraud_rate": 0.006289308176100629
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 148,
+      "mean_predicted_probability": 0.3302074522502314,
+      "observed_fraud_rate": 0.013513513513513514
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 45,
+      "mean_predicted_probability": 0.44598241970251795,
+      "observed_fraud_rate": 0.022222222222222223
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 109,
+      "mean_predicted_probability": 0.5511587899016809,
+      "observed_fraud_rate": 0.045871559633027525
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 205,
+      "mean_predicted_probability": 0.6304838775321414,
+      "observed_fraud_rate": 0.03414634146341464
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 137,
+      "mean_predicted_probability": 0.7406720163831404,
+      "observed_fraud_rate": 0.06569343065693431
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 94,
+      "mean_predicted_probability": 0.8658447572040736,
+      "observed_fraud_rate": 0.09574468085106383
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 4166,
+      "mean_predicted_probability": 0.998420000440959,
+      "observed_fraud_rate": 0.023763802208353335
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 605510,
+      "mean_predicted_probability": 0.0007269134890114374,
+      "observed_fraud_rate": 0.0005152681210880085
+    },
+    {
+      "fold": 2,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 605510,
+      "mean_predicted_probability": 0.0006861488553869036,
+      "observed_fraud_rate": 0.0005152681210880085
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 602968,
+      "mean_predicted_probability": 0.0006454452024225827,
+      "observed_fraud_rate": 0.0002935479163073331
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 455,
+      "mean_predicted_probability": 0.10831512268127612,
+      "observed_fraud_rate": 0.024175824175824177
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 1055,
+      "mean_predicted_probability": 0.2742500221152328,
+      "observed_fraud_rate": 0.01800947867298578
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 86,
+      "mean_predicted_probability": 0.32846600330365894,
+      "observed_fraud_rate": 0.05813953488372093
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 41,
+      "mean_predicted_probability": 0.457421560585885,
+      "observed_fraud_rate": 0.024390243902439025
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 23,
+      "mean_predicted_probability": 0.5390182180371462,
+      "observed_fraud_rate": 0.17391304347826086
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 8,
+      "mean_predicted_probability": 0.639206471868234,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 31,
+      "mean_predicted_probability": 0.7543909335644696,
+      "observed_fraud_rate": 0.0967741935483871
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 47,
+      "mean_predicted_probability": 0.8404260658888902,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 796,
+      "mean_predicted_probability": 0.9967296890487252,
+      "observed_fraud_rate": 0.11557788944723618
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 604896,
+      "mean_predicted_probability": 0.00037067612794870704,
+      "observed_fraud_rate": 0.00040337512564143257
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 614,
+      "mean_predicted_probability": 0.18832480211856722,
+      "observed_fraud_rate": 0.11074918566775244
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 604860,
+      "mean_predicted_probability": 0.0005214827878475142,
+      "observed_fraud_rate": 0.0003951327579935853
+    },
+    {
+      "fold": 2,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 650,
+      "mean_predicted_probability": 0.13822691669218917,
+      "observed_fraud_rate": 0.1123076923076923
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 628636,
+      "mean_predicted_probability": 0.0006683985969258126,
+      "observed_fraud_rate": 0.003163993153430602
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 750,
+      "mean_predicted_probability": 0.1508553448040862,
+      "observed_fraud_rate": 0.096
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 176,
+      "mean_predicted_probability": 0.23140126039102685,
+      "observed_fraud_rate": 0.17045454545454544
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 219,
+      "mean_predicted_probability": 0.3695840436509544,
+      "observed_fraud_rate": 0.1141552511415525
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 347,
+      "mean_predicted_probability": 0.447722511055182,
+      "observed_fraud_rate": 0.2622478386167147
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 2511,
+      "mean_predicted_probability": 0.5683317663043357,
+      "observed_fraud_rate": 0.027877339705296694
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 260,
+      "mean_predicted_probability": 0.6294537651916091,
+      "observed_fraud_rate": 0.11153846153846154
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 88,
+      "mean_predicted_probability": 0.7346105878738772,
+      "observed_fraud_rate": 0.4318181818181818
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 431,
+      "mean_predicted_probability": 0.8403611924699272,
+      "observed_fraud_rate": 0.20185614849187936
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 3305,
+      "mean_predicted_probability": 0.9948576662110662,
+      "observed_fraud_rate": 0.4033282904689864
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 633154,
+      "mean_predicted_probability": 0.0007574728224900683,
+      "observed_fraud_rate": 0.003762117904964669
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 442,
+      "mean_predicted_probability": 0.13272701012520527,
+      "observed_fraud_rate": 0.4298642533936652
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 119,
+      "mean_predicted_probability": 0.24949620042195803,
+      "observed_fraud_rate": 0.6890756302521008
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 3,
+      "sample_count": 134,
+      "mean_predicted_probability": 0.3566482086456585,
+      "observed_fraud_rate": 0.835820895522388
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 4,
+      "sample_count": 72,
+      "mean_predicted_probability": 0.45169267257246876,
+      "observed_fraud_rate": 0.8611111111111112
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 5,
+      "sample_count": 95,
+      "mean_predicted_probability": 0.5528820488407316,
+      "observed_fraud_rate": 0.6421052631578947
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 6,
+      "sample_count": 27,
+      "mean_predicted_probability": 0.6305279960538378,
+      "observed_fraud_rate": 0.2962962962962963
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 7,
+      "sample_count": 25,
+      "mean_predicted_probability": 0.7270343522756838,
+      "observed_fraud_rate": 0.72
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 8,
+      "sample_count": 22,
+      "mean_predicted_probability": 0.8358103598897727,
+      "observed_fraud_rate": 0.8636363636363636
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Platt",
+      "bin_id": 9,
+      "sample_count": 2633,
+      "mean_predicted_probability": 0.9879131713926381,
+      "observed_fraud_rate": 0.31522977592100265
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 628933,
+      "mean_predicted_probability": 0.0004960702770007127,
+      "observed_fraud_rate": 0.003237228766816179
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 727,
+      "mean_predicted_probability": 0.10074140293944804,
+      "observed_fraud_rate": 0.10178817056396149
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 2,
+      "sample_count": 3298,
+      "mean_predicted_probability": 0.207171795360063,
+      "observed_fraud_rate": 0.0661006670709521
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 4,
+      "sample_count": 2,
+      "mean_predicted_probability": 0.4808062626141034,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 5,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.5930781369430979,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 6,
+      "sample_count": 2076,
+      "mean_predicted_probability": 0.6352941176470587,
+      "observed_fraud_rate": 0.36608863198458574
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 7,
+      "sample_count": 49,
+      "mean_predicted_probability": 0.7665762601336831,
+      "observed_fraud_rate": 0.14285714285714285
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "calibration_method": "Isotonic",
+      "bin_id": 8,
+      "sample_count": 1637,
+      "mean_predicted_probability": 0.8148148148148148,
+      "observed_fraud_rate": 0.40867440439828956
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 624662,
+      "mean_predicted_probability": 0.002081271133192363,
+      "observed_fraud_rate": 0.003220941885371609
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 2593,
+      "mean_predicted_probability": 0.1496895885951343,
+      "observed_fraud_rate": 0.06941766293868107
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 36,
+      "mean_predicted_probability": 0.2379015770305226,
+      "observed_fraud_rate": 0.7222222222222222
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 11,
+      "mean_predicted_probability": 0.38517014916192915,
+      "observed_fraud_rate": 0.6363636363636364
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 9,
+      "mean_predicted_probability": 0.4367552774635976,
+      "observed_fraud_rate": 0.8888888888888888
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 31,
+      "mean_predicted_probability": 0.5892591153435512,
+      "observed_fraud_rate": 0.3548387096774194
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 210,
+      "mean_predicted_probability": 0.663430067375062,
+      "observed_fraud_rate": 0.2619047619047619
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 1494,
+      "mean_predicted_probability": 0.703534144645435,
+      "observed_fraud_rate": 0.023427041499330656
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 10,
+      "mean_predicted_probability": 0.8246240620000069,
+      "observed_fraud_rate": 0.2
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 7667,
+      "mean_predicted_probability": 0.9998336051302159,
+      "observed_fraud_rate": 0.18625277161862527
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 629076,
+      "mean_predicted_probability": 0.0006376870006741668,
+      "observed_fraud_rate": 0.003727689500155784
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 13,
+      "mean_predicted_probability": 0.14540800600419732,
+      "observed_fraud_rate": 0.6153846153846154
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 3,
+      "mean_predicted_probability": 0.25285561528969636,
+      "observed_fraud_rate": 1.0
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 3,
+      "sample_count": 52,
+      "mean_predicted_probability": 0.36215718678693587,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 4,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.438811297809349,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 5,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.5334102516712524,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 6,
+      "sample_count": 13,
+      "mean_predicted_probability": 0.6666850984000848,
+      "observed_fraud_rate": 0.3076923076923077
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 7,
+      "sample_count": 4,
+      "mean_predicted_probability": 0.7070095697127213,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Platt",
+      "bin_id": 8,
+      "sample_count": 7560,
+      "mean_predicted_probability": 0.8041895801951423,
+      "observed_fraud_rate": 0.18571428571428572
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 627116,
+      "mean_predicted_probability": 0.001461931414759107,
+      "observed_fraud_rate": 0.0034012846108216026
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 2030,
+      "mean_predicted_probability": 0.17395141702910996,
+      "observed_fraud_rate": 0.10985221674876847
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 2,
+      "sample_count": 11,
+      "mean_predicted_probability": 0.2896389048709093,
+      "observed_fraud_rate": 0.2727272727272727
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 3,
+      "sample_count": 254,
+      "mean_predicted_probability": 0.33264700094504795,
+      "observed_fraud_rate": 0.36220472440944884
+    },
+    {
+      "fold": 3,
+      "seed": 52,
+      "calibration_method": "Isotonic",
+      "bin_id": 7,
+      "sample_count": 7312,
+      "mean_predicted_probability": 0.7912923184921302,
+      "observed_fraud_rate": 0.17956783369803064
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 630664,
+      "mean_predicted_probability": 0.000689021364526186,
+      "observed_fraud_rate": 0.003737330813238111
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 782,
+      "mean_predicted_probability": 0.1540711183673687,
+      "observed_fraud_rate": 0.13043478260869565
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 121,
+      "mean_predicted_probability": 0.20816167056429621,
+      "observed_fraud_rate": 0.09917355371900827
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 13,
+      "mean_predicted_probability": 0.3268202373953179,
+      "observed_fraud_rate": 0.38461538461538464
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 1991,
+      "mean_predicted_probability": 0.42283807736104284,
+      "observed_fraud_rate": 0.024610748367654443
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 31,
+      "mean_predicted_probability": 0.540220904987499,
+      "observed_fraud_rate": 0.12903225806451613
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 116,
+      "mean_predicted_probability": 0.6443097091559831,
+      "observed_fraud_rate": 0.11206896551724138
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 258,
+      "mean_predicted_probability": 0.7671922660582311,
+      "observed_fraud_rate": 0.06976744186046512
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 29,
+      "mean_predicted_probability": 0.8381960624023248,
+      "observed_fraud_rate": 0.3448275862068966
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 2718,
+      "mean_predicted_probability": 0.998016678159203,
+      "observed_fraud_rate": 0.4392935982339956
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 634277,
+      "mean_predicted_probability": 0.0004675555252597731,
+      "observed_fraud_rate": 0.004206364096443667
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 11,
+      "mean_predicted_probability": 0.16075020701916423,
+      "observed_fraud_rate": 0.7272727272727273
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 2435,
+      "mean_predicted_probability": 0.21461619086773132,
+      "observed_fraud_rate": 0.4468172484599589
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 633718,
+      "mean_predicted_probability": 0.0007763523585488042,
+      "observed_fraud_rate": 0.004011247905219672
+    },
+    {
+      "fold": 3,
+      "seed": 62,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 3005,
+      "mean_predicted_probability": 0.18476810428788273,
+      "observed_fraud_rate": 0.40665557404326125
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 629564,
+      "mean_predicted_probability": 0.0007501172735260383,
+      "observed_fraud_rate": 0.0029893704214345165
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 1158,
+      "mean_predicted_probability": 0.17520505562257419,
+      "observed_fraud_rate": 0.12953367875647667
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 1232,
+      "mean_predicted_probability": 0.2572072359801335,
+      "observed_fraud_rate": 0.05032467532467533
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 416,
+      "mean_predicted_probability": 0.32438970701049136,
+      "observed_fraud_rate": 0.1778846153846154
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 516,
+      "mean_predicted_probability": 0.4478052569668276,
+      "observed_fraud_rate": 0.17054263565891473
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 130,
+      "mean_predicted_probability": 0.5289204959277793,
+      "observed_fraud_rate": 0.5461538461538461
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 129,
+      "mean_predicted_probability": 0.666740056542207,
+      "observed_fraud_rate": 0.6046511627906976
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 238,
+      "mean_predicted_probability": 0.7306166337222889,
+      "observed_fraud_rate": 0.8823529411764706
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 263,
+      "mean_predicted_probability": 0.8735949266748904,
+      "observed_fraud_rate": 0.7110266159695817
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 3077,
+      "mean_predicted_probability": 0.9967783899053752,
+      "observed_fraud_rate": 0.3126421839454014
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 633011,
+      "mean_predicted_probability": 0.0007334145031758454,
+      "observed_fraud_rate": 0.0036713422041639086
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 394,
+      "mean_predicted_probability": 0.14448398496993609,
+      "observed_fraud_rate": 0.7842639593908629
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 242,
+      "mean_predicted_probability": 0.2539337614130614,
+      "observed_fraud_rate": 0.6983471074380165
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 3,
+      "sample_count": 144,
+      "mean_predicted_probability": 0.344406857161854,
+      "observed_fraud_rate": 0.05555555555555555
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 4,
+      "sample_count": 6,
+      "mean_predicted_probability": 0.4025074924680889,
+      "observed_fraud_rate": 1.0
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 5,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.527707920408819,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 6,
+      "sample_count": 4,
+      "mean_predicted_probability": 0.6755280016794426,
+      "observed_fraud_rate": 0.75
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 7,
+      "sample_count": 3,
+      "mean_predicted_probability": 0.7700679024555441,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 8,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.8041925439683097,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Platt",
+      "bin_id": 9,
+      "sample_count": 2917,
+      "mean_predicted_probability": 0.9986578344884679,
+      "observed_fraud_rate": 0.3239629756599246
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 629873,
+      "mean_predicted_probability": 0.0004960496304217626,
+      "observed_fraud_rate": 0.003149841317217915
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 3016,
+      "mean_predicted_probability": 0.10995600976737474,
+      "observed_fraud_rate": 0.09051724137931035
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 2,
+      "sample_count": 41,
+      "mean_predicted_probability": 0.24991467893552566,
+      "observed_fraud_rate": 0.3902439024390244
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 4,
+      "sample_count": 1,
+      "mean_predicted_probability": 0.4829679076491491,
+      "observed_fraud_rate": 1.0
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 5,
+      "sample_count": 50,
+      "mean_predicted_probability": 0.5114980955832873,
+      "observed_fraud_rate": 0.6
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 6,
+      "sample_count": 855,
+      "mean_predicted_probability": 0.6271335867965534,
+      "observed_fraud_rate": 0.6304093567251462
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 7,
+      "sample_count": 2,
+      "mean_predicted_probability": 0.755353759951318,
+      "observed_fraud_rate": 0.5
+    },
+    {
+      "fold": 3,
+      "seed": 72,
+      "calibration_method": "Isotonic",
+      "bin_id": 8,
+      "sample_count": 2885,
+      "mean_predicted_probability": 0.811591120947621,
+      "observed_fraud_rate": 0.3188908145580589
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 0,
+      "sample_count": 626497,
+      "mean_predicted_probability": 0.0007142642015653681,
+      "observed_fraud_rate": 0.003235450449084353
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 1,
+      "sample_count": 833,
+      "mean_predicted_probability": 0.15546702380747027,
+      "observed_fraud_rate": 0.1092436974789916
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 2,
+      "sample_count": 1377,
+      "mean_predicted_probability": 0.22163126105752637,
+      "observed_fraud_rate": 0.0915032679738562
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 3,
+      "sample_count": 68,
+      "mean_predicted_probability": 0.33394254374652727,
+      "observed_fraud_rate": 0.10294117647058823
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 4,
+      "sample_count": 539,
+      "mean_predicted_probability": 0.42177077328653056,
+      "observed_fraud_rate": 0.0686456400742115
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 5,
+      "sample_count": 11,
+      "mean_predicted_probability": 0.5315579276130168,
+      "observed_fraud_rate": 0.36363636363636365
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 6,
+      "sample_count": 31,
+      "mean_predicted_probability": 0.6279853671521748,
+      "observed_fraud_rate": 0.1935483870967742
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 7,
+      "sample_count": 66,
+      "mean_predicted_probability": 0.7521240560598823,
+      "observed_fraud_rate": 0.5757575757575758
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 8,
+      "sample_count": 39,
+      "mean_predicted_probability": 0.8352802670122483,
+      "observed_fraud_rate": 0.46153846153846156
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Uncalibrated",
+      "bin_id": 9,
+      "sample_count": 7262,
+      "mean_predicted_probability": 0.9993245088026194,
+      "observed_fraud_rate": 0.19416138804736988
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 0,
+      "sample_count": 629523,
+      "mean_predicted_probability": 0.0004806552708584648,
+      "observed_fraud_rate": 0.0037822287668599877
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 1,
+      "sample_count": 46,
+      "mean_predicted_probability": 0.15906580229117748,
+      "observed_fraud_rate": 0.6086956521739131
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 2,
+      "sample_count": 38,
+      "mean_predicted_probability": 0.20569217651130797,
+      "observed_fraud_rate": 0.6052631578947368
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 3,
+      "sample_count": 26,
+      "mean_predicted_probability": 0.34896430837410075,
+      "observed_fraud_rate": 0.9230769230769231
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 4,
+      "sample_count": 118,
+      "mean_predicted_probability": 0.4961384727960088,
+      "observed_fraud_rate": 0.2457627118644068
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 5,
+      "sample_count": 55,
+      "mean_predicted_probability": 0.5181090453802073,
+      "observed_fraud_rate": 0.6
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 6,
+      "sample_count": 7,
+      "mean_predicted_probability": 0.6579322372233907,
+      "observed_fraud_rate": 0.7142857142857143
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 7,
+      "sample_count": 5,
+      "mean_predicted_probability": 0.7587389973371084,
+      "observed_fraud_rate": 0.8
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 8,
+      "sample_count": 6,
+      "mean_predicted_probability": 0.8541182026623888,
+      "observed_fraud_rate": 0.8333333333333334
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Platt",
+      "bin_id": 9,
+      "sample_count": 6899,
+      "mean_predicted_probability": 0.9472442774098082,
+      "observed_fraud_rate": 0.17857660530511668
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 0,
+      "sample_count": 629440,
+      "mean_predicted_probability": 0.0005820433333886378,
+      "observed_fraud_rate": 0.0037271225216065074
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 1,
+      "sample_count": 309,
+      "mean_predicted_probability": 0.19444444444444442,
+      "observed_fraud_rate": 0.44983818770226536
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 2,
+      "sample_count": 6,
+      "mean_predicted_probability": 0.2705615345900498,
+      "observed_fraud_rate": 0.0
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 3,
+      "sample_count": 10,
+      "mean_predicted_probability": 0.37457845942253387,
+      "observed_fraud_rate": 0.6
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 4,
+      "sample_count": 4,
+      "mean_predicted_probability": 0.40488416112647907,
+      "observed_fraud_rate": 0.75
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 5,
+      "sample_count": 114,
+      "mean_predicted_probability": 0.5596617579641847,
+      "observed_fraud_rate": 0.8421052631578947
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 6,
+      "sample_count": 1419,
+      "mean_predicted_probability": 0.6363997859822594,
+      "observed_fraud_rate": 0.11839323467230443
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 7,
+      "sample_count": 17,
+      "mean_predicted_probability": 0.7685401371194126,
+      "observed_fraud_rate": 1.0
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 8,
+      "sample_count": 41,
+      "mean_predicted_probability": 0.8386164981750769,
+      "observed_fraud_rate": 0.24390243902439024
+    },
+    {
+      "fold": 3,
+      "seed": 82,
+      "calibration_method": "Isotonic",
+      "bin_id": 9,
+      "sample_count": 5363,
+      "mean_predicted_probability": 0.92039715345973,
+      "observed_fraud_rate": 0.1825470818571695
+    }
+  ]
+}

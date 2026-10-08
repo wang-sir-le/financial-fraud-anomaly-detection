@@ -1,0 +1,63 @@
+{
+  "rows": [
+    {
+      "fold": 2,
+      "model": "PT",
+      "seed": 82,
+      "capacity": 0.03,
+      "fn_cost": 100,
+      "ap": 0.10845730533487172,
+      "threshold": 0.003572770354178196,
+      "validation_alert_rate": 0.0032704006013415006,
+      "n": 605510,
+      "frauds": 312,
+      "tp": 99,
+      "fp": 859,
+      "fn": 213,
+      "alerts": 958,
+      "recall": 0.3173076923076923,
+      "precision": 0.10334029227557412,
+      "alert_rate": 0.0015821373718022823,
+      "cost": 22159,
+      "cost_per_10000": 365.9559709996532
+    }
+  ],
+  "columns": [
+    "step",
+    "type",
+    "amount",
+    "hour_of_day",
+    "day_index"
+  ],
+  "input_signature": {
+    "protocol_sha256": "60f7b18c68a6ffe1b762f2ca721729773c167e75a9b9aefd45343077e298b649",
+    "features_sha256": "1e241c5e46e1d8323fe021c4185ce2ab3cb22f739d224384ebcb248490ed568f",
+    "code": {
+      "training.py": "ce6dbb882d62bcdaffea3b02197e4bddedce625291aa62cf30ca5f6382952d46",
+      "data.py": "42c6e2efdf29044bc0571ca3ab824be2a1fa97ccb102c9f60bd2ee3c5265d7fb",
+      "models.py": "ceede354842dcdca42b0a25eb39ca6bb13360406171686b57ac23c460d101253"
+    }
+  },
+  "seconds": 16.32800000003772,
+  "effective_num_threads": 16,
+  "calibrator": {
+    "slope": 0.2943894092408312,
+    "intercept": -5.068859705907561
+  },
+  "raw_array_sha256": "bcd7327ce22436bac98ab47c9215c6ab5820511cf1ce0b4334c78a113229a96d",
+  "platt_array_sha256": "600298623a202fa30f21559dabb779274ef1f00844a0a1f3f854c18ec3ddd3ac",
+  "files": [
+    {
+      "name": "paysim_2_PT_82_booster.txt",
+      "sha256": "276cbfc8f3eb0dddab6a439a6d80bb035b97c166c67effd31e333f94fd69f14c"
+    },
+    {
+      "name": "paysim_2_PT_82_test.parquet",
+      "sha256": "1adaf088a65b2a5d825b752602f115c32a4f4e26a32558896d22f4d38cb0f049"
+    },
+    {
+      "name": "paysim_2_PT_82_validation.parquet",
+      "sha256": "18a0c40f360d6b07472a7b88a3dafd72b8a909fcaeccf5f72ccd3a0d4953d39a"
+    }
+  ]
+}

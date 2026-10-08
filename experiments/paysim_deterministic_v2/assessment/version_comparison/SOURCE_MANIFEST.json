@@ -1,0 +1,114 @@
+[
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\b1\\stage_model_metrics.parquet",
+    "sha256": "c0eaa794216d00f7cd760497eed1a9ce36711a2ab2cd620a1358573146c3c468"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\b1\\stage_model_metrics.parquet",
+    "sha256": "b65e2d992f4fe93f97d4f23b4659739befd86bc46096eb82ec47bd96794f2aa8"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\b1\\stage_contrasts_seed.parquet",
+    "sha256": "07a9d3df15c6f6365cf366da92779e18775b6e7db46508baf261de3554e42b4c"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\b1\\stage_contrasts_seed.parquet",
+    "sha256": "dfb5b71d04adeb6a901b234bab92cfdb12369931ddd288e19b8a3f37f283915d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\b3\\profiles\\capacity_tie_model.csv",
+    "sha256": "7ce06370cc0d9e9e1324b0115d1b849bacc6cc8b620c277dccfe6ca69412b73b"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\b3\\profiles\\capacity_tie_model.csv",
+    "sha256": "77a80cb5773933d4c017a2a4800fef6512ef7033a0c28ea9b15dbde468344f70"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\b3\\profiles\\capacity_contrasts_fold.csv",
+    "sha256": "1f44dfa8d332f8bd561c986aa81ad2d979b1d662b8f1f802a50090dfc001ac9a"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\b3\\profiles\\capacity_contrasts_fold.csv",
+    "sha256": "6ac50147ac282add2587d91a622af4d87a8e692860a5962f7b0135cb69b4d3ab"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\b3\\priorities\\shared_priority_summary.csv",
+    "sha256": "559601eec7b2d2e2e21c337a04b200d35538309006f18b1696ecf7b06c0b5a59"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\b3\\priorities\\shared_priority_summary.csv",
+    "sha256": "4a91c4b427df1a2b62803ec3356995d1d631f73d71935198a195d1ec0d043c88"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\b2\\calculation\\component_intervals.csv",
+    "sha256": "20c4b3e0319a8eca4d63ab5177afcccde16ddf9291247704eb3fc0e5a53d5506"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\b2\\calculation\\component_intervals.csv",
+    "sha256": "47c07438f445546b0f3d37108439f10b89614ee9b995f8d362f33fc05887db11"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\b2\\calculation\\processing_effect_intervals.csv",
+    "sha256": "001099c0ae826a39e860264ace8bf4e0c91fa21e7ce379e9a51f70df3011665d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\b2\\calculation\\processing_effect_intervals.csv",
+    "sha256": "f8267c922d888c11c9dae9c1fa89c1035557cf55c236c1b982963808d77ad5cb"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\optimized_first_round\\bootstrap\\timeblock_bootstrap_fold_summary.csv",
+    "sha256": "d42aaf8b745ab378708850dbc22e362edb8ff0be773489d257d417e2f14e21e0"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\primary\\timeblock_bootstrap_fold_summary.csv",
+    "sha256": "2c56c3724d7785a3af10c60aa2ea25eeff135a47638c194df5916b85047ca284"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\optimized_first_round\\bootstrap\\timeblock_bootstrap_overall_summary.csv",
+    "sha256": "b00372bae6ddcab129e526735d0d97119542faf3337d75d8a7ed71d4dbd8552a"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\primary\\timeblock_bootstrap_overall_summary.csv",
+    "sha256": "0ae028e64d91206a6dbf84405147673d53cffbfb58859e80340f042219cdfc5d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\optimized_first_round\\calibration\\calibration_ablation_results.csv",
+    "sha256": "c065a6c350179b65eb44a33c3b28e46d74addeb69f64d60c73b1ee9684704748"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\calibration\\calibration_ablation_results.csv",
+    "sha256": "f0bd568a29156610cec956cf0e866cf913d0e15a0ccf7b616d7af8916eb995da"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\optimized_first_round\\calibration\\calibration_bayes_decision_results.csv",
+    "sha256": "81a90e20f5a01fbc74ff1fc8ee46f1939ab17e31a7017eb1e4b35bd89773b022"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\calibration\\calibration_bayes_decision_results.csv",
+    "sha256": "cf3abbd3f19dec80b4cfd879004e3b8ace240cf09a2838b58e4d3cd233505b9d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\optimized_first_round\\calibration\\calibration_decision_invariance.csv",
+    "sha256": "e174b9129b3c58c56d6a58469cd9f59e71b96b545cdbbfb4675c1d8ff38a4dd0"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\calibration\\calibration_decision_invariance.csv",
+    "sha256": "3fbeccafedd48f76fa1f21dc5aa3cd447fe0b192203dcbb4cd08a341a1ed1717"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\optimized_first_round\\calibration\\calibration_pairwise_reliability.csv",
+    "sha256": "5a151745542bb42980c730fba27ae0813eaf6d41958bc1f2a5729149f7cefd56"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\calibration\\calibration_pairwise_reliability.csv",
+    "sha256": "ffabead0357f8b61506527477a5ec36d386e2b16c7951e62aac5d736d8a903cd"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\kais_targeted_revision_20260920\\audit\\paysim_block_sensitivity_summary.csv",
+    "sha256": "fa4cd5c38e4db85a1036942ef35002249a68828973c5a10a0a87cca81f38a6bb"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\primary\\block_sensitivity_summary.csv",
+    "sha256": "bb7a69d4c118c2f9a08cb846a4301e750bd4949e3d8f27ca45d92d25874d1470"
+  }
+]

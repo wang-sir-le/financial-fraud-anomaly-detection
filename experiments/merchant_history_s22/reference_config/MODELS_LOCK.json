@@ -1,0 +1,68 @@
+{
+  "time_utc": "2026-10-06T11:20:17.696707+00:00",
+  "all_six_models_and_preprocessors_locked": true,
+  "models": {
+    "A0": {
+      "sha256": "3556d2e45c510a5591bfe7c6404a7add639abc172d92ea2ee641cb83cf5ccfd0"
+    },
+    "B0": {
+      "sha256": "8c38b1a58253d2cecd25ca6b398933a0a201ecdc46158f08ddd3d7090e6c59f9"
+    },
+    "A1": {
+      "sha256": "f06eb0525aed25118bebe442ff31af1890a8401ca292fd882698d69a156a4c7d"
+    },
+    "B1": {
+      "sha256": "a63a8f6f8ad0dc27e40d150f2728149af1ee31d8b5b9c81dec92c5878747f721"
+    },
+    "A2": {
+      "sha256": "40721a32ec15d106655261fc8dfbdcde4f2ab32e66bf878b58adaac6abf3c580"
+    },
+    "B2": {
+      "sha256": "8ef8e203cd552df4d41f586cf08b898084c6ca18de1c1e0d251fc38d4af5ffa6"
+    }
+  },
+  "preprocessors": {
+    "A0": "914a6187109cdb10c9f12eeefa351e5c708974e2dc604dccfef8a6a383e665f0",
+    "B0": "7a5738f35350e57dc8106429c17834585f05b5b7a6ba511dbf14fd6b50d942cf",
+    "A1": "199837819d4fcd7e752dddc85251c4dcfaea580c1ac30f2dddbbe72751a1e9b3",
+    "B1": "367a96f46e20ba9be88c7962b770c8f55c3a1200f1abaa09ceb07b4fc3a3835f",
+    "A2": "2855ada7a136be8caa3593566080b78f092df1515d9dbe0baa97772237e6b24d",
+    "B2": "e5412f5e1c3584604a577637078d34abdec70a6fdaf4d29388b505075e14f33d"
+  },
+  "matrices": {
+    "A0": {
+      "train": "8018f5fa50688d68f2d1563d4008ae710616a41bcfb66f62fb93e47b95f4356b",
+      "review": "4628894947671a3d495f41321292f455e679da4fc27f5aac00b3e02746f9ddc7"
+    },
+    "B0": {
+      "train": "105ac5082653c3b6a30dc2f6a9bcbf46835398c95e41644ba7630832119a6821",
+      "review": "4179f640cd7a547e9b4c6af9674b151a65842578560628197ae0da150c7f2fb6"
+    },
+    "A1": {
+      "train": "3874c590db237780b388e9b872522a941cc3b8d85f1e69f1b803e1530983a202",
+      "review": "adafae5ac3c0f7b41459f5006ba6b34380cad7691c7ea357c302169802387e42"
+    },
+    "B1": {
+      "train": "180b0120940ddd3af11d34a709de4cc16417fe0c3c8e5e5a54c6b86b6bfa407a",
+      "review": "7669fba179721b57350d4082ceab5f5730bd248774a2260fda05a883632afb03"
+    },
+    "A2": {
+      "train": "0f0d07c089e5dabb17b945653b21f02f4abea247d72d1449370c2cf3c105311f",
+      "review": "61de95c0ec54919ccfb4d483a22988a68c2c2fbe6892d4794e5219a1360cb216"
+    },
+    "B2": {
+      "train": "492fd471e5bd4b714ae5420dde2719c94032ca422fc356370b303698b2228710",
+      "review": "063bd12b87168667ce348c4387032063c46e61418a4909805084bea6ebd09b01"
+    }
+  },
+  "cells": [
+    "A0",
+    "B0",
+    "A1",
+    "B1",
+    "A2",
+    "B2"
+  ],
+  "label_evaluation_not_started": true,
+  "review_identity_sha256": "e73cf277988f000c493139b6de77604d1f21dc3cdcdba7ca958545e9ff584f35"
+}

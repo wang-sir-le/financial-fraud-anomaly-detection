@@ -1,34 +1,17 @@
-# Public release candidate audit
+# October 8, 2026 public update: verification scope
 
-## Outcome
+The update contains the completed research extensions, frozen scientific specifications, compact recorded summaries and current figure exports. It retains the original repository and its two earlier commits. No new scientific experiment was executed to assemble this publication.
 
-The directory is organized as a GitHub upload candidate for the scientific reproduction code. No remote push, repository-history rewrite, release tag, or Data/Code Availability statement was performed.
+- 573 copied-source mappings were checked against their original source hashes.
+- 352 JSON inputs/configurations preserve scientific and numeric fields; author paths are placeholders. S22 additionally declares workspace roots for its adapted scope guard. Historical code/config lock digests remain references to the original author run.
+- 33 current PNG/PDF/SVG figure exports match the recorded source bytes. Fourteen standalone scripts executed in separate temporary copies; this verifies execution and does not claim a new visual or manuscript review.
+- Core tests: 138 passed; 8 tests requiring excluded locally regenerated frozen artifacts were skipped. The initial run had four Windows sandbox temporary-directory rename denials; the unchanged code passed when temporary outputs were placed inside the workspace. The initial and final receipts are retained locally.
+- BankSim tests: 40 passed with real-fitting calls blocked by the fixture.
+- S22 artificial contract: 71 tests and 61 parameter cases passed. Five additional checks confirm the adapted workspace declaration still denies unlisted input opens and blocks the declared project source during the artificial phase.
+- Type checks: 66 source files across affected core modules, BankSim, S22, the post-hoc bridge, comparison operators and plots passed. Third-party untyped NumPy/Pandas array-return interfaces have narrow, documented return-warning overrides; no other diagnostics were disabled.
+- Ruff passed under the recorded per-directory conventions. Bandit reported no medium/high findings or analysis errors.
+- The fraudx 0.2.0 wheel built with the existing setuptools 80.9.0 / wheel 0.45.1 environment, and its scientific modules were checked against the public sources. Earlier build attempts encountered an absent wheel tool and sandbox installation permissions; the pinned builder resolved this without changing the scientific environment.
 
-## Scope controls
+The distribution excludes manuscript Word/PDF files, transactions, row-level arrays, prediction caches, fitted/preprocessing states, large Bootstrap ledgers and virtual environments. All compact scientific CSVs and published export files retain their source bytes. The result subset includes the complete included comparison families and outcomes, without filtering for favourable direction.
 
-- Original experiment code and frozen manuscript assets were not overwritten.
-- Twenty-seven files under `src/fraudx/` are byte-identical to their audited source versions.
-- A portable PaySim configuration, repository documentation, Git exclusions, and one orchestration-only PaySim Bootstrap entrypoint were added in the derived package.
-- Manuscript drafting, citation mapping, submission-freeze automation, internal issue registries, and internal hash-audit generators were excluded.
-- Raw data, processed transaction-level data, prediction ledgers, fitted models, checkpoints, and Bootstrap replicate files were excluded.
-
-## Validation results
-
-| Check | Result |
-| --- | --- |
-| Ruff | PASS; no findings |
-| MyPy | PASS; 34 source files checked |
-| Bandit | PASS for release gate; 0 medium/high issues, 8 existing low-severity findings |
-| Public test suite | PASS; 113 passed, 8 skipped |
-| Skipped-test rationale | Frozen-output integration tests require locally regenerated assets that are intentionally not redistributed |
-| Candidate-source test | PASS; tests were rerun with the candidate `src/` forced on `PYTHONPATH` |
-| Synthetic smoke test | PASS; used only for execution validation and produced no paper evidence |
-| Command entrypoints | PASS; PaySim and IEEE-CIS public entrypoints parsed successfully |
-| Absolute local path scan | PASS; 0 matches |
-| Credential assignment pattern scan | PASS; 0 matches |
-| Prohibited data/model artifact scan | PASS; 0 files |
-| File size scan | PASS; no file exceeded 5 MB before manifest generation |
-
-## Remaining release actions
-
-The owner confirmed that the target repository is public and selected the MIT License. `wang-sir-le` is recorded as the temporary public author identifier. Before a tagged release, the uploaded tree must be verified against the manifest and checksums, the existing Git history must be inspected for previously committed data, credentials, or large artifacts, and the temporary author identifier should be replaced if a different publication name is preferred.
+Current per-directory manifests cover the published subset. Historical full-bundle guides also reference excluded inputs and are labelled accordingly. S22 remains an adapted source/evidence snapshot requiring new coherent engineering locks and native acceptance before a reader run. Publication, code tests and local plotting execution do not establish independent external raw-to-model reproduction, inferential validity or manuscript submission approval.

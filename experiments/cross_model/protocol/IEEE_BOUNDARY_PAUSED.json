@@ -1,0 +1,9 @@
+{
+  "scientific_settings_changed": false,
+  "completed_condition": "ieee_cis_1_M2",
+  "model": "M2",
+  "reason": "Pause first completed remaining first-window worker to protect larger-fold preprocessing memory",
+  "stopped_process_id": 5324,
+  "paused_utc": "2026-09-24T05:37:31.6177597Z",
+  "source_completion_sha256": "397a15f56593f4d9d175ed5a92bb59011e970ce71c727d81c63a17f138e7f7c0"
+}

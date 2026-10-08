@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "path": "${WORKSPACE}\\experiment\\outputs\\paper_evidence_revision_20260927\\run_01\\audit\\FIGURE_DATA.json",
+      "sha256": "9912ad7d6ec6dcf477bbf0e5b7ef2180710d2edbd7a6c48a6aa62150f18beb00"
+    }
+  ],
+  "filter": "All six rows: H0/H1/D by LightGBM/XGBoost at L7, tp@0.03",
+  "unit": "captured fraud count difference (five-seed mean)",
+  "points": [
+    {
+      "family": "LightGBM",
+      "effect": "H0",
+      "estimate": 208.4,
+      "lower": 175.8,
+      "upper": 244.6,
+      "confidence": 0.95,
+      "source": "audited intervals_all, L7, tp@0.03"
+    },
+    {
+      "family": "XGBoost",
+      "effect": "H0",
+      "estimate": 211.4,
+      "lower": 180.0,
+      "upper": 246.2,
+      "confidence": 0.95,
+      "source": "audited intervals_all, L7, tp@0.03"
+    },
+    {
+      "family": "LightGBM",
+      "effect": "H1",
+      "estimate": 1.0,
+      "lower": -10.8,
+      "upper": 9.4,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03"
+    },
+    {
+      "family": "XGBoost",
+      "effect": "H1",
+      "estimate": 9.6,
+      "lower": -8.351250000000022,
+      "upper": 19.6,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03"
+    },
+    {
+      "family": "LightGBM",
+      "effect": "D",
+      "estimate": -207.4,
+      "lower": -256.8,
+      "upper": -164.89749999999987,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03"
+    },
+    {
+      "family": "XGBoost",
+      "effect": "D",
+      "estimate": -201.8,
+      "lower": -247.15125,
+      "upper": -172.49749999999986,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03"
+    }
+  ],
+  "point_count": 6,
+  "interval": "H0 95% pointwise; H1 and D 98.75% Bonferroni marginal for four primary comparisons.",
+  "arithmetic_footer": {
+    "B1_headroom": [
+      47.4,
+      59.4
+    ],
+    "D_upper_bound": [
+      -161.0,
+      -152.0
+    ],
+    "order": [
+      "LightGBM",
+      "XGBoost"
+    ],
+    "not_confidence_limits": true
+  },
+  "figure": "fig4",
+  "width_in": 6.6,
+  "height_in": 2.99461176727909,
+  "original_image": "${WORKSPACE}\\experiment\\tmp\\kais_figure_redraw_20261007\\run_01\\originals\\main_image15.png",
+  "original_image_sha256": "1af61a25c07d4a8e4f243bd3b4a1a137a65998082d0eaeb4509af29c83e4cff5",
+  "boundary": "Previously saved aggregate results only; no new fitting, prediction, ranking, AP or uncertainty computation."
+}

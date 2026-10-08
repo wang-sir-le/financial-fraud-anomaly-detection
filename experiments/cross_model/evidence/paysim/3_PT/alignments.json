@@ -1,0 +1,47 @@
+[
+  {
+    "dataset": "paysim",
+    "fold": 3,
+    "model": "PT",
+    "lgbm_seed": 42,
+    "id_time_label_hash": "b0911f704e6c384efb1316d3d1b6c1faec6c4890c207c07ceff000700a1a8219",
+    "rows": 636723,
+    "aligned": true
+  },
+  {
+    "dataset": "paysim",
+    "fold": 3,
+    "model": "PT",
+    "lgbm_seed": 52,
+    "id_time_label_hash": "b0911f704e6c384efb1316d3d1b6c1faec6c4890c207c07ceff000700a1a8219",
+    "rows": 636723,
+    "aligned": true
+  },
+  {
+    "dataset": "paysim",
+    "fold": 3,
+    "model": "PT",
+    "lgbm_seed": 62,
+    "id_time_label_hash": "b0911f704e6c384efb1316d3d1b6c1faec6c4890c207c07ceff000700a1a8219",
+    "rows": 636723,
+    "aligned": true
+  },
+  {
+    "dataset": "paysim",
+    "fold": 3,
+    "model": "PT",
+    "lgbm_seed": 72,
+    "id_time_label_hash": "b0911f704e6c384efb1316d3d1b6c1faec6c4890c207c07ceff000700a1a8219",
+    "rows": 636723,
+    "aligned": true
+  },
+  {
+    "dataset": "paysim",
+    "fold": 3,
+    "model": "PT",
+    "lgbm_seed": 82,
+    "id_time_label_hash": "b0911f704e6c384efb1316d3d1b6c1faec6c4890c207c07ceff000700a1a8219",
+    "rows": 636723,
+    "aligned": true
+  }
+]

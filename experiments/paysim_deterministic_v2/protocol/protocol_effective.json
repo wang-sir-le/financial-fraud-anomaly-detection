@@ -1,0 +1,345 @@
+{
+  "version": "paysim_deterministic_v2",
+  "created_utc": "2026-09-23T12:21:43.895747+00:00",
+  "status": "FROZEN_BEFORE_NEW_PREDICTIONS",
+  "workspace_root": "${WORKSPACE}",
+  "output_root": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01",
+  "raw_csv": "${WORKSPACE}\\Dataset\\archive\\PS_20174392719_1491204439457_log.csv",
+  "raw_sha256": "16910f90577b0d981bf8ff289714510bb89bc71bff7d3f220f024e287e4eea6b",
+  "raw_bytes": 493534783,
+  "fresh_verified_download": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\reproduction\\fresh_paysim_verified.zip",
+  "original_baseline": "${WORKSPACE}\\experiment\\outputs\\kais_ci_replay_20260923",
+  "b1_baseline": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01",
+  "source_identity": {
+    "name": "source_row_id",
+    "definition": "zero-based data-record ordinal of the exact CSV, excluding header; assigned by sequential Arrow CSV reader before any reordering",
+    "not_a_model_feature": true,
+    "duplicate_records": "retain distinct source ordinals; never deduplicate",
+    "canonical_order": [
+      "step",
+      "source_row_id"
+    ],
+    "tie_rule": "score descending then source_row_id ascending; old processed row_id is a different identity convention"
+  },
+  "aggregation": {
+    "windows": [
+      1,
+      6,
+      24
+    ],
+    "history_condition": "same recipient and t-w <= historical_step < t; exclude all same-step records",
+    "amount_input": "parse exact decimal with scale2, convert to integer cents; reject non-cent inputs",
+    "moments": "HUGEINT n, sum_cents, sum_squared_cents; exact numerator n*Q-S*S; mean S/(100*n), sample std sqrt((n*Q-S*S)/(n*(n-1)))/100",
+    "overflow_guard": "global n^2 * max_abs_cents^2 < 2^127",
+    "other_statistics": "exact counts/distinct origins/max/last_step/pair counts; empty/singleton std0; empty means0; ratio amount/mean with zero mean0; elapsed missing -1",
+    "builds": [
+      {
+        "name": "canonical",
+        "threads": 1,
+        "scan": "ascending source_row_id",
+        "csv_block_size": 1048576
+      },
+      {
+        "name": "verification",
+        "threads": 16,
+        "scan": "descending source_row_id",
+        "csv_block_size": 4194304
+      }
+    ],
+    "equality": "exact typed column values in canonical source order; physical parquet byte identity recorded separately"
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_min_step": 1,
+      "train_max_step": 205,
+      "validation_min_step": 206,
+      "validation_max_step": 238,
+      "test_min_step": 239,
+      "test_max_step": 281
+    },
+    {
+      "fold": 2,
+      "train_min_step": 1,
+      "train_max_step": 281,
+      "validation_min_step": 282,
+      "validation_max_step": 323,
+      "test_min_step": 324,
+      "test_max_step": 354
+    },
+    {
+      "fold": 3,
+      "train_min_step": 1,
+      "train_max_step": 354,
+      "validation_min_step": 355,
+      "validation_max_step": 398,
+      "test_min_step": 399,
+      "test_max_step": 743
+    }
+  ],
+  "calibration_max_steps": [
+    226,
+    302,
+    376
+  ],
+  "seeds": [
+    42,
+    52,
+    62,
+    72,
+    82
+  ],
+  "models": {
+    "P0": {
+      "columns": [
+        "step",
+        "type",
+        "amount"
+      ],
+      "weight": 1
+    },
+    "PT": {
+      "columns": [
+        "step",
+        "type",
+        "amount",
+        "hour_of_day",
+        "day_index"
+      ],
+      "weight": 1
+    },
+    "PH": {
+      "columns": [
+        "step",
+        "type",
+        "amount",
+        "time_since_last_dest",
+        "dest_count_1h",
+        "unique_origins_1h",
+        "dest_count_6h",
+        "unique_origins_6h",
+        "dest_count_24h",
+        "unique_origins_24h",
+        "dest_amount_mean_1h",
+        "dest_amount_max_1h",
+        "dest_amount_std_1h",
+        "dest_amount_mean_6h",
+        "dest_amount_max_6h",
+        "dest_amount_std_6h",
+        "dest_amount_mean_24h",
+        "dest_amount_max_24h",
+        "dest_amount_std_24h",
+        "dest_amount_ratio_1h",
+        "dest_amount_ratio_6h",
+        "dest_amount_ratio_24h"
+      ],
+      "weight": 1
+    },
+    "PTH": {
+      "columns": [
+        "step",
+        "type",
+        "amount",
+        "hour_of_day",
+        "day_index",
+        "time_since_last_dest",
+        "dest_count_1h",
+        "unique_origins_1h",
+        "dest_count_6h",
+        "unique_origins_6h",
+        "dest_count_24h",
+        "unique_origins_24h",
+        "dest_amount_mean_1h",
+        "dest_amount_max_1h",
+        "dest_amount_std_1h",
+        "dest_amount_mean_6h",
+        "dest_amount_max_6h",
+        "dest_amount_std_6h",
+        "dest_amount_mean_24h",
+        "dest_amount_max_24h",
+        "dest_amount_std_24h",
+        "dest_amount_ratio_1h",
+        "dest_amount_ratio_6h",
+        "dest_amount_ratio_24h"
+      ],
+      "weight": 1
+    },
+    "PTHW": {
+      "columns": [
+        "step",
+        "type",
+        "amount",
+        "hour_of_day",
+        "day_index",
+        "time_since_last_dest",
+        "dest_count_1h",
+        "unique_origins_1h",
+        "dest_count_6h",
+        "unique_origins_6h",
+        "dest_count_24h",
+        "unique_origins_24h",
+        "dest_amount_mean_1h",
+        "dest_amount_max_1h",
+        "dest_amount_std_1h",
+        "dest_amount_mean_6h",
+        "dest_amount_max_6h",
+        "dest_amount_std_6h",
+        "dest_amount_mean_24h",
+        "dest_amount_max_24h",
+        "dest_amount_std_24h",
+        "dest_amount_ratio_1h",
+        "dest_amount_ratio_6h",
+        "dest_amount_ratio_24h"
+      ],
+      "weight": 2
+    },
+    "PTHW5": {
+      "columns": [
+        "step",
+        "type",
+        "amount",
+        "hour_of_day",
+        "day_index",
+        "time_since_last_dest",
+        "dest_count_1h",
+        "unique_origins_1h",
+        "dest_count_6h",
+        "unique_origins_6h",
+        "dest_count_24h",
+        "unique_origins_24h",
+        "dest_amount_mean_1h",
+        "dest_amount_max_1h",
+        "dest_amount_std_1h",
+        "dest_amount_mean_6h",
+        "dest_amount_max_6h",
+        "dest_amount_std_6h",
+        "dest_amount_mean_24h",
+        "dest_amount_max_24h",
+        "dest_amount_std_24h",
+        "dest_amount_ratio_1h",
+        "dest_amount_ratio_6h",
+        "dest_amount_ratio_24h"
+      ],
+      "weight": 5
+    }
+  },
+  "training": {
+    "n_estimators": 150,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "deterministic": true,
+    "force_col_wise": true,
+    "n_jobs": 16,
+    "seed_fields": [
+      "random_state",
+      "bagging_seed",
+      "feature_fraction_seed",
+      "data_random_seed"
+    ],
+    "fit_count_reference": 90,
+    "fit_count_full_verification": 90,
+    "stopping_rule": "only engineering/integrity failures stop; adverse result directions never stop or change configuration"
+  },
+  "calibration": {
+    "platt_fits_per_run": 90,
+    "same_original_positive_slope_clipped_logit": true,
+    "isotonic_models": [
+      "P0",
+      "PTHW"
+    ],
+    "isotonic_fits_per_run": 30,
+    "isotonic": "same earlier Validation; y_min0,y_max1,out_of_bounds clip"
+  },
+  "decisions": {
+    "capacities": [
+      0.01,
+      0.03,
+      0.05,
+      0.1
+    ],
+    "fn_costs": [
+      10,
+      50,
+      100,
+      500,
+      1000
+    ],
+    "fp_cost": 1,
+    "primary_capacity": 0.03,
+    "primary_fn_cost": 100,
+    "threshold_selection": "later Validation only; minimize integer cost,then maximize TP,minimize alerts,maximize threshold; include no-alert candidate",
+    "threshold_grid_models": [
+      "P0",
+      "PTHW"
+    ],
+    "all_other_models_primary_only": true,
+    "fixed_capacity": "ceil(q*N) completed Test window; separate from transferred threshold"
+  },
+  "downstream": {
+    "stages": [
+      "raw",
+      "clipped",
+      "platt"
+    ],
+    "bootstrap_repetitions": 5000,
+    "bootstrap_master_seed": 20260820,
+    "block_lengths": [
+      4,
+      3,
+      7
+    ],
+    "seed_mean_before_quantiles": true,
+    "pointwise_intervals": true,
+    "new_pooled_inference": false,
+    "recalculate": [
+      "all90primary results",
+      "P0/PTHW capacity-cost grid",
+      "75-model component scores and ties",
+      "three-stage core paired intervals",
+      "shared100priority grid at four capacities",
+      "primary frozen-threshold bootstrap and original block-length sensitivities",
+      "raw/Platt/isotonic probability and decision diagnostics",
+      "constant probability reference",
+      "old-v2 full point and interval differences"
+    ],
+    "version_difference_scope": "joint implementation-version sensitivity, not isolated causal row-order effect",
+    "old_new_bootstrap_pairing": "same time groups/draws; no invented mapping from historical processed row_id to source_row_id"
+  },
+  "robustness_assessment": {
+    "report": "all direction/size/interval changes,including adverse windows; no posthoc minimum number significant",
+    "claims": [
+      "combined threshold recall and cost",
+      "equal3percent combined capture",
+      "history component AP vs capture",
+      "weighting effects across windows",
+      "clipping and stage differences",
+      "capacity-specific tie stability",
+      "calibration quality vs constant reference"
+    ],
+    "c_activation": "written decision only after complete version comparison; test model dependence,not seek significance"
+  },
+  "paper_policy": {
+    "preserve_all_old_files": true,
+    "new_version_default": "v2 is deterministic computational version regardless of favourable or adverse outcomes; v1 retained as explicit comparison",
+    "revise": [
+      "abstract",
+      "contribution",
+      "discussion",
+      "all directly affected numeric references and necessary figures/tables"
+    ],
+    "no_external_publication": true
+  },
+  "dependency_versions": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "lightgbm": "4.7.0",
+    "duckdb": "1.5.5",
+    "pyarrow": "25.0.1",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  }
+}

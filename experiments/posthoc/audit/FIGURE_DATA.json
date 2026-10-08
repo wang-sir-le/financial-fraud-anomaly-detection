@@ -1,0 +1,56 @@
+[
+  {
+    "family": "LightGBM",
+    "effect": "H0",
+    "estimate": 208.4,
+    "lower": 175.8,
+    "upper": 244.6,
+    "confidence": 0.95,
+    "source": "audited intervals_all, L7, tp@0.03"
+  },
+  {
+    "family": "XGBoost",
+    "effect": "H0",
+    "estimate": 211.4,
+    "lower": 180.0,
+    "upper": 246.2,
+    "confidence": 0.95,
+    "source": "audited intervals_all, L7, tp@0.03"
+  },
+  {
+    "family": "LightGBM",
+    "effect": "H1",
+    "estimate": 1.0,
+    "lower": -10.8,
+    "upper": 9.4,
+    "confidence": 0.9875,
+    "source": "audited intervals_all, L7, tp@0.03"
+  },
+  {
+    "family": "XGBoost",
+    "effect": "H1",
+    "estimate": 9.6,
+    "lower": -8.351250000000022,
+    "upper": 19.6,
+    "confidence": 0.9875,
+    "source": "audited intervals_all, L7, tp@0.03"
+  },
+  {
+    "family": "LightGBM",
+    "effect": "D",
+    "estimate": -207.4,
+    "lower": -256.8,
+    "upper": -164.89749999999987,
+    "confidence": 0.9875,
+    "source": "audited intervals_all, L7, tp@0.03"
+  },
+  {
+    "family": "XGBoost",
+    "effect": "D",
+    "estimate": -201.8,
+    "lower": -247.15125,
+    "upper": -172.49749999999986,
+    "confidence": 0.9875,
+    "source": "audited intervals_all, L7, tp@0.03"
+  }
+]

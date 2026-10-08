@@ -1,0 +1,9 @@
+fold,model,seed,metric,match,original,reconstructed,dataset,layer,explanation
+1.0,P0,42.0,raw_probability_hash,False,b5828d1eea93ebea0be46ea49a056a7939e062402eac28029093295c9ba3189f,ee6e6ccaaddd95a38f8fa311b448275e2c3244d84411707a34431e682bf0dd81,paysim,scientific_or_score_hash,
+1.0,P0,42.0,calibrated_probability_hash,False,4cf7c49d89fe72be0a84077c41332ef9467d21b35755998964153d39cf2dea0c,68d8a0c3d74cfe62478c4d80737738bbb9237538a951e7a7b0adfbc16ab84ad6,paysim,scientific_or_score_hash,
+1.0,P0,42.0,threshold,False,0.050229088137947256,0.14885323322189817,paysim,scientific_or_score_hash,
+1.0,P0,42.0,tp,False,71,67,paysim,scientific_or_score_hash,
+1.0,P0,42.0,fp,False,1,0,paysim,scientific_or_score_hash,
+1.0,P0,42.0,fn,False,427,431,paysim,scientific_or_score_hash,
+1.0,P0,42.0,pr_auc,False,0.15814116188785596,0.15424310192416366,paysim,scientific_or_score_hash,
+,,,prediction_scores.parquet SHA256,False,1a7cfa679bbd1ec4ae7edd7f36e3e6517839d33fe2f782f6e15c09585c44f81d,1f5ac98b223f7776b9a4d99eaa77adb0b81a589ee5d971ee9c7aaf294df89e8f,ieee_cis,provenance_metadata,Only protocol_hash column differs; scores and decisions exact

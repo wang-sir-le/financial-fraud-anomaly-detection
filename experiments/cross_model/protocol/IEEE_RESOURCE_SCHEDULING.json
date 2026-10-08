@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-24T04:26:52.235584+00:00",
+  "previous_worker_limit": 2,
+  "worker_limit": 3,
+  "available_GiB_before_launch": 9.670402526855469,
+  "per_fit_thread_limit": 1,
+  "scientific_protocol_change": false,
+  "basis": "Resource-only scheduling change; spare memory after PaySim completion; never based on result direction"
+}

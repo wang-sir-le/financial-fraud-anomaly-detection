@@ -1,0 +1,64 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-09-23T13:05:08.109332+00:00",
+  "config_sha256": "df5fd175e25816c368e2cfda32ef2c72275494b081eba96dc6e87a00f09990d9",
+  "completed_utc": "2026-09-23T13:09:58.735829+00:00",
+  "details": {
+    "branches": 90,
+    "detector_refits": 0,
+    "checks": {
+      "expected_model_trainings": 30,
+      "actual_model_trainings": 30,
+      "expected_branch_rows": 90,
+      "actual_branch_rows": 90,
+      "shared_raw_hash_check": true,
+      "fixed_data_check": true,
+      "platt_spearman_min": 0.9072469037553363,
+      "platt_validation_disagreement_total": 0,
+      "platt_test_disagreement_total": 0
+    },
+    "isotonic_parameter_replay": "30 exact score checks"
+  },
+  "files": [
+    {
+      "name": "calibration_ablation_results.csv",
+      "sha256": "f0bd568a29156610cec956cf0e866cf913d0e15a0ccf7b616d7af8916eb995da",
+      "bytes": 99204
+    },
+    {
+      "name": "calibration_ablation_summary.csv",
+      "sha256": "81755e5d32c99b7bd1a1b8657dc6eec8732adbe06eef9002795c13970347e8dc",
+      "bytes": 21401
+    },
+    {
+      "name": "calibration_bayes_decision_results.csv",
+      "sha256": "cf3abbd3f19dec80b4cfd879004e3b8ace240cf09a2838b58e4d3cd233505b9d",
+      "bytes": 29037
+    },
+    {
+      "name": "calibration_curve_points.csv",
+      "sha256": "e609a6e3c28c4d07ba44bbfea3f198536f486a47bc0c37f255fbadf6e8cf452e",
+      "bytes": 391500
+    },
+    {
+      "name": "calibration_decision_invariance.csv",
+      "sha256": "3fbeccafedd48f76fa1f21dc5aa3cd447fe0b192203dcbb4cd08a341a1ed1717",
+      "bytes": 12259
+    },
+    {
+      "name": "calibration_pairwise_reliability.csv",
+      "sha256": "ffabead0357f8b61506527477a5ec36d386e2b16c7951e62aac5d736d8a903cd",
+      "bytes": 14640
+    },
+    {
+      "name": "constant_reference_fold.csv",
+      "sha256": "65dc0543cd940408eeba93d532827cbbd0052f4566ee314d765cdfde8c5ebc14",
+      "bytes": 435
+    },
+    {
+      "name": "constant_reference_seed.csv",
+      "sha256": "04b4289bfd9a1206ed84354fa81797adb60f4c0e93d2391d115fa00c8e775a7e",
+      "bytes": 1779
+    }
+  ]
+}

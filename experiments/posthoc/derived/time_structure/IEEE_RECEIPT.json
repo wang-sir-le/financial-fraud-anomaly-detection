@@ -1,0 +1,31 @@
+{
+  "status": "completed_posthoc_description",
+  "input": "${WORKSPACE}\\experiment\\outputs\\ieee_cis\\model_results\\prediction_scores.parquet",
+  "sha256": "1a7cfa679bbd1ec4ae7edd7f36e3e6517839d33fe2f782f6e15c09585c44f81d",
+  "columns_read": [
+    "TransactionID",
+    "TransactionDT",
+    "isFraud"
+  ],
+  "model_scores_read": false,
+  "lineage": [
+    {
+      "fold": 1,
+      "alignment_hash": "1809f068d66723ebf66d149800e58927c6a024470724d2d89bfa1f28cdde35b2",
+      "alignment_file": "${WORKSPACE}\\experiment\\outputs\\cross_model_v1\\run_20260924_01\\analysis\\ieee_cis\\1_M0\\alignments.json"
+    },
+    {
+      "fold": 2,
+      "alignment_hash": "d604fc8dd6efdd40409708592a9a40aad387264c36acc982507ebec57b2238e0",
+      "alignment_file": "${WORKSPACE}\\experiment\\outputs\\cross_model_v1\\run_20260924_01\\analysis\\ieee_cis\\2_M0\\alignments.json"
+    },
+    {
+      "fold": 3,
+      "alignment_hash": "1c85086aaadce54ad333eff2fda77104a5f94fedc8f8fcca57d7792471d14fb1",
+      "alignment_file": "${WORKSPACE}\\experiment\\outputs\\cross_model_v1\\run_20260924_01\\analysis\\ieee_cis\\3_M0\\alignments.json"
+    }
+  ],
+  "unit": "TransactionDT relative elapsed field units; no calendar dates inferred",
+  "span_definition": "last observed timestamp minus first, over every eligible contiguous block; not end-exclusive support duration",
+  "new_bootstrap_draws": 0
+}

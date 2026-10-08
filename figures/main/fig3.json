@@ -1,0 +1,102 @@
+{
+  "sources": [
+    {
+      "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\primary\\timeblock_bootstrap_fold_summary.csv",
+      "sha256": "2c56c3724d7785a3af10c60aa2ea25eeff135a47638c194df5916b85047ca284"
+    },
+    {
+      "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\primary\\timeblock_bootstrap_overall_summary.csv",
+      "sha256": "0ae028e64d91206a6dbf84405147673d53cffbfb58859e80340f042219cdfc5d"
+    }
+  ],
+  "contrast": "PTHW - P0",
+  "filter": "delta_recall and delta_pr_auc; folds 1-3 plus equal_fold_weight",
+  "interval": "Existing paired moving-block percentile 95% intervals, 5000 draws; no draws reopened.",
+  "panels": [
+    {
+      "metric": "delta_recall",
+      "unit": "percentage points",
+      "scale": 100,
+      "points": [
+        {
+          "label": "Fold 1",
+          "estimate": 58.31325301204819,
+          "lower": 51.65339246387306,
+          "upper": 67.17056193829333,
+          "confidence": 0.95,
+          "summary": "within-fold"
+        },
+        {
+          "label": "Fold 2",
+          "estimate": 55.06410256410257,
+          "lower": 46.56050955414013,
+          "upper": 67.115625,
+          "confidence": 0.95,
+          "summary": "within-fold"
+        },
+        {
+          "label": "Fold 3",
+          "estimate": 41.0308182784272,
+          "lower": 37.767964009287816,
+          "upper": 44.7151080633183,
+          "confidence": 0.95,
+          "summary": "within-fold"
+        },
+        {
+          "label": "Equal-fold",
+          "estimate": 51.46939128485932,
+          "lower": 47.77237088451066,
+          "upper": 56.761048820258864,
+          "confidence": 0.95,
+          "summary": "secondary"
+        }
+      ]
+    },
+    {
+      "metric": "delta_pr_auc",
+      "unit": "AP original scale",
+      "scale": 1,
+      "points": [
+        {
+          "label": "Fold 1",
+          "estimate": 0.15358288905650697,
+          "lower": 0.038855001678363886,
+          "upper": 0.3514581200563393,
+          "confidence": 0.95,
+          "summary": "within-fold"
+        },
+        {
+          "label": "Fold 2",
+          "estimate": -0.04749678705778721,
+          "lower": -0.10777409574148833,
+          "upper": 0.08189816691434029,
+          "confidence": 0.95,
+          "summary": "within-fold"
+        },
+        {
+          "label": "Fold 3",
+          "estimate": -0.07892809896818756,
+          "lower": -0.13310963256574518,
+          "upper": -0.0183751599579654,
+          "confidence": 0.95,
+          "summary": "within-fold"
+        },
+        {
+          "label": "Equal-fold",
+          "estimate": 0.009052667676844067,
+          "lower": -0.03831193835109006,
+          "upper": 0.08908114472305362,
+          "confidence": 0.95,
+          "summary": "secondary"
+        }
+      ]
+    }
+  ],
+  "point_count": 8,
+  "figure": "fig3",
+  "width_in": 6.6,
+  "height_in": 2.439084645669291,
+  "original_image": "${WORKSPACE}\\experiment\\tmp\\kais_figure_redraw_20261007\\run_01\\originals\\main_image11.png",
+  "original_image_sha256": "caf1b8cc77b867a413c17b11672cacf770465911059a214427544018a8a7406a",
+  "boundary": "Previously saved aggregate results only; no new fitting, prediction, ranking, AP or uncertainty computation."
+}

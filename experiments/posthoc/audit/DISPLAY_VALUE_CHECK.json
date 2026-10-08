@@ -1,0 +1,210 @@
+{
+  "checks": [
+    {
+      "item": "Main Table 5 LightGBM/B0",
+      "pass": true
+    },
+    {
+      "item": "Main Table 5 LightGBM/B0H",
+      "pass": true
+    },
+    {
+      "item": "Main Table 5 LightGBM/B1",
+      "pass": true
+    },
+    {
+      "item": "Main Table 5 LightGBM/B1H",
+      "pass": true
+    },
+    {
+      "item": "Main Table 5 XGBoost/B0",
+      "pass": true
+    },
+    {
+      "item": "Main Table 5 XGBoost/B0H",
+      "pass": true
+    },
+    {
+      "item": "Main Table 5 XGBoost/B1",
+      "pass": true
+    },
+    {
+      "item": "Main Table 5 XGBoost/B1H",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0/42",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0/52",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0/62",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0/72",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0/82",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0/42",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0/52",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0/62",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0/72",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0/82",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0H/42",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0H/52",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0H/62",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0H/72",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B0H/82",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0H/42",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0H/52",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0H/62",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0H/72",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B0H/82",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1/42",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1/52",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1/62",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1/72",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1/82",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1/42",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1/52",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1/62",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1/72",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1/82",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1H/42",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1H/52",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1H/62",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1H/72",
+      "pass": true
+    },
+    {
+      "item": "S27 LightGBM/B1H/82",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1H/42",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1H/52",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1H/62",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1H/72",
+      "pass": true
+    },
+    {
+      "item": "S27 XGBoost/B1H/82",
+      "pass": true
+    },
+    {
+      "item": "All six S33 bounds",
+      "pass": true
+    },
+    {
+      "item": "All twelve S34 averages",
+      "pass": true
+    },
+    {
+      "item": "All sixty S35 pairs",
+      "pass": true
+    }
+  ],
+  "total": 51,
+  "pass_count": 51
+}

@@ -1,0 +1,13 @@
+dataset,fold,contrast,score_stage,estimable,unavailable_models,reason
+ieee_cis,1,I_HISTORY,raw_probability,True,,
+ieee_cis,1,I_WEIGHT,raw_probability,True,,
+ieee_cis,1,I_PRIMARY,raw_probability,True,,
+ieee_cis,1,I_ENTITY,raw_probability,True,,
+ieee_cis,2,I_HISTORY,raw_probability,True,,
+ieee_cis,2,I_WEIGHT,raw_probability,True,,
+ieee_cis,2,I_PRIMARY,raw_probability,True,,
+ieee_cis,2,I_ENTITY,raw_probability,True,,
+ieee_cis,3,I_HISTORY,raw_probability,True,,
+ieee_cis,3,I_WEIGHT,raw_probability,True,,
+ieee_cis,3,I_PRIMARY,raw_probability,True,,
+ieee_cis,3,I_ENTITY,raw_probability,True,,

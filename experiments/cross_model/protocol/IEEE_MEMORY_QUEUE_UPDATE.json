@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-09-24T05:38:06.033653+00:00",
+  "reason": "Protect the next preprocessing peak whichever remaining first-window job finishes first",
+  "boundary_policy": "Pause first completed M2 or M3 at full checkpoint; use two larger-window workers",
+  "actual_paused_model": "M2",
+  "pending_order": [
+    "M0",
+    "M2"
+  ],
+  "scientific_changes": []
+}

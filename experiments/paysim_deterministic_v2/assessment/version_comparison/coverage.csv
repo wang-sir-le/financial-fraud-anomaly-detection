@@ -1,0 +1,16 @@
+analysis,key_rows,numeric_cells,changed_cells
+all_scenarios,660,9240,7607
+score_stage_models,225,1575,969
+score_stage_contrasts,225,225,225
+capacity_models,900,13500,10475
+capacity_contrasts,180,1080,1080
+priority_summaries,180,720,537
+component_intervals,108,648,312
+processing_intervals,54,324,62
+primary_intervals,15,135,75
+secondary_overall_intervals,5,45,25
+calibration_ablation_results,90,7740,5234
+calibration_bayes_decision_results,90,1890,1502
+calibration_decision_invariance,60,1140,619
+calibration_pairwise_reliability,90,630,456
+block_sensitivity,45,225,135

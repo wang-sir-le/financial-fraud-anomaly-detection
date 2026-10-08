@@ -1,0 +1,101 @@
+{
+  "time_utc": "2026-09-25T14:10:20.705220+00:00",
+  "freeze_sha256": "58917a520eee2d50f167c0a0be1e8e805a8db420c03d7375fca625a2d908c1f6",
+  "chosen": {
+    "LightGBM": {
+      "id": "C07",
+      "num_leaves": 31,
+      "min_child_samples": 100,
+      "n_estimators": 200
+    },
+    "XGBoost": {
+      "id": "C04",
+      "max_depth": 3,
+      "min_child_weight": 10,
+      "n_estimators": 500
+    }
+  },
+  "rule": "validation TP@3%, AP, fewer trees, C01-C08",
+  "tuning_records": [
+    {
+      "path": "models/tuning/LightGBM_C01/record.json",
+      "bytes": 2322,
+      "sha256": "a2a647433b83587ea130da215d5213df3a92aa3c8e7f5f9e94aa114966125d88"
+    },
+    {
+      "path": "models/tuning/LightGBM_C02/record.json",
+      "bytes": 2332,
+      "sha256": "1cfbcad0d226c42a2fd3c647112fbab9acfac50f13dba4361dd57f8760efeff3"
+    },
+    {
+      "path": "models/tuning/LightGBM_C03/record.json",
+      "bytes": 2335,
+      "sha256": "ad17039c54257b59f3d037d8e1912640e01ab74f8ef99b5c559f28e1c757c145"
+    },
+    {
+      "path": "models/tuning/LightGBM_C04/record.json",
+      "bytes": 2333,
+      "sha256": "e2625288a2702213bf5c578a8d059cc7c653b4d69637bc2a862c15a630dd0b92"
+    },
+    {
+      "path": "models/tuning/LightGBM_C05/record.json",
+      "bytes": 2333,
+      "sha256": "0cabced4100723131d8d1da0087232f3e3a753ef7d7e0ed7c3a189f191da1be7"
+    },
+    {
+      "path": "models/tuning/LightGBM_C06/record.json",
+      "bytes": 2334,
+      "sha256": "8b547864595bc4a0938f82ebdecd152ed231e5c42ddf1c69468f40d7264dd4cf"
+    },
+    {
+      "path": "models/tuning/LightGBM_C07/record.json",
+      "bytes": 2334,
+      "sha256": "e0acb976fd98e19ab1db01cbf4b86f5b7bb378344d3b94de7129a2afb7ac5b7e"
+    },
+    {
+      "path": "models/tuning/LightGBM_C08/record.json",
+      "bytes": 2336,
+      "sha256": "227b1a55d5ff5d9a1ade1ca3fddd0e79edc20bdf427f7e4cc28d61e3077eb13e"
+    },
+    {
+      "path": "models/tuning/XGBoost_C01/record.json",
+      "bytes": 2310,
+      "sha256": "22171f449bd31b8af8b56eb2e2d530aa5c373de4f9b50e517a47111e674d5358"
+    },
+    {
+      "path": "models/tuning/XGBoost_C02/record.json",
+      "bytes": 2322,
+      "sha256": "6fcbdb87810738b8ab1da2f9d07fd006a9f97a77fcc67c3d66f10ffd81db3f22"
+    },
+    {
+      "path": "models/tuning/XGBoost_C03/record.json",
+      "bytes": 2320,
+      "sha256": "4908060705ddc097e1fc727c4d1415d26f476de9c97334c8bec45bde7bfe49df"
+    },
+    {
+      "path": "models/tuning/XGBoost_C04/record.json",
+      "bytes": 2322,
+      "sha256": "6a455a95439d4b48a1f1911024b38aa5bdf7cad854f537256a99301234cd0721"
+    },
+    {
+      "path": "models/tuning/XGBoost_C05/record.json",
+      "bytes": 2308,
+      "sha256": "b2f530ffe588e1e3124a4e30029364a735f82d92d256219849367e5de4c23e31"
+    },
+    {
+      "path": "models/tuning/XGBoost_C06/record.json",
+      "bytes": 2309,
+      "sha256": "c86f6649d2a021acf75f31cf484cee37de34e192489363db679fe52d1e504213"
+    },
+    {
+      "path": "models/tuning/XGBoost_C07/record.json",
+      "bytes": 2322,
+      "sha256": "d4b1787752b2dff2f942698257ca8f93bfa68da5b486d24fbe08742923df659d"
+    },
+    {
+      "path": "models/tuning/XGBoost_C08/record.json",
+      "bytes": 2323,
+      "sha256": "08f04c037952f152bfb6d45b6dee8f7b537343f251e8f64fad92919f4717a218"
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+[
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_access_design_20261006\\run_01\\商户直接输入与历史可访问范围：最小实证设计.md",
+    "sha256": "761395783350b83e146ae525b16c291353a92773c3189fa201539129c2505402"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\范围调整记录.md",
+    "sha256": "68a53d1a8cb112e37a0baf2c60dfa8fd8100fe69e7044b9a3f6f201facfb2fd5"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\执行预算表.md",
+    "sha256": "aa62d8373529eaafba29da937a621e0d1f99b470b94c547c90ef0221a7874188"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\交付说明与人工验收结果.md",
+    "sha256": "87bcde9b6134b339ad075215eb572159eaf51b84ffee1efdaebbb0e0a8bad57b"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\code\\contract_kernel.py",
+    "sha256": "c4aed881adfad0cc6e1ea55cc470ac0a69a011f3dcf7d418ef552e37065a0f4d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\code\\run_artificial_tests.py",
+    "sha256": "087243bdc831913201aee8dfebd93c574aaa8a2ce52a1eaf98df1e694a679573"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\results\\attempt_01\\test_results.json",
+    "sha256": "a612a9ebef86c9525793184f00951abd082e63cc8de0371e8944a9f4fe1f3ec4"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\results\\attempt_02\\test_results.json",
+    "sha256": "86be51f86726aedb8b243aceb6c20e7f669129887173ca7b6de33ade07cedf42"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\ARTIFACT_MANIFEST.json",
+    "sha256": "16e43da895e5f5e20619f76452cf2636830f9662389c859e7c806fb31913fd0f"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\artificial\\ENVIRONMENT_METADATA.json",
+    "sha256": "c6b5d52f2cf6b005b08dffb93a03c34e2477f4c65f3e23b4eca982546acd222d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\artificial\\FINAL_NATIVE_TRACE.json",
+    "sha256": "c3fc041d4b05a1888ec2c2d580e7064be39f28f253b5f072147f18833372305e"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\artificial\\NATIVE_ACCEPTANCE.json",
+    "sha256": "47b2c08b4ac8138165c09a5293097c984afd038704edfb4c19c32ae8641a5405"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\artificial\\NATIVE_C07_PARAMETERS.json",
+    "sha256": "a78766297c35421fbab8f41562b44612a60ed0083e421d6a684726e09d9fd6b5"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\artificial\\NATIVE_FIXTURE.zip",
+    "sha256": "57a46e31a061de92df1a05fe43d3b42652df6deed1977a298479772dd966bc75"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\artificial\\reference\\contract_kernel.py",
+    "sha256": "c4aed881adfad0cc6e1ea55cc470ac0a69a011f3dcf7d418ef552e37065a0f4d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\artificial\\reference\\run_artificial_tests.py",
+    "sha256": "087243bdc831913201aee8dfebd93c574aaa8a2ce52a1eaf98df1e694a679573"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\COSTS.json",
+    "sha256": "0eea1276bf6247df91bdf1909767964861fb49fcd0004b83a16bb41e44565a9c"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\DEVELOPMENT_COST.json",
+    "sha256": "27d57b79ae27bd04d640fd1f41af3efd036aa049b40d2b4327bea0f566e8a005"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\ENTRY_CLOCK.json",
+    "sha256": "4f61ad637bd15684c3f0f17654359b3d2b2003603ff79816206b963013b51317"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\ENTRY_PLAN.json",
+    "sha256": "6e3b0153ac8bda8814a06055c4158d01a7109ebe79201786b2e5bb9d65cb1f6a"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\events.jsonl",
+    "sha256": "1813e101d6cf20ccbf706091abd8e85f4fe00d2d4691e3feaae0248f7abf8bf4"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\EXIT_CLOCK.json",
+    "sha256": "c1d4775d0238cc01b07b8616f5f00b12b687dc6ce5d1c052d6d87d5c101e4a6d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\FAILURE_TRACEBACK.txt",
+    "sha256": "96a48089f7d745bbba915e20277658db205715848092f0392b40de564a9c76dd"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\global_execution\\ack.json",
+    "sha256": "122b33a2d2288bf625b80950e9c76407abb6a9a5cc0baa8dff18524fe77a0070"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\global_execution\\gate.txt",
+    "sha256": "f963bd4525eeca90cfbb6dba5f21fea5e57c99c270fdb36fa0c79e4ed9bf2b15"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\global_execution\\RESOURCE.json",
+    "sha256": "040663dd2be2e39103af0afa78e9c236388a9f676596d2ded76464daa980fbf4"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\global_execution\\RSS_CPU_DISK.jsonl",
+    "sha256": "06ba15b10eb8b47975a8d7a3f29b3c17751f579c517ff62559e071d36a8a0932"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\global_execution\\stderr.log",
+    "sha256": "39c55088d9f1ee49547cb596b9d5627993fc10750fac41e529e91f919bed5cc9"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\global_execution\\stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\INVOCATION_EXIT.json",
+    "sha256": "3d413976fd1592f64fb00e44ff89be865ecf66fe81ac61209cfef848bc771aae"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\PIPELINE_STATUS.json",
+    "sha256": "8d524ee8d04d5eec8d9f4bdc0f1e19d644adda80bfc1d7f63881c2986a54c06f"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\POST_STOP_CODE_UNCHANGED.json",
+    "sha256": "b8222fd3f02eb0e01efe26071dc048b4a8e4c605ce3301fbd8910da5cc2b35a6"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\POST_STOP_REVIEW.json",
+    "sha256": "e4659b9c1eaac12cec52822a0699f11c872a15604cb99df9a85e435106b863a3"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\POST_STOP_REVIEW_timezone_parse_error.json",
+    "sha256": "1e7c843dc344cae14481a5a5c43bc343c789aa6b63f31254b6e94556b55140c2"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\PROTECTED_AFTER.json",
+    "sha256": "bd5c00f4026c8d9832322393df4e2cb071c1de3ef2a6b4bb4f8113978083f401"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\PYTHON_SCOPE_AUDIT.json",
+    "sha256": "e68052a74b7fef0384537f51f118ef4bdba41bfe7c5cdf2ea8d6ff35aea33cba"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\SCOPE_ACCESS_SUMMARY.json",
+    "sha256": "68968d4bcf2e4c3eba0d12e961b4ac104a5d75108117313635338a82d447fd01"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\bandit_final.json",
+    "sha256": "d13d837fd147d611ec98c0152ba0fd3cb5cba32addec8e7fb782aa149a2510a8"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\bandit_first.json",
+    "sha256": "ac01205f69a9322a84d831128cfb56ea392f624252be5d9fc780fbbf99a619c5"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\FINAL_AUDIT.json",
+    "sha256": "459008916472beb73dc257a152ed072b1319dadd206c83b3c2caccd2306783d7"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\.gitignore",
+    "sha256": "ffbb394643c112f2356bb5f3184e95e33fd732146892f4eeead126975570ff39"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.0.db",
+    "sha256": "38308c87b4ff5d3b39d4cefd2d1c812939c4753800b0d63b304249911ab3f5c5"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.1.db",
+    "sha256": "918d513ba7b31a6427f0f15c674cb3763328dd7c7b774f7d54b85faf34bd2b54"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.10.db",
+    "sha256": "3b19b48bf86dd7c068a9129151d9f893434feb8037c6bcdee2de84f8499e7a37"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.11.db",
+    "sha256": "44a66337b1fdd9164b290d29cd1ab2d34511d31bd284a810a34638ac34a33506"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.12.db",
+    "sha256": "eb409d790a4b6be234c366fd21caf7a15527ba83afffe3f2a079fe01594af636"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.13.db",
+    "sha256": "ef89537e1705455e65c2d3e15f772321bde34b7a428d065afb4b19f0b4443f2a"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.14.db",
+    "sha256": "2d236e160e4d5a386accd7c7cf70c18475f8e51bf6466448aa885fc38d369109"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.15.db",
+    "sha256": "0af422785da38cb7b66781dd10ee2908ec9057476521d4c7a25d11b9e8eff3f0"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.2.db",
+    "sha256": "05d46af54cea3f7410005e270bf25466e19b18a9c08446c0229b595dd674a277"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.3.db",
+    "sha256": "dbfe6e8661193874c4e4ef8c72a463d5100c3a9033ff439839dece88285c6f53"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.4.db",
+    "sha256": "eb688c0de760baab156eef23268d2a82d334489546b7560b5ecf86efade8dc82"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.5.db",
+    "sha256": "78ef4a824413a05d71f9b6a0fefac03e20009a1d0cf25d30d212e97e45512087"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.6.db",
+    "sha256": "3af7b34d974e214f302c6307853d3bf9f4ca131cdf6ca28b70c957c66039d4ea"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.7.db",
+    "sha256": "83423cb68ff3e871bae60194edd7c902bf81882b59376d43fe118482801041be"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.8.db",
+    "sha256": "192b48ad40fbac28a47b097a91492d9cd8898c340002f44f0f976b6201eaba98"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\3.11\\cache.9.db",
+    "sha256": "f511c45e576f3361d78192521764dda65f85cfbc8106865a3ba6b0f9a714e5d5"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\mypy_cache\\CACHEDIR.TAG",
+    "sha256": "70ebb54facb76f7dab3058261eefb43a2315d28d10fcf90a85538c05a72b8d1e"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\ruff_before_final.json",
+    "sha256": "d20fef2ed43c4e611da937160bce0cc4286fce6bd7690586501533f8e8ab2300"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\ruff_cache\\.gitignore",
+    "sha256": "9e3a60f1e6ec4ae60215c11d54b171392745ec25e9dded433d5bd921363af316"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\ruff_cache\\0.16.2\\10722297579825261597",
+    "sha256": "9d527b30ec4cfe4eb0ab5068b9d8b0d1f9062c8df6f77d99dc7d4b4207e9a8c2"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\ruff_cache\\CACHEDIR.TAG",
+    "sha256": "5953156d7e0c564a427251316eaf26f8870e6483ae2197f916b630e4f93e31ae"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\static\\ruff_final.json",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\audit\\自动生成报告原貌.md",
+    "sha256": "447cf212d08609511b1da43e03e2afbc8d27b3cf5f52d0e5041109eac9460e16"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\delivery.py",
+    "sha256": "b9507fb98489204b1a297332b9bfef02f9c9fede49c42f72242ae41ade1940b1"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\entry.py",
+    "sha256": "61ba4f2540c570d279cbe21d8190d3ffca08b6292967373c057d6fea978c63fb"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\launch.py",
+    "sha256": "674073b42bb7729a26f35e6408699a49c4f2d44849598a6fb6bc1fae07036b72"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\model_worker.py",
+    "sha256": "547255158a49d32d8ec202811409c104be0365f76bbc9dccb5794d4c438cf3c4"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\native_batch.py",
+    "sha256": "094f52b23fee672557e6464a927d71ae30d5b72af16441211da0123382c6903d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\native_common.py",
+    "sha256": "38ce9e6174a6c255c0b39996c1f05f59629a51edb87605cd5fef6af251dbb4bc"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\phase1.py",
+    "sha256": "ab4f2d2dd1706fba44e8393d9d79b7a623cbf4549fca8aa0555750347ea5aa5c"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\pipeline.py",
+    "sha256": "8e99076fd8ab373e1969528863b32184ca6ae313e74df3c2a0063010c036dbfb"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\source_io.py",
+    "sha256": "528b1ce566abf1fef2f6d6123561ed4efc63e911cd0351969dc965985e3c70dc"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\code\\supervision.py",
+    "sha256": "2a2fb248bd6016265818786ce0571f93363e1518403692cadf72aaa8a54292fa"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\config\\C07_PARAMETERS.json",
+    "sha256": "4ef56d0fd29ab458f55eb7d94f5104e957622785796b45ef40129a0f8a95ae72"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\config\\EXECUTION_CONFIG.json",
+    "sha256": "08913fdd02e3cc5db34a764b9a745bb8719852294a92e5db30fce4cc244a838a"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\config\\PROTECTED_BASELINE.json",
+    "sha256": "f02c2b90479aa65a63906210d097363aa007bb306c8db77bed29182cf3622b30"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\FINAL_STATUS.json",
+    "sha256": "46d51f3943a331f9010860614bbe347f311d9858ed45e2c881e6c0430f652cb3"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\results\\执行成本与调用.csv",
+    "sha256": "3af84da4a957d8d3a2209e48058b5c2fa64f7b4bda314c6f340352ec2351b1e0"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\六组回顾开发结果与下一步投入判断.md",
+    "sha256": "14084735e0cdcd7f228205e193766374461c72f9335c0d942c1e7d1531b7ba0d"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_retrospective_execution_20261006\\run_01\\授权范围与计时口径.md",
+    "sha256": "309f6f659bf524033d05f360b02301f49ed773ff108fff38cfeb514753c5230b"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "key": {
+    "dataset": "paysim",
+    "fold": 3,
+    "contrast": "P_WEIGHT",
+    "role": "core",
+    "score_stage": "platt",
+    "decision_rule": "fixed_budget",
+    "family": "LightGBM",
+    "metric": "delta_tp"
+  },
+  "draws": 5000,
+  "min": -214.6,
+  "max": 1100.8,
+  "mean": 196.20176,
+  "median": 164.1,
+  "q025": -166.2,
+  "q975": 746.8,
+  "observed_estimate": 39.4,
+  "source_sha256": "f921c67a3395f489ceb5529c7d2cf99e7cbb174abdbe6b5ae3ad7a16025755d0",
+  "protocol_sha256": "8993d2cbfa7e9b2d3c053b071da918248715e97020b679b7761bb92c6d373677",
+  "aggregation": "Five paired seed effects averaged within each existing draw; analysis.py lines 427-448",
+  "block_length": 7,
+  "test_steps": 345,
+  "tail_cause": "Not identified; no new resampling or tail attribution performed."
+}

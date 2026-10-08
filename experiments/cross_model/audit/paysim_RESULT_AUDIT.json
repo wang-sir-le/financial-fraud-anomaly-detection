@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "condition_coverage": [
+    {
+      "fold": 1,
+      "model": "P0",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        34
+      ]
+    },
+    {
+      "fold": 1,
+      "model": "PT",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        38
+      ]
+    },
+    {
+      "fold": 1,
+      "model": "PH",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        175
+      ]
+    },
+    {
+      "fold": 1,
+      "model": "PTH",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        124
+      ]
+    },
+    {
+      "fold": 1,
+      "model": "PTHW",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        181
+      ]
+    },
+    {
+      "fold": 2,
+      "model": "P0",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        37
+      ]
+    },
+    {
+      "fold": 2,
+      "model": "PT",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        37
+      ]
+    },
+    {
+      "fold": 2,
+      "model": "PH",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        125
+      ]
+    },
+    {
+      "fold": 2,
+      "model": "PTH",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        129
+      ]
+    },
+    {
+      "fold": 2,
+      "model": "PTHW",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        112
+      ]
+    },
+    {
+      "fold": 3,
+      "model": "P0",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        24
+      ]
+    },
+    {
+      "fold": 3,
+      "model": "PT",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        39
+      ]
+    },
+    {
+      "fold": 3,
+      "model": "PH",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        168
+      ]
+    },
+    {
+      "fold": 3,
+      "model": "PTH",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        103
+      ]
+    },
+    {
+      "fold": 3,
+      "model": "PTHW",
+      "converged": true,
+      "point_rows": 12,
+      "expected": 12,
+      "attempts": 1,
+      "iterations": [
+        194
+      ]
+    }
+  ],
+  "paired_estimands": 147,
+  "all_paired_difference_identities_exact": true,
+  "lightgbm_reference_interval_rows": 81,
+  "lightgbm_reference_maximum_abs_difference": 5.551115123125783e-17,
+  "interval_rows": 441,
+  "replicate_rows": 2205000,
+  "all_intervals_pointwise_conditional": true
+}

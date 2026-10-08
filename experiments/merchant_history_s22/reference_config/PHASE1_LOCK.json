@@ -1,0 +1,38 @@
+{
+  "status": "NATIVE_ACCEPTANCE_PASS_BEFORE_REAL_DATA",
+  "time_utc": "2026-10-06T11:18:36.939991+00:00",
+  "code_sha256": {
+    "artificial\\reference\\contract_kernel.py": "c4aed881adfad0cc6e1ea55cc470ac0a69a011f3dcf7d418ef552e37065a0f4d",
+    "artificial\\reference\\run_artificial_tests.py": "087243bdc831913201aee8dfebd93c574aaa8a2ce52a1eaf98df1e694a679573",
+    "code\\delivery.py": "f67080c99f96e1fc841344c504902b7560e7bccbc9e8cf8a866b69ba6d05dda4",
+    "code\\entry.py": "61ba4f2540c570d279cbe21d8190d3ffca08b6292967373c057d6fea978c63fb",
+    "code\\identity_check.py": "681b3e79d022dd9a216f6cacaa0c4a9d7498c72887eff4db4b2a3a88151d7071",
+    "code\\launch.py": "b1441666472c25baaa98fe1d43349a0185a3c2bdd42a09e955786b89828a94d6",
+    "code\\model_worker.py": "547255158a49d32d8ec202811409c104be0365f76bbc9dccb5794d4c438cf3c4",
+    "code\\native_batch.py": "094f52b23fee672557e6464a927d71ae30d5b72af16441211da0123382c6903d",
+    "code\\native_common.py": "38ce9e6174a6c255c0b39996c1f05f59629a51edb87605cd5fef6af251dbb4bc",
+    "code\\phase1.py": "444e34b7a6c9313e414ec3b4bc917b81232c2dd2b1aa7c93d9107385c60fa0ea",
+    "code\\pipeline.py": "8e99076fd8ab373e1969528863b32184ca6ae313e74df3c2a0063010c036dbfb",
+    "code\\source_io.py": "528b1ce566abf1fef2f6d6123561ed4efc63e911cd0351969dc965985e3c70dc",
+    "code\\supervision.py": "2a2fb248bd6016265818786ce0571f93363e1518403692cadf72aaa8a54292fa",
+    "code\\tail_budget.py": "63b0641963d4d033d47e6c62a7fe04ad5c279526818dafdd2cbb128b87a4e0b1"
+  },
+  "config_sha256": "e7147cdc5f88390f0791ef62e2faf06b2adf9c45fb5c89031554cbfc9df0ec78",
+  "parameter_sha256": "4ef56d0fd29ab458f55eb7d94f5104e957622785796b45ef40129a0f8a95ae72",
+  "expected_source": {
+    "archive": "${WORKSPACE}/experiment/outputs/banksim_validation_v1/run_20260925_01/inputs/banksim_v1.zip",
+    "archive_sha256": "3bfd0c2bfbdec83ad36eed499eaf38c6951c36be864ecbe30f3bcb7d84895f66",
+    "member": "bs140513_032310.csv",
+    "member_sha256": "e37006f76d993bfaec3a02d717b4f0bdc1ebfa5d36449e91fb7c07e225278377"
+  },
+  "metrics": "fixed whole-window q=.03 and fixed segments",
+  "train_sample_selection": {
+    "split": "train",
+    "n_max": 64,
+    "selection": "first 64 training source_row_ids ascending, fixed before labels",
+    "equality": "bitwise float64 exact raw margin",
+    "predict_before_save": 1,
+    "predict_after_reload": 1,
+    "extra_fit": 0
+  }
+}

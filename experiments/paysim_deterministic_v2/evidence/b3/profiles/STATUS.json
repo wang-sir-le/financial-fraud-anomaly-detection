@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-09-23T13:03:56.026479+00:00",
+  "config_sha256": "df5fd175e25816c368e2cfda32ef2c72275494b081eba96dc6e87a00f09990d9",
+  "completed_utc": "2026-09-23T13:12:46.484540+00:00",
+  "details": {
+    "model_capacity_rows": 900,
+    "new_fits": 0
+  },
+  "files": [
+    {
+      "name": "capacity_contrasts_fold.csv",
+      "sha256": "6ac50147ac282add2587d91a622af4d87a8e692860a5962f7b0135cb69b4d3ab",
+      "bytes": 16777
+    },
+    {
+      "name": "capacity_contrasts_seed.parquet",
+      "sha256": "d4a34ee3ca631bc10cdd6eb535d585d8643182878bb57230413ee83d215b053d",
+      "bytes": 21938
+    },
+    {
+      "name": "capacity_tie_model.csv",
+      "sha256": "77a80cb5773933d4c017a2a4800fef6512ef7033a0c28ea9b15dbde468344f70",
+      "bytes": 178914
+    }
+  ]
+}

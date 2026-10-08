@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-09-23T13:03:55.321439+00:00",
+  "config_sha256": "df5fd175e25816c368e2cfda32ef2c72275494b081eba96dc6e87a00f09990d9",
+  "completed_utc": "2026-09-23T13:03:55.980150+00:00",
+  "details": {
+    "fold_draws": 15000,
+    "rng": "unchanged_original_paysim_stream"
+  },
+  "files": [
+    {
+      "name": "draw_index_hashes.parquet",
+      "sha256": "49effcd8c54ff86a98040ed22bb89c98c5d30cfef7ff487569ad2b10a4030bbb",
+      "bytes": 324523
+    },
+    {
+      "name": "paysim_1_multiplicities.npy",
+      "sha256": "2f4201dd7b2788170eecf6cdf5f833d548ed0020c7c95011bb33a138a3ae5d82",
+      "bytes": 430128
+    },
+    {
+      "name": "paysim_1_population.csv",
+      "sha256": "940d2cc35102e14506d2f246df2950e2de5c60be0318158117b353a11de891a8",
+      "bytes": 549
+    },
+    {
+      "name": "paysim_2_multiplicities.npy",
+      "sha256": "b3c2ed281eb7bebfd32d2eedc18ab5496a3f6b27ce5b648e4a46c6ed044898d1",
+      "bytes": 310128
+    },
+    {
+      "name": "paysim_2_population.csv",
+      "sha256": "bcec24789196a7f227c46318a2fcc5f1eacdc895a7a9c0466f6c47cf0ae8c5e8",
+      "bytes": 413
+    },
+    {
+      "name": "paysim_3_multiplicities.npy",
+      "sha256": "ba8add52d4f051614f11ddcfcf84c45a47f84f51d87d776380ec8ce7aa5d65ab",
+      "bytes": 3450128
+    },
+    {
+      "name": "paysim_3_population.csv",
+      "sha256": "b130a9302a8610e0e8201c971db62ce48f75066eeef16d8ff9a199cdbd23b702",
+      "bytes": 3874
+    }
+  ]
+}

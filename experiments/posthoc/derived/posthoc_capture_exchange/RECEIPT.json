@@ -1,0 +1,479 @@
+{
+  "status": "complete_posthoc_descriptive",
+  "source_lineage": [
+    {
+      "path": "analysis/test_metrics.json",
+      "bytes": 152906,
+      "sha256": "95d4fc412810dc4ae54848fa2b7c235484c5a11da12e843d48fac1666de52c6d",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\analysis\\test_metrics.json"
+    },
+    {
+      "path": "predictions/LightGBM_B0_42.npy",
+      "bytes": 1586616,
+      "sha256": "f64d1abe3b749b2f92e34550f30b1f7c34c82525d513d13fc5f5d0bbdaedbb9b",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0_42.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B0_52.npy",
+      "bytes": 1586616,
+      "sha256": "ed8723547fe95fd091c3ec63cc9b58cd16ab5bdc1a32afe565d69be5be315670",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0_52.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B0_62.npy",
+      "bytes": 1586616,
+      "sha256": "321e5e3dcdd74eb04d0b83ca0ab9aa8c6388330b022916908fe621baf1553359",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0_62.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B0_72.npy",
+      "bytes": 1586616,
+      "sha256": "a199420f701b8e0584a3fe7c0e42928eba4d5e5d14bf466f97f73c336fee2508",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0_72.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B0_82.npy",
+      "bytes": 1586616,
+      "sha256": "be0a3c0ac6d70133682aa11dfee5faabda3fa405d7f49e5250d09295051049e9",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0_82.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B0H_42.npy",
+      "bytes": 1586616,
+      "sha256": "fd0a99b30d5232dbe2504bb0a73039813b59e840497a0702dca67e55a434aabb",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0H_42.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B0H_52.npy",
+      "bytes": 1586616,
+      "sha256": "825cdc7cef4580396f642c39101d566eb95b6f0f90ae416c759ad9f1aa79434f",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0H_52.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B0H_62.npy",
+      "bytes": 1586616,
+      "sha256": "5bcf63e69f38161b5962b8782edeab1eabf216b702dc34a95fdbb21d2855fe0f",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0H_62.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B0H_72.npy",
+      "bytes": 1586616,
+      "sha256": "80393bf61d4009d0672e286065ba9d75b0a4b3664f341429d8122b703a64c45a",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0H_72.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B0H_82.npy",
+      "bytes": 1586616,
+      "sha256": "c2f9e0d6136dbd6584deb0ff7504d5c063e1998e433c5a784d7febd364f30055",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B0H_82.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1_42.npy",
+      "bytes": 1586616,
+      "sha256": "ba8822972dd8b3d87ba4bf9f0e00ecc3595cd13275b4b114d1b586f54f4b8ba4",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1_42.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1_52.npy",
+      "bytes": 1586616,
+      "sha256": "7f77f4c2324b917fe8c7590ef5ba26f435006eec91f9a9941e339103ccbcef82",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1_52.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1_62.npy",
+      "bytes": 1586616,
+      "sha256": "6638f4e72746a1b644121d3d19c781be9551a0a4ad06388c98b49efbc5905174",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1_62.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1_72.npy",
+      "bytes": 1586616,
+      "sha256": "7d2930e0af1041ebfe1409f930d710af93c20c3095bf8d4c0f0ca036be65dcf5",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1_72.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1_82.npy",
+      "bytes": 1586616,
+      "sha256": "93c493fc921ccfcd1ef65ed038322c64abe53c29abc948522be4554571b17089",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1_82.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1H_42.npy",
+      "bytes": 1586616,
+      "sha256": "ff6ccc14745e754a48595516e9bcf14356586e14478d5160acc685a4df63b8f3",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1H_42.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1H_52.npy",
+      "bytes": 1586616,
+      "sha256": "3e84cac28f10acdb94dafe9f18729a7d23a35f11e529e226140a34432a5e5954",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1H_52.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1H_62.npy",
+      "bytes": 1586616,
+      "sha256": "238caffa74bd82b3ea155ab390fb6e8e67e53df50eb1a9ce68d6749232526116",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1H_62.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1H_72.npy",
+      "bytes": 1586616,
+      "sha256": "89a1adcb273d2082390ec728fd2bfcbdce0d61ff0495b8553d65967f20bcdcba",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1H_72.npy"
+    },
+    {
+      "path": "predictions/LightGBM_B1H_82.npy",
+      "bytes": 1586616,
+      "sha256": "e5337918dfe7cce0c7201a42f8e0584dfc36d941de544b6afea8eeaa569623a6",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\LightGBM_B1H_82.npy"
+    },
+    {
+      "path": "predictions/test_labels.npy",
+      "bytes": 198439,
+      "sha256": "79353fc548df23f33b0a01941a38c723539b35eea3e0a3126e5b8ace2dfcc65f",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\test_labels.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0_42.npy",
+      "bytes": 1586616,
+      "sha256": "631108c249e46e7fbf7ec50d284b74c47461b1269cca19a33b27d3dee368c80d",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0_42.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0_52.npy",
+      "bytes": 1586616,
+      "sha256": "9e239f35e262c36860aa1d528a9808d08737ac7e8d7fe10f7f293ae801ab60e8",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0_52.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0_62.npy",
+      "bytes": 1586616,
+      "sha256": "0fc6332e3c9a4fc2cd51b34b1598e2fca128bc98eaf405a114f3cb189062f6ba",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0_62.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0_72.npy",
+      "bytes": 1586616,
+      "sha256": "2aca4d6d8b415d8769762234347eec681b61d4e401b564d3f79de7f88f896e98",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0_72.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0_82.npy",
+      "bytes": 1586616,
+      "sha256": "a263928537a0fac16f7c943cfa0a5385655e075a1c0b46355b1f67c9b3982232",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0_82.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0H_42.npy",
+      "bytes": 1586616,
+      "sha256": "0fccf19817da0567167f99dcf41274f1dd1b1f73e15e15a2cc27cf9049090ddf",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0H_42.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0H_52.npy",
+      "bytes": 1586616,
+      "sha256": "8eee523c9a8b3d4ccf4e4be6f6eb8ef012e0a50b32b08d44330e7efb6bc1fcac",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0H_52.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0H_62.npy",
+      "bytes": 1586616,
+      "sha256": "7ea3375328a5565cae7d7dc5c71c6aeb1acf043756b1f6cd0ca48250be2b2009",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0H_62.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0H_72.npy",
+      "bytes": 1586616,
+      "sha256": "adc4d1a6e6b572ffac8b17790b0b51cf7c9367609be7e5ad5c9be20d8aad6284",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0H_72.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B0H_82.npy",
+      "bytes": 1586616,
+      "sha256": "9827a108c1ce7017851afaa80f10c2d1f2d672e992b7c695936402b5d5c2b8fb",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B0H_82.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1_42.npy",
+      "bytes": 1586616,
+      "sha256": "1688d65c12587246394afc337cdaf44f3dd74d8138ffad881404108e1fa2c18e",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1_42.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1_52.npy",
+      "bytes": 1586616,
+      "sha256": "d2199c8adbabc61c6850b6221725a0c8d8c06591c32d91e525c7a5e7493aa593",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1_52.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1_62.npy",
+      "bytes": 1586616,
+      "sha256": "7500bca8c15dd97be03be3ab401e34e8468c6434b19a271d77bbe14c56e965e6",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1_62.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1_72.npy",
+      "bytes": 1586616,
+      "sha256": "b581a1347037176e86eaec3bfc8e2d6e9145ec896548e5584f6940a4313949ce",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1_72.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1_82.npy",
+      "bytes": 1586616,
+      "sha256": "5d4b7693be33d05c33e95047fc02bc0582ded88ca9aaca4f28e3beac0c331db8",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1_82.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1H_42.npy",
+      "bytes": 1586616,
+      "sha256": "44ca53140258045f8d0abe5e1535c4de6e49045ce312eafd44b526fc1b7591b2",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1H_42.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1H_52.npy",
+      "bytes": 1586616,
+      "sha256": "ee42f53ab118b540b4d62317c1a05095d6c3dec937cfd310f32cb64cac3f78b2",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1H_52.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1H_62.npy",
+      "bytes": 1586616,
+      "sha256": "1e060bb857ad5e15a9b726f3371499dcca1f325319b59acda9d2e20cec9d53f2",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1H_62.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1H_72.npy",
+      "bytes": 1586616,
+      "sha256": "5bfac9cf04a6b2fc64a63ea9059f51c938e1cfae06578fc88302b7980b735a56",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1H_72.npy"
+    },
+    {
+      "path": "predictions/XGBoost_B1H_82.npy",
+      "bytes": 1586616,
+      "sha256": "eb79bfbddf22f30c134c51e6e439e7400e8625e86a17f9a69d5d9470fb3cf1cc",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\predictions\\XGBoost_B1H_82.npy"
+    },
+    {
+      "path": "features/test_identity.npy",
+      "bytes": 3173104,
+      "sha256": "e73cf277988f000c493139b6de77604d1f21dc3cdcdba7ca958545e9ff584f35",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\features\\test_identity.npy"
+    },
+    {
+      "path": "features/unlabelled.parquet",
+      "bytes": 23278056,
+      "sha256": "d98c44855305993024a95f9d1b094d5929608038a113d64905f6dcd48e0307c9",
+      "absolute_path": "${WORKSPACE}\\experiment\\outputs\\banksim_validation_v1\\run_20260925_01\\features\\unlabelled.parquet"
+    }
+  ],
+  "ranking_seconds": [
+    {
+      "key": "LightGBM|B0|42",
+      "seconds": 0.06654640000488143,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B0|52",
+      "seconds": 0.0738085999910254,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B0|62",
+      "seconds": 0.07287200000428129,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B0|72",
+      "seconds": 0.07766809999884572,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B0|82",
+      "seconds": 0.06661509998957627,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0|42",
+      "seconds": 0.08114379999460652,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0|52",
+      "seconds": 0.07562110001163092,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0|62",
+      "seconds": 0.06951539999863598,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0|72",
+      "seconds": 0.06952859999728389,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0|82",
+      "seconds": 0.07709200000681449,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B0H|42",
+      "seconds": 0.06107940000947565,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B0H|52",
+      "seconds": 0.060640700001385994,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B0H|62",
+      "seconds": 0.06902579999587033,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B0H|72",
+      "seconds": 0.08092180000676308,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B0H|82",
+      "seconds": 0.07109159999527037,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0H|42",
+      "seconds": 0.07962020000559278,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0H|52",
+      "seconds": 0.0716794000036316,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0H|62",
+      "seconds": 0.07921400001214352,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0H|72",
+      "seconds": 0.07222339999862015,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B0H|82",
+      "seconds": 0.07533010000770446,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1|42",
+      "seconds": 0.07685969999874942,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1|52",
+      "seconds": 0.08388469999772497,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1|62",
+      "seconds": 0.0677265999984229,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1|72",
+      "seconds": 0.06561230000806972,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1|82",
+      "seconds": 0.06965929998841602,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1|42",
+      "seconds": 0.06935220000741538,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1|52",
+      "seconds": 0.10412839999480639,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1|62",
+      "seconds": 0.11012729999492876,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1|72",
+      "seconds": 0.12011210000491701,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1|82",
+      "seconds": 0.13181459999759682,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1H|42",
+      "seconds": 0.10468709999986459,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1H|52",
+      "seconds": 0.10524319999967702,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1H|62",
+      "seconds": 0.1047775999904843,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1H|72",
+      "seconds": 0.10238359999493696,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "LightGBM|B1H|82",
+      "seconds": 0.13677080000343267,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1H|42",
+      "seconds": 0.14244920000783168,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1H|52",
+      "seconds": 0.17702940000162926,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1H|62",
+      "seconds": 0.1724116999976104,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1H|72",
+      "seconds": 0.10853710000810679,
+      "reused_for_all_capacities": true
+    },
+    {
+      "key": "XGBoost|B1H|82",
+      "seconds": 0.13237500000104774,
+      "reused_for_all_capacities": true
+    }
+  ],
+  "ranking_count": 40,
+  "pair_count": 60,
+  "means": 12,
+  "original_TP_checks": 120,
+  "mean_tolerance": 1e-09,
+  "step_conservation": "passed",
+  "new_model_scores": 0,
+  "new_bootstrap_draws": 0
+}

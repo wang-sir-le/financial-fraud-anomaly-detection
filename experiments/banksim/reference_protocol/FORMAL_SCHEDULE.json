@@ -1,0 +1,242 @@
+[
+  {
+    "family": "LightGBM",
+    "cell": "B0",
+    "seed": 42,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B0",
+    "seed": 52,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B0",
+    "seed": 62,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B0",
+    "seed": 72,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B0",
+    "seed": 82,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B0H",
+    "seed": 42,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B0H",
+    "seed": 52,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B0H",
+    "seed": 62,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B0H",
+    "seed": 72,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B0H",
+    "seed": 82,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1",
+    "seed": 42,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1",
+    "seed": 52,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1",
+    "seed": 62,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1",
+    "seed": 72,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1",
+    "seed": 82,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1H",
+    "seed": 42,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1H",
+    "seed": 52,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1H",
+    "seed": 62,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1H",
+    "seed": 72,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "LightGBM",
+    "cell": "B1H",
+    "seed": 82,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0",
+    "seed": 42,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0",
+    "seed": 52,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0",
+    "seed": 62,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0",
+    "seed": 72,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0",
+    "seed": 82,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0H",
+    "seed": 42,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0H",
+    "seed": 52,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0H",
+    "seed": 62,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0H",
+    "seed": 72,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B0H",
+    "seed": 82,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1",
+    "seed": 42,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1",
+    "seed": 52,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1",
+    "seed": 62,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1",
+    "seed": 72,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1",
+    "seed": 82,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1H",
+    "seed": 42,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1H",
+    "seed": 52,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1H",
+    "seed": 62,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1H",
+    "seed": 72,
+    "status": "NOT_STARTED"
+  },
+  {
+    "family": "XGBoost",
+    "cell": "B1H",
+    "seed": 82,
+    "status": "NOT_STARTED"
+  }
+]

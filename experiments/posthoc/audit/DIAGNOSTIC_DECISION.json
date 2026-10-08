@@ -1,0 +1,21 @@
+{
+  "authorization": "User instruction to implement the linked plan on 2026-09-27",
+  "exposure": "All original test results were already known before this revision.",
+  "B1": "Admitted after cache and identity checks; 60 paired rows, 12 means; descriptive only.",
+  "B2": "Conditional on exact existing draw keys and interval replay; no new draws.",
+  "B3": "BankSim whole-window selections attributed to steps; IEEE only if frozen time metadata identified.",
+  "integer_comparison": "exact",
+  "absolute_float_tolerance": 1e-09,
+  "prohibited": [
+    "training",
+    "tuning",
+    "model prediction",
+    "new bootstrap sampling",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "model_fits": 0,
+  "model_prediction_calls": 0,
+  "bootstrap_draws_generated": 0
+}

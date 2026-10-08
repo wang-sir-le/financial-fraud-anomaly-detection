@@ -1,0 +1,58 @@
+{
+  "sources": [
+    {
+      "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\paper\\online_resource_2\\evidence\\bootstrap_summary_corrected.csv",
+      "sha256": "773bf7010dcf86b4456014b0a1db3a89c443d34900be77bba40d5240cecac637"
+    },
+    {
+      "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\paper\\online_resource_2\\evidence\\bootstrap_overall_summary_corrected.csv",
+      "sha256": "23a9da1694349131990ca7b8afdc291c545d5152515a8bbdbe74a824c6deb556"
+    }
+  ],
+  "filter": "delta_recall; folds 1-3 only as in original figure",
+  "contrast": "C02 M2 - M0",
+  "unit": "percentage points at exact 3% completed-window capacity",
+  "points": [
+    {
+      "label": "Fold 1",
+      "estimate": -0.9455587392550157,
+      "lower": -1.5936692597852056,
+      "upper": -0.33960209637092276,
+      "confidence": 0.95
+    },
+    {
+      "label": "Fold 2",
+      "estimate": 0.07763221737020598,
+      "lower": -0.5072555727212535,
+      "upper": 0.683572643035578,
+      "confidence": 0.95
+    },
+    {
+      "label": "Fold 3",
+      "estimate": 0.8404880253050162,
+      "lower": 0.23186929974024834,
+      "upper": 1.5215790699400378,
+      "confidence": 0.95
+    }
+  ],
+  "point_count": 3,
+  "interval": "Existing paired moving-block percentile 95% intervals, 5000 draws; no draws reopened.",
+  "secondary_summary_not_plotted": {
+    "metric": "delta_recall",
+    "observed": "-9.146165526597849e-05",
+    "ci_lower": "-0.0037013290191403913",
+    "ci_upper": "0.0035746870635627974",
+    "positive": "0.4794",
+    "negative": "0.5206",
+    "zero": "0.0",
+    "old_positive": "0.4794",
+    "old_negative": "0.5206",
+    "old_zero": "0.0"
+  },
+  "figure": "fig5",
+  "width_in": 6.6,
+  "height_in": 2.436761811023622,
+  "original_image": "${WORKSPACE}\\experiment\\tmp\\kais_figure_redraw_20261007\\run_01\\originals\\main_image12.png",
+  "original_image_sha256": "75d46ccd4eb6ad499fd06dc3ca01e473a622e05e8ad3498e9187f3e1e745c814",
+  "boundary": "Previously saved aggregate results only; no new fitting, prediction, ranking, AP or uncertainty computation."
+}

@@ -1,0 +1,37 @@
+{
+  "publication_date": "2026-10-08",
+  "source_files_verified": 573,
+  "json_numeric_and_scientific_fields_verified": 352,
+  "recorded_figure_export_bytes_verified": 33,
+  "core_tests": {
+    "passed": 138,
+    "skipped": 8,
+    "failures": 0
+  },
+  "banksim_artificial_tests": {
+    "passed": 40,
+    "failures": 0
+  },
+  "s22_artificial_contract": {
+    "passed": 71,
+    "parameter_cases": 61,
+    "failures": 0
+  },
+  "s22_adapted_scope_guard_checks": 5,
+  "standalone_figure_script_executions_in_separate_copies": 14,
+  "type_check_source_files": 66,
+  "wheel_build": "PASS: fraudx 0.2.0, existing setuptools 80.9.0 / wheel 0.45.1",
+  "ruff": "PASS under recorded directory conventions",
+  "bandit_medium_high": {
+    "findings": 0,
+    "analysis_errors": 0
+  },
+  "new_real_model_fits": 0,
+  "new_real_predictions": 0,
+  "new_bootstrap_draws": 0,
+  "new_scientific_analysis": 0,
+  "independent_external_raw_to_model_reproduction": false,
+  "manuscript_files_included": 0,
+  "source_dataset_files_included": 0,
+  "transaction_level_caches_or_fitted_states_included": 0
+}

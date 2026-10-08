@@ -1,0 +1,11 @@
+{
+  "protocol_sha256": "8993d2cbfa7e9b2d3c053b071da918248715e97020b679b7761bb92c6d373677",
+  "intervals": 108,
+  "replicate_rows": 540000,
+  "third_party_reproduction": false,
+  "conditional_on": "Fixed models and observed windows; no retraining uncertainty",
+  "family_difference": "LR effect minus five-seed mean LightGBM effect",
+  "estimable_contrast_stage_cells": 12,
+  "unavailable_contrast_stage_cells": 0,
+  "no_formal_inference_for_failed_fits": true
+}

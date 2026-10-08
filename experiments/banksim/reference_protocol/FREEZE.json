@@ -1,0 +1,271 @@
+{
+  "status": "FROZEN_BEFORE_TRAINING",
+  "time_utc": "2026-09-25T09:57:32.143329+00:00",
+  "files": [
+    {
+      "path": "audit/PREPARED.json",
+      "bytes": 3555,
+      "sha256": "a9b592e1a41e63ef29d3a93ef853e0f525703080b8829e080c6445d7d415122c"
+    },
+    {
+      "path": "audit/VALIDATION.json",
+      "bytes": 3414,
+      "sha256": "3757fcb095e674c6310106fac227c963579d9297bc150ea9a1b6a7ada5b3d9cb"
+    },
+    {
+      "path": "audit/validation_attempt_05/bandit.log",
+      "bytes": 2443,
+      "sha256": "dd1142f18fdcd3d6e83148944363f3bb98ba5e8e03df663804bdc0dc11fdf21b"
+    },
+    {
+      "path": "audit/validation_attempt_05/dependencies.log",
+      "bytes": 31,
+      "sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf"
+    },
+    {
+      "path": "audit/validation_attempt_05/mypy.log",
+      "bytes": 45,
+      "sha256": "e522fa370334927ac2ccb7106100045b572938dd238093267de825336e6704f2"
+    },
+    {
+      "path": "audit/validation_attempt_05/pytest.log",
+      "bytes": 101,
+      "sha256": "fa0d2ff242dd2733492972a5162ddc1b4913c9f14db9f20a596f83e968ec02ef"
+    },
+    {
+      "path": "audit/validation_attempt_05/pytest.xml",
+      "bytes": 4914,
+      "sha256": "15b51c79c29e96a4f53d5f4901b85f70a7fbf25a3fd081e67b89a8ffcfaafa68"
+    },
+    {
+      "path": "audit/validation_attempt_05/ruff.log",
+      "bytes": 20,
+      "sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0"
+    },
+    {
+      "path": "audit/validation_attempt_05/summary.json",
+      "bytes": 3414,
+      "sha256": "3757fcb095e674c6310106fac227c963579d9297bc150ea9a1b6a7ada5b3d9cb"
+    },
+    {
+      "path": "features/test_identity.npy",
+      "bytes": 3173104,
+      "sha256": "e73cf277988f000c493139b6de77604d1f21dc3cdcdba7ca958545e9ff584f35"
+    },
+    {
+      "path": "features/train_identity.npy",
+      "bytes": 5321600,
+      "sha256": "929b5ebd62565235762a88fef871600c7ed0e1b9044b4617c830bd9f82f7ff99"
+    },
+    {
+      "path": "features/unlabelled.parquet",
+      "bytes": 23278056,
+      "sha256": "d98c44855305993024a95f9d1b094d5929608038a113d64905f6dcd48e0307c9"
+    },
+    {
+      "path": "features/validation_identity.npy",
+      "bytes": 1019968,
+      "sha256": "68d43e73eca4d626d52fe94d74c0802ebbac3750ba41d41c9f53b02f961a6f2f"
+    },
+    {
+      "path": "inputs/banksim_v1.zip",
+      "bytes": 13712256,
+      "sha256": "3bfd0c2bfbdec83ad36eed499eaf38c6951c36be864ecbe30f3bcb7d84895f66"
+    },
+    {
+      "path": "inputs/expected_structure.json",
+      "bytes": 4328,
+      "sha256": "cbef8e67198d73193d3be4e0272a7e09c9862fe2145ac78ad1161753ea7f91ad"
+    },
+    {
+      "path": "preprocessing/B0.json",
+      "bytes": 1942,
+      "sha256": "f773a75e80a460db944a336b1a3ede51c2d021987bac3229c32664a64b273fb2"
+    },
+    {
+      "path": "preprocessing/B0_train.npy",
+      "bytes": 22616384,
+      "sha256": "1cb6bf406cb5087439c5e90f0e02c2bb57ef0e0715b25a4e889661d836608a38"
+    },
+    {
+      "path": "preprocessing/B0_validation.npy",
+      "bytes": 4334448,
+      "sha256": "7bdcc8441fc8f18d78401a415bb19c6c5387490669262745be578af5dba2ed1a"
+    },
+    {
+      "path": "preprocessing/B0H.json",
+      "bytes": 5663,
+      "sha256": "2c092cb9a15173931ae1edb6982e298ea4e30998f3b7b73a3cdef730c5d3c6de"
+    },
+    {
+      "path": "preprocessing/B0H_train.npy",
+      "bytes": 49223744,
+      "sha256": "7bca49b423e47df1f808aefb4d7c096cf405e8010fa33593535c8373205ed89f"
+    },
+    {
+      "path": "preprocessing/B0H_validation.npy",
+      "bytes": 9433648,
+      "sha256": "9140b8fe1a67d88c3ee1e92fc864d07bfe523f42a823b0440616532880044933"
+    },
+    {
+      "path": "preprocessing/B1.json",
+      "bytes": 7360,
+      "sha256": "7a5738f35350e57dc8106429c17834585f05b5b7a6ba511dbf14fd6b50d942cf"
+    },
+    {
+      "path": "preprocessing/B1_train.npy",
+      "bytes": 105099200,
+      "sha256": "105ac5082653c3b6a30dc2f6a9bcbf46835398c95e41644ba7630832119a6821"
+    },
+    {
+      "path": "preprocessing/B1_validation.npy",
+      "bytes": 20141968,
+      "sha256": "4b03194b262519613bd4670f4574d8454bb41898648eb05cd5addf369062e7a3"
+    },
+    {
+      "path": "preprocessing/B1H.json",
+      "bytes": 11081,
+      "sha256": "e5412f5e1c3584604a577637078d34abdec70a6fdaf4d29388b505075e14f33d"
+    },
+    {
+      "path": "preprocessing/B1H_train.npy",
+      "bytes": 131706560,
+      "sha256": "492fd471e5bd4b714ae5420dde2719c94032ca422fc356370b303698b2228710"
+    },
+    {
+      "path": "preprocessing/B1H_validation.npy",
+      "bytes": 25241168,
+      "sha256": "3b638db1baf66b93bf221767b1ee92e07a842d4169c4d1ba0d1528ae7ae81b22"
+    },
+    {
+      "path": "preprocessing/common_column_hashes.json",
+      "bytes": 44696,
+      "sha256": "472c282fa57f14d74df82e6f06bf78af16f0c8c9eb3b8b464208a1a48a66e373"
+    },
+    {
+      "path": "protocol/draft_source.json",
+      "bytes": 14137,
+      "sha256": "ab77c9f3ad6374b58f0e576d395c723e5bc0890260ab83bb5c3c95277e66b1ea"
+    },
+    {
+      "path": "protocol/effective.json",
+      "bytes": 16022,
+      "sha256": "978baf18384bc270897d9faf75b02756a1c35b5a17e5c2e2b1bd5c4a73bcabfb"
+    },
+    {
+      "path": "protocol/FORMAL_SCHEDULE.json",
+      "bytes": 3883,
+      "sha256": "49ebdf90fa20090eb4ea87da20a9038de0e2d79a00cae21b84fcac5d55166159"
+    },
+    {
+      "path": "protocol/MODEL_CATALOG.json",
+      "bytes": 22754,
+      "sha256": "f24ccc877a5c9b81a62c13377d1fe0cf88e89c9fffdfc0626b46d1195b2a249f"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 482,
+      "sha256": "c5ad4f5071fb0d78a13c1d78cf819edc7e29fbb6494ac7604e67b43ffa3d7cb6"
+    },
+    {
+      "path": "reproduction/environment.json",
+      "bytes": 335,
+      "sha256": "90e20c8c2009ab34228b49e03da26393656bab15085c52a66daf470e849489a9"
+    },
+    {
+      "path": "reproduction/install_report.json",
+      "bytes": 13173,
+      "sha256": "b0f701d47dcb4256e7b6bdf475732c6d60b7ee3d6ec589cf9d6957b4f98ced15"
+    },
+    {
+      "path": "reproduction/requirements-lock.txt",
+      "bytes": 3182,
+      "sha256": "c5de1396023b28534af4bd3e46fbd7a7f1b114029cbf4cc9ef04633d56032843"
+    },
+    {
+      "path": "run.py",
+      "bytes": 2671,
+      "sha256": "88584b8a75f96868da946939204080fd69f1e5f8e1d06847c57c3f7525faf40a"
+    },
+    {
+      "path": "src/banksim/__init__.py",
+      "bytes": 79,
+      "sha256": "71a3db31762dc4b28353384975e63c85d372663aa28cbb6f738f097bdd620bad"
+    },
+    {
+      "path": "src/banksim/common.py",
+      "bytes": 3297,
+      "sha256": "37e77b2657b4e1b9a7f1312a09bec977a9ec11bce4de97907fd5ab582d9cd878"
+    },
+    {
+      "path": "src/banksim/data.py",
+      "bytes": 7853,
+      "sha256": "f9681e0c18601cb8b89e5fdbc502db554710ce154bf45973dde979c0d058cda6"
+    },
+    {
+      "path": "src/banksim/guards.py",
+      "bytes": 5446,
+      "sha256": "57ccdee954cd3bb4218b067a080788fbda97ad5ca11c408a393de3af77c6cfe2"
+    },
+    {
+      "path": "src/banksim/metrics.py",
+      "bytes": 10294,
+      "sha256": "07dce7585bae0d6578ff4d72fd3b873738283c7c4542b1564d83548fceab76e3"
+    },
+    {
+      "path": "src/banksim/models.py",
+      "bytes": 6053,
+      "sha256": "4fa1e7348e10a6928271687be4854f71b9d43a82292951cb76e42b9dba6d869f"
+    },
+    {
+      "path": "src/banksim/preprocess.py",
+      "bytes": 4904,
+      "sha256": "7d02f863f56b5fde558e4a9a115c02b5285a6164b77df7d012aa4d74341cbde3"
+    },
+    {
+      "path": "src/banksim/workflow.py",
+      "bytes": 22012,
+      "sha256": "22463a1eed30bf732d09904a73d1942201c7d1f689971e18cc585e0e2694f779"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 774,
+      "sha256": "25ede4b68f5a831c9f85d621415c301c2898a3a96e3a43fae4d2f60ec8de73c3"
+    },
+    {
+      "path": "tests/test_artificial_lifecycle.py",
+      "bytes": 5318,
+      "sha256": "1ed7901bd35c840205899ad0f3f241abc968c3dcc5a4ad8f825a9840525e9e3b"
+    },
+    {
+      "path": "tests/test_guards_models.py",
+      "bytes": 5863,
+      "sha256": "583245ccfd1247b9074819adbed0c609fba268c1914adf570106e35b12fdba99"
+    },
+    {
+      "path": "tests/test_history_preprocess.py",
+      "bytes": 6431,
+      "sha256": "6d09f75ed837dca1911cc927655d8648a8e47f015da1e12fcbbdc84e1973e462"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "bytes": 6924,
+      "sha256": "acfc370138af70ff9668e83e1778cde6a837da08edd2c1af43553febd66c70e7"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 2946,
+      "sha256": "e7d5e378f58375915b5fd78a7bb96e3dff06ce838e14332696869e8c2654658d"
+    }
+  ],
+  "real_model_fit_calls": 0,
+  "real_test_scores_computed": 0,
+  "row_label_analysis_performed": false,
+  "future_gates": [
+    "train/validation each have two label classes",
+    "observed memory and elapsed fitting time",
+    "successful complete grid and selected-configuration lock",
+    "all forty cells accounted for and required models valid before test release"
+  ],
+  "not_a_claim": "Not external real-business validation; not evidence of scientific benefit or publication acceptance."
+}

@@ -1,0 +1,121 @@
+{
+  "figure": "S1",
+  "sources": [
+    {
+      "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\assessment\\v2_primary_means.csv",
+      "sha256": "094000323e7da2edb862f9afffcec3c87fbf70383b6c85177eec2db3410347cc"
+    },
+    {
+      "path": "${WORKSPACE}\\experiment\\outputs\\q2_extension_v1\\run_20260923_01\\paper\\online_resource_2\\evidence\\ieee_fold_metrics.csv",
+      "sha256": "5fb26d8e0daa064cb6d65aa0d8d7d0e2c60a6f852bbda6faf99fbb67a02447c4"
+    }
+  ],
+  "selection": "Existing five-seed means, folds 1–3; differences PTH−P0/PTHW−PTH and M1−M0/M2−M1 only.",
+  "notes": "Point differences are subtraction of existing means, not metric/ranking recomputation. Axes remain dataset-specific; IEEE F1/F2 label offsets with leaders prevent collisions.",
+  "original_extent_emu": {
+    "cx": 6035040,
+    "cy": 3018955
+  },
+  "figsize_inches": [
+    6.6,
+    3.301569335083115
+  ],
+  "rows": [
+    {
+      "dataset": "paysim",
+      "fold": 1,
+      "component": "History",
+      "contrast": "PTH−P0",
+      "delta_ap": 0.13459735131331207,
+      "delta_recall_pp": 56.90763052208836
+    },
+    {
+      "dataset": "paysim",
+      "fold": 1,
+      "component": "Weighting",
+      "contrast": "PTHW−PTH",
+      "delta_ap": 0.01898553774319489,
+      "delta_recall_pp": 1.4056224899598457
+    },
+    {
+      "dataset": "paysim",
+      "fold": 2,
+      "component": "History",
+      "contrast": "PTH−P0",
+      "delta_ap": -0.004065784957909838,
+      "delta_recall_pp": 53.33333333333334
+    },
+    {
+      "dataset": "paysim",
+      "fold": 2,
+      "component": "Weighting",
+      "contrast": "PTHW−PTH",
+      "delta_ap": -0.04343100209987735,
+      "delta_recall_pp": 1.7307692307692246
+    },
+    {
+      "dataset": "paysim",
+      "fold": 3,
+      "component": "History",
+      "contrast": "PTH−P0",
+      "delta_ap": -0.11914145952360089,
+      "delta_recall_pp": 40.488841657810845
+    },
+    {
+      "dataset": "paysim",
+      "fold": 3,
+      "component": "Weighting",
+      "contrast": "PTHW−PTH",
+      "delta_ap": 0.04021336055541336,
+      "delta_recall_pp": 0.5419766206163579
+    },
+    {
+      "dataset": "ieee_cis",
+      "fold": 1,
+      "component": "History",
+      "contrast": "M1−M0",
+      "delta_ap": 0.0029591393038364555,
+      "delta_recall_pp": 0.16236867239732278
+    },
+    {
+      "dataset": "ieee_cis",
+      "fold": 1,
+      "component": "Weighting",
+      "contrast": "M2−M1",
+      "delta_ap": -0.006824412232450616,
+      "delta_recall_pp": -1.1079274116523374
+    },
+    {
+      "dataset": "ieee_cis",
+      "fold": 2,
+      "component": "History",
+      "contrast": "M1−M0",
+      "delta_ap": -0.0024748675866049785,
+      "delta_recall_pp": -0.16496846191169645
+    },
+    {
+      "dataset": "ieee_cis",
+      "fold": 2,
+      "component": "Weighting",
+      "contrast": "M2−M1",
+      "delta_ap": 0.0005369109385229276,
+      "delta_recall_pp": 0.24260067928190132
+    },
+    {
+      "dataset": "ieee_cis",
+      "fold": 3,
+      "component": "History",
+      "contrast": "M1−M0",
+      "delta_ap": -0.01545875039692135,
+      "delta_recall_pp": -3.687302304563933
+    },
+    {
+      "dataset": "ieee_cis",
+      "fold": 3,
+      "component": "Weighting",
+      "contrast": "M2−M1",
+      "delta_ap": 0.03428851709727043,
+      "delta_recall_pp": 4.527790329868953
+    }
+  ]
+}

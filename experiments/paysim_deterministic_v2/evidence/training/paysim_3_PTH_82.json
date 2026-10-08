@@ -1,0 +1,82 @@
+{
+  "rows": [
+    {
+      "fold": 3,
+      "model": "PTH",
+      "seed": 82,
+      "capacity": 0.03,
+      "fn_cost": 100,
+      "ap": 0.1487291810395653,
+      "threshold": 0.002390951109206558,
+      "validation_alert_rate": 0.013692008398476887,
+      "n": 636723,
+      "frauds": 3764,
+      "tp": 2873,
+      "fp": 18037,
+      "fn": 891,
+      "alerts": 20910,
+      "recall": 0.7632837407013815,
+      "precision": 0.13739837398373983,
+      "alert_rate": 0.03284002619663496,
+      "cost": 107137,
+      "cost_per_10000": 1682.631222682391
+    }
+  ],
+  "columns": [
+    "step",
+    "type",
+    "amount",
+    "hour_of_day",
+    "day_index",
+    "time_since_last_dest",
+    "dest_count_1h",
+    "unique_origins_1h",
+    "dest_count_6h",
+    "unique_origins_6h",
+    "dest_count_24h",
+    "unique_origins_24h",
+    "dest_amount_mean_1h",
+    "dest_amount_max_1h",
+    "dest_amount_std_1h",
+    "dest_amount_mean_6h",
+    "dest_amount_max_6h",
+    "dest_amount_std_6h",
+    "dest_amount_mean_24h",
+    "dest_amount_max_24h",
+    "dest_amount_std_24h",
+    "dest_amount_ratio_1h",
+    "dest_amount_ratio_6h",
+    "dest_amount_ratio_24h"
+  ],
+  "input_signature": {
+    "protocol_sha256": "60f7b18c68a6ffe1b762f2ca721729773c167e75a9b9aefd45343077e298b649",
+    "features_sha256": "1e241c5e46e1d8323fe021c4185ce2ab3cb22f739d224384ebcb248490ed568f",
+    "code": {
+      "training.py": "ce6dbb882d62bcdaffea3b02197e4bddedce625291aa62cf30ca5f6382952d46",
+      "data.py": "42c6e2efdf29044bc0571ca3ab824be2a1fa97ccb102c9f60bd2ee3c5265d7fb",
+      "models.py": "ceede354842dcdca42b0a25eb39ca6bb13360406171686b57ac23c460d101253"
+    }
+  },
+  "seconds": 34.82900000002701,
+  "effective_num_threads": 16,
+  "calibrator": {
+    "slope": 0.43425118665834506,
+    "intercept": -3.8008507254294686
+  },
+  "raw_array_sha256": "d7083a3e9e61a65f5a03302787a4961cda513551912e965d2f3f5cbaee490121",
+  "platt_array_sha256": "7db34f600d47dca1a2bcca56a02f4d486505416be0dbb12c8a974074cd63d05f",
+  "files": [
+    {
+      "name": "paysim_3_PTH_82_booster.txt",
+      "sha256": "41b330d14fb795be360c3a620410328205476dd6f6d2a9f460cc192240796ec9"
+    },
+    {
+      "name": "paysim_3_PTH_82_test.parquet",
+      "sha256": "8669d83c9c5b0192600a22e8b8921ddd27e48a16cb3523f7af7c489b80e0d516"
+    },
+    {
+      "name": "paysim_3_PTH_82_validation.parquet",
+      "sha256": "05537bdcfac9e92c9b903a18d1588756824f364ad56cce1d40019909f4eee0f4"
+    }
+  ]
+}

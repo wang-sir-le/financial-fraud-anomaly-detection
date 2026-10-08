@@ -1,0 +1,15 @@
+{
+  "decision": "C_REQUIRED_AS_NEXT_VALIDATION_NOT_EXECUTED_IN_V2_REPAIR",
+  "basis": "Stable workflow findings and implementation-sensitive component directions warrant the existing complete cross-model test. PaySim determinism is no longer the blocker.",
+  "scope": "The present request asks for a C decision after robustness assessment. No C result is claimed in this version.",
+  "scientific_goal": "Test model dependence, not search for favourable signs or interval exclusions.",
+  "family": "LogisticRegression",
+  "planned_detector_fits": 27,
+  "planned_paysim_platt_fits": 15,
+  "detector_fits_executed": 0,
+  "calibrator_fits_executed": 0,
+  "input_version": "PaySim deterministic v2; unchanged IEEE-CIS",
+  "cross_model_claim_allowed": false,
+  "prior_configuration": "experiment/configs/q2_extension_v1.json:cross_model",
+  "complete_reporting_required": true
+}

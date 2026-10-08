@@ -1,0 +1,94 @@
+{
+  "dataset_name": "IEEE-CIS Fraud Detection",
+  "creation_time_utc": "2026-08-21T10:33:43.703782+00:00",
+  "creation_time_basis": "Latest frozen-input modification time, used instead of wall-clock build time so identical inputs produce byte-identical protocol artifacts.",
+  "input_files": {
+    "transaction_path": "${WORKSPACE}\\Dataset\\ieee-fraud-detection\\train_transaction.csv",
+    "feature_path": "${WORKSPACE}\\experiment\\outputs\\ieee_cis\\ieee_cis_history_features\\ieee_cis_entity_history_features.parquet",
+    "train_transaction_sha256": "3a5c83ab6b3cc13dcabe5ffa9f522307fd5f7f7b6e6f6a60c32284ca6283d642",
+    "history_feature_parquet_sha256": "7e3f4f28d787bc6e31318fbd148833c939bf78a6c231fbe920a749f96ed89e35"
+  },
+  "fold_definition_sha256": "ce798500261dc1c6ae880f9fd5ceb08d59c78612c8544554a994c12981993d52",
+  "split_rule": {
+    "method": "expanding-window rolling validation on complete TransactionDT groups",
+    "fold_count": 3,
+    "initial_train_fraction": 0.4,
+    "validation_fraction": 0.1,
+    "test_fraction": 0.1,
+    "later_fold_shift_fraction": 0.2,
+    "boundary_selection_inputs": [
+      "TransactionDT",
+      "time-group transaction counts"
+    ],
+    "row_number_split": false,
+    "label_used_for_boundary_selection": false
+  },
+  "fold_definitions": [
+    {
+      "fold": 1,
+      "train": {
+        "start_transaction_dt": 86400,
+        "end_transaction_dt": 5592303,
+        "transaction_count": 236216
+      },
+      "validation": {
+        "start_transaction_dt": 5592304,
+        "end_transaction_dt": 7306520,
+        "transaction_count": 59054
+      },
+      "test": {
+        "start_transaction_dt": 7306535,
+        "end_transaction_dt": 8745772,
+        "transaction_count": 59054
+      }
+    },
+    {
+      "fold": 2,
+      "train": {
+        "start_transaction_dt": 86400,
+        "end_transaction_dt": 8745772,
+        "transaction_count": 354324
+      },
+      "validation": {
+        "start_transaction_dt": 8745798,
+        "end_transaction_dt": 10437996,
+        "transaction_count": 59054
+      },
+      "test": {
+        "start_transaction_dt": 10438003,
+        "end_transaction_dt": 12192842,
+        "transaction_count": 59054
+      }
+    },
+    {
+      "fold": 3,
+      "train": {
+        "start_transaction_dt": 86400,
+        "end_transaction_dt": 12192842,
+        "transaction_count": 472432
+      },
+      "validation": {
+        "start_transaction_dt": 12192900,
+        "end_transaction_dt": 13990904,
+        "transaction_count": 59054
+      },
+      "test": {
+        "start_transaction_dt": 13990941,
+        "end_transaction_dt": 15811131,
+        "transaction_count": 59054
+      }
+    }
+  ],
+  "timestamp_isolation_rule": "Transactions sharing the same TransactionDT always belong to the same split and cannot contribute history to one another.",
+  "history_continuation_rule": {
+    "train": "Only strictly earlier Train transactions are available.",
+    "validation": "Earlier Train transactions and strictly earlier Validation transactions are available; future Validation and all Test transactions are unavailable.",
+    "test": "All earlier Train and Validation transactions plus strictly earlier Test transactions are available; future Test transactions are unavailable.",
+    "same_timestamp_history_contribution": false,
+    "historical_labels_used": false
+  },
+  "leakage_prevention_statement": "All boundaries use TransactionDT and complete time-group counts only. isFraud is used after freezing solely for descriptive summaries. No future timestamp or same-timestamp transaction contributes historical state.",
+  "boundary_independence_statement": "Temporal boundaries were determined before model training and without observing model performance.",
+  "model_training_performed": false,
+  "next_stage": "IEEE-CIS LightGBM Experimental Phase (not started)"
+}

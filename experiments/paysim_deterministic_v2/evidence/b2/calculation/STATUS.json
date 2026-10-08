@@ -1,0 +1,1169 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-09-23T13:23:50.706516+00:00",
+  "config_sha256": "df5fd175e25816c368e2cfda32ef2c72275494b081eba96dc6e87a00f09990d9",
+  "completed_utc": "2026-09-23T14:05:45.019863+00:00",
+  "details": {
+    "seed_effect_rows": 675000,
+    "model_fits": 0,
+    "intervals": "pointwise_conditional",
+    "IEEE": "unchanged; separate baseline"
+  },
+  "files": [
+    {
+      "name": "component_fold_replicates.parquet",
+      "sha256": "9439a8c9d73212e1ca8f42b14e09c96705b78551718a5b9ad7f5ef819b0391bd",
+      "bytes": 2234196
+    },
+    {
+      "name": "component_intervals.csv",
+      "sha256": "47c07438f445546b0f3d37108439f10b89614ee9b995f8d362f33fc05887db11",
+      "bytes": 16896
+    },
+    {
+      "name": "component_seed_replicates.parquet",
+      "sha256": "d25af864812158d3a0c7cb5a7794fa67c9ce00b68f035e8f0b1c56d5ae9bcd21",
+      "bytes": 11905054
+    },
+    {
+      "name": "invalid_replicates.csv",
+      "sha256": "c2ea84168084bbeb901b2bb868c9049557e1da6a9c31ce04f10b67f9319be759",
+      "bytes": 101
+    },
+    {
+      "name": "models/paysim_1_P0_42_clipped.parquet",
+      "sha256": "9fb733a6bd3668ce79ebe66ea5f6d215188b18ac28535d0c8b30435ec43f4fae",
+      "bytes": 148458
+    },
+    {
+      "name": "models/paysim_1_P0_42_platt.parquet",
+      "sha256": "50e2918c97643644cfb552b84d74eecf53418740b1aa5c3e16d7efe5c1b0a25b",
+      "bytes": 165356
+    },
+    {
+      "name": "models/paysim_1_P0_42_raw.parquet",
+      "sha256": "b3b8136eb30b11506605b8a6d8f04cb0b1fcac07d8d771d04ca5e3281c6a63a3",
+      "bytes": 148458
+    },
+    {
+      "name": "models/paysim_1_P0_52_clipped.parquet",
+      "sha256": "0c639995ac9f6de6f9d236da62222841066ce3382b66a224cc4354ff6d352784",
+      "bytes": 148518
+    },
+    {
+      "name": "models/paysim_1_P0_52_platt.parquet",
+      "sha256": "7791d39a0776a1b40abd25243b2c5921510e3a0932de9003fadc3bc8a31ed380",
+      "bytes": 184704
+    },
+    {
+      "name": "models/paysim_1_P0_52_raw.parquet",
+      "sha256": "6d8d01f567dfe423ae806f7802ca9603095e737bfc341c208bf2ba89077bf536",
+      "bytes": 148518
+    },
+    {
+      "name": "models/paysim_1_P0_62_clipped.parquet",
+      "sha256": "a4121cf07690d911b59445551fb2a65ea7ddd7b3d4a3a8acae1b8aa987b02e56",
+      "bytes": 148588
+    },
+    {
+      "name": "models/paysim_1_P0_62_platt.parquet",
+      "sha256": "4e2796cc08affd6df52f38aa1ec823f6c59e52c3a97f44de54af6c853ce326bc",
+      "bytes": 160371
+    },
+    {
+      "name": "models/paysim_1_P0_62_raw.parquet",
+      "sha256": "456cb1cd831367f9e4baac94124b8fdd70953456814d3b725e3d839b4c4996b3",
+      "bytes": 148588
+    },
+    {
+      "name": "models/paysim_1_P0_72_clipped.parquet",
+      "sha256": "337604523dc66a5131a352ec74393776262126e9bf3e7bd92eca9b8d4f60724a",
+      "bytes": 148478
+    },
+    {
+      "name": "models/paysim_1_P0_72_platt.parquet",
+      "sha256": "7294d459ac647921b3c628042ad3e37285f905cd35ca0fdfb94706e4a3383020",
+      "bytes": 160255
+    },
+    {
+      "name": "models/paysim_1_P0_72_raw.parquet",
+      "sha256": "e90351090a60b0a5cf0e1c5998443952cbb7db94ce53570a0f518a4022fa18a3",
+      "bytes": 148478
+    },
+    {
+      "name": "models/paysim_1_P0_82_clipped.parquet",
+      "sha256": "57fd85ccc665ae40ce3c8a32fdc2ab63914ca2ceaa1371ff3234c4ea3680de04",
+      "bytes": 149365
+    },
+    {
+      "name": "models/paysim_1_P0_82_platt.parquet",
+      "sha256": "201090ce06b01ca77399d65b4cbe1b1f6f139124f2eb34cacf307d4d38df9f71",
+      "bytes": 190173
+    },
+    {
+      "name": "models/paysim_1_P0_82_raw.parquet",
+      "sha256": "91e96cb8988a109e03c550014b462e4080be731c853d0b7d3c7612a408d23ff0",
+      "bytes": 149365
+    },
+    {
+      "name": "models/paysim_1_PH_42_clipped.parquet",
+      "sha256": "fc50ce2c04dd4c6cf2112a24e8a85d780e9e1c16eca12aaceb83fe61d8c109e6",
+      "bytes": 149479
+    },
+    {
+      "name": "models/paysim_1_PH_42_platt.parquet",
+      "sha256": "487d62b45a9ef613f09ec39bb5e3c6e9a080262b1c19d89f30e7f311169aae3e",
+      "bytes": 202625
+    },
+    {
+      "name": "models/paysim_1_PH_42_raw.parquet",
+      "sha256": "08dc53da7562f1baaaa6f24625301bcd2a9186a3bc5acf3e845fc691b07aafe5",
+      "bytes": 149479
+    },
+    {
+      "name": "models/paysim_1_PH_52_clipped.parquet",
+      "sha256": "a19bb591d4b70de35ea4bfefecc5530147a5f5cd4721c38baede4e620a970afc",
+      "bytes": 149455
+    },
+    {
+      "name": "models/paysim_1_PH_52_platt.parquet",
+      "sha256": "dbd8193944a94ee6e97878a04074efb78fdb761c2e9504a16439372e875d9aef",
+      "bytes": 201904
+    },
+    {
+      "name": "models/paysim_1_PH_52_raw.parquet",
+      "sha256": "32330472b21621a446528de06c6c630d77482db869b1e5a3dac70c6b21173b4e",
+      "bytes": 149455
+    },
+    {
+      "name": "models/paysim_1_PH_62_clipped.parquet",
+      "sha256": "c909cd3d72b9b409b1143302effe3e1add47650d67e3f471a3f1ff421b7cc1b9",
+      "bytes": 149318
+    },
+    {
+      "name": "models/paysim_1_PH_62_platt.parquet",
+      "sha256": "c37d95d0f6cdcde9078ee755f8070428b51e1a3b6985aaf8e55d72fb1fe4f49d",
+      "bytes": 199431
+    },
+    {
+      "name": "models/paysim_1_PH_62_raw.parquet",
+      "sha256": "80a715cc6795f19911487fe74d0cc0bcc8ca1d36a8057742b9ff83372eb77e42",
+      "bytes": 149318
+    },
+    {
+      "name": "models/paysim_1_PH_72_clipped.parquet",
+      "sha256": "c368c7760d9a3b981b1e9d0afb7300cdb4b25c86a9efd28d9c53f7f5090df714",
+      "bytes": 149434
+    },
+    {
+      "name": "models/paysim_1_PH_72_platt.parquet",
+      "sha256": "6a10a2a7e13a5f1af021722b4b849288d31a573447a4d452f0d2fb695ec42d53",
+      "bytes": 202811
+    },
+    {
+      "name": "models/paysim_1_PH_72_raw.parquet",
+      "sha256": "87f15a95e2ec2bcbf574e894bca9db79edbc81dc6453f407666a4d571ec48ab9",
+      "bytes": 149434
+    },
+    {
+      "name": "models/paysim_1_PH_82_clipped.parquet",
+      "sha256": "b5292e996bd21c91ad17a8f07e895bd98363ddb21cdc08fab2f75fdde84a821d",
+      "bytes": 149471
+    },
+    {
+      "name": "models/paysim_1_PH_82_platt.parquet",
+      "sha256": "078ebc5f5eafc5e956e7ecd25a53608039be84bebf2dbb741fca591fc8f236b4",
+      "bytes": 203558
+    },
+    {
+      "name": "models/paysim_1_PH_82_raw.parquet",
+      "sha256": "09058e1cff13fae8e5bac6b124e1d7ca3347bcc8d81601aed6a9f053dad4f26a",
+      "bytes": 149471
+    },
+    {
+      "name": "models/paysim_1_PT_42_clipped.parquet",
+      "sha256": "c66e3e9e31021ab4b4fb4bd1ef8595ccbd518e1c5de9ef523eb5ecc988d49875",
+      "bytes": 149443
+    },
+    {
+      "name": "models/paysim_1_PT_42_platt.parquet",
+      "sha256": "73e715535dae09fc56359ab59f132c14f1981b4de4f18108a98995f3d05f7462",
+      "bytes": 196922
+    },
+    {
+      "name": "models/paysim_1_PT_42_raw.parquet",
+      "sha256": "468ccb045b14388e930ba562137fd73628ca5c0a3a8452f269ada6b7a4dfa910",
+      "bytes": 149443
+    },
+    {
+      "name": "models/paysim_1_PT_52_clipped.parquet",
+      "sha256": "2f290839fa11d44d3e3ea1514ae2f33bb1dac2276808ba0db80cfce0a84ab31f",
+      "bytes": 149672
+    },
+    {
+      "name": "models/paysim_1_PT_52_platt.parquet",
+      "sha256": "35a627c7f9f61a44c9b26894deeb9c1d94a4e6a67144fdf9034ee849ea17924b",
+      "bytes": 190857
+    },
+    {
+      "name": "models/paysim_1_PT_52_raw.parquet",
+      "sha256": "8073f522b480127967555afb39925eeaa6118d37b9eb62a71ddd68e4b214c081",
+      "bytes": 149672
+    },
+    {
+      "name": "models/paysim_1_PT_62_clipped.parquet",
+      "sha256": "86f96c94d4d9edbe017a207d78feaf612728bd83e18365bbdfe7c4abb4ccd454",
+      "bytes": 149583
+    },
+    {
+      "name": "models/paysim_1_PT_62_platt.parquet",
+      "sha256": "b385b87c0569593babc43e8d0d0b680b0c7ed3bfcf504b4041171dee651be2c7",
+      "bytes": 193145
+    },
+    {
+      "name": "models/paysim_1_PT_62_raw.parquet",
+      "sha256": "68a1d66323e4bae0533297721c2daa40dadc533dbdc436f46844576f1a9f008e",
+      "bytes": 149583
+    },
+    {
+      "name": "models/paysim_1_PT_72_clipped.parquet",
+      "sha256": "c26df5e0f08aac35971aec0c17de6eaaee6071cbaed89b4fd2ed112878d5fc29",
+      "bytes": 149632
+    },
+    {
+      "name": "models/paysim_1_PT_72_platt.parquet",
+      "sha256": "97c0fd646a3b5e91f5e6df0fa7f40b4bdd2872822f6e9e2848a739336dc88135",
+      "bytes": 183482
+    },
+    {
+      "name": "models/paysim_1_PT_72_raw.parquet",
+      "sha256": "ba2b962c7121cadb362f563005deb73c7e0f267dea67cc8c7454e730f5c35c54",
+      "bytes": 149632
+    },
+    {
+      "name": "models/paysim_1_PT_82_clipped.parquet",
+      "sha256": "a125fcbb33ed49407de75ca25bc1f273b13edfb93dd095eeb5bc9eba969027f1",
+      "bytes": 149611
+    },
+    {
+      "name": "models/paysim_1_PT_82_platt.parquet",
+      "sha256": "7a6404b4c4fa9efbe7ae9b1c7a6ac87c8c32727e39b1c85d7ab2a89d0400c91e",
+      "bytes": 180361
+    },
+    {
+      "name": "models/paysim_1_PT_82_raw.parquet",
+      "sha256": "25fad4117330363717f436c38a5fb708ceb544c3f26565620d9b21dae3cdeb5f",
+      "bytes": 149611
+    },
+    {
+      "name": "models/paysim_1_PTH_42_clipped.parquet",
+      "sha256": "cf9aef1475fd956f20d9880564f0a897de19abc2c178fd45af30dfaa6512d6c2",
+      "bytes": 149599
+    },
+    {
+      "name": "models/paysim_1_PTH_42_platt.parquet",
+      "sha256": "7205ea80dbf6256aae6c995998812e2bfa26941ec6c05c64903ce33932c6235e",
+      "bytes": 203415
+    },
+    {
+      "name": "models/paysim_1_PTH_42_raw.parquet",
+      "sha256": "09be0a0914e2ac3498b77dba5a491cae0c493669bbadc3cbd4f3d09d502d5975",
+      "bytes": 149599
+    },
+    {
+      "name": "models/paysim_1_PTH_52_clipped.parquet",
+      "sha256": "e4cee8f13e8f73845ac5ac8d2ccb8e83db08915666f4027b067bca4097b0e5a2",
+      "bytes": 149568
+    },
+    {
+      "name": "models/paysim_1_PTH_52_platt.parquet",
+      "sha256": "4b611fa226c53fe0e457f750cdd79fa6b2432ad734625feabc69deb078b0decf",
+      "bytes": 202965
+    },
+    {
+      "name": "models/paysim_1_PTH_52_raw.parquet",
+      "sha256": "ce0b2a9f12b4274352326da7cf8581c47221faaeb86e64d888914b0db6ada397",
+      "bytes": 149568
+    },
+    {
+      "name": "models/paysim_1_PTH_62_clipped.parquet",
+      "sha256": "6a069b2212554c949d1c94e1bcfb6d187666371971567d17448fa2693ed02828",
+      "bytes": 149493
+    },
+    {
+      "name": "models/paysim_1_PTH_62_platt.parquet",
+      "sha256": "953a2a08a5c9b2acfd727a27470bd3d80ee0bdea385d7fa1c09bc32ed0339e4f",
+      "bytes": 203528
+    },
+    {
+      "name": "models/paysim_1_PTH_62_raw.parquet",
+      "sha256": "6193aade9fc77753e67c7b71a448e4d1e2a54d8308f03b72734576fce56267ed",
+      "bytes": 149493
+    },
+    {
+      "name": "models/paysim_1_PTH_72_clipped.parquet",
+      "sha256": "368bdec73d523a8982015c48b869c1ed49cdfe578e7cb51a58f352a72d0df7a0",
+      "bytes": 149491
+    },
+    {
+      "name": "models/paysim_1_PTH_72_platt.parquet",
+      "sha256": "aac88904e774ecd629be068a2a11efcc5bf87c166cc1734692d0eb7f6575cb72",
+      "bytes": 203546
+    },
+    {
+      "name": "models/paysim_1_PTH_72_raw.parquet",
+      "sha256": "6aa20013d8354ceb7035ec5f5be645a0d3709e205442e6242490cd9f0c0e46c1",
+      "bytes": 149491
+    },
+    {
+      "name": "models/paysim_1_PTH_82_clipped.parquet",
+      "sha256": "cd1a1272a3933498cf2c535e7a5df9912b3157bb0a49afff9318bf78d1e39add",
+      "bytes": 149603
+    },
+    {
+      "name": "models/paysim_1_PTH_82_platt.parquet",
+      "sha256": "4a9468372e846df9317579df7a2e59300e1d0479362b330ecc1b2b908e719fc6",
+      "bytes": 204171
+    },
+    {
+      "name": "models/paysim_1_PTH_82_raw.parquet",
+      "sha256": "8879c5cfc006a8b4a755d3a6d88f266dc0b2bc6851a8a5917445b4d16bbabbe8",
+      "bytes": 149603
+    },
+    {
+      "name": "models/paysim_1_PTHW_42_clipped.parquet",
+      "sha256": "d6c4f0dfba771c57cd0f8b8a485350ce4d81196e61ba7c969d4bd910a2c53f66",
+      "bytes": 149493
+    },
+    {
+      "name": "models/paysim_1_PTHW_42_platt.parquet",
+      "sha256": "5f7b90dd7dfb70342c04eb3e5b19759fc849bb90e28bf329215db2cf489a0b64",
+      "bytes": 203239
+    },
+    {
+      "name": "models/paysim_1_PTHW_42_raw.parquet",
+      "sha256": "37903276a9e20735d8987e99f2db44adae4998cf307018544b062f22c8ed4329",
+      "bytes": 149493
+    },
+    {
+      "name": "models/paysim_1_PTHW_52_clipped.parquet",
+      "sha256": "770f0b280afb581bfb4737ba9e9df2c49b10cba4259a6353c2f239f413f7ba0b",
+      "bytes": 149639
+    },
+    {
+      "name": "models/paysim_1_PTHW_52_platt.parquet",
+      "sha256": "5c339367cee4ab5c1253ae86cc65333efe04cf0ecefc11096bccd1a1ee647643",
+      "bytes": 204436
+    },
+    {
+      "name": "models/paysim_1_PTHW_52_raw.parquet",
+      "sha256": "a4e32aab12b63d82bdd56b5b43a6f8bf6887b38177112d2465fd21cb36e83f75",
+      "bytes": 149639
+    },
+    {
+      "name": "models/paysim_1_PTHW_62_clipped.parquet",
+      "sha256": "71b7f7374f923a0c37509a4f6f03af5c742ad308245247de40502d31f93d2548",
+      "bytes": 149521
+    },
+    {
+      "name": "models/paysim_1_PTHW_62_platt.parquet",
+      "sha256": "ec7794d83bdf84ec6e97e830e9471739ffaa06692f488bda6423c76253522aae",
+      "bytes": 203200
+    },
+    {
+      "name": "models/paysim_1_PTHW_62_raw.parquet",
+      "sha256": "221c441d26243ed857b8663e6159b3934df24e0c9752c6f5d9d0b74dfa7f299f",
+      "bytes": 149521
+    },
+    {
+      "name": "models/paysim_1_PTHW_72_clipped.parquet",
+      "sha256": "bf00c31577a57df2a2352087c0f0ba0bc4048a16e0264123a2551ec77f6501e5",
+      "bytes": 149531
+    },
+    {
+      "name": "models/paysim_1_PTHW_72_platt.parquet",
+      "sha256": "16a12585fba53a04edc346e9a78b232cdacac8b9c2f1a29456f1f73cabcde20c",
+      "bytes": 203476
+    },
+    {
+      "name": "models/paysim_1_PTHW_72_raw.parquet",
+      "sha256": "7001697a08f7420407de0df684afa6935d76bd25036b83fe478307cf4729a3e1",
+      "bytes": 149531
+    },
+    {
+      "name": "models/paysim_1_PTHW_82_clipped.parquet",
+      "sha256": "bcdb6abeeb1bf802c3744a77b92b83cb5e9413dc8ca3226ceb6d93e619540bf2",
+      "bytes": 149559
+    },
+    {
+      "name": "models/paysim_1_PTHW_82_platt.parquet",
+      "sha256": "ea3a00ad1ffbd8724ba65fd24f0064d8d643edbc42d6331846236f4bf121550e",
+      "bytes": 204012
+    },
+    {
+      "name": "models/paysim_1_PTHW_82_raw.parquet",
+      "sha256": "42ba9371d5980773ddb0d5b845fd8367ed185fe9be2a58b9c29cafc942fcedb8",
+      "bytes": 149559
+    },
+    {
+      "name": "models/paysim_2_P0_42_clipped.parquet",
+      "sha256": "aa09dce115634fac616acba67560eb18fb0fbe748bdf5a8f1ff07cd58798a348",
+      "bytes": 147396
+    },
+    {
+      "name": "models/paysim_2_P0_42_platt.parquet",
+      "sha256": "cf826e7fc60a639db351949c2676654a5614065d01bc2f20c6546621325e0cdc",
+      "bytes": 181859
+    },
+    {
+      "name": "models/paysim_2_P0_42_raw.parquet",
+      "sha256": "aa09dce115634fac616acba67560eb18fb0fbe748bdf5a8f1ff07cd58798a348",
+      "bytes": 147396
+    },
+    {
+      "name": "models/paysim_2_P0_52_clipped.parquet",
+      "sha256": "397abb88c4e7acd088ffb52995e232741ddf74baace40c0b4955e30cb9b0608f",
+      "bytes": 147416
+    },
+    {
+      "name": "models/paysim_2_P0_52_platt.parquet",
+      "sha256": "01a46a2c321c0950ad699d4f58e1c9e4c25ef82325fcbac3de9f341681be8a4b",
+      "bytes": 172263
+    },
+    {
+      "name": "models/paysim_2_P0_52_raw.parquet",
+      "sha256": "e28a3cf017b25438c7b267a0dee3d371fdaa891d46e9c580c5caad2476a87226",
+      "bytes": 147416
+    },
+    {
+      "name": "models/paysim_2_P0_62_clipped.parquet",
+      "sha256": "9dc088823f2bc27847190c42169885569a5196dc52372a26e59809d009258474",
+      "bytes": 147376
+    },
+    {
+      "name": "models/paysim_2_P0_62_platt.parquet",
+      "sha256": "edf2a87a558ed5fa998fe9ae596f8535def1bf9a90e34eae7ed7e0c419222676",
+      "bytes": 182843
+    },
+    {
+      "name": "models/paysim_2_P0_62_raw.parquet",
+      "sha256": "9dc088823f2bc27847190c42169885569a5196dc52372a26e59809d009258474",
+      "bytes": 147376
+    },
+    {
+      "name": "models/paysim_2_P0_72_clipped.parquet",
+      "sha256": "e03f4859541019074918c16f63f3484cd29dd0933570db5b30dd399de2caffeb",
+      "bytes": 147436
+    },
+    {
+      "name": "models/paysim_2_P0_72_platt.parquet",
+      "sha256": "82f20c2cbaea71ab2eb1645a718870bb5ff6666219805021df0cabd9347689c3",
+      "bytes": 181754
+    },
+    {
+      "name": "models/paysim_2_P0_72_raw.parquet",
+      "sha256": "e03f4859541019074918c16f63f3484cd29dd0933570db5b30dd399de2caffeb",
+      "bytes": 147436
+    },
+    {
+      "name": "models/paysim_2_P0_82_clipped.parquet",
+      "sha256": "168ac0d08ef4581dcb09d8801e348ac989b821c073ab06acf6e23a7d63aed8e6",
+      "bytes": 147388
+    },
+    {
+      "name": "models/paysim_2_P0_82_platt.parquet",
+      "sha256": "d7ae3ed84269780cc609f2fd096c8047c69502617d5fceb34e5e21cfd3c88634",
+      "bytes": 176225
+    },
+    {
+      "name": "models/paysim_2_P0_82_raw.parquet",
+      "sha256": "d43e259a4a68b3bba06ab5de7a75d3f4f48f781931fdde4f144be7d8318f8710",
+      "bytes": 147388
+    },
+    {
+      "name": "models/paysim_2_PH_42_clipped.parquet",
+      "sha256": "c96b6a52868d88f866df10b788fd44e7ee9488c3e6a4b7ee5cc69dd5ab8a2185",
+      "bytes": 147418
+    },
+    {
+      "name": "models/paysim_2_PH_42_platt.parquet",
+      "sha256": "8abfaabe73dd044888c740a8b0b5eddca7cc5e6296978d377a50e8f638fa1aac",
+      "bytes": 198365
+    },
+    {
+      "name": "models/paysim_2_PH_42_raw.parquet",
+      "sha256": "22ac0000c9fdef746aa9b5ad3bbdd92a9e7d31e8cfde79a55222a4bfd6d426bd",
+      "bytes": 147418
+    },
+    {
+      "name": "models/paysim_2_PH_52_clipped.parquet",
+      "sha256": "c39296c988764ff41796a3c4215de4396f12c44df72bc4aae2928702c4dc997e",
+      "bytes": 147446
+    },
+    {
+      "name": "models/paysim_2_PH_52_platt.parquet",
+      "sha256": "27cddac262220ac37b5673fa42fb5f6a0050b37eb135990d5f999432f458b523",
+      "bytes": 196496
+    },
+    {
+      "name": "models/paysim_2_PH_52_raw.parquet",
+      "sha256": "92b65426289e7fce55c3e5a978748c93ab2fd728cef7ecd863594017bdd99c64",
+      "bytes": 147446
+    },
+    {
+      "name": "models/paysim_2_PH_62_clipped.parquet",
+      "sha256": "fcca02ed90b6b0d7fdc180d243d998df5767624459d5841dcffa675bdab351e1",
+      "bytes": 148079
+    },
+    {
+      "name": "models/paysim_2_PH_62_platt.parquet",
+      "sha256": "96f4e498e8a32e6513ae6b02a374f4c8afce19b4f46478566fc9053cc774fd28",
+      "bytes": 200087
+    },
+    {
+      "name": "models/paysim_2_PH_62_raw.parquet",
+      "sha256": "07570186f6d5b07944cda105a6e013bd1098c7de010970183b36e8e428ee7466",
+      "bytes": 148079
+    },
+    {
+      "name": "models/paysim_2_PH_72_clipped.parquet",
+      "sha256": "20a45b50f82be4d654e7522ddaf2f4e70d3bca6b6a814dead4ff38cc32e6a67f",
+      "bytes": 147434
+    },
+    {
+      "name": "models/paysim_2_PH_72_platt.parquet",
+      "sha256": "1d6a3c85e65f87af26fd5fc27a5e9fd81d3c0169f19b18c53b3cf24b4d33997a",
+      "bytes": 197850
+    },
+    {
+      "name": "models/paysim_2_PH_72_raw.parquet",
+      "sha256": "353a448244570f62eb4fa3144f41d514373e520c320d5697753f8141e0b09831",
+      "bytes": 147434
+    },
+    {
+      "name": "models/paysim_2_PH_82_clipped.parquet",
+      "sha256": "be3c7c21b3b5f93a2c65d284c2b81913d5e99293cb08679cc205e6ec58a8589c",
+      "bytes": 148139
+    },
+    {
+      "name": "models/paysim_2_PH_82_platt.parquet",
+      "sha256": "8c7345fd7b0175073e4e721f2acbee8c68a30160559b3f45d111bef0d9ce8cb8",
+      "bytes": 199848
+    },
+    {
+      "name": "models/paysim_2_PH_82_raw.parquet",
+      "sha256": "7d7564eea0a7ac7d495348b09e4cb7178fc50da70e67f161cbeb97f03fa11d31",
+      "bytes": 148139
+    },
+    {
+      "name": "models/paysim_2_PT_42_clipped.parquet",
+      "sha256": "f71051204251679455d1a28fb2a13b7fc732a58fa2bddb33e3090dfd77fced2f",
+      "bytes": 148299
+    },
+    {
+      "name": "models/paysim_2_PT_42_platt.parquet",
+      "sha256": "b58a4a36362dc52acbe7a1d1e3bbb27459270a6ce2aa5e73112bb4ccce4d055e",
+      "bytes": 194101
+    },
+    {
+      "name": "models/paysim_2_PT_42_raw.parquet",
+      "sha256": "aba365f670ffc7c30be89c97e99a6574c01a8ee99f712f5155ee1e036a07f94a",
+      "bytes": 148299
+    },
+    {
+      "name": "models/paysim_2_PT_52_clipped.parquet",
+      "sha256": "0c721c0127c397514192a6817abdc04a845d7845bf04e54ad5e4fcc6de2f4281",
+      "bytes": 148281
+    },
+    {
+      "name": "models/paysim_2_PT_52_platt.parquet",
+      "sha256": "ff0d43c60e63fa0c50f2fc36fe0ee2c8660de7a41702c383646edad32766c9b2",
+      "bytes": 195397
+    },
+    {
+      "name": "models/paysim_2_PT_52_raw.parquet",
+      "sha256": "71f05970f1f2bcce6b9935fb20c62fb5dfcc7d0ea0a280281635cc4ccc732511",
+      "bytes": 148281
+    },
+    {
+      "name": "models/paysim_2_PT_62_clipped.parquet",
+      "sha256": "2991d7e6a03bd1947164ddb78867e901bdf793d4459eae515248ed6906e02858",
+      "bytes": 148271
+    },
+    {
+      "name": "models/paysim_2_PT_62_platt.parquet",
+      "sha256": "a52ed53eda110f041978827e538d5533ef05324164d74308ee95bcacc70141f1",
+      "bytes": 192831
+    },
+    {
+      "name": "models/paysim_2_PT_62_raw.parquet",
+      "sha256": "e53f2371e77810529ca192c37ffc5949fbb7dfc3a35e5b68d428b6764735da29",
+      "bytes": 148271
+    },
+    {
+      "name": "models/paysim_2_PT_72_clipped.parquet",
+      "sha256": "133eb9fd87a8efb9c986bdbad2d033222423b960fdcd1d32a6dde36efed97cde",
+      "bytes": 148263
+    },
+    {
+      "name": "models/paysim_2_PT_72_platt.parquet",
+      "sha256": "c3beb40f7460a68ccbd4392139471931d5a41560c9009b636f480b52a60b9cd5",
+      "bytes": 194523
+    },
+    {
+      "name": "models/paysim_2_PT_72_raw.parquet",
+      "sha256": "6d7f3b67e3562e5bd65a4b56115b62315f34985a15b165fda31dc0ec50c16aec",
+      "bytes": 148263
+    },
+    {
+      "name": "models/paysim_2_PT_82_clipped.parquet",
+      "sha256": "1d344fdbca092165c69b8c5167a0593d5120f65ce3e10b4193bc78ddbb3bfe69",
+      "bytes": 148301
+    },
+    {
+      "name": "models/paysim_2_PT_82_platt.parquet",
+      "sha256": "62b125464b78d03bfde97f8e88e0fcfdf279b8f270f57dd1eab815d4a5ecc9c4",
+      "bytes": 194380
+    },
+    {
+      "name": "models/paysim_2_PT_82_raw.parquet",
+      "sha256": "703d235e8df270720dc1344a91b7fc9172fa792df89c44ac5f2a1d018e2bae21",
+      "bytes": 148301
+    },
+    {
+      "name": "models/paysim_2_PTH_42_clipped.parquet",
+      "sha256": "e85ad03c91ff120aca2010d28b412782c05edb82f5bed476fb2b78d72a46b8ae",
+      "bytes": 148203
+    },
+    {
+      "name": "models/paysim_2_PTH_42_platt.parquet",
+      "sha256": "5d5346539cdd469be2d0c711aa5a9c2d6b219b1dad394e997395e2af9435c93e",
+      "bytes": 201351
+    },
+    {
+      "name": "models/paysim_2_PTH_42_raw.parquet",
+      "sha256": "6dc7f16eff7e32fe6c1b46cb030780de557c2e85547cbc543f9fa178e0d82115",
+      "bytes": 148203
+    },
+    {
+      "name": "models/paysim_2_PTH_52_clipped.parquet",
+      "sha256": "b6b5a85e7452e2b5da5aca8757dfef977d0411b08fedccf8f6f1378766711b25",
+      "bytes": 148151
+    },
+    {
+      "name": "models/paysim_2_PTH_52_platt.parquet",
+      "sha256": "d4c1c68da79be340f37b73356de3fa18f46d6b79949ba9ed38a8b619dc4d4142",
+      "bytes": 200832
+    },
+    {
+      "name": "models/paysim_2_PTH_52_raw.parquet",
+      "sha256": "751b8aa0030ab2e4cdbf5d1b10aadc5b7362f7ec26508717998ab0fee1cbffc4",
+      "bytes": 148151
+    },
+    {
+      "name": "models/paysim_2_PTH_62_clipped.parquet",
+      "sha256": "865cba1ee7bd5525e6abe1c330c77a4dd2cf18dabb77e8cd8d3144185f60d78c",
+      "bytes": 148191
+    },
+    {
+      "name": "models/paysim_2_PTH_62_platt.parquet",
+      "sha256": "5c9475f1cfd7b10f3806f640c4d4472363dd7b3c46bd330c1537437ca0f8484d",
+      "bytes": 199543
+    },
+    {
+      "name": "models/paysim_2_PTH_62_raw.parquet",
+      "sha256": "6f714718530839aeb32d99c7778663fd02b6942237bc0cbfd35678c8d16597ac",
+      "bytes": 148191
+    },
+    {
+      "name": "models/paysim_2_PTH_72_clipped.parquet",
+      "sha256": "7d501333bd8bdeb79ef78ded923f49b4b61941473cde845b2174b61a6a0200dc",
+      "bytes": 148199
+    },
+    {
+      "name": "models/paysim_2_PTH_72_platt.parquet",
+      "sha256": "b5a1914c171c7ee952224d4c6ef92472b042aa4cc6873445364180538aa5fa5e",
+      "bytes": 200141
+    },
+    {
+      "name": "models/paysim_2_PTH_72_raw.parquet",
+      "sha256": "85883daf86dce9a85d8a1f0efdaaf9195cd7b5146cf084d108c11417b59b5330",
+      "bytes": 148199
+    },
+    {
+      "name": "models/paysim_2_PTH_82_clipped.parquet",
+      "sha256": "ef68fa7410761075336c92b0d4de251f3e8dd821a027e6fd38a7d6ebb2a39ee5",
+      "bytes": 148095
+    },
+    {
+      "name": "models/paysim_2_PTH_82_platt.parquet",
+      "sha256": "f354d942a462d929dc2869dbf0144c5d441042c542b41b3521e09c2bf8a18b1f",
+      "bytes": 201922
+    },
+    {
+      "name": "models/paysim_2_PTH_82_raw.parquet",
+      "sha256": "225d24b632d43cd3c70f2283e7352e3505977590de3f6cc70d5e2dd69af6c998",
+      "bytes": 148095
+    },
+    {
+      "name": "models/paysim_2_PTHW_42_clipped.parquet",
+      "sha256": "72611ca7f5a5fee7ab8b6c7681e76350e7628fe9419619b5ba81f5aa11a2eb76",
+      "bytes": 148155
+    },
+    {
+      "name": "models/paysim_2_PTHW_42_platt.parquet",
+      "sha256": "edd0d109d4eaa0d3b71fe2cde07176c7e0f495d71d7728c39f51414b3e834007",
+      "bytes": 199434
+    },
+    {
+      "name": "models/paysim_2_PTHW_42_raw.parquet",
+      "sha256": "4774457fcf1d87cef8705bb8704008002c97ab4d947757dc0781d81c8be10768",
+      "bytes": 148155
+    },
+    {
+      "name": "models/paysim_2_PTHW_52_clipped.parquet",
+      "sha256": "6557ee4925cad5ae702effbcdd76c4d10ace804d0ccaccf3748196f4d27ad70d",
+      "bytes": 148155
+    },
+    {
+      "name": "models/paysim_2_PTHW_52_platt.parquet",
+      "sha256": "ec6a648522f2acbeee16d30caef5c92a6d87cba3bab296aafdb72b7215f01022",
+      "bytes": 200060
+    },
+    {
+      "name": "models/paysim_2_PTHW_52_raw.parquet",
+      "sha256": "e7ce2454c3063d140a1c6a82fdbc46c859521b164c4d19dafbed6bf821a8604c",
+      "bytes": 148155
+    },
+    {
+      "name": "models/paysim_2_PTHW_62_clipped.parquet",
+      "sha256": "3b9253a1595bbd805ca2a11d2567c1972a5c3318cdedf57e1810dd3c40b4c2ab",
+      "bytes": 148207
+    },
+    {
+      "name": "models/paysim_2_PTHW_62_platt.parquet",
+      "sha256": "1725cfaaaa142191316ee7afee796cfc1c70837386eb84b27d34e14db0877288",
+      "bytes": 198036
+    },
+    {
+      "name": "models/paysim_2_PTHW_62_raw.parquet",
+      "sha256": "18eece50a0a9664882591c9911f2616ea3dad567ce284102f8e54725dedd4b03",
+      "bytes": 148207
+    },
+    {
+      "name": "models/paysim_2_PTHW_72_clipped.parquet",
+      "sha256": "2d48e85e27675b579d7a5b63569f57a48cfa0655be72cd99305589656f7a71f1",
+      "bytes": 148199
+    },
+    {
+      "name": "models/paysim_2_PTHW_72_platt.parquet",
+      "sha256": "60ec7233edededa520577b13477c6962ec4a68185f2e99f8373fb3b3fc3c321a",
+      "bytes": 203762
+    },
+    {
+      "name": "models/paysim_2_PTHW_72_raw.parquet",
+      "sha256": "43684e29bea1956b1d34b46364dc56f0823d5c1d3f44b92463abbe07c4ac28cc",
+      "bytes": 148199
+    },
+    {
+      "name": "models/paysim_2_PTHW_82_clipped.parquet",
+      "sha256": "710911f92533f322874a6b549ac86d82169355c5532c00f54df23267f2abebd8",
+      "bytes": 148175
+    },
+    {
+      "name": "models/paysim_2_PTHW_82_platt.parquet",
+      "sha256": "1cc88586c3e0d23fa27780fa5f3dcdd97386a4aacb4200707dd38b1a91b40170",
+      "bytes": 200311
+    },
+    {
+      "name": "models/paysim_2_PTHW_82_raw.parquet",
+      "sha256": "5557c3c5084d8589b9e4dc877856b33c9f1cfbd5b2195d3fac3345cb347e3ecf",
+      "bytes": 148175
+    },
+    {
+      "name": "models/paysim_3_P0_42_clipped.parquet",
+      "sha256": "becb7d34413e1a66a41f821662a5ee8235ad0ebf8164c4caba27fcd1cd5ecdc6",
+      "bytes": 152552
+    },
+    {
+      "name": "models/paysim_3_P0_42_platt.parquet",
+      "sha256": "a5ef9c5d2ca9a03aa9c3ef53358204ce5c5bfd1520d66523b72eebf7ebbbd25f",
+      "bytes": 206364
+    },
+    {
+      "name": "models/paysim_3_P0_42_raw.parquet",
+      "sha256": "4cd4c8f0f8b980326a2da1e05ab92be33a244916d90f76da32bd897595fa1c24",
+      "bytes": 152552
+    },
+    {
+      "name": "models/paysim_3_P0_52_clipped.parquet",
+      "sha256": "e37293b56bc8825767146a968b326aefcea461a8e553c36a4518938f2ddfdec9",
+      "bytes": 152332
+    },
+    {
+      "name": "models/paysim_3_P0_52_platt.parquet",
+      "sha256": "8001688b956c50be3f669ab5f2df562040df7ce1ce58e16e894dd633184187fb",
+      "bytes": 205678
+    },
+    {
+      "name": "models/paysim_3_P0_52_raw.parquet",
+      "sha256": "94f9f693bef28f81664208e750c5ab86980454b30fd41b242e9b94980e3a2a96",
+      "bytes": 152332
+    },
+    {
+      "name": "models/paysim_3_P0_62_clipped.parquet",
+      "sha256": "f06175b6dda9e6b49f349fe87f988deb077a302adbb52c63079a1ee45c023548",
+      "bytes": 152334
+    },
+    {
+      "name": "models/paysim_3_P0_62_platt.parquet",
+      "sha256": "2d7b13cf861a0685c6630de6affbd2d7c962a12f7c610792daacd7419fbb8f82",
+      "bytes": 207660
+    },
+    {
+      "name": "models/paysim_3_P0_62_raw.parquet",
+      "sha256": "64be764b120cc589e46b3c59bba466e57e61245f4cf2494e330321838c29082f",
+      "bytes": 152334
+    },
+    {
+      "name": "models/paysim_3_P0_72_clipped.parquet",
+      "sha256": "758b530861321e65dd9c708f568fb102c9b0fd0d68c13bc884d800f93c33a6af",
+      "bytes": 152272
+    },
+    {
+      "name": "models/paysim_3_P0_72_platt.parquet",
+      "sha256": "fcdf13562e4107d3d2929e833fa87b5336845837f31965a7cf9b4f2ac38afd04",
+      "bytes": 207347
+    },
+    {
+      "name": "models/paysim_3_P0_72_raw.parquet",
+      "sha256": "f96cd4c1566ce05fa8168fd092ef05b247988e50ef5b051eae7b801833398dd2",
+      "bytes": 152272
+    },
+    {
+      "name": "models/paysim_3_P0_82_clipped.parquet",
+      "sha256": "82032eeab4bcf211d0f3fd695e62d21b2d5abe4246f7769a6dc95590e221696d",
+      "bytes": 152360
+    },
+    {
+      "name": "models/paysim_3_P0_82_platt.parquet",
+      "sha256": "edff480c5a2df422c059bc0f3f360bf93dbb21852abfab83016dd97d5c73ef12",
+      "bytes": 205224
+    },
+    {
+      "name": "models/paysim_3_P0_82_raw.parquet",
+      "sha256": "2f4a1f36aef65ed1ecfcfd4e61cb515f07269dc23c10cfcde386534daabdd46b",
+      "bytes": 152360
+    },
+    {
+      "name": "models/paysim_3_PH_42_clipped.parquet",
+      "sha256": "a412206fae521ccd229061404d15f478e9dcfbb0d34d9c14b8453d28008cd626",
+      "bytes": 156783
+    },
+    {
+      "name": "models/paysim_3_PH_42_platt.parquet",
+      "sha256": "a51d3b4baf990b883613ae0b9e9bf578d4f03d9e6493b141293ed99f80d4f606",
+      "bytes": 214467
+    },
+    {
+      "name": "models/paysim_3_PH_42_raw.parquet",
+      "sha256": "5ce1b7202f0b404813029032bef8d72f491f6d769ebb83b2fb7ad6c7ac66e95c",
+      "bytes": 156783
+    },
+    {
+      "name": "models/paysim_3_PH_52_clipped.parquet",
+      "sha256": "09c97df51ef5052d8eb451281d27aabcfc4194a9e83efaf01bc803bbae4681e3",
+      "bytes": 152467
+    },
+    {
+      "name": "models/paysim_3_PH_52_platt.parquet",
+      "sha256": "ad55490e25ae7c0964cd064eff0d30561e17b37b57277a40b1bdabf6167a868d",
+      "bytes": 208358
+    },
+    {
+      "name": "models/paysim_3_PH_52_raw.parquet",
+      "sha256": "9f05e6a00d27ecdfa11ffc016d34fbb3a6bb28b69f90308127f5402048b78479",
+      "bytes": 152467
+    },
+    {
+      "name": "models/paysim_3_PH_62_clipped.parquet",
+      "sha256": "3ff0693c17a4188550bef65145d1cea6ed9b34c38eff3a30e6ec9a825f1f46a3",
+      "bytes": 152493
+    },
+    {
+      "name": "models/paysim_3_PH_62_platt.parquet",
+      "sha256": "a8ec89b5cf9b17a39dfc3b4c60a25208104d7429393a2ad0673d766ec08b0bb4",
+      "bytes": 208130
+    },
+    {
+      "name": "models/paysim_3_PH_62_raw.parquet",
+      "sha256": "de447ecbc8dbfa52f025852d50715627ce3b33383c45fd00ac64e486215217b1",
+      "bytes": 152493
+    },
+    {
+      "name": "models/paysim_3_PH_72_clipped.parquet",
+      "sha256": "d2297f42b222fb7d67b70b3b862b299aee0da3a48e72c1064327590b18d7c69e",
+      "bytes": 152486
+    },
+    {
+      "name": "models/paysim_3_PH_72_platt.parquet",
+      "sha256": "5e78d7725249f9f2577960fba871636e3a0b35c16e522977bca22eb3e80b71af",
+      "bytes": 208085
+    },
+    {
+      "name": "models/paysim_3_PH_72_raw.parquet",
+      "sha256": "44bd1ebf2fd570d3e1643158dd7efb3b285d48ece83c730ab9782683562ba456",
+      "bytes": 152486
+    },
+    {
+      "name": "models/paysim_3_PH_82_clipped.parquet",
+      "sha256": "23091b9ec66ddd832422ef829353b195ce493c8f9d5eb000fe40765b4702170a",
+      "bytes": 152468
+    },
+    {
+      "name": "models/paysim_3_PH_82_platt.parquet",
+      "sha256": "ac90098d2d189e348fddc2b39b61adb3d55904a2e9e487dfb5c633b01b68adbd",
+      "bytes": 208249
+    },
+    {
+      "name": "models/paysim_3_PH_82_raw.parquet",
+      "sha256": "2f3114f9008f6cb7624d439a11fd5fe9481eef3d9f601d42f2314d8c747e3489",
+      "bytes": 152468
+    },
+    {
+      "name": "models/paysim_3_PT_42_clipped.parquet",
+      "sha256": "a211bb16310370a31b641d387479fa8b9f43306a26dbf66269c2cfebd122713a",
+      "bytes": 158676
+    },
+    {
+      "name": "models/paysim_3_PT_42_platt.parquet",
+      "sha256": "b854e5ab64aba0539e0290968f3d5236d487b1ebe42ad6ada89caaf61bcfc962",
+      "bytes": 223849
+    },
+    {
+      "name": "models/paysim_3_PT_42_raw.parquet",
+      "sha256": "870fc4809841e106a07dc7baec263905ced267d8644fc6cfef106803b7419fd5",
+      "bytes": 158574
+    },
+    {
+      "name": "models/paysim_3_PT_52_clipped.parquet",
+      "sha256": "408566f966c72429295c6bc13d16f25afdfa47bd82fd1cf983ae64ad30d76545",
+      "bytes": 158264
+    },
+    {
+      "name": "models/paysim_3_PT_52_platt.parquet",
+      "sha256": "5e2af5e4acb859bf3c444bfee730f6d64d50f8944a0cc93fea9fc22affb0e770",
+      "bytes": 221996
+    },
+    {
+      "name": "models/paysim_3_PT_52_raw.parquet",
+      "sha256": "51ca7b2be890af967d51b3c4df036af8513c02e7ea5f050f90fb0226fc8fc413",
+      "bytes": 158221
+    },
+    {
+      "name": "models/paysim_3_PT_62_clipped.parquet",
+      "sha256": "349114097c1e83c8bbf92d8785a89de5c65b808c68b9e55d1c8c4d2782bd68b6",
+      "bytes": 158177
+    },
+    {
+      "name": "models/paysim_3_PT_62_platt.parquet",
+      "sha256": "ca3f05e20f8f4dd90b4a5f92980b0c1b7d1f6ede16dde2230a388248eb62c097",
+      "bytes": 221726
+    },
+    {
+      "name": "models/paysim_3_PT_62_raw.parquet",
+      "sha256": "9b9e480ce5947325164db2587808d3e9c8576ae1ac1018785a0f27b6da2770b8",
+      "bytes": 158160
+    },
+    {
+      "name": "models/paysim_3_PT_72_clipped.parquet",
+      "sha256": "866b0c24940745046eba35c58d37e8e2c6c790cf81b9bd794a3d76c21f69d596",
+      "bytes": 157967
+    },
+    {
+      "name": "models/paysim_3_PT_72_platt.parquet",
+      "sha256": "a531da0707fbf69f4c2badbda181c877d6113dc8da241f6986f7640663d6f72b",
+      "bytes": 221251
+    },
+    {
+      "name": "models/paysim_3_PT_72_raw.parquet",
+      "sha256": "919eb05cdab04a592e71d05dfbdf15d496b5741cb761de6362d9c67f54ca5f28",
+      "bytes": 157987
+    },
+    {
+      "name": "models/paysim_3_PT_82_clipped.parquet",
+      "sha256": "49571c2c3b2503e8f1b2a60fa854d33c33549a88c48d3fe38eff19b09eafd3c7",
+      "bytes": 158388
+    },
+    {
+      "name": "models/paysim_3_PT_82_platt.parquet",
+      "sha256": "fca295160ec95a6abebf9f11622d22a85a39a3625d0f4ed71498360bd044893d",
+      "bytes": 222151
+    },
+    {
+      "name": "models/paysim_3_PT_82_raw.parquet",
+      "sha256": "56c26e9b6a34cfa95f449a468aea4f4a2c938d615a63ae8cb4cc870bb1155b9c",
+      "bytes": 158376
+    },
+    {
+      "name": "models/paysim_3_PTH_42_clipped.parquet",
+      "sha256": "262c5af084ddb310e7f6acd8ca99b1caeb52d7cf0fcc891e87bc7405a1c5be46",
+      "bytes": 157006
+    },
+    {
+      "name": "models/paysim_3_PTH_42_platt.parquet",
+      "sha256": "2e8dae25514eb1119847f6ad3400b3ea42102ceaaee48b5db09e2ea7df2a8141",
+      "bytes": 216376
+    },
+    {
+      "name": "models/paysim_3_PTH_42_raw.parquet",
+      "sha256": "de299a67504e8543585cce7b7cea192b74e7e98dbba2e363b56dc1b3e78b9211",
+      "bytes": 157006
+    },
+    {
+      "name": "models/paysim_3_PTH_52_clipped.parquet",
+      "sha256": "5b7ba72c79b3b98a2e2260f2fddfab99e437de96bd273788aada0b6ebf7b4da7",
+      "bytes": 159990
+    },
+    {
+      "name": "models/paysim_3_PTH_52_platt.parquet",
+      "sha256": "93a6077e856c547919eec27f3bee9323220fe3416732bf401536dd2e46cb1f76",
+      "bytes": 221327
+    },
+    {
+      "name": "models/paysim_3_PTH_52_raw.parquet",
+      "sha256": "e8864370edcdf732e1499eb0839f722dbf84a7cc1cbe5699039d59998134bafa",
+      "bytes": 160026
+    },
+    {
+      "name": "models/paysim_3_PTH_62_clipped.parquet",
+      "sha256": "d76e41b30d4b44ac808ffa443e4cd81f74f7b06bd394d062d508bbe19df1803d",
+      "bytes": 160932
+    },
+    {
+      "name": "models/paysim_3_PTH_62_platt.parquet",
+      "sha256": "daaa07ed2d0daa315e7c79a4e14f0fcc531c90d3b48c3066397536ca07043c70",
+      "bytes": 221911
+    },
+    {
+      "name": "models/paysim_3_PTH_62_raw.parquet",
+      "sha256": "08690bdd6f6f860864422445e4b6c52a6fe95f720166387b7656fabc5029686b",
+      "bytes": 160262
+    },
+    {
+      "name": "models/paysim_3_PTH_72_clipped.parquet",
+      "sha256": "8af1a7e8c19e9a1a5f5af950cfaf6d4140e6790d3135edf6c5f7c58709278572",
+      "bytes": 158079
+    },
+    {
+      "name": "models/paysim_3_PTH_72_platt.parquet",
+      "sha256": "af2f072d0678b341208f0804b7858e806dc70e735949eca858f5a8cfffc4c225",
+      "bytes": 218388
+    },
+    {
+      "name": "models/paysim_3_PTH_72_raw.parquet",
+      "sha256": "bff3d4ce1d8b995a726a7b56e249443efbf0d2bb40e57c1b76faa526c4ddd97b",
+      "bytes": 158087
+    },
+    {
+      "name": "models/paysim_3_PTH_82_clipped.parquet",
+      "sha256": "08324bd45eec0bd95a1d07ceb3546c2186b15388bc7ab34690491073495bcf97",
+      "bytes": 157960
+    },
+    {
+      "name": "models/paysim_3_PTH_82_platt.parquet",
+      "sha256": "85c71da6b7e524e91fca5c273faae522398f556318624305027890bdd9a0967c",
+      "bytes": 219086
+    },
+    {
+      "name": "models/paysim_3_PTH_82_raw.parquet",
+      "sha256": "4d9ed487964e0635434a9b5a438bcd6c0d1b509c810809438e514a2c51c43e00",
+      "bytes": 157932
+    },
+    {
+      "name": "models/paysim_3_PTHW_42_clipped.parquet",
+      "sha256": "87837e82b9b832185ee225a96bdfa0d78414704b97abc3e3ed5e8e363749eef2",
+      "bytes": 157174
+    },
+    {
+      "name": "models/paysim_3_PTHW_42_platt.parquet",
+      "sha256": "89e6717a05634e78064374b0f8fa2bc5da9f7fa0b24dbaf42f79e4f206a429c8",
+      "bytes": 216279
+    },
+    {
+      "name": "models/paysim_3_PTHW_42_raw.parquet",
+      "sha256": "57cbb5c70d5ba5e1c808abf2afc131b43f0b87434526904fc72215354a5f279e",
+      "bytes": 157174
+    },
+    {
+      "name": "models/paysim_3_PTHW_52_clipped.parquet",
+      "sha256": "9bfd1194b591cb86563e43c2d48b9c85519e999c86c6f7f415bcd4aac052ef87",
+      "bytes": 156956
+    },
+    {
+      "name": "models/paysim_3_PTHW_52_platt.parquet",
+      "sha256": "3b375c30ef087aee4c38b955eb81f415d467aae00cc0668c86796c0cfaad0e3e",
+      "bytes": 222270
+    },
+    {
+      "name": "models/paysim_3_PTHW_52_raw.parquet",
+      "sha256": "e0930a68904719a91caa68ae14f9f01d07131063ebd24325921c0eb4b3ca0ace",
+      "bytes": 156954
+    },
+    {
+      "name": "models/paysim_3_PTHW_62_clipped.parquet",
+      "sha256": "6115486b7325e8cea1332ea53af50569aaa3e7ee3d4990b9274959f17d1f4ffc",
+      "bytes": 154325
+    },
+    {
+      "name": "models/paysim_3_PTHW_62_platt.parquet",
+      "sha256": "8aa00087b45642d8c6df41b5947b54c26a3f5a2573531b1750af868132fd22dd",
+      "bytes": 212529
+    },
+    {
+      "name": "models/paysim_3_PTHW_62_raw.parquet",
+      "sha256": "67ced08704cf07d5d583296ec958ce29208902b012810e7d90d39f52981bbf4d",
+      "bytes": 154325
+    },
+    {
+      "name": "models/paysim_3_PTHW_72_clipped.parquet",
+      "sha256": "cd23a9047df3cb7c9797f0d90e67f34daa7b2d118a0ea8465021b9e703ec746c",
+      "bytes": 155312
+    },
+    {
+      "name": "models/paysim_3_PTHW_72_platt.parquet",
+      "sha256": "fe906d2102bc5384c4d641eb583d48a82ac7bdf2f053da1e20b1f3b0386c7373",
+      "bytes": 214854
+    },
+    {
+      "name": "models/paysim_3_PTHW_72_raw.parquet",
+      "sha256": "e1128818a458ed0fe1caf8dc57d2696f455cdf187ea193d8085d520d41f269ed",
+      "bytes": 155312
+    },
+    {
+      "name": "models/paysim_3_PTHW_82_clipped.parquet",
+      "sha256": "7b416ea6373d712012b35b61befdf86829a14feb15cb7ad71f2c2bcb2b0318c3",
+      "bytes": 158359
+    },
+    {
+      "name": "models/paysim_3_PTHW_82_platt.parquet",
+      "sha256": "bd8629a45ce5420c90027ebdaa0ff86a4bfe67bfbb2ebdd5e475b377532a4251",
+      "bytes": 219078
+    },
+    {
+      "name": "models/paysim_3_PTHW_82_raw.parquet",
+      "sha256": "542fda6366a97e2a7815cd4216570c2d83fc802ce5fdc08f570096e0ad0bf09a",
+      "bytes": 158344
+    },
+    {
+      "name": "processing_effect_intervals.csv",
+      "sha256": "f8267c922d888c11c9dae9c1fa89c1035557cf55c236c1b982963808d77ad5cb",
+      "bytes": 8356
+    },
+    {
+      "name": "timing.csv",
+      "sha256": "7c1289aff8ee959f1e200859ec51c196b761a35b3c1107530308135fc1ba80e5",
+      "bytes": 25251
+    }
+  ]
+}

@@ -1,0 +1,976 @@
+{
+  "status": "ARTIFICIAL_CONTRACT_PASS",
+  "started_utc": "2026-10-06T07:51:10.811374+00:00",
+  "seconds": 0.12174969998886809,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "unit_tests": 71,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "parameter_cases": 61,
+  "parameter_failures": 0,
+  "tests": [
+    {
+      "id": "__main__.EncodingTests.test_all_missing_numeric_column_dropped",
+      "description": null,
+      "status": "PASS",
+      "seconds": 6.600003689527512e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_common_raw_and_rules_match_only_corresponding_history_conditions",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.006848699995316565,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_constant_training_dummy_removed_even_if_future_differs",
+      "description": null,
+      "status": "PASS",
+      "seconds": 3.63999861292541e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_empty_fit_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 3.9700011257082224e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_float32_constant_rule",
+      "description": null,
+      "status": "PASS",
+      "seconds": 2.269999822601676e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_future_categories_do_not_extend_vocabulary",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.0004952999879606068,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_m0_retains_category_location_and_history_retrieval_key",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.00012119999155402184,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_m_switch_changes_only_all_merchant_encoded_columns",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.005495100049301982,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_missing_category_uses_train_token",
+      "description": null,
+      "status": "PASS",
+      "seconds": 2.9600050766021013e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_missing_marker_collision_rejected_fit_and_transform",
+      "description": null,
+      "status": "PASS",
+      "seconds": 3.549997927621007e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_nonfinite_or_overflow_numeric_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 9.960000170394778e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_numeric_constant_removed_without_evaluation_peeking",
+      "description": null,
+      "status": "PASS",
+      "seconds": 2.0499981474131346e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_numeric_train_median_and_missing_indicator",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.9799976143985987e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_only_training_rows_can_fit",
+      "description": null,
+      "status": "PASS",
+      "seconds": 3.619998460635543e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_six_cells_preserve_all_identities_and_empty_history_rows",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.006946799985598773,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_strings_not_normalized",
+      "description": null,
+      "status": "PASS",
+      "seconds": 4.800001624971628e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.EncodingTests.test_unseen_categories_all_zero",
+      "description": null,
+      "status": "PASS",
+      "seconds": 2.340000355616212e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_cold_start_empty_values",
+      "description": null,
+      "status": "PASS",
+      "seconds": 8.530000923201442e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_eight_step_old_event_excluded_from_every_hs_feature",
+      "description": null,
+      "status": "PASS",
+      "seconds": 5.520001286640763e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_empty_histories_not_filtered",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.00021500000730156898,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_fixture_matches_independent_set_oracle",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.0035265000187791884,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_future_append_invariance",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.00019540003268048167,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_h0_allocates_no_state_or_history_columns",
+      "description": null,
+      "status": "PASS",
+      "seconds": 9.869999485090375e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_history_continues_across_split_boundaries",
+      "description": null,
+      "status": "PASS",
+      "seconds": 6.240000948309898e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_hl_recency_reaches_beyond_thirty",
+      "description": null,
+      "status": "PASS",
+      "seconds": 3.679998917505145e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_hs_seven_and_thirty_slots_match",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.0005403999821282923,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_inactive_merchant_state_expires_without_new_transaction",
+      "description": null,
+      "status": "PASS",
+      "seconds": 4.630000330507755e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_large_cents_do_not_cancel_variance",
+      "description": null,
+      "status": "PASS",
+      "seconds": 4.8200017772614956e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_merchant_history_isolation_not_customer_binding",
+      "description": null,
+      "status": "PASS",
+      "seconds": 4.7600013203918934e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_negative_amount_max_and_exact_variance",
+      "description": null,
+      "status": "PASS",
+      "seconds": 4.380004247650504e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_one_step_left_endpoint",
+      "description": null,
+      "status": "PASS",
+      "seconds": 4.39999857917428e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.08469160000095144,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_row_permutation_invariance",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.0024667000398039818,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_same_step_modification_does_not_change_other_current_row",
+      "description": null,
+      "status": "PASS",
+      "seconds": 9.760004468262196e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_same_step_rows_never_see_each_other",
+      "description": null,
+      "status": "PASS",
+      "seconds": 5.199998850002885e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_sample_std_and_distinct_customers",
+      "description": null,
+      "status": "PASS",
+      "seconds": 5.6100019719451666e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_seven_step_left_endpoint_included",
+      "description": null,
+      "status": "PASS",
+      "seconds": 4.1300023440271616e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_single_past_row",
+      "description": null,
+      "status": "PASS",
+      "seconds": 4.469999112188816e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_thirty_step_left_endpoint",
+      "description": null,
+      "status": "PASS",
+      "seconds": 5.219999002292752e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.HistoryTests.test_zero_history_mean_ratio",
+      "description": null,
+      "status": "PASS",
+      "seconds": 3.850000211969018e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_bad_amount_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.00013040000339969993,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_direct_merchant_is_only_raw_column_change",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.6400008462369442e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_duplicate_identity_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.4500052202492952e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_duplicate_transactions_remain_distinct_rows",
+      "description": null,
+      "status": "PASS",
+      "seconds": 7.499998901039362e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_exact_cent_parse",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.5600002370774746e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_forbidden_predictors_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 6.640003994107246e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_history_schema_twenty",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.1800031643360853e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_labels_rejected_before_history",
+      "description": null,
+      "status": "PASS",
+      "seconds": 4.0700018871575594e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_required_key_missing_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 5.6699966080486774e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_six_cells_only",
+      "description": "Exactly six IDs; presentation names do not reuse old B0 input semantics.",
+      "status": "PASS",
+      "seconds": 1.6199948731809855e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_split_boundaries",
+      "description": null,
+      "status": "PASS",
+      "seconds": 9.100011084228754e-06,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_step_text_and_range_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 6.209994899109006e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_unknown_raw_field_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.2299977242946625e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.InputContractTests.test_wrong_history_schema_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.6400008462369442e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.IsolationTests.test_guard_blocks_external_file_before_open",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.0004697000258602202,
+      "detail": null
+    },
+    {
+      "id": "__main__.IsolationTests.test_guard_blocks_model_import_event",
+      "description": null,
+      "status": "PASS",
+      "seconds": 6.699998630210757e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.IsolationTests.test_guard_blocks_network_and_worker_creation_events",
+      "description": null,
+      "status": "PASS",
+      "seconds": 3.419996937736869e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.IsolationTests.test_no_real_library_loaded",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.009996049106121e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_ap_groups_ties_instead_of_priority_order",
+      "description": null,
+      "status": "PASS",
+      "seconds": 9.250000584870577e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_capacity_ceiling_exact",
+      "description": null,
+      "status": "PASS",
+      "seconds": 3.290001768618822e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_capacity_invalid_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 5.2200048230588436e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_contrasts_reject_population_or_budget_mismatch",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.650000922381878e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_difference_of_differences_hand_example",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.390004763379693e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_duplicate_ids_and_nonfinite_scores_rejected",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.6700010746717453e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_empty_evaluation_boundary",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.799996243789792e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_global_completed_window_is_not_daily_budget",
+      "description": null,
+      "status": "PASS",
+      "seconds": 2.8499984182417393e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_micro_recall_uses_total_positive_denominator",
+      "description": null,
+      "status": "PASS",
+      "seconds": 7.199996616691351e-06,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_no_positive_rows_kept_and_ratios_undefined",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.9899976905435324e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_original_hash_priority_format",
+      "description": null,
+      "status": "PASS",
+      "seconds": 1.0300020221620798e-05,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_ties_use_shared_identity_priority_and_permutation_invariance",
+      "description": null,
+      "status": "PASS",
+      "seconds": 0.0001737999846227467,
+      "detail": null
+    },
+    {
+      "id": "__main__.SyntheticMetricTests.test_zero_positive_contrasts_undefined",
+      "description": null,
+      "status": "PASS",
+      "seconds": 2.0600040443241596e-05,
+      "detail": null
+    }
+  ],
+  "parameter_results": [
+    {
+      "parent": "__main__.EncodingTests.test_nonfinite_or_overflow_numeric_rejected",
+      "case": "test_nonfinite_or_overflow_numeric_rejected (__main__.EncodingTests.test_nonfinite_or_overflow_numeric_rejected) (amount=inf)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.EncodingTests.test_nonfinite_or_overflow_numeric_rejected",
+      "case": "test_nonfinite_or_overflow_numeric_rejected (__main__.EncodingTests.test_nonfinite_or_overflow_numeric_rejected) (amount=-inf)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.EncodingTests.test_nonfinite_or_overflow_numeric_rejected",
+      "case": "test_nonfinite_or_overflow_numeric_rejected (__main__.EncodingTests.test_nonfinite_or_overflow_numeric_rejected) (amount=1e+99)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.EncodingTests.test_only_training_rows_can_fit",
+      "case": "test_only_training_rows_can_fit (__main__.EncodingTests.test_only_training_rows_can_fit) (split='validation')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.EncodingTests.test_only_training_rows_can_fit",
+      "case": "test_only_training_rows_can_fit (__main__.EncodingTests.test_only_training_rows_can_fit) (split='review')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=0)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=1)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=2)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=3)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=4)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=5)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=6)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=7)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=8)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=9)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=10)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=11)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=12)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=13)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=14)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=15)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=16)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=17)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=18)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=19)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=20)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=21)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=22)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.HistoryTests.test_random_small_worlds_against_independent_oracle",
+      "case": "test_random_small_worlds_against_independent_oracle (__main__.HistoryTests.test_random_small_worlds_against_independent_oracle) (artificial_seed=23)",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_bad_amount_rejected",
+      "case": "test_bad_amount_rejected (__main__.InputContractTests.test_bad_amount_rejected) (value='0.001')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_bad_amount_rejected",
+      "case": "test_bad_amount_rejected (__main__.InputContractTests.test_bad_amount_rejected) (value='NaN')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_bad_amount_rejected",
+      "case": "test_bad_amount_rejected (__main__.InputContractTests.test_bad_amount_rejected) (value='Infinity')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_bad_amount_rejected",
+      "case": "test_bad_amount_rejected (__main__.InputContractTests.test_bad_amount_rejected) (value='not-decimal')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_bad_amount_rejected",
+      "case": "test_bad_amount_rejected (__main__.InputContractTests.test_bad_amount_rejected) (value='92233720368547758.08')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_forbidden_predictors_rejected",
+      "case": "test_forbidden_predictors_rejected (__main__.InputContractTests.test_forbidden_predictors_rejected) (column='fraud')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_forbidden_predictors_rejected",
+      "case": "test_forbidden_predictors_rejected (__main__.InputContractTests.test_forbidden_predictors_rejected) (column='customer')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_forbidden_predictors_rejected",
+      "case": "test_forbidden_predictors_rejected (__main__.InputContractTests.test_forbidden_predictors_rejected) (column='source_row_id')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_forbidden_predictors_rejected",
+      "case": "test_forbidden_predictors_rejected (__main__.InputContractTests.test_forbidden_predictors_rejected) (column='merchant_risk')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_forbidden_predictors_rejected",
+      "case": "test_forbidden_predictors_rejected (__main__.InputContractTests.test_forbidden_predictors_rejected) (column='old_score')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_labels_rejected_before_history",
+      "case": "test_labels_rejected_before_history (__main__.InputContractTests.test_labels_rejected_before_history) (column='fraud')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_labels_rejected_before_history",
+      "case": "test_labels_rejected_before_history (__main__.InputContractTests.test_labels_rejected_before_history) (column='label')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_required_key_missing_rejected",
+      "case": "test_required_key_missing_rejected (__main__.InputContractTests.test_required_key_missing_rejected) (field='merchant')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_required_key_missing_rejected",
+      "case": "test_required_key_missing_rejected (__main__.InputContractTests.test_required_key_missing_rejected) (field='customer')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_required_key_missing_rejected",
+      "case": "test_required_key_missing_rejected (__main__.InputContractTests.test_required_key_missing_rejected) (field='amount')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_required_key_missing_rejected",
+      "case": "test_required_key_missing_rejected (__main__.InputContractTests.test_required_key_missing_rejected) (field='step')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_step_text_and_range_rejected",
+      "case": "test_step_text_and_range_rejected (__main__.InputContractTests.test_step_text_and_range_rejected) (step='-1')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_step_text_and_range_rejected",
+      "case": "test_step_text_and_range_rejected (__main__.InputContractTests.test_step_text_and_range_rejected) (step='1.0')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_step_text_and_range_rejected",
+      "case": "test_step_text_and_range_rejected (__main__.InputContractTests.test_step_text_and_range_rejected) (step=' 1')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_step_text_and_range_rejected",
+      "case": "test_step_text_and_range_rejected (__main__.InputContractTests.test_step_text_and_range_rejected) (step='180')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.InputContractTests.test_step_text_and_range_rejected",
+      "case": "test_step_text_and_range_rejected (__main__.InputContractTests.test_step_text_and_range_rejected) (step='１')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.IsolationTests.test_guard_blocks_model_import_event",
+      "case": "test_guard_blocks_model_import_event (__main__.IsolationTests.test_guard_blocks_model_import_event) (module='lightgbm')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.IsolationTests.test_guard_blocks_model_import_event",
+      "case": "test_guard_blocks_model_import_event (__main__.IsolationTests.test_guard_blocks_model_import_event) (module='xgboost')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.IsolationTests.test_guard_blocks_model_import_event",
+      "case": "test_guard_blocks_model_import_event (__main__.IsolationTests.test_guard_blocks_model_import_event) (module='numpy')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.IsolationTests.test_guard_blocks_model_import_event",
+      "case": "test_guard_blocks_model_import_event (__main__.IsolationTests.test_guard_blocks_model_import_event) (module='pandas')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.IsolationTests.test_guard_blocks_model_import_event",
+      "case": "test_guard_blocks_model_import_event (__main__.IsolationTests.test_guard_blocks_model_import_event) (module='banksim')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.IsolationTests.test_guard_blocks_network_and_worker_creation_events",
+      "case": "test_guard_blocks_network_and_worker_creation_events (__main__.IsolationTests.test_guard_blocks_network_and_worker_creation_events) (event='socket.connect')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.IsolationTests.test_guard_blocks_network_and_worker_creation_events",
+      "case": "test_guard_blocks_network_and_worker_creation_events (__main__.IsolationTests.test_guard_blocks_network_and_worker_creation_events) (event='subprocess.Popen')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.IsolationTests.test_guard_blocks_network_and_worker_creation_events",
+      "case": "test_guard_blocks_network_and_worker_creation_events (__main__.IsolationTests.test_guard_blocks_network_and_worker_creation_events) (event='os.system')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.SyntheticMetricTests.test_capacity_invalid_rejected",
+      "case": "test_capacity_invalid_rejected (__main__.SyntheticMetricTests.test_capacity_invalid_rejected) (value='0')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.SyntheticMetricTests.test_capacity_invalid_rejected",
+      "case": "test_capacity_invalid_rejected (__main__.SyntheticMetricTests.test_capacity_invalid_rejected) (value='-0.1')",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "parent": "__main__.SyntheticMetricTests.test_capacity_invalid_rejected",
+      "case": "test_capacity_invalid_rejected (__main__.SyntheticMetricTests.test_capacity_invalid_rejected) (value='1.1')",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "source_sha256": {
+    "contract_kernel.py": "c4aed881adfad0cc6e1ea55cc470ac0a69a011f3dcf7d418ef552e37065a0f4d",
+    "run_artificial_tests.py": "087243bdc831913201aee8dfebd93c574aaa8a2ce52a1eaf98df1e694a679573"
+  },
+  "guard": {
+    "allowed_file_access": [
+      {
+        "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\code\\contract_kernel.py",
+        "mode": "r"
+      },
+      {
+        "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\code\\run_artificial_tests.py",
+        "mode": "r"
+      },
+      {
+        "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\results\\attempt_02\\synthetic_fixture.json",
+        "mode": "x"
+      },
+      {
+        "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\results\\attempt_02\\six_cell_trace.json",
+        "mode": "x"
+      },
+      {
+        "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\results\\attempt_02\\unittest_console.txt",
+        "mode": "x"
+      },
+      {
+        "path": "${WORKSPACE}\\experiment\\outputs\\merchant_history_execution_preparation_20261006\\run_01\\results\\attempt_02\\test_results.json",
+        "mode": "x"
+      }
+    ],
+    "expected_denials": [
+      {
+        "event": "open",
+        "target": "D:\\forbidden-artificial-sentinel.csv",
+        "reason": "file access outside independent preparation directory"
+      },
+      {
+        "event": "import",
+        "target": "lightgbm",
+        "reason": "non-stdlib import prohibited"
+      },
+      {
+        "event": "import",
+        "target": "xgboost",
+        "reason": "non-stdlib import prohibited"
+      },
+      {
+        "event": "import",
+        "target": "numpy",
+        "reason": "non-stdlib import prohibited"
+      },
+      {
+        "event": "import",
+        "target": "pandas",
+        "reason": "non-stdlib import prohibited"
+      },
+      {
+        "event": "import",
+        "target": "banksim",
+        "reason": "non-stdlib import prohibited"
+      },
+      {
+        "event": "socket.connect",
+        "target": "artificial-denied-operation",
+        "reason": "network or process creation prohibited"
+      },
+      {
+        "event": "subprocess.Popen",
+        "target": "artificial-denied-operation",
+        "reason": "network or process creation prohibited"
+      },
+      {
+        "event": "os.system",
+        "target": "artificial-denied-operation",
+        "reason": "network or process creation prohibited"
+      }
+    ]
+  },
+  "execution": {
+    "real_dataset_reads": 0,
+    "real_label_reads": 0,
+    "real_model_loads": 0,
+    "real_model_fit_calls": 0,
+    "real_preprocessor_fits": 0,
+    "real_feature_generation": 0,
+    "real_predictions": 0,
+    "real_score_cache_reads": 0,
+    "selection_supplement_fits": 0,
+    "real_statistical_replays": 0
+  },
+  "limits": [
+    "stdlib artificial kernel, not native adapter parity",
+    "No training/resource-supervisor integration acceptance",
+    "No scientific efficacy, noninferiority, retention decision, or independent validation"
+  ],
+  "training_authorized": false
+}

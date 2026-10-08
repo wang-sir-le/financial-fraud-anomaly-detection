@@ -1,0 +1,130 @@
+{
+  "schema": "six-cell-banksim-retrospective-c07-20261006",
+  "task_authorized": true,
+  "real_execution_conditional_on_native_phase1": true,
+  "source": {
+    "archive": "${WORKSPACE}/experiment/outputs/banksim_validation_v1/run_20260925_01/inputs/banksim_v1.zip",
+    "archive_sha256": "3bfd0c2bfbdec83ad36eed499eaf38c6951c36be864ecbe30f3bcb7d84895f66",
+    "member": "bs140513_032310.csv",
+    "member_sha256": "e37006f76d993bfaec3a02d717b4f0bdc1ebfa5d36449e91fb7c07e225278377"
+  },
+  "reference": {
+    "fixture": "${WORKSPACE}/experiment/outputs/merchant_history_execution_preparation_20261006/run_01/results/attempt_02/synthetic_fixture.json",
+    "trace": "${WORKSPACE}/experiment/outputs/merchant_history_execution_preparation_20261006/run_01/results/attempt_02/six_cell_trace.json",
+    "results": "${WORKSPACE}/experiment/outputs/merchant_history_execution_preparation_20261006/run_01/results/attempt_02/test_results.json"
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "lightgbm": "4.7.0",
+    "pyarrow": "25.0.1",
+    "psutil": "7.2.2",
+    "threadpoolctl": "3.6.0"
+  },
+  "python": "${WORKSPACE}/experiment/outputs/banksim_validation_v1/run_20260925_01/reproduction/env/Scripts/python.exe",
+  "cells": [
+    "A0",
+    "B0",
+    "A1",
+    "B1",
+    "A2",
+    "B2"
+  ],
+  "caps": {
+    "global_wall_seconds": 1200,
+    "fit_worker_seconds": 60,
+    "fit_worker_cumulative_seconds": 360,
+    "rss_bytes": 4294967296,
+    "soft_rss_bytes": 3221225472,
+    "disk_bytes": 2147483648,
+    "start_free_memory_bytes": 8589934592,
+    "stop_free_memory_bytes": 4294967296,
+    "start_free_disk_bytes": 10737418240,
+    "cpu_seconds": 4800,
+    "interval_seconds": 0.05,
+    "stage1_and_input_seconds": 120,
+    "history_seconds": 180,
+    "preprocessing_seconds": 180,
+    "evaluation_seconds": 180,
+    "per_evaluation_worker_seconds": 30,
+    "delivery_seconds": 60
+  },
+  "sample_check": {
+    "split": "train",
+    "n_max": 64,
+    "selection": "first 64 training source_row_ids ascending, fixed before labels",
+    "equality": "bitwise float64 exact raw margin",
+    "predict_before_save": 1,
+    "predict_after_reload": 1,
+    "extra_fit": 0
+  },
+  "prediction_plan": {
+    "training_check_calls": 12,
+    "review_calls": 6,
+    "total_prediction_calls": 18,
+    "training_check_loads": 6,
+    "review_loads": 6,
+    "total_loads": 12
+  },
+  "splits": {
+    "train": [
+      0,
+      107,
+      332592
+    ],
+    "validation_unlabelled": [
+      108,
+      125,
+      63740
+    ],
+    "review": [
+      126,
+      179,
+      198311
+    ]
+  },
+  "segments": [
+    [
+      126,
+      143
+    ],
+    [
+      144,
+      161
+    ],
+    [
+      162,
+      179
+    ]
+  ],
+  "capacity": "ceil(3*N/100)",
+  "tie": "raw margin desc, SHA256 UTF8 banksim-capacity-v1|source_id asc, source_id asc",
+  "numerics": {
+    "history_rtol": 1e-12,
+    "history_atol": 1e-12,
+    "encoded_comparison": "exact float32",
+    "reload_comparison": "exact float64"
+  },
+  "model_fit_budget": 6,
+  "project_preprocessor_fit_budget": 6,
+  "extra_selection_fits": 0,
+  "bootstrap_draws": 0,
+  "retries": 0,
+  "independent_final_evaluation": false,
+  "budget_reconciliation": {
+    "status": "NO_MATERIAL_CONFLICT",
+    "added_train_checks": "Explicitly authorized this turn, counted and enclosed in original 60-second fit workers; six review calls unchanged",
+    "global_clock": "phase1 artificial integration, source preparation, models and evaluation share one external 1200-second entry",
+    "old_extra_conservative_limits_retained": true
+  },
+  "execution_root": "${WORKSPACE}/experiment/outputs/merchant_history_retrospective_execution_20261006/run_02",
+  "restores_from_read_only_attempt": "${WORKSPACE}/experiment/outputs/merchant_history_retrospective_execution_20261006/run_01",
+  "recovery_scope": "identity-bound permutation checks and final delivery budget/status consistency; one new entry attempt",
+  "workspace_roots": [
+    "${WORKSPACE}",
+    "${SECONDARY_WORKSPACE}"
+  ]
+}

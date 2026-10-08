@@ -1,0 +1,447 @@
+{
+  "version": "banksim-validation-v1-20260925",
+  "status": "IMPLEMENTED_SPECIFICATION_FREEZE_STATUS_IN_FREEZE_JSON",
+  "audit_date": "2026-09-25",
+  "training_authorized_in_current_task": false,
+  "candidate_model_performance_inspected": false,
+  "research_question": "新 BankSim 输入上，在固定容量和固定模型配置下，历史的捕获增量是否依赖当前参照信息集？",
+  "methodology": "四信息集、两条共同预处理的树提升流程；仅 B1 验证选型，冻结配置后比较组件；新模拟基准，不是实际业务外部验证。",
+  "datasets": [
+    {
+      "name": "BankSim",
+      "version": 1,
+      "file": "bs140513_032310.csv",
+      "sha256": "e37006f76d993bfaec3a02d717b4f0bdc1ebfa5d36449e91fb7c07e225278377",
+      "splits": {
+        "train": {
+          "step_min": 0,
+          "step_max": 107,
+          "n_rows": 332592
+        },
+        "validation": {
+          "step_min": 108,
+          "step_max": 125,
+          "n_rows": 63740
+        },
+        "test": {
+          "step_min": 126,
+          "step_max": 179,
+          "n_rows": 198311
+        }
+      },
+      "selection_basis": "结构/来源/使用史与成本；无候选模型结果",
+      "independence": "No prior modeling/tuning/performance evaluation found; recommendations and unlabelled feasibility screening acknowledged.",
+      "labels_access_before_protocol_freeze": "no row-level label analysis; public aggregate counts already visible"
+    }
+  ],
+  "baselines": [
+    "LightGBM",
+    "XGBoost"
+  ],
+  "information_sets": {
+    "B0": [
+      "step",
+      "category",
+      "amount"
+    ],
+    "B1": [
+      "step",
+      "category",
+      "amount",
+      "age",
+      "gender",
+      "merchant",
+      "zipcodeOri",
+      "zipMerchant"
+    ],
+    "B0H": [
+      "B0",
+      "H"
+    ],
+    "B1H": [
+      "B1",
+      "H"
+    ]
+  },
+  "features": {
+    "entity": "merchant",
+    "distinct_counter_entity": "customer",
+    "source_id": "0-based exact CSV data ordinal, assigned before sorting",
+    "canonical_order": [
+      "step",
+      "source_row_id"
+    ],
+    "history_condition": "t-w <= historical_step < t, same merchant; exclude entire current step",
+    "windows_steps": [
+      1,
+      7,
+      30
+    ],
+    "per_window": [
+      "count",
+      "distinct_customers",
+      "amount_mean",
+      "amount_max",
+      "amount_sample_std",
+      "current_amount_div_history_mean"
+    ],
+    "global_history": [
+      "recency_steps",
+      "has_prior_history"
+    ],
+    "history_feature_count": 20,
+    "amount_representation": "exact integer cents; nonfinite/more-than-two-decimal values fail validation",
+    "std_ddof": 1,
+    "empty_values": {
+      "count": 0,
+      "distinct_customers": 0,
+      "mean": 0,
+      "max": 0,
+      "std": 0,
+      "ratio": 0,
+      "recency": -1,
+      "has_prior_history": 0
+    },
+    "same_step_policy": "emit features for all rows before updating state",
+    "history_labels_used": false,
+    "test_history_updates": "earlier unlabelled transactions allowed, including earlier test steps",
+    "customer_and_source_ids_as_predictors": false,
+    "required_fields_nonmissing": [
+      "step",
+      "merchant",
+      "customer",
+      "amount"
+    ]
+  },
+  "preprocessing": {
+    "fit_scope": "train only",
+    "numeric_columns": "step, amount and H",
+    "categorical_columns": [
+      "category",
+      "age",
+      "gender",
+      "merchant",
+      "zipcodeOri",
+      "zipMerchant"
+    ],
+    "numerical_missing": "train median plus missing indicator; all-missing numeric train column fills 0",
+    "category_strings": "retain CSV-parsed values",
+    "categorical_encoding": "one-hot; train vocabulary; missing reserved token; unknown all zeros",
+    "constant_removal": "train-constant columns only, shared deterministic rule",
+    "dtype": "dense float32",
+    "class_weights": 1,
+    "resampling": "none",
+    "independently_fitted_for_information_sets": true,
+    "shared_columns_equal_required": true,
+    "numerical_missing_indicators": "all numeric columns, then apply train-constant removal rule",
+    "categorical_missing": "empty string -> reserved token; check token conflict before release"
+  },
+  "tuning": {
+    "reference_set": "B1",
+    "seed": 42,
+    "candidates_each": 8,
+    "selection_order": [
+      "max validation TP@3%",
+      "max validation AP",
+      "fewer trees",
+      "lexicographic config ID"
+    ],
+    "use_unrounded_double_metrics": true,
+    "early_stopping": false,
+    "no_refit_train_plus_validation": true,
+    "estimand": "component effects under one validation-selected fixed configuration per pipeline, not separately optimized cell performance",
+    "label_feasibility_gate": "after protocol freeze, train and validation must each contain two classes; otherwise stop without moving split"
+  },
+  "model_parameters": {
+    "LightGBM": {
+      "grid": {
+        "num_leaves": [
+          15,
+          31
+        ],
+        "min_child_samples": [
+          20,
+          100
+        ],
+        "n_estimators": [
+          200,
+          500
+        ]
+      },
+      "fixed": {
+        "objective": "binary",
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1,
+        "reg_alpha": 0,
+        "max_bin": 255,
+        "n_jobs": 4,
+        "deterministic": true,
+        "force_col_wise": true
+      }
+    },
+    "XGBoost": {
+      "grid": {
+        "max_depth": [
+          3,
+          6
+        ],
+        "min_child_weight": [
+          1,
+          10
+        ],
+        "n_estimators": [
+          200,
+          500
+        ]
+      },
+      "fixed": {
+        "objective": "binary:logistic",
+        "learning_rate": 0.05,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_lambda": 1,
+        "reg_alpha": 0,
+        "max_bin": 255,
+        "tree_method": "hist",
+        "sampling_method": "uniform",
+        "n_jobs": 4,
+        "device": "cpu"
+      }
+    }
+  },
+  "seeds": [
+    42,
+    52,
+    62,
+    72,
+    82
+  ],
+  "fit_budget": {
+    "tuning": 16,
+    "formal_conditions": 40,
+    "maximum_executions": 56,
+    "minimum_with_exact_reuse": 54,
+    "reuse": "selected B1 seed42 models only if identical inputs, preprocessing and full config",
+    "new_datasets": 1,
+    "old_models_retrained": false
+  },
+  "evaluation_metrics": [
+    "TP@3% (primary)",
+    "H1 and D per pipeline (primary inference family)",
+    "H0 per pipeline",
+    "Recall@3%",
+    "Precision@3%",
+    "AP using sklearn average_precision_score",
+    "TP/Recall/Precision at 1% and 5% (secondary)",
+    "three predeclared temporal segments (descriptive)",
+    "cross-pipeline paired H0 and H1 differences (secondary)"
+  ],
+  "capacity": {
+    "primary_q": 0.03,
+    "secondary_q": [
+      0.01,
+      0.05
+    ],
+    "rounding": "ceil(q*N)",
+    "validation_k": 1913,
+    "test_k": 5950,
+    "score": "raw margin, uncalibrated",
+    "ties": [
+      "score descending",
+      "SHA256 of UTF8 banksim-capacity-v1| plus decimal source_row_id ascending",
+      "source_row_id ascending"
+    ],
+    "tie_priority_shared": true,
+    "report_boundary_tie_range": true,
+    "ap_ties": "grouped scores, no priority jitter",
+    "window": "whole completed test window; not real-time daily budget"
+  },
+  "contrasts": {
+    "H0": "TP(B0H)-TP(B0)",
+    "H1": "TP(B1H)-TP(B1)",
+    "D": "H1-H0",
+    "primary_inference_family": [
+      "LGB_H1",
+      "LGB_D",
+      "XGB_H1",
+      "XGB_D"
+    ],
+    "seed_aggregation": "evaluate each seed separately; mean effects; no score ensemble"
+  },
+  "statistics": {
+    "bootstrap": "non-circular moving blocks of whole ordered simulation steps",
+    "draws": 5000,
+    "primary_block_length": 7,
+    "sensitivity_block_lengths": [
+      3,
+      14
+    ],
+    "rng": "numpy PCG64",
+    "rng_seeds_by_block": {
+      "7": 20260925,
+      "3": 20260926,
+      "14": 20260927
+    },
+    "sequence_rule": "draw ceil(54/L) uniform overlapping blocks with replacement, concatenate, truncate to 54 steps",
+    "pairing": "same step sequence for all models, seeds, metrics, contrasts",
+    "duplicate_row_identity": [
+      "source_row_id",
+      "draw_occurrence_index"
+    ],
+    "budget_recomputed_per_draw": true,
+    "confidence_pointwise": 0.95,
+    "primary_family_size": 4,
+    "confidence_bonferroni_marginal": 0.9875,
+    "quantile_method": "linear",
+    "minimum_valid_draws_for_interval": 4750,
+    "no_positive_rule": "TP defined as 0; Recall/AP undefined; report invalid counts and do not replenish",
+    "scope": "conditional fitted models/window; local dependence assumptions; no exact nominal coverage claim",
+    "ci_width_to_pvalue_conversion": false,
+    "crossing_zero": "uncertainty, not equivalence/no effect"
+  },
+  "reporting": {
+    "all_directions_required": true,
+    "all_cells_and_seeds_required": true,
+    "failure_rows_retained": true,
+    "capacity_saturation": "report ceiling, do not change primary capacity",
+    "negative": "narrow conditional claim",
+    "positive": "one external synthetic input under specified conditions only",
+    "inconsistent_pipelines": "paired difference and limitations; no causal algorithm-family interpretation",
+    "invalid_test": "retain split; report inability to evaluate"
+  },
+  "resources": {
+    "logical_processors_verified": 16,
+    "ram_available_verified": false,
+    "raw_csv_bytes": 48986035,
+    "dense_matrix_bytes_formula": "594643*p*4, excluding copies and model state",
+    "test_score_vectors_bytes": 63459520,
+    "execution": "sequential fits; 4 threads each",
+    "walltime_estimate": "unknown until first budgeted train/validation fits; no training in audit",
+    "bootstrap_implementation": "reuse pre-sorted score order and block multiplicities; compare against literal resampling on hand-built examples"
+  },
+  "implementation_gates": [
+    "exact input member hash and schema",
+    "past-only and same-step exclusion checks",
+    "source identity and ordering",
+    "shared preprocessing fitted only on train",
+    "hand-built exact capacity/tie/AP/paired-bootstrap checks",
+    "locked dependency versions and full effective model parameters",
+    "protocol/code/input hashes before fits",
+    "validation-selection lock before any test metrics"
+  ],
+  "task_list": [
+    {
+      "task": "新目录建立输入取得清单并核验固定版本",
+      "depends_on": [],
+      "priority": 1
+    },
+    {
+      "task": "实现四组特征并用人工样本核验时间边界",
+      "depends_on": [
+        "新目录建立输入取得清单并核验固定版本"
+      ],
+      "priority": 2
+    },
+    {
+      "task": "实现共同预处理、容量评价与配对回放，并冻结版本",
+      "depends_on": [
+        "实现四组特征并用人工样本核验时间边界"
+      ],
+      "priority": 3
+    },
+    {
+      "task": "冻结科学协议和有效参数后完成限定训练/验证搜索",
+      "depends_on": [
+        "实现共同预处理、容量评价与配对回放，并冻结版本"
+      ],
+      "priority": 4
+    },
+    {
+      "task": "冻结选型和全部验证记录，完成正式模型",
+      "depends_on": [
+        "冻结科学协议和有效参数后完成限定训练/验证搜索"
+      ],
+      "priority": 5
+    },
+    {
+      "task": "统一测试、完整报告全部方向与失败",
+      "depends_on": [
+        "冻结选型和全部验证记录，完成正式模型"
+      ],
+      "priority": 6
+    },
+    {
+      "task": "根据实证证据有限修订稿件与目标期刊匹配",
+      "depends_on": [
+        "统一测试、完整报告全部方向与失败"
+      ],
+      "priority": 7
+    }
+  ],
+  "paper_structure": {
+    "sections": [
+      "Abstract",
+      "Introduction",
+      "Related Work",
+      "Methods",
+      "Results",
+      "Discussion",
+      "Conclusion"
+    ],
+    "section_plans": {
+      "Abstract": "有结果后仅改变证据范围；当前不写预期提升",
+      "Introduction": "明确参照信息集边界问题，承认已有组件/容量/模型比较先例",
+      "Related Work": "补充全文核验范围；不声称首创一般条件性结论",
+      "Methods": "新增方案与旧事后诊断分开，披露模拟和冻结时点",
+      "Results": "四条件绝对性能和直接配对效应，完整正负及不确定结果",
+      "Discussion": "区分新模拟输入推广、真实业务有效性及算法机制",
+      "Conclusion": "仅就实际完成的验证作条件性判断"
+    }
+  },
+  "risks": [
+    "simulation is not real-world external validation",
+    "public benchmark and uploader-selected simulation",
+    "B1 may not empirically be stronger",
+    "merchant identities may absorb signal but D is bundle-level effect",
+    "test capacity saturation",
+    "54-step temporal uncertainty and nonstationarity",
+    "baseline-selected parameters do not characterize all tuned history models",
+    "no independent IEEE-CIS mechanism evidence",
+    "full software/resource feasibility not yet verified"
+  ],
+  "stop_conditions": [
+    "unrecoverable fixed input/version",
+    "history/time/entity availability invalid",
+    "ground truth unavailable or invalid",
+    "critical implementation checks fail",
+    "cannot finish fixed resource budget",
+    "after one complete trial do not automatically expand datasets or tune on test"
+  ],
+  "completion_conditions": [
+    "all 40 cells have valid results or explicit failure entries",
+    "all prespecified outcomes disclosed",
+    "paired replay and input reconstruction artifacts recorded",
+    "claim-to-evidence updated without replacing old baseline"
+  ],
+  "fallback": "如果无法满足条件或只接受真实业务外部验证，保留条件性实证定位并转期刊匹配与投稿准备。",
+  "implementation": {
+    "initial_margin": "0 for both libraries: LightGBM boost_from_average=false; XGBoost base_score=0.5",
+    "precision": "Python arbitrary-precision integer moments; exact Decimal integer ratio to cents; no decimal context rounding",
+    "constant_columns": "Remove constant encoded float32 output columns using training rows only",
+    "missing_category": "__BANKSIM_MISSING_V1__; source collision is an error",
+    "catalog": "protocol/MODEL_CATALOG.json; includes all sklearn constructor options for pinned libraries; runtime backend config exported after authorized fitting",
+    "parameter_defaults": "Null wrapper options are the defaults of the pinned package; explicit task-affecting tree/sampling/weight/initialization settings recorded in models.py and catalog; no early stopping/eval_set",
+    "candidate_order": "C01–C08 enumerate declared grid key order, last key n_estimators varying fastest",
+    "fit_budget": "54 actual fits with mandatory exact reuse of two chosen B1 seed42 fits; never more than original cap 56; no automatic retries",
+    "failed_tuning": "Record all 16 attempted candidates; any failed candidate blocks selection, never select among successful subset",
+    "failed_formal": "Record all scheduled cells; any failure blocks test release until a separately audited resolution; no silent seed deletion",
+    "no_positive_test": "After authorized one-time test opening, preserve no-positive status and metrics definitions but stop inferential claim",
+    "interval_scope": "95% pointwise for whole-window seed-mean absolute AP/TP/Recall/Precision and H0/H1/D at 1,3,5%; direct cross-library H0/H1; Bonferroni only four primary H1/D TP@3% within each fixed block length; three segments descriptive",
+    "raw_test_performance_before_release": "forbidden; no test prediction at training stage",
+    "resource_measurement": "sample process RSS every 50ms in future authorized fits; record elapsed wall time; no current fit resource claim",
+    "recovery": "Completed fit records verified and reused; interrupted/failed fits do not auto-retry; test release written before access and prohibits rescore; bootstrap replay uses fixed cached predictions"
+  }
+}

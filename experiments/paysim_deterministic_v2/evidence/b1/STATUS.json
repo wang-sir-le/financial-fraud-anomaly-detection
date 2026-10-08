@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-09-23T13:03:56.016376+00:00",
+  "config_sha256": "df5fd175e25816c368e2cfda32ef2c72275494b081eba96dc6e87a00f09990d9",
+  "completed_utc": "2026-09-23T13:12:46.475733+00:00",
+  "details": {
+    "model_rows": 225,
+    "contrast_rows": 225,
+    "new_fits": 0
+  },
+  "files": [
+    {
+      "name": "processing_effects_seed.csv",
+      "sha256": "3a8d3730f6405f7dbde6a09ca0b4e89cbfbbcb466c123d773f5537c7002d3b89",
+      "bytes": 9933
+    },
+    {
+      "name": "score_tie_audit.csv",
+      "sha256": "279241973f13817caee8bb2bf776df62305ee0005ba893a815791dd86151e3ad",
+      "bytes": 6484
+    },
+    {
+      "name": "stage_contrasts_fold.csv",
+      "sha256": "a3bfa71d688c3d173407fb6f2152ed7748f40a26bc5ed97f9ddb2f66660d6982",
+      "bytes": 2106
+    },
+    {
+      "name": "stage_contrasts_seed.parquet",
+      "sha256": "dfb5b71d04adeb6a901b234bab92cfdb12369931ddd288e19b8a3f37f283915d",
+      "bytes": 6527
+    },
+    {
+      "name": "stage_model_metrics.parquet",
+      "sha256": "b65e2d992f4fe93f97d4f23b4659739befd86bc46096eb82ec47bd96794f2aa8",
+      "bytes": 28067
+    }
+  ]
+}

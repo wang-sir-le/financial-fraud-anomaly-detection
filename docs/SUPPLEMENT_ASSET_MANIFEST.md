@@ -1,3 +1,7 @@
+<!-- Historical August 2026 base material. -->
+
+This document describes the original base release. For the October 8, 2026 additions, use [UPDATES_20261008.md](UPDATES_20261008.md) and the current stage READMEs. It is not an updated manuscript submission or full extension-bundle manifest.
+
 # Supplement asset manifest
 
 This repository-facing map distinguishes material included directly in the public package from outputs that must be regenerated locally. It does not claim that excluded transaction-level or large derived artifacts are distributed.

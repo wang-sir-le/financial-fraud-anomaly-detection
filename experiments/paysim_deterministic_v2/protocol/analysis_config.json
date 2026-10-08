@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0",
+  "workspace_root": "${WORKSPACE}",
+  "baseline": {
+    "root": "experiment/outputs/kais_ci_replay_20260923",
+    "manuscript": "KAIS_English_Manuscript.docx",
+    "supplement": "ESM_1_editable.docx",
+    "resource": "reproducibility",
+    "overwrite": false
+  },
+  "datasets": {
+    "paysim": {
+      "predictions": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\models\\reference",
+      "manifest": "experiment/outputs/kais_ci_replay_20260923/reproducibility/audit/prediction_input_manifest.json",
+      "files": 150,
+      "test_vectors": 75,
+      "models": [
+        "P0",
+        "PT",
+        "PH",
+        "PTH",
+        "PTHW"
+      ],
+      "stages": [
+        "raw",
+        "clipped",
+        "platt"
+      ],
+      "id": "row_id",
+      "time": "step",
+      "target": "isFraud",
+      "core_contrasts": [
+        {
+          "id": "P_H_BASE",
+          "baseline": "P0",
+          "candidate": "PH"
+        },
+        {
+          "id": "P_H_TIME",
+          "baseline": "PT",
+          "candidate": "PTH"
+        },
+        {
+          "id": "P_WEIGHT",
+          "baseline": "PTH",
+          "candidate": "PTHW"
+        }
+      ],
+      "auxiliary_contrasts": [
+        {
+          "id": "P_BUNDLE",
+          "baseline": "P0",
+          "candidate": "PTH"
+        },
+        {
+          "id": "P_PRIMARY",
+          "baseline": "P0",
+          "candidate": "PTHW",
+          "legacy_regression": true
+        }
+      ],
+      "bootstrap": {
+        "master_seed": 20260820,
+        "rng_adapter": "original_paysim_child_seedsequence",
+        "integers_dtype": "original_default",
+        "draw_call_mode": "original_all_draws",
+        "groups": [
+          43,
+          31,
+          345
+        ],
+        "block_lengths": [
+          4,
+          3,
+          7
+        ]
+      },
+      "raw_source": "https://www.kaggle.com/datasets/ealaxi/paysim1"
+    }
+  },
+  "experiment_design": {
+    "folds": [
+      1,
+      2,
+      3
+    ],
+    "fixed_training_seeds": [
+      42,
+      52,
+      62,
+      72,
+      82
+    ],
+    "clip_epsilon": 1e-06,
+    "capacities": [
+      0.01,
+      0.03,
+      0.05,
+      0.1
+    ],
+    "primary_capacity": 0.03,
+    "cost": {
+      "fp": 1,
+      "fn": 100
+    },
+    "ap_definition": "sklearn.metrics.average_precision_score, not trapezoidal PR AUC or tie-permutation expected AP",
+    "capacity_rule": "ceil(q*N); score descending then original ID ascending",
+    "ties": {
+      "equality": "exact stored numeric equality; no isclose",
+      "shared_priority_trials": 100,
+      "priority_master_seed": 2026092301,
+      "priority_key": "SHA256(UTF8(seed|trial|dataset|fold|id)), then ID",
+      "label_free": true,
+      "range_is_confidence_interval": false,
+      "pairwise_envelope_is_sharp": false
+    },
+    "bootstrap": {
+      "repetitions": 5000,
+      "circular": false,
+      "group_blocks": "overlapping consecutive unique timestamp positions",
+      "seed_aggregation": "mean of 5 paired effects within each replicate",
+      "ci": {
+        "level": 0.95,
+        "type": "pointwise percentile",
+        "quantile_method": "linear"
+      },
+      "primary_new_metrics": [
+        "delta_ap",
+        "delta_tp_at_3pct",
+        "delta_recall_at_3pct"
+      ],
+      "processing_effects": [
+        "clipped_minus_raw",
+        "platt_minus_clipped",
+        "platt_minus_raw_derived"
+      ],
+      "processing_metrics": [
+        "delta_ap",
+        "delta_recall_at_3pct"
+      ],
+      "undefined_policy": "retain draw; undefined metric NaN; no redraw; retain estimand",
+      "invalid_fraction_warning": 0.05,
+      "multiple_comparisons": "report all pointwise intervals; no simultaneous coverage claim; no p values by default",
+      "new_overall_inference": false,
+      "threshold_reoptimization": false,
+      "recalibration": false,
+      "retraining": false,
+      "metric_microbatch_initial": 4
+    }
+  },
+  "expected_B_outputs": {
+    "stage_model_metric_rows": 225,
+    "stage_contrast_seed_rows": 225,
+    "capacity_model_rows": 900,
+    "core_fold_contrast_stage_cells": 27,
+    "legacy_regression_comparisons": 2
+  },
+  "cross_model": {
+    "enabled": false,
+    "activation": "Written scope decision after B; test model-dependence rather than search for significance",
+    "family": "LogisticRegression",
+    "sklearn_version": "1.8.0",
+    "parameters": {
+      "solver": "lbfgs",
+      "C": 1,
+      "l1_ratio": 0,
+      "fit_intercept": true,
+      "tol": 1e-06,
+      "max_iter": 3000,
+      "warm_start": false
+    },
+    "deprecated_parameters_omitted": [
+      "penalty",
+      "n_jobs"
+    ],
+    "threadpool_limit": 1,
+    "class_weights": [
+      {
+        "0": 1,
+        "1": 1
+      },
+      {
+        "0": 1,
+        "1": 2
+      }
+    ],
+    "preprocessing": {
+      "fit_scope": "Train only",
+      "numeric": "median, missing indicator, StandardScaler; all-missing columns retained with 0",
+      "categorical": "frozen role dictionary, missing category, OneHotEncoder unknown ignore",
+      "matrix": "CSR float64",
+      "target_encoding": false
+    },
+    "score_outputs": [
+      "margin",
+      "raw_probability",
+      "paysim_clipped",
+      "paysim_platt"
+    ],
+    "formal_fit_count": 27,
+    "paysim_calibrator_fit_count": 15,
+    "identical_seed_repetitions": 1,
+    "convergence_retry": {
+      "max_retries": 1,
+      "max_iter": 10000,
+      "other_settings_unchanged": true,
+      "after_failure": "record failure; no test-guided replacement"
+    },
+    "hyperparameter_search": false,
+    "independent_blind_validation": false
+  },
+  "reproducibility": {
+    "levels": [
+      "L1 ledger replay",
+      "L2 prediction reanalysis",
+      "L3 raw-to-score reconstruction",
+      "L4 external-reader reproduction"
+    ],
+    "full_lightgbm_rebuild_fits": {
+      "paysim": 75,
+      "ieee_cis": 60,
+      "total": 135
+    },
+    "new_data_download_this_turn": false,
+    "raw_rebuild_this_turn": false,
+    "external_publication_authorized_by_plan": false,
+    "reference_tolerances": {
+      "rtol": 1e-10,
+      "atol": 1e-12,
+      "integer_counts": "exact"
+    },
+    "mismatch_policy": "retain diagnostics; do not mutate frozen manifests or widen tolerances post hoc",
+    "historical_paysim_environment": {
+      "python": "3.12.14",
+      "effective_threads": 16,
+      "complete_dependency_lock_known": false
+    },
+    "replay_environment": {
+      "python": "3.11.9",
+      "lock": "experiment/outputs/kais_ci_replay_20260923/reproducibility/code/requirements-lock-windows-py311.txt"
+    }
+  },
+  "status": "FROZEN_FOR_EXECUTION",
+  "run_id": "run_20260923_01",
+  "output_root": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis",
+  "plan_path": "${WORKSPACE}\\experiment\\outputs\\jcr_q2_technical_plan_20260923\\research_plan.json",
+  "plan_sha256": "2e2c07682eed2c0c6c780ca2d2d57076da01a0b36205cafbbf36f7279f448340",
+  "created_utc": "2026-09-23T07:13:09.516569+00:00",
+  "execution_scope": "B complete; C conditional scientific decision; raw reconstruction; manuscript copy; no external publication",
+  "fold_boundaries": [
+    {
+      "fold": 1,
+      "train_min_step": 1,
+      "train_max_step": 205,
+      "validation_min_step": 206,
+      "validation_max_step": 238,
+      "test_min_step": 239,
+      "test_max_step": 281
+    },
+    {
+      "fold": 2,
+      "train_min_step": 1,
+      "train_max_step": 281,
+      "validation_min_step": 282,
+      "validation_max_step": 323,
+      "test_min_step": 324,
+      "test_max_step": 354
+    },
+    {
+      "fold": 3,
+      "train_min_step": 1,
+      "train_max_step": 354,
+      "validation_min_step": 355,
+      "validation_max_step": 398,
+      "test_min_step": 399,
+      "test_max_step": 743
+    }
+  ],
+  "source_identity": "source_row_id equals row_id; CSV data-record ordinal",
+  "parent_protocol_sha256": "60f7b18c68a6ffe1b762f2ca721729773c167e75a9b9aefd45343077e298b649"
+}

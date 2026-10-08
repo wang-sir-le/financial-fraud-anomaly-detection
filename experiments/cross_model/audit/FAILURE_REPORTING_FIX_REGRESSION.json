@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "numeric_results_unchanged": true,
+  "tables": [
+    "effect_intervals.csv",
+    "observed_effects.csv",
+    "effect_replicates.parquet"
+  ],
+  "reason": "Implement planned nonconvergence eligibility and zero-estimand reporting; no numerical method changes",
+  "initial_source_preserved": "reproduction/initial_analysis_source"
+}

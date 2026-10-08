@@ -1,0 +1,1005 @@
+{
+  "scope": "compact public subset; historical full author artifacts are not implied",
+  "files": [
+    {
+      "path": "assessment/C_SCOPE_DECISION.json",
+      "sha256": "2b1e2166cfab58712711943b0fc1dd6cedc704b7cadbe166feb55bca4bf6d808",
+      "bytes": 873
+    },
+    {
+      "path": "assessment/v2_primary_means.csv",
+      "sha256": "094000323e7da2edb862f9afffcec3c87fbf70383b6c85177eec2db3410347cc",
+      "bytes": 1500
+    },
+    {
+      "path": "assessment/version_comparison/all_scenarios.csv",
+      "sha256": "ab127028cbfa94131f32fb56ee0e3d8e2239114f60a1514f0e8ec20a6b2dc071",
+      "bytes": 807558
+    },
+    {
+      "path": "assessment/version_comparison/block_sensitivity.csv",
+      "sha256": "aa63b45c9f146cc24a7537dcce6f83699d4f0b61d0362d489e4ec0348f357e4a",
+      "bytes": 22653
+    },
+    {
+      "path": "assessment/version_comparison/calibration_ablation_results.csv",
+      "sha256": "876b7651734f932dd74a983a32cb1e4ccf1b62aca68314b394acb8032b12f40f",
+      "bytes": 953073
+    },
+    {
+      "path": "assessment/version_comparison/calibration_bayes_decision_results.csv",
+      "sha256": "ed94c265f0640b2b518019edbfbab868d2bd728a4c89485760a4fae993bbd4df",
+      "bytes": 226677
+    },
+    {
+      "path": "assessment/version_comparison/calibration_decision_invariance.csv",
+      "sha256": "cf34a52a497209bc87fa88cc649da8d08d2664c74354a0c6661665b336ea6205",
+      "bytes": 150415
+    },
+    {
+      "path": "assessment/version_comparison/calibration_pairwise_reliability.csv",
+      "sha256": "c45aec17717f4c4aa55cdebaad154645609e1a5e96cebc8b4294b72aa8194bc2",
+      "bytes": 95488
+    },
+    {
+      "path": "assessment/version_comparison/capacity_contrasts.csv",
+      "sha256": "684fed57b50b7e91fc946518308f4310afeca7bc3e479817cf0837dae4524ab2",
+      "bytes": 113938
+    },
+    {
+      "path": "assessment/version_comparison/capacity_models.csv",
+      "sha256": "3e9e309601fecbdeedcc16400b9b688d32cd4a34cfcdf8ca403f5c983c0aabb4",
+      "bytes": 1160558
+    },
+    {
+      "path": "assessment/version_comparison/component_intervals.csv",
+      "sha256": "3675ca9382e4842701d9c11f724377a00e82bdc1671ae06a3160b29e95de82a4",
+      "bytes": 66368
+    },
+    {
+      "path": "assessment/version_comparison/coverage.csv",
+      "sha256": "8b91ef319721c9275062de636f486bfd37f5a9702717245b8b49076338e69c18",
+      "bytes": 586
+    },
+    {
+      "path": "assessment/version_comparison/paired_version_component_intervals.csv",
+      "sha256": "6f2595613e78edbc01b719746b128bf79dd5b1583d16590b82585bdd14ffd8d3",
+      "bytes": 16990
+    },
+    {
+      "path": "assessment/version_comparison/primary_intervals.csv",
+      "sha256": "c4a3b493bbe6d150334aa648aac986f46d2af76c9fc4611297e325ba18dd1f90",
+      "bytes": 13122
+    },
+    {
+      "path": "assessment/version_comparison/priority_summaries.csv",
+      "sha256": "61b41760dae2475f377951a50ead9f8b620a2ee41239638b7084a7b25b3aa8c5",
+      "bytes": 61323
+    },
+    {
+      "path": "assessment/version_comparison/processing_intervals.csv",
+      "sha256": "bb53f8b994d09f18127d9b870576f1099f5935ed0aa9ddfed95cf7d3210bb65c",
+      "bytes": 34668
+    },
+    {
+      "path": "assessment/version_comparison/REPORT.json",
+      "sha256": "aa26496a33bb0ea4bfa2a5c532df91ed212249075dda0a433113bde118dcb5f8",
+      "bytes": 2393
+    },
+    {
+      "path": "assessment/version_comparison/SCENARIO_SOURCE_HASHES.json",
+      "sha256": "6e95376d50dcca181b9cbf0b9a25ad3d3683dd033cb4b7116191bc9448b117e7",
+      "bytes": 622
+    },
+    {
+      "path": "assessment/version_comparison/SCHEMA_AND_NONNUMERIC_CHANGES.json",
+      "sha256": "6baa625ae5254049caab5a75f750b14df14368548729e831288f7659e0687199",
+      "bytes": 188427
+    },
+    {
+      "path": "assessment/version_comparison/score_stage_contrasts.csv",
+      "sha256": "592787f9670b2274113fe2b12abcc3a7ac2947a7ee1347763256ae6a8ca1ba5d",
+      "bytes": 28480
+    },
+    {
+      "path": "assessment/version_comparison/score_stage_models.csv",
+      "sha256": "de001af638c3e09b2be032750b9a8f0951bc9b335dca025eee39c36b1278feff",
+      "bytes": 129573
+    },
+    {
+      "path": "assessment/version_comparison/secondary_overall_intervals.csv",
+      "sha256": "7c9f696447ecd005af721f69aec5aaab150e42f353eb7a4bfa07c399a1282432",
+      "bytes": 4813
+    },
+    {
+      "path": "assessment/version_comparison/SOURCE_MANIFEST.json",
+      "sha256": "4d994fbdd9303d7e56b70f4c6867c9aff7586bcb0518834584149803ecf1c23c",
+      "bytes": 6287
+    },
+    {
+      "path": "assessment/version_comparison/v1_all_660_scenarios.csv",
+      "sha256": "4a8bcd942d0ecc2a8a7e1cc9efe688ebdcb37815996bf2c444c1d48e20d48c33",
+      "bytes": 129773
+    },
+    {
+      "path": "assessment/version_comparison/VERSION_PAIRING_AUDIT.json",
+      "sha256": "68fefdfb95dffc6054c4fcc3b41a93e830ee70d78dcae4092ad31a9704c59bf5",
+      "bytes": 291
+    },
+    {
+      "path": "audit/FULL_FEATURE_INVARIANCE.json",
+      "sha256": "4544c1668df334296755b8df421bb581217e54205c060a4ca4ca928f72781cd5",
+      "bytes": 970
+    },
+    {
+      "path": "audit/MODEL_INPUT_SIGNATURE_EQUALITY.json",
+      "sha256": "ae25a53cb176073c337f349c8e4ca2869a52330215585297556966421cae9a7f",
+      "bytes": 526
+    },
+    {
+      "path": "audit/OLD_NEW_RAW_POPULATION.json",
+      "sha256": "759c90d0aa3c1eb8509b7f0b863bce33518121084abfea32f5d37e3004f928ba",
+      "bytes": 473
+    },
+    {
+      "path": "audit/ORDINARY_WHEEL_FEATURE_INVARIANCE.json",
+      "sha256": "4544c1668df334296755b8df421bb581217e54205c060a4ca4ca928f72781cd5",
+      "bytes": 970
+    },
+    {
+      "path": "evidence/audit/inputs/alignment.csv",
+      "sha256": "7621cd73c817a7c1890d7f9f1c2106aa796c5ddfa84c361ec92d7c60d2682f90",
+      "bytes": 4347
+    },
+    {
+      "path": "evidence/audit/inputs/STATUS.json",
+      "sha256": "96f0142159f9f942d493aadd65a1d05d1e024fb662e6002e3396520e7ef78d1a",
+      "bytes": 476
+    },
+    {
+      "path": "evidence/audit_source_provenance.json",
+      "sha256": "45c97b9ceb7b29aec1c59f24862b6985c49b93f24cedea16e1676fae684ec96f",
+      "bytes": 960
+    },
+    {
+      "path": "evidence/b1/processing_effects_seed.csv",
+      "sha256": "3a8d3730f6405f7dbde6a09ca0b4e89cbfbbcb466c123d773f5537c7002d3b89",
+      "bytes": 9933
+    },
+    {
+      "path": "evidence/b1/score_tie_audit.csv",
+      "sha256": "279241973f13817caee8bb2bf776df62305ee0005ba893a815791dd86151e3ad",
+      "bytes": 6484
+    },
+    {
+      "path": "evidence/b1/stage_contrasts_fold.csv",
+      "sha256": "a3bfa71d688c3d173407fb6f2152ed7748f40a26bc5ed97f9ddb2f66660d6982",
+      "bytes": 2106
+    },
+    {
+      "path": "evidence/b1/STATUS.json",
+      "sha256": "bb4bb173eea3bfd1b7bf003b8c734209bdf92b12f9eaaaf76cb15b6f228d927c",
+      "bytes": 1164
+    },
+    {
+      "path": "evidence/b2/calculation/component_intervals.csv",
+      "sha256": "47c07438f445546b0f3d37108439f10b89614ee9b995f8d362f33fc05887db11",
+      "bytes": 16896
+    },
+    {
+      "path": "evidence/b2/calculation/invalid_replicates.csv",
+      "sha256": "c2ea84168084bbeb901b2bb868c9049557e1da6a9c31ce04f10b67f9319be759",
+      "bytes": 101
+    },
+    {
+      "path": "evidence/b2/calculation/processing_effect_intervals.csv",
+      "sha256": "f8267c922d888c11c9dae9c1fa89c1035557cf55c236c1b982963808d77ad5cb",
+      "bytes": 8356
+    },
+    {
+      "path": "evidence/b2/calculation/STATUS.json",
+      "sha256": "9c92896187c7e004ba1c279ddf5dc1accb34463a8f89fcba3934eb5fa5b20117",
+      "bytes": 41370
+    },
+    {
+      "path": "evidence/b2/calculation/timing.csv",
+      "sha256": "7c1289aff8ee959f1e200859ec51c196b761a35b3c1107530308135fc1ba80e5",
+      "bytes": 25251
+    },
+    {
+      "path": "evidence/b2/draws/paysim_1_population.csv",
+      "sha256": "940d2cc35102e14506d2f246df2950e2de5c60be0318158117b353a11de891a8",
+      "bytes": 549
+    },
+    {
+      "path": "evidence/b2/draws/paysim_2_population.csv",
+      "sha256": "bcec24789196a7f227c46318a2fcc5f1eacdc895a7a9c0466f6c47cf0ae8c5e8",
+      "bytes": 413
+    },
+    {
+      "path": "evidence/b2/draws/paysim_3_population.csv",
+      "sha256": "b130a9302a8610e0e8201c971db62ce48f75066eeef16d8ff9a199cdbd23b702",
+      "bytes": 3874
+    },
+    {
+      "path": "evidence/b2/draws/STATUS.json",
+      "sha256": "4c623edae0695b03b2f4eab078196cf0a47fa6639402b467b7174e6cc89a2851",
+      "bytes": 1503
+    },
+    {
+      "path": "evidence/b3/priorities/shared_priority_summary.csv",
+      "sha256": "4a91c4b427df1a2b62803ec3356995d1d631f73d71935198a195d1ec0d043c88",
+      "bytes": 19788
+    },
+    {
+      "path": "evidence/b3/priorities/STATUS.json",
+      "sha256": "02187fc6804e2a650a112817f59f58c3543e2ae4fb040b65aac34b188360bfaf",
+      "bytes": 1242
+    },
+    {
+      "path": "evidence/b3/profiles/capacity_contrasts_fold.csv",
+      "sha256": "6ac50147ac282add2587d91a622af4d87a8e692860a5962f7b0135cb69b4d3ab",
+      "bytes": 16777
+    },
+    {
+      "path": "evidence/b3/profiles/capacity_tie_model.csv",
+      "sha256": "77a80cb5773933d4c017a2a4800fef6512ef7033a0c28ea9b15dbde468344f70",
+      "bytes": 178914
+    },
+    {
+      "path": "evidence/b3/profiles/STATUS.json",
+      "sha256": "1649cc495aadcec95de216a82626fac4f770aa2fcac5a5fccb3923abbc82c36f",
+      "bytes": 824
+    },
+    {
+      "path": "evidence/bootstrap_source_provenance.json",
+      "sha256": "45c97b9ceb7b29aec1c59f24862b6985c49b93f24cedea16e1676fae684ec96f",
+      "bytes": 960
+    },
+    {
+      "path": "evidence/calibration/calibration_ablation_results.csv",
+      "sha256": "f0bd568a29156610cec956cf0e866cf913d0e15a0ccf7b616d7af8916eb995da",
+      "bytes": 99204
+    },
+    {
+      "path": "evidence/calibration/calibration_ablation_summary.csv",
+      "sha256": "81755e5d32c99b7bd1a1b8657dc6eec8732adbe06eef9002795c13970347e8dc",
+      "bytes": 21401
+    },
+    {
+      "path": "evidence/calibration/calibration_bayes_decision_results.csv",
+      "sha256": "cf3abbd3f19dec80b4cfd879004e3b8ace240cf09a2838b58e4d3cd233505b9d",
+      "bytes": 29037
+    },
+    {
+      "path": "evidence/calibration/calibration_curve_points.csv",
+      "sha256": "e609a6e3c28c4d07ba44bbfea3f198536f486a47bc0c37f255fbadf6e8cf452e",
+      "bytes": 391500
+    },
+    {
+      "path": "evidence/calibration/calibration_decision_invariance.csv",
+      "sha256": "3fbeccafedd48f76fa1f21dc5aa3cd447fe0b192203dcbb4cd08a341a1ed1717",
+      "bytes": 12259
+    },
+    {
+      "path": "evidence/calibration/calibration_pairwise_reliability.csv",
+      "sha256": "ffabead0357f8b61506527477a5ec36d386e2b16c7951e62aac5d736d8a903cd",
+      "bytes": 14640
+    },
+    {
+      "path": "evidence/calibration/constant_reference_fold.csv",
+      "sha256": "65dc0543cd940408eeba93d532827cbbd0052f4566ee314d765cdfde8c5ebc14",
+      "bytes": 435
+    },
+    {
+      "path": "evidence/calibration/constant_reference_seed.csv",
+      "sha256": "04b4289bfd9a1206ed84354fa81797adb60f4c0e93d2391d115fa00c8e775a7e",
+      "bytes": 1779
+    },
+    {
+      "path": "evidence/calibration/STATUS.json",
+      "sha256": "94ba20774354eb7a878c8e2adea888a6a93cba990991c661980d30023834da8c",
+      "bytes": 2135
+    },
+    {
+      "path": "evidence/draws_source_provenance.json",
+      "sha256": "45c97b9ceb7b29aec1c59f24862b6985c49b93f24cedea16e1676fae684ec96f",
+      "bytes": 960
+    },
+    {
+      "path": "evidence/points_source_provenance.json",
+      "sha256": "45c97b9ceb7b29aec1c59f24862b6985c49b93f24cedea16e1676fae684ec96f",
+      "bytes": 960
+    },
+    {
+      "path": "evidence/primary/block_sensitivity_summary.csv",
+      "sha256": "bb7a69d4c118c2f9a08cb846a4301e750bd4949e3d8f27ca45d92d25874d1470",
+      "bytes": 6941
+    },
+    {
+      "path": "evidence/primary/STATUS.json",
+      "sha256": "b2d412944cb2d6a9051ee7b7d052513c1c5ccaca9bcb5dfd31913fd685b026ab",
+      "bytes": 3242
+    },
+    {
+      "path": "evidence/primary/temporal_dependence_diagnostics.csv",
+      "sha256": "19167b00752bcd9adeba337e5461a9cbad1fca37253f6afd7d148851c298cb37",
+      "bytes": 2010
+    },
+    {
+      "path": "evidence/primary/timeblock_bootstrap_fold_summary.csv",
+      "sha256": "2c56c3724d7785a3af10c60aa2ea25eeff135a47638c194df5916b85047ca284",
+      "bytes": 2280
+    },
+    {
+      "path": "evidence/primary/timeblock_bootstrap_overall_summary.csv",
+      "sha256": "0ae028e64d91206a6dbf84405147673d53cffbfb58859e80340f042219cdfc5d",
+      "bytes": 996
+    },
+    {
+      "path": "evidence/priorities_source_provenance.json",
+      "sha256": "45c97b9ceb7b29aec1c59f24862b6985c49b93f24cedea16e1676fae684ec96f",
+      "bytes": 960
+    },
+    {
+      "path": "evidence/score_audit/all_score_processing.csv",
+      "sha256": "8a5e6838a44fe8f77b3585d4b6d4aa62f20ce6523decd1b9a73a9349e163891d",
+      "bytes": 17173
+    },
+    {
+      "path": "evidence/score_audit/STATUS.json",
+      "sha256": "c3c583eebc4a0d13de873f0c6e11269c1681ddcfec8f5aae0ec06fce14e6db8a",
+      "bytes": 515
+    },
+    {
+      "path": "evidence/training/all_seed_results.csv",
+      "sha256": "acd17dda7a4c758539759706c9f61962e4af78e68ea4ddd3c6470c5db8b11cec",
+      "bytes": 126634
+    },
+    {
+      "path": "evidence/training/COMPLETED.json",
+      "sha256": "b0fbbd13eb7a4f383bde99e263fb69e12d2a29f4e79d875e233b0818a57f35d6",
+      "bytes": 587
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_42.json",
+      "sha256": "ddc561797c7e550e335a51554417fb348a8f0ef5108b310aff3a02caff15d7bb",
+      "bytes": 12556
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_42_isotonic.json",
+      "sha256": "817bcd71eef9b94d5914bec78a38ca8593318b3ba94300c4c4056bcdc325d622",
+      "bytes": 1125
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_52.json",
+      "sha256": "d92c4f293124cb0f9ae4339a84af24d892fc7da8ac852bf35481a52db16a9b49",
+      "bytes": 12448
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_52_isotonic.json",
+      "sha256": "aea4b90d766dccb54e5cfe96467b03aab9812bea0ab653271bfc8cdce2ffb07a",
+      "bytes": 1247
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_62.json",
+      "sha256": "4c7ecd61629b05380c15ea1deb28e5e00e1d888141fc3a7a59cf35c0a7f5fea9",
+      "bytes": 12427
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_62_isotonic.json",
+      "sha256": "6ca52ef5518d3a3cb279b00ab1b74b9eaad7a491db154d628e000c7e805f84ef",
+      "bytes": 1030
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_72.json",
+      "sha256": "b95c9fe97e38218dca03c6f55d77bb67f9d2484a01791c8c0f37fde16353198a",
+      "bytes": 12402
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_72_isotonic.json",
+      "sha256": "afa5b7a3d147cbcefa7eeccc47d47271e52ece6498a82fb7f86abaaf739914de",
+      "bytes": 706
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_82.json",
+      "sha256": "aba3a751012e15e3b4f81fa195f47d66bce8fbba569af07fc57f04b9fb2c66b7",
+      "bytes": 12407
+    },
+    {
+      "path": "evidence/training/paysim_1_P0_82_isotonic.json",
+      "sha256": "08ca7f1a343c605c73fcdc920cfb7f35db76726394dacfd09f8bed91ddbb1478",
+      "bytes": 1067
+    },
+    {
+      "path": "evidence/training/paysim_1_PH_42.json",
+      "sha256": "71f8f1b96a974e09b03fe5b2341fd11f4052fa4c5ec2ba38094d00187812d782",
+      "bytes": 2457
+    },
+    {
+      "path": "evidence/training/paysim_1_PH_52.json",
+      "sha256": "b31f535aa7aefc82e6b9d2d10f4432f1d6c55390f33aefccc78d90663b48e306",
+      "bytes": 2460
+    },
+    {
+      "path": "evidence/training/paysim_1_PH_62.json",
+      "sha256": "67ae76c691015de3c95b0e51366a4a54a667c5b15d51835727fa3f8f75dfe91e",
+      "bytes": 2462
+    },
+    {
+      "path": "evidence/training/paysim_1_PH_72.json",
+      "sha256": "3a1f1cd3da13bc9417704281283519753306d3c0de3eba06b0ba69baceb1232b",
+      "bytes": 2446
+    },
+    {
+      "path": "evidence/training/paysim_1_PH_82.json",
+      "sha256": "875a9686747e21ea115c223b51279b4b2e7a6ea2936baa4ace2d5ff92d7e9221",
+      "bytes": 2455
+    },
+    {
+      "path": "evidence/training/paysim_1_PT_42.json",
+      "sha256": "87d42c0a35fa0fdfa7fc5164fadfa55dc3a4ffd89e9933ca5d1d26f2751de009",
+      "bytes": 1985
+    },
+    {
+      "path": "evidence/training/paysim_1_PT_52.json",
+      "sha256": "c9d383f058159500f1cd0e5239a953663c77d62316d586167d264f762582a9cc",
+      "bytes": 1983
+    },
+    {
+      "path": "evidence/training/paysim_1_PT_62.json",
+      "sha256": "a0031c0547d8f5610bfc9de8748f89af8e05f45b68fd2181d44a2005768bdf73",
+      "bytes": 1985
+    },
+    {
+      "path": "evidence/training/paysim_1_PT_72.json",
+      "sha256": "5a93f319264b907e5e41a7903b0026bbbe185c81c773d45701a24ee6b2b49d49",
+      "bytes": 1982
+    },
+    {
+      "path": "evidence/training/paysim_1_PT_82.json",
+      "sha256": "b0a5c96b06ede136f882aa5c3d9bbaf321d8b22ad4655b0fe54c9d5c4551d3bb",
+      "bytes": 1964
+    },
+    {
+      "path": "evidence/training/paysim_1_PTH_42.json",
+      "sha256": "41e94e41d7a3bdad30dba20a95018d715b430562b0d7a9549b09366279412843",
+      "bytes": 2500
+    },
+    {
+      "path": "evidence/training/paysim_1_PTH_52.json",
+      "sha256": "9792424f18fb6e258afff20f10b98114928cd29802a8a7babddd8aa17d9c872c",
+      "bytes": 2496
+    },
+    {
+      "path": "evidence/training/paysim_1_PTH_62.json",
+      "sha256": "192bba755fb52ef14544e97c41ad5a6a6b9d2f0a1b9dfcb0c9358b544690a854",
+      "bytes": 2501
+    },
+    {
+      "path": "evidence/training/paysim_1_PTH_72.json",
+      "sha256": "c6a9b7e04449714ac4137894aaa37f3e690c33a27ae8e4e1e37d632ffbf4183b",
+      "bytes": 2499
+    },
+    {
+      "path": "evidence/training/paysim_1_PTH_82.json",
+      "sha256": "5d705f9806aea1c09687423025f9feaba679f039a23939d6ef906b983fb2e9b9",
+      "bytes": 2500
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW5_42.json",
+      "sha256": "a2d0be576180d4960c1e35770bb6db8c5aac8087ac12ed6654cf1e532bb88171",
+      "bytes": 2507
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW5_52.json",
+      "sha256": "1279c622d5e1614ab81ad8d1c8be11a5f73c3efa6491402aa981dfa8ed549ec3",
+      "bytes": 2507
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW5_62.json",
+      "sha256": "4e46f11787358e0bdfbcddb7182dc603abd11b01ccb593c19a047258c17c2dcd",
+      "bytes": 2510
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW5_72.json",
+      "sha256": "0e4df5da94a5efb695eb4e4385e115e462c0bf1f09d6d108fd77b7ef00a34502",
+      "bytes": 2509
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW5_82.json",
+      "sha256": "cd69b637e1bbd36e796982d34fda9e0e2e29ebb5419908b8dba76d7faa766043",
+      "bytes": 2509
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_42.json",
+      "sha256": "ea64040179ce2fc50eb3651f618fa72ae81a03ceec8e8dde7fb1240005551251",
+      "bytes": 12996
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_42_isotonic.json",
+      "sha256": "4b2314320ca53e2bcea43fbfae80bf704926027d7ae9ae73a1878f1ac5856e31",
+      "bytes": 1921
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_52.json",
+      "sha256": "03bb2e4a944e959a44128985fd3ed6444b225ea92e3b64837a32be45ae3d6a58",
+      "bytes": 13309
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_52_isotonic.json",
+      "sha256": "9466d85c313ba98c9ac19454ab5ebef070a791f27a03bbb1e58423bc5d283bc7",
+      "bytes": 1539
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_62.json",
+      "sha256": "ea9214f30aedb24fd9f435262ede980ac9c30cdc01b69d76d71c9a34d8499f70",
+      "bytes": 13273
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_62_isotonic.json",
+      "sha256": "17f5dfcfb5b96d42919b822903052b30deaca5eba0037ea63210cfe7b2c1b421",
+      "bytes": 1844
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_72.json",
+      "sha256": "5f330d02490dff7d33184c1cf8c72dd96da5c340d2d49c59a23bbfed9ef767cc",
+      "bytes": 13297
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_72_isotonic.json",
+      "sha256": "b327d1464b6dd2363508c9254aebbc9a4c4e3129d7c8210eb89e2ff9bdc311b2",
+      "bytes": 2245
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_82.json",
+      "sha256": "743168b02fe97da339a3e7cdd47f7e36d8293b0dfc1c2e90d2f33d59b15a7a09",
+      "bytes": 13247
+    },
+    {
+      "path": "evidence/training/paysim_1_PTHW_82_isotonic.json",
+      "sha256": "cbb1a4e8acda702d184265f9d9f63109b727ae0e09ce6507d1542397e810e528",
+      "bytes": 2139
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_42.json",
+      "sha256": "87b4b9a5dff558a1e2c6f5f29bcfd3432bafe0615ad9d060b57b937a91de4278",
+      "bytes": 12673
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_42_isotonic.json",
+      "sha256": "f94f380b62b59afe09fcf2a9f19fda4262d269028b702a4eb6227015468b9518",
+      "bytes": 1566
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_52.json",
+      "sha256": "24ac86416b0b788e272ed1c7b6f104085b89195bf3e77c2929b7729de22ee56c",
+      "bytes": 12633
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_52_isotonic.json",
+      "sha256": "2b220a7223bd785c7d4d87e532773a870150a167a0a22e6f91e83d2be4adab6a",
+      "bytes": 1205
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_62.json",
+      "sha256": "d2e3978b83aaf55dfc85c2e8c455454d8408cf38770a25193e866cc2c87d642c",
+      "bytes": 12653
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_62_isotonic.json",
+      "sha256": "5be8af5ae1d19283a745776dc56ecd706c9a8f92cc99bea9cdd829c302c4fba9",
+      "bytes": 808
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_72.json",
+      "sha256": "300d8aafe377f4974d7578ccaa63dac2b2fb4c785326c92b6f9c8d4e22bf5bf2",
+      "bytes": 12612
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_72_isotonic.json",
+      "sha256": "7e7bfaede06e9726f5f787e279059cf4de73df6373b3f564566b3e3b3f689ee5",
+      "bytes": 1464
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_82.json",
+      "sha256": "a424bcfcfbd68102a1206a79673fa0a023d55914bae7d0677c1731f6c65d291e",
+      "bytes": 12626
+    },
+    {
+      "path": "evidence/training/paysim_2_P0_82_isotonic.json",
+      "sha256": "6edbb3b90fc7afcca4277e29e2160fe4814e658c759a00b0da37cc2e322c5acb",
+      "bytes": 1369
+    },
+    {
+      "path": "evidence/training/paysim_2_PH_42.json",
+      "sha256": "aa0520c84bc9165d9f43b004c3224503f402d25572b0691945c6449c4653a059",
+      "bytes": 2455
+    },
+    {
+      "path": "evidence/training/paysim_2_PH_52.json",
+      "sha256": "985a9ad0774b48f32e2a613a93cc0f0c1e00ea7e62ff4003494a08ea7d16e7d9",
+      "bytes": 2457
+    },
+    {
+      "path": "evidence/training/paysim_2_PH_62.json",
+      "sha256": "0fab6821c47ca301be67690084bd7dfe574e601e96227347c93c3f75960c711f",
+      "bytes": 2457
+    },
+    {
+      "path": "evidence/training/paysim_2_PH_72.json",
+      "sha256": "074fde16280414eb02809c843bf1db541aca2ad7c05b2007cc9e27343ca599df",
+      "bytes": 2460
+    },
+    {
+      "path": "evidence/training/paysim_2_PH_82.json",
+      "sha256": "400b3208302a43d1da0f884ecdc98eae398fde06f100e214096bda4f225d89c5",
+      "bytes": 2457
+    },
+    {
+      "path": "evidence/training/paysim_2_PT_42.json",
+      "sha256": "8ca330f9edb9e880c363a261cd5d2784212efa9f31e29a5714c62ba700396bcd",
+      "bytes": 1984
+    },
+    {
+      "path": "evidence/training/paysim_2_PT_52.json",
+      "sha256": "54d12cae217765cdd9e3f0041619496d4ba966328224b0f7d2edcc34712871c5",
+      "bytes": 1970
+    },
+    {
+      "path": "evidence/training/paysim_2_PT_62.json",
+      "sha256": "e500fd9bbf37402da218a53ac4b4d4d756bbce90d944d543f7e6e31dbdbc5c42",
+      "bytes": 1983
+    },
+    {
+      "path": "evidence/training/paysim_2_PT_72.json",
+      "sha256": "a1332cace3d893ed9b245ac9d42d7451836f35b05633b8ac774ce461f4dcee8f",
+      "bytes": 1988
+    },
+    {
+      "path": "evidence/training/paysim_2_PT_82.json",
+      "sha256": "487096861ca3db85538e8c39b147ae34920c6a2440894344aa552fae4c82dd1b",
+      "bytes": 1981
+    },
+    {
+      "path": "evidence/training/paysim_2_PTH_42.json",
+      "sha256": "c1084d138a5da845d86fabba90cef62eae2612d2b327c2982232026a5e4d6291",
+      "bytes": 2498
+    },
+    {
+      "path": "evidence/training/paysim_2_PTH_52.json",
+      "sha256": "5ba420f2f1bb8850e052e87c7d2d0d6c509349485ccb6780260eca1dc8ccf8d2",
+      "bytes": 2499
+    },
+    {
+      "path": "evidence/training/paysim_2_PTH_62.json",
+      "sha256": "07f415965e935d5379981d153e395c2fa4517b17afc9fbc2b84232935dc194e7",
+      "bytes": 2501
+    },
+    {
+      "path": "evidence/training/paysim_2_PTH_72.json",
+      "sha256": "397b55ddff2aca4e7a945b8751bce59d6bb4e1f0261083185c5fdfdfb83f3186",
+      "bytes": 2499
+    },
+    {
+      "path": "evidence/training/paysim_2_PTH_82.json",
+      "sha256": "0a54e8fc836673ea30f369edaaa12fd9b66b7bdb1bccb90e90f8294f288d2e52",
+      "bytes": 2487
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW5_42.json",
+      "sha256": "6e9f9e36f09b9f3d16bc98494d2cffd22fd4e671fe7264b3849cd504d5f5509a",
+      "bytes": 2494
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW5_52.json",
+      "sha256": "36c1d79715e98e1722232de67a2ed9835208a656feee1fca8ef417698a06ecad",
+      "bytes": 2508
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW5_62.json",
+      "sha256": "1214d7f34c88754d61d9313f984c947af917636c70e4a34f4579cb8891e2d864",
+      "bytes": 2493
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW5_72.json",
+      "sha256": "ee057ac9eda6e9c5ca770c249f09864738e6d53ef16658202dbb8a4a03a7a282",
+      "bytes": 2508
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW5_82.json",
+      "sha256": "a1371242e3ed8a6c651d60ff3408f14a986879eb2e387df3475cfa013ee92dcd",
+      "bytes": 2508
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_42.json",
+      "sha256": "ab23c5100d2fbcc3d7c7da7224b695c787f2f01da570955ead520df22a35dbeb",
+      "bytes": 13183
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_42_isotonic.json",
+      "sha256": "637960d57d98ff50dbe3d757a611adf9a2210ed33a1683a3fcf34bcc405e1091",
+      "bytes": 1382
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_52.json",
+      "sha256": "4fb7831d0f566afa08693e8bf177d6025b701cd1d683578472afcf4548f17068",
+      "bytes": 13257
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_52_isotonic.json",
+      "sha256": "e77ff03fba3de16f2d1d076785d58ef36a6e3214dee3ed4cee925483201ab551",
+      "bytes": 1263
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_62.json",
+      "sha256": "82a6a4d7332e2388ba996fc11ffbb36acd055b533f2cd908b48dbff628c10845",
+      "bytes": 13027
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_62_isotonic.json",
+      "sha256": "02689a55ffc684e072b1ee7ce6484d5d14773982ec4a8530a1432ff64680576b",
+      "bytes": 1153
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_72.json",
+      "sha256": "47123354a79ef48a6fc971d1fd54c87ffaa83fada4ebe74455510630aaea5a5a",
+      "bytes": 13022
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_72_isotonic.json",
+      "sha256": "454d0fa8185f3a7aeb099c6ce7eb0baee768addbf5ec1d0a03024529a512dae3",
+      "bytes": 1419
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_82.json",
+      "sha256": "21db5abd066220526bc7b74b21968db4636bef23e621b9d5c60426f8c21bb786",
+      "bytes": 13267
+    },
+    {
+      "path": "evidence/training/paysim_2_PTHW_82_isotonic.json",
+      "sha256": "ca2516f7d9f9f60d941564f87501bf85e302d59f57d3e77d42d404aaa679a3d5",
+      "bytes": 1985
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_42.json",
+      "sha256": "18f31e131a220074ca2727d138b49408c3460f95c98f247736c8ceba884a2dc7",
+      "bytes": 12764
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_42_isotonic.json",
+      "sha256": "e9ea527db12f198812858d5c9c3eaa889e8b302d199f58294d0f0ff73b0bcfbd",
+      "bytes": 1556
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_52.json",
+      "sha256": "932cee5f8b11df4314ac410799ee9ac843243bf188bfeec7eb126a0cd26e1cef",
+      "bytes": 12780
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_52_isotonic.json",
+      "sha256": "d77ae7f62cc969acc704a15de561a8106d8c812650de5d0d2e410f0b28934a51",
+      "bytes": 2069
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_62.json",
+      "sha256": "9f82c81c517b3050dec5a1eeada0cd329c2423c559f0993ac345fd583ccf3b81",
+      "bytes": 12750
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_62_isotonic.json",
+      "sha256": "69dba34ea1c256de4bbc019adb2010338133ce4b7b93d9368243d9794e93f8de",
+      "bytes": 2237
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_72.json",
+      "sha256": "93255cd641420e000a8f7de80d3df7cb72053fe8134e1a42d8b1c2c0630eb81b",
+      "bytes": 12786
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_72_isotonic.json",
+      "sha256": "0f40540201a9e01d492dc7129664e73bbc683cf9f308e4f8940cf50c65d13053",
+      "bytes": 1386
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_82.json",
+      "sha256": "70c19bfcf073a2f4ab2f91d9cd3f6a1712ef8dd32b9054e9d85d71610777e5ae",
+      "bytes": 12752
+    },
+    {
+      "path": "evidence/training/paysim_3_P0_82_isotonic.json",
+      "sha256": "11b0eaab9027983ff628d3fcd45ec93e9c8ba43cc71b67080a8a0598d56c286c",
+      "bytes": 1649
+    },
+    {
+      "path": "evidence/training/paysim_3_PH_42.json",
+      "sha256": "f87d7443c62e8a6144ac9a3561f6c6ebfeda46e7c5cbf2a79a84a920131817d6",
+      "bytes": 2464
+    },
+    {
+      "path": "evidence/training/paysim_3_PH_52.json",
+      "sha256": "1a16278e2ef64f1b4f40686e2595301fd4315644742663cccecc71a0fc710303",
+      "bytes": 2462
+    },
+    {
+      "path": "evidence/training/paysim_3_PH_62.json",
+      "sha256": "cee9e76547b2faad20a7f7eb029e332ad63e750477b448f02aca242264e97ad1",
+      "bytes": 2448
+    },
+    {
+      "path": "evidence/training/paysim_3_PH_72.json",
+      "sha256": "d782f75c069134c60f75d307980a88592a05c2f4be926f8ed4a7e15cf12bb32c",
+      "bytes": 2461
+    },
+    {
+      "path": "evidence/training/paysim_3_PH_82.json",
+      "sha256": "6be49b5bf31ab7b4155530358290bdd0c9494e5708d8c59afa5636c9f47e01e4",
+      "bytes": 2462
+    },
+    {
+      "path": "evidence/training/paysim_3_PT_42.json",
+      "sha256": "195b5acab11e4b45830a6077f97042001911ef658104fc7f73eb2f4a1193b09d",
+      "bytes": 1989
+    },
+    {
+      "path": "evidence/training/paysim_3_PT_52.json",
+      "sha256": "31c45c56d09268ab1d1921cb9cf6e9fe4992d0b1ef800f2cf12837c28b0a7e8c",
+      "bytes": 1990
+    },
+    {
+      "path": "evidence/training/paysim_3_PT_62.json",
+      "sha256": "296431a70b584ef0bf7a40d6f73e2d0e79a162db766efd6413ebfeae69a2dd8b",
+      "bytes": 1989
+    },
+    {
+      "path": "evidence/training/paysim_3_PT_72.json",
+      "sha256": "6dbc97500d695661f96ce9b82e54cf809bfba98b1adba1cddcb1e878f99b1972",
+      "bytes": 1992
+    },
+    {
+      "path": "evidence/training/paysim_3_PT_82.json",
+      "sha256": "45f72a520a406a9aaaeb87db08b35ffee36b22752547ba13a1e16f55841c49d5",
+      "bytes": 1992
+    },
+    {
+      "path": "evidence/training/paysim_3_PTH_42.json",
+      "sha256": "771acafb7f998dcd7b7018f5aaf92769f95764da3c16b6d783711a94192c1af5",
+      "bytes": 2503
+    },
+    {
+      "path": "evidence/training/paysim_3_PTH_52.json",
+      "sha256": "4e8c47f0b464430a4a07a3c0875ff87a74545ea5d16b1ac303260663a24251b5",
+      "bytes": 2491
+    },
+    {
+      "path": "evidence/training/paysim_3_PTH_62.json",
+      "sha256": "682fa740c01ba042db5ffed8b4987d89890e61266baf83f78375ed8a8432b5d8",
+      "bytes": 2505
+    },
+    {
+      "path": "evidence/training/paysim_3_PTH_72.json",
+      "sha256": "abfe2d2b5a67738b9c3006613c116fe12ffdd5cc7edebfbf1f9a6e243677b600",
+      "bytes": 2508
+    },
+    {
+      "path": "evidence/training/paysim_3_PTH_82.json",
+      "sha256": "d0434f40cc631b920351c29523d5e6196419f5ca0b718c2982fda227d3aa24f7",
+      "bytes": 2503
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW5_42.json",
+      "sha256": "7968c4e366c9b58caae5c2f6b0e9bfad9252a24362690d6d41f21c2e0553e7f3",
+      "bytes": 2510
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW5_52.json",
+      "sha256": "81280f93a9a5567d5401037d61660831a3f65ebb63ce13da040b7e3e1ddfe674",
+      "bytes": 2514
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW5_62.json",
+      "sha256": "a89fa4d74f0834efc53022fa24a5533e309b2dc73cbcb77d8e0521510a89a244",
+      "bytes": 2513
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW5_72.json",
+      "sha256": "9d8b5c7f9ba761245d9de27b09f2fa2a6716b18f5cff6d15cfc249cf0b688628",
+      "bytes": 2513
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW5_82.json",
+      "sha256": "15d147fa9072b39a5b10936ecb2f2fc535c29fe532be87a145a46a6f0ca8d609",
+      "bytes": 2512
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_42.json",
+      "sha256": "7a23fd7e96fe091b1a62c5e8bd7ae226363f36079ac338ad6ae2575b94d7b886",
+      "bytes": 13374
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_42_isotonic.json",
+      "sha256": "5bf0922141176abbbbdadd16f379da60d4891c76d40c70bd9b52ad416281be0f",
+      "bytes": 1917
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_52.json",
+      "sha256": "1d5b0323e49f6021dc85b0c83675eb113c050342cbf3781347a1d68b8d9fa3f1",
+      "bytes": 13362
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_52_isotonic.json",
+      "sha256": "c62ff7bf5145ece86897f607c4caa2aa0a27aef9f0ee1f096f88903b05770a5e",
+      "bytes": 1469
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_62.json",
+      "sha256": "1a9ae9f830745033770ef558882753861739a4a1c301d21d6589a17b9b4a56ea",
+      "bytes": 13398
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_62_isotonic.json",
+      "sha256": "4d0ad2f9ad9b173250c04f736b7c81e98771150075160570c135cab4f35c72e6",
+      "bytes": 1601
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_72.json",
+      "sha256": "9ee7717f4ed47770ca1b974fcb00c4e875ad412dd4aa821ed394fc32ebe4c14d",
+      "bytes": 13355
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_72_isotonic.json",
+      "sha256": "ae78091716935fd7c495b9ff198570360fe3f993a2b59c4e048977b2efe719b5",
+      "bytes": 2271
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_82.json",
+      "sha256": "a47808ef30dc64e1e880b40f84d534577b0e36df7b447ca995c540de33f47614",
+      "bytes": 13354
+    },
+    {
+      "path": "evidence/training/paysim_3_PTHW_82_isotonic.json",
+      "sha256": "2f7d38476f1f7cf85a305f07c037fc70f9b902b096abb44952b0210bc4893bab",
+      "bytes": 2046
+    },
+    {
+      "path": "evidence/training/TRAINING_INPUTS.json",
+      "sha256": "cf7d81ebd9349fc8dc1e13157a5f9a68ebc197527c84877b5006bc5741b8cff6",
+      "bytes": 459
+    },
+    {
+      "path": "HISTORICAL_FULL_BUNDLE_GUIDE.md",
+      "sha256": "aec82554e45ac0c3351cb02f6905be78bcb53a3c7bc10c64462c3067472ba603",
+      "bytes": 8121
+    },
+    {
+      "path": "protocol/analysis_config.json",
+      "sha256": "e236b0f06c8d0017e94b10cad71f07e7fa0407c00d5d5644fc80bbf44e85bf56",
+      "bytes": 7966
+    },
+    {
+      "path": "protocol/BASELINE_SHA256.json",
+      "sha256": "95e290c85d7d7ea761416984a969ed8a89a219c147b6aa5787f3e13a083b117a",
+      "bytes": 6975
+    },
+    {
+      "path": "protocol/PROTOCOL.md",
+      "sha256": "2f111e64d08d6553eb39f48157bf041129aecacf3661d3dd1fc8c6b270e7b81a",
+      "bytes": 2566
+    },
+    {
+      "path": "protocol/protocol_effective.json",
+      "sha256": "1692d1802fef4070928c913fc717f7fa24a1b7f11f6ec1d486db8c57c214695c",
+      "bytes": 10038
+    },
+    {
+      "path": "README.md",
+      "sha256": "32570a612eff94e71bfd2a5f8ec8a08766b428807ad220014cfcf83e5d383296",
+      "bytes": 848
+    },
+    {
+      "path": "requirements-lock-windows-py311.txt",
+      "sha256": "b33a955fb99f6a78db32129d345c2b14d7e7136203d9f1f840bdbddcc3fe2629",
+      "bytes": 589
+    }
+  ]
+}

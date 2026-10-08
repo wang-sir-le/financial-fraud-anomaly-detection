@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "artifacts": [
+    {
+      "path": "analysis/bootstrap/draw_effects_L14.npy",
+      "bytes": 6400128,
+      "sha256": "48ccc742f71f304c6b973df5b9f2532008a93870e32e6105a52935a82fa9b902"
+    },
+    {
+      "path": "analysis/bootstrap/draw_effects_L3.npy",
+      "bytes": 6400128,
+      "sha256": "19c9c1fce2de47c262488da6212ba2107e25f37f7a057d2d504ef51da6200494"
+    },
+    {
+      "path": "analysis/bootstrap/draw_effects_L7.npy",
+      "bytes": 6400128,
+      "sha256": "d727c7bc1b5f407e3d758e6a60c12b95a256894ab1ad045204eb4000562b17d8"
+    },
+    {
+      "path": "analysis/bootstrap/estimand_names.json",
+      "bytes": 4681,
+      "sha256": "58611f8f1e36a53bfa4587f998e6fce6499c5fe436d4e32c1aa1a499fe52a37f"
+    },
+    {
+      "path": "analysis/bootstrap/intervals.json",
+      "bytes": 190788,
+      "sha256": "71ad733910f46e6d22d2efc81d522b7632e7869a4c5b4e53d943f848219ff5bf"
+    },
+    {
+      "path": "analysis/bootstrap/point_estimates.json",
+      "bytes": 7371,
+      "sha256": "6a1b9d77adfcbd8d27424003605e7448f143574063828d5e7d0cbb91bcb3c9dc"
+    },
+    {
+      "path": "analysis/bootstrap/progress.json",
+      "bytes": 77,
+      "sha256": "38cb180a82eab8f423aed6b2ed7541dbd8eeb1de47b2afd6e4b64b2e9d697f3c"
+    },
+    {
+      "path": "analysis/bootstrap/step_sequences_L14.npy",
+      "bytes": 2160128,
+      "sha256": "a915fc576a0f3f8a0a8a6541b6c2e877f0ba90923ddb20368d18bd2e698b023e"
+    },
+    {
+      "path": "analysis/bootstrap/step_sequences_L3.npy",
+      "bytes": 2160128,
+      "sha256": "e121bb2d2f1cf3291d133fd04ed72b806ffbee0e7cff1c59e0fee0331379497c"
+    },
+    {
+      "path": "analysis/bootstrap/step_sequences_L7.npy",
+      "bytes": 2160128,
+      "sha256": "20d6469b5f34392facd731fee82cd6c31c79bead54151b949a4c7127c68fc1d4"
+    }
+  ],
+  "estimand_scope": "conditional_fixed_models_and_window",
+  "new_independent_evidence": false,
+  "evaluation_sha256": "ed0f1887ebd17f4cfc99b6b6f3376c1fd3b2d298c6b74627bf59ae5f37969987"
+}

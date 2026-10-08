@@ -1,0 +1,126 @@
+[
+  {
+    "case": "unchanged",
+    "expected_RGLU": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "observed": {
+      "R": 1,
+      "G": 0,
+      "L": 0,
+      "U": 1,
+      "TP_before": 1,
+      "TP_after": 1,
+      "delta_tp": 0
+    },
+    "pass": true
+  },
+  {
+    "case": "gain",
+    "expected_RGLU": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "observed": {
+      "R": 1,
+      "G": 1,
+      "L": 0,
+      "U": 0,
+      "TP_before": 1,
+      "TP_after": 2,
+      "delta_tp": 1
+    },
+    "pass": true
+  },
+  {
+    "case": "loss",
+    "expected_RGLU": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "observed": {
+      "R": 1,
+      "G": 0,
+      "L": 1,
+      "U": 0,
+      "TP_before": 2,
+      "TP_after": 1,
+      "delta_tp": -1
+    },
+    "pass": true
+  },
+  {
+    "case": "exchange",
+    "expected_RGLU": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "observed": {
+      "R": 0,
+      "G": 1,
+      "L": 1,
+      "U": 0,
+      "TP_before": 1,
+      "TP_after": 1,
+      "delta_tp": 0
+    },
+    "pass": true
+  },
+  {
+    "case": "no_positive",
+    "expected_RGLU": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "observed": {
+      "R": 0,
+      "G": 0,
+      "L": 0,
+      "U": 0,
+      "TP_before": 0,
+      "TP_after": 0,
+      "delta_tp": 0
+    },
+    "pass": true
+  },
+  {
+    "case": "saturated",
+    "expected_RGLU": [
+      2,
+      0,
+      0,
+      0
+    ],
+    "observed": {
+      "R": 2,
+      "G": 0,
+      "L": 0,
+      "U": 0,
+      "TP_before": 2,
+      "TP_after": 2,
+      "delta_tp": 0
+    },
+    "pass": true
+  },
+  {
+    "case": "independent_tie_sort_and_exact_capacity",
+    "expected_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pass": true
+  }
+]

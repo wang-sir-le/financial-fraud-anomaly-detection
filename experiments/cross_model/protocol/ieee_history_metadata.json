@@ -1,0 +1,93 @@
+{
+  "builder": "IEEE-CIS Entity History Feature Builder",
+  "generated_at_utc": "2026-08-21T10:33:44.206103+00:00",
+  "input_files": {
+    "transaction_path": "${WORKSPACE}\\Dataset\\ieee-fraud-detection\\train_transaction.csv",
+    "identity_path": "${WORKSPACE}\\Dataset\\ieee-fraud-detection\\train_identity.csv",
+    "train_transaction_csv_sha256": "3a5c83ab6b3cc13dcabe5ffa9f522307fd5f7f7b6e6f6a60c32284ca6283d642",
+    "train_identity_csv_sha256": "b63c725d8377be90a995268d97f347c17d456b95db45807adcf9f59cd603c37c"
+  },
+  "output_file": {
+    "path": "${WORKSPACE}\\experiment\\outputs\\ieee_cis\\ieee_cis_history_features\\ieee_cis_entity_history_features.parquet",
+    "sha256": "7e3f4f28d787bc6e31318fbd148833c939bf78a6c231fbe920a749f96ed89e35",
+    "format": "Parquet",
+    "compression": "zstd"
+  },
+  "entity_definitions": {
+    "Entity A": {
+      "columns": [
+        "card1"
+      ],
+      "paper_term": "anonymized card identifier"
+    },
+    "Entity C": {
+      "columns": [
+        "card1",
+        "card2",
+        "card3",
+        "card5",
+        "card6"
+      ],
+      "paper_term": "finer-grained anonymized card-attribute combination"
+    }
+  },
+  "feature_formulas": {
+    "previous_count": "count of entity transactions with TransactionDT < current",
+    "previous_amount_mean": "mean amount where TransactionDT < current",
+    "previous_amount_std": "sample std (ddof=1), at least 2 strictly prior rows",
+    "amount_to_previous_mean": "TransactionAmt / (previous mean + epsilon)",
+    "time_since_last": "current TransactionDT - max(strictly prior TransactionDT)",
+    "previous_unique_product_count": "distinct non-missing ProductCD where TransactionDT < current"
+  },
+  "epsilon": 1e-06,
+  "timestamp_rule": "historical TransactionDT < current TransactionDT",
+  "same_timestamp_transactions_contribute_history": false,
+  "history_update_mode": "chronological unlabeled transaction-attribute updates",
+  "missing_handling": {
+    "available_entity_without_history": {
+      "previous_count": 0,
+      "previous_unique_product_count": 0,
+      "mean_std_ratio_time_since_last": "NaN"
+    },
+    "unavailable_entity": "all six core features NaN; entity_available=0; history statuses=0",
+    "entity_component_imputation": "none",
+    "global_imputation": "none"
+  },
+  "row_count": 590540,
+  "column_count": 22,
+  "columns": [
+    "TransactionID",
+    "TransactionDT",
+    "TransactionAmt",
+    "isFraud",
+    "card_entity_available",
+    "card_prev_count",
+    "card_prev_amt_mean",
+    "card_prev_amt_std",
+    "card_amt_to_prev_mean",
+    "card_time_since_last",
+    "card_prev_unique_product_count",
+    "card_has_history",
+    "card_has_std_history",
+    "combo_entity_available",
+    "combo_prev_count",
+    "combo_prev_amt_mean",
+    "combo_prev_amt_std",
+    "combo_amt_to_prev_mean",
+    "combo_time_since_last",
+    "combo_prev_unique_product_count",
+    "combo_has_history",
+    "combo_has_std_history"
+  ],
+  "isFraud_used_for_feature_construction": false,
+  "isFraud_preserved_as_output_only": true,
+  "model_training_count": 0,
+  "prediction_generation_count": 0,
+  "feature_selection_count": 0,
+  "library_versions": {
+    "python": "3.11.9",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "pyarrow": "25.0.1"
+  }
+}

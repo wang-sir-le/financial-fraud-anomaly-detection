@@ -1,115 +1,47 @@
 # Financial Fraud Detection under Temporal and Capacity Constraints
 
-This repository contains the research code for a temporal fraud-detection study on PaySim and IEEE-CIS. The implementation separates global ranking, probability reliability, and capacity-constrained decision utility while preserving dataset-specific evaluation protocols.
+Research code, frozen protocol specifications, compact recorded results, and standalone figures for PaySim, IEEE-CIS and BankSim. The October 8, 2026 update adds the completed component/capacity analyses, deterministic PaySim reconstruction, prescribed logistic comparison, BankSim validation, post-hoc capture diagnostics and retrospective merchant-history supplement S22.
 
-The repository is a reproducibility package, not a data distribution. Raw datasets, processed transaction-level data, prediction ledgers, fitted models, and local manuscript-audit tooling are intentionally excluded.
+The stage index is [docs/UPDATES_20261008.md](docs/UPDATES_20261008.md). It identifies the source stage and the evidence boundary for each directory. The original August base implementation and its historical documents remain available in Git history and [docs/history/20260825](docs/history/20260825).
 
-## Scientific scope
-
-- Strictly past-only entity-history features with same-timestamp isolation.
-- Expanding-window temporal validation for both datasets.
-- PaySim recipient-history comparisons under a validation-selected threshold constrained to at most a 3% alert rate.
-- IEEE-CIS M0-M3 LightGBM comparisons under exact Test top-3% ranking.
-- Five fixed training seeds: 42, 52, 62, 72, and 82.
-- An analytical false-negative/false-positive cost ratio of 100:1.
-- PaySim-only calibration analysis.
-- Paired moving time-block Bootstrap analyses within frozen future windows.
-
-The PaySim and IEEE-CIS protocols are intentionally not described as identical replications. Their time variables, entity meanings, capacity implementations, and uncertainty units differ.
-
-## Repository layout
+## Layout
 
 ```text
-configs/                 Portable frozen PaySim configuration
-data/                    Local-only data locations; data are ignored by Git
-docs/                    Data access, protocol, and Supplement material
-outputs/                 Generated artifacts; contents are ignored by Git
-scripts/                 Dataset audit, feature-building, and Bootstrap entrypoints
-src/fraudx/              Core scientific implementation
-tests/                   Tests for the public scientific code
+src/fraudx/              Base implementation and q2_extension, paysim_deterministic, cross_model
+configs/                Original portable PaySim configurations
+scripts/                Original dataset audit and Bootstrap entrypoints
+tests/                  Public-code regression tests using artificial records
+experiments/            Six completed extension snapshots and compact summary tables
+figures/main/           Current Figures 1-6, including October 8 revisions of Figures 3-5
+figures/supplement/     Figures S1-S8 with scripts and adjacent aggregate JSON inputs
+docs/                   Access, reconstruction limits, stage map and historical documents
 ```
 
-## Installation
+## Installation and checks
 
-Python 3.11 or later is required.
+Python 3.11 or later is required. For numerical reconstruction, use the stage-specific Windows/Python 3.11 dependency records rather than assuming that unpinned versions produce identical scores.
 
 ```bash
 python -m venv .venv
-python -m pip install --upgrade pip
-python -m pip install -e .
-```
-
-The same dependencies are also listed in `requirements.txt` for environments that do not use editable installation.
-
-## Smoke test
-
-The smoke test uses synthetic PaySim-shaped records only to verify execution. It is not a paper result.
-
-```bash
-python -m fraudx.cli --config configs/paysim_frozen.yaml --smoke
+python -m pip install -e ".[dev]"
 pytest
+python -m fraudx.cli --config configs/paysim_frozen.yaml --smoke
 ```
 
-## PaySim workflow
+The smoke run and unit tests use artificial records and are execution checks, not paper results. BankSim has separate tests and an environment guide in [experiments/banksim](experiments/banksim).
 
-Obtain PaySim from its original source and place the CSV at:
+## Base workflows
 
-```text
-data/raw/PS_20174392719_1491204439457_log.csv
-```
+Obtain PaySim from its original source and place its CSV under `data/raw/`. Obtain the labelled IEEE-CIS training files through the official Kaggle competition and place them under `data/raw/ieee_cis/`. The original base workflow is documented in [docs/history/20260825/README.md](docs/history/20260825/README.md). The added reconstruction modules accept explicit reader input/output paths; consult the current stage README before using a historical full-bundle guide.
 
-Then run:
+## Scientific and distribution boundaries
 
-```bash
-python -m fraudx.cli --config configs/paysim_frozen.yaml --prepare-only
-python -m fraudx.cli --config configs/paysim_frozen.yaml --rolling
-python -m fraudx.cli --config configs/paysim_frozen.yaml --pair-audit
-python -m fraudx.cli --config configs/paysim_frozen.yaml --multiseed
-python -m fraudx.cli --config configs/paysim_frozen.yaml --calibration-ablation
-python scripts/run_paysim_timeblock_bootstrap.py --config configs/paysim_frozen.yaml
-```
+Global ranking, calibration reliability and capacity-constrained capture are distinct outcomes. The original PaySim primary analysis transfers a validation-selected threshold; its later exact-capacity component comparisons are different estimands. IEEE-CIS uses exact Test top-3% ranking. BankSim and S22 retain their own frozen designs. Five training seeds are not five independent datasets. Conditional intervals, descriptive post-hoc diagnostics and the retrospective S22 findings retain their original inferential status; negative and uncertain results are included.
 
-The Bootstrap entrypoint first reconstructs the frozen paired prediction ledger and requires the reconstruction audit to pass. It does not select a new model, threshold, capacity, or block length.
+Raw transactions, row-level labels/scores/features, fitted models, preprocessing states, binary score caches and large Bootstrap replicate files are excluded. Compact CSV/JSON tables and figure inputs are included. Author-local paths in copied JSON and documentation are explicit placeholders; scientific numeric fields are preserved. Historical lock digests refer to the original author artifacts, not to these path-adapted public copies.
 
-## IEEE-CIS workflow
-
-Obtain `train_transaction.csv` and `train_identity.csv` through the official IEEE-CIS Fraud Detection Kaggle page and place them under `data/raw/ieee_cis/`. The following commands retain separate output directories for every stage:
-
-```bash
-python scripts/run_ieee_cis_audit.py \
-  --transaction_path data/raw/ieee_cis/train_transaction.csv \
-  --identity_path data/raw/ieee_cis/train_identity.csv \
-  --output_dir outputs/ieee_cis/audit
-
-python scripts/build_ieee_history_features.py \
-  --transaction_path data/raw/ieee_cis/train_transaction.csv \
-  --identity_path data/raw/ieee_cis/train_identity.csv \
-  --output_dir outputs/ieee_cis/history
-
-python build_ieee_temporal_protocol.py \
-  --transaction_path data/raw/ieee_cis/train_transaction.csv \
-  --feature_path outputs/ieee_cis/history/ieee_cis_entity_history_features.parquet \
-  --output_dir outputs/ieee_cis/temporal_protocol
-
-python run_ieee_cis_experiment.py \
-  --transaction_path data/raw/ieee_cis/train_transaction.csv \
-  --history_path outputs/ieee_cis/history/ieee_cis_entity_history_features.parquet \
-  --history_metadata_path outputs/ieee_cis/history/history_feature_metadata.json \
-  --protocol_path outputs/ieee_cis/temporal_protocol/ieee_cis_temporal_protocol.json \
-  --output_dir outputs/ieee_cis/model_results
-```
-
-Directional cross-dataset synthesis and the IEEE-CIS time-block Bootstrap require outputs from the preceding frozen stages. Their command-line arguments are available through:
-
-```bash
-python analyze_ieee_cis_results.py --help
-python run_ieee_cis_timeblock_bootstrap.py --help
-```
-
-## Data and reporting boundaries
-
-See `docs/DATA_ACCESS.md` for provenance and access conditions. `docs/SUPPLEMENT.md` records the venue-neutral frozen protocol details, and `docs/SUPPLEMENT_ASSET_MANIFEST.md` maps each Supplement section to public code or locally generated artifacts. The analytical 100:1 cost ratio is a predefined evaluation scenario, not an observed monetary-loss estimate or a universal operational optimum.
+This update publishes recorded evidence and code. Publication and local regression checks do not establish independent external raw-to-model reconstruction. Read [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) for the actual available routes and missing inputs.
 
 ## License
 
-The research code is released under the MIT License. The current public author identifier is `wang-sir-le`; it may be replaced with the author's preferred publication name before a tagged release.
+Research code remains under the [MIT License](LICENSE). Dataset access and use remain subject to the original providers' terms; datasets are not redistributed here.

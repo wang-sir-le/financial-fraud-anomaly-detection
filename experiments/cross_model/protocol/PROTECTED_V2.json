@@ -1,0 +1,26 @@
+[
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\本轮结果与C决策.md",
+    "sha256": "4d8d2205fa9d11f1cd1755b487f2abca5de4bf9b373cab25c8506ae3eb4d0072"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\paper\\KAIS_English_Manuscript_deterministic_v2.docx",
+    "sha256": "e9ca85fe5445a3f77f44b6ada6637907092c110133485ad9b77ffec322394d43"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\paper\\ESM_1_deterministic_v2.docx",
+    "sha256": "1c9ffa03be80706dcf77988de4cc966ec994f1c9a9955cc538e0955bf58b8ac7"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\paper\\ESM_2_deterministic_v2.zip",
+    "sha256": "0f93372900bc2668ea71c60cbaf9ee1ca3dd8af65672a815e8d32cb2e1311873"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\protocol\\protocol_effective.json",
+    "sha256": "60f7b18c68a6ffe1b762f2ca721729773c167e75a9b9aefd45343077e298b649"
+  },
+  {
+    "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\assessment\\C_SCOPE_DECISION.json",
+    "sha256": "2b1e2166cfab58712711943b0fc1dd6cedc704b7cadbe166feb55bca4bf6d808"
+  }
+]

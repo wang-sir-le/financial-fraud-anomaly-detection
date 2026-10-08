@@ -1,0 +1,105 @@
+{
+  "scope": "compact public subset; historical full author artifacts are not implied",
+  "files": [
+    {
+      "path": "audit/ARTIFICIAL_CHECKS.json",
+      "sha256": "c106b0dbaf1e344094d59f5d3d97f04ff0a6e8dd8af5b88ef4e8b73c6db468a4",
+      "bytes": 1830
+    },
+    {
+      "path": "audit/DIAGNOSTIC_DECISION.json",
+      "sha256": "f7ff2b31d515c6621179c28dd3390052e961a089344f08ab103cc6aea9618e45",
+      "bytes": 773
+    },
+    {
+      "path": "audit/DIAGNOSTIC_RESOURCES.json",
+      "sha256": "4896e0609a7b117a10448c97992fec806b06ebe856226dc6de62aa86cb0d666a",
+      "bytes": 130
+    },
+    {
+      "path": "audit/DISPLAY_VALUE_CHECK.json",
+      "sha256": "00ea49a07842c0d473bc4c83fe829defafb7a8ae0e612c77fb012045a7d8f5e1",
+      "bytes": 3788
+    },
+    {
+      "path": "audit/ENVIRONMENT.json",
+      "sha256": "8ad5d7a678770ccb40fcd5f31e1842f1f2b1bc32eee22eef35cb4f5b7ae577e2",
+      "bytes": 638
+    },
+    {
+      "path": "audit/FIGURE_DATA.json",
+      "sha256": "9912ad7d6ec6dcf477bbf0e5b7ef2180710d2edbd7a6c48a6aa62150f18beb00",
+      "bytes": 1262
+    },
+    {
+      "path": "bridge/replay_banksim.py",
+      "sha256": "e36cb42a68cf233b7657d26395af96fdce617b18d6439cc1f59c0d087f761094",
+      "bytes": 9422
+    },
+    {
+      "path": "derived/existing_draw_diagnostics/paysim_existing_5000.csv",
+      "sha256": "8b93b0d13137a6cb644051a70407e7bf58361e94ccff8c85e89e0bb3a42bdc6a",
+      "bytes": 358682
+    },
+    {
+      "path": "derived/existing_draw_diagnostics/SUMMARY.json",
+      "sha256": "2c9403c8a19b8ccf524c20708cdfa4ae32002ee50a057937a87fb53d09af3ce4",
+      "bytes": 813
+    },
+    {
+      "path": "derived/headroom.csv",
+      "sha256": "11485d4ee92ed8e60af3ddc625b3d097ec4e3f54b425e6fd684ceaefb05a5987",
+      "bytes": 687
+    },
+    {
+      "path": "derived/posthoc_capture_exchange/all_60_pairs.csv",
+      "sha256": "db8a0984e6d8a5704903edd67c8b8616c78167d9d38016165951a2adb5e7341b",
+      "bytes": 24034
+    },
+    {
+      "path": "derived/posthoc_capture_exchange/means_12.csv",
+      "sha256": "cf5977558eb63a61c5d4e92a7c9cc515087f30012f37acd965a0411d3aed647f",
+      "bytes": 1152
+    },
+    {
+      "path": "derived/posthoc_capture_exchange/RECEIPT.json",
+      "sha256": "bcca6fddda4ea3a0f7fbaae02a01086ff3bfecc8d33eb6606c9f664b07c231b3",
+      "bytes": 18391
+    },
+    {
+      "path": "derived/time_structure/banksim_54_step_means.csv",
+      "sha256": "8e336454fa853bc85e87f2ad1f5158587b8bebdb8268920297b59f4ba1c8f899",
+      "bytes": 5416
+    },
+    {
+      "path": "derived/time_structure/banksim_step_capture_all_seeds.csv",
+      "sha256": "e6a150f8d04e8bc3bdae96fdd01543c88c90ff902e7978ed56925a6c71ffa6ea",
+      "bytes": 49706
+    },
+    {
+      "path": "derived/time_structure/ieee_block_span_summary.csv",
+      "sha256": "8a605d9d982e9077bad2848cb87f9d908b16ec057ee0f5dcd357066ea23b41b8",
+      "bytes": 324
+    },
+    {
+      "path": "derived/time_structure/IEEE_RECEIPT.json",
+      "sha256": "c76882f4224b59bac757f9013f4cfae342c3bf58fc26a8a29e91ef1d6341b091",
+      "bytes": 1378
+    },
+    {
+      "path": "HISTORICAL_FULL_BUNDLE_GUIDE.md",
+      "sha256": "a3183e32cd6d494b0c177347a8eacd2f783ba508985797c9be644b84124b7cf5",
+      "bytes": 5119
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "1fad2078c3e86bcb8bf0862a3b8f3c1ac86675736df6dff340a7d672a091d0d6",
+      "bytes": 199
+    },
+    {
+      "path": "README.md",
+      "sha256": "9bb19ef567452a24151ca40f73ee512d77ffba32b39fd2fba4fafa47d0e16dd4",
+      "bytes": 852
+    }
+  ]
+}

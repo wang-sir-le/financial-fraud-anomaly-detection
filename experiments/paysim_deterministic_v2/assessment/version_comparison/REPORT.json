@@ -1,0 +1,97 @@
+{
+  "status": "ALL_SPECIFIED_COMPARISONS_RECORDED",
+  "analyses": [
+    {
+      "analysis": "all_scenarios",
+      "key_rows": 660,
+      "numeric_cells": 9240,
+      "changed_cells": 7607
+    },
+    {
+      "analysis": "score_stage_models",
+      "key_rows": 225,
+      "numeric_cells": 1575,
+      "changed_cells": 969
+    },
+    {
+      "analysis": "score_stage_contrasts",
+      "key_rows": 225,
+      "numeric_cells": 225,
+      "changed_cells": 225
+    },
+    {
+      "analysis": "capacity_models",
+      "key_rows": 900,
+      "numeric_cells": 13500,
+      "changed_cells": 10475
+    },
+    {
+      "analysis": "capacity_contrasts",
+      "key_rows": 180,
+      "numeric_cells": 1080,
+      "changed_cells": 1080
+    },
+    {
+      "analysis": "priority_summaries",
+      "key_rows": 180,
+      "numeric_cells": 720,
+      "changed_cells": 537
+    },
+    {
+      "analysis": "component_intervals",
+      "key_rows": 108,
+      "numeric_cells": 648,
+      "changed_cells": 312
+    },
+    {
+      "analysis": "processing_intervals",
+      "key_rows": 54,
+      "numeric_cells": 324,
+      "changed_cells": 62
+    },
+    {
+      "analysis": "primary_intervals",
+      "key_rows": 15,
+      "numeric_cells": 135,
+      "changed_cells": 75
+    },
+    {
+      "analysis": "secondary_overall_intervals",
+      "key_rows": 5,
+      "numeric_cells": 45,
+      "changed_cells": 25
+    },
+    {
+      "analysis": "calibration_ablation_results",
+      "key_rows": 90,
+      "numeric_cells": 7740,
+      "changed_cells": 5234
+    },
+    {
+      "analysis": "calibration_bayes_decision_results",
+      "key_rows": 90,
+      "numeric_cells": 1890,
+      "changed_cells": 1502
+    },
+    {
+      "analysis": "calibration_decision_invariance",
+      "key_rows": 60,
+      "numeric_cells": 1140,
+      "changed_cells": 619
+    },
+    {
+      "analysis": "calibration_pairwise_reliability",
+      "key_rows": 90,
+      "numeric_cells": 630,
+      "changed_cells": 456
+    },
+    {
+      "analysis": "block_sensitivity",
+      "key_rows": 45,
+      "numeric_cells": 225,
+      "changed_cells": 135
+    }
+  ],
+  "version_pairing": "same time groups and draws; no old/new transaction identity matching",
+  "interpretation": "joint implementation sensitivity; neither factor isolation nor new external evidence"
+}

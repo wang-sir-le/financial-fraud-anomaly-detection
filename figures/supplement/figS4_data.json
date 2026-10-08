@@ -1,0 +1,183 @@
+{
+  "figure": "S4",
+  "sources": [
+    {
+      "path": "${WORKSPACE}\\experiment\\outputs\\paysim_deterministic_v2\\run_20260923_01\\analysis\\b1\\stage_contrasts_fold.csv",
+      "sha256": "a3bfa71d688c3d173407fb6f2152ed7748f40a26bc5ed97f9ddb2f66660d6982"
+    }
+  ],
+  "selection": "dataset=paysim; contrasts=P_H_BASE/P_H_TIME/P_WEIGHT; raw/clipped/platt; all three folds.",
+  "notes": "Discrete stage labels and existing five-seed means; connecting lines remain visual guides, not a continuous optimisation curve.",
+  "original_extent_emu": {
+    "cx": 5760720,
+    "cy": 2160270
+  },
+  "figsize_inches": [
+    6.3,
+    2.3625
+  ],
+  "rows": [
+    {
+      "fold": 1,
+      "contrast": "P_H_BASE",
+      "score_stage": "clipped",
+      "delta_ap": 0.011412095813206647
+    },
+    {
+      "fold": 1,
+      "contrast": "P_H_BASE",
+      "score_stage": "platt",
+      "delta_ap": 0.011412095813206647
+    },
+    {
+      "fold": 1,
+      "contrast": "P_H_BASE",
+      "score_stage": "raw",
+      "delta_ap": 0.030683561810482186
+    },
+    {
+      "fold": 1,
+      "contrast": "P_H_TIME",
+      "score_stage": "clipped",
+      "delta_ap": -0.05941636689612788
+    },
+    {
+      "fold": 1,
+      "contrast": "P_H_TIME",
+      "score_stage": "platt",
+      "delta_ap": -0.05941636689612788
+    },
+    {
+      "fold": 1,
+      "contrast": "P_H_TIME",
+      "score_stage": "raw",
+      "delta_ap": -0.03906970168180014
+    },
+    {
+      "fold": 1,
+      "contrast": "P_WEIGHT",
+      "score_stage": "clipped",
+      "delta_ap": 0.018985537743194936
+    },
+    {
+      "fold": 1,
+      "contrast": "P_WEIGHT",
+      "score_stage": "platt",
+      "delta_ap": 0.018985537743194936
+    },
+    {
+      "fold": 1,
+      "contrast": "P_WEIGHT",
+      "score_stage": "raw",
+      "delta_ap": 0.0179528268970779
+    },
+    {
+      "fold": 2,
+      "contrast": "P_H_BASE",
+      "score_stage": "clipped",
+      "delta_ap": -0.06665910084715344
+    },
+    {
+      "fold": 2,
+      "contrast": "P_H_BASE",
+      "score_stage": "platt",
+      "delta_ap": -0.06665910084715344
+    },
+    {
+      "fold": 2,
+      "contrast": "P_H_BASE",
+      "score_stage": "raw",
+      "delta_ap": -0.04813070660123299
+    },
+    {
+      "fold": 2,
+      "contrast": "P_H_TIME",
+      "score_stage": "clipped",
+      "delta_ap": 0.00919416999323815
+    },
+    {
+      "fold": 2,
+      "contrast": "P_H_TIME",
+      "score_stage": "platt",
+      "delta_ap": 0.00919416999323815
+    },
+    {
+      "fold": 2,
+      "contrast": "P_H_TIME",
+      "score_stage": "raw",
+      "delta_ap": -0.01596532104481848
+    },
+    {
+      "fold": 2,
+      "contrast": "P_WEIGHT",
+      "score_stage": "clipped",
+      "delta_ap": -0.043431002099877374
+    },
+    {
+      "fold": 2,
+      "contrast": "P_WEIGHT",
+      "score_stage": "platt",
+      "delta_ap": -0.043431002099877374
+    },
+    {
+      "fold": 2,
+      "contrast": "P_WEIGHT",
+      "score_stage": "raw",
+      "delta_ap": -0.046890019029301656
+    },
+    {
+      "fold": 3,
+      "contrast": "P_H_BASE",
+      "score_stage": "clipped",
+      "delta_ap": 0.08110180458784647
+    },
+    {
+      "fold": 3,
+      "contrast": "P_H_BASE",
+      "score_stage": "platt",
+      "delta_ap": 0.08110180458784647
+    },
+    {
+      "fold": 3,
+      "contrast": "P_H_BASE",
+      "score_stage": "raw",
+      "delta_ap": 0.08394452744960883
+    },
+    {
+      "fold": 3,
+      "contrast": "P_H_TIME",
+      "score_stage": "clipped",
+      "delta_ap": 0.06556207572724251
+    },
+    {
+      "fold": 3,
+      "contrast": "P_H_TIME",
+      "score_stage": "platt",
+      "delta_ap": 0.06556207572724251
+    },
+    {
+      "fold": 3,
+      "contrast": "P_H_TIME",
+      "score_stage": "raw",
+      "delta_ap": 0.0612302408587182
+    },
+    {
+      "fold": 3,
+      "contrast": "P_WEIGHT",
+      "score_stage": "clipped",
+      "delta_ap": 0.04021336055541335
+    },
+    {
+      "fold": 3,
+      "contrast": "P_WEIGHT",
+      "score_stage": "platt",
+      "delta_ap": 0.04021336055541335
+    },
+    {
+      "fold": 3,
+      "contrast": "P_WEIGHT",
+      "score_stage": "raw",
+      "delta_ap": 0.04872862255192488
+    }
+  ]
+}

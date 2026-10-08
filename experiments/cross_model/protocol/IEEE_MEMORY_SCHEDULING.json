@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-24T05:23:39.096575+00:00",
+  "reason": "Measured larger-window preprocessing peaks threaten available commit memory",
+  "observed_fold2_M1_peak_working_set_bytes": 8607371264,
+  "observed_fold2_M1_steady_private_bytes": 5368913920,
+  "observed_available_commit_gib": 4.531,
+  "larger_window_worker_limit": 2,
+  "transition": "Finish M2 Fold 1, pause at complete checkpoint; M1 and M3 continue; resume M0 then M2 as slots become free",
+  "scientific_settings_changed": false,
+  "changes_to_features_splits_estimands": [],
+  "new_fits_selected_by_test_outcomes": false
+}

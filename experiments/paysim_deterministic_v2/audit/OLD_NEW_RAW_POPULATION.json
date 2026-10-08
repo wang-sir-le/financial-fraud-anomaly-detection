@@ -1,0 +1,13 @@
+{
+  "rows": 6362620,
+  "raw_field_multiset_symmetric_difference_count": 0,
+  "raw_field_position_disagreements": 6361799,
+  "pair_history_maxima": [
+    0,
+    0,
+    0
+  ],
+  "old_sha256": "d5b23a4ff2c41dd8f7611fb2d74ccee742584b65742522fe5dd13b776c955ef5",
+  "v2_sha256": "1e241c5e46e1d8323fe021c4185ce2ab3cb22f739d224384ebcb248490ed568f",
+  "scope": "Full raw-field multiset and positional comparison; position is not old/new transaction identity matching."
+}

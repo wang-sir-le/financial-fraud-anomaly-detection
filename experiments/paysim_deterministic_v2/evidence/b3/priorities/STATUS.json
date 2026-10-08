@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-09-23T13:24:01.662225+00:00",
+  "config_sha256": "df5fd175e25816c368e2cfda32ef2c72275494b081eba96dc6e87a00f09990d9",
+  "completed_utc": "2026-09-23T13:28:44.143571+00:00",
+  "details": {
+    "model_trial_rows": 90000,
+    "contrast_trial_rows": 90000,
+    "trials": 100,
+    "is_confidence_interval": false
+  },
+  "files": [
+    {
+      "name": "paysim_1_model_trials.parquet",
+      "sha256": "51d2ddb5c7611d28ba98f10fc8c3b729eae47dd2917c617ed258c447c7670e2d",
+      "bytes": 22352
+    },
+    {
+      "name": "paysim_2_model_trials.parquet",
+      "sha256": "5cff537c108ea0c2c35a10bf7f7a11384c357cbeaa193b3c3d6ab0fc98c02a9d",
+      "bytes": 22661
+    },
+    {
+      "name": "paysim_3_model_trials.parquet",
+      "sha256": "a046a6ea8d140f3bc46e32e8f8413505437a539c4284b892835b57b4d9a9a79a",
+      "bytes": 46691
+    },
+    {
+      "name": "shared_priority_summary.csv",
+      "sha256": "4a91c4b427df1a2b62803ec3356995d1d631f73d71935198a195d1ec0d043c88",
+      "bytes": 19788
+    },
+    {
+      "name": "shared_priority_trials.parquet",
+      "sha256": "97363ff4cae0151a020c71a50cb11bbfb3d16059eef5505f484561c5f66dea94",
+      "bytes": 205597
+    }
+  ]
+}

@@ -43,3 +43,14 @@ Thumbs.db
 
 # Proprietary plotting project files
 *.opju
+
+# Additional transaction caches and run outputs are never published
+*.npy
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+*.whl
+new-run/
+replay-output/
+.coverage

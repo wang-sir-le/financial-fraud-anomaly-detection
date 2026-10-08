@@ -1,0 +1,17 @@
+[
+  {
+    "fold": 1,
+    "same_weights": true,
+    "same_group_counts_and_frauds": true
+  },
+  {
+    "fold": 2,
+    "same_weights": true,
+    "same_group_counts_and_frauds": true
+  },
+  {
+    "fold": 3,
+    "same_weights": true,
+    "same_group_counts_and_frauds": true
+  }
+]

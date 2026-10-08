@@ -1,3 +1,7 @@
+<!-- Historical August 2026 base material. -->
+
+This document describes the original base release. For the October 8, 2026 additions, use [UPDATES_20261008.md](UPDATES_20261008.md) and the current stage READMEs. It is not an updated manuscript submission or full extension-bundle manifest.
+
 # Data and code availability policy
 
 ## Confirmed policy

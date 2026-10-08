@@ -1,0 +1,9 @@
+{
+  "conditions": 27,
+  "converged": 27,
+  "fit_attempts": 39,
+  "engineering_interrupted_attempts_excluded": 1,
+  "failed": [],
+  "post_hoc_previously_observed_windows": true,
+  "independent_blind_validation": false
+}

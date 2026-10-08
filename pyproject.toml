@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fraudx"
-version = "0.1.0"
+version = "0.2.0"
 description = "Reproducible temporal and cost-sensitive financial fraud experiments"
 requires-python = ">=3.11"
 dependencies = [
@@ -20,6 +20,10 @@ dependencies = [
   "scipy>=1.13",
 ]
 
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.16", "mypy>=1", "bandit>=1"]
+figures = ["PyMuPDF>=1.28"]
+
 [project.scripts]
 fraudx = "fraudx.cli:main"
 
@@ -33,6 +37,10 @@ target-version = "py311"
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
 
+[tool.ruff.lint.per-file-ignores]
+"src/fraudx/paysim_deterministic/*.py" = ["E501"]
+"tests/test_paysim_deterministic.py" = ["E501"]
+
 [tool.mypy]
 python_version = "3.11"
 warn_return_any = true
@@ -44,3 +52,9 @@ disable_error_code = ["import-untyped"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+
+# Frozen NumPy/Pandas kernels return arrays through untyped third-party interfaces.
+# Preserve the original scientific source; all other type diagnostics remain active.
+[[tool.mypy.overrides]]
+module = ["fraudx.cross_model.statistics", "fraudx.cross_model.training", "fraudx.cross_model.analysis"]
+warn_return_any = false

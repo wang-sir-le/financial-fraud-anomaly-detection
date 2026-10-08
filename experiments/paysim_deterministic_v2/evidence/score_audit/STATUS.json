@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-09-23T13:50:52.511183+00:00",
+  "config_sha256": "df5fd175e25816c368e2cfda32ef2c72275494b081eba96dc6e87a00f09990d9",
+  "completed_utc": "2026-09-23T13:52:52.273615+00:00",
+  "details": {
+    "vectors": 150,
+    "test_vectors": 75,
+    "all_coefficients_exact": true
+  },
+  "files": [
+    {
+      "name": "all_score_processing.csv",
+      "sha256": "8a5e6838a44fe8f77b3585d4b6d4aa62f20ce6523decd1b9a73a9349e163891d",
+      "bytes": 17173
+    }
+  ]
+}

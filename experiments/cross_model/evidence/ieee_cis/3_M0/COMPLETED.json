@@ -1,0 +1,26 @@
+{
+  "signature": {
+    "protocol_sha256": "8993d2cbfa7e9b2d3c053b071da918248715e97020b679b7761bb92c6d373677",
+    "analysis": "2e3619972e96e8611471c6c9819f638c20967973a09895a96fc05f73005a3b93",
+    "statistics": "8463be8c980d901cbe3307b275320f93752e86bc6795d9d37a4b0274af0e8bd9"
+  },
+  "seconds": 15.327999999979511,
+  "files": [
+    {
+      "name": "alignments.json",
+      "sha256": "663624f3e74e72688f577479135b8aebab6d065fef14941e511b7d8c1999dbee"
+    },
+    {
+      "name": "points.json",
+      "sha256": "fdc81ea03d7dd96c56cf3901c55b40cf2c806ee517aa15b5149da76509a95dfa"
+    },
+    {
+      "name": "raw_probability_replicates.parquet",
+      "sha256": "d3163f56802910f9afd6d2e182796ca1060beea50bfa8933266b80b96d364583"
+    },
+    {
+      "name": "scenarios.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ]
+}

@@ -1,33 +1,23 @@
-# Reproducibility scope
+# Available reconstruction routes and limits
 
-## Included
+The repository contains the scientific implementation and compact, source-linked evidence. The extension folders are deliberately smaller than the historical full local bundles. Their current READMEs take precedence over copied `HISTORICAL_FULL_BUNDLE_GUIDE.md` instructions.
 
-- Leakage-controlled PaySim preprocessing and entity-history construction.
-- PaySim rolling temporal evaluation, repeated-seed analysis, calibration analysis, prediction reconstruction, and paired moving time-block Bootstrap implementation.
-- IEEE-CIS data audit, Entity A/C history construction, temporal protocol builder, frozen M0-M3 experiment, directional result analysis, and paired moving time-block Bootstrap implementation.
-- Portable experiment configuration, dependency declarations, and public-code tests.
-- Venue-neutral Supplement describing the frozen scientific protocols.
+## Available now
 
-## Deliberately excluded
+- Install and test the original public core plus the added analysis/training modules.
+- Inspect frozen scientific settings, reported conditions, all included positive/negative/uncertain summary rows and recorded reconstruction failures.
+- Redraw the fourteen current figures from adjacent aggregate JSON inputs, without reading source transactions or generating statistical draws.
+- Run the BankSim artificial lifecycle tests, whose fixtures forbid real model fitting.
+- Rebuild base PaySim/IEEE-CIS inputs using official dataset access and explicit paths, then execute the prescribed extension code against appropriately reconstructed inputs.
 
-- PaySim and IEEE-CIS raw data or redistributed copies.
-- Transaction-level processed features or prediction ledgers.
-- Fitted model objects, checkpoints, large Bootstrap replicate files, and local caches.
-- Local absolute paths, credentials, editor files, and virtual environments.
-- Manuscript drafting, citation-mapping, freeze-management, issue-registry, and internal quality-assurance generators.
+## Inputs deliberately absent
 
-## Protocol boundaries
+Source transactions, transaction-level labels, sample identities, feature matrices, prediction ledgers, trained model/preprocessing states, large Bootstrap replicate arrays and environment wheels are not redistributed. Modules that replay intervals require their full aggregate draw ledgers; summary endpoints alone cannot reproduce a sampling distribution. Those historical ledger-only commands are therefore not advertised as directly executable from this compact snapshot.
 
-PaySim and IEEE-CIS use different capacity implementations. PaySim transfers a validation-selected threshold constrained to at most a 3% alert rate. IEEE-CIS applies an exact Test top-3% ranking rule. Calibration was systematically evaluated only on PaySim. Bootstrap intervals quantify paired uncertainty within the frozen future windows; they are not a formal test of cross-Fold temporal heterogeneity.
+The BankSim post-hoc bridge also requires a separately completed raw-to-model run, with its own freeze, release, score and preprocessing receipts. Public table inspection is not a substitute for that input. S22 currently supplies the original completed code and historical metadata; it still requires a new-directory setup, explicit path adaptation, newly coherent locks, and environment/native acceptance before a new real run. The published historical completion receipt is not a receipt for a reader run. Do not launch the completed author run or remove failure/one-time-evaluation records.
 
-## Expected reconstruction order
+## Version and inference boundaries
 
-1. Obtain datasets through their authoritative access routes.
-2. Install the environment from `pyproject.toml` or `requirements.txt`.
-3. Run dataset validation and strictly causal feature construction.
-4. Generate frozen temporal splits.
-5. Execute the fixed model comparisons and seeds.
-6. Run result-integrity checks before any downstream uncertainty analysis.
-7. Run the paired time-block Bootstrap from the accepted prediction ledger.
+The original PaySim validation-threshold estimand and later exact-capacity estimands differ. The deterministic v2 source identity, numerical implementation and tie rule must not be replaced with v1 positional row identities. Cross-model comparison is between prescribed complete pipelines, including preprocessing. BankSim's observation-point headroom arithmetic is not a confidence limit or proof of redundancy. S21 diagnostics are descriptive/post-hoc. S22 is retrospective in an exposed environment and has no new Bootstrap or independent test set.
 
-All generated artifacts should remain outside version control unless they are compact, non-sensitive, and explicitly reviewed for release.
+Public-copy provenance and regression checks are verified separately from scientific reconstruction. No new real model fitting, scoring, Bootstrap, tuning or third-party raw-to-model reproduction is claimed by this synchronization.

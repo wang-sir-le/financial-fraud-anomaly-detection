@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-09-24T04:10:52.441581+00:00",
+  "parent_protocol_sha256": "8993d2cbfa7e9b2d3c053b071da918248715e97020b679b7761bb92c6d373677",
+  "reason": "High-dimensional CSR LR is expensive; independent single-threaded jobs overlap",
+  "scientific_changes": [],
+  "worker_limit_including_initial_job": 2,
+  "original_training_code_sha256": "4210d0e99f249935067d894daba1cb132391c4bd650afe04e6a41c7b5a22f4c0",
+  "jobs": [
+    {
+      "model": "M0",
+      "protocol": "${WORKSPACE}\\experiment\\outputs\\cross_model_v1\\run_20260924_01\\ieee_jobs\\M0\\protocol\\protocol_effective.json",
+      "sha256": "0b3cdd22861a9d8c739d8b050666496f1d71bb7eafc21e15e1321cafe56f4583"
+    },
+    {
+      "model": "M1",
+      "protocol": "${WORKSPACE}\\experiment\\outputs\\cross_model_v1\\run_20260924_01\\ieee_jobs\\M1\\protocol\\protocol_effective.json",
+      "sha256": "4fc568b86bd27eb03a6d9652f53dc54da6ddbe7e6444ab98cb352250d26441dd"
+    },
+    {
+      "model": "M2",
+      "protocol": "${WORKSPACE}\\experiment\\outputs\\cross_model_v1\\run_20260924_01\\ieee_jobs\\M2\\protocol\\protocol_effective.json",
+      "sha256": "972b2fca1437eb6dfd7740c29a0c023f6dcc44bcdada375b00f6c8768daaf477"
+    },
+    {
+      "model": "M3",
+      "protocol": "${WORKSPACE}\\experiment\\outputs\\cross_model_v1\\run_20260924_01\\ieee_jobs\\M3\\protocol\\protocol_effective.json",
+      "sha256": "3b3405b09498de235c6d9662dba3396555e93ea256be00129e293d3ed2125b6c"
+    }
+  ],
+  "initial_M0_fold1": "Preserve original attempt and fixed retry; adopt completed result with original provenance, then resume M0 Folds 2 and 3",
+  "initial_other_conditions": "If initial serial runner starts a later condition before engineering interruption, retain incomplete artifacts and exclude them from inference"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETED",
+  "started_utc": "2026-09-23T13:03:42.244255+00:00",
+  "config_sha256": "df5fd175e25816c368e2cfda32ef2c72275494b081eba96dc6e87a00f09990d9",
+  "completed_utc": "2026-09-23T13:03:55.297001+00:00",
+  "details": {
+    "vectors": 150,
+    "same_source_identity": true
+  },
+  "files": [
+    {
+      "name": "alignment.csv",
+      "sha256": "7621cd73c817a7c1890d7f9f1c2106aa796c5ddfa84c361ec92d7c60d2682f90",
+      "bytes": 4347
+    }
+  ]
+}

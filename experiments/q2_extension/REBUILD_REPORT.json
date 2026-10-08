@@ -1,0 +1,48 @@
+{
+  "status": "PARTIAL_L3_IEEE_PASS_PAYSIM_FAILED",
+  "paysim": {
+    "planned_fits": 75,
+    "raw_route_fits_attempted": 1,
+    "raw_route_matching_fits": 0,
+    "status": "FAILED_AT_FIRST_FIT",
+    "failed_model": "fold1/P0/seed42",
+    "raw_input_identity": "historical local and fresh public CSV hashes match",
+    "preprocessing_problem": "Same-step ordering is unspecified; stored row_id is a processed-table position, not a stable source ID. History aggregates also show small order-dependent floating differences.",
+    "diagnostic_control": {
+      "fits": 1,
+      "input": "historical processed table",
+      "status": "PASS_EXACT",
+      "scope": "P0 fold1 seed42 only; does not count as raw reconstruction"
+    },
+    "action": "Preserve baseline and failed artifacts. Do not change splits, model parameters or tolerances to match."
+  },
+  "ieee_cis": {
+    "planned_fits": 60,
+    "fits_completed": 60,
+    "status": "PASS_SCIENTIFIC_VALUES_EXACT",
+    "history_feature_parquet_byte_identical": true,
+    "primary_metric_comparisons": 420,
+    "all_primary_metrics_exact": true,
+    "all_3543240_probability_values_exact": true,
+    "identifiers_labels_ranks_decisions_exact": true,
+    "prediction_parquet_byte_identical": false,
+    "differing_column": "protocol_hash",
+    "reason": "Protocol metadata changes creation_time_utc and input_files paths; frozen fold_definitions and split_rule are identical.",
+    "source": "hash-matched local CSVs; fresh authenticated acquisition not tested"
+  },
+  "total_formal_rebuild_fits_attempted": 61,
+  "additional_diagnostic_control_fits": 1,
+  "planned_formal_rebuild_fits": 135,
+  "complete_135_fit_reconstruction": false,
+  "third_party_reproduction": false,
+  "reference_tolerances_unchanged": true,
+  "evidence": [
+    "paysim_raw_rebuild/REBUILD_STATUS.json",
+    "paysim_raw_rebuild/experiment/outputs/kais_revision_20260919/checkpoints/mismatch_1_P0_42.json",
+    "paysim_processed_control/REPORT.json",
+    "paysim_order_and_aggregation_diagnostic.json",
+    "ieee_rebuild_comparison.json",
+    "ieee_prediction_semantic_comparison.json",
+    "ieee_feature_protocol_comparison.json"
+  ]
+}

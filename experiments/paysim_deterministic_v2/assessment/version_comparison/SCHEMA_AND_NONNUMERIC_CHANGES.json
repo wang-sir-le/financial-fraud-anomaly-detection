@@ -1,0 +1,6406 @@
+[
+  {
+    "analysis": "all_scenarios",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [],
+    "changes": []
+  },
+  {
+    "analysis": "score_stage_models",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "score_hash"
+    ],
+    "changes": [
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "c8cf99144464b2d502476bbb07dcde4c34a57ce5c379061ad1ebd9eed0360e6c",
+        "v2": "5c00779c1a9ee44ca81d8ae9cd41b42cbedd64bcb1a8d6755ac2f78ab0a5d35f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "4cf7c49d89fe72be0a84077c41332ef9467d21b35755998964153d39cf2dea0c",
+        "v2": "cb2e8caf2fcf3d2d1aec1e272496c86a74e348b149e39306098191fc76416155"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "b5828d1eea93ebea0be46ea49a056a7939e062402eac28029093295c9ba3189f",
+        "v2": "864cd432b3aeb78684732b9e1b293b107db36e876c512cf895788dca6dffc6f0"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "3adb0c3e993dadc9223951a8aa5036c4bb0ac4cf49f95c75bfdb16602fadcb08",
+        "v2": "845cf6040701642d745aa3f3acb4911d1e5e6ddab66a5d6ec72a3bf359e32032"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "9b8acd86e86e17c453234ab9122208b0c419295733c8e7e417ea01edb8939f0d",
+        "v2": "8e6ed300735f8fe71edacf353fda4d5e7645c431d1ae4092bf3a1e7ec507f1a1"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "cfd9249f4911da3beac2e738ee46e7a21152f6a5b3b858d6f3f7adb27d33a5e1",
+        "v2": "9d17043dfedf912e5eb47f30ab9f638e0c5b5ee0284369cbfc11cc587a9870b1"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "7c54c6303978393e5849ce025bf8357fcaac003e63e6f8129b6cd421af18f7cb",
+        "v2": "104bdd3d65674d2abd7f33b2b9e88e0bac6181352f1fcf84a72ef25a9a53dbe8"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "d38078118800569353d2ae5f19a2f010aab4a5bca72e53108e2e8939bd658951",
+        "v2": "a0f862f9af9c3047c6fe85ab6a6c273569f97e03b99b4caf0397f14cb3a8a001"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "aa198400da83db080abf55d3a2dd033a8abe98fd8e4de5e58b1f9560b34b5150",
+        "v2": "861b4eed224303ff18a6b71b69157556d6478c5e6ae55c30f40a37de5007f88f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "6aefeb39eabd8dd3974e3b561cecb33ab12c00302a27362a1eb10d9d087c7267",
+        "v2": "ebc92c53ad5abe0339fd3e92b30dba7751f4493339f09ebbcc88e0e93364f28d"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "fa35e9b5222441296c0b55407a7d8e7c6ab88c1b816c273570c0588b5b709c95",
+        "v2": "67076a2b7039a765e933615086b80bd93d656e27216bea70fdca5c2ec09d0adb"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "501f31adbf5b5c347decfdd73341f28dd6cf089115330a6a02bb5e392a90e6ed",
+        "v2": "b3f5f702374b0eaf3265abd3c2ecf07ad943ca616f114958ce87c71296350492"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "c83ee111824a4fe41afc10a916f04f58409cc14de1f228f101cd65814c232094",
+        "v2": "59d967c418b2d17e676c8275ec990db7199616d87024e14bb3fefa75eb37091d"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "ea14fe896340b5af08185c04cd17f88507125091dad5907a4384082afa0a9860",
+        "v2": "3b047853f8a369d7945c16f09b073d55425cb6e2a42b331187ed0b0c7119041d"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "82bb14b538ecee6a14f989f879e23673584fca0b2cece331a06aa45ef2098a13",
+        "v2": "4d5cb7a8bc1294ea4264062882e6d41ecae275bd4686c31cd6fe46119e016bfa"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "63ea887b7f3e5ae4e0529da5001c839408757274836603f91be6e08c73a81dd8",
+        "v2": "a9b21722d9d2a3f9b96a0217820bbae689c37a977521dc6f9174fb8e1ceb8321"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "796d0df14bdf4b46302aef985cc3551fb825e1d831a4987d9aa679e7ae73c970",
+        "v2": "33987a555360c6fb51a9ebd642ed00b259414bbf49aaad94e1f1558af6290fca"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "2c0d3b7e149a6ce966a4ece4ea805609031d00421a8a7161146159952a8969ae",
+        "v2": "a4814dff4515543332007fa2328427b1da7982de0b2ab29c1a34583ce1c2a5c1"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "889bd6f6015467148e9f98477ad464b0d47b7c0c6f83bece6b3c3d1a70c3374b",
+        "v2": "cecccebc80860a8832f30617db328a28e0f58a5255a60cf9f636a8013c5f51cc"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "191cdf85749abb9079b66b1b2b634cf9eed63036310a6baa0280736b43f40d63",
+        "v2": "48e73b6af3c53959ca7a7bd8fdd24f6ed72664a5f51f26a8944a98ec1ecde673"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "0166a78dd36384e401258259596fd2bf982112fc53adbeb61722381f293e6e16",
+        "v2": "3076c1c6297b5ea79314326dfb809d9b6fdeb53c99f2abeb77b734b148e354b3"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "ab58281b08599690a621b57a435cf213833729e02e41e20d960b03ab3c0479d4",
+        "v2": "8d4d3bff1cbab95a19d5f3877e94988482e6f45a4949517f6b94a21d01596aa2"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "ed6ba40fd76bfab26730e375af254acbf0e7e25ede366433ea9069568d630829",
+        "v2": "6e7dbc0d0ce6080067f9465bafa8479b4843d5a6cd5b66b282ab822ee26a89ea"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "6f10350a001e643a564f96075ee4bf301e26628160e7cc9cde557d902294a8a3",
+        "v2": "ee44bb1c0a1ac947b9e39d8b6342e826d1079056a347cdfc5f2660446f26c233"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "c142cf50766d5c575fe25d77d597709bc6c9d5ef36918d307b629af27b674d85",
+        "v2": "fe61c5e205aaf31d3bfc06b67d89ca95ff1669faa1dbb6927acaad02e94649ee"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "055adb7c0a01f999bfbc879bac92c913255bd2e0ead73dd6308202ea2323287f",
+        "v2": "fc01af18a821c432dc3f52a2f36ac6087baf3d9da030ca42f0555e79f50b7ab4"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "928dc97b7f515e4570bf166bc949841227dcef8b2dbdbcce702d5cc804005876",
+        "v2": "98d2d7b89686f60253e64a12c4492e44f3226f439b87aa81638424fd7437ccdd"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "23f523736f70f28e78efc366e52bbb8d8d3266d28857e7e8f5591b6be12271be",
+        "v2": "5c1af04276650fd695d1949dc2a3968ccc0fb00084c3628a615898b01bcbc047"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "46958a13e21ac3352ebb8c58eecb7d2b5a796b3254dcf7420e0c04ff2d3c4e2a",
+        "v2": "70a2383a65d7e1111f2010845b89702fa696c3a559bd871a436fa8a6ac7e5fd0"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PH",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "6d59ab88c9af219f66ac607bbda0eff52b21369c5672a1eef311767f66e765ad",
+        "v2": "701424a817112618d357f9255b19975c8ac7e2870edaecfafe775cb6a3480b9c"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "ece69b8f0622c89c00c572fbb09c61ac4df1196a0697755354feeb3f158ebc13",
+        "v2": "fa70d3ef5f42a63a9d739e1b90d5f54c03451ceaeb538b84cd9da0aa2cf257b4"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "d26fc212b5555aa75902fff540f71f9d77cc22431ac1e07ef21939e1a501f88c",
+        "v2": "ff65abda343e228148c878e2c824b358f3571f280ff2a9b3411b582db1cd87a5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "381c65533844d7af70fe2d0b890bb14e46238be34a53d751456bafe1428d111b",
+        "v2": "6f4cb137fbb9a22a2b2a1c982dc45f6b778a3a82b956349af9abe982ec1ee345"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "274b18eb9d6bdd1212dec72aec1f12ce0031c2d14ee87680d76986b99dfd4217",
+        "v2": "897ef98cf51b2a0fdf27211f3a05773bc2d42d90890f9639dee3c9576abde49b"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "334ba4613d7667e61632b737ffa02c33482eeec5c8c50ecfc8c379ef4d20c6fb",
+        "v2": "0360f4e945b44252729fd7f179a681512f874ce2f31e8487b9afd95dcc1d5da6"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "0d7b8f391a8630cd2179abfd9a695a2ea6b72d6e0a974ee45362a58c976349b4",
+        "v2": "e6a129d7d098156062f547f3cff0247ce224cf7dc89de20c768726aa974875b8"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "e545ca8004508aef501aed119041ab59c34d7f12410e155087a80526df38a1b6",
+        "v2": "bbd637c3673244d885ce81c458f93edd5d1145773b581f6f13b87686f88c8919"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "d2233123b3051206d158091b221092caeb5484e96bdf8720f1765350859029e4",
+        "v2": "1ce3dae6296cf394bffbe09728dbfd7af554ed0b5d2239a531f7d602141a83ff"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "cb541407f946ac841270b57f3313bfb1b538a4339ef736feabded724bd7e3e15",
+        "v2": "ebf9734ba1a38a1ab2e8c9c03978d96ab142ad1fbc3ada79a56e8fd44e340fb7"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "55b11371a0653308c20c7539a4a852c5bd900a658f324541944f83be41bb0abd",
+        "v2": "f1d9df4abab325a57c0beedd78d67342e7d450937b9e5fa6f386df1894c0a912"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "39326bb4a89fb3db982727763f38a2e45a832a49f4448a4ce4d8a117c1d65982",
+        "v2": "2d5fbdd37a2c377068577410f78d8c82a13bb8f08bd63d369d8e9b8fc070cedd"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "e4e012e81369beaf42d280759a491363d1180757e6a7abd363e41921ae96c6c4",
+        "v2": "64fc593ab1251172e4e8ba4d995d3808eeb95dae9b05bd3bed2deecb807aa558"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "ed5dc8f67b61749435b83b6bd25bc64c33e2b3b30a3b534e39af8b7ba3658f63",
+        "v2": "e1bbf8241810518ca5e43aaab18e64ed2d1d061a6a360c454a97320f967c2ff2"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "91a81bb2c665f0ffb024cb96358ed0a0403ba004eaa87d6a707223d6de10a722",
+        "v2": "0348cd9f2c39a3bec17765f9811f1b0ed3fd65430eab17807a38f6caecdb7be7"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PT",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "034ff23e0f796afd3549fedb913b354e8574cc81f7b97dd24ec0c97d5cc13df5",
+        "v2": "0a46448b0838564db8a16b28b64884a41657286557871b8117d47745c886cc04"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "bbd9ad734a86c00d5f44e9724f26faafdfe4cd4382af81393dcdc35e338e4a3c",
+        "v2": "e02dd0aebd01abee74a8f8cbcfaaa0499dc11f01a1fd4daafeedc4e32273c5c6"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "70ed8e7c552c0dffee4a9b65da5712ea928541a7c5122b00010fe252a8c77c40",
+        "v2": "6089813bf7c0bd22e76b9649f8bb194372c6283c46c3abcc5f35df3b701ec348"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "673beafc18265affef25a1b68b87dfb65512c8bc3709d70150eafd1c49ed61f8",
+        "v2": "b1c34c42c77874db1933d0a59595ea436ac8cd0cf89a535a4786a8ed85cef35b"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "9e4ad09c079e39a7d1467408ce7678aabc3f45881167930c70d698268b85525f",
+        "v2": "792545a07cdd32cdf53d582d8968733f68f965b65c0c291c7844cec8e8bb28ce"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "71bb27de83692e341a42af48953bccda25a74df1f799d933fd2e398aaed89ead",
+        "v2": "a9d021f3501868de1235da80adf9e9d61f8366f67596cad7f4f1a454a63208b2"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "9ad14da27505e092ed184597e635c28a1871875c65edea6828acf62fd2c1104c",
+        "v2": "1823f8cc9f93c93cc655124ea3af129859b85ce93060e93cdeed9a950eeb1c27"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "a3c130c6c587e26fefff97ff61b44e1e72197ed9ebe3c6e06b965734944e2631",
+        "v2": "c22419f010e14f584bd01d2111672433a6183e3a3b7b22222e7cbcc02947b8fa"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "aaf7e8751177c44c9b29403de630e4b0ef18b9861ac33cec5e918b5daff43451",
+        "v2": "5b6495e090640aa24bd083ab61065d1442bc08459b2c151df789fe6ecbb7365b"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "bb0fa01f5db7d565c72a4b4d6c3b89354a3f837e3bcd4dde439bb4ec1a373d51",
+        "v2": "8e5d077ccd8ecfc8884bdaea1970d46640a792858244e39068fe28c224a5f90a"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "82ee9254a01cf2a87b4f9d5b3cbb53b41cf42cfc91acc530efe748352aff777f",
+        "v2": "32f17ad04ad7d3fe596d7c36e9623d42178439e1d059d1c789667a09c23e3aa7"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "eb5289ce0e00152841e79c7ed82979c813610e61c7dc35acfc65f601491d602d",
+        "v2": "7d0fc88a7b69d203d8e79aee7deb17603ff2a5d0aa06298623c79511dcc71780"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "3b77c3aed055bde8d28a3e56e8aec2964ff802d30dec86bb89ed85173c83575e",
+        "v2": "a860ba0e7c973c50b14208edf6aaaf4c676adf037fdb9c24ba7b814f67f7f55a"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "5f207f5f8cc6cda9787be8c06e4cca8aca09053733bf26d17aa2b5e5ba7b3e7f",
+        "v2": "23af349cce94ad2ae806419587d40779f8b14b1ee870b65ada7b95a1cb695935"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "5f42c18dd780914442846c1f4be7f66f08afc5f426c350b0b38d4d0578fb56b6",
+        "v2": "571597990cb968ac6c449acdbaf09e1d3af4318daf827e13575295d105f705c1"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "4202c5f6fd3f31987b20fb13a32b1eb9eb4fadb925d9d2489c7ed7a9cee46330",
+        "v2": "9de5008af47e40ffec9f639da74811aea817fabd9dd33e32be9eb531608d77d1"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "fab9e1eff8f66ecca47fba2e6acf09115158c4c32ef8951650ab07e3ecfa32b4",
+        "v2": "db09583a4ac1935ccdd7a4faf3b445f4300d11f689e71a36fd30b243841ed7e1"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "8009d0865d029c7765db29cdf50ec91e3b5bd23ed5cb8cf46aa21eaf9b907051",
+        "v2": "1ed7d8602d69a04bd555dea561765f7bebea0d4e39f9c1e64a90514dac379604"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "9cd1714c714d759bfb47ecbc0948c412f741a62b4a36055ef730202d50ced0ef",
+        "v2": "c559010075cc36d92e82badf213321d46164fb06f8a994aa8e82c55934096ead"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "969d465b2c9d504089e476960faf36a21e1ebcb2491ad1c8e0ca3f1ff16d1d69",
+        "v2": "d1cd7fa5ad2fa068e66a42093873cb56856af9633d6f3f69a7818a847374223a"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "b2d82d27603d146a1bd809fab87b7e5dc522937964cd6c054908a7589a1f26fb",
+        "v2": "e518def3cabbcc46837a25d5c939b836b57f35e3e33c9eb91e8dcdbe9bf9f2c4"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "39bfb65badf941b812233c9bae14af277914548e80bba008cecb457e0f6ca1a2",
+        "v2": "e9e1359974f1c15c8c6efcee959f5d8ddf6ca8a31c880299f838a3cc28cfeb0c"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "b4abff782d27d029c7644e8d752e2695a360827abf7cca4df0e35d1f2864b996",
+        "v2": "dc0cd00efdde776580fe61172dde47728122d5e12194ca432a611bf5af784331"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "c4c17b846b9dea493879b275dc8768ecc84d2839f0ab1082a3c47d74f17c980b",
+        "v2": "78a2321fb9007ec79de3f5cff11a2dbdec2c5b70e6373d26dce941bdc6c8afde"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "2f4d7bfd35e7dd319abc4d12123147f7550584f79273cb5cd93241769c5920fd",
+        "v2": "34585587f3f39d80e28967bcab71a4295bec84d03047f1815e8d1c0aca3e2a4f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "79d29620400a0a8902b9aeb0666510739cc7f21f4854518b9671fd4d14ca0dcd",
+        "v2": "fa7655c347881a9ed7e259f4fd495bc0a0549688dfd6b8aabd2af49b50466f15"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "89925a31f8fd8cb96348af774a8735c9b495abb171d372c4b773de484c6e23aa",
+        "v2": "f242f8cc3ec116d537ed6b035d2692d48666bbbe4b334e01c1a74a6095a02107"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "114dcd6d150eee1b4dfd8af80bdb55e281390d83fabc039c58232017ab7a48d9",
+        "v2": "f464b6de9f9ee3fd6b7eb3f7583911857d650157dd768eccac7bc0dc415ee429"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "59c495d87f2c091d1649011ab5671bce2d75733a106f48f4065909ae9f4962f1",
+        "v2": "d04101315e50ee0ae9f7944e0bc66039a7d00239b5b39f3b262cd66bc0b73b4e"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "a6347d6c8356020c12a78470818055a096d6310256a57cd1e4b2a08c5e1c105c",
+        "v2": "cde0fd1d93f285266fcb243874b032ab04ab766b6683c9dd8e2ff54ee549c6eb"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "94a4c3c8d73ee9f9f6949769ce06d5d46180d673f811c0c4ff1e83b39a5e6c49",
+        "v2": "1d0a606090fd0e6bb2d79ac3dba701b131ca3a517c8bb929ca30740b538b2fd9"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "344aaf0e11992aec785d531aab5b8b2db4d1d1a5d0d1bdbc223a25fdad17ac76",
+        "v2": "8862207fddb6b964d9e56b344b709e601bc2fa875e5aac603edff0790c855438"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "a044af9c5d07c407d326e1beb03a3e15e49d93512931e3b1be91b3ce8cf17a31",
+        "v2": "8de71c5430b8101cc0297848aab4fad7b0d26ccafb2363c757c37feaf55ba052"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "e1934861c4d21a4f3484d57f6fdad48d9fc6660d82f5c56daf6505586bebd869",
+        "v2": "de6306dd2836c1ac8b5c0f78692ae8175b8548d06ce1291174609c9d86eb431a"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "557f38298bc15ef21c6a7e925be6e955c45bd3cdf9529d597a916a4b3031d31f",
+        "v2": "4803ebe27406e96a9f008f2eac68f1f707e31b5ae238d8f891abcd4dbbfee0e8"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "1031b7d686bcc8bdf72fab02379f33accc42af9b4c762a4a5ed51c6b4100784e",
+        "v2": "2693a272a7f3a9c8fe6f1a0b43eb67ac537d4f876b4ab1772b2b4de40e822ee5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "a4154d462a9e4c455ded7df9254e769ec029bbbe64d6a6c8edab125d41dc5072",
+        "v2": "7f2c40cebea5ac418201b457cfdd2378f1797dc71a0dcb086dd8ea5e611f4c6f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "90d46a6ed1a8f7134028b192b073096a0e7cad839455f256b326dbf1ef7befe4",
+        "v2": "c1cf2961735068b53f65d164613803e2ef90bcd42f6de100819f31e1939f16dd"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "21741de063d449d1d9a9c8c94435e1eb7859a7b4eacf151071e1ef1d5507f475",
+        "v2": "4cce0f6530ccf83688903e4405f872e914e1f07e4e32ec68a22993484b1b4f86"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "4b818c4be2b7023c8f2e40295c0600172e8f0006ce9be93314bcd620e896e2ff",
+        "v2": "2de92c87760d9ecca00000a0a4079842f587ed0dc63e32919f588ababb9b1792"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "6e00e9eaccb1d295bc1bbe71851db41ce168fc79ac0b6a6c10cecb802094c8c7",
+        "v2": "3d6ba9978f8488c859f73978f96bc6da4105a4940a547707610bcbda7babc5af"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "e055daca91db273d65d935dca3337c3e4a75bf138b417a3c6dd71f446f22e1c1",
+        "v2": "810ed8384ca2455c88cfc2fd0c98ecb9bf258deb36324cfc03c26d693ca87e95"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "cfce07fcc5b1b7ed26ede4e8feb39d330f7e3a4b93e6ce89a65d70060344c4c2",
+        "v2": "42f7b0436852e83a60fe13d462ad5276ff8946acbfc07ea4b5f9499f4061e009"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "e24d13e44d3b95f4ba37d147f3ce4f477bfa13b44124119560cbc855e51a3c3a",
+        "v2": "68b5b1598cd6d1a194e86a5d8e4328100edd288f755de0ca2793ebc542456fa7"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "c872e9bda7c713fafec41d8dbaf36d8f9531588056cf713f33cbdc0cdc07dc61",
+        "v2": "23de7ed85019bc2852acce45344e4862ed34c6f399b91f04fa4c5d605e2b3515"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "960a404be696dba884c826e98b4a147c3defed3c108a4e2857221ca3757faa1c",
+        "v2": "da362cbe2e42c1288c7ce412eac6951b1ffbbd20b02af25258ff072b23dce1a3"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "ef840eacf78aad73b48fa089861670f671f05705633cfcd320fc08f375a8ce1b",
+        "v2": "4a2352e08904ca938b4ac4d7b5eaf94dfb62d4bd5cf84ee64fe602b2d43cc755"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "f4e7f7c3e72918a91b7c4394595473e152598f98a7dbbb63334aedc07379e706",
+        "v2": "8b778c8f9e36e99b3d1099dc0488459cf3f3508f0144d0a0cd411e93cced3789"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "38180b9c78c443813ac3c076c53ac9bd96bf65ba5be57d66d633797af82efaba",
+        "v2": "2ddbce36728faccd95c5b3362b22ef5cb76afb0ba8794ba9f905a03ace12a2c9"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "ff337f10523156356848867d9f10a909b6535adef908f05198bf2e888e1a1265",
+        "v2": "8702947d2f6879e5f145d598096d2ded87cef8930a2536c7acf21a9b9534da45"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "ca1ae8431d51ee6a96e49043a856c46c67eb043dd32c697cc9094c4cfc41af72",
+        "v2": "ed6e3c7a3b45081dfdfc6520bf6175fb7d130ce4c697831b82b0cbc5fbbe990d"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "610d43720f95e007310b9ef6514503a48d4b24087403247c0caac963af7722e2",
+        "v2": "b4b5cd50dea20fe20db7d9397d23d96621f2565c1d4ceba7f91364c02e77b7a5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "179ceff8c015d6e35b0c17d43c4b303af95ec2fa0120489ef9587608be94e830",
+        "v2": "589269bd2f9bff0c22050d33e185cd54bf940a85e6d64670b06b9ca809e98724"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "8976033ef55207f86a71d4eab724b8892d3227950bd930e600328be6bde953f0",
+        "v2": "4f54db98daa3c973990562ce544d4540e84d90e1ea940b64c7fd1c1ee62883ae"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "540a07eaafca331bcfbc4a7a4f0c80221ca461108fcc9d0cba4b7eded2862bfe",
+        "v2": "c854e38b6787b67acaf8872a9ffa49876ad38268616c8c2184a8ab4b98f51264"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "75c9e27d487c081ce359b9c845586cbf4953f9276314293999e3094dda608327",
+        "v2": "0996b414bd3fef887d2d0d32049687a7bdb8065710b533e123a2d2ca182f2b1d"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "2c6e69c62d2a1641ca178aed93010a4f1164c8879f56f755487a5ff8110b2690",
+        "v2": "8277cd5ce44b0ee748034055856db2cfb9b6436d178f2c4d0adcb9fed49c7e2b"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "7d931cc284b883ca35f3c9ffd28aff23035251a98ed0945bc2d7ddefebbd7684",
+        "v2": "4bb82c53c02ede0f4f91a75ce4189406b76940dc0b4aaf2be82450c92cca3e10"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "eba1e0cecbdfcb2ad2d62bc4830e143ab94ea2a4abb09ed5c3f97b0c7d487db9",
+        "v2": "41024b4c84721dfb0869d1e30bcb563fb3fd6943e23ad93d22dd56e71d5f3de6"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "7037c4ef3ff6c97aafc244b4ad44697d41f479dfa11d1335b61d34643e060edb",
+        "v2": "03e466917456087f21d0772a5c3e3205ff78fbbd7eff361db36e29b676ef460f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "de015a596ae15f5796696cc5a895721a57e232f55472cd83c145efdc54a6f814",
+        "v2": "5919cc4e9d99fdd8b2763638841585b737b14b600cb327877e639d1c53ca09d4"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "8cb7beeeb825e797d320042626e0511edfacc40d7af7df854b55c99f861526e9",
+        "v2": "a6fc686be0c9c9605c2e6353fe6af7c2c1bb94f48d33229ee62028efcf43596f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "7e033946e4efcbfefc6e147bdd076f6819f6d774ff3ed47e556c02098e7b4b46",
+        "v2": "d9a4a900f9d42d3435ba37e3c9d9b8de232c5d2eeb2ca8345f7f7750fdc6db52"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "1d1a8323565cdb005b81e6c1965b598ff39ee6dff1a4c64541b039d7a4101ba9",
+        "v2": "5d39eb744839c9d1960cda981bd57f937719e66c0e8eccb38ba9c2868d08f00b"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "79cb8eae093a382cc014def7c832b2e9d1f2279e2ebef7874a51f16d3bab0782",
+        "v2": "54f643cc94529cb51c85cf62298edaef96da490a0c5e65e815583372c1bc8a3d"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "77fdddead3e0889ae1f9c7a9bfb929a6183cf7e25fc97373dcb6af93e8e67814",
+        "v2": "fe78737c2075e8782c9ae94875f741da8caba04a3b61dca127f212112cf57f3c"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "02dc3add232f1d37f231e7069587a2dc057bc436dcdba1708116511278f4b6be",
+        "v2": "194251d0be38615462656c1babe22b3d34be5bdfa0f4e05333f277ed0a36e845"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "75ad3a4d0f3512a978a1c7f614db4bcd6bb7e05aa8ef662d95280f23615f2c6d",
+        "v2": "a9a0447464fd14ad7995b2c31e17f506059e4795f57be77fb706af171210db19"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "90f28b21a92467ee596830bfff87f80b3e5fb19ca9ec7582fa10f709eb9a8c6f",
+        "v2": "95a4246c6621836c5a0976c1e3d5997f1723df3ab4db194435e6b5a543a553b8"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "6e769149194a1dc498e185be1661368237adde4eb3e233c4129a2016437bdd96",
+        "v2": "e4c8bd97a19c5c090d01d1141bf0b9e744565b7c5bdcc9c581fe0f095ddc63b0"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "5610cfd44cac0ae4a70274507bbfc60768118a591c49eb1e6230c7110a0cd182",
+        "v2": "d84f2554fac40bfc687a15bcd4429f21aa2b31f5cf4f5390174772a3100d6567"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "6f6192e3d54fe3c17fc2b339631c58a6eafc67ff92d29313b29b2cdfdde3f484",
+        "v2": "9ea14bec6898b79637241f991902c124434428d3a4acd831b19d2b47dde3c268"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "3675b1e0eb80194040aa8ebce0c8f62d68f30b3d49a97693c7008b8af3759395",
+        "v2": "877cd21fd2c43ec0148cfbb8ccf88ca235508ba88e0c898e97081ad33d9b2ee5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "3d3cf7114063cf9482105b930b6f6779783df3208b43c92429569a49a510e33c",
+        "v2": "ff1d8fdefbeaf1cc7c34659b0bc54be1080030ae47c7329aaeb20fdf21d46467"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "f39995c7a45fb74e2685be9b44183f7986594de8d1c1e9bf065891250ea45e15",
+        "v2": "600298623a202fa30f21559dabb779274ef1f00844a0a1f3f854c18ec3ddd3ac"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PT",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "c502309561defd12d78d0cbfebf19bbc927c7cfc467cae853f5edc13deee09cb",
+        "v2": "bcd7327ce22436bac98ab47c9215c6ab5820511cf1ce0b4334c78a113229a96d"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "baa96291de62336eb5a8b28a9f234cdce89f20850f021d5af58ff92b12a7a9ac",
+        "v2": "22a2503a8edab10ad2682ac325c5fedaaa57997a935df947923284e079bfe9c8"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "370b8e5f3e51af091f4fbe2ba1f547acc1fb92b40e70793eccf52ace6b4d502e",
+        "v2": "49c823bfc6e6185dc76caaef257d452f101e297eb62949f190eb6f5e18fcf608"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "2cfa9f82f1c6d35ca97e76a229d3b62395b7d57299a29c0aada76cee486f032a",
+        "v2": "7871a46edf88a183e169258be1f6758985a358aea38dba51fb90c46e1260529c"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "f89085ef4971ebd0042b7280df0d49635332c78715519b3ad6af25dd6300c3b8",
+        "v2": "0d509ce34f0e7814b9d313d2c37f4d8255509ed7a63712058a0eb4be98d6b9e7"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "d65f78e8a530196653a94e983e627fcafd5fa4c0d4e9afc6358aea378a70604e",
+        "v2": "9bce0ab633c6715de592a8e173ca53507d404ab835ba2526f74f383de2445def"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "11879cc52c7c3476c721df2f18d3d4f37ac3b3c7cc9d37132dfca33509844afc",
+        "v2": "1f0d4bbf08e06b554d366ce4ab4c0551b5bb319fbccf5efa4b363db47dd01da7"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "9312d036b9e3722078894e7534b02058b9d8fc08b67efbd4b6170ec225046c17",
+        "v2": "436688a106c3842a29b7af61e73ed257f5f67b2cf5e289895eac77f4939f4907"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "f85cc080a4d61903b7b71abf08a1dad418bebe66a6abcdc956b76f8a7a630578",
+        "v2": "b02680e0b14d4e944eec585f32830c2b1b317fd290cad73c3ca985d5af7670e8"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "81e9b070a332932911c55cfdac83595ab12dfae4149dc10b2a9dbc22cd39c9d4",
+        "v2": "c3de4f114f5681b763e67ad5d0730368e0a0a57cd5e5308d02d370f739aa2ba5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "d42dfe33b6a8de96f0cf2cfd3041f7f515182a2f5313f6d87570b2fa74250f4f",
+        "v2": "aa6ec27d5da14d0ef4ff4fba12a77d9e4a1903992497d7482c7a1e38701f802e"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "9f6664d07f50648d39b56925e32d0b3a8bcec1d30c4287d6d66a17d42dc8b2a8",
+        "v2": "97a1baff085dbe0387bb65fb0c0672f011c0943c8c9896afcbcbced98d1d0b33"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "dfecf031edb2cae6a4de11d81e000b1f3973f4a11b819a150c32c778523cf34a",
+        "v2": "92f1795ff5c390555e2865f320db7633a194c829c258e4405f402bc35e989798"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "55fd7db4b624a8e4023dd4b79054591715806e3f69b132e76d718177dbb6ed12",
+        "v2": "54b0db60ca9b33799e879b3e4d0100983e37b0952fa83a094e2c0256cfa54bcb"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "f33c915a643b84fd6105361c1601b493d2604951fd34b635f7723bf4cc5f7591",
+        "v2": "7410cee9c2b67697f7aa7139f69ef1fea4ddbfd31185887389a61ee1c51611a6"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "6706dd5ba9af7ddee8c423b5afcccec573c882e0564d3f2e2de89f5bf730933e",
+        "v2": "7a2c7d16d618875ad1e17417b699793e68c3cbb327569d89cb3a34abfc807847"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "790b33cbac9de8aecd8a359b64d2b566132bf732b67537b75da57b5120785e6c",
+        "v2": "15b53c88d7204b7c261f22e8cf389366a69a86278429428cd465c5cdbe1f58ab"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "5007b95722f53cf6a8aabb97c1acef11f616118e7df1e68bc81428368c375717",
+        "v2": "e7bf4e64a2d3737cdf306b96df1289ce0b6a8b9ed9fb84ba6360b6add4167653"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "13be770961ade8574cd26ff0f3bce5995e63b27528c1416b9b5e04bd64b571f6",
+        "v2": "29c98bfe4976b5c138ad3469c1d38150dad9ae4e4b75a9e486895d28ee9ab307"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "8ced6ea51680635fa86f311bbedf8fe1c81ea9eb5c6dd400175fc730c376d85c",
+        "v2": "c0d895eaa4f87affc376191b36d08c51efa761f803816f33ea72c9a49a88c3dd"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "0352aadf6199eda662e80ad48e31db497fe1b47109c94232302002ac13972d47",
+        "v2": "4a129975ef57370cb7c9dc3c2e7b9ded4e452b2c627149b7fb3300fd620015df"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "08f6fe6621ea20deb74645a746b3034e86709152a8c9dd901af08ecd5e9b02e2",
+        "v2": "d11b5b6f007055f378b295bf414936abce813822a0ca0ce8d342d4fea256b4d0"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "599a0d833264fd0a69068642d13710d4293ba670a17812508f48d81344d27147",
+        "v2": "b134b6dbdbe8676adb8248d85c1b48d82178438486e904e38a6f88e4d9678c45"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "e90f8add30394e8761f3f6da65e5f356a02213ed8ffa6802cb1ce2481733e271",
+        "v2": "42c97984ee344955a2836c51826199df1e6d30adfcf1e6c7bb192f51f3000a20"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "cda163fb6591b2c7e47d050b90b6566b9d618a12829fe8797bdee9aedb6a1af6",
+        "v2": "8c5138a51797d97ce4bb54113a794b535284fcd344a5b03f74f2b222e54e8579"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "d012acb91f0d61ac8e7a65bc2222dfcce0c14dd6875dc52a1d0a0502b68d72d1",
+        "v2": "d0fcd26b7e0e31013a3d09d18c866035821ab4e2b086cfdeb5794fd53188df6f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "09a38ebc1a914813fd994d4eb9204db797ace5830d2b3c0f6ab589299825a875",
+        "v2": "7f4c872211064aaf5edc08029d1db377e9fdd092c774181f4d1a669b75200f65"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "c2f1f09d7a2cdd967eeb46eecb81320ae24a0e5f2ec28986125fb8dbbb1c0913",
+        "v2": "a65b1b29ccc1e4815ddb967113b48f2a4defcdae4448b1b64442a06033e91c53"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "fdfad80a1d88489f777b8144ac6bf36a0d74a4e9761f1a0130c6ced9dfd72218",
+        "v2": "6b9699a02eb1e096dd791d7b0e2a52c5da43f2f3a7e12a4b848c5a2f98e7e8dc"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "62c376633344c2584f5677fced4fe3004365454542ecb18d8526af61576102cc",
+        "v2": "b3c08f081502d590a8030e6880cfb815c2cd34d8b1cf676547ee55022bbab46e"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTHW",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "cc04535954dea82112040f94ce9021d2f5d13e5753bc4dc61983ac7e491d9858",
+        "v2": "f60a3ee55feead76bde9ea780b99a388f05edf7d91ebb15907d2984fe47ba8e3"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "f83cf9f96ddf3b3422aba818b25fad4db92fb2ea0793d8696fed9804b8bd81e9",
+        "v2": "1ab8b3866769a3c6f0038e62925dbe726fbd993ed8bf8c954c0f32bb3b2d49a2"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "6b37d027decbbe7e5fe4df1c970db00d8fc8e2eed59b8bcf353184f57ac69db8",
+        "v2": "a27e4ac2c0d71bb52ae8a9d55b3a68381e411cb46e3f7d0c92a49a7e2a15ca82"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "ace717b11b68ca1f9b7c222d250a4743d1fb9460611efdcedd2e81b6b62387ed",
+        "v2": "67f41f4f21eaed86d1ae3a336513b58019baaa2bc5b5b9c9f2e72be95d5391d6"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "c147594910106c8fbfe1a692d8f2928dd11332103104990a8d8b69b28cd7452c",
+        "v2": "1f7cb7c09025b75ca566f9985d9b0df5a9d29ccb5637a6142601fbc6b4f30816"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "a53c4fc7fe616075d5e78cbc406569acf9cdd756c367a46b6c7505c4e91cab0c",
+        "v2": "ec3a9be2753daff1048678648fea7a11bbb3cd4003516e8518f16b1bb16e7328"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "84cb1e9bfbc62db99ec5e035fbe0f118bdfb211b6099cb16e8f00bd7cb627698",
+        "v2": "cda132a7e296716bf169699e09732c4e873f4bff6e5548ee6822bfa2a5b7e0e1"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "f4b9bb73e929b8b7aade7d90ad8c2994607bbd00346b9a79f78b3597211511e2",
+        "v2": "c5e67c6d15c0d168a90b8bc9de3a747c43ace5720ec766afa91f80ac5df307fa"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "b251df6627d2634662355e27c15c7716a2673bce3895f31855619839cd268560",
+        "v2": "14e8a2852fed95ded3c5595e70b1b9aeb4d513117843cbbed44c7bba8aae5f35"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "3af460ec1dba59a4b1179856e3a3ff1f97f6a513d17623c29ac298185d560d72",
+        "v2": "7a60ff812eb6d4e5b8e3d41ea14a49d44805f6e6d9d23b0db4e554eeb48ceb25"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "9d6623fe9da601e76135ba7631f0cfd1670a623e107216a321b27540d96c6216",
+        "v2": "332f0aaea0d8d93ba39aeb06f1ea4f50f676693ddcdea3a1dcb108a4ab1abfb3"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "7ee52aa3f832ceda93b58ad55eee1fa20dbabe2fdd262eb73bd7cef425cb7681",
+        "v2": "f96991e62ae8b79fe5e07700c999a4c126a95447e54c79d8a3d4949794302931"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "544e9864596b62eb5573731724da7aa80481f779ef0af845f543c8801dcae51e",
+        "v2": "489bd197aa26e5e35ea44e3b7cdfbb3eed081a3b33fb95040be23300e6c0369b"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "0fe886abe3d8c39ee8367cd673e6d0093ecd437118a9a2530589198c6e4c3536",
+        "v2": "76ac5c0333800eb2d9baf6d029e82fdfaed70b27209def930d5df97f536e06a1"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "d7b04b9d47ba379477a696ac595f83d3563b33cbdbd19dd6749cbe295ae4ba4d",
+        "v2": "468277e271016b042383865a3838d71ffaf0822b25afc7fbfbe1d00e2928cdc5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "e1ed9b033a0279c4734c937bad981ccf8483444543551391994ad113ffde26c3",
+        "v2": "1bba6d4b396cbd7baac42e1fa55c3087f15f6e9796583b7892b212e29f01e802"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "32d967491c3597cdbdd7d8d25c42b4feae377f6b8637c50014bd15e63fc7613f",
+        "v2": "1e103b0a4231528852e75d2e9b31fab92781e9449cb62211c3f17c744440946c"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "8e28454ec576ee369a4da1cfad1952e9a7e18a222ed6a132742bf2a7b4fab044",
+        "v2": "eb8160aad9a61368a59a44dea91f09dcd320ffb874fa1f5a22dfb52ece2831db"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "d4c661d1315ab3be65e2cc18fc480c727c164bb9648cfcde675e22d3cfd8b516",
+        "v2": "10a8ebe8e13791f17be350825dc60fe52b0c62c3a1698ab366a9cbba9b85c5a7"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "9c1b18f528c29f30c02494899e0f67531eab7951bdbd411afa59f9cda20c13a7",
+        "v2": "baf1fef08de36e4ee0b5edfb77e53aa5cecd7b7118b3cecf9197632215ef2b7e"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "36473840d7f3174f390a4bdf10ffe37dd218c99ea639a96cdc05f89cc505db21",
+        "v2": "58946376913fb7e52583e5a6e0dd3684845d143f1fa98c6b405eb34d4be6e4b5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "01811191f9d55c9c7b8e534b41dba2373181e467b0da88dcf826bdc726b59e47",
+        "v2": "c27d148370662041a51ef0b8125ada2f75e2cbe1ba499843b2700fe8b3a11f6c"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "56bd6d5e603fd25cd83361dd7ec5a97fa72befb7d98f63cc9c6871e4bf1a0c29",
+        "v2": "a65c8d235edcfc1c49b9d8bc68fdb1b5e8cb39315c6495f132ff45127843256c"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "c96f59e13aa2e6336b9815c55ab35639057da74bb70d6c59849764ec8a6270fe",
+        "v2": "77e2c1299053aef4a119ff59e4cf544dc70c2a7e2ebe2c3bc4eb418b5be9a9e8"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "3533cc2bf739301f65a100081fe311dd40cae16c6b976548cf1bc4e87906939d",
+        "v2": "6e33752ce4e8534aa46da6064101bd09e3fc92661488ed3de628a31b135b70a9"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "be4c57acca4bee104ecfd25b0e8cec55bb7277b6276c78a73b8c457d8a75ba73",
+        "v2": "a0dc680d9928e516d19a917c3d69a5e40886f97bbe1953292da569e5c333c020"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "b7559805517ee577b15f2ad19e6f83128a4cdec995e92659c1c8a249466086b7",
+        "v2": "d0cd28496244c27c6e76cd6b78621e5295e2ef0d4b4fd7d13abe9157eea5ca40"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "1131b6d7a4a99f24164e75d571c3bfcdee11e147070e3a823a218d2253f0647f",
+        "v2": "93fb435f02f07d7a7bff0035652880d8f3ebc2899651c36b58521a74c4ef7f29"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "7367952c5a0635ec715a6741211212d95f1375d1f043857bee72a55fff80f608",
+        "v2": "09300b60ddaf45d1fee807d9a387984cf9abb4e8ec947518d6c5be569956aaea"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "aede92a892b288a51a85a35ee931cb724597386b5d5ff8c675e944fc11dde488",
+        "v2": "9168840b45bc889f8258aa4cbaf814d1e139c242df6695a0e2dd3d0053eb152e"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "bb2aaa36452db74da32796692dfc652b99ace9453c00213b76dc3152bbc82c59",
+        "v2": "423d6745e3e812d3971ab47f07a730d2fe91afa4d43f8db4b7141a46140aed60"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "d3df368c2d1904eeb702769244facccd5d9cdf8e4ab8555ff259c7debaec19d6",
+        "v2": "464d59ab4f37fc9f592068a9145e8c454549e9b6b0046b054b21171ba5df2133"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "9e11c36a304acbb6b34139106af626487f7b823a1b1b412f42b1191014144e1a",
+        "v2": "cda5fdbe9aceb67b2d26f3b2a2d30e20807336f25f4ac6aa714f58658d1de201"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "873fb03253ed964ea77a3551c54adb5a47c6e55d290bce536b8873ce7b7bc508",
+        "v2": "75f59b2063f2cdf6b3d508a87dc45284fd73bf81b32ddd4f0c0a5758bc9ff951"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "835b7d430b6ec0c96107ee8a0ff90cfba40625bbd0e956f2e985029c2c0d490e",
+        "v2": "990cb4f75f8634ce1d95dcfe8db747259200a17eed84cd9e4efa8143b323a28b"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "54ec1d42d5f7945e82c40d9d2197b9af301ffc100428e2fe9065f9a38061131d",
+        "v2": "055651c7b021d53ef7f1e27bed136ece7187ff9b8cca4e7aa7225862a92a26a9"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "25de098e63c158ff3b6b2f1ae7fb8347baafed04208159c448c26f64c88ec620",
+        "v2": "14c771d15b61dd7559a63b03538affa8ef044d17b8f6bd5d09961b3a2a24d88e"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "67be7de07a48896534a8dac35c8ce0a5972f008d0a71ddddafe78949106af5a2",
+        "v2": "6d9a58604432c0a986cf2405770c2c47d0c9da7828353ba3195cd23c4fc876b5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "8f37fd22195a36946c5abe4c3b1cc1df75eacfc0a3d277097b4a232d271a5a93",
+        "v2": "7594cd7308b516b520ec588400351c00d9b2a83ba11763d758e19ed068fc27d1"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "b8945238eeacca822a56b4f71ed5bedf7c68c20d7883373a476962091d816116",
+        "v2": "5564ff28fa48059ad225d993e339b964f2b5d03eb48665bcea3803762811aedf"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "7de0bd2407460fa1d9e4427da31054677d662206fd0b9d01232855ddd1cf307f",
+        "v2": "c3717fa31f1ddb5b2b705e03848d574a5fa5a7abfd5096d57e08e6247ccbf721"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "d3f1d6b10090b5aadc569dd7e8a378f1b1af8bb21be4edafe84219d5026031ce",
+        "v2": "af489a37b291e1692685f4fc08e1f00da78511421f60e42c73021486ab4a2731"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "a6450be18d61e417d063ff7dca9cd44ac1c4276f544e31cfb0e98173fc486ec6",
+        "v2": "c341fa716ef505b08ad54ea61f76eb49381b18e88f8ae5b5afe5daefe826233d"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "50060793c168c5ce2941d7a664ccf4629c9eaffec2a4cf92c0bb57078012fb97",
+        "v2": "07f54a6d59ad0bb67b600f047b0fe6e0038858713f395f11dad0791f03c1b045"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "b71ce319b4f72a92a8711b199a6f3d5d920aa58d807bbe293538b283293ab728",
+        "v2": "cf7469dc7e60c1d1ed77726d4dec126b590873227c53425995c8ebea39da19a5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "3481b9c11d1603a3c7196794ae4cac40a5090e94dd49c9b1e179bfdc299827e8",
+        "v2": "2178909ae84d13ae30a4f90c37a1066fe1ca2cc1da367c600f0f051f1e71940e"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "01989a741938335ea277b35530c0ec32b666e5e47a1107c4047f1d411eec9e7b",
+        "v2": "9d4f4e04c97d1a08abad40c3232074e07f83f5341e7efc496389ffff2f14f0ad"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "c70a724f49fb10608d387244685d9d155ec5c17e09d0d5aef4a6e7aef8ae0ca2",
+        "v2": "f81dff11a8cc097445f276ad657f9a714f620828d33005abc163a58798753f10"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "2a816fc67eb5bbb4e02ded2333a8c50ed205b0e73094d85694bed152e3bc7c17",
+        "v2": "1885ee0b7eba5098ca97781361f992663c8e13e53217ff6c6bc11651af768032"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "b08f571db3fcc6e788c16e2fa158fc34c773304d91d15ee904647d8d0cc9cc2a",
+        "v2": "0edcba30d311d2778d63bef604e1217610e3e2e2f5a14a240235abb556953b26"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "c0e3e8130aae4efd7a033ac13ab7453cbfc47dd2d737fa71c348f49d24088cc5",
+        "v2": "f9a88f2da06c5e7c74e965661bf814ba52f484b44ee7c19bed8125845819e509"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "8246ad7c6b10b9c00890c4ade3ea60c4b3d44ab5005d217607485a313e9ef616",
+        "v2": "93d5fdb3ba833ffe5fd0a8c8c8c4a49fca0647f2a84bec3398c45f968c5e608c"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "16286606bbd2125185121176224f86f3fcea93be98ce137df0dc719810fa1c55",
+        "v2": "e7ca6253b06479e02427da8235fdfcced466d7d683dd5dbb5464949312b0df16"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "fd0824848941dafa7893a1e840dfa45ad4e79f3e890d758c7e0da6245ff41e12",
+        "v2": "8e11bc2985525dec7bd0a8e723ccb1001fd1ed60ff266422252a2434a8ed2229"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "071c6964e8bf50b59d2e1247233dd4fb4829cca49dc2991324fa74980cb62003",
+        "v2": "30e6fad44976fe57320fac720edeeda5f4a5fb0ec5d36f28dbb8d4fe0dea7e85"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "af4c023c550ec910d18355db2097f19d568e2a2e57340577750985d2b04022f3",
+        "v2": "e81aa9950890702645847dcc44e9448bc1bcfbc9d66d9e376e5a14fff7e3f193"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "72fcfa0369c842f812987bfbc9c6238eca231942b47133d381c101015abf4b52",
+        "v2": "867268e398ced8d18ca56795e5f5a7550335af13be25a1ada70db1852c9f848f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "2e96b86514ced27b8b81cfc39498fd8aea71be6c1b9a9378c065c697bd52b9b3",
+        "v2": "b698041b02f144767f5971817f985bc578057864707cb3729a6948dca9702cb5"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "82425edab509455aeab51a3a2bc2c679cf49b9ecbf6b72e8606263f143634f40",
+        "v2": "c447c72813fe6f7c4499ad01ec88e695e1e551cbcec1a89c502e8dbda5bb2eb0"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "6d78fb5374dadbf7a9183edd9d5ac349ba76bb56759b0138327005285b758c57",
+        "v2": "7db34f600d47dca1a2bcca56a02f4d486505416be0dbb12c8a974074cd63d05f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "b5a80b24ddb537dacc9c89e102ac16a44e7cf013c260b77de829d1cb82ce6135",
+        "v2": "d7083a3e9e61a65f5a03302787a4961cda513551912e965d2f3f5cbaee490121"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "1b65f52fd17ef86b59b05b2dd5cb48a4b770cda5664057939fb0091d97f60540",
+        "v2": "299394c0caeef8766d746c161a8c97767e468c05c649933cff11b97fe3834c48"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "daa82717d1f28df5b841ab35e29112eb321068422b323297433495aec6de7f09",
+        "v2": "d3f4bcd555d84df44a1df30a1b5a57a2439e3d2f25ba88f0787c9b330bb72569"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "f8deba78c9441157c169ab4cb0cb8b6e197c2f5ecb576890d0d206ca9b5f690b",
+        "v2": "61f819dfb543e345e6dd375797385dfaeb14080c355a4229f6ce53d662a63958"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 52,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "a07772313d66b5cead1410eff457ac3cacccf8df97578d47872c8fc3e3c2d205",
+        "v2": "bec46ba5a6b5b11619139d4cea98977d98e56f3e87918d170d5259756d1eb13f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 52,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "5feb4e6fbafde1257b00ae1869dbd1120ec8e8d313c61d498d586cd8be994a54",
+        "v2": "5d4425936af75b7c5441c2699074ff706dd4016dba3afa7dc5f9c11a3ac0b997"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 52,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "1373f66090d03bd1a64a70ea63892b3183d5bbb62c8f80e3c84dba21f5d4c611",
+        "v2": "f4350378e9c6167783d2a6ccc95156d9f6041aa47fc0a6db2b9a567c5864eb91"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "45873d4213438dde6ce78f0b7bbcb9036fa7ec50db2a2bf921653c27e8ae3796",
+        "v2": "b8b07e8235208f9c4dc4210f7242d9ee5d07ac387bf629f3f15d5ccfc47b0fac"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "2070c7eb80e78574d1287ff819387684528151a4dccbe26599899f2135a0ea3b",
+        "v2": "84d1943aa86514d48ae07ad700cedb97db424a5e4f73c208ee2d4edd41748aab"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "0c76ea59a2c64e17a7f0c0b1c45086ade3b676af4d3c806b3cb3c82700ca05e1",
+        "v2": "44fb32e9389efc3ad028b149c16fa7545d527ae9a1ea17073a5db14ce03ed666"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "39571de829c7509169cb924372f008b78f8cb352b56fe61adb5bb3504349e12f",
+        "v2": "e89c5e5a437c1822d761256e831532d944289efc7729ffc5e66ae7efe2e76941"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "5b246acf4d9319bd575018bd4bcc8fccb93e40d021aba53dcbb891ea9f5f4a85",
+        "v2": "cc360b0a39233882ae7a9dc3ec7eaeec18ecdff75ba4cf74448acc77a7b47221"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "81a090e2ea1b4608c6d789e3442f7e988d4c3503e66708f7bfc8e6740666fcb4",
+        "v2": "256568aeb283cfeb28caf8ebec8119641511c74900a827c5c23088c949582339"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 82,
+          "score_stage": "clipped"
+        },
+        "field": "score_hash",
+        "v1": "a271feddeff82edf1d99dfd27c38e202a5c11180facef5493487ea95b1aa1e15",
+        "v2": "5ee8d56a07a0df59b3216df06f749fad6d2422371e5ae312659f37b65e04a18f"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 82,
+          "score_stage": "platt"
+        },
+        "field": "score_hash",
+        "v1": "3e4d3223dcd9863feb58dc2929cb5ba5b6f31492d48231b65fe248c169afecd3",
+        "v2": "2816d9aa3c2bdaebec7e99061364d90d3a16aa99b4d43283b345c6eeff6ddcdf"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 82,
+          "score_stage": "raw"
+        },
+        "field": "score_hash",
+        "v1": "00345996ee641171cf6389654abb66d61fcac4f4f2563901275671fb85221d61",
+        "v2": "1eed23b40b9d0b79d1e0af0cf6503020b3d4f23ff4db89f9c717a12af751107e"
+      }
+    ]
+  },
+  {
+    "analysis": "score_stage_contrasts",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "baseline",
+      "candidate"
+    ],
+    "changes": []
+  },
+  {
+    "analysis": "capacity_models",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "range_type",
+      "split_tie"
+    ],
+    "changes": [
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "clipped",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "platt",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "P0",
+          "seed": 82,
+          "score_stage": "raw",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "clipped",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "platt",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "raw",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "clipped",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "platt",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 1,
+          "model": "PTHW",
+          "seed": 72,
+          "score_stage": "raw",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "clipped",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "platt",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PH",
+          "seed": 52,
+          "score_stage": "raw",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "clipped",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "clipped",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "platt",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "platt",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "raw",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "raw",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "clipped",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "platt",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 2,
+          "model": "PTH",
+          "seed": 72,
+          "score_stage": "raw",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "clipped",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "platt",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PH",
+          "seed": 42,
+          "score_stage": "raw",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "clipped",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "platt",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PT",
+          "seed": 42,
+          "score_stage": "raw",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "clipped",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "platt",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 42,
+          "score_stage": "raw",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "clipped",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "platt",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 52,
+          "score_stage": "raw",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "clipped",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "platt",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 62,
+          "score_stage": "raw",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "clipped",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "clipped",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "platt",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "platt",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "raw",
+          "q": 0.01
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTH",
+          "seed": 82,
+          "score_stage": "raw",
+          "q": 0.1
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "clipped",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "platt",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 42,
+          "score_stage": "raw",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "clipped",
+          "q": 0.03
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "clipped",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "platt",
+          "q": 0.03
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "platt",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "raw",
+          "q": 0.03
+        },
+        "field": "split_tie",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "dataset": "paysim",
+          "fold": 3,
+          "model": "PTHW",
+          "seed": 62,
+          "score_stage": "raw",
+          "q": 0.05
+        },
+        "field": "split_tie",
+        "v1": "False",
+        "v2": "True"
+      }
+    ]
+  },
+  {
+    "analysis": "capacity_contrasts",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [],
+    "changes": []
+  },
+  {
+    "analysis": "priority_summaries",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "interpretation"
+    ],
+    "changes": []
+  },
+  {
+    "analysis": "component_intervals",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "ci_type"
+    ],
+    "changes": []
+  },
+  {
+    "analysis": "processing_intervals",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "ci_type"
+    ],
+    "changes": []
+  },
+  {
+    "analysis": "primary_intervals",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "ci_crosses_zero",
+      "invalid_rate_warning"
+    ],
+    "changes": [
+      {
+        "key": {
+          "fold": 1,
+          "metric": "delta_pr_auc"
+        },
+        "field": "ci_crosses_zero",
+        "v1": "True",
+        "v2": "False"
+      }
+    ]
+  },
+  {
+    "analysis": "secondary_overall_intervals",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "ci_crosses_zero",
+      "invalid_rate_warning",
+      "weighting_method"
+    ],
+    "changes": []
+  },
+  {
+    "analysis": "calibration_ablation_results",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "decision_strategy",
+      "feature_set",
+      "raw_prediction_hash",
+      "scheme"
+    ],
+    "changes": [
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "b5828d1eea93ebea0be46ea49a056a7939e062402eac28029093295c9ba3189f",
+        "v2": "864cd432b3aeb78684732b9e1b293b107db36e876c512cf895788dca6dffc6f0"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "b5828d1eea93ebea0be46ea49a056a7939e062402eac28029093295c9ba3189f",
+        "v2": "864cd432b3aeb78684732b9e1b293b107db36e876c512cf895788dca6dffc6f0"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "b5828d1eea93ebea0be46ea49a056a7939e062402eac28029093295c9ba3189f",
+        "v2": "864cd432b3aeb78684732b9e1b293b107db36e876c512cf895788dca6dffc6f0"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cfd9249f4911da3beac2e738ee46e7a21152f6a5b3b858d6f3f7adb27d33a5e1",
+        "v2": "9d17043dfedf912e5eb47f30ab9f638e0c5b5ee0284369cbfc11cc587a9870b1"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cfd9249f4911da3beac2e738ee46e7a21152f6a5b3b858d6f3f7adb27d33a5e1",
+        "v2": "9d17043dfedf912e5eb47f30ab9f638e0c5b5ee0284369cbfc11cc587a9870b1"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cfd9249f4911da3beac2e738ee46e7a21152f6a5b3b858d6f3f7adb27d33a5e1",
+        "v2": "9d17043dfedf912e5eb47f30ab9f638e0c5b5ee0284369cbfc11cc587a9870b1"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "aa198400da83db080abf55d3a2dd033a8abe98fd8e4de5e58b1f9560b34b5150",
+        "v2": "861b4eed224303ff18a6b71b69157556d6478c5e6ae55c30f40a37de5007f88f"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "aa198400da83db080abf55d3a2dd033a8abe98fd8e4de5e58b1f9560b34b5150",
+        "v2": "861b4eed224303ff18a6b71b69157556d6478c5e6ae55c30f40a37de5007f88f"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "aa198400da83db080abf55d3a2dd033a8abe98fd8e4de5e58b1f9560b34b5150",
+        "v2": "861b4eed224303ff18a6b71b69157556d6478c5e6ae55c30f40a37de5007f88f"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "501f31adbf5b5c347decfdd73341f28dd6cf089115330a6a02bb5e392a90e6ed",
+        "v2": "b3f5f702374b0eaf3265abd3c2ecf07ad943ca616f114958ce87c71296350492"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "501f31adbf5b5c347decfdd73341f28dd6cf089115330a6a02bb5e392a90e6ed",
+        "v2": "b3f5f702374b0eaf3265abd3c2ecf07ad943ca616f114958ce87c71296350492"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "501f31adbf5b5c347decfdd73341f28dd6cf089115330a6a02bb5e392a90e6ed",
+        "v2": "b3f5f702374b0eaf3265abd3c2ecf07ad943ca616f114958ce87c71296350492"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "82bb14b538ecee6a14f989f879e23673584fca0b2cece331a06aa45ef2098a13",
+        "v2": "4d5cb7a8bc1294ea4264062882e6d41ecae275bd4686c31cd6fe46119e016bfa"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "82bb14b538ecee6a14f989f879e23673584fca0b2cece331a06aa45ef2098a13",
+        "v2": "4d5cb7a8bc1294ea4264062882e6d41ecae275bd4686c31cd6fe46119e016bfa"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "raw_safe",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "82bb14b538ecee6a14f989f879e23673584fca0b2cece331a06aa45ef2098a13",
+        "v2": "4d5cb7a8bc1294ea4264062882e6d41ecae275bd4686c31cd6fe46119e016bfa"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "9cd1714c714d759bfb47ecbc0948c412f741a62b4a36055ef730202d50ced0ef",
+        "v2": "c559010075cc36d92e82badf213321d46164fb06f8a994aa8e82c55934096ead"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "9cd1714c714d759bfb47ecbc0948c412f741a62b4a36055ef730202d50ced0ef",
+        "v2": "c559010075cc36d92e82badf213321d46164fb06f8a994aa8e82c55934096ead"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "9cd1714c714d759bfb47ecbc0948c412f741a62b4a36055ef730202d50ced0ef",
+        "v2": "c559010075cc36d92e82badf213321d46164fb06f8a994aa8e82c55934096ead"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "39bfb65badf941b812233c9bae14af277914548e80bba008cecb457e0f6ca1a2",
+        "v2": "e9e1359974f1c15c8c6efcee959f5d8ddf6ca8a31c880299f838a3cc28cfeb0c"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "39bfb65badf941b812233c9bae14af277914548e80bba008cecb457e0f6ca1a2",
+        "v2": "e9e1359974f1c15c8c6efcee959f5d8ddf6ca8a31c880299f838a3cc28cfeb0c"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "39bfb65badf941b812233c9bae14af277914548e80bba008cecb457e0f6ca1a2",
+        "v2": "e9e1359974f1c15c8c6efcee959f5d8ddf6ca8a31c880299f838a3cc28cfeb0c"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "2f4d7bfd35e7dd319abc4d12123147f7550584f79273cb5cd93241769c5920fd",
+        "v2": "34585587f3f39d80e28967bcab71a4295bec84d03047f1815e8d1c0aca3e2a4f"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "2f4d7bfd35e7dd319abc4d12123147f7550584f79273cb5cd93241769c5920fd",
+        "v2": "34585587f3f39d80e28967bcab71a4295bec84d03047f1815e8d1c0aca3e2a4f"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "2f4d7bfd35e7dd319abc4d12123147f7550584f79273cb5cd93241769c5920fd",
+        "v2": "34585587f3f39d80e28967bcab71a4295bec84d03047f1815e8d1c0aca3e2a4f"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "114dcd6d150eee1b4dfd8af80bdb55e281390d83fabc039c58232017ab7a48d9",
+        "v2": "f464b6de9f9ee3fd6b7eb3f7583911857d650157dd768eccac7bc0dc415ee429"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "114dcd6d150eee1b4dfd8af80bdb55e281390d83fabc039c58232017ab7a48d9",
+        "v2": "f464b6de9f9ee3fd6b7eb3f7583911857d650157dd768eccac7bc0dc415ee429"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "114dcd6d150eee1b4dfd8af80bdb55e281390d83fabc039c58232017ab7a48d9",
+        "v2": "f464b6de9f9ee3fd6b7eb3f7583911857d650157dd768eccac7bc0dc415ee429"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "94a4c3c8d73ee9f9f6949769ce06d5d46180d673f811c0c4ff1e83b39a5e6c49",
+        "v2": "1d0a606090fd0e6bb2d79ac3dba701b131ca3a517c8bb929ca30740b538b2fd9"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "94a4c3c8d73ee9f9f6949769ce06d5d46180d673f811c0c4ff1e83b39a5e6c49",
+        "v2": "1d0a606090fd0e6bb2d79ac3dba701b131ca3a517c8bb929ca30740b538b2fd9"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "94a4c3c8d73ee9f9f6949769ce06d5d46180d673f811c0c4ff1e83b39a5e6c49",
+        "v2": "1d0a606090fd0e6bb2d79ac3dba701b131ca3a517c8bb929ca30740b538b2fd9"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "e1934861c4d21a4f3484d57f6fdad48d9fc6660d82f5c56daf6505586bebd869",
+        "v2": "de6306dd2836c1ac8b5c0f78692ae8175b8548d06ce1291174609c9d86eb431a"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "e1934861c4d21a4f3484d57f6fdad48d9fc6660d82f5c56daf6505586bebd869",
+        "v2": "de6306dd2836c1ac8b5c0f78692ae8175b8548d06ce1291174609c9d86eb431a"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "e1934861c4d21a4f3484d57f6fdad48d9fc6660d82f5c56daf6505586bebd869",
+        "v2": "de6306dd2836c1ac8b5c0f78692ae8175b8548d06ce1291174609c9d86eb431a"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "a4154d462a9e4c455ded7df9254e769ec029bbbe64d6a6c8edab125d41dc5072",
+        "v2": "7f2c40cebea5ac418201b457cfdd2378f1797dc71a0dcb086dd8ea5e611f4c6f"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "a4154d462a9e4c455ded7df9254e769ec029bbbe64d6a6c8edab125d41dc5072",
+        "v2": "7f2c40cebea5ac418201b457cfdd2378f1797dc71a0dcb086dd8ea5e611f4c6f"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "a4154d462a9e4c455ded7df9254e769ec029bbbe64d6a6c8edab125d41dc5072",
+        "v2": "7f2c40cebea5ac418201b457cfdd2378f1797dc71a0dcb086dd8ea5e611f4c6f"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "4b818c4be2b7023c8f2e40295c0600172e8f0006ce9be93314bcd620e896e2ff",
+        "v2": "2de92c87760d9ecca00000a0a4079842f587ed0dc63e32919f588ababb9b1792"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "4b818c4be2b7023c8f2e40295c0600172e8f0006ce9be93314bcd620e896e2ff",
+        "v2": "2de92c87760d9ecca00000a0a4079842f587ed0dc63e32919f588ababb9b1792"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "4b818c4be2b7023c8f2e40295c0600172e8f0006ce9be93314bcd620e896e2ff",
+        "v2": "2de92c87760d9ecca00000a0a4079842f587ed0dc63e32919f588ababb9b1792"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cfce07fcc5b1b7ed26ede4e8feb39d330f7e3a4b93e6ce89a65d70060344c4c2",
+        "v2": "42f7b0436852e83a60fe13d462ad5276ff8946acbfc07ea4b5f9499f4061e009"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cfce07fcc5b1b7ed26ede4e8feb39d330f7e3a4b93e6ce89a65d70060344c4c2",
+        "v2": "42f7b0436852e83a60fe13d462ad5276ff8946acbfc07ea4b5f9499f4061e009"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cfce07fcc5b1b7ed26ede4e8feb39d330f7e3a4b93e6ce89a65d70060344c4c2",
+        "v2": "42f7b0436852e83a60fe13d462ad5276ff8946acbfc07ea4b5f9499f4061e009"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "960a404be696dba884c826e98b4a147c3defed3c108a4e2857221ca3757faa1c",
+        "v2": "da362cbe2e42c1288c7ce412eac6951b1ffbbd20b02af25258ff072b23dce1a3"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "960a404be696dba884c826e98b4a147c3defed3c108a4e2857221ca3757faa1c",
+        "v2": "da362cbe2e42c1288c7ce412eac6951b1ffbbd20b02af25258ff072b23dce1a3"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "raw_safe",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "960a404be696dba884c826e98b4a147c3defed3c108a4e2857221ca3757faa1c",
+        "v2": "da362cbe2e42c1288c7ce412eac6951b1ffbbd20b02af25258ff072b23dce1a3"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "13be770961ade8574cd26ff0f3bce5995e63b27528c1416b9b5e04bd64b571f6",
+        "v2": "29c98bfe4976b5c138ad3469c1d38150dad9ae4e4b75a9e486895d28ee9ab307"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "13be770961ade8574cd26ff0f3bce5995e63b27528c1416b9b5e04bd64b571f6",
+        "v2": "29c98bfe4976b5c138ad3469c1d38150dad9ae4e4b75a9e486895d28ee9ab307"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "13be770961ade8574cd26ff0f3bce5995e63b27528c1416b9b5e04bd64b571f6",
+        "v2": "29c98bfe4976b5c138ad3469c1d38150dad9ae4e4b75a9e486895d28ee9ab307"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "08f6fe6621ea20deb74645a746b3034e86709152a8c9dd901af08ecd5e9b02e2",
+        "v2": "d11b5b6f007055f378b295bf414936abce813822a0ca0ce8d342d4fea256b4d0"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "08f6fe6621ea20deb74645a746b3034e86709152a8c9dd901af08ecd5e9b02e2",
+        "v2": "d11b5b6f007055f378b295bf414936abce813822a0ca0ce8d342d4fea256b4d0"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "08f6fe6621ea20deb74645a746b3034e86709152a8c9dd901af08ecd5e9b02e2",
+        "v2": "d11b5b6f007055f378b295bf414936abce813822a0ca0ce8d342d4fea256b4d0"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cda163fb6591b2c7e47d050b90b6566b9d618a12829fe8797bdee9aedb6a1af6",
+        "v2": "8c5138a51797d97ce4bb54113a794b535284fcd344a5b03f74f2b222e54e8579"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cda163fb6591b2c7e47d050b90b6566b9d618a12829fe8797bdee9aedb6a1af6",
+        "v2": "8c5138a51797d97ce4bb54113a794b535284fcd344a5b03f74f2b222e54e8579"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cda163fb6591b2c7e47d050b90b6566b9d618a12829fe8797bdee9aedb6a1af6",
+        "v2": "8c5138a51797d97ce4bb54113a794b535284fcd344a5b03f74f2b222e54e8579"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "c2f1f09d7a2cdd967eeb46eecb81320ae24a0e5f2ec28986125fb8dbbb1c0913",
+        "v2": "a65b1b29ccc1e4815ddb967113b48f2a4defcdae4448b1b64442a06033e91c53"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "c2f1f09d7a2cdd967eeb46eecb81320ae24a0e5f2ec28986125fb8dbbb1c0913",
+        "v2": "a65b1b29ccc1e4815ddb967113b48f2a4defcdae4448b1b64442a06033e91c53"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "c2f1f09d7a2cdd967eeb46eecb81320ae24a0e5f2ec28986125fb8dbbb1c0913",
+        "v2": "a65b1b29ccc1e4815ddb967113b48f2a4defcdae4448b1b64442a06033e91c53"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cc04535954dea82112040f94ce9021d2f5d13e5753bc4dc61983ac7e491d9858",
+        "v2": "f60a3ee55feead76bde9ea780b99a388f05edf7d91ebb15907d2984fe47ba8e3"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cc04535954dea82112040f94ce9021d2f5d13e5753bc4dc61983ac7e491d9858",
+        "v2": "f60a3ee55feead76bde9ea780b99a388f05edf7d91ebb15907d2984fe47ba8e3"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "cc04535954dea82112040f94ce9021d2f5d13e5753bc4dc61983ac7e491d9858",
+        "v2": "f60a3ee55feead76bde9ea780b99a388f05edf7d91ebb15907d2984fe47ba8e3"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "ace717b11b68ca1f9b7c222d250a4743d1fb9460611efdcedd2e81b6b62387ed",
+        "v2": "67f41f4f21eaed86d1ae3a336513b58019baaa2bc5b5b9c9f2e72be95d5391d6"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "ace717b11b68ca1f9b7c222d250a4743d1fb9460611efdcedd2e81b6b62387ed",
+        "v2": "67f41f4f21eaed86d1ae3a336513b58019baaa2bc5b5b9c9f2e72be95d5391d6"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "ace717b11b68ca1f9b7c222d250a4743d1fb9460611efdcedd2e81b6b62387ed",
+        "v2": "67f41f4f21eaed86d1ae3a336513b58019baaa2bc5b5b9c9f2e72be95d5391d6"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "84cb1e9bfbc62db99ec5e035fbe0f118bdfb211b6099cb16e8f00bd7cb627698",
+        "v2": "cda132a7e296716bf169699e09732c4e873f4bff6e5548ee6822bfa2a5b7e0e1"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "84cb1e9bfbc62db99ec5e035fbe0f118bdfb211b6099cb16e8f00bd7cb627698",
+        "v2": "cda132a7e296716bf169699e09732c4e873f4bff6e5548ee6822bfa2a5b7e0e1"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "84cb1e9bfbc62db99ec5e035fbe0f118bdfb211b6099cb16e8f00bd7cb627698",
+        "v2": "cda132a7e296716bf169699e09732c4e873f4bff6e5548ee6822bfa2a5b7e0e1"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "3af460ec1dba59a4b1179856e3a3ff1f97f6a513d17623c29ac298185d560d72",
+        "v2": "7a60ff812eb6d4e5b8e3d41ea14a49d44805f6e6d9d23b0db4e554eeb48ceb25"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "3af460ec1dba59a4b1179856e3a3ff1f97f6a513d17623c29ac298185d560d72",
+        "v2": "7a60ff812eb6d4e5b8e3d41ea14a49d44805f6e6d9d23b0db4e554eeb48ceb25"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "3af460ec1dba59a4b1179856e3a3ff1f97f6a513d17623c29ac298185d560d72",
+        "v2": "7a60ff812eb6d4e5b8e3d41ea14a49d44805f6e6d9d23b0db4e554eeb48ceb25"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "544e9864596b62eb5573731724da7aa80481f779ef0af845f543c8801dcae51e",
+        "v2": "489bd197aa26e5e35ea44e3b7cdfbb3eed081a3b33fb95040be23300e6c0369b"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "544e9864596b62eb5573731724da7aa80481f779ef0af845f543c8801dcae51e",
+        "v2": "489bd197aa26e5e35ea44e3b7cdfbb3eed081a3b33fb95040be23300e6c0369b"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "544e9864596b62eb5573731724da7aa80481f779ef0af845f543c8801dcae51e",
+        "v2": "489bd197aa26e5e35ea44e3b7cdfbb3eed081a3b33fb95040be23300e6c0369b"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "e1ed9b033a0279c4734c937bad981ccf8483444543551391994ad113ffde26c3",
+        "v2": "1bba6d4b396cbd7baac42e1fa55c3087f15f6e9796583b7892b212e29f01e802"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "e1ed9b033a0279c4734c937bad981ccf8483444543551391994ad113ffde26c3",
+        "v2": "1bba6d4b396cbd7baac42e1fa55c3087f15f6e9796583b7892b212e29f01e802"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "raw_safe",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "e1ed9b033a0279c4734c937bad981ccf8483444543551391994ad113ffde26c3",
+        "v2": "1bba6d4b396cbd7baac42e1fa55c3087f15f6e9796583b7892b212e29f01e802"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "f8deba78c9441157c169ab4cb0cb8b6e197c2f5ecb576890d0d206ca9b5f690b",
+        "v2": "61f819dfb543e345e6dd375797385dfaeb14080c355a4229f6ce53d662a63958"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "f8deba78c9441157c169ab4cb0cb8b6e197c2f5ecb576890d0d206ca9b5f690b",
+        "v2": "61f819dfb543e345e6dd375797385dfaeb14080c355a4229f6ce53d662a63958"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "f8deba78c9441157c169ab4cb0cb8b6e197c2f5ecb576890d0d206ca9b5f690b",
+        "v2": "61f819dfb543e345e6dd375797385dfaeb14080c355a4229f6ce53d662a63958"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "1373f66090d03bd1a64a70ea63892b3183d5bbb62c8f80e3c84dba21f5d4c611",
+        "v2": "f4350378e9c6167783d2a6ccc95156d9f6041aa47fc0a6db2b9a567c5864eb91"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "1373f66090d03bd1a64a70ea63892b3183d5bbb62c8f80e3c84dba21f5d4c611",
+        "v2": "f4350378e9c6167783d2a6ccc95156d9f6041aa47fc0a6db2b9a567c5864eb91"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "1373f66090d03bd1a64a70ea63892b3183d5bbb62c8f80e3c84dba21f5d4c611",
+        "v2": "f4350378e9c6167783d2a6ccc95156d9f6041aa47fc0a6db2b9a567c5864eb91"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "0c76ea59a2c64e17a7f0c0b1c45086ade3b676af4d3c806b3cb3c82700ca05e1",
+        "v2": "44fb32e9389efc3ad028b149c16fa7545d527ae9a1ea17073a5db14ce03ed666"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "0c76ea59a2c64e17a7f0c0b1c45086ade3b676af4d3c806b3cb3c82700ca05e1",
+        "v2": "44fb32e9389efc3ad028b149c16fa7545d527ae9a1ea17073a5db14ce03ed666"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "0c76ea59a2c64e17a7f0c0b1c45086ade3b676af4d3c806b3cb3c82700ca05e1",
+        "v2": "44fb32e9389efc3ad028b149c16fa7545d527ae9a1ea17073a5db14ce03ed666"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "81a090e2ea1b4608c6d789e3442f7e988d4c3503e66708f7bfc8e6740666fcb4",
+        "v2": "256568aeb283cfeb28caf8ebec8119641511c74900a827c5c23088c949582339"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "81a090e2ea1b4608c6d789e3442f7e988d4c3503e66708f7bfc8e6740666fcb4",
+        "v2": "256568aeb283cfeb28caf8ebec8119641511c74900a827c5c23088c949582339"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "81a090e2ea1b4608c6d789e3442f7e988d4c3503e66708f7bfc8e6740666fcb4",
+        "v2": "256568aeb283cfeb28caf8ebec8119641511c74900a827c5c23088c949582339"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "00345996ee641171cf6389654abb66d61fcac4f4f2563901275671fb85221d61",
+        "v2": "1eed23b40b9d0b79d1e0af0cf6503020b3d4f23ff4db89f9c717a12af751107e"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "00345996ee641171cf6389654abb66d61fcac4f4f2563901275671fb85221d61",
+        "v2": "1eed23b40b9d0b79d1e0af0cf6503020b3d4f23ff4db89f9c717a12af751107e"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "raw_prediction_hash",
+        "v1": "00345996ee641171cf6389654abb66d61fcac4f4f2563901275671fb85221d61",
+        "v2": "1eed23b40b9d0b79d1e0af0cf6503020b3d4f23ff4db89f9c717a12af751107e"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      }
+    ]
+  },
+  {
+    "analysis": "calibration_bayes_decision_results",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "capacity_binding",
+      "decision_strategy",
+      "feature_set",
+      "scheme"
+    ],
+    "changes": [
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "capacity_binding",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "capacity_binding",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "capacity_binding",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "capacity_binding",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "capacity_binding",
+        "v1": "False",
+        "v2": "True"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "capacity_binding",
+        "v1": "True",
+        "v2": "False"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Isotonic"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "calibration_method": "Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      }
+    ]
+  },
+  {
+    "analysis": "calibration_decision_invariance",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "scheme"
+    ],
+    "changes": [
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      }
+    ]
+  },
+  {
+    "analysis": "calibration_pairwise_reliability",
+    "old_only_columns": [],
+    "new_only_columns": [],
+    "nonnumeric_fields_checked": [
+      "scheme"
+    ],
+    "changes": [
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 1,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 2,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 42,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 52,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 62,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 72,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Isotonic vs Platt"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Isotonic vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      },
+      {
+        "key": {
+          "fold": 3,
+          "model_id": "recipient_full_weight_2",
+          "seed": 82,
+          "comparison": "Platt vs Uncalibrated"
+        },
+        "field": "scheme",
+        "v1": "Recipient history (w=2)",
+        "v2": "Recipient"
+      }
+    ]
+  },
+  {
+    "analysis": "block_sensitivity",
+    "old_only_columns": [
+      "dataset",
+      "interval_direction",
+      "original_length"
+    ],
+    "new_only_columns": [
+      "bootstrap_mean",
+      "bootstrap_se",
+      "ci_crosses_zero",
+      "invalid_rate",
+      "invalid_rate_warning",
+      "scope",
+      "total_replicates"
+    ],
+    "nonnumeric_fields_checked": [
+      "primary_length"
+    ],
+    "changes": []
+  }
+]

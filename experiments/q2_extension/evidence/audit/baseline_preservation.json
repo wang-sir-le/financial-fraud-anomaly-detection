@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/KAIS_English_Manuscript.docx",
+      "bytes": 4941938,
+      "sha256": "82944759ec0cce5571942c8e528316eef49c981f7049af3ba74816ebe97a9499",
+      "current_sha256": "82944759ec0cce5571942c8e528316eef49c981f7049af3ba74816ebe97a9499",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/ESM_1_editable.docx",
+      "bytes": 1413711,
+      "sha256": "1ca334b602bffa32a8c3250f886925b1d04a31d754cae785c925a6881219c737",
+      "current_sha256": "1ca334b602bffa32a8c3250f886925b1d04a31d754cae785c925a6881219c737",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/REPRODUCE.md",
+      "bytes": 6933,
+      "sha256": "2721452d7123e319a544229810adcfffafe8c0d95b326f00641d7b1cb653c2fd",
+      "current_sha256": "2721452d7123e319a544229810adcfffafe8c0d95b326f00641d7b1cb653c2fd",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/INPUT_ACCESS_AND_REBUILD.md",
+      "bytes": 12074,
+      "sha256": "47b58765643f4134c2ee1d47561f278f3839b640ad3fb1841877666fa59eb197",
+      "current_sha256": "47b58765643f4134c2ee1d47561f278f3839b640ad3fb1841877666fa59eb197",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/audit/prediction_input_manifest.json",
+      "bytes": 36543,
+      "sha256": "618c21ac79ea09f4761ff7d13e0663af302183fac5b0c179d772d990f5822fc4",
+      "current_sha256": "618c21ac79ea09f4761ff7d13e0663af302183fac5b0c179d772d990f5822fc4",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/evidence/paysim_bootstrap_protocol.json",
+      "bytes": 1112,
+      "sha256": "8afd56dde6b021979cd907999a8f9dba0ba6c8906be9801bb5aac4c5effc28bb",
+      "current_sha256": "8afd56dde6b021979cd907999a8f9dba0ba6c8906be9801bb5aac4c5effc28bb",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/evidence/ieee_bootstrap_protocol.json",
+      "bytes": 4097,
+      "sha256": "3cda22aa947931c24bdf4ced007ead1842bac518d4afbf8590ea52dee4288313",
+      "current_sha256": "3cda22aa947931c24bdf4ced007ead1842bac518d4afbf8590ea52dee4288313",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/evidence/ieee_training_config.json",
+      "bytes": 256890,
+      "sha256": "f93d1344d8e9f7da172976e90a02e4b711776af006c417424b602882fb0ec9e1",
+      "current_sha256": "f93d1344d8e9f7da172976e90a02e4b711776af006c417424b602882fb0ec9e1",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/evidence/ieee_run_metadata.json",
+      "bytes": 1253,
+      "sha256": "d104eeb47adfab52c7986233fd221f4c367616249acf4eb211cc757006547482",
+      "current_sha256": "d104eeb47adfab52c7986233fd221f4c367616249acf4eb211cc757006547482",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/code/requirements-lock-windows-py311.txt",
+      "bytes": 720,
+      "sha256": "91f8b53a5fec502070d70ea515adc26ea6547e02a2dd4bd30696d0e8527bb14e",
+      "current_sha256": "91f8b53a5fec502070d70ea515adc26ea6547e02a2dd4bd30696d0e8527bb14e",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/src/fraudx/timeblock_bootstrap.py",
+      "bytes": 32541,
+      "sha256": "20e71dde9b71c172678bf360800f20944a931a5356fb34963a5934fed501a88e",
+      "current_sha256": "20e71dde9b71c172678bf360800f20944a931a5356fb34963a5934fed501a88e",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/src/fraudx/ieee_cis_timeblock_bootstrap.py",
+      "bytes": 48648,
+      "sha256": "da5ab4902a4ff959fa0d97faf1938109d4d70d2e7066a4bdeeb4fc3e91ff1b5f",
+      "current_sha256": "da5ab4902a4ff959fa0d97faf1938109d4d70d2e7066a4bdeeb4fc3e91ff1b5f",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/src/fraudx/models.py",
+      "bytes": 4527,
+      "sha256": "ceede354842dcdca42b0a25eb39ca6bb13360406171686b57ac23c460d101253",
+      "current_sha256": "ceede354842dcdca42b0a25eb39ca6bb13360406171686b57ac23c460d101253",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/scripts/kais_optimize_analysis_20260923.py",
+      "bytes": 5862,
+      "sha256": "28bf88a3f1164fa27971264582e3d4037a215738e2662da09b71131b1431aa66",
+      "current_sha256": "28bf88a3f1164fa27971264582e3d4037a215738e2662da09b71131b1431aa66",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/scripts/kais_revision_analysis_20260919.py",
+      "bytes": 19474,
+      "sha256": "8c1c54939d68e62749a6b9852732b6f5298115a817835190494881a46a9ff248",
+      "current_sha256": "8c1c54939d68e62749a6b9852732b6f5298115a817835190494881a46a9ff248",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/code/fraudx/reproduce.py",
+      "bytes": 14024,
+      "sha256": "90df4cfa9901a37869ba3421f29ae2fb7ad6e872dd203a0f3f4c300d701196f8",
+      "current_sha256": "90df4cfa9901a37869ba3421f29ae2fb7ad6e872dd203a0f3f4c300d701196f8",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_ci_replay_20260923/reproducibility/code/fraudx/rebuild_paysim.py",
+      "bytes": 3668,
+      "sha256": "a9e7bb7da9fa379bd15162315f540c62b2cad77f32a3accda7333d363971df6b",
+      "current_sha256": "a9e7bb7da9fa379bd15162315f540c62b2cad77f32a3accda7333d363971df6b",
+      "unchanged": true
+    },
+    {
+      "path": "experiment/outputs/kais_innovation_options_20260923/\u521b\u65b0\u70b9\u4e0e\u53ef\u884c\u7248\u672c.md",
+      "bytes": 15703,
+      "sha256": "cb28e8b462a0d5addb912cd7fdb630189329713421d42d91e0dbd445497d10d6",
+      "current_sha256": "cb28e8b462a0d5addb912cd7fdb630189329713421d42d91e0dbd445497d10d6",
+      "unchanged": true
+    }
+  ]
+}

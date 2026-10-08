@@ -1,0 +1,16 @@
+{
+  "cell": "B2",
+  "status": "SUCCESS",
+  "model_loads": 1,
+  "prediction_calls": 1,
+  "fit_calls_entered": 0,
+  "start_utc": "2026-10-06T11:20:33.983216+00:00",
+  "model_loads_returned": 1,
+  "prediction_calls_returned": 1,
+  "model_load_seconds": 0.010772400011774153,
+  "native_prediction_seconds": 0.159490599995479,
+  "rows": 198311,
+  "end_utc": "2026-10-06T11:20:34.159611+00:00",
+  "margin_sha256": "ff6ccc14745e754a48595516e9bcf14356586e14478d5160acc685a4df63b8f3",
+  "review_matrix_sha256": "063bd12b87168667ce348c4387032063c46e61418a4909805084bea6ebd09b01"
+}
