@@ -1,0 +1,72 @@
+{
+  "revision_date": "2026-10-13",
+  "main_figures": [
+    {
+      "current": 1,
+      "content": "Temporal design and analysis provenance",
+      "previous_eight_figure_manuscript": [
+        1
+      ],
+      "previous_seven_figure_manuscript": [
+        1
+      ]
+    },
+    {
+      "current": 2,
+      "content": "Study-specific experimental framework",
+      "previous_eight_figure_manuscript": [
+        2
+      ],
+      "previous_seven_figure_manuscript": [
+        2
+      ]
+    },
+    {
+      "current": 3,
+      "content": "PaySim effects and descriptive exact-capacity profiles",
+      "previous_eight_figure_manuscript": [
+        3
+      ],
+      "previous_seven_figure_manuscript": [
+        3
+      ]
+    },
+    {
+      "current": 4,
+      "content": "BankSim paired capture effects and post-hoc exchanges",
+      "previous_eight_figure_manuscript": [
+        4,
+        5
+      ],
+      "previous_seven_figure_manuscript": [
+        4
+      ]
+    },
+    {
+      "current": 5,
+      "previous_seven_figure_manuscript": [
+        5,
+        6
+      ],
+      "previous_eight_figure_manuscript": [
+        6,
+        7
+      ],
+      "content": "IEEE-CIS combined effects and directly paired component effects"
+    },
+    {
+      "current": 6,
+      "previous_seven_figure_manuscript": [
+        7
+      ],
+      "previous_eight_figure_manuscript": [
+        8
+      ],
+      "content": "Capacity, cost and realised workload sensitivity"
+    }
+  ],
+  "scientific_protocol_change": false,
+  "figure3_capacity_profile": "Revision-stage descriptive calculation from saved Platt predictions, not new training or bootstrap",
+  "models_or_predictions_created_during_publication": 0,
+  "bootstrap_draws_created_during_publication": 0
+}

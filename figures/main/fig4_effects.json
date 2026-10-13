@@ -1,7 +1,7 @@
 {
   "sources": [
     {
-      "path": "${WORKSPACE}\\experiment\\outputs\\paper_evidence_revision_20260927\\run_01\\audit\\FIGURE_DATA.json",
+      "path": "${WORKSPACE}/experiment/outputs/paper_evidence_revision_20260927/run_01/audit/FIGURE_DATA.json",
       "sha256": "9912ad7d6ec6dcf477bbf0e5b7ef2180710d2edbd7a6c48a6aa62150f18beb00"
     }
   ],
@@ -83,7 +83,7 @@
   "figure": "fig4",
   "width_in": 6.6,
   "height_in": 2.99461176727909,
-  "original_image": "${WORKSPACE}\\experiment\\tmp\\kais_figure_redraw_20261007\\run_01\\originals\\main_image15.png",
+  "original_image": "${WORKSPACE}/experiment/tmp/kais_figure_redraw_20261007/run_01/originals/main_image15.png",
   "original_image_sha256": "1af61a25c07d4a8e4f243bd3b4a1a137a65998082d0eaeb4509af29c83e4cff5",
   "boundary": "Previously saved aggregate results only; no new fitting, prediction, ranking, AP or uncertainty computation."
 }

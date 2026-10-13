@@ -1,515 +1,251 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="475.2pt" height="240.946457pt" viewBox="0 0 475.2 240.946457" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-07T22:06:18.837109</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 240.946457 
-L 475.2 240.946457 
-L 475.2 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 5.04 38.986457 
-L 111.6 38.986457 
-L 111.6 19.906457 
-L 5.04 19.906457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #b0cedd; stroke: #8ea8b3; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 124.56 38.986457 
-L 335.52 38.986457 
-L 335.52 19.906457 
-L 124.56 19.906457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #b0cedd; stroke: #8ea8b3; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 348.48 38.986457 
-L 470.16 38.986457 
-L 470.16 19.906457 
-L 348.48 19.906457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #b0cedd; stroke: #8ea8b3; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 7.344 95.506457 
-L 109.296 95.506457 
-Q 111.6 95.506457 111.6 93.202457 
-L 111.6 49.210457 
-Q 111.6 46.906457 109.296 46.906457 
-L 7.344 46.906457 
-Q 5.04 46.906457 5.04 49.210457 
-L 5.04 93.202457 
-Q 5.04 95.506457 7.344 95.506457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #eef5f9; stroke: #8ea8b3; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 126.864 95.506457 
-L 333.216 95.506457 
-Q 335.52 95.506457 335.52 93.202457 
-L 335.52 49.210457 
-Q 335.52 46.906457 333.216 46.906457 
-L 126.864 46.906457 
-Q 124.56 46.906457 124.56 49.210457 
-L 124.56 93.202457 
-Q 124.56 95.506457 126.864 95.506457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #faebc7; stroke: #d9b66e; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 350.784 95.506457 
-L 467.856 95.506457 
-Q 470.16 95.506457 470.16 93.202457 
-L 470.16 49.210457 
-Q 470.16 46.906457 467.856 46.906457 
-L 350.784 46.906457 
-Q 348.48 46.906457 348.48 49.210457 
-L 348.48 93.202457 
-Q 348.48 95.506457 350.784 95.506457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #eaf2ed; stroke: #8ea8b3; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 113.4 71.206457 
-Q 118.08 71.206457 121.865573 71.206457 
-" clip-path="url(#p9d13377d99)" style="fill: none; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-    <path d="M 119.265573 69.906457 
-L 121.865573 71.206457 
-L 119.265573 72.506457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #4e7865; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 337.32 71.206457 
-Q 342 71.206457 345.785573 71.206457 
-" clip-path="url(#p9d13377d99)" style="fill: none; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-    <path d="M 343.185573 69.906457 
-L 345.785573 71.206457 
-L 343.185573 72.506457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #4e7865; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-   </g>
-   <g id="patch_10">
-    <path d="M 7.344 151.306457 
-L 109.296 151.306457 
-Q 111.6 151.306457 111.6 149.002457 
-L 111.6 105.010457 
-Q 111.6 102.706457 109.296 102.706457 
-L 7.344 102.706457 
-Q 5.04 102.706457 5.04 105.010457 
-L 5.04 149.002457 
-Q 5.04 151.306457 7.344 151.306457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #eef5f9; stroke: #8ea8b3; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 126.864 151.306457 
-L 333.216 151.306457 
-Q 335.52 151.306457 335.52 149.002457 
-L 335.52 105.010457 
-Q 335.52 102.706457 333.216 102.706457 
-L 126.864 102.706457 
-Q 124.56 102.706457 124.56 105.010457 
-L 124.56 149.002457 
-Q 124.56 151.306457 126.864 151.306457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #faebc7; stroke: #d9b66e; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 350.784 151.306457 
-L 467.856 151.306457 
-Q 470.16 151.306457 470.16 149.002457 
-L 470.16 105.010457 
-Q 470.16 102.706457 467.856 102.706457 
-L 350.784 102.706457 
-Q 348.48 102.706457 348.48 105.010457 
-L 348.48 149.002457 
-Q 348.48 151.306457 350.784 151.306457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #eaf2ed; stroke: #8ea8b3; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 113.4 127.006457 
-Q 118.08 127.006457 121.865573 127.006457 
-" clip-path="url(#p9d13377d99)" style="fill: none; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-    <path d="M 119.265573 125.706457 
-L 121.865573 127.006457 
-L 119.265573 128.306457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #4e7865; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-   </g>
-   <g id="patch_14">
-    <path d="M 337.32 127.006457 
-Q 342 127.006457 345.785573 127.006457 
-" clip-path="url(#p9d13377d99)" style="fill: none; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-    <path d="M 343.185573 125.706457 
-L 345.785573 127.006457 
-L 343.185573 128.306457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #4e7865; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-   </g>
-   <g id="patch_15">
-    <path d="M 7.344 207.106457 
-L 109.296 207.106457 
-Q 111.6 207.106457 111.6 204.802457 
-L 111.6 160.810457 
-Q 111.6 158.506457 109.296 158.506457 
-L 7.344 158.506457 
-Q 5.04 158.506457 5.04 160.810457 
-L 5.04 204.802457 
-Q 5.04 207.106457 7.344 207.106457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #eef5f9; stroke: #8ea8b3; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_16">
-    <path d="M 126.864 207.106457 
-L 333.216 207.106457 
-Q 335.52 207.106457 335.52 204.802457 
-L 335.52 160.810457 
-Q 335.52 158.506457 333.216 158.506457 
-L 126.864 158.506457 
-Q 124.56 158.506457 124.56 160.810457 
-L 124.56 204.802457 
-Q 124.56 207.106457 126.864 207.106457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #faebc7; stroke: #d9b66e; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_17">
-    <path d="M 350.784 207.106457 
-L 467.856 207.106457 
-Q 470.16 207.106457 470.16 204.802457 
-L 470.16 160.810457 
-Q 470.16 158.506457 467.856 158.506457 
-L 350.784 158.506457 
-Q 348.48 158.506457 348.48 160.810457 
-L 348.48 204.802457 
-Q 348.48 207.106457 350.784 207.106457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #eaf2ed; stroke: #8ea8b3; stroke-width: 0.65; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_18">
-    <path d="M 113.4 182.806457 
-Q 118.08 182.806457 121.865573 182.806457 
-" clip-path="url(#p9d13377d99)" style="fill: none; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-    <path d="M 119.265573 181.506457 
-L 121.865573 182.806457 
-L 119.265573 184.106457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #4e7865; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-   </g>
-   <g id="patch_19">
-    <path d="M 337.32 182.806457 
-Q 342 182.806457 345.785573 182.806457 
-" clip-path="url(#p9d13377d99)" style="fill: none; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-    <path d="M 343.185573 181.506457 
-L 345.785573 182.806457 
-L 343.185573 184.106457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #4e7865; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-   </g>
-   <g id="patch_20">
-    <path d="M 25.2 88.666457 
-L 30.6 88.666457 
-L 30.6 83.626457 
-L 25.2 83.626457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #b0cedd; stroke: #8ea8b3; stroke-width: 0.45; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_21">
-    <path d="M 32.76 88.666457 
-L 38.16 88.666457 
-L 38.16 83.626457 
-L 32.76 83.626457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #b0cedd; stroke: #8ea8b3; stroke-width: 0.45; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_22">
-    <path d="M 40.32 88.666457 
-L 45.72 88.666457 
-L 45.72 83.626457 
-L 40.32 83.626457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #b0cedd; stroke: #8ea8b3; stroke-width: 0.45; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_23">
-    <path d="M 67.68 89.026457 
-L 80.64 89.026457 
-L 80.64 83.266457 
-L 67.68 83.266457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #faebc7; stroke: #d9b66e; stroke-width: 0.5; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_24">
-    <path d="M 186.624 70.306457 
-L 232.416 70.306457 
-Q 234.72 70.306457 234.72 68.002457 
-L 234.72 56.050457 
-Q 234.72 53.746457 232.416 53.746457 
-L 186.624 53.746457 
-Q 184.32 53.746457 184.32 56.050457 
-L 184.32 68.002457 
-Q 184.32 70.306457 186.624 70.306457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #ffffff; stroke: #d9b66e; stroke-width: 0.55; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_25">
-    <path d="M 258.624 70.306457 
-L 321.696 70.306457 
-Q 324 70.306457 324 68.002457 
-L 324 56.050457 
-Q 324 53.746457 321.696 53.746457 
-L 258.624 53.746457 
-Q 256.32 53.746457 256.32 56.050457 
-L 256.32 68.002457 
-Q 256.32 70.306457 258.624 70.306457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #ffffff; stroke: #d9b66e; stroke-width: 0.55; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_26">
-    <path d="M 201.744 90.826457 
-L 287.856 90.826457 
-Q 290.16 90.826457 290.16 88.522457 
-L 290.16 76.570457 
-Q 290.16 74.266457 287.856 74.266457 
-L 201.744 74.266457 
-Q 199.44 74.266457 199.44 76.570457 
-L 199.44 88.522457 
-Q 199.44 90.826457 201.744 90.826457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #ffffff; stroke: #d9b66e; stroke-width: 0.55; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_27">
-    <path d="M 27.36 145.906457 
-L 49.68 145.906457 
-L 49.68 134.746457 
-L 27.36 134.746457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #ffffff; stroke: #8ea8b3; stroke-width: 0.5; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_28">
-    <path d="M 52.56 140.506457 
-Q 58.32 140.506457 63.185573 140.506457 
-" clip-path="url(#p9d13377d99)" style="fill: none; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-    <path d="M 60.585573 139.206457 
-L 63.185573 140.506457 
-L 60.585573 141.806457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #4e7865; stroke: #4e7865; stroke-width: 0.8; stroke-linecap: round"/>
-   </g>
-   <g id="patch_29">
-    <path d="M 67.68 145.906457 
-L 90 145.906457 
-L 90 134.746457 
-L 67.68 134.746457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #faebc7; stroke: #d9b66e; stroke-width: 0.5; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_30">
-    <path d="M 201.744 126.106457 
-L 305.136 126.106457 
-Q 307.44 126.106457 307.44 123.802457 
-L 307.44 111.850457 
-Q 307.44 109.546457 305.136 109.546457 
-L 201.744 109.546457 
-Q 199.44 109.546457 199.44 111.850457 
-L 199.44 123.802457 
-Q 199.44 126.106457 201.744 126.106457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #ffffff; stroke: #d9b66e; stroke-width: 0.55; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_31">
-    <path d="M 201.744 146.626457 
-L 287.856 146.626457 
-Q 290.16 146.626457 290.16 144.322457 
-L 290.16 132.370457 
-Q 290.16 130.066457 287.856 130.066457 
-L 201.744 130.066457 
-Q 199.44 130.066457 199.44 132.370457 
-L 199.44 144.322457 
-Q 199.44 146.626457 201.744 146.626457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #ffffff; stroke: #d9b66e; stroke-width: 0.55; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_32">
-    <path d="M 139.68 190.186457 
-L 149.04 190.186457 
-L 149.04 175.786457 
-L 139.68 175.786457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #ffffff; stroke: #d9b66e; stroke-width: 0.5; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_33">
-    <path d="M 151.92 190.186457 
-L 161.28 190.186457 
-L 161.28 175.786457 
-L 151.92 175.786457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #ffffff; stroke: #d9b66e; stroke-width: 0.5; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_34">
-    <path d="M 164.16 190.186457 
-L 173.52 190.186457 
-L 173.52 175.786457 
-L 164.16 175.786457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #ffffff; stroke: #d9b66e; stroke-width: 0.5; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_35">
-    <path d="M 7.344 237.346457 
-L 467.856 237.346457 
-Q 470.16 237.346457 470.16 235.042457 
-L 470.16 216.970457 
-Q 470.16 214.666457 467.856 214.666457 
-L 7.344 214.666457 
-Q 5.04 214.666457 5.04 216.970457 
-L 5.04 235.042457 
-Q 5.04 237.346457 7.344 237.346457 
-z
-" clip-path="url(#p9d13377d99)" style="fill: #eaf2ed; stroke: #bed0c6; stroke-width: 0.55; stroke-linejoin: miter"/>
-   </g>
-   <g id="line2d_1">
-    <path d="M 48.24 86.146457 
-L 64.8 86.146457 
-" clip-path="url(#p9d13377d99)" style="fill: none; stroke: #8ea8b3; stroke-width: 0.7; stroke-linecap: square"/>
-   </g>
-   <g id="text_1">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial'; text-anchor: start; fill: #243d49" x="5.04" y="14.8275" transform="rotate(-0 5.04 14.8275)">Original LightGBM comparison map</text>
-   </g>
-   <g id="text_2">
-    <text style="font-size: 8.1px; font-family: 'Arial'; text-anchor: end; fill: #4e7865" x="470.16" y="14.335875" transform="rotate(-0 470.16 14.335875)">PaySim / IEEE-CIS</text>
-   </g>
-   <g id="text_3">
-    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="58.32" y="31.645832" transform="rotate(-0 58.32 31.645832)">Original question</text>
-   </g>
-   <g id="text_4">
-    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="230.04" y="31.649816" transform="rotate(-0 230.04 31.649816)">Within-pipeline comparison</text>
-   </g>
-   <g id="text_5">
-    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="409.32" y="31.649816" transform="rotate(-0 409.32 31.649816)">Readouts and scope</text>
-   </g>
-   <g id="text_6">
-    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="58.32" y="58.881613" transform="rotate(-0 58.32 58.881613)">RQ1 · Representation</text>
-   </g>
-   <g id="text_7">
-    <text style="font-size: 8.3px; font-family: 'Arial'; fill: #243d49" transform="translate(24.067586 69.0941)">Recipient history +</text>
-    <text style="font-size: 8.3px; font-family: 'Arial'; fill: #243d49" transform="translate(21.651508 77.970172)">current-time context</text>
-   </g>
-   <g id="text_8">
-    <text style="font-weight: 700; font-size: 8.3px; font-family: 'Arial'; text-anchor: start; fill: #243d49" x="134.28" y="64.102082" transform="rotate(-0 134.28 64.102082)">PaySim</text>
-   </g>
-   <g id="text_9">
-    <text style="font-size: 8.6px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="209.52" y="64.249691" transform="rotate(-0 209.52 64.249691)">PH − P0</text>
-   </g>
-   <g id="text_10">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="244.8" y="64.094582" transform="rotate(-0 244.8 64.094582)">and</text>
-   </g>
-   <g id="text_11">
-    <text style="font-size: 8.6px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="290.16" y="64.249691" transform="rotate(-0 290.16 64.249691)">PTH − PT</text>
-   </g>
-   <g id="text_12">
-    <text style="font-weight: 700; font-size: 8.3px; font-family: 'Arial'; text-anchor: start; fill: #243d49" x="134.28" y="84.697972" transform="rotate(-0 134.28 84.697972)">IEEE-CIS</text>
-   </g>
-   <g id="text_13">
-    <text style="font-size: 8.6px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="244.8" y="84.769691" transform="rotate(-0 244.8 84.769691)">M1 − M0</text>
-   </g>
-   <g id="text_14">
-    <text style="font-size: 8.3px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="409.32" y="67.723504" transform="rotate(-0 409.32 67.723504)">AP by score stage</text>
-   </g>
-   <g id="text_15">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="409.32" y="81.376457" transform="rotate(-0 409.32 81.376457)">Capture at matched budgets</text>
-   </g>
-   <g id="text_16">
-    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="58.32" y="114.625832" transform="rotate(-0 58.32 114.625832)">RQ2 · Weighting</text>
-   </g>
-   <g id="text_17">
-    <text style="font-size: 8.3px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="58.32" y="128.612136" transform="rotate(-0 58.32 128.612136)">Fixed feature sets</text>
-   </g>
-   <g id="text_18">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="38.52" y="142.394582" transform="rotate(-0 38.52 142.394582)">w = 1</text>
-   </g>
-   <g id="text_19">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="78.84" y="142.394582" transform="rotate(-0 78.84 142.394582)">w = 2</text>
-   </g>
-   <g id="text_20">
-    <text style="font-weight: 700; font-size: 8.3px; font-family: 'Arial'; text-anchor: start; fill: #243d49" x="134.28" y="119.902082" transform="rotate(-0 134.28 119.902082)">PaySim</text>
-   </g>
-   <g id="text_21">
-    <text style="font-size: 8.6px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="253.44" y="120.049691" transform="rotate(-0 253.44 120.049691)">PTHW − PTH</text>
-   </g>
-   <g id="text_22">
-    <text style="font-weight: 700; font-size: 8.3px; font-family: 'Arial'; text-anchor: start; fill: #243d49" x="134.28" y="140.497972" transform="rotate(-0 134.28 140.497972)">IEEE-CIS</text>
-   </g>
-   <g id="text_23">
-    <text style="font-size: 8.6px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="244.8" y="140.569691" transform="rotate(-0 244.8 140.569691)">M2 − M1</text>
-   </g>
-   <g id="text_24">
-    <text style="font-size: 8.3px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="409.32" y="123.572136" transform="rotate(-0 409.32 123.572136)">AP and capture</text>
-   </g>
-   <g id="text_25">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="409.32" y="137.127707" transform="rotate(-0 409.32 137.127707)">Workload + analytical cost</text>
-   </g>
-   <g id="text_26">
-    <text style="font-weight: 700; font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="58.32" y="170.429816" transform="rotate(-0 58.32 170.429816)">RQ3 · Conditions</text>
-   </g>
-   <g id="text_27">
-    <text style="font-size: 8.3px; font-family: 'Arial'; fill: #243d49" transform="translate(29.259625 183.873407)">Future windows</text>
-    <text style="font-size: 8.3px; font-family: 'Arial'; fill: #243d49" transform="translate(25.334633 192.7736)">Capacity and cost</text>
-   </g>
-   <g id="text_28">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="144.36" y="185.054582" transform="rotate(-0 144.36 185.054582)">1</text>
-   </g>
-   <g id="text_29">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="156.6" y="185.054582" transform="rotate(-0 156.6 185.054582)">2</text>
-   </g>
-   <g id="text_30">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="168.84" y="185.054582" transform="rotate(-0 168.84 185.054582)">3</text>
-   </g>
-   <g id="text_31">
-    <text style="font-size: 8.3px; font-family: 'Arial'; text-anchor: start; fill: #243d49" x="186.48" y="178.292136" transform="rotate(-0 186.48 178.292136)">Three windows per dataset</text>
-   </g>
-   <g id="text_32">
-    <text style="font-size: 8.3px; font-family: 'Arial'; text-anchor: start; fill: #243d49" x="186.48" y="193.052136" transform="rotate(-0 186.48 193.052136)">All declared scenario cells</text>
-   </g>
-   <g id="text_33">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="409.32" y="179.343332" transform="rotate(-0 409.32 179.343332)">Window-specific intervals</text>
-   </g>
-   <g id="text_34">
-    <text style="font-size: 8px; font-family: 'Arial'; text-anchor: middle; fill: #243d49" x="409.32" y="192.927707" transform="rotate(-0 409.32 192.927707)">Descriptive scenario grids</text>
-   </g>
-   <g id="text_35">
-    <text style="font-size: 7.8px; font-family: 'Arial'; text-anchor: middle; fill: #4e7865" x="237.6" y="224.773175" transform="rotate(-0 237.6 224.773175)">Primary and core-component intervals are reported separately.</text>
-   </g>
-   <g id="text_36">
-    <text style="font-size: 7.8px; font-family: 'Arial'; text-anchor: middle; fill: #4e7865" x="237.6" y="235.16241" transform="rotate(-0 237.6 235.16241)">Inference is conditional on fixed models and windows; no model-independent effect.</text>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p9d13377d99">
-   <rect x="0" y="0" width="475.2" height="240.946457"/>
-  </clipPath>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="260mm" height="151.66666666666666mm" viewBox="0 0 1920 1120" role="img" aria-labelledby="title desc">
+<title id="title">Experimental framework: methods, datasets, metrics and evaluation design</title>
+<desc id="desc">Four-panel research overview aligned with the 2026-10-11 manuscript. All miniature graphics are schematics, not measured results. PaySim, IEEE-CIS and BankSim use dataset-specific protocols.</desc>
+<rect x="0" y="0" width="1920" height="1120" rx="0" fill="white" stroke="white" stroke-width="1.5"></rect>
+<text x="24" y="32" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" fill="#142330">A</text>
+<rect x="24" y="44" width="1872" height="470" rx="4" fill="#f5faff" stroke="#c8ddea" stroke-width="1.5"></rect>
+<rect x="24" y="44" width="1872" height="50" rx="3" fill="#48a3d0" stroke="#48a3d0" stroke-width="1.5"></rect>
+<text x="960.0" y="79" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="middle" fill="white">Methods and decision workflow</text>
+<text x="24" y="558" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" fill="#142330">B</text>
+<rect x="24" y="570" width="564" height="536" rx="4" fill="#f5faff" stroke="#c8ddea" stroke-width="1.5"></rect>
+<rect x="24" y="570" width="564" height="50" rx="3" fill="#48a3d0" stroke="#48a3d0" stroke-width="1.5"></rect>
+<text x="306.0" y="605" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="middle" fill="white">Datasets</text>
+<text x="604" y="558" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" fill="#142330">C</text>
+<rect x="604" y="570" width="600" height="536" rx="4" fill="#f5faff" stroke="#c8ddea" stroke-width="1.5"></rect>
+<rect x="604" y="570" width="600" height="50" rx="3" fill="#48a3d0" stroke="#48a3d0" stroke-width="1.5"></rect>
+<text x="904.0" y="605" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="middle" fill="white">Metrics</text>
+<text x="1220" y="558" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" fill="#142330">D</text>
+<rect x="1220" y="570" width="676" height="536" rx="4" fill="#f5faff" stroke="#c8ddea" stroke-width="1.5"></rect>
+<rect x="1220" y="570" width="676" height="50" rx="3" fill="#48a3d0" stroke="#48a3d0" stroke-width="1.5"></rect>
+<text x="1558.0" y="605" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="middle" fill="white">Evaluation design</text>
+<text x="414" y="129" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#142330">Features &amp; supervised learning</text>
+<text x="971" y="129" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="#142330">Datasets</text>
+<text x="1501" y="129" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#142330">Scores &amp; review decisions</text>
+<rect x="44" y="151" width="746" height="304" rx="4" fill="white" stroke="#c8ddea" stroke-width="1.5"></rect>
+<rect x="1135" y="151" width="741" height="304" rx="4" fill="white" stroke="#c8ddea" stroke-width="1.5"></rect>
+<text x="139" y="176" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#142330">Transaction</text>
+<text x="139" y="203" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#142330">features</text>
+<text x="322" y="176" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#142330">Past-only</text>
+<text x="322" y="203" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#142330">history</text>
+<rect x="76.0" y="219.0" width="25.2" height="21.0" rx="0" fill="#e4f2fb" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="101.2" y="219.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="126.4" y="219.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="151.6" y="219.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="176.8" y="219.0" width="25.2" height="21.0" rx="0" fill="#e4f2fb" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="76.0" y="240.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="101.2" y="240.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="126.4" y="240.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="151.6" y="240.0" width="25.2" height="21.0" rx="0" fill="#e4f2fb" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="176.8" y="240.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="76.0" y="261.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="101.2" y="261.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="126.4" y="261.0" width="25.2" height="21.0" rx="0" fill="#e4f2fb" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="151.6" y="261.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="176.8" y="261.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="76.0" y="282.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="101.2" y="282.0" width="25.2" height="21.0" rx="0" fill="#e4f2fb" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="126.4" y="282.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="151.6" y="282.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="176.8" y="282.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="76.0" y="303.0" width="25.2" height="21.0" rx="0" fill="#e4f2fb" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="101.2" y="303.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="126.4" y="303.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="151.6" y="303.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="176.8" y="303.0" width="25.2" height="21.0" rx="0" fill="#e4f2fb" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="259.0" y="219.0" width="25.2" height="21.0" rx="0" fill="#fae9d5" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="284.2" y="219.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="309.4" y="219.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="334.6" y="219.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="359.8" y="219.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="259.0" y="240.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="284.2" y="240.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="309.4" y="240.0" width="25.2" height="21.0" rx="0" fill="#fae9d5" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="334.6" y="240.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="359.8" y="240.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="259.0" y="261.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="284.2" y="261.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="309.4" y="261.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="334.6" y="261.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="359.8" y="261.0" width="25.2" height="21.0" rx="0" fill="#fae9d5" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="259.0" y="282.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="284.2" y="282.0" width="25.2" height="21.0" rx="0" fill="#fae9d5" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="309.4" y="282.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="334.6" y="282.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="359.8" y="282.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="259.0" y="303.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="284.2" y="303.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="309.4" y="303.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="334.6" y="303.0" width="25.2" height="21.0" rx="0" fill="#fae9d5" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="359.8" y="303.0" width="25.2" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<text x="230" y="282" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" text-anchor="middle" fill="#2384c4">+</text>
+<polyline points="397,269 431,269" fill="none" stroke="#2384c4" stroke-width="2.8" stroke-linejoin="round"></polyline>
+<polygon points="431,269 422.0,264.05 422.0,273.95" fill="#2384c4"></polygon>
+<rect x="441" y="225" width="148" height="88" rx="4" fill="#e4f2fb" stroke="#2384c4" stroke-width="1.5"></rect>
+<text x="515" y="260" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#142330">Supervised</text>
+<text x="515" y="291" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#142330">model</text>
+<polyline points="600,269 623,269" fill="none" stroke="#2384c4" stroke-width="2.8" stroke-linejoin="round"></polyline>
+<polygon points="623,269 614.0,264.05 614.0,273.95" fill="#2384c4"></polygon>
+<rect x="632" y="225" width="127" height="88" rx="4" fill="#e4f2fb" stroke="#2384c4" stroke-width="1.5"></rect>
+<text x="695.5" y="260" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#142330">Risk</text>
+<text x="695.5" y="291" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#142330">score</text>
+<text x="600" y="340" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#526474">Training labels used for fitting</text>
+<text x="417" y="395" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#142330">PaySim / IEEE-CIS: LightGBM, logistic regression</text>
+<text x="417" y="428" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#142330">BankSim: LightGBM, XGBoost</text>
+<rect x="846" y="194" width="252" height="40" rx="4" fill="#669b46" stroke="#669b46" stroke-width="1.5"></rect>
+<text x="972.0" y="222.5" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="white">PaySim</text>
+<line x1="846" y1="214" x2="823" y2="214" stroke="#2384c4" stroke-width="2.2"></line>
+<rect x="846" y="252" width="252" height="40" rx="4" fill="#ec8128" stroke="#ec8128" stroke-width="1.5"></rect>
+<text x="972.0" y="280.5" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="white">IEEE-CIS</text>
+<line x1="846" y1="272" x2="823" y2="272" stroke="#2384c4" stroke-width="2.2"></line>
+<rect x="846" y="310" width="252" height="40" rx="4" fill="#7965ad" stroke="#7965ad" stroke-width="1.5"></rect>
+<text x="972.0" y="338.5" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="white">BankSim</text>
+<line x1="846" y1="330" x2="823" y2="330" stroke="#2384c4" stroke-width="2.2"></line>
+<line x1="823" y1="214" x2="823" y2="330" stroke="#2384c4" stroke-width="2.2"></line>
+<polyline points="823,269 809,269 809,153 57,153 57,269 76,269" fill="none" stroke="#2384c4" stroke-width="2.8" stroke-linejoin="round"></polyline>
+<polygon points="76,269 67.0,264.05 67.0,273.95" fill="#2384c4"></polygon>
+<polyline points="759,269 791,269 791,376 1178,376 1178,324" fill="none" stroke="#2384c4" stroke-width="2.8" stroke-linejoin="round"></polyline>
+<polygon points="1178,324 1173.05,333.0 1182.95,333.0" fill="#2384c4"></polygon>
+<rect x="904" y="360" width="162" height="30" rx="0" fill="#f5faff" stroke="#f5faff" stroke-width="1.5"></rect>
+<text x="985" y="382" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#2384c4">Model scores</text>
+<rect x="1153.0" y="219.0" width="63.0" height="21.0" rx="0" fill="#83bde3" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="1216.0" y="219.0" width="63.0" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="1153.0" y="240.0" width="63.0" height="21.0" rx="0" fill="#a3cdea" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="1216.0" y="240.0" width="63.0" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="1153.0" y="261.0" width="63.0" height="21.0" rx="0" fill="#bfddf0" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="1216.0" y="261.0" width="63.0" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="1153.0" y="282.0" width="63.0" height="21.0" rx="0" fill="#d8eaf7" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="1216.0" y="282.0" width="63.0" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="1153.0" y="303.0" width="63.0" height="21.0" rx="0" fill="#edf5fb" stroke="#718393" stroke-width="0.8"></rect>
+<rect x="1216.0" y="303.0" width="63.0" height="21.0" rx="0" fill="white" stroke="#718393" stroke-width="0.8"></rect>
+<text x="1184.5" y="209" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#142330">score</text>
+<text x="1247.5" y="209" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#142330">rank</text>
+<polyline points="1290,269 1316,269" fill="none" stroke="#2384c4" stroke-width="2.8" stroke-linejoin="round"></polyline>
+<polygon points="1316,269 1307.0,264.05 1307.0,273.95" fill="#2384c4"></polygon>
+<rect x="1326" y="225" width="151" height="88" rx="4" fill="#e4f2fb" stroke="#2384c4" stroke-width="1.5"></rect>
+<text x="1401.5" y="260" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#142330">Review</text>
+<text x="1401.5" y="291" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#142330">selection</text>
+<polyline points="1488,269 1515,269" fill="none" stroke="#2384c4" stroke-width="2.8" stroke-linejoin="round"></polyline>
+<polygon points="1515,269 1506.0,264.05 1506.0,273.95" fill="#2384c4"></polygon>
+<rect x="1525" y="225" width="131" height="88" rx="4" fill="white" stroke="#2384c4" stroke-width="1.5"></rect>
+<text x="1590.5" y="253" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#142330">Review</text>
+<text x="1590.5" y="283" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#142330">list</text>
+<line x1="1547" y1="298" x2="1634" y2="298" stroke="#89badb" stroke-width="3"></line>
+<polyline points="1667,269 1694,269" fill="none" stroke="#2384c4" stroke-width="2.8" stroke-linejoin="round"></polyline>
+<polygon points="1694,269 1685.0,264.05 1685.0,273.95" fill="#2384c4"></polygon>
+<rect x="1704" y="225" width="151" height="88" rx="4" fill="#e4f2fb" stroke="#2384c4" stroke-width="1.5"></rect>
+<text x="1779.5" y="259" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#142330">TP / FP / FN</text>
+<text x="1779.5" y="289" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#142330">and metrics</text>
+<text x="1779" y="340" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#526474">Held-out labels</text>
+<text x="1505" y="395" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#142330">Threshold transfer or exact top-k</text>
+<text x="1505" y="428" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#142330">Decision rule specified per dataset</text>
+<text x="984" y="482" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#526474">Past-only history is constructed without fraud labels; all miniature graphics are schematics.</text>
+<rect x="44" y="651" width="208" height="64" rx="4" fill="#669b46" stroke="#669b46" stroke-width="1.5"></rect>
+<text x="148.0" y="692.86" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="white">PaySim</text>
+<text x="272" y="670" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#142330">6,362,620 synthetic</text>
+<text x="272" y="700" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#142330">mobile-money transactions</text>
+<text x="272" y="732" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#526474">Recipient history</text>
+<rect x="44" y="766" width="208" height="64" rx="4" fill="#ec8128" stroke="#ec8128" stroke-width="1.5"></rect>
+<text x="148.0" y="807.86" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="white">IEEE-CIS</text>
+<text x="272" y="785" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#142330">590,540 labeled</text>
+<text x="272" y="815" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#142330">transactions</text>
+<text x="272" y="847" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#526474">Card-related identifier history</text>
+<rect x="44" y="881" width="208" height="64" rx="4" fill="#7965ad" stroke="#7965ad" stroke-width="1.5"></rect>
+<text x="148.0" y="922.86" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="white">BankSim</text>
+<text x="272" y="900" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#142330">594,643 simulated</text>
+<text x="272" y="930" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#142330">transactions</text>
+<text x="272" y="962" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#526474">Merchant history</text>
+<rect x="43" y="1003" width="526" height="83" rx="3" fill="#e4f2fb" stroke="#c8ddea" stroke-width="1.5"></rect>
+<text x="58" y="1036" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#142330">Three dataset-specific evidence settings</text>
+<text x="58" y="1066" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#142330">Source dataset sizes shown above</text>
+<rect x="624" y="640" width="560" height="212" rx="3" fill="white" stroke="#c8ddea" stroke-width="1.5"></rect>
+<text x="637" y="672" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#142330">Ranking &amp; probability quality</text>
+<text x="643" y="721" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#142330">AP (primary ranking)</text>
+<text x="643" y="767" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#142330">Brier · log loss · ECE</text>
+<text x="643" y="799" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#526474">Calibration analysis:</text>
+<text x="643" y="827" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#526474">PaySim only</text>
+<line x1="980" y1="797" x2="1159" y2="797" stroke="#526474" stroke-width="1.5"></line>
+<line x1="980" y1="797" x2="980" y2="699" stroke="#526474" stroke-width="1.5"></line>
+<line x1="980" y1="797" x2="1159" y2="699" stroke="#2384c4" stroke-width="2"></line>
+<text x="1055" y="719" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#2384c4">Ideal</text>
+<text x="1069.5" y="827" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#142330">Predicted risk</text>
+<text x="964" y="748.0" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#142330" transform="rotate(-90 964 748.0)">Observed rate</text>
+<rect x="624" y="870" width="560" height="216" rx="3" fill="white" stroke="#c8ddea" stroke-width="1.5"></rect>
+<text x="637" y="902" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="start" fill="#142330">Review utility &amp; analytical cost</text>
+<text x="643" y="941" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start" fill="#142330">TP · Recall</text>
+<text x="643" y="973" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start" fill="#142330">Precision</text>
+<text x="643" y="1005" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start" fill="#142330">Actual alert rate</text>
+<text x="1023" y="935" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#142330">Top-k review list</text>
+<rect x="901" y="956" width="26" height="35" rx="0" fill="#a4d2ee" stroke="#5a9bc7" stroke-width="1"></rect>
+<rect x="927" y="956" width="26" height="35" rx="0" fill="#a4d2ee" stroke="#5a9bc7" stroke-width="1"></rect>
+<rect x="953" y="956" width="26" height="35" rx="0" fill="#a4d2ee" stroke="#5a9bc7" stroke-width="1"></rect>
+<rect x="979" y="956" width="26" height="35" rx="0" fill="#edf5fa" stroke="#5a9bc7" stroke-width="1"></rect>
+<rect x="1005" y="956" width="26" height="35" rx="0" fill="#edf5fa" stroke="#5a9bc7" stroke-width="1"></rect>
+<rect x="1031" y="956" width="26" height="35" rx="0" fill="#edf5fa" stroke="#5a9bc7" stroke-width="1"></rect>
+<rect x="1057" y="956" width="26" height="35" rx="0" fill="#edf5fa" stroke="#5a9bc7" stroke-width="1"></rect>
+<rect x="1083" y="956" width="26" height="35" rx="0" fill="#edf5fa" stroke="#5a9bc7" stroke-width="1"></rect>
+<rect x="1109" y="956" width="26" height="35" rx="0" fill="#edf5fa" stroke="#5a9bc7" stroke-width="1"></rect>
+<rect x="1135" y="956" width="26" height="35" rx="0" fill="#edf5fa" stroke="#5a9bc7" stroke-width="1"></rect>
+<line x1="901" y1="948" x2="979" y2="948" stroke="#2384c4" stroke-width="2"></line>
+<line x1="901" y1="943" x2="901" y2="950" stroke="#2384c4" stroke-width="2.2"></line>
+<line x1="979" y1="943" x2="979" y2="950" stroke="#2384c4" stroke-width="2.2"></line>
+<text x="643" y="1040" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#142330">Analytical cost = FP + c × FN</text>
+<text x="643" y="1069" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#142330">Primary cost setting: c = 100 (PaySim / IEEE-CIS)</text>
+<rect x="1240" y="640" width="308" height="202" rx="3" fill="white" stroke="#c8ddea" stroke-width="1.5"></rect>
+<text x="1253" y="672" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#142330">Strictly past history</text>
+<polyline points="1267,728 1517,728" fill="none" stroke="#526474" stroke-width="2" stroke-linejoin="round"></polyline>
+<polygon points="1517,728 1510.0,724.15 1510.0,731.85" fill="#526474"></polygon>
+<circle cx="1300" cy="728" r="6" fill="#2384c4"></circle>
+<circle cx="1389" cy="728" r="6" fill="#ec8128"></circle>
+<circle cx="1464" cy="728" r="6" fill="#9ba7b1"></circle>
+<text x="1300" y="707" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#2384c4">Past</text>
+<text x="1389" y="707" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#ec8128">Current</text>
+<text x="1464" y="707" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#526474">Future</text>
+<text x="1254" y="774" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#142330">Earlier time groups only</text>
+<text x="1254" y="801" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#142330">Exclude the current group</text>
+<text x="1254" y="828" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#142330">No fraud-label history</text>
+<rect x="1562" y="640" width="314" height="202" rx="3" fill="white" stroke="#c8ddea" stroke-width="1.5"></rect>
+<text x="1575" y="672" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#142330">Temporal validation</text>
+<text x="1576" y="699" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#142330">PaySim / IEEE-CIS</text>
+<text x="1577" y="732" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#526474">1</text>
+<rect x="1600" y="718" width="83" height="16" rx="0" fill="#c9e2f3" stroke="#84b5d7" stroke-width="0.8"></rect>
+<rect x="1683" y="718" width="24" height="16" rx="0" fill="#e5d7b6" stroke="#bca779" stroke-width="0.8"></rect>
+<rect x="1707" y="718" width="44" height="16" rx="0" fill="#7fb2d9" stroke="#3a82bb" stroke-width="0.8"></rect>
+<text x="1577" y="755" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#526474">2</text>
+<rect x="1600" y="741" width="105" height="16" rx="0" fill="#c9e2f3" stroke="#84b5d7" stroke-width="0.8"></rect>
+<rect x="1705" y="741" width="24" height="16" rx="0" fill="#e5d7b6" stroke="#bca779" stroke-width="0.8"></rect>
+<rect x="1729" y="741" width="44" height="16" rx="0" fill="#7fb2d9" stroke="#3a82bb" stroke-width="0.8"></rect>
+<text x="1577" y="778" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#526474">3</text>
+<rect x="1600" y="764" width="127" height="16" rx="0" fill="#c9e2f3" stroke="#84b5d7" stroke-width="0.8"></rect>
+<rect x="1727" y="764" width="24" height="16" rx="0" fill="#e5d7b6" stroke="#bca779" stroke-width="0.8"></rect>
+<rect x="1751" y="764" width="44" height="16" rx="0" fill="#7fb2d9" stroke="#3a82bb" stroke-width="0.8"></rect>
+<rect x="1580" y="791" width="13" height="13" rx="0" fill="#c9e2f3" stroke="#9bafbd" stroke-width="0.7"></rect>
+<text x="1598" y="804" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#526474">Train</text>
+<rect x="1666" y="791" width="13" height="13" rx="0" fill="#e5d7b6" stroke="#9bafbd" stroke-width="0.7"></rect>
+<text x="1684" y="804" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#526474">Val</text>
+<rect x="1741" y="791" width="13" height="13" rx="0" fill="#7fb2d9" stroke="#9bafbd" stroke-width="0.7"></rect>
+<text x="1759" y="804" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#526474">Test</text>
+<text x="1576" y="831" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#142330">BankSim: one test window</text>
+<rect x="1240" y="860" width="308" height="226" rx="3" fill="white" stroke="#c8ddea" stroke-width="1.5"></rect>
+<text x="1253" y="892" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" fill="#142330">Review decision rules</text>
+<text x="1254" y="924" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#142330">PaySim threshold rule:</text>
+<text x="1254" y="953" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#142330">Validation threshold → Test</text>
+<text x="1254" y="981" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#526474">Component audit: exact 3%</text>
+<text x="1254" y="1022" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#142330">IEEE-CIS / BankSim:</text>
+<text x="1254" y="1052" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#142330">Exact top-k (3% primary)</text>
+<rect x="1562" y="860" width="314" height="226" rx="3" fill="white" stroke="#c8ddea" stroke-width="1.5"></rect>
+<text x="1575" y="892" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start" fill="#142330">Uncertainty &amp; sensitivity</text>
+<text x="1576" y="926" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#142330">Paired block bootstrap</text>
+<rect x="1580" y="944" width="46" height="13" rx="0" fill="#b1d5ed" stroke="#9bafbd" stroke-width="0.7"></rect>
+<rect x="1633" y="944" width="46" height="13" rx="0" fill="#e6d8b8" stroke="#9bafbd" stroke-width="0.7"></rect>
+<rect x="1686" y="944" width="46" height="13" rx="0" fill="#b1d5ed" stroke="#9bafbd" stroke-width="0.7"></rect>
+<rect x="1739" y="944" width="46" height="13" rx="0" fill="#c2b5df" stroke="#9bafbd" stroke-width="0.7"></rect>
+<rect x="1792" y="944" width="46" height="13" rx="0" fill="#e6d8b8" stroke="#9bafbd" stroke-width="0.7"></rect>
+<rect x="1580" y="964" width="46" height="13" rx="0" fill="#b1d5ed" stroke="#9bafbd" stroke-width="0.7"></rect>
+<rect x="1633" y="964" width="46" height="13" rx="0" fill="#e6d8b8" stroke="#9bafbd" stroke-width="0.7"></rect>
+<rect x="1686" y="964" width="46" height="13" rx="0" fill="#b1d5ed" stroke="#9bafbd" stroke-width="0.7"></rect>
+<rect x="1739" y="964" width="46" height="13" rx="0" fill="#c2b5df" stroke="#9bafbd" stroke-width="0.7"></rect>
+<rect x="1792" y="964" width="46" height="13" rx="0" fill="#e6d8b8" stroke="#9bafbd" stroke-width="0.7"></rect>
+<text x="1576" y="1011" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#142330">Fitted models held fixed</text>
+<text x="1576" y="1042" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#142330">Conditional intervals</text>
+<text x="1576" y="1071" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="start" fill="#142330">Capacity / cost sensitivity</text>
 </svg>

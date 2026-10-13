@@ -1,154 +1,309 @@
-"""PaySim Fig. 3: paired effects with a numeric evidence column.
+"""Reproduce the corrected Fig. 3 from the adjacent frozen aggregate CSVs.
 
-Input: the adjacent fig3.json, copied byte-for-byte from the preceding redraw.
-Only saved fold and equal-fold aggregates are used. No new model, score,
-rank, AP, bootstrap distribution, confidence interval or observation is made.
-
-Design: aligned rows from gallery oa-bio-plos-pbio-3002856-f06; restrained
-point/interval hierarchy from oa-tech-pone-0258309-f05. Their densities,
-significance categories, odds-ratio baseline and data are not copied.
-The blue/teal palette is the user's already chosen palette. Test step ranges
-are transcribed from Table 1 of the current manuscript. The equal-fold
-summary remains secondary, with its own saved interval unchanged.
+Usage: python fig3.py --output-dir output
+No model fitting, score averaging, resampling, curve smoothing or interpolation.
 """
-from hashlib import sha256
+
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
 import json
-from typing import Any, cast
 from pathlib import Path
+from typing import cast
 
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.text import Text
+from matplotlib.backends.backend_agg import FigureCanvasAgg
 import numpy as np
+from matplotlib import font_manager
+from matplotlib.lines import Line2D
+from matplotlib.ticker import FuncFormatter
 
-HERE = Path(__file__).resolve().parent
-INPUT = HERE / "fig3.json"
-EXPECTED_INPUT_SHA256 = "2a14d977bef5f55c9dc5aff8303870bc324ae15847b1d3c23e24517abc6ebe29"
-BLUE, TEAL, INK, MUTED = "#244F72", "#078A8F", "#24323C", "#60707B"
-PALE, LINE = "#F1F5F7", "#D8E1E6"
-STEP_LABELS = ["steps 239–281", "steps 324–354", "steps 399–743", "secondary"]
-
-
-def signed(value, digits):
-    return f"{value:+.{digits}f}".replace("-", "−")
-
-
-def interval_text(row, digits):
-    return f"[{row['lower']:.{digits}f}, {row['upper']:.{digits}f}]".replace("-", "−")
+ROOT = Path(__file__).resolve().parent
+COLORS = {1: "#AD6345", 2: "#8A7195", 3: "#667D56"}
+MARKERS = {1: "o", 2: "s", 3: "^"}
+INK = "#27343E"
+MUTED = "#60717B"
+GRAY = "#7B878E"
+STEPS = {1: "239–281", 2: "324–354", 3: "399–743"}
 
 
-def main():
-    data_bytes = INPUT.read_bytes()
-    assert sha256(data_bytes).hexdigest() == EXPECTED_INPUT_SHA256, "Input aggregates changed"
-    data = json.loads(data_bytes)
-    assert data["contrast"] == "PTHW - P0" and data["point_count"] == 8
-    assert [panel["metric"] for panel in data["panels"]] == ["delta_recall", "delta_pr_auc"]
-    expected_labels = ["Fold 1", "Fold 2", "Fold 3", "Equal-fold"]
-    for panel in data["panels"]:
-        assert [row["label"] for row in panel["points"]] == expected_labels
-        assert panel["points"][-1]["summary"] == "secondary"
-        for row in panel["points"]:
-            assert row["confidence"] == .95
-            assert row["lower"] <= row["estimate"] <= row["upper"]
-    plt.rcParams.update({
-        "font.family": "sans-serif", "font.sans-serif": ["Arial", "DejaVu Sans"],
-        "font.size": 8.2, "text.color": INK, "axes.labelcolor": INK,
-        "xtick.color": MUTED, "ytick.color": MUTED, "axes.linewidth": .6,
-        "pdf.fonttype": 42, "ps.fonttype": 42, "svg.fonttype": "none",
-    })
-    fig = plt.figure(figsize=(data["width_in"], data["height_in"]))
-    bottom, body_height, n = .22, .57, 4
-    positions = [(.158, .249, .420, .569), (.597, .221, .829, .990)]
-    fig.text(.015, .98, "PaySim  |  PTHW − P0", fontsize=10.2, fontweight="bold", va="top")
-    fig.text(.985, .97, "Paired effects", ha="right", fontsize=8.3, color=MUTED, va="top")
-    fig.text(.015, .85, "Test window", fontsize=8, fontweight="bold")
-    fig.add_artist(plt.Rectangle((.012, bottom), .979, body_height / n,
-                                transform=fig.transFigure, color=PALE, zorder=-10))
-    row_centers = [bottom + body_height * (n - .5 - i) / n for i in range(n)]
-    for i, label in enumerate(expected_labels):
-        label = "Equal-fold*" if i == n - 1 else label
-        fig.text(.015, row_centers[i] + .023, label, fontsize=8.3, va="center",
-                 fontweight="bold" if i == n - 1 else "normal")
-        fig.text(.015, row_centers[i] - .033, STEP_LABELS[i], fontsize=7.2, va="center", color=MUTED)
-    audit_points, numeric_artists = [], []
-    for metric, (panel, position, heading, color) in enumerate(zip(
-            data["panels"], positions, ["(a) Recall", "(b) Average precision"], [BLUE, TEAL], strict=True)):
-        x, plot_width, text_left, text_right = position
-        ax = fig.add_axes((x, bottom, plot_width, body_height))
-        ax.set_ylim(3.5, -.5)
-        ax.set_yticks([])
-        ax.set_axisbelow(True)
-        ax.spines[["top", "right", "left"]].set_visible(False)
-        ax.spines["bottom"].set_color("#9BAAB3")
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def read_csv(path: Path) -> list[dict[str, str]]:
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        return list(csv.DictReader(stream))
+
+
+def signed(value: float, decimals: int) -> str:
+    return f"{value:+.{decimals}f}".replace("-", "−")
+
+
+def style_axes(ax: plt.Axes) -> None:
+    ax.spines[["top", "right"]].set_visible(False)
+    for name in ("left", "bottom"):
+        ax.spines[name].set_color("#B3BDC2")
+        ax.spines[name].set_linewidth(0.55)
+    ax.tick_params(length=3, width=0.55, color="#89969D", pad=4)
+    ax.set_axisbelow(True)
+
+
+def draw_effects(ax: plt.Axes, rows: list[dict[str, str]], metric: str) -> None:
+    selected = [row for row in rows if row["metric"] == metric]
+    order = ["1", "2", "3", "equal_fold"]
+    assert len(selected) == 4
+    by_fold = {row["fold"]: row for row in selected}
+    assert set(by_fold) == set(order)
+    for y, key in zip([3, 2, 1, 0], order, strict=True):
+        row = by_fold[key]
+        mean = float(row["estimate"])
+        lo, hi = float(row["ci_lower"]), float(row["ci_upper"])
+        assert lo <= mean <= hi
+        color = GRAY if key == "equal_fold" else COLORS[int(key)]
+        marker = "D" if key == "equal_fold" else MARKERS[int(key)]
+        ax.axhline(y, color="#EEF1F2", lw=0.55, zorder=0)
+        ax.errorbar(
+            mean,
+            y,
+            xerr=[[mean - lo], [hi - mean]],
+            fmt=marker,
+            color=color,
+            markerfacecolor=color,
+            markeredgecolor="white",
+            markeredgewidth=0.55,
+            markersize=5.2,
+            elinewidth=1.05,
+            capsize=2.8,
+            capthick=0.85,
+            zorder=4,
+        )
+        ax.annotate(
+            signed(mean, 3 if metric == "recall" else 4),
+            (mean, y),
+            xytext=(0, 9),
+            textcoords="offset points",
+            ha="center",
+            va="bottom",
+            fontsize=8.5,
+            weight="bold",
+            color=color,
+            zorder=5,
+            bbox={"facecolor": "#F3F5F6" if key == "equal_fold" else "white", "edgecolor": "none", "boxstyle": "square,pad=0.13"},
+        )
+    ax.axhspan(-0.48, 0.48, color="#F3F5F6", zorder=-2)
+    ax.axhline(0.51, color="#D3DADF", lw=0.6, zorder=0)
+    ax.axvline(0, color="#83919A", lw=0.85, zorder=2)
+    ax.set_ylim(-0.58, 3.65)
+    ax.set_yticks([3, 2, 1, 0])
+    if metric == "recall":
+        ax.set_yticklabels([f"Fold {fold}\n{STEPS[fold]}" for fold in [1, 2, 3]] + ["Equal-fold\nsecondary"])
+        ax.set_xlim(-5, 76)
+        ax.set_xticks([0, 20, 40, 60])
+        ax.set_xlabel("Recall difference (pp)", labelpad=6)
+    else:
+        ax.set_yticklabels([])
         ax.tick_params(axis="y", length=0)
-        ax.tick_params(axis="x", length=2.7, width=.55, labelsize=7.6)
-        ax.grid(axis="x", color="#E6ECEF", linewidth=.45)
-        ax.axvline(0, color="#778892", lw=.8, ls=(0, (3, 2)), zorder=2)
-        ax.set_facecolor((1, 1, 1, 0))
-        ax.axhspan(2.5, 3.5, color=PALE, zorder=-1)
-        if metric == 0:
-            ax.set_xlim(-4, 74)
-            ax.set_xticks([0, 20, 40, 60])
-        else:
-            ax.set_xlim(-.17, .39)
-            ax.set_xticks([-.1, 0, .1, .2, .3])
-            ax.set_xticklabels(["−0.1", "0", "0.1", "0.2", "0.3"])
-        fig.text(x, .85, heading, fontsize=8.5, fontweight="bold", color=color)
-        fig.text((text_left + text_right) / 2, .85, "Estimate [95% CI]", fontsize=7.1,
-                 fontweight="bold", ha="center")
-        digits = 2 if metric == 0 else 4
-        for index, (row_y, row) in enumerate(zip(row_centers, panel["points"], strict=True)):
-            point_color = MUTED if index == 3 else color
-            xerr = np.array([[row["estimate"] - row["lower"]], [row["upper"] - row["estimate"]]])
-            ax.errorbar(row["estimate"], index, xerr=xerr,
-                        fmt=["o", "s", "^", "D"][index], color=point_color,
-                        markersize=4.9, markeredgewidth=.65, capsize=2.6,
-                        elinewidth=1.25, capthick=.75, zorder=4)
-            numeric_artists.append((
-                fig.text((text_left + text_right) / 2, row_y + .024, signed(row["estimate"], digits),
-                         fontsize=8.6, fontweight="bold", va="center", ha="center", color=point_color),
-                text_left, text_right))
-            numeric_artists.append((
-                fig.text((text_left + text_right) / 2, row_y - .034, interval_text(row, digits),
-                         fontsize=7.5, va="center", ha="center", color=MUTED),
-                text_left, text_right))
-            assert ax.get_xlim()[0] < row["lower"] <= row["upper"] < ax.get_xlim()[1]
-            audit_points.append({"metric": panel["metric"], **row,
-                                 "display_estimate": signed(row["estimate"], digits),
-                                 "display_interval": interval_text(row, digits)})
-        ax.set_xlabel("Recall difference (pp)" if metric == 0 else "AP difference", fontsize=7.9, labelpad=4.4)
-    fig.add_artist(plt.Line2D([.012, .990], [.825, .825], transform=fig.transFigure, color=LINE, lw=.65))
-    fig.text(.015, .012,
-             "Points: five-seed paired means  ·  Bars: 95% within-window intervals  ·  *Secondary summary",
-             fontsize=7.1, color=MUTED, va="bottom")
+        ax.spines["left"].set_visible(False)
+        ax.set_xlim(-0.16, 0.40)
+        ax.set_xticks([-0.1, 0, 0.1, 0.2, 0.3, 0.4])
+        ax.xaxis.set_major_formatter(FuncFormatter(lambda value, _: "0" if abs(value) < 1e-12 else f"{value:.1f}".replace("-", "−")))
+        ax.set_xlabel("AP difference (0–1 scale)", labelpad=6)
+
+
+def make_figure(output_dir: Path) -> dict:
+    effects_path = ROOT / "data" / "primary_effects.csv"
+    curves_path = ROOT / "data" / "capacity_mean_points.csv"
+    effects = read_csv(effects_path)
+    curves = read_csv(curves_path)
+    assert len(effects) == 8
+    assert len(curves) == 3 * 2 * 501
+    available_fonts = {font.name for font in font_manager.fontManager.ttflist}
+    font = "Arial" if "Arial" in available_fonts else "DejaVu Sans"
+    plt.rcParams.update(
+        {
+            "font.family": font,
+            "font.size": 8.5,
+            "axes.labelsize": 9,
+            "xtick.labelsize": 8,
+            "ytick.labelsize": 8.5,
+            "text.color": INK,
+            "axes.labelcolor": INK,
+            "xtick.color": MUTED,
+            "ytick.color": INK,
+            "axes.unicode_minus": True,
+            "svg.fonttype": "none",
+            "pdf.fonttype": 42,
+            "ps.fonttype": 42,
+            "savefig.facecolor": "white",
+            "savefig.edgecolor": "white",
+        }
+    )
+    fig = plt.figure(figsize=(167.64 / 25.4, 180 / 25.4), facecolor="white")
+    fig.text(0.045, 0.975, "PaySim | combined-scheme effects and capture capacity", fontsize=11.1, weight="bold", va="top")
+    fig.text(0.045, 0.944, "LightGBM · PTHW versus P0 · five-seed paired means", fontsize=8.5, color=MUTED, va="top")
+    fig.text(0.045, 0.921, "PTHW = current-time context + history + class weighting", fontsize=8, color=MUTED, va="top")
+
+    ax_a = fig.add_axes((0.17, 0.585, 0.355, 0.265))
+    ax_b = fig.add_axes((0.635, 0.585, 0.320, 0.265))
+    for ax in [ax_a, ax_b]:
+        style_axes(ax)
+    draw_effects(ax_a, effects, "recall")
+    draw_effects(ax_b, effects, "ap")
+    fig.text(0.045, 0.887, "a", fontsize=12, weight="bold")
+    fig.text(0.17, 0.887, "Recall effect", fontsize=10, weight="bold")
+    fig.text(0.17, 0.866, "Validation threshold → Test", fontsize=8, color=MUTED)
+    fig.text(0.565, 0.887, "b", fontsize=12, weight="bold")
+    fig.text(0.635, 0.887, "Average precision effect", fontsize=10, weight="bold")
+    fig.text(0.635, 0.866, "Platt score stage", fontsize=8, color=MUTED)
+    fig.text(0.17, 0.516, "Whiskers: pointwise 95% paired moving-block intervals.", fontsize=8, color=MUTED)
+
+    fig.text(0.045, 0.462, "c", fontsize=12, weight="bold")
+    fig.text(0.17, 0.462, "Capture at fixed Test capacity", fontsize=10, weight="bold")
+    fig.text(0.17, 0.441, "Completed-window ranking · Platt scores · K = ceil(qN)", fontsize=8, color=MUTED)
+    ax_c = fig.add_axes((0.17, 0.151, 0.785, 0.265))
+    style_axes(ax_c)
+    ax_c.set_xlim(0, 5)
+    ax_c.set_ylim(0, 100)
+    ax_c.set_xticks([0, 1, 2, 3, 4, 5])
+    ax_c.set_yticks([0, 20, 40, 60, 80, 100])
+    ax_c.set_xlabel("Exact Test review capacity (%)", labelpad=6)
+    ax_c.set_ylabel("Recall (%)", labelpad=7)
+    ax_c.grid(axis="y", color="#E8ECEE", lw=0.55)
+    ax_c.axvline(3, color="#B0B9BE", lw=0.8, ls=(0, (3, 3)), zorder=1)
+    ax_c.text(3.055, 96, "3%", fontsize=8, color=MUTED, va="top")
+    plot_audit = []
+    for fold in [1, 2, 3]:
+        for scheme in ["P0", "PTHW"]:
+            selected = sorted(
+                [r for r in curves if int(r["fold"]) == fold and r["scheme"] == scheme],
+                key=lambda r: float(r["capacity_pct"]),
+            )
+            assert len(selected) == 501
+            x = np.array([float(r["capacity_pct"]) for r in selected])
+            y = np.array([100 * float(r["mean_recall"]) for r in selected])
+            assert np.allclose(x, np.arange(501) / 100, rtol=0, atol=1e-12)
+            assert np.all(np.diff(y) >= -1e-10)
+            assert y[0] == 0 and np.all((y >= 0) & (y <= 100))
+            assert all(int(r["seed_count"]) == 5 for r in selected)
+            ax_c.step(
+                x,
+                y,
+                where="post",
+                color=COLORS[fold],
+                lw=1.25,
+                ls="-" if scheme == "PTHW" else (0, (4, 2.5)),
+                alpha=1.0 if scheme == "PTHW" else 0.87,
+                zorder=4 if scheme == "PTHW" else 3,
+            )
+            if scheme == "PTHW":
+                ax_c.plot(
+                    [x[300]],
+                    [y[300]],
+                    marker=MARKERS[fold],
+                    color=COLORS[fold],
+                    markersize=4.5,
+                    markeredgecolor="white",
+                    markeredgewidth=0.55,
+                    zorder=5,
+                )
+            plot_audit.append(
+                {
+                    "fold": fold,
+                    "scheme": scheme,
+                    "points": len(x),
+                    "recall_at_3_pct": float(y[300]),
+                    "recall_at_5_pct": float(y[500]),
+                    "monotonic": True,
+                }
+            )
+    handles = [Line2D([], [], color=COLORS[fold], marker=MARKERS[fold], lw=0, markersize=4.5, label=f"Fold {fold}") for fold in [1, 2, 3]]
+    handles += [Line2D([], [], color=INK, lw=1.25, label="PTHW"), Line2D([], [], color=INK, lw=1.25, ls=(0, (4, 2.5)), label="P0")]
+    legend = ax_c.legend(
+        handles=handles,
+        loc="lower right",
+        ncol=2,
+        fontsize=8,
+        frameon=True,
+        facecolor="white",
+        edgecolor="none",
+        framealpha=0.96,
+        handlelength=1.8,
+        columnspacing=1.2,
+        handletextpad=0.6,
+        borderpad=0.45,
+        labelspacing=0.45,
+    )
+    legend.set_zorder(8)
+    fig.text(0.17, 0.079, "Panels a–b: paired effects. Panel c: a separate exact-capacity readout.", fontsize=8, color=MUTED)
+    fig.text(0.17, 0.056, "Curve points are calculated from saved predictions; no smoothing or curve intervals.", fontsize=8, color=MUTED)
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    stem = output_dir / "fig3"
     fig.canvas.draw()
-    renderer = cast(Any, fig.canvas).get_renderer()
-    numeric_checks = []
-    for artist, left, right in numeric_artists:
-        bounds = artist.get_window_extent(renderer).transformed(fig.transFigure.inverted())
-        assert bounds.x0 >= left - .002 and bounds.x1 <= right + .002, f"Numeric column overflow: {artist.get_text()}"
-        numeric_checks.append({"text": artist.get_text(), "bbox": list(bounds.bounds)})
-    for artist in fig.findobj(match=Text):
-        if not artist.get_visible() or not artist.get_text() or artist.axes is not None:
+    renderer = cast(FigureCanvasAgg, fig.canvas).get_renderer()
+    bounds = fig.bbox
+    clipped = []
+    for label in fig.findobj(matplotlib.text.Text):
+        if not label.get_visible() or not label.get_text():
             continue
-        bounds = artist.get_window_extent(renderer).transformed(fig.transFigure.inverted())
-        assert bounds.x0 >= -.002 and bounds.x1 <= 1.002 and bounds.y0 >= -.002 and bounds.y1 <= 1.002, artist.get_text()
-    for extension in ["png", "pdf", "svg"]:
-        fig.savefig(HERE / f"fig3.{extension}", dpi=450, facecolor="white")
+        box = label.get_window_extent(renderer)
+        if (
+            box.width > 0
+            and box.height > 0
+            and (box.x0 < bounds.x0 - 1 or box.y0 < bounds.y0 - 1 or box.x1 > bounds.x1 + 1 or box.y1 > bounds.y1 + 1)
+        ):
+            clipped.append(label.get_text())
+    assert not clipped, f"Text extends beyond the figure: {clipped}"
+    fig.savefig(
+        stem.with_suffix(".pdf"),
+        metadata={"Title": "PaySim combined-scheme effects and capture capacity", "Author": "", "Creator": "Matplotlib"},
+    )
+    fig.savefig(
+        stem.with_suffix(".svg"), metadata={"Title": "PaySim combined-scheme effects and capture capacity", "Creator": "Matplotlib"}
+    )
+    fig.savefig(stem.with_suffix(".png"), dpi=600)
+    fig.savefig(output_dir / "fig3_preview.png", dpi=180)
     plt.close(fig)
     audit = {
-        "input_sha256": EXPECTED_INPUT_SHA256,
-        "unchanged_estimates_and_interval_pairs": len(audit_points),
-        "points": audit_points, "numeric_column_checks": numeric_checks,
-        "matplotlib_version": matplotlib.__version__,
-        "no_transactions_labels_predictions_or_bootstrap_draws_opened": True,
-        "no_new_statistics_or_significance_encoding": True,
-        "same_document_frame_width_and_height": True,
-        "visual_review": "PENDING",
+        "status": "PASS",
+        "size_mm": [167.64, 180],
+        "font": font,
+        "minimum_text_pt": 8,
+        "effect_records": len(effects),
+        "curve_records": len(curves),
+        "curve_groups": plot_audit,
+        "source_hashes": {str(path.relative_to(ROOT)): sha256(path) for path in [effects_path, curves_path]},
+        "output_hashes": {path.name: sha256(path) for path in output_dir.glob("fig3*")},
+        "text_clipped": clipped,
+        "independent_effect_axes": True,
+        "curve_intervals": "not computed; not shown",
+        "smoothing": False,
     }
-    (HERE / "fig3_verification.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("Fig. 3: all 8 saved effects/intervals retained; PNG, vector PDF, SVG exported.")
+    (output_dir / "fig3_validation.json").write_text(json.dumps(audit, indent=2), encoding="utf-8")
+    return audit
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", type=Path, default=ROOT)
+    args = parser.parse_args()
+    audit = make_figure(args.output_dir)
+    print(
+        json.dumps(
+            {
+                "status": audit["status"],
+                "output_dir": str(args.output_dir),
+                "effect_records": audit["effect_records"],
+                "curve_records": audit["curve_records"],
+            }
+        )
+    )
 
 
 if __name__ == "__main__":

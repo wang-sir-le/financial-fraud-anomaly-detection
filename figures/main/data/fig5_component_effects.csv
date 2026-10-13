@@ -1,0 +1,19 @@
+contrast,fold,workflow,estimate,ci_lower,ci_upper
+M1-M0,1,LightGBM,+3.4,-9.0,13.6
+M1-M0,1,Logistic,-7.0,-17.0,3.0
+M1-M0,1,Logistic minus LightGBM,-10.4,-23.8,4.6
+M1-M0,2,LightGBM,-3.4,-12.8,7.6
+M1-M0,2,Logistic,+14.0,1.0,29.0
+M1-M0,2,Logistic minus LightGBM,+17.4,0.0,35.6
+M1-M0,3,LightGBM,-81.6,-95.2,-56.0
+M1-M0,3,Logistic,-2.0,-5.0,10.0
+M1-M0,3,Logistic minus LightGBM,+79.6,58.8,98.0
+M2-M1,1,LightGBM,-23.2,-34.8,-10.4
+M2-M1,1,Logistic,+11.0,0.0,24.0
+M2-M1,1,Logistic minus LightGBM,+34.2,16.6,50.6
+M2-M1,2,LightGBM,+5.0,-4.8,13.8
+M2-M1,2,Logistic,+1.0,-10.0,11.0
+M2-M1,2,Logistic minus LightGBM,-4.0,-18.0,9.2
+M2-M1,3,LightGBM,+100.2,72.6,117.0
+M2-M1,3,Logistic,+1.0,-9.0,14.0
+M2-M1,3,Logistic minus LightGBM,-99.2,-115.8,-71.6

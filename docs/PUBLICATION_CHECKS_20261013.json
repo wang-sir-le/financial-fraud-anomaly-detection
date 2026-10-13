@@ -1,0 +1,121 @@
+{
+  "publication_date": "2026-10-13",
+  "status": "PASS",
+  "prior_commit": "b52524caf6a0e84e1bf1d6ce22f833c52122724e",
+  "source_provenance_records_verified": 582,
+  "adopted_main_pngs_verified_against_local_manuscript": 6,
+  "recorded_main_source_exports_verified": 18,
+  "final_standalone_main_script_executions": [
+    {
+      "figure": 1,
+      "status": "PASS",
+      "script_sha256": "37be2a8a90250d6f2a172b079240e16828eda276c1dd1a69baede4c8342388f5",
+      "execution_script_sha256": "37be2a8a90250d6f2a172b079240e16828eda276c1dd1a69baede4c8342388f5",
+      "recorded_adopted_PNG_unchanged": true,
+      "PNG_byte_equal_to_adopted": true,
+      "SVG_byte_equal_to_recorded": true
+    },
+    {
+      "figure": 2,
+      "status": "PASS",
+      "script_sha256": "9c03ffe292f9dbe0cf98e0ed45a54c8400c7050b8f3bd348ca4a84715382e6dc",
+      "execution_script_sha256": "9c03ffe292f9dbe0cf98e0ed45a54c8400c7050b8f3bd348ca4a84715382e6dc",
+      "recorded_adopted_PNG_unchanged": true,
+      "SVG_byte_equal_to_recorded": true
+    },
+    {
+      "figure": 3,
+      "status": "PASS",
+      "script_sha256": "2c7881a05afdc42d551b80d3806326c4ebb4a7e5406d107c0c461fa2ec0aeb40",
+      "execution_script_sha256": "2c7881a05afdc42d551b80d3806326c4ebb4a7e5406d107c0c461fa2ec0aeb40",
+      "recorded_adopted_PNG_unchanged": true,
+      "PNG_byte_equal_to_adopted": true
+    },
+    {
+      "figure": 4,
+      "status": "PASS",
+      "script_sha256": "3258644ef1af59b1a3e52f65f6b49b4b1cb9b09c83ab13ffe1d7376186e80363",
+      "execution_script_sha256": "3258644ef1af59b1a3e52f65f6b49b4b1cb9b09c83ab13ffe1d7376186e80363",
+      "recorded_adopted_PNG_unchanged": true,
+      "PNG_byte_equal_to_adopted": true,
+      "SVG_byte_equal_to_recorded": true
+    },
+    {
+      "figure": 5,
+      "status": "PASS",
+      "script_sha256": "949ecc597d5dc202ce43ae7c4f461a0ed511349f548b2ea4e256fe25e9d1b643",
+      "execution_script_sha256": "949ecc597d5dc202ce43ae7c4f461a0ed511349f548b2ea4e256fe25e9d1b643",
+      "recorded_adopted_PNG_unchanged": true,
+      "PNG_byte_equal_to_adopted": true,
+      "execution_directory": "current_execution/fig5",
+      "SVG_byte_equal_to_recorded": false
+    },
+    {
+      "figure": 6,
+      "status": "PASS",
+      "script_sha256": "ecb7f9c10ca08d4a5167819937e5b8e5aa17b442ccfd0a67b2cf3a8184bc9454",
+      "execution_script_sha256": "ecb7f9c10ca08d4a5167819937e5b8e5aa17b442ccfd0a67b2cf3a8184bc9454",
+      "recorded_adopted_PNG_unchanged": true,
+      "PNG_byte_equal_to_adopted": true,
+      "execution_directory": "current_execution/fig6"
+    }
+  ],
+  "figure_execution_runtime": {
+    "python": "3.11.9",
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.4"
+  },
+  "static_checks": {
+    "ruff": {
+      "version": "0.16.8",
+      "status": "PASS",
+      "scripts": 6
+    },
+    "mypy": {
+      "version": "2.3.1",
+      "librt": "0.16.0",
+      "status": "PASS",
+      "scripts": 6
+    },
+    "bandit": {
+      "version": "1.9.4",
+      "medium_high_findings": 0,
+      "analysis_errors": 0,
+      "scripts": 6
+    }
+  },
+  "data_checks": {
+    "figure3_primary_records": 8,
+    "figure3_mean_capacity_rows": 3006,
+    "figure3_seed_capacity_aggregate_rows": 15030,
+    "figure3_negative_capacity_comparisons_retained": 59,
+    "figure4_unique_effects": 6,
+    "figure4_exchange_rows": 4,
+    "figure5_combined_metric_rows": 9,
+    "figure5_component_rows": 18,
+    "figure5_reported_numeric_values": 81,
+    "figure5_precision": "Reported Table9/Table10 decimals preserved",
+    "figure6_scenario_rows": 63,
+    "scientific_source_cells_preserved": true,
+    "primary_effect_csv_path_only_metadata_adaptation": true
+  },
+  "historical_files_unchanged_against_prior_commit": 598,
+  "historical_october8_tests_rerun": false,
+  "new_real_model_fits": 0,
+  "new_real_predictions": 0,
+  "new_bootstrap_draws": 0,
+  "figure3_profile_stage": "Previously calculated descriptive exact-capacity aggregates from saved Platt scores; no ranking repeated during publication",
+  "independent_external_raw_to_model_reproduction": false,
+  "scope": {
+    "manuscript_files": 0,
+    "source_dataset_files": 0,
+    "transaction_caches_or_model_states": 0,
+    "full_manuscript_page_images": 0,
+    "fonts_redistributed": 0
+  },
+  "limitations": [
+    "Figure 2 adopted PNG is a browser export; its standalone native SVG is exact, raster identity depends on fonts/renderers.",
+    "Figure 5 preserves reported table precision; original higher-precision experimental records remain in the aggregate archives.",
+    "Recorded bytes and aggregate drawing checks do not establish independent real-data/model reproduction."
+  ]
+}

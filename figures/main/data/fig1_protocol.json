@@ -1,0 +1,479 @@
+{
+  "scope": "Read-only verification of current main manuscript and its unchanged current supplement; no model fit, score loading or experiment execution.",
+  "sources": [
+    {
+      "path": "${WORKSPACE}/experiment/outputs/kais_fig2_reference_redesign_20261011/run_02/主稿_Fig02实验图标版.docx",
+      "sha256": "1fb8bf37b7bf2debddc69d8fc97e86772f2c5f9b2b0faf1ffcb00f0c2d47afe1"
+    },
+    {
+      "path": "${WORKSPACE}/experiment/outputs/kais_fig1_reference_redesign_20261011/run_01/补充材料_现稿.docx",
+      "sha256": "df59c3cbb06a528a699e244bb744d4d7dd3435484c43ae21fd0977b038924531"
+    }
+  ],
+  "pay_sim": {
+    "total_rows": 6362620,
+    "total_steps": [
+      1,
+      743
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "train": [
+          1,
+          205
+        ],
+        "validation": [
+          206,
+          238
+        ],
+        "calibration": [
+          206,
+          226
+        ],
+        "threshold_selection": [
+          227,
+          238
+        ],
+        "test": [
+          239,
+          281
+        ],
+        "test_steps": 43,
+        "train_rows": 2538675,
+        "validation_rows": 639263,
+        "test_rows": 642661
+      },
+      {
+        "fold": 2,
+        "train": [
+          1,
+          281
+        ],
+        "validation": [
+          282,
+          323
+        ],
+        "calibration": [
+          282,
+          302
+        ],
+        "threshold_selection": [
+          303,
+          323
+        ],
+        "test": [
+          324,
+          354
+        ],
+        "test_steps": 31,
+        "train_rows": 3820599,
+        "validation_rows": 642988,
+        "test_rows": 605510
+      },
+      {
+        "fold": 3,
+        "train": [
+          1,
+          354
+        ],
+        "validation": [
+          355,
+          398
+        ],
+        "calibration": [
+          355,
+          376
+        ],
+        "threshold_selection": [
+          377,
+          398
+        ],
+        "test": [
+          399,
+          743
+        ],
+        "test_steps": 345,
+        "train_rows": 5069097,
+        "validation_rows": 656800,
+        "test_rows": 636723
+      }
+    ],
+    "split_source": {
+      "document": "main",
+      "paragraphs_zero_based": [
+        35,
+        41
+      ]
+    },
+    "row_count_and_calibration_boundaries_source": {
+      "document": "supplement",
+      "table": "S2",
+      "table_zero_based": 1
+    },
+    "models": {
+      "original": "LightGBM; five fixed seeds 42,52,62,72,82",
+      "subsequent_post_hoc": "LogisticRegression; one converged fit per condition; distinct training-only preprocessing; not another five-seed replication",
+      "source": {
+        "document": "main",
+        "paragraphs_zero_based": [
+          47,
+          50,
+          51,
+          98
+        ]
+      }
+    },
+    "feature_sets": "P0 raw: step/type/amount; PT current-time transforms; PH recipient history; PTH both; PTHW PTH with positive-class weight 2. Separate weight-5 sensitivity.",
+    "history": "Strictly earlier recipient steps, windows 1/6/24; no same-step or future transactions; recipient names only grouping keys; labels not inputs.",
+    "primary_decision": "Platt fitted on earlier Validation; analytical-cost-minimising threshold selected on later Validation under alert rate <=3%; unchanged threshold transferred to Test. Test alert count is not forced to 3%.",
+    "separate_capture_estimand": "Post-hoc exact completed-window 3% capture contrasts separately rank ceil(0.03*N) per Test window; Platt primary component scores, raw/clipped retained.",
+    "decision_source": {
+      "document": "main",
+      "paragraphs_zero_based": [
+        54,
+        55,
+        57,
+        71,
+        72
+      ]
+    }
+  },
+  "ieee_cis": {
+    "total_labelled_rows": 590540,
+    "unlabelled_competition_test_used": false,
+    "identity_table_merged": false,
+    "time_field": "TransactionDT; relative elapsed-time field, not calendar dates.",
+    "folds": [
+      {
+        "fold": 1,
+        "train": [
+          86400,
+          5592303
+        ],
+        "validation": [
+          5592304,
+          7306520
+        ],
+        "test": [
+          7306535,
+          8745772
+        ],
+        "train_rows": 236216,
+        "validation_rows": 59054,
+        "test_rows": 59054,
+        "train_percent_of_full_labelled_rows": 40.0,
+        "validation_percent_of_full_labelled_rows": 10.0,
+        "test_percent_of_full_labelled_rows": 10.0
+      },
+      {
+        "fold": 2,
+        "train": [
+          86400,
+          8745772
+        ],
+        "validation": [
+          8745798,
+          10437996
+        ],
+        "test": [
+          10438003,
+          12192842
+        ],
+        "train_rows": 354324,
+        "validation_rows": 59054,
+        "test_rows": 59054,
+        "train_percent_of_full_labelled_rows": 60.0,
+        "validation_percent_of_full_labelled_rows": 10.0,
+        "test_percent_of_full_labelled_rows": 10.0
+      },
+      {
+        "fold": 3,
+        "train": [
+          86400,
+          12192842
+        ],
+        "validation": [
+          12192900,
+          13990904
+        ],
+        "test": [
+          13990941,
+          15811131
+        ],
+        "train_rows": 472432,
+        "validation_rows": 59054,
+        "test_rows": 59054,
+        "train_percent_of_full_labelled_rows": 80.0,
+        "validation_percent_of_full_labelled_rows": 10.0,
+        "test_percent_of_full_labelled_rows": 10.0
+      }
+    ],
+    "fold_source": {
+      "document": "supplement",
+      "table": "S2",
+      "table_zero_based": 1
+    },
+    "main_explicit_split_fields": "Three expanding windows; complete TransactionDT groups; each Test has 59,054 records; main does not list exact endpoints or train percentages.",
+    "percent_status": "Arithmetic row-count ratios relative to all 590,540 labelled rows. Not proportions of just Train+Val+Test. A full-dataset bar must leave 40% and 20% unused future rows in Folds 1 and 2.",
+    "models": {
+      "original": "LightGBM; five fixed seeds; M0 Raw/w1; M1 Entity A history/w1; M2 history/w2; M3 Entity C/w2 sensitivity",
+      "subsequent_post_hoc": "LogisticRegression; one converged fit per condition; distinct preprocessing; same source-feature contrasts; original model-family effect is not isolated",
+      "source": {
+        "document": "main",
+        "paragraphs_zero_based": [
+          47,
+          48,
+          49,
+          50,
+          51,
+          98
+        ]
+      }
+    },
+    "features": "392 raw inputs excluding TransactionID/isFraud; strictly earlier Entity A/card1 history, Entity C sensitivity; no same timestamp history.",
+    "decision": "Raw scores; exact completed-Test-window k=ceil(0.03*N)=1772 with N=59054 in each fold; TransactionID deterministic tie break. Completed-window batch ranking.",
+    "decision_source": {
+      "document": "main",
+      "paragraphs_zero_based": [
+        35,
+        42,
+        43,
+        45,
+        48,
+        57
+      ]
+    }
+  },
+  "bank_sim": {
+    "total_rows": 594643,
+    "steps": [
+      0,
+      179
+    ],
+    "split": {
+      "train": {
+        "steps": [
+          0,
+          107
+        ],
+        "rows": 332592
+      },
+      "validation": {
+        "steps": [
+          108,
+          125
+        ],
+        "rows": 63740
+      },
+      "test": {
+        "steps": [
+          126,
+          179
+        ],
+        "rows": 198311,
+        "frauds": 2160
+      }
+    },
+    "models": "Original reference validation: LightGBM and XGBoost, each with five fixed seeds 42,52,62,72,82; common training-only preprocessing.",
+    "freeze": "Separate local protocol frozen before fitting/test access; model configuration selected using B1/seed42 Validation only, then held for B0/B0H/B1/B1H and all five seeds; no Train+Validation refit.",
+    "decision": "Raw margins; exact completed-Test-window k=ceil(q*N), 3% primary K=5950; 1% and 5% secondary; unchanged SHA-256 source-identity tie priority.",
+    "features": "B0 step/category/amount; B1 adds age/gender/merchant/zipcodeOri/zipMerchant before frozen training-constant removal; B0H/B1H add identical 20 strictly prior merchant-history features (1/7/30-step aggregates plus recency/availability).",
+    "source": {
+      "document": "main",
+      "paragraphs_zero_based": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        118
+      ]
+    }
+  },
+  "stage_boundaries": {
+    "original_designs": "Distinct designs; no pooling, no fitted model transferred across datasets, no common prospective protocol.",
+    "post_hoc_components": "PaySim/IEEE-CIS component and later logistic contrasts followed observation of original windows; separate from original BankSim local freeze.",
+    "s21": "Revision diagnostics reuse audited existing outputs: capture headroom, exchanges, existing bootstrap distributions, time structure. No new project model fit, scoring or Bootstrap draws.",
+    "s22": "Subsequent six-condition retrospective BankSim development: six new LightGBM C07 fits at seed42, M-off/on x Hnone/H7/Horig. Already-exposed environment, protocol set before this execution; not independent final validation.",
+    "source": {
+      "document": "main",
+      "paragraphs_zero_based": [
+        11,
+        38,
+        40,
+        83,
+        85,
+        87,
+        91,
+        93,
+        98
+      ]
+    },
+    "supplement_source": {
+      "s21_paragraphs_zero_based": [
+        182,
+        211
+      ],
+      "s22_paragraphs_zero_based": [
+        241,
+        255,
+        256,
+        287
+      ]
+    }
+  },
+  "figure_design_errors_to_fix": [
+    "Use separate parallel data environments; no dataset-to-dataset arrows or pooled inference.",
+    "Do not label all three datasets with one universal Top-k decision rule.",
+    "Do not merge BankSim Validation with Train or indicate a combined refit.",
+    "Do not introduce Random Forest, Isolation Forest or ECOD as this paper's fitted formal models.",
+    "Include XGBoost only in BankSim original validation and logistic only in the subsequent post-hoc PaySim/IEEE extension.",
+    "Use schematic icons without fabricated transaction amounts, calendar dates, score distributions or measured-performance curves.",
+    "Do not apply S21 no-new-fits label to S22 six new fits."
+  ],
+  "main_evidence": [
+    {
+      "paragraph_zero_based": 11,
+      "text": "These analyses retain different design histories. The PaySim/IEEE-CIS component diagnostics and logistic comparison followed inspection of their windows. The original BankSim reference comparison was locally frozen before fitting, validation selection and test access; prior recommendations, reading and unlabelled structural screening were already available, but no earlier modelling or performance evaluation was found. This was not public preregistration or complete dataset unfamiliarity. Its later diagnostics and six-condition follow-up use an already-exposed environment; the six conditions were fixed before their execution and remain retrospective development."
+    },
+    {
+      "paragraph_zero_based": 35,
+      "text": "PaySim contains 6,362,620 synthetic mobile-money transactions over simulation steps 1–743, with isFraud as the binary outcome[13]. IEEE-CIS modelling uses the 590,540 labelled rows in train_transaction.csv, without merging identity-table features or using the competition's unlabelled test set[14]. TransactionDT is a relative elapsed-time field used for chronological ordering and retained among the raw model inputs; it is not interpreted as a calendar timestamp. The two datasets retain separate frozen protocols. Here, entity history denotes features derived from an entity's strictly earlier transactions; recipient history denotes its PaySim-specific construction."
+    },
+    {
+      "paragraph_zero_based": 38,
+      "text": "Each design preserves its own time boundaries, score stages and comparison rules. The revision-stage diagnostics are descriptive; the datasets are not pooled and do not constitute a common prospective experiment. Original overview details remain in Section S21."
+    },
+    {
+      "paragraph_zero_based": 40,
+      "text": "Fig. 1 Earlier study roles and analysis chronology. PaySim and IEEE-CIS retain their original temporal protocols and later post-hoc contrasts. BankSim used a separate local freeze before fitting and test access. The revision-stage arithmetic, capture-exchange and time-structure diagnostics use existing outputs after their results were known. The designs share information-boundary principles, not one common prospective protocol."
+    },
+    {
+      "paragraph_zero_based": 41,
+      "text": "PaySim used three expanding-window splits, with Train/Validation/Test ranges 1–205/206–238/239–281, 1–281/282–323/324–354, and 1–354/355–398/399–743. Complete-step boundaries yield 43, 31 and 345 Test steps. Recipient history uses nameDest and strictly earlier steps in [t−w,t−1], with w=1,6,24: counts, distinct origins, amount mean, maximum, sample standard deviation and current amount/prior mean, plus elapsed time since the last earlier recipient transaction. The deterministic v2 protocol assigns source_row_id from the verified CSV record ordinal before sorting by (step,source_row_id); IDs are excluded from model inputs. Integer-cent sums and squared sums define order-invariant history aggregates before conversion to floating values. Section S18 distinguishes this new implementation from the preserved historical version."
+    },
+    {
+      "paragraph_zero_based": 42,
+      "text": "IEEE-CIS used three expanding-window folds defined on complete TransactionDT groups, with strict Train-before-Validation-before-Test ordering and no timestamp group split across subsets. Entity A uses card1, an anonymised card-related identifier. Entity C combines card1, card2, card3, card5 and card6 into a finer key. Entity C was unavailable when any defining component was missing; no entity-component or global imputation was applied during history construction."
+    },
+    {
+      "paragraph_zero_based": 43,
+      "text": "For both IEEE-CIS entities, historical state contained counts, amount mean and sample standard deviation, amount-to-prior-mean ratio, time since the last transaction, and the number of distinct prior ProductCD values. Only transactions satisfying historical TransactionDT < current TransactionDT could update history; same-timestamp transactions could not contribute to one another. Validation features use earlier training and validation transactions. Test features also use earlier test transactions, with all updates restricted to strictly earlier timestamps. History updates used chronological unlabelled transaction attributes and excluded isFraud; future, same-timestamp, prefix-invariance, shuffle-invariance, and label-invariance checks were recorded in the frozen leakage audit. Numeric inputs used LightGBM's native missing-value handling. Categorical vocabularies were learned from the training subset, with missing values encoded as 0, unseen values as 1, and observed categories assigned codes starting at 2."
+    },
+    {
+      "paragraph_zero_based": 45,
+      "text": "PaySim Raw uses step, type, and amount. The original History bundle additionally contains recipient history, hour_of_day = (step−1) mod 24, and day_index = floor((step−1)/24). Names are grouping keys only; balances, isFlaggedFraud, and labels are excluded from inputs. IEEE-CIS Raw uses the 392 columns other than TransactionID and isFraud. Online Resource 1, Sections S2–S4, provides full split and feature inventories. The primary History comparison retains this feature bundle; the supplementary ablation evaluates its components separately. These deterministic transformations change the representation of step rather than introduce an additional external information source."
+    },
+    {
+      "paragraph_zero_based": 47,
+      "text": "The primary comparisons used LightGBM[15] with 150 trees, learning rate 0.05, 31 leaves, row and feature subsampling 0.8, and subsample_freq=1. Class weight w is scale_pos_weight=w, with negative-class weight one. Seeds 42,52,62,72,82 populate random_state, bagging_seed, feature_fraction_seed and data_random_seed. PaySim v2 fixes 16 threads, deterministic=true and force_col_wise=true. Its six schemes include Raw, time-only and history-only additions at weight one, and the joint bundle at weights one, two and five. The complete fit inventory is retained in Section S18. The degenerate Pair candidate remains a feature audit, not an additional rolling-model result."
+    },
+    {
+      "paragraph_zero_based": 48,
+      "text": "For IEEE-CIS, M0 uses Raw at weight 1; M1 adds Entity A history at weight 1; M2 increases the weight to 2; and M3 replaces Entity A with Entity C at weight 2. M2 is the primary scheme and M3 is the entity-definition sensitivity scheme. The recorded contrasts are C01=M1−M0 for adding history, C12=M2−M1 for increasing class weight, C23=M3−M2 for changing the entity definition, and C02=M2−M0 for the combined scheme. IEEE-CIS models were fitted on Train only with fixed parameters and no early stopping, hyperparameter tuning, feature selection, calibration, or test-set threshold optimisation. C23 changes the entity key, coverage and missingness together, so it does not isolate key granularity."
+    },
+    {
+      "paragraph_zero_based": 49,
+      "text": "LightGBM models are paired on the same window, transactions and seed before averaging differences. The fixed logistic comparison below evaluates the same source-feature contrasts with a second specified pipeline. Fixing settings makes each contrast interpretable within its pipeline; it does not establish model-independent effects or compare optimally tuned algorithms. Online Resource 1, Section S4, records the original configurations and Section S19 records the logistic extension."
+    },
+    {
+      "paragraph_zero_based": 50,
+      "text": "The post-hoc logistic check of component judgments retains the v2 PaySim source identities and features, unchanged IEEE-CIS inputs, all three windows and the contrasts defined in Section 3.5. Before logistic fitting, its protocol specifies 15 PaySim and 12 IEEE-CIS conditions without hyperparameter search. LogisticRegression uses L2 regularisation, C=1, an intercept, LBFGS and tolerance 10⁻⁶. Each condition contributes at most one converged model; identical seed repetitions are not treated as replication. A failure to converge within 3,000 iterations permits one fresh fit with a 10,000-iteration limit and otherwise identical settings. Both attempts are retained; a condition still failing after this retry has no formal prediction or effect estimate."
+    },
+    {
+      "paragraph_zero_based": 51,
+      "text": "Logistic preprocessing is fitted on Train only: numeric medians, indicators for columns missing in Train, and centring/scaling; entirely missing columns are retained with zero imputation. Frozen categorical roles use training vocabularies, a separate missing category and one-hot encoding with future unknown categories ignored. The same source features can therefore enter different preprocessing pipelines. PaySim retains earlier-Validation Platt calibration and later-Validation threshold selection. No Test labels select preprocessing, hyperparameters or thresholds. The logistic extension covers weights one and two, not the separate LightGBM weight-five sensitivity branch."
+    },
+    {
+      "paragraph_zero_based": 54,
+      "text": "We report non-interpolated average precision (AP), calculated by average_precision_score as precision weighted by successive recall increments. Primary PaySim AP uses clipped-logit Platt scores; IEEE-CIS uses raw scores. The audit separates raw, clipped-only and Platt AP because clipping can merge score levels. With TP, FP and FN denoting true positives, false positives and false negatives, precision=TP/(TP+FP), recall=TP/(TP+FN), and F1=2TP/(2TP+FP+FN). Differences are scheme minus baseline unless stated otherwise."
+    },
+    {
+      "paragraph_zero_based": 55,
+      "text": "For PaySim, Validation was divided near its row-count midpoint on complete time groups, choosing the nearest boundary with both classes in each interval. Platt scaling was fitted on the earlier interval. On the later interval, the threshold was chosen to minimise analytical cost subject to an alert rate of at most 3%. The threshold was transferred unchanged to Test, without Test labels. This constraint does not ensure a 3% Test workload; actual Test alert rates and their seed ranges are reported with the main results and in Online Resource 1, Section S1."
+    },
+    {
+      "paragraph_zero_based": 57,
+      "text": "IEEE-CIS selects k=ceil(0.03N) transactions per test window by descending raw score, breaking ties by ascending TransactionID. Each original window has N = 59,054 and k = 1,772, an alert rate of approximately 3.0006% after integer rounding. This is a retrospective window-level batch ranking rule requiring all scores in the window, not an instantaneous online quota. Test labels do not determine the selection."
+    },
+    {
+      "paragraph_zero_based": 71,
+      "text": "Two post-hoc diagnostics assess a constant probability fixed at earlier Validation prevalence and matched-budget PaySim P0/PTHW differences at all four q values. The latter selects ceil(qN) records per completed window by descending raw or Platt score and ascending source_row_id in v2. Sections S15–S16 retain all windows and capacities. Their original matched-budget summaries are descriptive; the later cross-pipeline extension adds separately identified conditional intervals at q=3% (Section S19)."
+    },
+    {
+      "paragraph_zero_based": 72,
+      "text": "The component extension estimates PaySim PH−P0, PTH−PT and PTHW−PTH at raw, clipped and Platt stages, and IEEE-CIS M1−M0 and M2−M1 on raw scores. Its LightGBM analysis uses 5,000 paired time-block draws per fold, averaging five-seed effects before percentile calculation, and an exact 3% completed-window budget for capture. Stage differences are paired within each draw. Boundary ranges and 100 shared label-free priorities are additionally assessed at four capacities; they are not confidence intervals. The analysis is rerun on v2 PaySim scores while retaining unchanged IEEE-CIS results (Section S17). Section S19 supplies the subsequent logistic and directly paired between-pipeline effects."
+    },
+    {
+      "paragraph_zero_based": 77,
+      "text": "BankSim is a bank-payment simulator[43]. Its v1 transaction release[41] is an external synthetic benchmark, not real-business validation. We use the verified bs140513_032310.csv release, retaining duplicates and assigning a zero-based source-row identity before sorting by (step, identity). Its 594,643 transactions span 180 simulation steps: Train 0–107 (332,592 rows), Validation 108–125 (63,740) and Test 126–179 (198,311). Complete steps remain intact. The design was frozen before training; validation selection was locked before one-time test access. No source dataset or model was replaced in response to test results."
+    },
+    {
+      "paragraph_zero_based": 78,
+      "text": "B0 contains step, category and amount. B1 adds age, gender, merchant, zipcodeOri and zipMerchant; it is information-richer by construction, not assumed to be a better predictor. Both postal-code fields have a single training value and their one-hot columns are removed by the frozen constant-column rule. The retained added categorical information is therefore age, gender and merchant. B0H and B1H append the same 20 merchant-history features: count, distinct customers, amount mean, maximum, sample standard deviation and current amount/prior mean over 1, 7 and 30 steps, plus recency and prior-history availability. Only strictly earlier steps contribute; no same-step or future transaction or fraud label enters history. Earlier unlabelled validation and test transactions can update history. Integer-cent moments make aggregation order-invariant. Customer and source identities are not predictors."
+    },
+    {
+      "paragraph_zero_based": 79,
+      "text": "Both boosting libraries receive the same float32, train-fitted preprocessing: numeric median imputation and missing indicators, training-vocabulary one-hot encoding with unknown levels mapped to zeros, and removal of training-constant encoded columns. Shared columns agree across information sets. Each pipeline selects among eight candidates using only B1, seed 42, ordered by unrounded validation TP@3%, AP, fewer trees and candidate ID. LightGBM[15] selects 31 leaves, minimum child size 100 and 200 trees; XGBoost[42] selects depth 3, minimum child weight 10 and 500 trees. All four cells then retain the selected configuration for seeds 42, 52, 62, 72 and 82. There is no early stopping, class weighting, calibration or Train-plus-Validation refit. The two selected B1/42 models are reused: 16 candidates and 40 formal conditions require 54 actual fits. This estimates component effects under B1-prioritised selection, not separately optimised cell performance. Full grids, defaults and backend records are supplied in Section S20 and Online Resource 3."
+    },
+    {
+      "paragraph_zero_based": 80,
+      "text": "Scores are uncalibrated raw margins. Each seed is ranked separately at k=ceil(qN), with q=3% primary and 1%/5% secondary; metrics and paired effects are then averaged, never scores. All conditions share a label-independent SHA-256 source-identity priority for equal margins, followed by source identity. AP retains grouped score ties. Capacity is allocated across the completed test window, not as daily online review. The 3% budget is 5,950; TP, recall, precision, AP and attainable boundary-tie ranges are reported. The three predeclared 18-step segments are descriptive, each with its own recalculated budget."
+    },
+    {
+      "paragraph_zero_based": 83,
+      "text": "A separate post-hoc diagnostic uses the original cached margins and the unchanged shared tie priority. For each reference pair, R denotes frauds selected by both conditions, G those newly selected after history is added, L those lost, and U those selected by neither. Thus TP_before=R+L, TP_after=R+G, ΔTP=G−L and R+G+L+U=F. All 2 pipelines × 2 reference pairs × 5 seeds × 3 capacities are retained; means are taken after seed-wise ranking. No new model scores, bootstrap draws or G/L confidence intervals are generated. Section S21 also describes the existing PaySim draw distribution and frozen time metadata."
+    },
+    {
+      "paragraph_zero_based": 85,
+      "text": "The earlier BankSim B0-to-B1 comparison added several current fields together. We subsequently compared direct merchant encoding and history access in a two-by-three retrospective development design. Its conditions and comparisons were specified before this execution, but the BankSim environment and evaluation window had already been exposed. M-on retained the earlier B1 current fields; M-off removed only the merchant predictor and its direct one-hot columns, retaining step, category, amount, age, gender, zipcodeOri and zipMerchant. Merchant remained the history-retrieval key, and eligible distinct-customer statistics were retained."
+    },
+    {
+      "paragraph_zero_based": 87,
+      "text": "Each condition used one LightGBM C07 fit with seed 42. Training-only preprocessing and fitting used steps 0–107; steps 108–125 supplied unlabelled history continuation without new selection. All six models and scores were locked before unified retrospective evaluation at steps 126–179. The whole-window 3% capacity was , with common  and . Ranking used raw margins and the unchanged deterministic source-ID tie priority. With  denoting recall, the primary comparison was"
+    },
+    {
+      "paragraph_zero_based": 91,
+      "text": "The four history-versus- increments and all three fixed segments were auxiliary descriptions. No new selection or uncertainty analysis was performed. Section S22 provides the execution-ID mapping, feature and label-use rules, full C07 parameters and recorded costs. These six input conditions are not independent replications or independent final validation."
+    },
+    {
+      "paragraph_zero_based": 93,
+      "text": "PaySim/IEEE-CIS component and logistic analyses are post-hoc; the original BankSim reference comparison has its own pre-fit, pre-test local freeze. Section S21 contains later cache and arithmetic diagnostics, and S22 contains the six-condition retrospective development. These stages address related questions without transferring a fitted model or supplying independent environments."
+    },
+    {
+      "paragraph_zero_based": 98,
+      "text": "The results address history references first (PaySim and BankSim), then IEEE-CIS component and pipeline limits. Later subsections retain the original decision-rule, capacity, representation and directly paired cross-pipeline evidence. The PaySim and IEEE-CIS windows and post-hoc extensions remain distinct from the earlier BankSim validation. The original LightGBM analyses use five seeds; the legacy logistic comparator has one converged fit per condition. The earlier BankSim validation uses five seeds per condition for both boosting pipelines, whereas the subsequent six-condition retrospective development uses fixed LightGBM C07 and seed 42 (Section 4.3.1)."
+    },
+    {
+      "paragraph_zero_based": 118,
+      "text": "All 40 formal conditions were evaluated on the same 198,311 test transactions, including 2,160 frauds. Table 5 reports seed-mean absolute performance at the primary capacity. The two B1 references capture more frauds than B0 in these observed results; this was not assumed from their additional fields. Table 6 gives the direct paired comparisons, with L=7 as the primary analysis."
+    }
+  ],
+  "supplement_evidence": [
+    {
+      "paragraph_zero_based": 182,
+      "text": "This separately staged validation concerns the history increment above two current-information references. It does not revalidate the IEEE-CIS mechanism or reproduce PaySim identically. No prior modelling, tuning or performance evaluation of BankSim was found; recommendations, reading, unlabelled structural screening and publicly visible aggregate information preceded the freeze. The protocol was locally frozen before training and test access, not publicly preregistered. Test opening followed completion and audit of all 40 formal conditions. Section S20 transcribes the audited original outputs. Section S21 separately reports revision-stage cache diagnostics without new fitting, model scoring or bootstrap draws."
+    },
+    {
+      "paragraph_zero_based": 211,
+      "text": "These additions were specified and executed after the original test results were known. They reuse audited outputs; they are not pre-test validation, new model fitting or new resampling. The original protocols, saved scores and bootstrap arrays remain unchanged. Online Resource 4 contains complete machine-readable diagnostic tables and source hashes. Original-net-effect intervals do not provide uncertainty intervals for newly derived gains or losses."
+    },
+    {
+      "paragraph_zero_based": 241,
+      "text": "This stage followed the earlier BankSim evaluation and manuscript revision. It reused the already-exposed BankSim environment for a fixed six-condition retrospective development comparison. The conditions and comparisons were determined before this execution, after exposure of the data environment. The design and later scope adjustment specified the primary comparison I, the four history-versus- auxiliary contrasts and three descriptive segments before this execution. The seven-step restriction was retained as a simulated access scenario; this stage did not implement the earlier statistical, additional-selection or non-inferiority proposals. It supplies neither independent final validation nor a new history-acquisition algorithm."
+    },
+    {
+      "paragraph_zero_based": 255,
+      "text": "Each condition received one training-region preprocessing fit and one LightGBM C07 fit, in the display-condition order listed in Table S39. All used seed 42 and four CPU threads. Steps 0–107 supplied 332,592 training rows; steps 108–125 supplied 63,740 unlabelled continuation events and no new model selection; steps 126–179 supplied 198,311 retrospective review rows. Numeric medians and missing indicators, training-vocabulary one-hot encoding, unknown-category all-zero mapping and training-constant-column removal were fitted on training rows only. Common columns agreed across the two M conditions within each history regime; history-dependent preprocessing was fitted to the corresponding regime. There was no scaling, resampling, class weighting, early stopping, calibration, combined training/validation refit or seed search."
+    },
+    {
+      "paragraph_zero_based": 256,
+      "text": "All six fits completed with 200 trees. Each saved model underwent one reload and two exact raw-margin prediction checks on the same predeclared 64 training rows, without another fit. After all models and preprocessors were locked, each model was loaded once for one full-review prediction. Historical execution therefore comprised six model fits, six project preprocessing fits, six model saves, 12 model loads and 18 prediction calls: 12 training-check calls and six review calls. The 84 artificial integration checks and seven artificial preprocessing-rule fits were engineering checks, not 84 scientific trials or additional project fits. The six conditions were different inputs rather than independent replications."
+    },
+    {
+      "paragraph_zero_based": 287,
+      "text": "C07 was selected in the earlier B1 current-input validation, not separately or neutrally across these six new conditions. Identical parameters and seed do not imply identical learning paths when feature dimensions, column sampling or duplicate feature slots differ.  retains matching h7/h30 sources, whereas  also permits older recency sources. The results therefore concern this specified representation and fitting procedure, not independently optimised feature sets or an isolated abstract-information effect. Existing environment records specify CPython 3.11.9, LightGBM 4.7.0, NumPy 2.4.4, pandas 3.0.2, SciPy 1.17.1 and scikit-learn 1.8.0; these are the recorded execution versions."
+    }
+  ]
+}
