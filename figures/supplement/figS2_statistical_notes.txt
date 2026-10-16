@@ -1,0 +1,7 @@
+IEEE-CIS, C02 = M2 - M0, exact 3% review capacity.
+The point estimates are five-seed means (seeds 42, 52, 62, 72, 82).
+Intervals are pointwise conditional 95% percentile intervals from 5,000 paired moving-block draws.
+Intervals condition on fixed fitted models and observed Test windows.
+Recall differences are in percentage points (pp).
+An interval crossing zero does not establish equivalence.
+No pooled effect, P value, new resampling or new statistical inference was added.

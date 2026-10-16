@@ -1,0 +1,101 @@
+{
+  "figure": "S3",
+  "presentation": "figS3_soft_glow",
+  "input_path": "figS3_data.json",
+  "input_sha256": "77bfb009a7f22709f842380ba6d2130fbb239fb5c7e9bd1311fd7cb0b1404439",
+  "source_aggregate_values_preserved": true,
+  "adopted_artwork_review": {
+    "source_sha256": "77bfb009a7f22709f842380ba6d2130fbb239fb5c7e9bd1311fd7cb0b1404439",
+    "series": 45,
+    "nonempty_bins": 299,
+    "fixed_partition_total_bins": 450,
+    "empty_bins_omitted": 151,
+    "nonempty_bins_below_10": 50,
+    "original_values_preserved": true,
+    "new_statistical_intervals": 0,
+    "smoothed_curves": false,
+    "pooled_bins": false,
+    "single_point_series": 3,
+    "single_point_series_rendering": "marker halo only",
+    "halo_widths_px_alpha": [
+      [
+        25.074626865671643,
+        0.03
+      ],
+      [
+        18.80597014925373,
+        0.045
+      ],
+      [
+        12.537313432835822,
+        0.065
+      ],
+      [
+        7.164179104477612,
+        0.045
+      ]
+    ],
+    "halo_widths_pt": [
+      7.943641791044776,
+      5.957731343283582,
+      3.971820895522388,
+      2.2696119402985073
+    ],
+    "halo_meaning": "decorative fixed-display-width strokes, not data intervals",
+    "method_headers": [
+      "Uncalibrated",
+      "Platt scaling",
+      "Isotonic regression"
+    ],
+    "physical_size_mm": [
+      167.64,
+      174.52930555555557
+    ],
+    "plot_area_px": [
+      300,
+      300
+    ],
+    "previous_plot_area_px": [
+      335,
+      335
+    ],
+    "plot_linear_scale": 0.8955223880597015,
+    "plot_area_change_percent": -19.803965248384937,
+    "plot_centres_unchanged": true,
+    "headings_and_legend_unchanged": true,
+    "font_sizes_unchanged": true,
+    "text_canvas_bounds": "PASS",
+    "font": "Arial",
+    "minimum_font_px": 19,
+    "data_comparison": "299/299 exact",
+    "series_comparison": "45/45",
+    "independent_visual_review": "PASS",
+    "headers_legend_and_fold_bars_pixel_identical": true
+  },
+  "export_sha256": {
+    "figS3.png": "c30fa355bb2761db50065c8f80f5cb4b669f0c35ef5fb696b71dce02fb34c006",
+    "figS3.pdf": "062136874b46ff9b8d045d8c73df6c77d2434eb7d6b51f69f46a783bb3d7882f",
+    "figS3.svg": "56b17ee2c67fda9318ab08da6088868f9153894b2bca128524466587e425498a"
+  },
+  "reproduction_scope": "Frozen aggregate drawing only; fonts and PDF rasterizers can change pixels.",
+  "new_training_prediction_or_resampling_calls": 0,
+  "isolated_redraw_check": {
+    "status": "PASS",
+    "input_json_byte_identical_to_reviewed_source": true,
+    "adopted_media_bytes_preserved": true,
+    "identical_frozen_plot_or_audit_files": [
+      "figS3_rendered_series.json",
+      "figS3_plot_data.csv"
+    ],
+    "redrawn_pdf_pages": 1,
+    "redrawn_pdf_raster_images": 0,
+    "redrawn_svg_bytes_equal_adopted": true,
+    "redrawn_png_pixels": [
+      3960,
+      4123
+    ],
+    "rasterizer": "PyMuPDF",
+    "isolated_output_directory": true,
+    "delivery_exports_not_overwritten": true
+  }
+}

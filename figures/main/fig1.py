@@ -1,8 +1,10 @@
-"""Figure 1 with moderately reduced text; original three-panel layout preserved.
+"""Figure 1 with the adopted Decisions text fit; original three-panel layout preserved.
 
 Usage: python fig1.py [--out-dir PATH]
 Requires Python 3.10+, matplotlib, and the adjacent data/fig1_protocol.json.
 Source manuscript hashes are metadata only; redraw opens no manuscript file.
+Adopted media retain the recorded author exports. Fonts/renderers may change
+redrawn bytes; see fig1_README.md for the publication and redraw distinction.
 No model training, synthetic outcomes, score distributions, or experiment calls.
 """
 
@@ -197,14 +199,16 @@ def draw(protocol: dict, dest: Path) -> dict:
     label(x + cw / 2, 30, "*BankSim only", size=8, color=MUTED, align="center")
 
     x = flow_x[3]
-    label(x + cw / 2, 54.9, "PaySim", size=8, weight="bold", align="center")
-    label(x + cw / 2, 50.7, "Val alert cap ≤3%", size=8, align="center")
-    label(x + cw / 2, 46.5, "Threshold → Test", size=8, align="center")
-    label(x + cw / 2, 42.3, "Test workload varies", size=8, color=MUTED, align="center")
-    line(x + 3, 39.6, x + cw - 3, 39.6)
-    label(x + cw / 2, 36.8, "IEEE-CIS / BankSim", size=8, weight="bold", align="center")
-    label(x + cw / 2, 32.8, "Completed Test ranking", size=8, align="center")
-    label(x + cw / 2, 28.8, "k = ceil(0.03N)", size=8, align="center")
+    decision_bounds = (x + 1.3, 27.3, x + cw - 1.3, 58.1)
+    label(x + cw / 2, 54.9, "PaySim", size=8, weight="bold", align="center", bounds=decision_bounds)
+    label(x + cw / 2, 50.7, "Val alert cap ≤3%", size=8, align="center", bounds=decision_bounds)
+    label(x + cw / 2, 46.5, "Threshold → Test", size=8, align="center", bounds=decision_bounds)
+    label(x + cw / 2, 42.3, "Test workload varies", size=8, color=MUTED, align="center", bounds=decision_bounds)
+    line(x + 3, 40.5, x + cw - 3, 40.5)
+    label(x + cw / 2, 38.7, "IEEE-CIS/BankSim", size=8, weight="bold", align="center", bounds=decision_bounds)
+    label(x + cw / 2, 35.5, "Completed Test", size=8, align="center", bounds=decision_bounds)
+    label(x + cw / 2, 32.4, "ranking", size=8, align="center", bounds=decision_bounds)
+    label(x + cw / 2, 29.3, "k = ceil(0.03N)", size=8, align="center", bounds=decision_bounds)
 
     x = flow_x[4]
     review(x + cw / 2 - 1, 51.2)

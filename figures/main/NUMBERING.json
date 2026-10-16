@@ -1,5 +1,5 @@
 {
-  "revision_date": "2026-10-13",
+  "revision_date": "2026-10-16",
   "main_figures": [
     {
       "current": 1,
@@ -62,11 +62,14 @@
       "previous_eight_figure_manuscript": [
         8
       ],
-      "content": "Capacity, cost and realised workload sensitivity"
+      "content": "Capacity, cost, realised workload sensitivity and saved reference recall effects"
     }
   ],
   "scientific_protocol_change": false,
   "figure3_capacity_profile": "Revision-stage descriptive calculation from saved Platt predictions, not new training or bootstrap",
   "models_or_predictions_created_during_publication": 0,
-  "bootstrap_draws_created_during_publication": 0
+  "bootstrap_draws_created_during_publication": 0,
+  "figure6_presentation": "Five-panel artwork adopted in the manuscript on 2026-10-14; source synchronized 2026-10-15; saved intervals reused without new inference",
+  "figure1_presentation": "Decisions text fits the existing card at unchanged font size",
+  "figure5_presentation": "Three-column numerical rows, horizontal TP intervals, signed blue/orange palette; colours do not encode significance"
 }

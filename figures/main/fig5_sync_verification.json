@@ -1,0 +1,71 @@
+{
+  "figure": "fig5",
+  "adopted_revision": "fig5_blue_orange_20261016",
+  "adopted_export_bytes_preserved": {
+    "png": true,
+    "svg": true,
+    "pdf": true
+  },
+  "adopted_visible_svg_text_labels": 126,
+  "redraw_labels_match_adopted": true,
+  "two_independent_redraws_byte_identical_in_recorded_environment": {
+    "png": true,
+    "svg": true,
+    "pdf": true
+  },
+  "pdf_pages": 1,
+  "pdf_raster_images": 0,
+  "all_svg_text_labels_found_in_publication_pdf": true,
+  "editable_svg_has_no_raster_images": true,
+  "minimum_font_pt": 8.0,
+  "visual_qa": "passed; publication/redraw PDFs rendered to PNG and inspected",
+  "python_script_parse": "passed",
+  "inputs_modified": false,
+  "draw_only_no_models_predictions_or_resampling": true,
+  "cross_platform_byte_identity_claimed": false,
+  "publication_sha256": {
+    "png": "afdeb437effdc4642ad68fcd7dc3a50d4bcec2bca733577abba5a869ea1c16e8",
+    "svg": "4d76f9dfd3750aa7b66cc26315e18209a364c6494806a7fd3686850b46edc986",
+    "pdf": "8b3f32ff58d0ee741a99c5c096007590a92a8a89b42617c9e8495b0787bc9740"
+  },
+  "source_rows": {
+    "combined": 9,
+    "components": 18
+  },
+  "source_numeric_values": 81,
+  "input_sha256": {
+    "fig5_combined_metrics.csv": "a7674b51c6ba8688548699cbab089931ea4abea25a21135e71c7372bf469d49c",
+    "fig5_component_effects.csv": "a9fcb3845c1a49116743c7153f4862684a325ef2612b297c1bfdae99febce84e",
+    "fig5_provenance.json": "561dec49e891eae2bf7600a4163c6bc491715474492699d17ee17d4b43576764"
+  },
+  "ci_alignment": "right; heading centred over its fixed-width column",
+  "forest_height_pt": 12,
+  "marker_diameter_pt": 6,
+  "direction_colours": {
+    "negative": "#BE8150",
+    "positive": "#527A97"
+  },
+  "top_delta_tp_axis_ranges": [
+    [
+      -40,
+      40
+    ],
+    [
+      -40,
+      40
+    ],
+    [
+      -40,
+      40
+    ]
+  ],
+  "heatmap_scale": [
+    -120,
+    0,
+    120
+  ],
+  "new_intervals_computed": false,
+  "redraw_maximum_svg_label_coordinate_difference_pt": 0.0025,
+  "ci_text_inside_fixed_columns": true,
+  "minimum_estimate_to_interval_gap_pt": 5.767199999999994
+}

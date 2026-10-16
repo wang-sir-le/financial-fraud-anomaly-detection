@@ -6,7 +6,7 @@ The repository contains the scientific implementation and compact, source-linked
 
 - Install and test the original public core plus the added analysis/training modules.
 - Inspect frozen scientific settings, reported conditions, all included positive/negative/uncertain summary rows and recorded reconstruction failures.
-- Redraw the fourteen current figures from adjacent aggregate JSON inputs, without reading source transactions or generating statistical draws.
+- Redraw the fifteen current figures from compact aggregate JSON/CSV inputs, without reading source transactions or generating statistical draws.
 - Run the BankSim artificial lifecycle tests, whose fixtures forbid real model fitting.
 - Rebuild base PaySim/IEEE-CIS inputs using official dataset access and explicit paths, then execute the prescribed extension code against appropriately reconstructed inputs.
 

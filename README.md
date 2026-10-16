@@ -6,6 +6,8 @@ The stage index is [docs/UPDATES_20261008.md](docs/UPDATES_20261008.md). It iden
 
 The [October 13 figure update](docs/UPDATES_20261013.md) aligns `figures/main` with the current six main figures, including the revised study framework, PaySim capacity profiles, and merged BankSim effect/exchange figure and IEEE-CIS combined/component figure. Scientific protocols and fitted results retain their recorded stages. The earlier six-figure layout remains available at commit `b52524caf6a0e84e1bf1d6ce22f833c52122724e`.
 
+The [October 16 update](docs/UPDATES_20261016.md) publishes the final adopted Figure 1/5/6 and supplementary S2/S3/S7/S9 presentations, their portable drawing routes and compact inputs. A [revision summary](docs/REVISION_SUMMARY_20261016.md) records the manuscript language and review fixes. Full manuscript files and page screenshots remain excluded.
+
 ## Layout
 
 ```text
@@ -15,7 +17,7 @@ scripts/                Original dataset audit and Bootstrap entrypoints
 tests/                  Public-code regression tests using artificial records
 experiments/            Six completed extension snapshots and compact summary tables
 figures/main/           Current Figures 1-6, adopted exports and adjacent aggregate inputs
-figures/supplement/     Figures S1-S8 with scripts and adjacent aggregate JSON inputs
+figures/supplement/     Figures S1-S9 with scripts and compact JSON/CSV inputs
 docs/                   Access, reconstruction limits, stage map and historical documents
 ```
 

@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "date": "2026-10-15",
+  "figure_panels": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "python": "3.12.14",
+  "matplotlib": "3.10.7",
+  "numpy": "2.3.5",
+  "Pillow": "12.3.0",
+  "runtime_executable": "<recorded-python-runtime>/python3",
+  "isolated_directory": "/private/tmp/fig6_review_isolated_20261015",
+  "source_package": "figure_revisions/fig6_checked_20261014",
+  "script_sha256": "ddb1896e78f5761b7c66567115ce1c776a8665af5060a8658bead80a345db3ba",
+  "isolated_package_uses_only_adjacent_snapshots": true,
+  "outputs": {
+    "fig6.png": {
+      "archived_sha256": "d6e69cc8dc4b9e65014c915e19013beeb6539406a9a690d1180396927484b813",
+      "isolated_sha256": "d6e69cc8dc4b9e65014c915e19013beeb6539406a9a690d1180396927484b813",
+      "byte_identical": true
+    },
+    "fig6_preview.png": {
+      "archived_sha256": "3676a565fcba0393bf9ba8dc658d80789b7b40fba82000acc15c8441a6ef06e6",
+      "isolated_sha256": "3676a565fcba0393bf9ba8dc658d80789b7b40fba82000acc15c8441a6ef06e6",
+      "byte_identical": true
+    },
+    "fig6.pdf": {
+      "archived_sha256": "128cabbd6723f5c4300fa41a6ff04c1f85343cc0ec1c38de93abab2f89c13bc5",
+      "isolated_sha256": "128cabbd6723f5c4300fa41a6ff04c1f85343cc0ec1c38de93abab2f89c13bc5",
+      "byte_identical": true
+    },
+    "fig6.svg": {
+      "archived_sha256": "8ad1ab0813406871b4c9d2d6195fc45c561a8d3d446ccbd0238b52f836d0462f",
+      "isolated_sha256": "8ad1ab0813406871b4c9d2d6195fc45c561a8d3d446ccbd0238b52f836d0462f",
+      "byte_identical": true
+    },
+    "fig6_plot_data.csv": {
+      "archived_sha256": "065a17165014cd30e893bf34646bf0cf3c42d39f8ce31f9e6fb72f3eb52b108a",
+      "isolated_sha256": "065a17165014cd30e893bf34646bf0cf3c42d39f8ce31f9e6fb72f3eb52b108a",
+      "byte_identical": true
+    },
+    "fig6_validation.json": {
+      "archived_sha256": "7da048be74cbfc719dd0841a1662b3a5df16d3e049209f33177b4360fec0a884",
+      "isolated_sha256": "7da048be74cbfc719dd0841a1662b3a5df16d3e049209f33177b4360fec0a884",
+      "byte_identical": true
+    }
+  },
+  "current_manuscript_embedded_image": "主稿_现稿.docx:word/media/image6.png",
+  "manuscript_embedded_sha256": "d6e69cc8dc4b9e65014c915e19013beeb6539406a9a690d1180396927484b813",
+  "export_png_sha256": "d6e69cc8dc4b9e65014c915e19013beeb6539406a9a690d1180396927484b813",
+  "manuscript_png_byte_identical": true,
+  "manuscript_png_pixels_identical": true,
+  "manuscript_pixels": [
+    4015,
+    3560
+  ],
+  "export_pixels": [
+    4015,
+    3560
+  ],
+  "standalone_exports_byte_identical_to_checked_package": {
+    "fig6.png": true,
+    "fig6_preview.png": true,
+    "fig6.pdf": true,
+    "fig6.svg": true
+  },
+  "verified_points": 111,
+  "maximum_value_difference_from_checked_plot": 0.0,
+  "saved_interval_groups": 6,
+  "saved_interval_endpoints": 12,
+  "all_interval_endpoints_unchanged": true,
+  "paysim_scenario_records_checked": 660,
+  "exact_budget_seed_records_checked": 60,
+  "default_export_size_mm": [
+    170,
+    150.728
+  ],
+  "minimum_font_pt": 8,
+  "clipped_text": [],
+  "data_source_snapshots_unchanged": true,
+  "manuscript_modified": false,
+  "scope": "Reaggregation and redraw from saved records; no model fitting, new predictions, reranking or new bootstrap draws.",
+  "pdf_pages": 1,
+  "pdf_page_size_pt": [
+    481.8897637795,
+    427.2604724409
+  ],
+  "pdf_visual_review": "PASS: bundled Poppler render inspected; labels, intervals, separate scales and crop are legible without overlap or clipping."
+}

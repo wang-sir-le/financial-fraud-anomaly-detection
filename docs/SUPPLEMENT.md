@@ -1,8 +1,8 @@
-<!-- Historical August 2026 base material. -->
+# Archived August 2026 supplementary draft
 
-This document describes the original base release. For the October 8, 2026 additions, use [UPDATES_20261008.md](UPDATES_20261008.md) and the current stage READMEs. It is not an updated manuscript submission or full extension-bundle manifest.
+> **Archived reference only.** This seven-section draft describes the original August 2026 base release. The current supplementary manuscript, supplied separately with the paper, contains Sections S1–S23. This file is not the current Online Resource 1 and does not define its section numbering.
 
-# Supplementary Materials (venue-neutral draft)
+For the subsequent scientific stages, use [UPDATES_20261008.md](UPDATES_20261008.md) and the current stage READMEs. The later figure presentation is documented in [UPDATES_20261013.md](UPDATES_20261013.md) and [the figure index](../figures/README.md). Manuscript Word/PDF files are excluded from this repository.
 
 This document assembles existing frozen protocols, configurations, audits, and tables. It reports no new analysis and does not supersede the frozen main-text evidence.
 

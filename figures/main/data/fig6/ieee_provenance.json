@@ -1,0 +1,112 @@
+{
+  "source_docx_sha256": "56ceecc2fde922933389e6a2a8f4d5ea70dc8fcf57f8a67d1568507567c52cd6",
+  "source_document_xml_sha256": "c1cfe600c7bba9dda7445b9363f392bde027c54d2cb8835a0efcc11b7480d0a1",
+  "extraction_method": "Direct extraction of reported Table 9 ΔTP, ΔRecall (pp) and ΔAP rows; fresh full-cell verification of Table 10 against run01 before copying. Reported decimal precision retained.",
+  "metadata": {
+    "dataset": "IEEE-CIS",
+    "score_stage": "raw probabilities / raw scores",
+    "decision_rule": "Exact 3% completed-Test-window ranking, K=ceil(0.03N)",
+    "test_rows_per_fold": 59054,
+    "selected_rows_per_fold": 1772,
+    "fraud_counts_by_fold": {
+      "1": 2094,
+      "2": 2061,
+      "3": 2213
+    },
+    "unit": "Captured-fraud difference (ΔTP)",
+    "combined_contrast": "M2-M0, LightGBM",
+    "component_contrasts": {
+      "M1-M0": "History increment",
+      "M2-M1": "Incremental weighting above history"
+    },
+    "LightGBM": "Mean of five paired seed effects",
+    "Logistic": "One fixed converged fit per condition",
+    "bootstrap_draws_per_fold": 5000,
+    "resampling": "Existing paired moving-block draws; workflow differences use the same shared draws",
+    "interval": "Original pointwise conditional 95% percentile intervals",
+    "interval_conditions": "Fixed fitted workflows and observed windows",
+    "multiple_comparison_adjustment": "None for these displayed intervals",
+    "direct_difference": "Logistic component effect minus LightGBM component effect; interval from the directly paired draw series",
+    "preprocessing": "Different across workflows; comparison does not isolate an algorithm-family effect",
+    "absolute_performance_boundary": "Logistic absolute AP and capture remain lower in all 12 IEEE-CIS conditions; absolute outcomes retained in Table S24",
+    "point_decomposition_boundary": "M1-M0 plus M2-M1 equals M2-M0 only as the point-estimate path identity; CI endpoints are not added or subtracted",
+    "new_experiments": false,
+    "new_intervals_computed": false,
+    "source_docx_modified": false,
+    "combined_metrics": {
+      "ΔTP": "TP; Table 9 original values",
+      "ΔRecall": "percentage points; Table 9 original values",
+      "ΔAP": "AP difference on 0-1 scale; Table 9 original values"
+    },
+    "cost": "Cost reduction remains in source Table 9 and is not exported for this figure",
+    "scale_boundary": "AP, Recall and ΔTP are separate estimands and units; do not put them on a common numeric colour or position scale",
+    "interval_derivation_boundary": "All combined intervals are taken directly from Table 9; no AP or Recall intervals are generated from other values"
+  },
+  "validation": {
+    "combined_metric_row_count": 9,
+    "component_row_count": 18,
+    "reported_numeric_value_count": 81,
+    "all_intervals_ordered": true,
+    "all_roundtrip_values_identical": true,
+    "component_run01_byte_identical": true,
+    "point_arithmetic_checks": [
+      {
+        "check": "point_estimate_path_identity",
+        "fold": "1",
+        "pass": true
+      },
+      {
+        "check": "point_estimate_path_identity",
+        "fold": "2",
+        "pass": true
+      },
+      {
+        "check": "point_estimate_path_identity",
+        "fold": "3",
+        "pass": true
+      },
+      {
+        "check": "direct_point_difference",
+        "contrast": "M1-M0",
+        "fold": "1",
+        "pass": true
+      },
+      {
+        "check": "direct_point_difference",
+        "contrast": "M1-M0",
+        "fold": "2",
+        "pass": true
+      },
+      {
+        "check": "direct_point_difference",
+        "contrast": "M1-M0",
+        "fold": "3",
+        "pass": true
+      },
+      {
+        "check": "direct_point_difference",
+        "contrast": "M2-M1",
+        "fold": "1",
+        "pass": true
+      },
+      {
+        "check": "direct_point_difference",
+        "contrast": "M2-M1",
+        "fold": "2",
+        "pass": true
+      },
+      {
+        "check": "direct_point_difference",
+        "contrast": "M2-M1",
+        "fold": "3",
+        "pass": true
+      }
+    ]
+  },
+  "output_sha256": {
+    "combined_metrics.csv": "a7674b51c6ba8688548699cbab089931ea4abea25a21135e71c7372bf469d49c",
+    "component_effects.csv": "a9fcb3845c1a49116743c7153f4862684a325ef2612b297c1bfdae99febce84e"
+  },
+  "source_provenance_sha256": "48355e38d4e7dbbc4f965069c81d1d2e7187f30f103c1607833b438e2924c1ad",
+  "source_precision": "Reported decimal precision from Tables 9 and 10; original experimental higher-precision records remain in the historical aggregate archives."
+}

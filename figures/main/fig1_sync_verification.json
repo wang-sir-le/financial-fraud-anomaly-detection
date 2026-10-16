@@ -1,0 +1,34 @@
+{
+  "figure": "fig1",
+  "adopted_revision": "fig1_decisions_fit_20261016",
+  "adopted_export_bytes_preserved": {
+    "png": true,
+    "svg": true
+  },
+  "adopted_visible_svg_text_labels": 98,
+  "redraw_labels_match_adopted": true,
+  "two_independent_redraws_byte_identical_in_recorded_environment": {
+    "png": true,
+    "svg": true,
+    "pdf": true
+  },
+  "pdf_pages": 1,
+  "pdf_raster_images": 0,
+  "all_svg_text_labels_found_in_publication_pdf": true,
+  "editable_svg_has_no_raster_images": true,
+  "minimum_font_pt": 8.0,
+  "visual_qa": "passed; publication/redraw PDFs rendered to PNG and inspected",
+  "python_script_parse": "passed",
+  "inputs_modified": false,
+  "draw_only_no_models_predictions_or_resampling": true,
+  "cross_platform_byte_identity_claimed": false,
+  "publication_sha256": {
+    "png": "ba8fb76e0f6c1a16919441fd37afff64b6edf299521328141477508dc0b56343",
+    "svg": "c1804c397637fd92606f5892830b6dcb059460b425910ae624f770c14c59bf8f",
+    "pdf": "13f155473f8d92ce9a709689e2b81b0ebc463117d998ca7c6bb7f87f093a4443"
+  },
+  "pdf_origin": "Updated public Matplotlib script; source Decisions-fit revision supplied no PDF",
+  "decisions_font_pt": 8,
+  "all_text_inside_canvas_and_assigned_cells": true,
+  "redraw_maximum_svg_label_coordinate_difference_pt": 0.049
+}

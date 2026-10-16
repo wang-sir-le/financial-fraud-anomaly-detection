@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1185" viewBox="0 0 1600 1185">
+<title>Figure S7 preview: BankSim descriptive time structure</title>
+<desc>Fifty-four simulation steps. Transaction and fraud counts and paired five-seed mean capture differences from frozen whole-window top-3% selections. No step-wise reranking or new intervals.</desc>
+<rect x="0" y="0" width="1600" height="1185" fill="white" stroke="none" stroke-width="1"/>
+<text x="39" y="45" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700" fill="#172735" text-anchor="start">a</text>
+<text x="138" y="45" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#172735" text-anchor="start">BankSim temporal structure</text>
+<line x1="161.27272727272728" y1="115" x2="161.27272727272728" y2="325" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="161.27272727272728" y1="325" x2="161.27272727272728" y2="332" stroke="#697786" stroke-width="1.2"/>
+<text x="161.27272727272728" y="360.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">126</text>
+<line x1="254.36363636363637" y1="115" x2="254.36363636363637" y2="325" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="254.36363636363637" y1="325" x2="254.36363636363637" y2="332" stroke="#697786" stroke-width="1.2"/>
+<text x="254.36363636363637" y="360.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">130</text>
+<line x1="487.09090909090907" y1="115" x2="487.09090909090907" y2="325" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="487.09090909090907" y1="325" x2="487.09090909090907" y2="332" stroke="#697786" stroke-width="1.2"/>
+<text x="487.09090909090907" y="360.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">140</text>
+<line x1="719.8181818181818" y1="115" x2="719.8181818181818" y2="325" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="719.8181818181818" y1="325" x2="719.8181818181818" y2="332" stroke="#697786" stroke-width="1.2"/>
+<text x="719.8181818181818" y="360.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">150</text>
+<line x1="952.5454545454545" y1="115" x2="952.5454545454545" y2="325" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="952.5454545454545" y1="325" x2="952.5454545454545" y2="332" stroke="#697786" stroke-width="1.2"/>
+<text x="952.5454545454545" y="360.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">160</text>
+<line x1="1185.2727272727273" y1="115" x2="1185.2727272727273" y2="325" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="1185.2727272727273" y1="325" x2="1185.2727272727273" y2="332" stroke="#697786" stroke-width="1.2"/>
+<text x="1185.2727272727273" y="360.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">170</text>
+<line x1="1394.7272727272727" y1="115" x2="1394.7272727272727" y2="325" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="1394.7272727272727" y1="325" x2="1394.7272727272727" y2="332" stroke="#697786" stroke-width="1.2"/>
+<text x="1394.7272727272727" y="360.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">179</text>
+<line x1="138" y1="325.0" x2="1418" y2="325.0" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="325.0" x2="138" y2="325.0" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="332.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#1675B6" text-anchor="end">3,500</text>
+<line x1="138" y1="259.375" x2="1418" y2="259.375" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="259.375" x2="138" y2="259.375" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="266.375" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#1675B6" text-anchor="end">3,600</text>
+<line x1="138" y1="193.75" x2="1418" y2="193.75" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="193.75" x2="138" y2="193.75" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="200.75" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#1675B6" text-anchor="end">3,700</text>
+<line x1="138" y1="128.125" x2="1418" y2="128.125" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="128.125" x2="138" y2="128.125" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="135.125" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#1675B6" text-anchor="end">3,800</text>
+<line x1="138" y1="115" x2="138" y2="325" stroke="#697786" stroke-width="1.6"/>
+<line x1="138" y1="325" x2="1418" y2="325" stroke="#697786" stroke-width="1.6"/>
+<text x="43" y="220.0" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#1675B6" text-anchor="middle" transform="rotate(-90 43 220.0)">Transactions</text>
+<polyline points="146.0000000000,82.0000000000 189.0000000000,82.0000000000" fill="none" stroke="#1675B6" stroke-width="3.2" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="202" y="89" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#172735" text-anchor="start">Transactions (left axis)</text>
+<polyline points="524.0000000000,82.0000000000 567.0000000000,82.0000000000" fill="none" stroke="#EC7B2C" stroke-width="3.2" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10,7"/>
+<text x="580" y="89" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#172735" text-anchor="start">Frauds (right axis)</text>
+<text x="1418" y="44" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#647381" text-anchor="end">Test steps 126-179</text>
+<text x="1418" y="89" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#EC7B2C" text-anchor="end">40 frauds at every step</text>
+<polyline points="161.2727272727,280.3750000000 184.5454545455,255.4375000000 207.8181818182,252.1562500000 231.0909090909,291.5312500000 254.3636363636,259.3750000000 277.6363636364,272.5000000000 300.9090909091,258.0625000000 324.1818181818,277.7500000000 347.4545454545,250.1875000000 370.7272727273,248.8750000000 394.0000000000,269.8750000000 417.2727272727,268.5625000000 440.5454545455,198.3437500000 463.8181818182,223.9375000000 487.0909090909,217.3750000000 510.3636363636,223.9375000000 533.6363636364,221.9687500000 556.9090909091,214.7500000000 580.1818181818,205.5625000000 603.4545454545,249.5312500000 626.7272727273,222.6250000000 650.0000000000,233.1250000000 673.2727272727,225.2500000000 696.5454545455,206.8750000000 719.8181818182,181.9375000000 743.0909090909,177.3437500000 766.3636363636,163.5625000000 789.6363636364,218.0312500000 812.9090909091,213.4375000000 836.1818181818,199.6562500000 859.4545454545,185.2187500000 882.7272727273,214.7500000000 906.0000000000,186.5312500000 929.2727272727,201.6250000000 952.5454545455,217.3750000000 975.8181818182,208.8437500000 999.0909090909,183.2500000000 1022.3636363636,188.5000000000 1045.6363636364,206.8750000000 1068.9090909091,189.1562500000 1092.1818181818,198.3437500000 1115.4545454545,193.0937500000 1138.7272727273,193.7500000000 1162.0000000000,179.9687500000 1185.2727272727,183.9062500000 1208.5454545455,183.2500000000 1231.8181818182,175.3750000000 1255.0909090909,168.1562500000 1278.3636363636,165.5312500000 1301.6363636364,145.1875000000 1324.9090909091,179.9687500000 1348.1818181818,155.6875000000 1371.4545454545,165.5312500000 1394.7272727273,187.8437500000" fill="none" stroke="#1675B6" stroke-width="3.4" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="161.2727272727,157.0000000000 184.5454545455,157.0000000000 207.8181818182,157.0000000000 231.0909090909,157.0000000000 254.3636363636,157.0000000000 277.6363636364,157.0000000000 300.9090909091,157.0000000000 324.1818181818,157.0000000000 347.4545454545,157.0000000000 370.7272727273,157.0000000000 394.0000000000,157.0000000000 417.2727272727,157.0000000000 440.5454545455,157.0000000000 463.8181818182,157.0000000000 487.0909090909,157.0000000000 510.3636363636,157.0000000000 533.6363636364,157.0000000000 556.9090909091,157.0000000000 580.1818181818,157.0000000000 603.4545454545,157.0000000000 626.7272727273,157.0000000000 650.0000000000,157.0000000000 673.2727272727,157.0000000000 696.5454545455,157.0000000000 719.8181818182,157.0000000000 743.0909090909,157.0000000000 766.3636363636,157.0000000000 789.6363636364,157.0000000000 812.9090909091,157.0000000000 836.1818181818,157.0000000000 859.4545454545,157.0000000000 882.7272727273,157.0000000000 906.0000000000,157.0000000000 929.2727272727,157.0000000000 952.5454545455,157.0000000000 975.8181818182,157.0000000000 999.0909090909,157.0000000000 1022.3636363636,157.0000000000 1045.6363636364,157.0000000000 1068.9090909091,157.0000000000 1092.1818181818,157.0000000000 1115.4545454545,157.0000000000 1138.7272727273,157.0000000000 1162.0000000000,157.0000000000 1185.2727272727,157.0000000000 1208.5454545455,157.0000000000 1231.8181818182,157.0000000000 1255.0909090909,157.0000000000 1278.3636363636,157.0000000000 1301.6363636364,157.0000000000 1324.9090909091,157.0000000000 1348.1818181818,157.0000000000 1371.4545454545,157.0000000000 1394.7272727273,157.0000000000" fill="none" stroke="#EC7B2C" stroke-width="3.4" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10,7"/>
+<line x1="1418" y1="115" x2="1418" y2="325" stroke="#EC7B2C" stroke-width="1.4"/>
+<line x1="1418" y1="325.0" x2="1425" y2="325.0" stroke="#EC7B2C" stroke-width="1.2"/>
+<text x="1435" y="332.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#EC7B2C" text-anchor="start">0</text>
+<line x1="1418" y1="283.0" x2="1425" y2="283.0" stroke="#EC7B2C" stroke-width="1.2"/>
+<text x="1435" y="290.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#EC7B2C" text-anchor="start">10</text>
+<line x1="1418" y1="241.0" x2="1425" y2="241.0" stroke="#EC7B2C" stroke-width="1.2"/>
+<text x="1435" y="248.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#EC7B2C" text-anchor="start">20</text>
+<line x1="1418" y1="199.0" x2="1425" y2="199.0" stroke="#EC7B2C" stroke-width="1.2"/>
+<text x="1435" y="206.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#EC7B2C" text-anchor="start">30</text>
+<line x1="1418" y1="157.0" x2="1425" y2="157.0" stroke="#EC7B2C" stroke-width="1.2"/>
+<text x="1435" y="164.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#EC7B2C" text-anchor="start">40</text>
+<line x1="1418" y1="115.0" x2="1425" y2="115.0" stroke="#EC7B2C" stroke-width="1.2"/>
+<text x="1435" y="122.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#EC7B2C" text-anchor="start">50</text>
+<text x="1510" y="220.0" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#EC7B2C" text-anchor="middle" transform="rotate(-90 1510 220.0)">Frauds</text>
+<text x="39" y="407" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700" fill="#172735" text-anchor="start">b</text>
+<text x="138" y="407" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#172735" text-anchor="start">H0 contribution (whole-window top-3%)</text>
+<line x1="161.27272727272728" y1="477" x2="161.27272727272728" y2="687" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="161.27272727272728" y1="687" x2="161.27272727272728" y2="694" stroke="#697786" stroke-width="1.2"/>
+<text x="161.27272727272728" y="722.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">126</text>
+<line x1="254.36363636363637" y1="477" x2="254.36363636363637" y2="687" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="254.36363636363637" y1="687" x2="254.36363636363637" y2="694" stroke="#697786" stroke-width="1.2"/>
+<text x="254.36363636363637" y="722.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">130</text>
+<line x1="487.09090909090907" y1="477" x2="487.09090909090907" y2="687" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="487.09090909090907" y1="687" x2="487.09090909090907" y2="694" stroke="#697786" stroke-width="1.2"/>
+<text x="487.09090909090907" y="722.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">140</text>
+<line x1="719.8181818181818" y1="477" x2="719.8181818181818" y2="687" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="719.8181818181818" y1="687" x2="719.8181818181818" y2="694" stroke="#697786" stroke-width="1.2"/>
+<text x="719.8181818181818" y="722.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">150</text>
+<line x1="952.5454545454545" y1="477" x2="952.5454545454545" y2="687" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="952.5454545454545" y1="687" x2="952.5454545454545" y2="694" stroke="#697786" stroke-width="1.2"/>
+<text x="952.5454545454545" y="722.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">160</text>
+<line x1="1185.2727272727273" y1="477" x2="1185.2727272727273" y2="687" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="1185.2727272727273" y1="687" x2="1185.2727272727273" y2="694" stroke="#697786" stroke-width="1.2"/>
+<text x="1185.2727272727273" y="722.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">170</text>
+<line x1="1394.7272727272727" y1="477" x2="1394.7272727272727" y2="687" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="1394.7272727272727" y1="687" x2="1394.7272727272727" y2="694" stroke="#697786" stroke-width="1.2"/>
+<text x="1394.7272727272727" y="722.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">179</text>
+<line x1="138" y1="677.0" x2="1418" y2="677.0" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="677.0" x2="138" y2="677.0" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="684.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">0</text>
+<line x1="138" y1="637.0" x2="1418" y2="637.0" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="637.0" x2="138" y2="637.0" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="644.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">2</text>
+<line x1="138" y1="597.0" x2="1418" y2="597.0" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="597.0" x2="138" y2="597.0" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="604.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">4</text>
+<line x1="138" y1="557.0" x2="1418" y2="557.0" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="557.0" x2="138" y2="557.0" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="564.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">6</text>
+<line x1="138" y1="517.0" x2="1418" y2="517.0" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="517.0" x2="138" y2="517.0" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="524.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">8</text>
+<line x1="138" y1="477.0" x2="1418" y2="477.0" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="477.0" x2="138" y2="477.0" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="484.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">10</text>
+<line x1="138" y1="477" x2="138" y2="687" stroke="#697786" stroke-width="1.6"/>
+<line x1="138" y1="687" x2="1418" y2="687" stroke="#697786" stroke-width="1.6"/>
+<text x="43" y="582.0" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#172735" text-anchor="middle" transform="rotate(-90 43 582.0)">Δ captured frauds</text>
+<polyline points="146.0000000000,444.0000000000 189.0000000000,444.0000000000" fill="none" stroke="#1675B6" stroke-width="3.2" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="202" y="451" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#172735" text-anchor="start">LightGBM</text>
+<polyline points="398.0000000000,444.0000000000 441.0000000000,444.0000000000" fill="none" stroke="#EC7B2C" stroke-width="3.2" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10,6"/>
+<text x="454" y="451" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#172735" text-anchor="start">XGBoost</text>
+<line x1="138" y1="677.0" x2="1418" y2="677.0" stroke="#8E98A3" stroke-width="1.6"/>
+<polyline points="161.2727272727,617.0000000000 184.5454545455,629.0000000000 207.8181818182,605.0000000000 231.0909090909,581.0000000000 254.3636363636,637.0000000000 277.6363636364,617.0000000000 300.9090909091,541.0000000000 324.1818181818,637.0000000000 347.4545454545,601.0000000000 370.7272727273,585.0000000000 394.0000000000,617.0000000000 417.2727272727,557.0000000000 440.5454545455,573.0000000000 463.8181818182,641.0000000000 487.0909090909,625.0000000000 510.3636363636,617.0000000000 533.6363636364,585.0000000000 556.9090909091,597.0000000000 580.1818181818,537.0000000000 603.4545454545,617.0000000000 626.7272727273,593.0000000000 650.0000000000,593.0000000000 673.2727272727,525.0000000000 696.5454545455,633.0000000000 719.8181818182,617.0000000000 743.0909090909,641.0000000000 766.3636363636,653.0000000000 789.6363636364,641.0000000000 812.9090909091,637.0000000000 836.1818181818,677.0000000000 859.4545454545,601.0000000000 882.7272727273,577.0000000000 906.0000000000,577.0000000000 929.2727272727,577.0000000000 952.5454545455,577.0000000000 975.8181818182,637.0000000000 999.0909090909,613.0000000000 1022.3636363636,589.0000000000 1045.6363636364,597.0000000000 1068.9090909091,577.0000000000 1092.1818181818,569.0000000000 1115.4545454545,577.0000000000 1138.7272727273,577.0000000000 1162.0000000000,589.0000000000 1185.2727272727,501.0000000000 1208.5454545455,617.0000000000 1231.8181818182,565.0000000000 1255.0909090909,613.0000000000 1278.3636363636,617.0000000000 1301.6363636364,605.0000000000 1324.9090909091,553.0000000000 1348.1818181818,577.0000000000 1371.4545454545,657.0000000000 1394.7272727273,625.0000000000" fill="none" stroke="#1675B6" stroke-width="3.4" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="161.2727272727,625.0000000000 184.5454545455,617.0000000000 207.8181818182,617.0000000000 231.0909090909,577.0000000000 254.3636363636,637.0000000000 277.6363636364,617.0000000000 300.9090909091,537.0000000000 324.1818181818,637.0000000000 347.4545454545,597.0000000000 370.7272727273,597.0000000000 394.0000000000,645.0000000000 417.2727272727,569.0000000000 440.5454545455,557.0000000000 463.8181818182,617.0000000000 487.0909090909,637.0000000000 510.3636363636,617.0000000000 533.6363636364,577.0000000000 556.9090909091,597.0000000000 580.1818181818,537.0000000000 603.4545454545,617.0000000000 626.7272727273,589.0000000000 650.0000000000,593.0000000000 673.2727272727,497.0000000000 696.5454545455,637.0000000000 719.8181818182,617.0000000000 743.0909090909,633.0000000000 766.3636363636,637.0000000000 789.6363636364,637.0000000000 812.9090909091,645.0000000000 836.1818181818,677.0000000000 859.4545454545,617.0000000000 882.7272727273,577.0000000000 906.0000000000,577.0000000000 929.2727272727,577.0000000000 952.5454545455,577.0000000000 975.8181818182,637.0000000000 999.0909090909,613.0000000000 1022.3636363636,577.0000000000 1045.6363636364,597.0000000000 1068.9090909091,585.0000000000 1092.1818181818,577.0000000000 1115.4545454545,577.0000000000 1138.7272727273,577.0000000000 1162.0000000000,585.0000000000 1185.2727272727,497.0000000000 1208.5454545455,617.0000000000 1231.8181818182,557.0000000000 1255.0909090909,601.0000000000 1278.3636363636,617.0000000000 1301.6363636364,597.0000000000 1324.9090909091,557.0000000000 1348.1818181818,577.0000000000 1371.4545454545,657.0000000000 1394.7272727273,613.0000000000" fill="none" stroke="#EC7B2C" stroke-width="3.4" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10,6"/>
+<text x="39" y="769" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700" fill="#172735" text-anchor="start">c</text>
+<text x="138" y="769" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#172735" text-anchor="start">H1 contribution (whole-window top-3%)</text>
+<line x1="161.27272727272728" y1="839" x2="161.27272727272728" y2="1049" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="161.27272727272728" y1="1049" x2="161.27272727272728" y2="1056" stroke="#697786" stroke-width="1.2"/>
+<text x="161.27272727272728" y="1084.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">126</text>
+<line x1="254.36363636363637" y1="839" x2="254.36363636363637" y2="1049" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="254.36363636363637" y1="1049" x2="254.36363636363637" y2="1056" stroke="#697786" stroke-width="1.2"/>
+<text x="254.36363636363637" y="1084.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">130</text>
+<line x1="487.09090909090907" y1="839" x2="487.09090909090907" y2="1049" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="487.09090909090907" y1="1049" x2="487.09090909090907" y2="1056" stroke="#697786" stroke-width="1.2"/>
+<text x="487.09090909090907" y="1084.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">140</text>
+<line x1="719.8181818181818" y1="839" x2="719.8181818181818" y2="1049" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="719.8181818181818" y1="1049" x2="719.8181818181818" y2="1056" stroke="#697786" stroke-width="1.2"/>
+<text x="719.8181818181818" y="1084.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">150</text>
+<line x1="952.5454545454545" y1="839" x2="952.5454545454545" y2="1049" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="952.5454545454545" y1="1049" x2="952.5454545454545" y2="1056" stroke="#697786" stroke-width="1.2"/>
+<text x="952.5454545454545" y="1084.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">160</text>
+<line x1="1185.2727272727273" y1="839" x2="1185.2727272727273" y2="1049" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="1185.2727272727273" y1="1049" x2="1185.2727272727273" y2="1056" stroke="#697786" stroke-width="1.2"/>
+<text x="1185.2727272727273" y="1084.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">170</text>
+<line x1="1394.7272727272727" y1="839" x2="1394.7272727272727" y2="1049" stroke="#EDF1F4" stroke-width="1"/>
+<line x1="1394.7272727272727" y1="1049" x2="1394.7272727272727" y2="1056" stroke="#697786" stroke-width="1.2"/>
+<text x="1394.7272727272727" y="1084.48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="middle">179</text>
+<line x1="138" y1="1031.5" x2="1418" y2="1031.5" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="1031.5" x2="138" y2="1031.5" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="1038.5" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">-2</text>
+<line x1="138" y1="996.5" x2="1418" y2="996.5" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="996.5" x2="138" y2="996.5" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="1003.5" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">-1</text>
+<line x1="138" y1="961.5" x2="1418" y2="961.5" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="961.5" x2="138" y2="961.5" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="968.5" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">0</text>
+<line x1="138" y1="926.5" x2="1418" y2="926.5" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="926.5" x2="138" y2="926.5" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="933.5" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">1</text>
+<line x1="138" y1="891.5" x2="1418" y2="891.5" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="891.5" x2="138" y2="891.5" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="898.5" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">2</text>
+<line x1="138" y1="856.5" x2="1418" y2="856.5" stroke="#E5EBF0" stroke-width="1"/>
+<line x1="131" y1="856.5" x2="138" y2="856.5" stroke="#697786" stroke-width="1.2"/>
+<text x="121" y="863.5" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#172735" text-anchor="end">3</text>
+<line x1="138" y1="839" x2="138" y2="1049" stroke="#697786" stroke-width="1.6"/>
+<line x1="138" y1="1049" x2="1418" y2="1049" stroke="#697786" stroke-width="1.6"/>
+<text x="43" y="944.0" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#172735" text-anchor="middle" transform="rotate(-90 43 944.0)">Δ captured frauds</text>
+<polyline points="146.0000000000,806.0000000000 189.0000000000,806.0000000000" fill="none" stroke="#1675B6" stroke-width="3.2" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="202" y="813" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#172735" text-anchor="start">LightGBM</text>
+<polyline points="398.0000000000,806.0000000000 441.0000000000,806.0000000000" fill="none" stroke="#EC7B2C" stroke-width="3.2" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10,6"/>
+<text x="454" y="813" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#172735" text-anchor="start">XGBoost</text>
+<line x1="138" y1="961.5" x2="1418" y2="961.5" stroke="#8E98A3" stroke-width="1.6"/>
+<polyline points="161.2727272727,982.5000000000 184.5454545455,933.5000000000 207.8181818182,961.5000000000 231.0909090909,961.5000000000 254.3636363636,961.5000000000 277.6363636364,947.5000000000 300.9090909091,996.5000000000 324.1818181818,989.5000000000 347.4545454545,982.5000000000 370.7272727273,961.5000000000 394.0000000000,954.5000000000 417.2727272727,975.5000000000 440.5454545455,926.5000000000 463.8181818182,975.5000000000 487.0909090909,961.5000000000 510.3636363636,961.5000000000 533.6363636364,926.5000000000 556.9090909091,933.5000000000 580.1818181818,926.5000000000 603.4545454545,1031.5000000000 626.7272727273,926.5000000000 650.0000000000,954.5000000000 673.2727272727,905.5000000000 696.5454545455,961.5000000000 719.8181818182,870.5000000000 743.0909090909,1003.5000000000 766.3636363636,989.5000000000 789.6363636364,961.5000000000 812.9090909091,940.5000000000 836.1818181818,996.5000000000 859.4545454545,919.5000000000 882.7272727273,996.5000000000 906.0000000000,1024.5000000000 929.2727272727,926.5000000000 952.5454545455,996.5000000000 975.8181818182,961.5000000000 999.0909090909,940.5000000000 1022.3636363636,982.5000000000 1045.6363636364,961.5000000000 1068.9090909091,961.5000000000 1092.1818181818,961.5000000000 1115.4545454545,968.5000000000 1138.7272727273,996.5000000000 1162.0000000000,933.5000000000 1185.2727272727,961.5000000000 1208.5454545455,961.5000000000 1231.8181818182,954.5000000000 1255.0909090909,989.5000000000 1278.3636363636,947.5000000000 1301.6363636364,982.5000000000 1324.9090909091,961.5000000000 1348.1818181818,961.5000000000 1371.4545454545,926.5000000000 1394.7272727273,947.5000000000" fill="none" stroke="#1675B6" stroke-width="3.4" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="161.2727272727,989.5000000000 184.5454545455,926.5000000000 207.8181818182,961.5000000000 231.0909090909,947.5000000000 254.3636363636,961.5000000000 277.6363636364,926.5000000000 300.9090909091,989.5000000000 324.1818181818,975.5000000000 347.4545454545,982.5000000000 370.7272727273,961.5000000000 394.0000000000,954.5000000000 417.2727272727,947.5000000000 440.5454545455,933.5000000000 463.8181818182,961.5000000000 487.0909090909,961.5000000000 510.3636363636,926.5000000000 533.6363636364,905.5000000000 556.9090909091,926.5000000000 580.1818181818,933.5000000000 603.4545454545,1024.5000000000 626.7272727273,947.5000000000 650.0000000000,961.5000000000 673.2727272727,926.5000000000 696.5454545455,961.5000000000 719.8181818182,891.5000000000 743.0909090909,975.5000000000 766.3636363636,961.5000000000 789.6363636364,961.5000000000 812.9090909091,968.5000000000 836.1818181818,996.5000000000 859.4545454545,1024.5000000000 882.7272727273,982.5000000000 906.0000000000,996.5000000000 929.2727272727,926.5000000000 952.5454545455,982.5000000000 975.8181818182,961.5000000000 999.0909090909,856.5000000000 1022.3636363636,1010.5000000000 1045.6363636364,961.5000000000 1068.9090909091,961.5000000000 1092.1818181818,961.5000000000 1115.4545454545,996.5000000000 1138.7272727273,954.5000000000 1162.0000000000,926.5000000000 1185.2727272727,961.5000000000 1208.5454545455,961.5000000000 1231.8181818182,926.5000000000 1255.0909090909,996.5000000000 1278.3636363636,919.5000000000 1301.6363636364,926.5000000000 1324.9090909091,961.5000000000 1348.1818181818,961.5000000000 1371.4545454545,926.5000000000 1394.7272727273,891.5000000000" fill="none" stroke="#EC7B2C" stroke-width="3.4" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10,6"/>
+<text x="778.0" y="1110.5" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="400" fill="#172735" text-anchor="middle">Simulation step</text>
+<text x="800.0" y="1147.14" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#647381" text-anchor="middle">Whole-window top-3% selections attributed to steps; no step-wise reranking.</text>
+<text x="800.0" y="1176.8" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#647381" text-anchor="middle">H0 = B0H - B0; H1 = B1H - B1. Contribution curves show five-seed mean differences.</text>
+</svg>

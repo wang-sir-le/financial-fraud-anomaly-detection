@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<title>Figure S9: Six whole-window condition tiles and four normalized contrasts</title>
+<desc>Six whole-window fixed C07 seed 42 conditions and the original four history-increment contrasts. Uniform row colors identify direct merchant input. Bar heights encode I in percentage points and labels give J in captured-fraud counts, with each fraud denominator shown. No inferential intervals or significance symbols.</desc>
+<rect x="0" y="0" width="1600" height="1100" fill="white" stroke="none" stroke-width="1"/>
+<text x="44" y="49" font-family="Times New Roman, Times, serif" font-size="40" font-weight="700" fill="#252A2B" text-anchor="start">Input × history conditions in BankSim</text>
+<text x="44" y="91" font-family="Times New Roman, Times, serif" font-size="27" font-weight="400" fill="#626D73" text-anchor="start">Fixed C07, seed 42  |  Retrospective development</text>
+<text x="1556" y="91" font-family="Times New Roman, Times, serif" font-size="27" font-weight="400" fill="#626D73" text-anchor="end">Whole window: P = 2,160; K = 5,950</text>
+<text x="44" y="157" font-family="Times New Roman, Times, serif" font-size="39" font-weight="700" fill="#252A2B" text-anchor="start">a</text>
+<text x="132" y="157" font-family="Times New Roman, Times, serif" font-size="32" font-weight="700" fill="#252A2B" text-anchor="start">Detection performance by input and history condition</text>
+<text x="44" y="202" font-family="Times New Roman, Times, serif" font-size="26" font-weight="400" fill="#626D73" text-anchor="start">Direct merchant</text>
+<text x="44" y="231" font-family="Times New Roman, Times, serif" font-size="26" font-weight="400" fill="#626D73" text-anchor="start">input</text>
+<text x="490" y="215.88" font-family="Times New Roman, Times, serif" font-size="32" font-weight="700" fill="#252A2B" text-anchor="middle">Hnone</text>
+<text x="905" y="215.88" font-family="Times New Roman, Times, serif" font-size="32" font-weight="700" fill="#252A2B" text-anchor="middle">H7</text>
+<text x="1320" y="215.88" font-family="Times New Roman, Times, serif" font-size="32" font-weight="700" fill="#252A2B" text-anchor="middle">Horig</text>
+<text x="44" y="298" font-family="Times New Roman, Times, serif" font-size="34" font-weight="700" fill="#252A2B" text-anchor="start">M-off</text>
+<text x="44" y="334" font-family="Times New Roman, Times, serif" font-size="27" font-weight="400" fill="#626D73" text-anchor="start">(absent)</text>
+<rect x="295" y="238" width="390" height="146" fill="#E8F1E4" stroke="none" stroke-width="1"/>
+<line x1="295" y1="384" x2="685" y2="384" stroke="#527A4E" stroke-width="2"/>
+<text x="490" y="290.58" font-family="Times New Roman, Times, serif" font-size="37" font-weight="700" fill="#252A2B" text-anchor="middle">TP = 1,905</text>
+<text x="490" y="331.2" font-family="Times New Roman, Times, serif" font-size="30" font-weight="400" fill="#252A2B" text-anchor="middle">Recall 88.1944%</text>
+<text x="490" y="367.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#626D73" text-anchor="middle">Uncaptured frauds: 255</text>
+<rect x="710" y="238" width="390" height="146" fill="#E8F1E4" stroke="none" stroke-width="1"/>
+<line x1="710" y1="384" x2="1100" y2="384" stroke="#527A4E" stroke-width="2"/>
+<text x="905" y="290.58" font-family="Times New Roman, Times, serif" font-size="37" font-weight="700" fill="#252A2B" text-anchor="middle">TP = 2,100</text>
+<text x="905" y="331.2" font-family="Times New Roman, Times, serif" font-size="30" font-weight="400" fill="#252A2B" text-anchor="middle">Recall 97.2222%</text>
+<text x="905" y="367.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#626D73" text-anchor="middle">Uncaptured frauds: 60</text>
+<rect x="1125" y="238" width="390" height="146" fill="#E8F1E4" stroke="none" stroke-width="1"/>
+<line x1="1125" y1="384" x2="1515" y2="384" stroke="#527A4E" stroke-width="2"/>
+<text x="1320" y="290.58" font-family="Times New Roman, Times, serif" font-size="37" font-weight="700" fill="#252A2B" text-anchor="middle">TP = 2,109</text>
+<text x="1320" y="331.2" font-family="Times New Roman, Times, serif" font-size="30" font-weight="400" fill="#252A2B" text-anchor="middle">Recall 97.6389%</text>
+<text x="1320" y="367.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#626D73" text-anchor="middle">Uncaptured frauds: 51</text>
+<text x="44" y="463" font-family="Times New Roman, Times, serif" font-size="34" font-weight="700" fill="#252A2B" text-anchor="start">M-on</text>
+<text x="44" y="499" font-family="Times New Roman, Times, serif" font-size="27" font-weight="400" fill="#626D73" text-anchor="start">(present)</text>
+<rect x="295" y="403" width="390" height="146" fill="#EFE8F4" stroke="none" stroke-width="1"/>
+<line x1="295" y1="549" x2="685" y2="549" stroke="#7A5A8A" stroke-width="2"/>
+<text x="490" y="455.58" font-family="Times New Roman, Times, serif" font-size="37" font-weight="700" fill="#252A2B" text-anchor="middle">TP = 2,113</text>
+<text x="490" y="496.2" font-family="Times New Roman, Times, serif" font-size="30" font-weight="400" fill="#252A2B" text-anchor="middle">Recall 97.8241%</text>
+<text x="490" y="532.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#626D73" text-anchor="middle">Uncaptured frauds: 47</text>
+<rect x="710" y="403" width="390" height="146" fill="#EFE8F4" stroke="none" stroke-width="1"/>
+<line x1="710" y1="549" x2="1100" y2="549" stroke="#7A5A8A" stroke-width="2"/>
+<text x="905" y="455.58" font-family="Times New Roman, Times, serif" font-size="37" font-weight="700" fill="#252A2B" text-anchor="middle">TP = 2,109</text>
+<text x="905" y="496.2" font-family="Times New Roman, Times, serif" font-size="30" font-weight="400" fill="#252A2B" text-anchor="middle">Recall 97.6389%</text>
+<text x="905" y="532.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#626D73" text-anchor="middle">Uncaptured frauds: 51</text>
+<rect x="1125" y="403" width="390" height="146" fill="#EFE8F4" stroke="none" stroke-width="1"/>
+<line x1="1125" y1="549" x2="1515" y2="549" stroke="#7A5A8A" stroke-width="2"/>
+<text x="1320" y="455.58" font-family="Times New Roman, Times, serif" font-size="37" font-weight="700" fill="#252A2B" text-anchor="middle">TP = 2,112</text>
+<text x="1320" y="496.2" font-family="Times New Roman, Times, serif" font-size="30" font-weight="400" fill="#252A2B" text-anchor="middle">Recall 97.7778%</text>
+<text x="1320" y="532.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#626D73" text-anchor="middle">Uncaptured frauds: 48</text>
+<text x="44" y="611" font-family="Times New Roman, Times, serif" font-size="39" font-weight="700" fill="#252A2B" text-anchor="start">b</text>
+<text x="132" y="611" font-family="Times New Roman, Times, serif" font-size="32" font-weight="700" fill="#252A2B" text-anchor="start">Difference of history increments</text>
+<text x="132" y="651" font-family="Times New Roman, Times, serif" font-size="26" font-weight="400" fill="#252A2B" text-anchor="start">J = (TP[Horig] - TP[H7])M-on - (TP[Horig] - TP[H7])M-off;   I = 100J/P (pp)</text>
+<line x1="150" y1="898.0952380952381" x2="1515" y2="898.0952380952381" stroke="#E3E7EA" stroke-width="1"/>
+<line x1="143" y1="898.0952380952381" x2="150" y2="898.0952380952381" stroke="#515D64" stroke-width="1.2"/>
+<text x="131" y="906.0952380952381" font-family="Times New Roman, Times, serif" font-size="26" font-weight="400" fill="#252A2B" text-anchor="end">-1.5</text>
+<line x1="150" y1="843.3333333333333" x2="1515" y2="843.3333333333333" stroke="#E3E7EA" stroke-width="1"/>
+<line x1="143" y1="843.3333333333333" x2="150" y2="843.3333333333333" stroke="#515D64" stroke-width="1.2"/>
+<text x="131" y="851.3333333333333" font-family="Times New Roman, Times, serif" font-size="26" font-weight="400" fill="#252A2B" text-anchor="end">-1.0</text>
+<line x1="150" y1="788.5714285714286" x2="1515" y2="788.5714285714286" stroke="#E3E7EA" stroke-width="1"/>
+<line x1="143" y1="788.5714285714286" x2="150" y2="788.5714285714286" stroke="#515D64" stroke-width="1.2"/>
+<text x="131" y="796.5714285714286" font-family="Times New Roman, Times, serif" font-size="26" font-weight="400" fill="#252A2B" text-anchor="end">-0.5</text>
+<line x1="143" y1="733.8095238095239" x2="150" y2="733.8095238095239" stroke="#515D64" stroke-width="1.2"/>
+<text x="131" y="741.8095238095239" font-family="Times New Roman, Times, serif" font-size="26" font-weight="400" fill="#252A2B" text-anchor="end">0.0</text>
+<line x1="150" y1="733.8095238095239" x2="1515" y2="733.8095238095239" stroke="#596770" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="150" y1="690" x2="150" y2="920" stroke="#515D64" stroke-width="1.6"/>
+<line x1="150" y1="920" x2="1515" y2="920" stroke="#515D64" stroke-width="1.6"/>
+<text x="47" y="805.0" font-family="Times New Roman, Times, serif" font-size="29" font-weight="400" fill="#252A2B" text-anchor="middle" transform="rotate(-90 47 805.0)">Contrast I (pp)</text>
+<line x1="548" y1="699" x2="548" y2="911" stroke="#BBC5CB" stroke-width="1.2" stroke-dasharray="6 5"/>
+<rect x="303" y="733.8095238095239" width="124" height="30.423280423280403" fill="#D9979D" stroke="none" stroke-width="1"/>
+<text x="365" y="792.2328042328043" font-family="Times New Roman, Times, serif" font-size="28" font-weight="700" fill="#A82D3C" text-anchor="middle">I = -0.2778 pp</text>
+<text x="365" y="822.2328042328043" font-family="Times New Roman, Times, serif" font-size="27" font-weight="400" fill="#A82D3C" text-anchor="middle">J = -6 TP</text>
+<line x1="365" y1="920" x2="365" y2="927" stroke="#515D64" stroke-width="1.2"/>
+<text x="365" y="969.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#252A2B" text-anchor="middle">Whole window</text>
+<text x="365" y="1003.5" font-family="Times New Roman, Times, serif" font-size="25" font-weight="400" fill="#626D73" text-anchor="middle">P = 2,160</text>
+<rect x="648" y="733.8095238095239" width="124" height="121.69312169312161" fill="#D9979D" stroke="none" stroke-width="1"/>
+<text x="710" y="883.5026455026455" font-family="Times New Roman, Times, serif" font-size="28" font-weight="700" fill="#A82D3C" text-anchor="middle">I = -1.1111 pp</text>
+<text x="710" y="913.5026455026455" font-family="Times New Roman, Times, serif" font-size="27" font-weight="400" fill="#A82D3C" text-anchor="middle">J = -8 TP</text>
+<line x1="710" y1="920" x2="710" y2="927" stroke="#515D64" stroke-width="1.2"/>
+<text x="710" y="969.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#252A2B" text-anchor="middle">126-143</text>
+<text x="710" y="1003.5" font-family="Times New Roman, Times, serif" font-size="25" font-weight="400" fill="#626D73" text-anchor="middle">P = 720</text>
+<rect x="993" y="733.8095238095239" width="124" height="45.634920634920604" fill="#D9979D" stroke="none" stroke-width="1"/>
+<text x="1055" y="807.4444444444445" font-family="Times New Roman, Times, serif" font-size="28" font-weight="700" fill="#A82D3C" text-anchor="middle">I = -0.4167 pp</text>
+<text x="1055" y="837.4444444444445" font-family="Times New Roman, Times, serif" font-size="27" font-weight="400" fill="#A82D3C" text-anchor="middle">J = -3 TP</text>
+<line x1="1055" y1="920" x2="1055" y2="927" stroke="#515D64" stroke-width="1.2"/>
+<text x="1055" y="969.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#252A2B" text-anchor="middle">144-161</text>
+<text x="1055" y="1003.5" font-family="Times New Roman, Times, serif" font-size="25" font-weight="400" fill="#626D73" text-anchor="middle">P = 720</text>
+<rect x="1338" y="718.5978835978837" width="124" height="15.211640211640201" fill="#81A4D6" stroke="none" stroke-width="1"/>
+<text x="1400" y="670.5978835978837" font-family="Times New Roman, Times, serif" font-size="28" font-weight="700" fill="#2D5D9D" text-anchor="middle">I = +0.1389 pp</text>
+<text x="1400" y="701.5978835978837" font-family="Times New Roman, Times, serif" font-size="27" font-weight="400" fill="#2D5D9D" text-anchor="middle">J = +1 TP</text>
+<line x1="1400" y1="920" x2="1400" y2="927" stroke="#515D64" stroke-width="1.2"/>
+<text x="1400" y="969.52" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#252A2B" text-anchor="middle">162-179</text>
+<text x="1400" y="1003.5" font-family="Times New Roman, Times, serif" font-size="25" font-weight="400" fill="#626D73" text-anchor="middle">P = 720</text>
+<text x="44" y="1041" font-family="Times New Roman, Times, serif" font-size="25" font-weight="400" fill="#626D73" text-anchor="start">Single fits; no inferential intervals. M-off retains merchant as the history key.</text>
+<text x="44" y="1078" font-family="Times New Roman, Times, serif" font-size="25" font-weight="400" fill="#626D73" text-anchor="start">Segment budgets are local and do not decompose the whole-window selection.</text>
+</svg>

@@ -1,0 +1,91 @@
+{
+  "publication_date": "2026-10-16",
+  "status": "PASS",
+  "prior_commit": "90983942b8dacbaa19ced22ec30089401201d336",
+  "scope": "Final adopted standalone figures, compact drawing data and public code; revision-work summaries only; manuscript files excluded by author request",
+  "adopted_main_pngs_verified_against_latest_local_working_manuscript": 6,
+  "adopted_changed_supplement_pngs_verified_against_latest_local_supplement": [
+    "S2",
+    "S3",
+    "S7",
+    "S9"
+  ],
+  "S1_original_standalone_PNG_PDF_script_and_data_unchanged_from_prior_commit": true,
+  "standalone_script_checks": {
+    "fig1": {
+      "status": "PASS",
+      "receipt": "figures/main/fig1_sync_verification.json",
+      "visible_text_labels_retained": 98,
+      "script_sha256": "f860af4c89875b69e5f8a8ad92aef2c95b2054c7eac015b4cf22f60c225eac18"
+    },
+    "fig5": {
+      "status": "PASS",
+      "receipt": "figures/main/fig5_sync_verification.json",
+      "visible_text_labels_retained": 126,
+      "script_sha256": "b8361f2081065dbbb204e316c5513b46d4bbba7961513b24045e12952cffd424"
+    },
+    "fig6": {
+      "status": "PASS",
+      "script_sha256": "ddb1896e78f5761b7c66567115ce1c776a8665af5060a8658bead80a345db3ba",
+      "verified_points": 111,
+      "saved_intervals": 6,
+      "maximum_point_difference": 1.4210854715202004e-14,
+      "clipped_text": [],
+      "renderer_byte_identity_required": false
+    },
+    "figS2": {
+      "status": "PASS",
+      "receipt": "figures/supplement/figS2_verification.json",
+      "script_sha256": "61f586e1231e2775bcdd685f14fa8b33850658a97c36f802c70865924fa14c9d",
+      "source_aggregate_values_preserved": true,
+      "single_page_vector_pdf": true
+    },
+    "figS3": {
+      "status": "PASS",
+      "receipt": "figures/supplement/figS3_verification.json",
+      "script_sha256": "9da50459fe13263a620b687d47f3fd5e4aafe4aaf67639ff5495fdf57ae8479d",
+      "source_aggregate_values_preserved": true,
+      "single_page_vector_pdf": true
+    },
+    "figS7": {
+      "status": "PASS",
+      "receipt": "figures/supplement/figS7_verification.json",
+      "script_sha256": "9dafdc6301603cf770f9758ad2d3b6872c0aeb7173b79af3e1d0f3a0fc7495bc",
+      "source_aggregate_values_preserved": true,
+      "single_page_vector_pdf": true
+    },
+    "figS9": {
+      "status": "PASS",
+      "receipt": "figures/supplement/figS9_verification.json",
+      "script_sha256": "de578f870bcd4777cee6fdd146b187e0d106e24979d10dcf000e5ba6c3f517c3",
+      "source_aggregate_values_preserved": true,
+      "single_page_vector_pdf": true
+    }
+  },
+  "figure_manifest_entries_verified": 121,
+  "compact_existing_scientific_inputs_preserved": true,
+  "scientific_implementation_experiment_archives_configs_and_tests_unchanged": true,
+  "new_model_fits": 0,
+  "new_transaction_predictions": 0,
+  "new_ranking_calibration_or_bootstrap_runs": 0,
+  "historical_scientific_test_suites_rerun": false,
+  "independent_external_raw_to_model_reproduction": false,
+  "integrity_verifier": "scripts/verify_publication.py",
+  "integrity_verifier_fixture_checks": [
+    "complete inventory passes",
+    "tampered bytes fail",
+    "path traversal rejected",
+    "manuscript and transaction paths rejected",
+    "historical source hashes distinguished from current public targets"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.3",
+    "PyMuPDF": "1.28.2"
+  },
+  "limitations": [
+    "Fonts and renderers may change redrawn export bytes; adopted source exports retain their recorded bytes.",
+    "S1 is restored standalone artwork from the prior commit; its recorded raster bytes differ from the original local Word embedding.",
+    "Language-editing and full-document visual review are historical completed work summarized here, not newly rerun publication checks."
+  ]
+}

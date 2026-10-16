@@ -1,0 +1,37 @@
+{
+  "score_stage": "platt",
+  "rank_rule": "np.lexsort((source_row_id, -platt)); exact stored score equality; source ID ascending",
+  "capacity_rule": "q = numpy.arange(501, dtype=float64)/10000; k = ceil(q*n); k=0 at q=0",
+  "aggregation": "Rank each fitted model/seed separately; arithmetic mean of five recalls and TPs.",
+  "grid": {
+    "points_per_curve": 501,
+    "min_pct": 0,
+    "max_pct": 5,
+    "step_pct": 0.01
+  },
+  "seed_ids": [
+    42,
+    52,
+    62,
+    72,
+    82
+  ],
+  "all_curves_monotonic_non_decreasing": true,
+  "paired_test_populations_verified": true,
+  "csv_validation": {
+    "seed_rows": 15030,
+    "mean_rows": 3006,
+    "maximum_mean_tp_aggregation_difference": 0.0,
+    "maximum_mean_recall_aggregation_difference": 1.1102230246251565e-16,
+    "float_serialization": "17 significant digits; pandas round_trip parser"
+  },
+  "new_fits": 0,
+  "new_score_predictions": 0,
+  "new_calibrations": 0,
+  "threshold_selection": 0,
+  "new_bootstrap_draws": 0,
+  "new_uncertainty_intervals": 0,
+  "evidence_boundary": "Descriptive completed-Test-window exact-K curves recomputed from saved Platt scores. They differ from Validation threshold transfer, impose no prospective decision rule, and contain no uncertainty intervals. The dense grid is evaluated directly; no interpolation, smoothing, jitter, model selection, or tie-rule alteration is applied.",
+  "source_audit_sha256": "ba684deeeb281233c79f90e29d3d218df8348ca5ea4ac72d26b1b81f3682a662",
+  "source_audit_path": "${WORKSPACE}/experiment/outputs/kais_fig3_template_redraw_20261011/run_01/data/capacity_data_audit.json"
+}

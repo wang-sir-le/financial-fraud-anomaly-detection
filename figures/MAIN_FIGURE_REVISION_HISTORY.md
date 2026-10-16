@@ -1,3 +1,5 @@
+> Entries below describe their recorded revision dates. For the final adopted presentation and current checks, see [UPDATES_20261016.md](../docs/UPDATES_20261016.md).
+
 # 主稿流程图文件
 
 fig1对应主稿图1；fig2对应主稿图2。每图包含：PNG（400 dpi）、矢量PDF、可编辑文字SVG及独立Python绘图脚本。
@@ -39,3 +41,13 @@ fig3为用户指定的PaySim双面板图，采用已选择的A版式（森林图
 63个原汇总坐标全部逐项核对；原汇总JSON的SHA256为14474aa597c76271f67805a1846fecb044372e6c1e2edfdcdd7469803e7cff2e。只替换原稿word/media/image6.png，图注、文档XML及其他包成员均逐字节不变。原位更新DOCX和同名PDF，内部保留修改前备份。图稿包含450 dpi PNG、矢量PDF、可编辑SVG、绘图脚本、冻结汇总JSON及核验记录；宽6.6英寸、高4.922034120734908英寸，最小字号8 pt。
 
 Word 16.0原生导出21页，已逐页查看，图位于第17页；除该图的像素区域外，全部页面逐像素一致，正文文字、图注、位置和图框一致。本轮模型fit、预处理fit、模型加载、预测、排名、AP重算、统计回放均为0。
+
+
+## 2026-10-15 Figure 6 source synchronization
+
+Archived the five-panel Figure 6 adopted in the manuscript on October 14. The current entry point, full caption and compact frozen inputs include panel (e), which reuses the saved PaySim and IEEE-CIS 3% reference recall intervals. The default PNG matches the manuscript image byte for byte; independent directory redraws retain all 111 points and six existing intervals. The six-figure numbering and scientific protocols are unchanged. See `main/fig6_README.md` and `main/fig6_reproduction_check.json`.
+
+
+## 2026-10-16 Final adopted Figures 1 and 5
+
+Figure 1 fits the Decisions text within the card while retaining the 8 pt font and scientific content. Figure 5 adopts the three-column single-row numerical layout with horizontal TP intervals, a taller forest area and larger points, lighter borders, blue/orange signed effects and a right-aligned CI column. All 81 reported values and original interval endpoints remain unchanged. Colours encode direction rather than significance. Public scripts read adjacent aggregate inputs and reproduce the adopted layout without author-local template directories. Figure 6 retains the previously synchronized five-panel presentation. No new experimental results were generated.

@@ -1,0 +1,151 @@
+{
+  "figure": "S9",
+  "sources": [
+    {
+      "path": "experiments/merchant_history_s22/results/六组结果.csv",
+      "sha256": "e37d45b8a1b520c36662eceb90258731ef0a29a7ba24310521fb22534307e38d"
+    },
+    {
+      "path": "experiments/merchant_history_s22/results/预定差值.csv",
+      "sha256": "e2aea4a9c7ca0826ca2e73056e9dd6d3cebb4ccfe357804d5531163aa8fa121d"
+    }
+  ],
+  "embedded_reference": {
+    "document": "补充材料_现稿.docx",
+    "part": "word/media/image10.png",
+    "sha256": "47291d8e50ad129ef7b387edfacb3cac18e5cbf1ea43678a28c0ef0c5c8185a8",
+    "pixels": [
+      4015,
+      2881
+    ]
+  },
+  "original_extent_emu": {
+    "cx": 6120000,
+    "cy": 4391462
+  },
+  "figsize_inches": [
+    6.692913385826771,
+    4.802561242344707
+  ],
+  "provenance": "Independent vector reconstruction of the current embedded Figure S9 from preserved aggregate CSVs. All six whole-window cells and all four contrasts are retained. No raw records, predictions, training, resampling or inferential intervals are read or computed.",
+  "design": "Reconstructs current two-row, three-column condition tiles and four lower contrast tiles. Bars encode recall (TP/P); remaining space is arithmetic P-TP. Tile color is a condition/direction cue, not inferential evidence.",
+  "interpretation": {
+    "status": "single-fit retrospective development",
+    "configuration": "C07",
+    "seed": 42,
+    "independent_final_validation": false,
+    "confidence_intervals": false,
+    "local_segment_budgets_do_not_decompose_whole_window": true,
+    "exclusions": [
+      "substitution",
+      "sufficiency",
+      "equivalence"
+    ]
+  },
+  "whole_window": [
+    {
+      "cell": "A0",
+      "merchant": "M-off",
+      "history": "Hnone",
+      "N": 198311,
+      "P": 2160,
+      "K": 5950,
+      "TP": 1905,
+      "recall": 0.8819444444444444,
+      "remaining_space": 255
+    },
+    {
+      "cell": "B0",
+      "merchant": "M-on",
+      "history": "Hnone",
+      "N": 198311,
+      "P": 2160,
+      "K": 5950,
+      "TP": 2113,
+      "recall": 0.9782407407407407,
+      "remaining_space": 47
+    },
+    {
+      "cell": "A1",
+      "merchant": "M-off",
+      "history": "H7",
+      "N": 198311,
+      "P": 2160,
+      "K": 5950,
+      "TP": 2100,
+      "recall": 0.9722222222222222,
+      "remaining_space": 60
+    },
+    {
+      "cell": "B1",
+      "merchant": "M-on",
+      "history": "H7",
+      "N": 198311,
+      "P": 2160,
+      "K": 5950,
+      "TP": 2109,
+      "recall": 0.9763888888888889,
+      "remaining_space": 51
+    },
+    {
+      "cell": "A2",
+      "merchant": "M-off",
+      "history": "Horig",
+      "N": 198311,
+      "P": 2160,
+      "K": 5950,
+      "TP": 2109,
+      "recall": 0.9763888888888889,
+      "remaining_space": 51
+    },
+    {
+      "cell": "B2",
+      "merchant": "M-on",
+      "history": "Horig",
+      "N": 198311,
+      "P": 2160,
+      "K": 5950,
+      "TP": 2112,
+      "recall": 0.9777777777777777,
+      "remaining_space": 48
+    }
+  ],
+  "contrasts": [
+    {
+      "window": "126-179",
+      "label": "Whole window",
+      "common_P": 2160,
+      "delta0_TP": 9,
+      "delta1_TP": 3,
+      "J": -6,
+      "I_pp": -0.2777777777777778
+    },
+    {
+      "window": "126-143",
+      "label": "126-143",
+      "common_P": 720,
+      "delta0_TP": 6,
+      "delta1_TP": -2,
+      "J": -8,
+      "I_pp": -1.1111111111111112
+    },
+    {
+      "window": "144-161",
+      "label": "144-161",
+      "common_P": 720,
+      "delta0_TP": 4,
+      "delta1_TP": 1,
+      "J": -3,
+      "I_pp": -0.4166666666666667
+    },
+    {
+      "window": "162-179",
+      "label": "162-179",
+      "common_P": 720,
+      "delta0_TP": 2,
+      "delta1_TP": 3,
+      "J": 1,
+      "I_pp": 0.1388888888888889
+    }
+  ]
+}

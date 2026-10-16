@@ -1,0 +1,64 @@
+﻿panel,dataset,fold,comparison_or_model,x,x_unit,x_rule,value,value_unit,metric,fn_cost,capacity,seed_count,uncertainty
+a,IEEE-CIS,1,M2-M0,1.0,percent,exact Test review budget,-0.07640878701050569,percentage points,recall difference,100,0.01,5,not supplied for these scenario means
+a,IEEE-CIS,1,M2-M0,3.0,percent,exact Test review budget,-0.9455587392550158,percentage points,recall difference,100,0.03,5,not supplied for these scenario means
+a,IEEE-CIS,1,M2-M0,5.0,percent,exact Test review budget,0.11461318051575908,percentage points,recall difference,100,0.05,5,not supplied for these scenario means
+a,IEEE-CIS,1,M2-M0,10.0,percent,exact Test review budget,0.744985673352434,percentage points,recall difference,100,0.1,5,not supplied for these scenario means
+a,IEEE-CIS,2,M2-M0,1.0,percent,exact Test review budget,0.23289665211062682,percentage points,recall difference,100,0.01,5,not supplied for these scenario means
+a,IEEE-CIS,2,M2-M0,3.0,percent,exact Test review budget,0.07763221737020598,percentage points,recall difference,100,0.03,5,not supplied for these scenario means
+a,IEEE-CIS,2,M2-M0,5.0,percent,exact Test review budget,0.048520135856382485,percentage points,recall difference,100,0.05,5,not supplied for these scenario means
+a,IEEE-CIS,2,M2-M0,10.0,percent,exact Test review budget,-0.7180980106744306,percentage points,recall difference,100,0.1,5,not supplied for these scenario means
+a,IEEE-CIS,3,M2-M0,1.0,percent,exact Test review budget,0.0451875282422054,percentage points,recall difference,100,0.01,5,not supplied for these scenario means
+a,IEEE-CIS,3,M2-M0,3.0,percent,exact Test review budget,0.8404880253050162,percentage points,recall difference,100,0.03,5,not supplied for these scenario means
+a,IEEE-CIS,3,M2-M0,5.0,percent,exact Test review budget,5.530953456845912,percentage points,recall difference,100,0.05,5,not supplied for these scenario means
+a,IEEE-CIS,3,M2-M0,10.0,percent,exact Test review budget,1.3827383642114777,percentage points,recall difference,100,0.1,5,not supplied for these scenario means
+b,PaySim,1,PTHW-P0,1.0,percent,Validation alert cap,54.61847389558233,percentage points,recall difference,100,0.01,5,not supplied for these scenario means
+b,PaySim,1,PTHW-P0,3.0,percent,Validation alert cap,58.31325301204819,percentage points,recall difference,100,0.03,5,not supplied for these scenario means
+b,PaySim,1,PTHW-P0,5.0,percent,Validation alert cap,58.31325301204819,percentage points,recall difference,100,0.05,5,not supplied for these scenario means
+b,PaySim,1,PTHW-P0,10.0,percent,Validation alert cap,58.31325301204819,percentage points,recall difference,100,0.1,5,not supplied for these scenario means
+b,PaySim,2,PTHW-P0,1.0,percent,Validation alert cap,32.43589743589744,percentage points,recall difference,100,0.01,5,not supplied for these scenario means
+b,PaySim,2,PTHW-P0,3.0,percent,Validation alert cap,55.06410256410256,percentage points,recall difference,100,0.03,5,not supplied for these scenario means
+b,PaySim,2,PTHW-P0,5.0,percent,Validation alert cap,55.06410256410256,percentage points,recall difference,100,0.05,5,not supplied for these scenario means
+b,PaySim,2,PTHW-P0,10.0,percent,Validation alert cap,55.06410256410256,percentage points,recall difference,100,0.1,5,not supplied for these scenario means
+b,PaySim,3,PTHW-P0,1.0,percent,Validation alert cap,35.10626992561105,percentage points,recall difference,100,0.01,5,not supplied for these scenario means
+b,PaySim,3,PTHW-P0,3.0,percent,Validation alert cap,41.030818278427205,percentage points,recall difference,100,0.03,5,not supplied for these scenario means
+b,PaySim,3,PTHW-P0,5.0,percent,Validation alert cap,41.030818278427205,percentage points,recall difference,100,0.05,5,not supplied for these scenario means
+b,PaySim,3,PTHW-P0,10.0,percent,Validation alert cap,41.030818278427205,percentage points,recall difference,100,0.1,5,not supplied for these scenario means
+c,PaySim,1,PTHW-P0,10,false-negative cost,cost at Validation cap 3%,14.585167636986952,percent,seedwise percentage cost reduction,10,0.03,5,not supplied for these scenario means
+c,PaySim,1,PTHW-P0,50,false-negative cost,cost at Validation cap 3%,37.80005707471034,percent,seedwise percentage cost reduction,50,0.03,5,not supplied for these scenario means
+c,PaySim,1,PTHW-P0,100,false-negative cost,cost at Validation cap 3%,49.816187767754215,percent,seedwise percentage cost reduction,100,0.03,5,not supplied for these scenario means
+c,PaySim,1,PTHW-P0,500,false-negative cost,cost at Validation cap 3%,62.09334873032763,percent,seedwise percentage cost reduction,500,0.03,5,not supplied for these scenario means
+c,PaySim,1,PTHW-P0,1000,false-negative cost,cost at Validation cap 3%,63.16882729503885,percent,seedwise percentage cost reduction,1000,0.03,5,not supplied for these scenario means
+c,PaySim,2,PTHW-P0,10,false-negative cost,cost at Validation cap 3%,-4.468540784486027,percent,seedwise percentage cost reduction,10,0.03,5,not supplied for these scenario means
+c,PaySim,2,PTHW-P0,50,false-negative cost,cost at Validation cap 3%,13.742117087702207,percent,seedwise percentage cost reduction,50,0.03,5,not supplied for these scenario means
+c,PaySim,2,PTHW-P0,100,false-negative cost,cost at Validation cap 3%,34.71287952414565,percent,seedwise percentage cost reduction,100,0.03,5,not supplied for these scenario means
+c,PaySim,2,PTHW-P0,500,false-negative cost,cost at Validation cap 3%,58.68410271155687,percent,seedwise percentage cost reduction,500,0.03,5,not supplied for these scenario means
+c,PaySim,2,PTHW-P0,1000,false-negative cost,cost at Validation cap 3%,61.00679417056412,percent,seedwise percentage cost reduction,1000,0.03,5,not supplied for these scenario means
+c,PaySim,3,PTHW-P0,10,false-negative cost,cost at Validation cap 3%,11.013582843363155,percent,seedwise percentage cost reduction,10,0.03,5,not supplied for these scenario means
+c,PaySim,3,PTHW-P0,50,false-negative cost,cost at Validation cap 3%,39.17733330754793,percent,seedwise percentage cost reduction,50,0.03,5,not supplied for these scenario means
+c,PaySim,3,PTHW-P0,100,false-negative cost,cost at Validation cap 3%,53.15108544376898,percent,seedwise percentage cost reduction,100,0.03,5,not supplied for these scenario means
+c,PaySim,3,PTHW-P0,500,false-negative cost,cost at Validation cap 3%,54.96837132705636,percent,seedwise percentage cost reduction,500,0.03,5,not supplied for these scenario means
+c,PaySim,3,PTHW-P0,1000,false-negative cost,cost at Validation cap 3%,56.713940229461485,percent,seedwise percentage cost reduction,1000,0.03,5,not supplied for these scenario means
+d,PaySim,1,PTHW,1.0,percent,Validation alert cap,0.9795522055951738,percent,Test alert rate,100,0.01,5,not supplied for these scenario means
+d,PaySim,1,PTHW,3.0,percent,Validation alert cap,1.1558193199836306,percent,Test alert rate,100,0.03,5,not supplied for these scenario means
+d,PaySim,1,PTHW,5.0,percent,Validation alert cap,1.1558193199836306,percent,Test alert rate,100,0.05,5,not supplied for these scenario means
+d,PaySim,1,PTHW,10.0,percent,Validation alert cap,1.1558193199836306,percent,Test alert rate,100,0.1,5,not supplied for these scenario means
+d,PaySim,1,P0,1.0,percent,Validation alert cap,0.0295023348234917,percent,Test alert rate,100,0.01,5,not supplied for these scenario means
+d,PaySim,1,P0,3.0,percent,Validation alert cap,0.0295023348234917,percent,Test alert rate,100,0.03,5,not supplied for these scenario means
+d,PaySim,1,P0,5.0,percent,Validation alert cap,0.0295023348234917,percent,Test alert rate,100,0.05,5,not supplied for these scenario means
+d,PaySim,1,P0,10.0,percent,Validation alert cap,0.0295023348234917,percent,Test alert rate,100,0.1,5,not supplied for these scenario means
+d,PaySim,2,PTHW,1.0,percent,Validation alert cap,0.6071906326897987,percent,Test alert rate,100,0.01,5,not supplied for these scenario means
+d,PaySim,2,PTHW,3.0,percent,Validation alert cap,1.3375501643242886,percent,Test alert rate,100,0.03,5,not supplied for these scenario means
+d,PaySim,2,PTHW,5.0,percent,Validation alert cap,1.3375501643242886,percent,Test alert rate,100,0.05,5,not supplied for these scenario means
+d,PaySim,2,PTHW,10.0,percent,Validation alert cap,1.3375501643242886,percent,Test alert rate,100,0.1,5,not supplied for these scenario means
+d,PaySim,2,P0,1.0,percent,Validation alert cap,0.027580056481313273,percent,Test alert rate,100,0.01,5,not supplied for these scenario means
+d,PaySim,2,P0,3.0,percent,Validation alert cap,0.027580056481313273,percent,Test alert rate,100,0.03,5,not supplied for these scenario means
+d,PaySim,2,P0,5.0,percent,Validation alert cap,0.027580056481313273,percent,Test alert rate,100,0.05,5,not supplied for these scenario means
+d,PaySim,2,P0,10.0,percent,Validation alert cap,0.027580056481313273,percent,Test alert rate,100,0.1,5,not supplied for these scenario means
+d,PaySim,3,PTHW,1.0,percent,Validation alert cap,2.3736852603094283,percent,Test alert rate,100,0.01,5,not supplied for these scenario means
+d,PaySim,3,PTHW,3.0,percent,Validation alert cap,3.541477220078433,percent,Test alert rate,100,0.03,5,not supplied for these scenario means
+d,PaySim,3,PTHW,5.0,percent,Validation alert cap,3.541477220078433,percent,Test alert rate,100,0.05,5,not supplied for these scenario means
+d,PaySim,3,PTHW,10.0,percent,Validation alert cap,3.541477220078433,percent,Test alert rate,100,0.1,5,not supplied for these scenario means
+d,PaySim,3,P0,1.0,percent,Validation alert cap,0.8682582535890804,percent,Test alert rate,100,0.01,5,not supplied for these scenario means
+d,PaySim,3,P0,3.0,percent,Validation alert cap,0.8682582535890804,percent,Test alert rate,100,0.03,5,not supplied for these scenario means
+d,PaySim,3,P0,5.0,percent,Validation alert cap,0.8682582535890804,percent,Test alert rate,100,0.05,5,not supplied for these scenario means
+d,PaySim,3,P0,10.0,percent,Validation alert cap,0.8682582535890804,percent,Test alert rate,100,0.1,5,not supplied for these scenario means

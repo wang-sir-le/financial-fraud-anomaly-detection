@@ -1,0 +1,112 @@
+﻿panel,fold,model,x,value,ci_lower,ci_upper,source
+a_pay,1,PTHW-P0,1.0,54.61847389558233,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,1,PTHW-P0,3.0,58.31325301204819,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,1,PTHW-P0,5.0,58.31325301204819,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,1,PTHW-P0,10.0,58.31325301204819,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,2,PTHW-P0,1.0,32.43589743589744,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,2,PTHW-P0,3.0,55.06410256410256,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,2,PTHW-P0,5.0,55.06410256410256,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,2,PTHW-P0,10.0,55.06410256410256,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,3,PTHW-P0,1.0,35.10626992561105,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,3,PTHW-P0,3.0,41.030818278427205,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,3,PTHW-P0,5.0,41.030818278427205,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_pay,3,PTHW-P0,10.0,41.030818278427205,,,paysim_seed_scenarios.csv; five-seed aggregation
+a_ieee,1,M2-M0,1.0,-0.07640878701050569,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,1,M2-M0,3.0,-0.9455587392550158,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,1,M2-M0,5.0,0.11461318051575908,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,1,M2-M0,10.0,0.744985673352434,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,2,M2-M0,1.0,0.23289665211062682,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,2,M2-M0,3.0,0.07763221737020598,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,2,M2-M0,5.0,0.048520135856382485,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,2,M2-M0,10.0,-0.7180980106744306,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,3,M2-M0,1.0,0.0451875282422054,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,3,M2-M0,3.0,0.8404880253050162,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,3,M2-M0,5.0,5.530953456845912,,,fig6_scenarios.csv (frozen IEEE means)
+a_ieee,3,M2-M0,10.0,1.3827383642114777,,,fig6_scenarios.csv (frozen IEEE means)
+b,1,PTHW-P0,10.0,14.585167636986952,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,1,PTHW-P0,50.0,37.80005707471034,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,1,PTHW-P0,100.0,49.816187767754215,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,1,PTHW-P0,500.0,62.09334873032763,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,1,PTHW-P0,1000.0,63.16882729503885,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,2,PTHW-P0,10.0,-4.468540784486027,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,2,PTHW-P0,50.0,13.742117087702207,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,2,PTHW-P0,100.0,34.71287952414565,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,2,PTHW-P0,500.0,58.68410271155687,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,2,PTHW-P0,1000.0,61.00679417056412,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,3,PTHW-P0,10.0,11.013582843363155,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,3,PTHW-P0,50.0,39.17733330754793,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,3,PTHW-P0,100.0,53.15108544376898,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,3,PTHW-P0,500.0,54.96837132705636,,,paysim_seed_scenarios.csv; five-seed aggregation
+b,3,PTHW-P0,1000.0,56.713940229461485,,,paysim_seed_scenarios.csv; five-seed aggregation
+c,1,PTHW,0.1,38.99598393574297,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,1,PTHW,1.0,66.50602409638554,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,1,PTHW,3.0,75.86345381526104,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,1,PTHW,5.0,77.429718875502,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,2,PTHW,0.1,15.256410256410255,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,2,PTHW,1.0,57.69230769230769,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,2,PTHW,3.0,74.35897435897436,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,2,PTHW,5.0,76.28205128205128,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,3,PTHW,0.1,3.724760892667375,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,3,PTHW,1.0,35.63761955366631,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,3,PTHW,3.0,72.12008501594049,,,capacity_seed_points.csv; mean(100 TP/frauds)
+c,3,PTHW,5.0,74.71307120085015,,,capacity_seed_points.csv; mean(100 TP/frauds)
+d_cap,1,PTHW,1.0,0.9795522055951738,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,1,PTHW,3.0,1.1558193199836306,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,1,PTHW,5.0,1.1558193199836306,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,1,PTHW,10.0,1.1558193199836306,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,2,PTHW,1.0,0.6071906326897987,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,2,PTHW,3.0,1.3375501643242886,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,2,PTHW,5.0,1.3375501643242886,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,2,PTHW,10.0,1.3375501643242886,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,3,PTHW,1.0,2.3736852603094283,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,3,PTHW,3.0,3.541477220078433,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,3,PTHW,5.0,3.541477220078433,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,3,PTHW,10.0,3.541477220078433,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,1,P0,1.0,0.0295023348234917,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,1,P0,3.0,0.0295023348234917,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,1,P0,5.0,0.0295023348234917,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,1,P0,10.0,0.0295023348234917,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,2,P0,1.0,0.027580056481313273,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,2,P0,3.0,0.027580056481313273,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,2,P0,5.0,0.027580056481313273,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,2,P0,10.0,0.027580056481313273,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,3,P0,1.0,0.8682582535890804,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,3,P0,3.0,0.8682582535890804,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,3,P0,5.0,0.8682582535890804,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cap,3,P0,10.0,0.8682582535890804,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,PTHW,10.0,0.03463723487188424,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,PTHW,50.0,0.5979202098773693,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,PTHW,100.0,1.1558193199836306,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,PTHW,500.0,1.6699939781626705,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,PTHW,1000.0,1.929913282430395,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,PTHW,10.0,0.05714191342834966,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,PTHW,50.0,0.4228831893775495,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,PTHW,100.0,1.3375501643242886,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,PTHW,500.0,1.7056365708245942,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,PTHW,1000.0,1.9058975078859144,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,PTHW,10.0,0.9914829525555069,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,PTHW,50.0,1.9495761893319388,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,PTHW,100.0,3.541477220078433,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,PTHW,500.0,4.059316217570278,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,PTHW,1000.0,4.4823259093828876,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,P0,10.0,0.006410844908902205,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,P0,50.0,0.0295023348234917,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,P0,100.0,0.0295023348234917,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,P0,500.0,1.3746594238642145,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,1,P0,1000.0,2.2822919081755386,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,P0,10.0,0.007927201862892438,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,P0,50.0,0.017043484005218743,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,P0,100.0,0.027580056481313273,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,P0,500.0,1.5625836072071477,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,2,P0,1000.0,1.5625836072071477,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,P0,10.0,0.10905841315611342,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,P0,50.0,0.3986348851855517,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,P0,100.0,0.8682582535890804,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,P0,500.0,3.1126251132753175,,,paysim_seed_scenarios.csv; five-seed aggregation
+d_cost,3,P0,1000.0,3.217474474771604,,,paysim_seed_scenarios.csv; five-seed aggregation
+e,1,PaySim,1,58.31325301204819,51.65339246387306,67.17056193829335,primary_effects.csv
+e,2,PaySim,2,55.06410256410257,46.56050955414013,67.115625,primary_effects.csv
+e,3,PaySim,3,41.0308182784272,37.767964009287816,44.7151080633183,primary_effects.csv
+e,1,IEEE-CIS,1,-0.946,-1.594,-0.34,ieee_reference_effects.csv
+e,2,IEEE-CIS,2,0.078,-0.507,0.684,ieee_reference_effects.csv
+e,3,IEEE-CIS,3,0.84,0.232,1.522,ieee_reference_effects.csv

@@ -1,0 +1,49 @@
+{
+  "paysim_seed_scenarios.csv": {
+    "source": "financial-fraud-anomaly-detection/experiments/paysim_deterministic_v2/evidence/training/all_seed_results.csv",
+    "source_sha256": "acd17dda7a4c758539759706c9f61962e4af78e68ea4ddd3c6470c5db8b11cec",
+    "copied_sha256": "acd17dda7a4c758539759706c9f61962e4af78e68ea4ddd3c6470c5db8b11cec"
+  },
+  "fig6_scenarios.csv": {
+    "source": "financial-fraud-anomaly-detection/figures/main/data/fig6_scenarios.csv",
+    "source_sha256": "ff86ab38cca134d849b6a3c547b5a3646d6641b4d7eb9cf56fe747ea9104052e",
+    "copied_sha256": "ff86ab38cca134d849b6a3c547b5a3646d6641b4d7eb9cf56fe747ea9104052e"
+  },
+  "primary_effects.csv": {
+    "source": "financial-fraud-anomaly-detection/figures/main/data/primary_effects.csv",
+    "source_sha256": "5af7cbb3ce623fbe64c068f746c21e0664044cae8a864b4ea9304ac10409c32c",
+    "copied_sha256": "5af7cbb3ce623fbe64c068f746c21e0664044cae8a864b4ea9304ac10409c32c"
+  },
+  "paysim_bootstrap_summary.csv": {
+    "source": "financial-fraud-anomaly-detection/experiments/paysim_deterministic_v2/evidence/primary/timeblock_bootstrap_fold_summary.csv",
+    "source_sha256": "2c56c3724d7785a3af10c60aa2ea25eeff135a47638c194df5916b85047ca284",
+    "copied_sha256": "2c56c3724d7785a3af10c60aa2ea25eeff135a47638c194df5916b85047ca284"
+  },
+  "ieee_reference_effects.csv": {
+    "source": "financial-fraud-anomaly-detection/figures/main/data/fig5_combined_metrics.csv",
+    "source_sha256": "a7674b51c6ba8688548699cbab089931ea4abea25a21135e71c7372bf469d49c",
+    "copied_sha256": "a7674b51c6ba8688548699cbab089931ea4abea25a21135e71c7372bf469d49c"
+  },
+  "ieee_provenance.json": {
+    "source": "financial-fraud-anomaly-detection/figures/main/data/fig5_provenance.json",
+    "source_sha256": "561dec49e891eae2bf7600a4163c6bc491715474492699d17ee17d4b43576764",
+    "copied_sha256": "561dec49e891eae2bf7600a4163c6bc491715474492699d17ee17d4b43576764"
+  },
+  "capacity_contract.json": {
+    "source": "financial-fraud-anomaly-detection/figures/main/data/capacity_contract.json",
+    "source_sha256": "406124a067c09e96a63bd60a09226b12948ba33ee4d45daaf878f44bce841796",
+    "copied_sha256": "406124a067c09e96a63bd60a09226b12948ba33ee4d45daaf878f44bce841796"
+  },
+  "expected_plot_data.csv": {
+    "source": "figure_revisions/fig6_soft_light_20261014/plot_data.csv",
+    "source_sha256": "93779fb628aec53ae7d71b78af07e358c171b33f87ed705a0c0c783c559588c7",
+    "copied_sha256": "93779fb628aec53ae7d71b78af07e358c171b33f87ed705a0c0c783c559588c7"
+  },
+  "capacity_seed_points.csv": {
+    "source": "financial-fraud-anomaly-detection/figures/main/data/capacity_seed_points.csv",
+    "source_sha256": "b241e5832bc42d77194249d0e4706dbbf51f7873007673425340f5bf32162f1f",
+    "copied_sha256": "e1bee1c6e2beccae9b95bf2d61d93993479bedf0d6a86c463302bfa819ea5b4b",
+    "selection": "PTHW/platt; q=0.001,0.01,0.03,0.05; all 3 folds and 5 seeds",
+    "rows": 60
+  }
+}

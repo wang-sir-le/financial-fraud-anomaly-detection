@@ -659,8 +659,8 @@ L 271.513701 286.866142
 " clip-path="url(#p4fc70fc723)" style="fill: none; stroke: #b7c9d4; stroke-width: 0.7; stroke-linecap: square"/>
    </g>
    <g id="line2d_11">
-    <path d="M 297.025512 278.929134 
-L 364.852913 278.929134 
+    <path d="M 297.025512 276.377953 
+L 364.852913 276.377953 
 " clip-path="url(#p4fc70fc723)" style="fill: none; stroke: #b7c9d4; stroke-width: 0.7; stroke-linecap: square"/>
    </g>
    <g id="patch_48">
@@ -1166,13 +1166,14 @@ z
     <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #536775" x="330.939213" y="273.343716" transform="rotate(-0 330.939213 273.343716)">Test workload varies</text>
    </g>
    <g id="text_82">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #25333d" x="330.939213" y="288.939892" transform="rotate(-0 330.939213 288.939892)">IEEE-CIS / BankSim</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #25333d" x="330.939213" y="283.554065" transform="rotate(-0 330.939213 283.554065)">IEEE-CIS/BankSim</text>
    </g>
    <g id="text_83">
-    <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #25333d" x="330.939213" y="300.274724" transform="rotate(-0 330.939213 300.274724)">Completed Test ranking</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #25333d" x="330.939213" y="292.621181" transform="rotate(-0 330.939213 292.621181)">Completed Test</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #25333d" x="330.939213" y="301.408582" transform="rotate(-0 330.939213 301.408582)">ranking</text>
    </g>
    <g id="text_84">
-    <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #25333d" x="330.939213" y="311.613307" transform="rotate(-0 330.939213 311.613307)">k = ceil(0.03N)</text>
+    <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #25333d" x="330.939213" y="310.195984" transform="rotate(-0 330.939213 310.195984)">k = ceil(0.03N)</text>
    </g>
    <g id="text_85">
     <text style="font-size: 8px; font-family: 'Arial', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #25333d" x="424.278425" y="273.296841" transform="rotate(-0 424.278425 273.296841)">AP by stage</text>

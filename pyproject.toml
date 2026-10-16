@@ -22,7 +22,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.16", "mypy>=1", "bandit>=1"]
-figures = ["PyMuPDF>=1.28", "lxml>=5", "Pillow>=10"]
+figures = ["PyMuPDF>=1.28", "lxml>=5", "Pillow>=10", "reportlab>=4"]
 
 [project.scripts]
 fraudx = "fraudx.cli:main"

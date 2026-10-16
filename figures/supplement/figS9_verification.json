@@ -1,0 +1,125 @@
+{
+  "figure": "S9",
+  "presentation": "figS9_tiles_Icontrast",
+  "input_path": "figS9_data.json",
+  "input_sha256": "e86eb2bb6c432ff3e9ef5656a90aaf97433c7f538fca3d98fe0cd917c17aad92",
+  "source_aggregate_values_preserved": true,
+  "adopted_artwork_review": {
+    "source_data_sha256": "e86eb2bb6c432ff3e9ef5656a90aaf97433c7f538fca3d98fe0cd917c17aad92",
+    "source_files_hash_check": "PASS",
+    "whole_window_cells": 6,
+    "whole_window_P": 2160,
+    "whole_window_K": 5950,
+    "segment_P": 720,
+    "bars": 4,
+    "bar_metric": "I (pp), unrounded",
+    "contrasts_J": [
+      -6,
+      -8,
+      -3,
+      1
+    ],
+    "contrasts_I_pp": [
+      -0.2777777777777778,
+      -1.1111111111111112,
+      -0.4166666666666667,
+      0.1388888888888889
+    ],
+    "all_TP_recall_headroom_checked": true,
+    "all_J_I_arithmetic_checked": true,
+    "continuous_TP_color_scale": false,
+    "uniform_categorical_row_colors": true,
+    "duplicated_TP_line_panel": false,
+    "significance_symbols": 0,
+    "uncertainty_intervals": 0,
+    "new_predictions": 0,
+    "new_fits": 0,
+    "new_resampling": 0,
+    "source_values_changed": false,
+    "font": "TimesNewRoman",
+    "minimum_font_px": 24,
+    "minimum_font_pt": 8.078740157480315,
+    "text_canvas_bounds": "PASS",
+    "pdf_width_mm": 190,
+    "pdf_height_mm": 130.625,
+    "independent_raw_csv_check": "PASS",
+    "raw_cells_checked": 6,
+    "raw_contrasts_checked": 4,
+    "unrounded_I_bar_height_check": "PASS",
+    "pdf_pages": 1,
+    "pdf_raster_images": 0,
+    "pdf_text_labels_check": "PASS",
+    "raster_pixels": [
+      4488,
+      3086
+    ],
+    "raster_dpi": [
+      599.9988,
+      599.9988
+    ],
+    "latest_png_visual_review": "PASS",
+    "independent_pdf_render_visual_review": "PASS",
+    "second_reviewer": "PASS",
+    "absolute_I_bar_height_ratio": [
+      2,
+      8,
+      3,
+      1
+    ]
+  },
+  "export_sha256": {
+    "figS9.png": "9fd8e16359a549602dde328ab273fed8462b7b72fd468fd40d74ee2fa46f484e",
+    "figS9.pdf": "740a758270d84816505b8708d82cfa2cf7be6e8b71f353b584550e49c3ab1cad",
+    "figS9.svg": "e47be33f5590cd0c16d881876055f8eb0f66e84c18c6c4d8b48463dff78af118"
+  },
+  "reproduction_scope": "Frozen aggregate drawing only; fonts and PDF rasterizers can change pixels.",
+  "new_training_prediction_or_resampling_calls": 0,
+  "source_hashes": [
+    {
+      "path": "experiments/merchant_history_s22/results/六组结果.csv",
+      "sha256": "e37d45b8a1b520c36662eceb90258731ef0a29a7ba24310521fb22534307e38d"
+    },
+    {
+      "path": "experiments/merchant_history_s22/results/预定差值.csv",
+      "sha256": "e2aea4a9c7ca0826ca2e73056e9dd6d3cebb4ccfe357804d5531163aa8fa121d"
+    }
+  ],
+  "source_csv_hashes_checked": "PASS",
+  "source_arithmetic": "PASS",
+  "remaining_space_is_P_minus_TP": true,
+  "recall_is_TP_over_P": true,
+  "contrast_J_is_difference_of_increments": true,
+  "contrast_I_is_100J_over_P_pp": true,
+  "local_segment_budgets_do_not_decompose_whole_window": true,
+  "previous_embedded_reference": {
+    "document": "补充材料_现稿.docx",
+    "part": "word/media/image10.png",
+    "sha256": "47291d8e50ad129ef7b387edfacb3cac18e5cbf1ea43678a28c0ef0c5c8185a8",
+    "pixels": [
+      4015,
+      2881
+    ]
+  },
+  "isolated_redraw_check": {
+    "status": "PASS",
+    "input_json_byte_identical_to_reviewed_source": true,
+    "adopted_media_bytes_preserved": true,
+    "identical_frozen_plot_or_audit_files": [
+      "figS9_render_audit.json",
+      "figS9_whole_window_cells.csv",
+      "figS9_contrast_values.csv"
+    ],
+    "redrawn_pdf_pages": 1,
+    "redrawn_pdf_raster_images": 0,
+    "redrawn_svg_bytes_equal_adopted": true,
+    "redrawn_png_pixels": [
+      4489,
+      3086
+    ],
+    "rasterizer": "PyMuPDF",
+    "isolated_output_directory": true,
+    "delivery_exports_not_overwritten": true,
+    "repository_source_csv_hash_check": "PASS"
+  },
+  "frozen_input_layout_metadata_scope": "Input JSON preserves historical artwork metadata; the current I-bar design and current export hashes are recorded here."
+}

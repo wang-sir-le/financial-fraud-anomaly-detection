@@ -1,11 +1,15 @@
 """Recreate a six-panel IEEE-CIS figure using reported manuscript results.
 
-Run this script next to its data directory. Matplotlib and Pillow are required.
+Usage: python fig5.py [--out-dir PATH]. Matplotlib and Pillow are required.
+Reads adjacent frozen CSVs; no private workspace or manuscript is opened.
+Adopted exports preserve author bytes. Font/rendering differences may affect
+redrawn bytes; see fig5_README.md.
 No predictions, fits, bootstrap draws, or confidence intervals are recomputed.
 """
 
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import json
@@ -25,21 +29,17 @@ from matplotlib.colorbar import ColorbarBase
 from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
 from matplotlib.figure import Figure
 from matplotlib.patches import FancyBboxPatch, Rectangle
-from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
-FIGURES = ROOT
-QA = ROOT / "fig5_qa"
-NAME = "fig5"
-INK = "#26323D"
-MUTED = "#667480"
-BORDER = "#ABB5BE"
-BAND = "#F1F3F5"
-NEGATIVE = "#FA7A6F"
-POSITIVE = "#5DC050"
-NEGATIVE_INK = "#B7443A"
-POSITIVE_INK = "#2F7E2B"
+INK = "#000000"
+MUTED = "#000000"
+BORDER = "#AAB4BC"
+BAND = "#F8F9FA"
+NEGATIVE = "#BE8150"
+POSITIVE = "#527A97"
+NEGATIVE_INK = "#8B572F"
+POSITIVE_INK = "#355F7B"
 WHITE = "#FFFFFF"
 
 CAPTION = (
@@ -48,7 +48,7 @@ CAPTION = (
     "to Folds 1–3. (a–c) LightGBM combined effects, M2−M0: captured-fraud difference "
     "(ΔTP), recall difference (percentage points), and average-precision difference "
     "(0–1 scale), with their original pointwise 95% intervals from Table 9. The "
-    "vertical point–interval plots display ΔTP only and share the same −40 to +40 "
+    "horizontal point–interval plots display ΔTP only and share the same −40 to +40 "
     "range. (d–f) History increments (H, M1−M0) and incremental weighting above history "
     "(W, M2−M1) from Table 10. Numerical columns and heatmaps show ΔTP point estimates "
     "for LightGBM, Logistic and directly paired Logistic-minus-LightGBM effects. "
@@ -142,7 +142,7 @@ def box(fig: Figure, x: float, y: float, w: float, h: float, color: Any) -> None
 
 
 def separator(fig: Figure, x: float, y: float, w: float, h: float) -> None:
-    box(fig, x, y, w, h, "#E4E8EC")
+    box(fig, x, y, w, h, "#E9EDF0")
 
 
 def panel(fig: Figure, x: float, y: float, letter: str, label: str) -> None:
@@ -155,12 +155,13 @@ def panel(fig: Figure, x: float, y: float, letter: str, label: str) -> None:
             boxstyle="round,pad=0.002,rounding_size=0.005",
             transform=fig.transFigure,
             facecolor=WHITE,
-            edgecolor=BORDER,
-            linewidth=0.6,
+            edgecolor="#D7DDE2",
+            linewidth=0.35,
             zorder=-2,
         )
     )
-    box(fig, x + 0.001, y + height - 0.041, width - 0.002, 0.039, BAND)
+    box(fig, x + 0.001, y + height - 0.002 - 11.4 / 338.4,
+        width - 0.002, 11.4 / 338.4, BAND)
     text(fig, x + 0.011, y + height - 0.022, letter, size=9.6, weight="bold")
     text(fig, x + 0.034, y + height - 0.022, label, size=8.7, weight="bold")
 
@@ -194,6 +195,7 @@ def draw(totals: list[Effect], components: list[Effect]) -> Figure:
             "svg.fonttype": "none",
             "axes.unicode_minus": True,
             "savefig.facecolor": WHITE,
+            "svg.hashsalt": "fig5-blue-orange-adopted-20261016",
         }
     )
     fig = plt.figure(figsize=(7.2, 4.7), facecolor=WHITE)
@@ -215,7 +217,7 @@ def draw(totals: list[Effect], components: list[Effect]) -> Figure:
     )
     totals_lookup = {(r.fold, r.metric): r for r in totals}
     lookup = {(r.contrast, r.fold, r.workflow): r for r in components}
-    cmap = LinearSegmentedColormap.from_list("signed_delta_tp", (NEGATIVE, "#FAF7F6", POSITIVE))
+    cmap = LinearSegmentedColormap.from_list("signed_delta_tp", (NEGATIVE, "#FAF9F6", POSITIVE))
     norm = TwoSlopeNorm(vmin=-120, vcenter=0, vmax=120)
     column_x = (0.026, 0.349, 0.672)
     top_y, bottom_y = 0.519, 0.134
@@ -223,14 +225,20 @@ def draw(totals: list[Effect], components: list[Effect]) -> Figure:
         panel(fig, x, top_y, chr(96 + fold), f"Fold {fold} | Combined effect")
         panel(fig, x, bottom_y, chr(99 + fold), f"Fold {fold} | Component effects")
         text(fig, x + 0.011, top_y + 0.300, "LightGBM · M2 − M0", size=8, color=MUTED)
-        metric_y = (top_y + 0.240, top_y + 0.164, top_y + 0.088)
+        # Full-width columns share one baseline per record, like the reference.
+        estimate_x, interval_x = x + 0.155, x + 0.288
+        text(fig, x + 0.011, top_y + 0.255, "Metric", size=8, weight="bold")
+        text(fig, x + 0.127, top_y + 0.255, "Estimate", size=8, weight="bold", align="center")
+        text(fig, x + (0.165 + 0.288) / 2, top_y + 0.255, "95% CI", size=8, weight="bold", align="center")
+        separator(fig, x + 0.011, top_y + 0.232, 0.277, 0.0008)
+        metric_y = (top_y + 0.208, top_y + 0.160, top_y + 0.112)
         labels = ("ΔTP", "ΔRecall (pp)", "ΔAP (0–1)")
         for metric, label, y in zip(("ΔTP", "ΔRecall", "ΔAP"), labels, metric_y, strict=True):
             record = totals_lookup[(fold, metric)]
-            text(fig, x + 0.012, y, label, size=8)
+            text(fig, x + 0.011, y, label, size=8)
             text(
                 fig,
-                x + 0.188,
+                estimate_x,
                 y,
                 number(record.estimate, record.digits, sign=True),
                 size=8.4,
@@ -238,37 +246,37 @@ def draw(totals: list[Effect], components: list[Effect]) -> Figure:
                 align="right",
                 color=effect_color(record.estimate),
             )
-            text(fig, x + 0.188, y - 0.028, ci(record), size=8, color=MUTED, align="right")
-        separator(fig, x + 0.202, top_y + 0.045, 0.0008, 0.259)
-        text(fig, x + 0.2325, top_y + 0.300, "ΔTP", size=8, weight="bold", align="center")
-        ax = fig.add_axes((x + 0.211, top_y + 0.061, 0.043, 0.220))
-        ax.set_xlim(-0.6, 0.6)
-        ax.set_ylim(-40, 40)
-        ax.set_yticks((-40, 0, 40))
-        ax.set_xticks([])
-        ax.yaxis.tick_right()
-        ax.tick_params(axis="y", length=2.5, width=0.5, labelsize=8, pad=2, colors=MUTED)
-        ax.spines[["left", "top", "bottom"]].set_visible(False)
-        ax.spines["right"].set_color(BORDER)
-        ax.spines["right"].set_linewidth(0.5)
-        ax.axhline(0, color="#8B96A1", linewidth=0.7, linestyle=(0, (3, 2)))
+            text(fig, interval_x, y, ci(record), size=8, color=MUTED, align="right")
+        for boundary_y in (top_y + 0.184, top_y + 0.136, top_y + 0.088):
+            separator(fig, x + 0.011, boundary_y, 0.277, 0.00055)
+        text(fig, x + 0.011, top_y + 0.062 + 3.0048 / 338.4, "ΔTP", size=8, weight="bold")
+        text(fig, x + 0.011, top_y + 0.036 + 3.0048 / 338.4, "(95% CI)", size=8, color=MUTED)
+        ax = fig.add_axes((x + 0.120, (338.4 - 145.8) / 338.4, 0.158, 12 / 338.4))
+        ax.set_xlim(-40, 40)
+        ax.set_ylim(-0.6, 0.6)
+        ax.set_xticks((-40, 0, 40))
+        ax.set_yticks([])
+        ax.tick_params(axis="x", length=2.5, width=0.5, labelsize=8, pad=2, colors=MUTED)
+        ax.spines[["left", "top", "right"]].set_visible(False)
+        ax.spines["bottom"].set_color(BORDER)
+        ax.spines["bottom"].set_linewidth(0.5)
+        ax.axvline(0, color="#929DA7", linewidth=0.7, linestyle=(0, (3, 2)))
         total = totals_lookup[(fold, "ΔTP")]
         ax.errorbar(
-            0,
             total.estimate,
-            yerr=[[total.estimate - total.lower], [total.upper - total.estimate]],
+            0,
+            xerr=[[total.estimate - total.lower], [total.upper - total.estimate]],
             fmt="o",
-            markersize=4.8,
+            markersize=6,
             color=effect_color(total.estimate),
             markerfacecolor=NEGATIVE if total.estimate < 0 else POSITIVE,
             ecolor=effect_color(total.estimate),
             elinewidth=1.0,
-            capsize=3.5,
+            capsize=4,
             capthick=0.9,
             markeredgecolor=WHITE,
-            markeredgewidth=0.6,
+            markeredgewidth=0.7,
         )
-        text(fig, x + 0.2325, top_y + 0.028, "95% CI", size=8, color=MUTED, align="center")
 
         # Component card: aligned numerical columns and a small heatmap, like the reference.
         text(fig, x + 0.011, bottom_y + 0.296, "Workflow", size=8, weight="bold")
@@ -333,7 +341,7 @@ def draw(totals: list[Effect], components: list[Effect]) -> Figure:
         fig,
         0.026,
         0.026,
-        "Pointwise conditional 95% intervals; colours encode direction, not significance.",
+        "Pointwise conditional 95% intervals. Orange: negative; blue: positive. Colour does not indicate significance.",
         size=8,
         color=MUTED,
     )
@@ -363,6 +371,20 @@ def render_report(fig: Figure) -> dict[str, Any]:
             clipped.append(artist.get_text())
     if clipped or min(sizes) < 8:
         raise ValueError(f"Typography or bounds failure: {clipped}")
+    # Check the actual selected font metrics against the fixed CI column.
+    # Wider fallback fonts must fail clearly rather than overlap adjacent values.
+    interval_gaps = []
+    for x in (0.026, 0.349, 0.672):
+        for y in (0.519 + 0.208, 0.519 + 0.160, 0.519 + 0.112):
+            interval = next(
+                artist for artist in fig.texts
+                if math.isclose(artist.get_position()[0], x + 0.288)
+                and math.isclose(artist.get_position()[1], y)
+            )
+            extent = interval.get_window_extent(renderer)
+            if extent.x0 < (x + 0.165) * width - 0.5:
+                raise ValueError("Selected font is too wide for the 95% CI column")
+            interval_gaps.append((extent.x0 - (x + 0.155) * width) * 72 / fig.dpi)
     return {
         "minimum_font_pt": min(sizes),
         "clipped_text": clipped,
@@ -370,62 +392,46 @@ def render_report(fig: Figure) -> dict[str, Any]:
         "figure_width_mm": 182.88,
         "figure_height_mm": 119.38,
         "top_delta_tp_axis_ranges": [[-40, 40]] * 3,
+        "top_delta_tp_axis_orientation": "horizontal",
         "heatmap_scale": [-120, 0, 120],
         "new_intervals_computed": False,
         "manuscript_modified_by_this_script": False,
+        "ci_text_inside_fixed_columns": True,
+        "minimum_estimate_to_interval_gap_pt": min(interval_gaps),
     }
 
 
 def main() -> None:
-    FIGURES.mkdir(parents=True, exist_ok=True)
-    QA.mkdir(parents=True, exist_ok=True)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--out-dir", type=Path, default=ROOT)
+    args = parser.parse_args()
+    destination = args.out_dir.resolve()
+    destination.mkdir(parents=True, exist_ok=True)
     totals = load_data(DATA / "fig5_combined_metrics.csv")
     components = load_data(DATA / "fig5_component_effects.csv")
     validate_data(totals, components)
     fig = draw(totals, components)
     report = render_report(fig)
-    (QA / "render_validation.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
-    fig.savefig(FIGURES / f"{NAME}.svg", metadata={"Creator": ""})
-    fig.savefig(FIGURES / f"{NAME}.pdf", metadata={"Creator": "", "Producer": ""})
-    fig.savefig(FIGURES / f"{NAME}.png", dpi=600, metadata={"Software": ""})
-    fig.savefig(FIGURES / f"{NAME}_preview.png", dpi=240, metadata={"Software": ""})
+    report.update({
+        "source_rows": {"combined": len(totals), "components": len(components)},
+        "source_numeric_values": 3 * (len(totals) + len(components)),
+        "direction_colours": {"negative": NEGATIVE, "positive": POSITIVE},
+        "ci_alignment": "right; heading centred over its fixed-width column",
+        "forest_height_pt": 12,
+        "marker_diameter_pt": 6,
+        "font_rendering_note": "Adopted media are retained separately; redraw bytes may differ by font or renderer.",
+        "input_sha256": {
+            name: hashlib.sha256((DATA / name).read_bytes()).hexdigest()
+            for name in ("fig5_combined_metrics.csv", "fig5_component_effects.csv", "fig5_provenance.json")
+        },
+    })
+    (destination / "fig5_validation.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    fig.savefig(destination / "fig5.svg", metadata={"Date": None, "Creator": "Aggregate-only Matplotlib redraw"})
+    fig.savefig(destination / "fig5.pdf", metadata={"CreationDate": None, "ModDate": None, "Creator": "Aggregate-only Matplotlib redraw"})
+    fig.savefig(destination / "fig5.png", dpi=600, metadata={"Software": ""})
+    fig.savefig(destination / "fig5_preview.png", dpi=240, metadata={"Software": ""})
     plt.close(fig)
-    with Image.open(FIGURES / f"{NAME}_preview.png") as image:
-        image.convert("L").save(QA / "grayscale_check.png")
-    (QA / "Figure_caption.txt").write_text(CAPTION + "\n", encoding="utf-8")
-    (QA / "README.md").write_text(
-        "# Reference-style six-panel IEEE-CIS figure\n\n"
-        "Columns are Folds 1–3. The top row shows combined effects and original "
-        "Table 9 intervals; the bottom row shows Table 10 component effects and "
-        "directly paired workflow differences. All 81 reported numerical values "
-        "are included in the data exports. Within-workflow component intervals "
-        "remain in Table 10 and component_effects.csv. Only directly paired "
-        "component intervals are printed on the figure.\n\n"
-        "Top-row estimates use red for negative values and green for positive "
-        "values, evaluated separately for each metric. Marker fills match the "
-        "heatmap endpoint hues; darker related colours keep text and whiskers "
-        "legible. Colours encode direction, not statistical significance.\n\n"
-        "Physical size: 182.88 × 119.38 mm; all text is at least 8 pt. Do not "
-        "shrink to a single column without redesigning the typography.\n\n"
-        "All cards share fixed inner margins, row centres and column widths. "
-        "Combined estimates and intervals share a right edge; ΔTP plots have "
-        "an independent column. Component numbers and heatmap cells share row "
-        "centres. Detailed evidence boundaries remain in Figure_caption.txt.\n\n"
-        "Run `python recreate_template_style.py` beside `data/`; dependencies: "
-        "Matplotlib and Pillow. SVG text is editable and PDF/SVG contain no "
-        "raster images. Output includes 600-DPI PNG and a short preview.\n\n"
-        "No manuscript is edited. Current source content is Fig. 5 + Fig. 6 "
-        "(previously discussed as Fig. 6 + Fig. 7). The six panels are an "
-        "organisation of existing evidence, not six new experiments.\n",
-        encoding="utf-8",
-    )
-    checksums = {
-        str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest()
-        for p in sorted(FIGURES.iterdir())
-        if p.is_file()
-    }
-    (QA / "figure_checksums.json").write_text(json.dumps(checksums, indent=2), encoding="utf-8")
-    print(f"Created {FIGURES}")
+    print(json.dumps({key: value for key, value in report.items() if key != "text_boxes"}, indent=2))
 
 
 if __name__ == "__main__":

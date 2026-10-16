@@ -1,0 +1,82 @@
+{
+  "figure": "S7",
+  "presentation": "figS7_three_row_preview",
+  "input_path": "figS7.data.json",
+  "input_sha256": "38b255fd70e19919bdb3f7a38f7fdba591cc3663ffef49740caaa18c14d1d63a",
+  "source_aggregate_values_preserved": true,
+  "adopted_artwork_review": {
+    "source_sha256": "38b255fd70e19919bdb3f7a38f7fdba591cc3663ffef49740caaa18c14d1d63a",
+    "original_source_csv_sha256": "8e336454fa853bc85e87f2ad1f5158587b8bebdb8268920297b59f4ba1c8f899",
+    "source_rows": 108,
+    "steps_per_family": 54,
+    "step_range": [
+      126,
+      179
+    ],
+    "transaction_total": 198311,
+    "fraud_total": 2160,
+    "frauds_per_step": 40,
+    "plotted_points": 324,
+    "series": 6,
+    "sum_H0_H1": {
+      "LightGBM": {
+        "H0": 208.4,
+        "H1": 1.0000000000000002
+      },
+      "XGBoost": {
+        "H0": 211.4,
+        "H1": 9.6
+      }
+    },
+    "new_fits": 0,
+    "new_predictions": 0,
+    "reranking": false,
+    "new_intervals": 0,
+    "smoothing": false,
+    "data_values_changed": false,
+    "text_canvas_bounds": "PASS",
+    "pdf_width_mm": 190,
+    "pdf_height_mm": 140.71875,
+    "font": "Arial",
+    "minimum_font_px": 20,
+    "plotted_value_check": "324/324 exact",
+    "original_input_unchanged": true,
+    "pdf_embedded_fonts": true,
+    "pdf_raster_images": 0,
+    "raster_dimensions": [
+      4488,
+      3324
+    ],
+    "raster_dpi": [
+      599.9988,
+      599.9988
+    ],
+    "final_pdf_visual_review": "PASS"
+  },
+  "export_sha256": {
+    "figS7.png": "0d6c9fb4b3c7392b42b9fd1fa71539ca10864db16347ac09d2efc24acc940ec0",
+    "figS7.pdf": "3d82369f5ae00a30357c8c10d51a11afc0210b05eab55b56166ff6cb2a127ace",
+    "figS7.svg": "e3d63a3d83a6ed8f53cede4061a8474144f1edca34270583d5045a79f3efcdad"
+  },
+  "reproduction_scope": "Frozen aggregate drawing only; fonts and PDF rasterizers can change pixels.",
+  "new_training_prediction_or_resampling_calls": 0,
+  "isolated_redraw_check": {
+    "status": "PASS",
+    "input_json_byte_identical_to_reviewed_source": true,
+    "adopted_media_bytes_preserved": true,
+    "identical_frozen_plot_or_audit_files": [
+      "figS7_plot_data.csv",
+      "figS7_path_audit.json"
+    ],
+    "redrawn_pdf_pages": 1,
+    "redrawn_pdf_raster_images": 0,
+    "redrawn_svg_bytes_equal_adopted": true,
+    "redrawn_png_pixels": [
+      4489,
+      3325
+    ],
+    "rasterizer": "PyMuPDF",
+    "isolated_output_directory": true,
+    "delivery_exports_not_overwritten": true
+  }
+}
