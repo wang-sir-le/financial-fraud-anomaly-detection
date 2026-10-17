@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-17",
+  "experimental_public_commit": "b52524caf6a0e84e1bf1d6ce22f833c52122724e",
+  "public_presentation_base_commit": "573df8718db1183390d45032712f870655310628",
+  "remote_verification": "git ls-remote origin refs/heads/main returned the presentation base on 2026-10-17",
+  "current_package_status": "Separately supplied manuscript submission addendum; matching source corrections and crosswalk tracked in this repository. The submission ZIP and full manuscripts are not stored in the Git tree.",
+  "manuscripts": {
+    "main": {
+      "filename": "主稿_学术表达强化_20261015.docx",
+      "sha256": "e336ea0ab7de04b80c25b71b1dd6d3a640effe4c5e794e84553066defe40634d"
+    },
+    "supplement": {
+      "filename": "补充材料_现稿.docx",
+      "sha256": "354fdfd150e89faff73c1332baa5071cb89ea6ab51a44203ffee8edf44581217"
+    }
+  },
+  "main_figures": 6,
+  "supplement_figures": 9,
+  "main_tables": 10,
+  "main_tables_status": "Exact manuscript transcriptions; not independent result reconstruction",
+  "new_model_fits": 0,
+  "new_scores": 0,
+  "new_bootstrap_draws": 0
+}

@@ -1,0 +1,34 @@
+October 17 submission presentation and provenance corrections
+
+The experimental public baseline remains b52524caf6a0e84e1bf1d6ce22f833c52122724e.
+The October 16 public presentation base is 573df8718db1183390d45032712f870655310628,
+confirmed by a read-only remote-head query on October 17.
+
+Current local corrections:
+1. Figures 2 and 4 are exported from vector geometry at 3960 pixels wide,
+   giving 600 dpi at their 6.60-inch manuscript placement.
+2. Figure 2 uses a-d in source, vector output, PNG and manuscript caption.
+3. The manuscript documents the actual probability-clipping and positive-slope
+   Platt transformations in src/fraudx/models.py, including both numeric
+   clipping bounds. Original fitted scores and all numerical tables are retained.
+4. MANUSCRIPT_VERSION_MAP_20261017.csv records the paths inside the accompanying
+   ESM_5_Figures_and_Version_Map_20261017.zip submission addendum. Its
+   adopted_images directory contains exact images extracted from the manuscript.
+   Table exports are transcriptions, not independently reconstructed outputs.
+5. The manuscript's S4 third contrast is PTH-P0 (P_BUNDLE). Its adopted drawing
+   source is figures/supplement/figS4_adopted.py with 27 frozen stage means in
+   figS4_adopted_data.csv. The older figS4.py retains a different third contrast,
+   PTHW-PTH (P_WEIGHT); it is historical rather than the submitted S4.
+
+The addendum covers all six main figures, nine supplementary figures and ten
+main tables. Presentation variants of S1/S5/S6/S8 and the adopted S4 are
+distinguished from exact manuscript images rather than asserted to be identical.
+Table 8 lacks its original ieee_fold_metrics.csv in the compact public tree;
+this boundary is explicit in the crosswalk. Its manuscript values are unchanged.
+
+No model fitting, scoring, calibration fitting or bootstrap sampling is performed.
+Historical protocol locks and scientific receipts retain their original meaning.
+This update publishes the corrected drawing sources, exports and version
+crosswalk. The separately supplied submission ZIP and full manuscript files
+remain outside this repository; archive-relative paths in the crosswalk do
+not assert that those files are stored in this Git tree.

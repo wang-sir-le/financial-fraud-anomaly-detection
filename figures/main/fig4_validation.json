@@ -1,0 +1,346 @@
+{
+  "status": "NUMERIC_AND_GEOMETRY_PASS",
+  "source_sha256": {
+    "effects": "630b15e40da083d189f68bc78237ec7baf0d686e7adc4e17a58ac80d5b601ca3",
+    "exchange": "e58d75633cb281db33b56f38fa98c90a2eb8fee951844d194b20ddf6d3a24ee8"
+  },
+  "heatmap_cells": [
+    {
+      "panel": "a",
+      "metric": "G",
+      "family": "LightGBM",
+      "contrast": "H0",
+      "value": 211.4,
+      "label": "211.4",
+      "cell_xy": [
+        67,
+        64
+      ],
+      "fill": "#1170AE",
+      "label_contrast_ratio": 5.312823030203165
+    },
+    {
+      "panel": "a",
+      "metric": "G",
+      "family": "LightGBM",
+      "contrast": "H1",
+      "value": 20.4,
+      "label": "20.4",
+      "cell_xy": [
+        122,
+        64
+      ],
+      "fill": "#DAF1E1",
+      "label_contrast_ratio": 17.6504525706072
+    },
+    {
+      "panel": "a",
+      "metric": "G",
+      "family": "XGBoost",
+      "contrast": "H0",
+      "value": 211.4,
+      "label": "211.4",
+      "cell_xy": [
+        67,
+        82
+      ],
+      "fill": "#1170AE",
+      "label_contrast_ratio": 5.312823030203165
+    },
+    {
+      "panel": "a",
+      "metric": "G",
+      "family": "XGBoost",
+      "contrast": "H1",
+      "value": 26.8,
+      "label": "26.8",
+      "cell_xy": [
+        122,
+        82
+      ],
+      "fill": "#D3EEDF",
+      "label_contrast_ratio": 17.065133667185954
+    },
+    {
+      "panel": "b",
+      "metric": "L",
+      "family": "LightGBM",
+      "contrast": "H0",
+      "value": 3.0,
+      "label": "3.0",
+      "cell_xy": [
+        67,
+        136
+      ],
+      "fill": "#FEE5CD",
+      "label_contrast_ratio": 17.303446291165233
+    },
+    {
+      "panel": "b",
+      "metric": "L",
+      "family": "LightGBM",
+      "contrast": "H1",
+      "value": 19.4,
+      "label": "19.4",
+      "cell_xy": [
+        122,
+        136
+      ],
+      "fill": "#B70B08",
+      "label_contrast_ratio": 6.851927309010831
+    },
+    {
+      "panel": "b",
+      "metric": "L",
+      "family": "XGBoost",
+      "contrast": "H0",
+      "value": 0.0,
+      "label": "0.0",
+      "cell_xy": [
+        67,
+        154
+      ],
+      "fill": "#FFF7EC",
+      "label_contrast_ratio": 19.76753149115569
+    },
+    {
+      "panel": "b",
+      "metric": "L",
+      "family": "XGBoost",
+      "contrast": "H1",
+      "value": 17.2,
+      "label": "17.2",
+      "cell_xy": [
+        122,
+        154
+      ],
+      "fill": "#C83425",
+      "label_contrast_ratio": 5.284636901215028
+    },
+    {
+      "panel": "c",
+      "metric": "Net",
+      "family": "LightGBM",
+      "contrast": "H0",
+      "value": 208.4,
+      "label": "+208.4",
+      "cell_xy": [
+        67,
+        208
+      ],
+      "fill": "#2C6EB0",
+      "label_contrast_ratio": 5.297165278091397
+    },
+    {
+      "panel": "c",
+      "metric": "Net",
+      "family": "LightGBM",
+      "contrast": "H1",
+      "value": 1.0,
+      "label": "+1.0",
+      "cell_xy": [
+        122,
+        208
+      ],
+      "fill": "#F6F6F7",
+      "label_contrast_ratio": 19.44395300457559
+    },
+    {
+      "panel": "c",
+      "metric": "Net",
+      "family": "XGBoost",
+      "contrast": "H0",
+      "value": 211.4,
+      "label": "+211.4",
+      "cell_xy": [
+        67,
+        226
+      ],
+      "fill": "#296CAF",
+      "label_contrast_ratio": 5.4427590274034685
+    },
+    {
+      "panel": "c",
+      "metric": "Net",
+      "family": "XGBoost",
+      "contrast": "H1",
+      "value": 9.6,
+      "label": "+9.6",
+      "cell_xy": [
+        122,
+        226
+      ],
+      "fill": "#EEF1F4",
+      "label_contrast_ratio": 18.523878070648607
+    }
+  ],
+  "effect_intervals": [
+    {
+      "panel": "d",
+      "family": "LightGBM",
+      "effect": "H0",
+      "estimate": 208.4,
+      "lower": 175.8,
+      "upper": 244.6,
+      "confidence": 0.95,
+      "source": "audited intervals_all, L7, tp@0.03",
+      "svg_x": [
+        430.41357142857146,
+        442.1728571428571,
+        455.23071428571427
+      ],
+      "svg_y": 80
+    },
+    {
+      "panel": "d",
+      "family": "XGBoost",
+      "effect": "H0",
+      "estimate": 211.4,
+      "lower": 180.0,
+      "upper": 246.2,
+      "confidence": 0.95,
+      "source": "audited intervals_all, L7, tp@0.03",
+      "svg_x": [
+        431.92857142857144,
+        443.255,
+        455.8078571428572
+      ],
+      "svg_y": 88
+    },
+    {
+      "panel": "d",
+      "family": "LightGBM",
+      "effect": "H1",
+      "estimate": 1.0,
+      "lower": -10.8,
+      "upper": 9.4,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03",
+      "svg_x": [
+        363.1042857142857,
+        367.36071428571427,
+        370.3907142857143
+      ],
+      "svg_y": 105
+    },
+    {
+      "panel": "d",
+      "family": "XGBoost",
+      "effect": "H1",
+      "estimate": 9.6,
+      "lower": -8.351250000000022,
+      "upper": 19.6,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03",
+      "svg_x": [
+        363.9875848214285,
+        370.46285714285716,
+        374.07
+      ],
+      "svg_y": 113
+    },
+    {
+      "panel": "d",
+      "family": "LightGBM",
+      "effect": "D",
+      "estimate": -207.4,
+      "lower": -256.8,
+      "upper": -164.89749999999987,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03",
+      "svg_x": [
+        274.36857142857144,
+        292.1878571428571,
+        307.51911607142864
+      ],
+      "svg_y": 130
+    },
+    {
+      "panel": "d",
+      "family": "XGBoost",
+      "effect": "D",
+      "estimate": -201.8,
+      "lower": -247.15125,
+      "upper": -172.49749999999986,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03",
+      "svg_x": [
+        277.84901339285716,
+        294.20785714285716,
+        304.77768750000007
+      ],
+      "svg_y": 138
+    },
+    {
+      "panel": "e",
+      "family": "LightGBM",
+      "effect": "H1",
+      "estimate": 1.0,
+      "lower": -10.8,
+      "upper": 9.4,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03",
+      "svg_x": [
+        283.47027027027025,
+        347.8918918918919,
+        393.75135135135133
+      ],
+      "svg_y": 225
+    },
+    {
+      "panel": "e",
+      "family": "XGBoost",
+      "effect": "H1",
+      "estimate": 9.6,
+      "lower": -8.351250000000022,
+      "upper": 19.6,
+      "confidence": 0.9875,
+      "source": "audited intervals_all, L7, tp@0.03",
+      "svg_x": [
+        296.83912162162153,
+        394.84324324324325,
+        449.43783783783783
+      ],
+      "svg_y": 244
+    }
+  ],
+  "heatmap_ranges": {
+    "G": [
+      0,
+      220
+    ],
+    "L": [
+      0,
+      20
+    ],
+    "Net": [
+      -220,
+      220
+    ]
+  },
+  "unrounded_interval_endpoints_preserved": true,
+  "negative_D_preserved": true,
+  "zero_L_preserved": true,
+  "H0_H1_values_match_between_panels": true,
+  "shared_model_colors": {
+    "LightGBM": "#4C72B0",
+    "XGBoost": "#DD8452"
+  },
+  "no_new_fitting_or_resampling": true,
+  "captured_fraud_counts_not_cost_units": true,
+  "no_pooled_datasets": true,
+  "minimum_font_pt": 8,
+  "width_in": 6.6,
+  "height_in": 4.222222222222222,
+  "png_dpi": 600,
+  "svg_embedded_images": 0,
+  "svg_editable_text_count": 68,
+  "caption": "Fig. 4 BankSim reference-dependent capture and post-hoc capture exchanges at the exact 3% completed-window budget (K=5,950). H0=B0H−B0; H1=B1H−B1; D=H1−H0. (a–c) Post-hoc descriptive five-seed paired means of newly captured frauds G, lost frauds L (non-negative), and net change ΔTP=G−L. Colours encode magnitudes, not statistical significance; G/L have no separate uncertainty intervals. (d) Paired effects from the original BankSim validation, with moving-block intervals at a block length of seven simulation steps: H0 uses 95% pointwise intervals; H1 and D use 98.75% Bonferroni marginal intervals for four primary comparisons. (e) The same H1 effects and intervals on a magnified scale. Intervals condition on fixed models and the observed window. Repeated estimates add no independent evidence. Footer values are observed-point arithmetic bounds, not confidence limits. Capture exchanges do not identify a causal mechanism.",
+  "external_source_provenance": [
+    {
+      "path": "${WORKSPACE}/experiment/outputs/paper_evidence_revision_20260927/run_01/audit/FIGURE_DATA.json",
+      "sha256": "9912ad7d6ec6dcf477bbf0e5b7ef2180710d2edbd7a6c48a6aa62150f18beb00"
+    }
+  ],
+  "visual_review": "PENDING"
+}

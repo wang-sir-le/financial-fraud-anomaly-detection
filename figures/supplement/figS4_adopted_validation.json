@@ -1,0 +1,77 @@
+{
+  "source_sha256": "4cbac6fe29e7b4a41ec8bcfe5de94b39c11a4a6e071852a52024676a2c4d5841",
+  "contrasts": [
+    "P_H_BASE",
+    "P_H_TIME",
+    "P_BUNDLE"
+  ],
+  "points": [
+    {
+      "contrast": "P_H_BASE",
+      "fold": 1,
+      "clipped": 0.011412095813206647,
+      "platt": 0.011412095813206647,
+      "raw": 0.030683561810482186
+    },
+    {
+      "contrast": "P_H_BASE",
+      "fold": 2,
+      "clipped": -0.06665910084715344,
+      "platt": -0.06665910084715344,
+      "raw": -0.04813070660123299
+    },
+    {
+      "contrast": "P_H_BASE",
+      "fold": 3,
+      "clipped": 0.08110180458784647,
+      "platt": 0.08110180458784647,
+      "raw": 0.08394452744960883
+    },
+    {
+      "contrast": "P_H_TIME",
+      "fold": 1,
+      "clipped": -0.05941636689612788,
+      "platt": -0.05941636689612788,
+      "raw": -0.03906970168180014
+    },
+    {
+      "contrast": "P_H_TIME",
+      "fold": 2,
+      "clipped": 0.00919416999323815,
+      "platt": 0.00919416999323815,
+      "raw": -0.01596532104481848
+    },
+    {
+      "contrast": "P_H_TIME",
+      "fold": 3,
+      "clipped": 0.06556207572724251,
+      "platt": 0.06556207572724251,
+      "raw": 0.0612302408587182
+    },
+    {
+      "contrast": "P_BUNDLE",
+      "fold": 1,
+      "clipped": 0.13459735131331205,
+      "platt": 0.13459735131331205,
+      "raw": 0.16318520438039802
+    },
+    {
+      "contrast": "P_BUNDLE",
+      "fold": 2,
+      "clipped": -0.004065784957909838,
+      "platt": -0.004065784957909838,
+      "raw": 0.03899024855207193
+    },
+    {
+      "contrast": "P_BUNDLE",
+      "fold": 3,
+      "clipped": -0.11914145952360092,
+      "platt": -0.11914145952360092,
+      "raw": -0.125430943318026
+    }
+  ],
+  "clipped_platt_equal": true,
+  "no_new_fitting_scoring_or_resampling": true,
+  "historical_view": "figS4.py and figS4_data.json retain the earlier P_WEIGHT selection",
+  "png_dpi": 600
+}

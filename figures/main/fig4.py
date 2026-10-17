@@ -299,8 +299,8 @@ def main():
                 for span in entry["spans"]:
                     x0, y0, x1, y1 = span["bbox"]
                     assert x0 >= -1 and y0 >= -1 and x1 <= WIDTH + 1 and y1 <= HEIGHT + 1, span["text"]
-        output = page.get_pixmap(matrix=pymupdf.Matrix(450 / 72, 450 / 72), alpha=False)
-        output.set_dpi(450, 450)
+        output = page.get_pixmap(matrix=pymupdf.Matrix(600 / 72, 600 / 72), alpha=False)
+        output.set_dpi(600, 600)
         output.save(str(STEM.with_suffix(".png")))
         page.get_pixmap(matrix=pymupdf.Matrix(2.8, 2.8), alpha=False).save(str(HERE / "fig4_preview.png"))
     caption = raw_caption.decode("utf-8-sig").strip()
@@ -321,7 +321,7 @@ def main():
         "minimum_font_pt": 8,
         "width_in": WIDTH / 72,
         "height_in": HEIGHT / 72,
-        "png_dpi": 450,
+        "png_dpi": 600,
         "svg_embedded_images": 0,
         "svg_editable_text_count": len(svg.findall(".//s:text", ns)),
         "caption": caption,

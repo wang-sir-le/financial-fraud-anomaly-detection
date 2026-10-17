@@ -1,0 +1,790 @@
+{
+  "canvas": [
+    1920,
+    1120
+  ],
+  "png_width_px": 3960,
+  "manuscript_width_in": 6.6,
+  "effective_manuscript_dpi": 600,
+  "panel_labels": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "svg_text_elements": 95,
+  "embedded_images": 0,
+  "text_width_checks": "PASS",
+  "miniature_graphics": "schematics only",
+  "source_manuscript": "Private manuscript snapshot dated 2026-10-11 (not distributed); protocol labels only",
+  "text_measurement_fonts": {
+    "family": "Arial",
+    "regular": "/System/Library/Fonts/Supplemental/arial.ttf",
+    "bold": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    "source": "macOS system fonts"
+  },
+  "svg_font_family": "Arial, Helvetica, sans-serif",
+  "text": [
+    {
+      "text": "a",
+      "x": 24,
+      "y": 32,
+      "size": 34,
+      "width_px": 19.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Methods and decision workflow",
+      "x": 960.0,
+      "y": 79,
+      "size": 31,
+      "width_px": 469.0,
+      "max_width_px": 1842
+    },
+    {
+      "text": "b",
+      "x": 24,
+      "y": 558,
+      "size": 34,
+      "width_px": 21.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Datasets",
+      "x": 306.0,
+      "y": 605,
+      "size": 31,
+      "width_px": 127.0,
+      "max_width_px": 534
+    },
+    {
+      "text": "c",
+      "x": 604,
+      "y": 558,
+      "size": 34,
+      "width_px": 19.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Metrics",
+      "x": 904.0,
+      "y": 605,
+      "size": 31,
+      "width_px": 108.0,
+      "max_width_px": 570
+    },
+    {
+      "text": "d",
+      "x": 1220,
+      "y": 558,
+      "size": 34,
+      "width_px": 21.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Evaluation design",
+      "x": 1558.0,
+      "y": 605,
+      "size": 31,
+      "width_px": 266.0,
+      "max_width_px": 646
+    },
+    {
+      "text": "Features & supervised learning",
+      "x": 414,
+      "y": 129,
+      "size": 29,
+      "width_px": 432.0,
+      "max_width_px": 735
+    },
+    {
+      "text": "Datasets",
+      "x": 971,
+      "y": 129,
+      "size": 28,
+      "width_px": 118.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Scores & review decisions",
+      "x": 1501,
+      "y": 129,
+      "size": 29,
+      "width_px": 365.0,
+      "max_width_px": 735
+    },
+    {
+      "text": "Transaction",
+      "x": 139,
+      "y": 176,
+      "size": 22,
+      "width_px": 121.98,
+      "max_width_px": 170
+    },
+    {
+      "text": "features",
+      "x": 139,
+      "y": 203,
+      "size": 22,
+      "width_px": 84.0,
+      "max_width_px": 170
+    },
+    {
+      "text": "Past-only",
+      "x": 322,
+      "y": 176,
+      "size": 22,
+      "width_px": 97.0,
+      "max_width_px": 170
+    },
+    {
+      "text": "history",
+      "x": 322,
+      "y": 203,
+      "size": 22,
+      "width_px": 72.0,
+      "max_width_px": 170
+    },
+    {
+      "text": "+",
+      "x": 230,
+      "y": 282,
+      "size": 36,
+      "width_px": 21.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Supervised",
+      "x": 515,
+      "y": 260,
+      "size": 25,
+      "width_px": 135.0,
+      "max_width_px": 137
+    },
+    {
+      "text": "model",
+      "x": 515,
+      "y": 291,
+      "size": 25,
+      "width_px": 73.0,
+      "max_width_px": 137
+    },
+    {
+      "text": "Risk",
+      "x": 695.5,
+      "y": 260,
+      "size": 26,
+      "width_px": 54.0,
+      "max_width_px": null
+    },
+    {
+      "text": "score",
+      "x": 695.5,
+      "y": 291,
+      "size": 26,
+      "width_px": 68.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Training labels used for fitting",
+      "x": 600,
+      "y": 340,
+      "size": 21,
+      "width_px": 282.98,
+      "max_width_px": 366
+    },
+    {
+      "text": "PaySim / IEEE-CIS: LightGBM, logistic regression",
+      "x": 417,
+      "y": 395,
+      "size": 24,
+      "width_px": 569.0,
+      "max_width_px": 720
+    },
+    {
+      "text": "BankSim: LightGBM, XGBoost",
+      "x": 417,
+      "y": 428,
+      "size": 24,
+      "width_px": 350.0,
+      "max_width_px": 720
+    },
+    {
+      "text": "PaySim",
+      "x": 972.0,
+      "y": 222.5,
+      "size": 25,
+      "width_px": 91.0,
+      "max_width_px": 232
+    },
+    {
+      "text": "IEEE-CIS",
+      "x": 972.0,
+      "y": 280.5,
+      "size": 25,
+      "width_px": 108.0,
+      "max_width_px": 232
+    },
+    {
+      "text": "BankSim",
+      "x": 972.0,
+      "y": 338.5,
+      "size": 25,
+      "width_px": 107.0,
+      "max_width_px": 232
+    },
+    {
+      "text": "Model scores",
+      "x": 985,
+      "y": 382,
+      "size": 23,
+      "width_px": 147.0,
+      "max_width_px": null
+    },
+    {
+      "text": "score",
+      "x": 1184.5,
+      "y": 209,
+      "size": 18,
+      "width_px": 44.0,
+      "max_width_px": null
+    },
+    {
+      "text": "rank",
+      "x": 1247.5,
+      "y": 209,
+      "size": 18,
+      "width_px": 35.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Review",
+      "x": 1401.5,
+      "y": 260,
+      "size": 26,
+      "width_px": 88.0,
+      "max_width_px": null
+    },
+    {
+      "text": "selection",
+      "x": 1401.5,
+      "y": 291,
+      "size": 26,
+      "width_px": 111.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Review",
+      "x": 1590.5,
+      "y": 253,
+      "size": 25,
+      "width_px": 86.0,
+      "max_width_px": 125
+    },
+    {
+      "text": "list",
+      "x": 1590.5,
+      "y": 283,
+      "size": 25,
+      "width_px": 36.0,
+      "max_width_px": 125
+    },
+    {
+      "text": "TP / FP / FN",
+      "x": 1779.5,
+      "y": 259,
+      "size": 23,
+      "width_px": 125.0,
+      "max_width_px": 146
+    },
+    {
+      "text": "and metrics",
+      "x": 1779.5,
+      "y": 289,
+      "size": 23,
+      "width_px": 129.0,
+      "max_width_px": 146
+    },
+    {
+      "text": "Held-out labels",
+      "x": 1779,
+      "y": 340,
+      "size": 21,
+      "width_px": 144.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Threshold transfer or exact top-k",
+      "x": 1505,
+      "y": 395,
+      "size": 25,
+      "width_px": 390.0,
+      "max_width_px": 710
+    },
+    {
+      "text": "Decision rule specified per dataset",
+      "x": 1505,
+      "y": 428,
+      "size": 25,
+      "width_px": 412.0,
+      "max_width_px": 710
+    },
+    {
+      "text": "Past-only history is constructed without fraud labels; all miniature graphics are schematics.",
+      "x": 984,
+      "y": 482,
+      "size": 23,
+      "width_px": 927.0,
+      "max_width_px": 1770
+    },
+    {
+      "text": "PaySim",
+      "x": 148.0,
+      "y": 692.86,
+      "size": 29,
+      "width_px": 104.0,
+      "max_width_px": 188
+    },
+    {
+      "text": "6,362,620 synthetic",
+      "x": 272,
+      "y": 670,
+      "size": 23,
+      "width_px": 201.0,
+      "max_width_px": 295
+    },
+    {
+      "text": "mobile-money transactions",
+      "x": 272,
+      "y": 700,
+      "size": 23,
+      "width_px": 278.0,
+      "max_width_px": 295
+    },
+    {
+      "text": "Recipient history",
+      "x": 272,
+      "y": 732,
+      "size": 21,
+      "width_px": 160.0,
+      "max_width_px": 295
+    },
+    {
+      "text": "IEEE-CIS",
+      "x": 148.0,
+      "y": 807.86,
+      "size": 29,
+      "width_px": 123.0,
+      "max_width_px": 188
+    },
+    {
+      "text": "590,540 labeled",
+      "x": 272,
+      "y": 785,
+      "size": 23,
+      "width_px": 165.0,
+      "max_width_px": 295
+    },
+    {
+      "text": "transactions",
+      "x": 272,
+      "y": 815,
+      "size": 23,
+      "width_px": 126.0,
+      "max_width_px": 295
+    },
+    {
+      "text": "Card-related identifier history",
+      "x": 272,
+      "y": 847,
+      "size": 21,
+      "width_px": 277.0,
+      "max_width_px": 295
+    },
+    {
+      "text": "BankSim",
+      "x": 148.0,
+      "y": 922.86,
+      "size": 29,
+      "width_px": 124.0,
+      "max_width_px": 188
+    },
+    {
+      "text": "594,643 simulated",
+      "x": 272,
+      "y": 900,
+      "size": 23,
+      "width_px": 189.0,
+      "max_width_px": 295
+    },
+    {
+      "text": "transactions",
+      "x": 272,
+      "y": 930,
+      "size": 23,
+      "width_px": 126.0,
+      "max_width_px": 295
+    },
+    {
+      "text": "Merchant history",
+      "x": 272,
+      "y": 962,
+      "size": 21,
+      "width_px": 160.0,
+      "max_width_px": 295
+    },
+    {
+      "text": "Three dataset-specific evidence settings",
+      "x": 58,
+      "y": 1036,
+      "size": 24,
+      "width_px": 424.0,
+      "max_width_px": 494
+    },
+    {
+      "text": "Source dataset sizes shown above",
+      "x": 58,
+      "y": 1066,
+      "size": 24,
+      "width_px": 367.0,
+      "max_width_px": 494
+    },
+    {
+      "text": "Ranking & probability quality",
+      "x": 637,
+      "y": 672,
+      "size": 27,
+      "width_px": 384.0,
+      "max_width_px": 534
+    },
+    {
+      "text": "AP (primary ranking)",
+      "x": 643,
+      "y": 721,
+      "size": 25,
+      "width_px": 247.0,
+      "max_width_px": 285
+    },
+    {
+      "text": "Brier · log loss · ECE",
+      "x": 643,
+      "y": 767,
+      "size": 23,
+      "width_px": 227.0,
+      "max_width_px": 280
+    },
+    {
+      "text": "Calibration analysis:",
+      "x": 643,
+      "y": 799,
+      "size": 22,
+      "width_px": 195.0,
+      "max_width_px": 280
+    },
+    {
+      "text": "PaySim only",
+      "x": 643,
+      "y": 827,
+      "size": 22,
+      "width_px": 122.0,
+      "max_width_px": 280
+    },
+    {
+      "text": "Ideal",
+      "x": 1055,
+      "y": 719,
+      "size": 21,
+      "width_px": 47.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Predicted risk",
+      "x": 1069.5,
+      "y": 827,
+      "size": 20,
+      "width_px": 121.0,
+      "max_width_px": 190
+    },
+    {
+      "text": "Observed rate",
+      "x": 964,
+      "y": 748.0,
+      "size": 20,
+      "width_px": 128.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Review utility & analytical cost",
+      "x": 637,
+      "y": 902,
+      "size": 26,
+      "width_px": 373.0,
+      "max_width_px": 534
+    },
+    {
+      "text": "TP · Recall",
+      "x": 643,
+      "y": 941,
+      "size": 24,
+      "width_px": 123.0,
+      "max_width_px": 245
+    },
+    {
+      "text": "Precision",
+      "x": 643,
+      "y": 973,
+      "size": 24,
+      "width_px": 108.0,
+      "max_width_px": 245
+    },
+    {
+      "text": "Actual alert rate",
+      "x": 643,
+      "y": 1005,
+      "size": 24,
+      "width_px": 180.0,
+      "max_width_px": 245
+    },
+    {
+      "text": "Top-k review list",
+      "x": 1023,
+      "y": 935,
+      "size": 23,
+      "width_px": 179.97,
+      "max_width_px": 285
+    },
+    {
+      "text": "Analytical cost = FP + c × FN",
+      "x": 643,
+      "y": 1040,
+      "size": 22,
+      "width_px": 283.0,
+      "max_width_px": 524
+    },
+    {
+      "text": "Primary cost setting: c = 100 (PaySim / IEEE-CIS)",
+      "x": 643,
+      "y": 1069,
+      "size": 22,
+      "width_px": 484.0,
+      "max_width_px": 524
+    },
+    {
+      "text": "Strictly past history",
+      "x": 1253,
+      "y": 672,
+      "size": 25,
+      "width_px": 233.0,
+      "max_width_px": 282
+    },
+    {
+      "text": "Past",
+      "x": 1300,
+      "y": 707,
+      "size": 21,
+      "width_px": 43.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Current",
+      "x": 1389,
+      "y": 707,
+      "size": 21,
+      "width_px": 71.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Future",
+      "x": 1464,
+      "y": 707,
+      "size": 21,
+      "width_px": 62.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Earlier time groups only",
+      "x": 1254,
+      "y": 774,
+      "size": 22,
+      "width_px": 228.0,
+      "max_width_px": 282
+    },
+    {
+      "text": "Exclude the current group",
+      "x": 1254,
+      "y": 801,
+      "size": 22,
+      "width_px": 248.0,
+      "max_width_px": 282
+    },
+    {
+      "text": "No fraud-label history",
+      "x": 1254,
+      "y": 828,
+      "size": 22,
+      "width_px": 206.0,
+      "max_width_px": 282
+    },
+    {
+      "text": "Temporal validation",
+      "x": 1575,
+      "y": 672,
+      "size": 25,
+      "width_px": 234.97,
+      "max_width_px": 288
+    },
+    {
+      "text": "PaySim / IEEE-CIS",
+      "x": 1576,
+      "y": 699,
+      "size": 23,
+      "width_px": 197.0,
+      "max_width_px": 283
+    },
+    {
+      "text": "1",
+      "x": 1577,
+      "y": 732,
+      "size": 17,
+      "width_px": 9.0,
+      "max_width_px": null
+    },
+    {
+      "text": "2",
+      "x": 1577,
+      "y": 755,
+      "size": 17,
+      "width_px": 9.0,
+      "max_width_px": null
+    },
+    {
+      "text": "3",
+      "x": 1577,
+      "y": 778,
+      "size": 17,
+      "width_px": 9.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Train",
+      "x": 1598,
+      "y": 804,
+      "size": 18,
+      "width_px": 41.0,
+      "max_width_px": null
+    },
+    {
+      "text": "Val",
+      "x": 1684,
+      "y": 804,
+      "size": 18,
+      "width_px": 25.98,
+      "max_width_px": null
+    },
+    {
+      "text": "Test",
+      "x": 1759,
+      "y": 804,
+      "size": 18,
+      "width_px": 34.98,
+      "max_width_px": null
+    },
+    {
+      "text": "BankSim: one test window",
+      "x": 1576,
+      "y": 831,
+      "size": 22,
+      "width_px": 256.0,
+      "max_width_px": 285
+    },
+    {
+      "text": "Review decision rules",
+      "x": 1253,
+      "y": 892,
+      "size": 25,
+      "width_px": 261.0,
+      "max_width_px": 282
+    },
+    {
+      "text": "PaySim threshold rule:",
+      "x": 1254,
+      "y": 924,
+      "size": 23,
+      "width_px": 249.0,
+      "max_width_px": 282
+    },
+    {
+      "text": "Validation threshold → Test",
+      "x": 1254,
+      "y": 953,
+      "size": 21,
+      "width_px": 264.95,
+      "max_width_px": 282
+    },
+    {
+      "text": "Component audit: exact 3%",
+      "x": 1254,
+      "y": 981,
+      "size": 21,
+      "width_px": 265.0,
+      "max_width_px": 282
+    },
+    {
+      "text": "IEEE-CIS / BankSim:",
+      "x": 1254,
+      "y": 1022,
+      "size": 23,
+      "width_px": 221.0,
+      "max_width_px": 282
+    },
+    {
+      "text": "Exact top-k (3% primary)",
+      "x": 1254,
+      "y": 1052,
+      "size": 21,
+      "width_px": 237.0,
+      "max_width_px": 282
+    },
+    {
+      "text": "Uncertainty & sensitivity",
+      "x": 1575,
+      "y": 892,
+      "size": 24,
+      "width_px": 279.0,
+      "max_width_px": 288
+    },
+    {
+      "text": "Paired block bootstrap",
+      "x": 1576,
+      "y": 926,
+      "size": 23,
+      "width_px": 249.0,
+      "max_width_px": 284
+    },
+    {
+      "text": "Fitted models held fixed",
+      "x": 1576,
+      "y": 1011,
+      "size": 22,
+      "width_px": 229.0,
+      "max_width_px": 284
+    },
+    {
+      "text": "Conditional intervals",
+      "x": 1576,
+      "y": 1042,
+      "size": 22,
+      "width_px": 196.0,
+      "max_width_px": 284
+    },
+    {
+      "text": "Capacity / cost sensitivity",
+      "x": 1576,
+      "y": 1071,
+      "size": 21,
+      "width_px": 243.0,
+      "max_width_px": 284
+    }
+  ],
+  "caption": "Experimental framework. (a) Dataset-specific past-only history and supervised models produce scores for review selection and evaluation using held-out labels. (b) Source dataset sizes and entity-history scopes. (c) AP assesses ranking; probability quality is analyzed only for PaySim. TP, recall, precision, actual alert rate, and analytical cost describe review decisions. (d) Dataset-specific temporal validation, threshold transfer or completed-window exact top-k, paired moving-block bootstrap conditional on fixed fitted models, and sensitivity analysis. The original PaySim primary threshold is selected under a Validation alert cap of 3% and transferred to Test, whose alert rate can differ. The PaySim component audit separately uses an exact 3% budget. IEEE-CIS and BankSim use whole-window exact top-k, with 3% as primary. The PaySim/IEEE-CIS sensitivity grids are q = {1, 3, 5, 10}% and c = {10, 50, 100, 500, 1000}; BankSim reports capacities {1, 3, 5}%. The primary analytical-cost condition is FP cost 1 and FN cost 100 for PaySim/IEEE-CIS. Miniature graphics are schematic, not observed results."
+}

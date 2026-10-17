@@ -8,6 +8,8 @@ The [October 13 figure update](docs/UPDATES_20261013.md) aligns `figures/main` w
 
 The [October 16 update](docs/UPDATES_20261016.md) publishes the final adopted Figure 1/5/6 and supplementary S2/S3/S7/S9 presentations, their portable drawing routes and compact inputs. A [revision summary](docs/REVISION_SUMMARY_20261016.md) records the manuscript language and review fixes. Full manuscript files and page screenshots remain excluded.
 
+The [October 17 submission corrections](docs/SUBMISSION_CORRECTIONS_20261017.txt) update Figures 2 and 4 to 600 dpi at manuscript size, use lowercase Figure 2 panel labels, and supply the manuscript-adopted S4 contrast view. The [version crosswalk](docs/MANUSCRIPT_VERSION_MAP_20261017.csv) and [version record](docs/SUBMISSION_VERSION_20261017.json) distinguish the experimental baseline, the October 16 presentation base and the separately supplied submission addendum. Paths beginning with `adopted_images/` or `table_exports/` refer to that addendum, not this Git tree. Full manuscripts and the submission ZIP remain outside this repository.
+
 ## Layout
 
 ```text

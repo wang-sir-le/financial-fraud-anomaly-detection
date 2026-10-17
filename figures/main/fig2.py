@@ -247,10 +247,10 @@ def draw() -> None:
         '<desc id="desc">Four-panel research overview aligned with the 2026-10-11 manuscript. All miniature graphics are schematics, not measured results. PaySim, IEEE-CIS and BankSim use dataset-specific protocols.</desc>'
     )
     rect(0, 0, W, H, "white", "white", 0)
-    panel(24, 44, 1872, 470, "A", "Methods and decision workflow")
-    panel(24, 570, 564, 536, "B", "Datasets")
-    panel(604, 570, 600, 536, "C", "Metrics")
-    panel(1220, 570, 676, 536, "D", "Evaluation design")
+    panel(24, 44, 1872, 470, "a", "Methods and decision workflow")
+    panel(24, 570, 564, 536, "b", "Datasets")
+    panel(604, 570, 600, 536, "c", "Metrics")
+    panel(1220, 570, 676, 536, "d", "Evaluation design")
 
     # A: the two branches are feature/model construction and score-based decisions.
     txt(414, 129, "Features & supervised learning", 29, True, "middle", maxw=735)
@@ -395,16 +395,20 @@ def save() -> None:
     pdf_data = doc.convert_to_pdf()
     pdf = pymupdf.open(stream=pdf_data, filetype="pdf")
     pdf.save(OUT / f"{STEM}.pdf", garbage=4, deflate=True)
-    # Full-resolution preview at 300 dpi based on the declared 260 mm width.
+    # Export at 600 dpi at the final 6.60-inch manuscript width.
     page = pdf[0]
-    target_width = round(260 / 25.4 * 300)
+    target_width = 3960
     scale = target_width / page.rect.width
     pixmap = page.get_pixmap(matrix=pymupdf.Matrix(scale, scale), alpha=False)
-    pixmap.set_dpi(300, 300)
+    pixmap.set_dpi(600, 600)
     pixmap.save(OUT / f"{STEM}.png")
     page.get_pixmap(matrix=pymupdf.Matrix(1920 / page.rect.width, 1920 / page.rect.width), alpha=False).save(OUT / f"{STEM}_preview.png")
     audit = {
         "canvas": [W, H],
+        "png_width_px": target_width,
+        "manuscript_width_in": 6.60,
+        "effective_manuscript_dpi": 600,
+        "panel_labels": ["a", "b", "c", "d"],
         "svg_text_elements": len(root.findall(".//s:text", ns)),
         "embedded_images": 0,
         "text_width_checks": "PASS",
@@ -418,7 +422,7 @@ def save() -> None:
         },
         "svg_font_family": "Arial, Helvetica, sans-serif",
         "text": text_audit,
-        "caption": "Experimental framework. (A) Dataset-specific past-only history and supervised models produce scores for review selection and evaluation using held-out labels. (B) Source dataset sizes and entity-history scopes. (C) AP assesses ranking; probability quality is analyzed only for PaySim. TP, recall, precision, actual alert rate, and analytical cost describe review decisions. (D) Dataset-specific temporal validation, threshold transfer or completed-window exact top-k, paired moving-block bootstrap conditional on fixed fitted models, and sensitivity analysis. The original PaySim primary threshold is selected under a Validation alert cap of 3% and transferred to Test, whose alert rate can differ. The PaySim component audit separately uses an exact 3% budget. IEEE-CIS and BankSim use whole-window exact top-k, with 3% as primary. The PaySim/IEEE-CIS sensitivity grids are q = {1, 3, 5, 10}% and c = {10, 50, 100, 500, 1000}; BankSim reports capacities {1, 3, 5}%. The primary analytical-cost condition is FP cost 1 and FN cost 100 for PaySim/IEEE-CIS. Miniature graphics are schematic, not observed results.",
+        "caption": "Experimental framework. (a) Dataset-specific past-only history and supervised models produce scores for review selection and evaluation using held-out labels. (b) Source dataset sizes and entity-history scopes. (c) AP assesses ranking; probability quality is analyzed only for PaySim. TP, recall, precision, actual alert rate, and analytical cost describe review decisions. (d) Dataset-specific temporal validation, threshold transfer or completed-window exact top-k, paired moving-block bootstrap conditional on fixed fitted models, and sensitivity analysis. The original PaySim primary threshold is selected under a Validation alert cap of 3% and transferred to Test, whose alert rate can differ. The PaySim component audit separately uses an exact 3% budget. IEEE-CIS and BankSim use whole-window exact top-k, with 3% as primary. The PaySim/IEEE-CIS sensitivity grids are q = {1, 3, 5, 10}% and c = {10, 50, 100, 500, 1000}; BankSim reports capacities {1, 3, 5}%. The primary analytical-cost condition is FP cost 1 and FN cost 100 for PaySim/IEEE-CIS. Miniature graphics are schematic, not observed results.",
     }
     (OUT / f"{STEM}_validation.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Created {svg_path}; {audit['svg_text_elements']} editable text elements; no embedded raster images")
