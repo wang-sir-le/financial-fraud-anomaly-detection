@@ -1,0 +1,19 @@
+﻿Fold,Stage,Entity,Available / N %,Prior history / available %,Available,With history
+1,train,Entity A,100.000,95.607,236216,225840
+1,train,Entity C,97.935,95.529,231339,220995
+1,validation,Entity A,100.000,98.781,59054,58334
+1,validation,Entity C,98.146,98.635,57959,57168
+1,test,Entity A,100.000,98.918,59054,58415
+1,test,Entity C,97.396,98.809,57516,56831
+2,train,Entity A,100.000,96.688,354324,342589
+2,train,Entity C,97.880,96.592,346814,334994
+2,validation,Entity A,100.000,99.141,59054,58547
+2,validation,Entity C,98.823,99.080,58359,57822
+2,test,Entity A,100.000,99.174,59054,58566
+2,test,Entity C,98.904,99.115,58407,57890
+3,train,Entity A,100.000,97.305,472432,459702
+3,train,Entity C,98.126,97.223,463580,450706
+3,validation,Entity A,100.000,99.321,59054,58653
+3,validation,Entity C,97.536,99.304,57599,57198
+3,test,Entity A,100.000,99.285,59054,58632
+3,test,Entity C,98.771,99.275,58328,57905

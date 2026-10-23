@@ -1,0 +1,1 @@
+Fig. S7 Descriptive BankSim transaction counts, fraud counts and step contributions to whole-window H0/H1 at 3%. (a) Counts; (b) H0=B0H-B0 and (c) H1=B1H-B1, shown as five-seed means for both models. Steps are simulation units, not independent business days. Lines describe the realised sequence and do not establish stationarity, a dependence horizon or interval coverage

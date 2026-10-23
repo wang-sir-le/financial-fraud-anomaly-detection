@@ -1,0 +1,13 @@
+﻿Fold,Effect,Estimate,95% CI lower,95% CI upper
+1,ΔRecall (pp),58.31,51.65,67.17
+1,Cost reduction,22092.0,14296.1,29803.7
+1,ΔAP,0.1536,0.0389,0.3515
+2,ΔRecall (pp),55.06,46.56,67.12
+2,Cost reduction,9419.8,4019.7,16638.2
+2,ΔAP,−0.0475,−0.1078,0.0819
+3,ΔRecall (pp),41.03,37.77,44.72
+3,Cost reduction,138963.4,124062.7,154682.4
+3,ΔAP,−0.0789,−0.1331,−0.0184
+Overall,ΔRecall (pp),51.47,47.77,56.76
+Overall,Cost reduction,56825.1,51105.3,63358.7
+Overall,ΔAP,0.0091,−0.0383,0.0891

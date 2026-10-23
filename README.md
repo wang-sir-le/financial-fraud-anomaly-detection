@@ -10,6 +10,8 @@ The [October 16 update](docs/UPDATES_20261016.md) publishes the final adopted Fi
 
 The [October 17 submission corrections](docs/SUBMISSION_CORRECTIONS_20261017.txt) update Figures 2 and 4 to 600 dpi at manuscript size, use lowercase Figure 2 panel labels, and supply the manuscript-adopted S4 contrast view. The [version crosswalk](docs/MANUSCRIPT_VERSION_MAP_20261017.csv) and [version record](docs/SUBMISSION_VERSION_20261017.json) distinguish the experimental baseline, the October 16 presentation base and the separately supplied submission addendum. Paths beginning with `adopted_images/` or `table_exports/` refer to that addendum, not this Git tree. Full manuscripts and the submission ZIP remain outside this repository.
 
+The [October 23 synchronization](docs/UPDATES_20261023.md) publishes the subsequent October 20–22 revisions: the adopted framework, five updated supplementary figures, final captions, original Table 8 aggregates, compact original-material check records and all 65 table transcriptions. The [current artifact map](docs/PUBLIC_ARTIFACT_MAP_20261022.csv) uses repository paths; the [final version record](docs/SUBMISSION_VERSION_20261022.json) identifies the separately retained submission documents. No new model fitting or resampling is included. Full manuscripts and submission archives remain outside this repository.
+
 ## Layout
 
 ```text

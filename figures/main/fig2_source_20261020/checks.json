@@ -1,0 +1,918 @@
+{
+  "canvas": [
+    2400,
+    1400
+  ],
+  "native_size_mm": [
+    167.64,
+    97.79
+  ],
+  "editable_text_elements": 75,
+  "min_native_font_pt": 8.118,
+  "font_at_original_manuscript_167_64mm": 8.118,
+  "raster_embeds": 0,
+  "experimental_curves_or_observations": false,
+  "text_width_checks": "PASS",
+  "text": [
+    {
+      "text": "Features & supervised learning",
+      "size": 44,
+      "width": 650.0,
+      "max_width": 662,
+      "bounds": [
+        54.0,
+        94,
+        704.0,
+        135
+      ]
+    },
+    {
+      "text": "Datasets & model training",
+      "size": 44,
+      "width": 540.0,
+      "max_width": 650,
+      "bounds": [
+        875.0,
+        94,
+        1415.0,
+        135
+      ]
+    },
+    {
+      "text": "Scores & review decisions",
+      "size": 44,
+      "width": 549.0,
+      "max_width": 770,
+      "bounds": [
+        1687.5,
+        94,
+        2236.5,
+        126
+      ]
+    },
+    {
+      "text": "Raw / current",
+      "size": 41,
+      "width": 260.0,
+      "max_width": 282,
+      "bounds": [
+        66.0,
+        184,
+        326.0,
+        214
+      ]
+    },
+    {
+      "text": "attributes",
+      "size": 41,
+      "width": 188.0,
+      "max_width": 282,
+      "bounds": [
+        102.0,
+        232,
+        290.0,
+        262
+      ]
+    },
+    {
+      "text": "Past-only",
+      "size": 41,
+      "width": 185.0,
+      "max_width": 282,
+      "bounds": [
+        463.5,
+        184,
+        648.5,
+        222
+      ]
+    },
+    {
+      "text": "history",
+      "size": 41,
+      "width": 137.0,
+      "max_width": 282,
+      "bounds": [
+        487.5,
+        232,
+        624.5,
+        270
+      ]
+    },
+    {
+      "text": "…",
+      "size": 41,
+      "width": 41.0,
+      "max_width": null,
+      "bounds": [
+        299.5,
+        496,
+        340.5,
+        500
+      ]
+    },
+    {
+      "text": "Baseline",
+      "size": 41,
+      "width": 158.0,
+      "max_width": 282,
+      "bounds": [
+        117.0,
+        545,
+        275.0,
+        575
+      ]
+    },
+    {
+      "text": "Optional",
+      "size": 41,
+      "width": 153.0,
+      "max_width": 282,
+      "bounds": [
+        479.5,
+        545,
+        632.5,
+        583
+      ]
+    },
+    {
+      "text": "Contrast configurations",
+      "size": 41,
+      "width": 466.0,
+      "max_width": 590,
+      "bounds": [
+        95,
+        645,
+        561,
+        683
+      ]
+    },
+    {
+      "text": "PaySim: P0 = Raw",
+      "size": 41,
+      "width": 342.0,
+      "max_width": 590,
+      "bounds": [
+        95,
+        695,
+        437,
+        733
+      ]
+    },
+    {
+      "text": "PT · PH · PTH · PTHW",
+      "size": 41,
+      "width": 419.984375,
+      "max_width": 590,
+      "bounds": [
+        95,
+        737,
+        515,
+        767
+      ]
+    },
+    {
+      "text": "T: time transforms · H: history",
+      "size": 41,
+      "width": 539.921875,
+      "max_width": 590,
+      "bounds": [
+        95,
+        779,
+        635,
+        817
+      ]
+    },
+    {
+      "text": "W: positive-class weight 2",
+      "size": 41,
+      "width": 473.984375,
+      "max_width": 590,
+      "bounds": [
+        95,
+        821,
+        569,
+        859
+      ]
+    },
+    {
+      "text": "IEEE-CIS: M0–M3",
+      "size": 41,
+      "width": 333.0,
+      "max_width": 590,
+      "bounds": [
+        95,
+        863,
+        428,
+        893
+      ]
+    },
+    {
+      "text": "BankSim: B0 / B0H",
+      "size": 41,
+      "width": 349.0,
+      "max_width": 590,
+      "bounds": [
+        95,
+        905,
+        444,
+        935
+      ]
+    },
+    {
+      "text": "B1 / B1H",
+      "size": 41,
+      "width": 163.0,
+      "max_width": 590,
+      "bounds": [
+        95,
+        947,
+        258,
+        977
+      ]
+    },
+    {
+      "text": "Supervised models",
+      "size": 41,
+      "width": 375.0,
+      "max_width": 414,
+      "bounds": [
+        270,
+        1043,
+        645,
+        1081
+      ]
+    },
+    {
+      "text": "PaySim / IEEE-CIS",
+      "size": 41,
+      "width": 348.0,
+      "max_width": 430,
+      "bounds": [
+        270,
+        1088,
+        618,
+        1126
+      ]
+    },
+    {
+      "text": "LGBM · Logistic",
+      "size": 41,
+      "width": 292.0,
+      "max_width": 430,
+      "bounds": [
+        270,
+        1136,
+        562,
+        1174
+      ]
+    },
+    {
+      "text": "BankSim",
+      "size": 41,
+      "width": 164.0,
+      "max_width": 430,
+      "bounds": [
+        270,
+        1180,
+        434,
+        1210
+      ]
+    },
+    {
+      "text": "LGBM · XGB",
+      "size": 41,
+      "width": 238.0,
+      "max_width": 430,
+      "bounds": [
+        270,
+        1228,
+        508,
+        1258
+      ]
+    },
+    {
+      "text": "PaySim",
+      "size": 41,
+      "width": 147.0,
+      "max_width": 222,
+      "bounds": [
+        890.5,
+        191,
+        1037.5,
+        229
+      ]
+    },
+    {
+      "text": "Source: 6,362,620",
+      "size": 41,
+      "width": 336.0,
+      "max_width": 378,
+      "bounds": [
+        844,
+        252,
+        1180,
+        288
+      ]
+    },
+    {
+      "text": "Recipient history",
+      "size": 41,
+      "width": 305.0,
+      "max_width": 382,
+      "bounds": [
+        844,
+        304,
+        1149,
+        342
+      ]
+    },
+    {
+      "text": "$",
+      "size": 41,
+      "width": 23.0,
+      "max_width": null,
+      "bounds": [
+        1363.5,
+        275,
+        1386.5,
+        311
+      ]
+    },
+    {
+      "text": "IEEE-CIS",
+      "size": 41,
+      "width": 174.0,
+      "max_width": 222,
+      "bounds": [
+        877.0,
+        391,
+        1051.0,
+        421
+      ]
+    },
+    {
+      "text": "Source: 590,540",
+      "size": 41,
+      "width": 302.0,
+      "max_width": 378,
+      "bounds": [
+        844,
+        452,
+        1146,
+        488
+      ]
+    },
+    {
+      "text": "Card-related history",
+      "size": 41,
+      "width": 363.0,
+      "max_width": 382,
+      "bounds": [
+        844,
+        504,
+        1207,
+        542
+      ]
+    },
+    {
+      "text": "BankSim",
+      "size": 41,
+      "width": 175.0,
+      "max_width": 222,
+      "bounds": [
+        876.5,
+        591,
+        1051.5,
+        621
+      ]
+    },
+    {
+      "text": "Source: 594,643",
+      "size": 41,
+      "width": 302.0,
+      "max_width": 378,
+      "bounds": [
+        844,
+        652,
+        1146,
+        688
+      ]
+    },
+    {
+      "text": "Merchant history",
+      "size": 41,
+      "width": 305.0,
+      "max_width": 382,
+      "bounds": [
+        844,
+        704,
+        1149,
+        742
+      ]
+    },
+    {
+      "text": "Training & scoring",
+      "size": 41,
+      "width": 360.96875,
+      "max_width": 390,
+      "bounds": [
+        1035,
+        891,
+        1396,
+        929
+      ]
+    },
+    {
+      "text": "Fit on Train labels",
+      "size": 41,
+      "width": 325.953125,
+      "max_width": 390,
+      "bounds": [
+        1035,
+        934,
+        1361,
+        964
+      ]
+    },
+    {
+      "text": "Per-workflow fits",
+      "size": 41,
+      "width": 302.0,
+      "max_width": 390,
+      "bounds": [
+        1035,
+        975,
+        1337,
+        1005
+      ]
+    },
+    {
+      "text": "Weights: PaySim / IEEE-CIS",
+      "size": 41,
+      "width": 518.984375,
+      "max_width": 570,
+      "bounds": [
+        890.5078125,
+        1023,
+        1409.5078125,
+        1061
+      ]
+    },
+    {
+      "text": "Model scores",
+      "size": 41,
+      "width": 262.0,
+      "max_width": 550,
+      "bounds": [
+        1019.0,
+        1157,
+        1281.0,
+        1187
+      ]
+    },
+    {
+      "text": "PaySim: raw / clipped / Platt",
+      "size": 41,
+      "width": 508.0,
+      "max_width": 550,
+      "bounds": [
+        875,
+        1205,
+        1384,
+        1243
+      ]
+    },
+    {
+      "text": "IEEE-CIS: raw scores",
+      "size": 41,
+      "width": 397.0,
+      "max_width": 550,
+      "bounds": [
+        875,
+        1250,
+        1272,
+        1280
+      ]
+    },
+    {
+      "text": "BankSim: raw margins",
+      "size": 41,
+      "width": 411.0,
+      "max_width": 550,
+      "bounds": [
+        875,
+        1295,
+        1286,
+        1333
+      ]
+    },
+    {
+      "text": "Ranking",
+      "size": 41,
+      "width": 162.0,
+      "max_width": 540,
+      "bounds": [
+        1694,
+        181,
+        1856,
+        219
+      ]
+    },
+    {
+      "text": "All Test scores + labels",
+      "size": 41,
+      "width": 423.90625,
+      "max_width": 540,
+      "bounds": [
+        1693,
+        234,
+        2118,
+        264
+      ]
+    },
+    {
+      "text": "AP",
+      "size": 52,
+      "width": 73.0,
+      "max_width": 75,
+      "bounds": [
+        2255.5,
+        203,
+        2328.5,
+        240
+      ]
+    },
+    {
+      "text": "Review",
+      "size": 41,
+      "width": 142.0,
+      "max_width": 330,
+      "bounds": [
+        1694,
+        320,
+        1836,
+        350
+      ]
+    },
+    {
+      "text": "Test labels: metrics only",
+      "size": 41,
+      "width": 440.921875,
+      "max_width": 460,
+      "bounds": [
+        1889.078125,
+        320,
+        2330.078125,
+        358
+      ]
+    },
+    {
+      "text": "TP / FP / FN · Precision · Recall",
+      "size": 41,
+      "width": 581.96875,
+      "max_width": 640,
+      "bounds": [
+        1694,
+        368,
+        2276,
+        398
+      ]
+    },
+    {
+      "text": "Alert rate: A/N",
+      "size": 41,
+      "width": 255.96875,
+      "max_width": 640,
+      "bounds": [
+        1693,
+        411,
+        1950,
+        441
+      ]
+    },
+    {
+      "text": "Review rules",
+      "size": 41,
+      "width": 251.0,
+      "max_width": 345,
+      "bounds": [
+        1595,
+        476,
+        1846,
+        506
+      ]
+    },
+    {
+      "text": "PaySim transfer",
+      "size": 41,
+      "width": 312.0,
+      "max_width": 325,
+      "bounds": [
+        1595,
+        544,
+        1908,
+        582
+      ]
+    },
+    {
+      "text": "Early Val → Platt",
+      "size": 41,
+      "width": 307.953125,
+      "max_width": 325,
+      "bounds": [
+        1595,
+        600,
+        1904,
+        638
+      ]
+    },
+    {
+      "text": "Late Val → τ*",
+      "size": 41,
+      "width": 244.953125,
+      "max_width": 325,
+      "bounds": [
+        1595,
+        648,
+        1840,
+        678
+      ]
+    },
+    {
+      "text": "min cost; A/N≤3%",
+      "size": 41,
+      "width": 324.96875,
+      "max_width": 325,
+      "bounds": [
+        1595,
+        696,
+        1920,
+        732
+      ]
+    },
+    {
+      "text": "Test: same τ*",
+      "size": 41,
+      "width": 245.921875,
+      "max_width": 325,
+      "bounds": [
+        1595,
+        744,
+        1841,
+        774
+      ]
+    },
+    {
+      "text": "Variable alerts",
+      "size": 41,
+      "width": 262.953125,
+      "max_width": 325,
+      "bounds": [
+        1595,
+        792,
+        1858,
+        822
+      ]
+    },
+    {
+      "text": "Exact top-k",
+      "size": 41,
+      "width": 222.0,
+      "max_width": 260,
+      "bounds": [
+        2000,
+        544,
+        2222,
+        582
+      ]
+    },
+    {
+      "text": "IEEE-CIS / BankSim",
+      "size": 41,
+      "width": 371.0,
+      "max_width": 373,
+      "bounds": [
+        1971,
+        600,
+        2342,
+        630
+      ]
+    },
+    {
+      "text": "Primary 3%",
+      "size": 41,
+      "width": 212.0,
+      "max_width": 373,
+      "bounds": [
+        1971,
+        640,
+        2183,
+        678
+      ]
+    },
+    {
+      "text": "PaySim: component",
+      "size": 41,
+      "width": 367.0,
+      "max_width": 373,
+      "bounds": [
+        1971,
+        692,
+        2339,
+        730
+      ]
+    },
+    {
+      "text": "contrasts at 3%",
+      "size": 41,
+      "width": 283.0,
+      "max_width": 373,
+      "bounds": [
+        1971,
+        732,
+        2254,
+        762
+      ]
+    },
+    {
+      "text": "Completed Test",
+      "size": 41,
+      "width": 289.90625,
+      "max_width": 373,
+      "bounds": [
+        1971,
+        784,
+        2262,
+        822
+      ]
+    },
+    {
+      "text": "windows",
+      "size": 41,
+      "width": 159.0,
+      "max_width": 373,
+      "bounds": [
+        1971,
+        824,
+        2130,
+        854
+      ]
+    },
+    {
+      "text": "Time splits",
+      "size": 41,
+      "width": 212.984375,
+      "max_width": 360,
+      "bounds": [
+        1595,
+        910,
+        1808,
+        948
+      ]
+    },
+    {
+      "text": "Train / Val / Test",
+      "size": 41,
+      "width": 298.828125,
+      "max_width": 330,
+      "bounds": [
+        2031.171875,
+        910,
+        2331.171875,
+        940
+      ]
+    },
+    {
+      "text": "PaySim / IEEE-CIS",
+      "size": 41,
+      "width": 348.0,
+      "max_width": 460,
+      "bounds": [
+        1595,
+        960,
+        1943,
+        998
+      ]
+    },
+    {
+      "text": "3 folds",
+      "size": 41,
+      "width": 121.0,
+      "max_width": 170,
+      "bounds": [
+        1595,
+        1015,
+        1716,
+        1045
+      ]
+    },
+    {
+      "text": "BankSim",
+      "size": 41,
+      "width": 164.0,
+      "max_width": 230,
+      "bounds": [
+        2100,
+        960,
+        2264,
+        990
+      ]
+    },
+    {
+      "text": "1 Test",
+      "size": 41,
+      "width": 113.90625,
+      "max_width": 230,
+      "bounds": [
+        2100,
+        1015,
+        2215,
+        1045
+      ]
+    },
+    {
+      "text": "History: past-only · no fraud labels",
+      "size": 41,
+      "width": 625.0,
+      "max_width": 690,
+      "bounds": [
+        1638,
+        1125,
+        2263,
+        1163
+      ]
+    },
+    {
+      "text": "Analytical cost",
+      "size": 41,
+      "width": 290.0,
+      "max_width": 355,
+      "bounds": [
+        1590,
+        1208,
+        1880,
+        1246
+      ]
+    },
+    {
+      "text": "FP + c × FN",
+      "size": 41,
+      "width": 219.984375,
+      "max_width": 265,
+      "bounds": [
+        1680,
+        1254,
+        1900,
+        1284
+      ]
+    },
+    {
+      "text": "PaySim, IEEE-CIS",
+      "size": 41,
+      "width": 337.0,
+      "max_width": 355,
+      "bounds": [
+        1590,
+        1296,
+        1927,
+        1334
+      ]
+    },
+    {
+      "text": "Conditional CIs",
+      "size": 41,
+      "width": 300.0,
+      "max_width": 334,
+      "bounds": [
+        2000,
+        1208,
+        2300,
+        1238
+      ]
+    },
+    {
+      "text": "Paired bootstrap",
+      "size": 41,
+      "width": 302.0,
+      "max_width": 334,
+      "bounds": [
+        2000,
+        1254,
+        2302,
+        1292
+      ]
+    },
+    {
+      "text": "Fixed models",
+      "size": 41,
+      "width": 245.0,
+      "max_width": 250,
+      "bounds": [
+        2000,
+        1296,
+        2245,
+        1326
+      ]
+    }
+  ]
+}

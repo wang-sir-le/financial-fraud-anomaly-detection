@@ -1,0 +1,1 @@
+Fig. S1 Joint changes in AP and recall under the dataset-specific protocols. This alternative view uses the same means as preserved Fig. S8; it introduces no new evidence. PaySim AP is based on clipped-logit Platt scores and recall on transferred thresholds; IEEE-CIS uses raw scores and fixed window capacity

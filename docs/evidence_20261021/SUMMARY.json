@@ -1,0 +1,104 @@
+{
+  "review_date": "2026-10-21",
+  "publication_date": "2026-10-23",
+  "scope": "Previously completed checks of delivered original archives, saved draws and fixed caches. These checks are not new model fitting or independent raw-to-model reproduction.",
+  "table8": {
+    "fold_sha256": "5fb26d8e0daa064cb6d65aa0d8d7d0e2c60a6f852bbda6faf99fbb67a02447c4",
+    "seed_sha256": "c7ff1fc1f3bd70364137bdd17e6f5bf891bb3958d85ac0cd47b9a208b40f80ee",
+    "fold_rows": 12,
+    "seed_rows": 60,
+    "groups": 12,
+    "aggregation_fields": 336,
+    "manuscript_cells": 60,
+    "scope": "Seed-to-fold aggregation and printed table; no transaction-level AP or prediction recomputation"
+  },
+  "esm2": {
+    "check_count": 2350,
+    "all_covered_checks_pass": true,
+    "failed_checks": []
+  },
+  "saved_component_effects": {
+    "reconstructed_interval_effect_groups": 549,
+    "draw_values_compared": 2745000,
+    "individual_model_replicate_tables_read": 342,
+    "failures": [],
+    "all_reconstructed_effects_match": true,
+    "scope": "Per-condition saved replicate counts/AP/TP to all C component effects; same raw-fitted models and observed windows remain fixed. No row-level score/AP reconstruction, new draws, fits or imported archive code."
+  },
+  "banksim": {
+    "passed": 2841,
+    "failed": 0,
+    "formal_condition_count": 40,
+    "actual_recorded_fit_count": 54,
+    "scope_closed": [
+      "Original OR3/4 archives obtained; original BankSim effects and sequences obtained",
+      "480 conditional interval rows and 12 adjusted primary rows independently recalculated from original saved arrays",
+      "40 conditions/54 actual-fit counts and B1-only recorded candidate selection supported by preserved records",
+      "OR4 60 partitions/12 seed means/whole-window step contribution arithmetic consistent with OR3 per-seed aggregates"
+    ],
+    "scope_not_closed": [
+      "Original row-level BankSim test identity, labels and 40 margin arrays are excluded; R/G/L/U partitions were not independently re-ranked from those excluded files",
+      "Saved draw effects were not recomputed from transaction predictions; no new bootstrap sequences or model scores were generated",
+      "No independent raw-to-model reconstruction, future-environment validation, or removal of B1 selection dependence",
+      "PaySim diagnostic is recalculated from delivered 5000-row original diagnostic extract; source-parquet equality requires the ESM2 audit"
+    ]
+  },
+  "s22": {
+    "metric_groups": 24,
+    "metric_fields_checked": 312,
+    "contrast_fields_checked": 28,
+    "all_metrics_and_contrasts_match": true,
+    "max_absolute_metric_difference": 2.220446049250313e-16,
+    "review_N": 198311,
+    "review_P": 2160,
+    "whole_window_TP": {
+      "A0": 1905,
+      "B0": 2113,
+      "A1": 2100,
+      "B1": 2109,
+      "A2": 2109,
+      "B2": 2112
+    },
+    "whole_window_J": -6,
+    "segment_J": [
+      -8,
+      -3,
+      1
+    ],
+    "common_column_pairs_regions_checked": 6,
+    "limitations": [
+      "No original source transaction CSV reconstruction",
+      "No model loading, fitting or score generation",
+      "Fixed seed42, C07 and exposed environment remain unchanged",
+      "Reanalysis of historical cached outputs is not independent final validation",
+      "No training or future-environment uncertainty estimated"
+    ]
+  },
+  "original_artifact_scope": {
+    "public_mapping": {
+      "records": 52,
+      "public_sha_all_match": true,
+      "original_sources_provided": 49,
+      "provided_original_sha_all_match": true,
+      "unprovided_original_sources": [
+        "experiment/outputs/merchant_history_execution_preparation_20261006/run_01/results/attempt_02/six_cell_trace.json",
+        "experiment/outputs/merchant_history_execution_preparation_20261006/run_01/results/attempt_02/synthetic_fixture.json",
+        "experiment/outputs/merchant_history_execution_preparation_20261006/run_01/results/attempt_02/test_results.json"
+      ],
+      "original_same_as_public_count": 42,
+      "adaptations_inspected": "Path placeholders; two code typing/path-guard adaptations; matching transformed EXECUTION_CONFIG workspace_roots. Scientific numeric JSON values and original inference/history implementations unchanged."
+    },
+    "artifact_manifest_checks": {
+      "records": 67,
+      "all_match": true
+    },
+    "lock_checks": {
+      "records": 46,
+      "all_match": true,
+      "failed": []
+    }
+  },
+  "new_model_fits": 0,
+  "new_scores": 0,
+  "new_draws": 0
+}

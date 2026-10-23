@@ -1,0 +1,12 @@
+﻿Path,Contents
+results/absolute_all_conditions.csv,"All 40 seeded conditions: whole window and segments, all capacities, AP and ties"
+results/point_estimates.csv,All audited seed means and paired point effects
+results/per_seed_effects.csv,Every paired seed effect and direct pipeline comparison
+results/intervals_all.csv,"All 480 prespecified interval rows, validity counts and adjustments"
+results/primary_family.csv,Four primary comparisons at all three lengths
+results/ties_and_ceilings.csv,"All tie, constant-score, ceiling and headroom records"
+results/bootstrap/,"Saved step sequences, effects, names, point estimates and interval receipts"
+reference_protocol/,"Frozen effective protocol, full model catalog and stage receipts"
+audit/,"Training/test integrity, replay checks, issues and exposure records"
+code/; README_BankSim_rebuild.md,"Original implementation, pinned dependencies and fresh-run route"
+PACKAGE_MANIFEST.json,Source-to-package paths and SHA-256 for every supplied evidence file

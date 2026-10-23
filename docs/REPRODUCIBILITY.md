@@ -6,7 +6,7 @@ The repository contains the scientific implementation and compact, source-linked
 
 - Install and test the original public core plus the added analysis/training modules.
 - Inspect frozen scientific settings, reported conditions, all included positive/negative/uncertain summary rows and recorded reconstruction failures.
-- Redraw the fifteen current figures from compact aggregate JSON/CSV inputs, without reading source transactions or generating statistical draws.
+- Inspect all fifteen exact adopted PNGs and their drawing sources. Figure 2 regenerates editable SVG only; its PNG export is separate. Other source-specific font/rendering caveats are documented under figures/. No source transactions or new statistical draws are needed for the available plotting routes.
 - Run the BankSim artificial lifecycle tests, whose fixtures forbid real model fitting.
 - Rebuild base PaySim/IEEE-CIS inputs using official dataset access and explicit paths, then execute the prescribed extension code against appropriately reconstructed inputs.
 
@@ -21,3 +21,7 @@ The BankSim post-hoc bridge also requires a separately completed raw-to-model ru
 The original PaySim validation-threshold estimand and later exact-capacity estimands differ. The deterministic v2 source identity, numerical implementation and tie rule must not be replaced with v1 positional row identities. Cross-model comparison is between prescribed complete pipelines, including preprocessing. BankSim's observation-point headroom arithmetic is not a confidence limit or proof of redundancy. S21 diagnostics are descriptive/post-hoc. S22 is retrospective in an exposed environment and has no new Bootstrap or independent test set.
 
 Public-copy provenance and regression checks are verified separately from scientific reconstruction. No new real model fitting, scoring, Bootstrap, tuning or third-party raw-to-model reproduction is claimed by this synchronization.
+
+## October 21 checks and October 22 final presentation
+
+Original Table 8 seed/fold aggregates are now available in `docs/evidence_20261021/`. Compact records also document checks of saved interval inputs and historical S22 fixed caches. These checks were completed before this synchronization and did not change the scientific implementations or recorded results. The S22 caches themselves remain excluded; their inspection did not establish a portable reader-run or independent raw-to-model reconstruction. See `docs/UPDATES_20261023.md` and the current artifact map for final figure/table correspondence.

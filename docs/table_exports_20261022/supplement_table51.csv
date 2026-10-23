@@ -1,0 +1,8 @@
+﻿Measure,Recorded value,Interpretation
+Sampled process-tree peak RSS,1.039310 GiB,Sampled peak; shared pages may be counted more than once
+Sampling target / largest observed interval,0.050000 / 0.309974 s,Not an instantaneous peak guarantee
+Observed cumulative CPU,264.296875 s,May omit short-lived process work
+Final run directory,"925,401,626 bytes (0.861847 GiB)",Includes post-return closure record; not raw-dataset size
+Startup available memory,10.132813 GiB,Entry observation
+Startup D-drive free space,334.354286 GiB,Entry observation
+Stop caps,1200 s total; 60 s/train worker; 4 GiB RSS; 2 GiB products,"Stopping limits, not completion-time estimates"

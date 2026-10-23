@@ -1,0 +1,9 @@
+﻿Attribute,PaySim,IEEE-CIS
+Source,Synthetic mobile-money transactions,Anonymised competition transactions
+Transactions,"6,362,620","590,540"
+Whole-dataset fraud prevalence,0.1291%,3.4990%
+Future tests,3 expanding folds,3 expanding folds
+Entity,Recipient; Pair audited,Entity A; Entity C sensitivity
+Training seeds,"42, 52, 62, 72, 82","42, 52, 62, 72, 82"
+Decision rule,Validation threshold transfer; Test workload varies,Exact Test top ceil(0.03N)
+Analytical cost,FP + 100FN,FP + 100FN

@@ -1,0 +1,1 @@
+Fig. S5 Core component differences and pointwise conditional 95% intervals. AP is on its original scale and recall is in percentage points at an exact 3% test-window budget. PaySim displays raw, clipped and saved-Platt stages; IEEE-CIS uses raw scores. Clipped and Platt intervals coincide. Windows are shown separately; these intervals do not test cross-window differences

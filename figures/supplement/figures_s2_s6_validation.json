@@ -1,0 +1,608 @@
+{
+  "date": "2026-10-22",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.4",
+  "task": "S2/S6 production outputs at unchanged Word figure extents",
+  "figures": [
+    {
+      "outputs": {
+        "png": {
+          "filename": "figS2.png",
+          "sha256": "32f9472480ccc91e30b63acf4ec0ab0342b5e1a5d6c210b4278ea91db7fe6ace",
+          "bytes": 227330
+        },
+        "pdf": {
+          "filename": "figS2.pdf",
+          "sha256": "02cc6defa8e3deae9c34baad525cfe83f62e14bcd952efef3357bfd72ed5bb16",
+          "bytes": 23636
+        },
+        "svg": {
+          "filename": "figS2.svg",
+          "sha256": "e0e69d0c3ddd5bb32e9d668c92f5ddc91aa233fe7a703ac1c7fb58d4af02e03c",
+          "bytes": 61427
+        }
+      },
+      "physical_inches": [
+        6.6,
+        1.77375
+      ],
+      "png_pixels": [
+        4290,
+        1152
+      ],
+      "png_dpi_metadata": [
+        650.0114,
+        650.0114
+      ],
+      "effective_dpi_at_unchanged_docx_extent": [
+        650.0,
+        649.4714587737844
+      ],
+      "pdf_points": [
+        475.20001220703125,
+        127.70999908447266
+      ],
+      "pdf_fonts": [
+        {
+          "xref": 15,
+          "type": "Type0",
+          "name": "SPSFYI+DejaVuSans-Bold",
+          "embedded_bytes": 9712,
+          "embedded": true
+        },
+        {
+          "xref": 22,
+          "type": "Type0",
+          "name": "DXMPRB+DejaVuSans",
+          "embedded_bytes": 15040,
+          "embedded": true
+        }
+      ],
+      "pdf_contains_raster_images": false,
+      "svg_glyphs_outlined": true,
+      "minimum_visible_font_pt": 8.0,
+      "visible_text": [
+        {
+          "text": "ΔRecall@3% (pp)",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            913.4765625,
+            48.25,
+            1094.5234375,
+            69.5
+          ]
+        },
+        {
+          "text": "−2",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            822.5,
+            79.5,
+            852.5,
+            99.5
+          ]
+        },
+        {
+          "text": "−1",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            905.75,
+            79.5,
+            935.75,
+            99.5
+          ]
+        },
+        {
+          "text": "0",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            997.5,
+            79.5,
+            1010.5,
+            99.5
+          ]
+        },
+        {
+          "text": "1",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            1080.75,
+            79.5,
+            1093.75,
+            99.5
+          ]
+        },
+        {
+          "text": "2",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            1164.0,
+            79.5,
+            1177.0,
+            99.5
+          ]
+        },
+        {
+          "text": "Contrast / fold",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            17.5,
+            282.125,
+            167.5,
+            303.375
+          ]
+        },
+        {
+          "text": "Estimate",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            236.5,
+            282.125,
+            328.5,
+            303.375
+          ]
+        },
+        {
+          "text": "95% CI",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            538.0,
+            282.125,
+            612.0,
+            303.375
+          ]
+        },
+        {
+          "text": "IEEE-CIS · C02 (M2 − M0) · Exact 3% review capacity",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            17.5,
+            236.12500000000003,
+            631.5,
+            257.375
+          ]
+        },
+        {
+          "text": "Fold 1",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            17.5,
+            196.875,
+            80.75,
+            218.125
+          ]
+        },
+        {
+          "text": "−0.946",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            244.0,
+            196.875,
+            321.0,
+            218.125
+          ]
+        },
+        {
+          "text": "(−1.594, −0.340)",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            483.0,
+            196.875,
+            667.0,
+            218.125
+          ]
+        },
+        {
+          "text": "Fold 2",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            17.5,
+            159.375,
+            80.75,
+            180.625
+          ]
+        },
+        {
+          "text": "0.078",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            253.0,
+            159.375,
+            312.0,
+            180.625
+          ]
+        },
+        {
+          "text": "(−0.507, 0.684)",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            492.0,
+            159.375,
+            658.0,
+            180.625
+          ]
+        },
+        {
+          "text": "Fold 3",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            17.5,
+            121.875,
+            80.75,
+            143.125
+          ]
+        },
+        {
+          "text": "0.840",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            253.0,
+            121.875,
+            312.0,
+            143.125
+          ]
+        },
+        {
+          "text": "(0.232, 1.522)",
+          "point_size": 8.5,
+          "bounds_pixels": [
+            501.0,
+            121.875,
+            649.0,
+            143.125
+          ]
+        },
+        {
+          "text": "Five-seed means; pointwise conditional 95% CIs.",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            17.5,
+            50.0,
+            504.046875,
+            70.0
+          ]
+        },
+        {
+          "text": "Paired moving-block percentiles; crossing zero does not establish equivalence.",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            17.5,
+            15.0,
+            803.859375,
+            35.0
+          ]
+        }
+      ],
+      "text_outside_canvas": [],
+      "figure": "S2",
+      "source": "figS2_data.json",
+      "source_sha256": "78158681ae24e0c82878e5c4936bf77f0b4472bb88654c8064e96bf804233358",
+      "plotted_values_checked": [
+        {
+          "fold": 1,
+          "estimate_pp": -0.9455587392550157,
+          "lower_pp": -1.5936692597852056,
+          "upper_pp": -0.33960209637092276
+        },
+        {
+          "fold": 2,
+          "estimate_pp": 0.07763221737020598,
+          "lower_pp": -0.5072555727212535,
+          "upper_pp": 0.683572643035578
+        },
+        {
+          "fold": 3,
+          "estimate_pp": 0.8404880253050162,
+          "lower_pp": 0.23186929974024828,
+          "upper_pp": 1.5215790699400378
+        }
+      ],
+      "points": 3,
+      "intervals": 3,
+      "preserved": "All estimates, original pointwise conditional 95% paired moving-block percentile intervals, exact3% decision and five-seed means",
+      "new_inference": false,
+      "new_model_scores": 0,
+      "new_resampling": 0,
+      "text_bounding_box_overlaps": [],
+      "visual_review": {
+        "method": "Opened final full PNG and independently rasterized vector-PDF preview with view_image detail original",
+        "result": "PASS",
+        "observed_defects": [],
+        "notes": "All numeric rows, error bars, labels and notes readable; no clipping or text overlap."
+      },
+      "input_and_output_data_identity_checked": true
+    },
+    {
+      "outputs": {
+        "png": {
+          "filename": "figS6.png",
+          "sha256": "0e64de3c4e487dede1e207fb2716810225fbf8d38aa654b1d417622890a5e30a",
+          "bytes": 239890
+        },
+        "pdf": {
+          "filename": "figS6.pdf",
+          "sha256": "559c7da2e1a99da95844ca8e766bba4cd8fc76917d2c8f34f3f43307220ff8c6",
+          "bytes": 45145
+        },
+        "svg": {
+          "filename": "figS6.svg",
+          "sha256": "5e8d851aed2e09bc19511c9bc4346bb298b35443cfde4c347f165f4d56147b51",
+          "bytes": 190468
+        }
+      },
+      "physical_inches": [
+        6.6,
+        2.834916885
+      ],
+      "png_pixels": [
+        4290,
+        1842
+      ],
+      "png_dpi_metadata": [
+        650.0114,
+        650.0114
+      ],
+      "effective_dpi_at_unchanged_docx_extent": [
+        650.0,
+        649.754498887187
+      ],
+      "pdf_points": [
+        475.20001220703125,
+        204.114013671875
+      ],
+      "pdf_fonts": [
+        {
+          "xref": 15,
+          "type": "Type0",
+          "name": "GAXIIF+DejaVuSans",
+          "embedded_bytes": 13548,
+          "embedded": true
+        }
+      ],
+      "pdf_contains_raster_images": false,
+      "svg_glyphs_outlined": true,
+      "minimum_visible_font_pt": 8.0,
+      "visible_text": [
+        {
+          "text": "Paired ΔTP at 3% capacity",
+          "point_size": 9.0,
+          "bounds_pixels": [
+            494.2478125,
+            33.30700786000001,
+            794.7321875,
+            55.80700786000001
+          ]
+        },
+        {
+          "text": "−200",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            154.09172413793104,
+            65.80700786000001,
+            210.09172413793104,
+            85.80700786000001
+          ]
+        },
+        {
+          "text": "0",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            318.9710344827586,
+            65.80700786000001,
+            331.9710344827586,
+            85.80700786000001
+          ]
+        },
+        {
+          "text": "200",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            449.35034482758624,
+            65.80700786000001,
+            488.35034482758624,
+            85.80700786000001
+          ]
+        },
+        {
+          "text": "400",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            592.7296551724138,
+            65.80700786000001,
+            631.7296551724138,
+            85.80700786000001
+          ]
+        },
+        {
+          "text": "600",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            736.1089655172414,
+            65.80700786000001,
+            775.1089655172414,
+            85.80700786000001
+          ]
+        },
+        {
+          "text": "800",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            879.488275862069,
+            65.80700786000001,
+            918.488275862069,
+            85.80700786000001
+          ]
+        },
+        {
+          "text": "1000",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            1016.3675862068965,
+            65.80700786000001,
+            1068.3675862068965,
+            85.80700786000001
+          ]
+        },
+        {
+          "text": "Empirical cumulative proportion",
+          "point_size": 9.0,
+          "bounds_pixels": [
+            43.98999999999998,
+            81.59822043600008,
+            66.49000000000001,
+            449.0982204360001
+          ]
+        },
+        {
+          "text": "0.0",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            76.49,
+            104.49931979872729,
+            108.49,
+            124.49931979872729
+          ]
+        },
+        {
+          "text": "0.2",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            76.49,
+            163.8779425536364,
+            108.49,
+            183.8779425536364
+          ]
+        },
+        {
+          "text": "0.4",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            76.49,
+            223.25656530854553,
+            108.49,
+            243.25656530854553
+          ]
+        },
+        {
+          "text": "0.6",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            76.49,
+            282.6351880634546,
+            108.49,
+            302.6351880634546
+          ]
+        },
+        {
+          "text": "0.8",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            76.49,
+            342.01381081836377,
+            108.49,
+            362.01381081836377
+          ]
+        },
+        {
+          "text": "1.0",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            76.49,
+            401.39243357327285,
+            108.49,
+            421.39243357327285
+          ]
+        },
+        {
+          "text": "Observed: +39.4",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            919.24,
+            178.05700786,
+            1090.24,
+            198.05700786
+          ]
+        },
+        {
+          "text": "Original 2.5%: −166.2",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            919.24,
+            150.05700786,
+            1144.24,
+            170.05700786
+          ]
+        },
+        {
+          "text": "Original 97.5%: 746.8",
+          "point_size": 8.0,
+          "bounds_pixels": [
+            919.24,
+            122.05700786,
+            1140.24,
+            142.05700786
+          ]
+        },
+        {
+          "text": "PaySim · Fold 3 · PTHW − PTH · LightGBM · Platt scores",
+          "point_size": 9.0,
+          "bounds_pixels": [
+            327.6762500000001,
+            468.41793694200004,
+            955.3637500000001,
+            490.91793694200004
+          ]
+        }
+      ],
+      "text_outside_canvas": [],
+      "figure": "S6",
+      "source": "figS6_existing_5000.csv",
+      "source_sha256": "8b93b0d13137a6cb644051a70407e7bf58361e94ccff8c85e89e0bb3a42bdc6a",
+      "original_draws_read": 5000,
+      "observed_effect": 39.4,
+      "original_ci": [
+        -166.2,
+        746.8
+      ],
+      "recomputed_ci_from_retained_draws": [
+        -166.2,
+        746.8
+      ],
+      "draw_min": -214.6,
+      "draw_max": 1100.8,
+      "unique_draw_values": 2990,
+      "ecdf_definition": "Right-continuous empirical CDF: cumulative number of retained draws <=x /5000; ties combined exactly; no smoothing",
+      "curve_data_sha256": "030f342a39305f0e443f9f81ade60882a1407c92d266589259efc02bf2e54be9",
+      "preserved": "Retained5000draws; all three original marker values; 3% capacity, Fold3, fixed LightGBM models and Platt score stage",
+      "new_model_scores": 0,
+      "new_resampling": 0,
+      "new_inference": false,
+      "text_bounding_box_overlaps": [],
+      "visual_review": {
+        "method": "Opened final full PNG and independently rasterized vector-PDF preview with view_image detail original",
+        "result": "PASS",
+        "observed_defects": [],
+        "notes": "Exact retained-draw ECDF, observed and percentile lines, complete legend, axes and title all readable; no clipping or text overlap."
+      },
+      "input_and_output_data_identity_checked": true
+    }
+  ],
+  "raster_upsampling_used": false,
+  "requires_final_visual_review": false,
+  "source_provenance": [
+    {
+      "original_source": "${WORKSPACE}/审查执行_20261020/修订稿/ESM_5_Figures_and_Version_Map_20261020/figures/supplement/figS2_data.json",
+      "copied_input": "figS2_data.json",
+      "sha256": "78158681ae24e0c82878e5c4936bf77f0b4472bb88654c8064e96bf804233358",
+      "byte_identical": true
+    },
+    {
+      "original_source": "${WORKSPACE}/原始材料复审_20261021/banksim_work/posthoc_revision/derived/existing_draw_diagnostics/paysim_existing_5000.csv",
+      "copied_input": "figS6_existing_5000.csv",
+      "sha256": "8b93b0d13137a6cb644051a70407e7bf58361e94ccff8c85e89e0bb3a42bdc6a",
+      "byte_identical": true
+    }
+  ],
+  "all_outputs_visually_reviewed": true
+}

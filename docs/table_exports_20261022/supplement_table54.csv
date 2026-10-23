@@ -1,0 +1,7 @@
+﻿Attempt/scope,Elapsed seconds,Project model/preprocessor fits,Note
+Preserved run_01 development,3257.422134,0 / 0,Outside its formal entry; retained
+Preserved run_01 formal invocation,3.465306,0 / 0,Stopped on artificial identity-permutation check
+Preserved run_01 post-stop documentation,456.994173,0 / 0,Separate from formal invocation
+run_02 repair development and static checks,1719.132493,Not an additional project fit,Includes tool waits; outside formal entry
+run_02 formal external invocation,135.453847,6 / 6,"Completed, no retry"
+run_02 post-return artifact review,195.126682,0 / 0 additional,Includes tool waits; outside native entry

@@ -1,0 +1,34 @@
+Figures S1 S5 S8 presentation revision 2026-10-22
+
+All scientific coordinates, values and interval endpoints are taken from the
+byte-preserved aggregate JSON files beside the drawing source. No raw records,
+model loading, predictions, fitting, confidence-interval calculation or new
+resampling is used by this presentation exporter.
+
+Outputs keep the original Word figure frames:
+S1 6.6 x 3.301569335083115 inches
+S5 6.3 x 6.3875 inches
+S8 6.6 x 4.5008333333333335 inches
+PNG exports are freshly rendered at 650 dpi. No existing bitmap is upsampled.
+All visible typography is 8 pt or larger at these physical sizes.
+PDF uses subset-embedded Arial TrueType fonts; SVG converts text to outlines.
+
+S1 retains 12 points, dataset-specific axes and blue/orange component encodings.
+Four near-origin IEEE-CIS labels are separated using component-coloured leaders.
+S5 retains all 66 original pointwise intervals and the Raw/Clipped/Platt encoding.
+S8 retains 24 original rounded numeric cells and four independent zero-centred
+RdBu colour scales. Its colourbar ticks show the negative limit, zero and positive
+limit; colour encodes magnitude, not statistical significance.
+
+Run figS1.py, figS5.py or figS8.py using an environment with matplotlib, numpy,
+pillow and pypdf; the shared source redraw_S1_S5_S8_20261022.py and all three
+aggregate JSON files must be in the same folder. Running the shared source
+regenerates all three outputs. The reviewed environment used Python 3.12.14 and
+Matplotlib 3.11.2. System font availability or software versions may change
+typography; byte-identical exports across platforms are not claimed.
+
+The supplied PNG/PDF/SVG files are the adopted reviewed outputs. Original input
+JSON hashes, plotted numeric payloads, frame sizes and embedded-font checks are
+recorded in each figure verification JSON. PNGs and separately rasterized PDFs
+were visually reviewed. Existing manuscript captions must retain the distinction
+between PaySim's PTH-minus-P0 History bundle and the isolated PH history scheme.

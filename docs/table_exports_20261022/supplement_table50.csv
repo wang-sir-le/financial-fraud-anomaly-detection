@@ -1,0 +1,19 @@
+﻿Recorded interval,Seconds,Scope
+Formal external invocation (parent stopwatch),135.453847,Before Python launch through actual return
+Native final-budget snapshot,134.856784,Internal elapsed value before process exit; not a second replicate
+Supervised pipeline process,133.331288,Startup through exit/cleanup of the controlled process
+Pipeline internal elapsed,132.428496,Internal pipeline interval; nested
+Native artificial integration checks,5.543588,Nested within entry; no project fit
+Source hash/projection/normalisation,3.891013,Shared once; nested
+Integration plus real-input stage,9.559542,Contains earlier subitems
+History construction total,42.171466,Shared across M conditions
+H7 history construction,20.103379,Single ordered-run observation
+Horig history construction,21.966240,Single ordered-run observation
+Preprocessing stage total,27.145858,Includes fits and transformation/write work
+Training-label projection,2.265535,Numeric use restricted to training region
+"Six training workers, cumulative elapsed",24.829784,Sum of six sequential worker intervals
+"Six review workers, cumulative elapsed",15.374197,Nested in review stage
+Review-label projection,2.125936,After score lock
+"Ranking, AP and contrasts: whole window and segments",7.195603,Includes whole-window and segment metrics
+Review stage total,24.911696,"Contains review workers, labels and metrics"
+Delivery snapshot subinterval,1.334831,Internal tail snapshot; not all later shutdown work

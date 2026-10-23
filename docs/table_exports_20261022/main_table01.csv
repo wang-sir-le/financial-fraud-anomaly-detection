@@ -1,0 +1,9 @@
+﻿Data and role,PaySim,IEEE-CIS,BankSim
+Source / rows,"Synthetic mobile money; 6,362,620","Anonymised competition; 590,540","External simulated payments; 594,643"
+Question,History vs time-context bundle; weighting and score stages,History/weighting decomposition and pipeline limits,History increment above B0 vs B1; capture headroom
+Design history,Original windows; later post-hoc diagnostics,Original windows; later post-hoc diagnostics,Local freeze before fitting and test access; revision diagnostics post-hoc
+References,P0/PT/PH/PTH/PTHW; weight-five sensitivity,M0/M1/M2; M3 entity sensitivity,B0/B0H/B1/B1H; B1-selected configuration
+Pipelines,LightGBM (5 seeds); logistic (1 fit); different preprocessing,LightGBM (5 seeds); logistic (1 fit); different preprocessing,LightGBM and XGBoost (5 seeds); common train-only preprocessing
+Test windows,"Steps 239–281, 324–354, 399–743","3 future windows; 59,054 rows each; complete TransactionDT groups","Steps 126–179; 198,311 rows; one window"
+Scores / decisions,Raw/clipped/Platt; transferred thresholds and separate exact 3% contrasts,Raw probabilities; exact completed-window 3% budget,"Raw margins; whole-window 3% primary, 1%/5% secondary"
+Scope,Workflow-conditional attribution; AP is distinct from capture,Specified-pipeline component effects; no independently verified mechanism,"Synthetic input; B1-prioritised effects, not separately tuned optima"

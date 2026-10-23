@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-23",
+  "source_revision_date": "2026-10-22",
+  "previous_public_commit": "45ff895b86709b882678044d683491cf6aef4942",
+  "status": "Local publication candidate checks passed; remote push verification is recorded separately after publication",
+  "adopted_figures_matched": 15,
+  "table_transcriptions_matched": 65,
+  "original_table8_seed_and_fold_inputs_hash_matched": true,
+  "scientific_files_preserved": 574,
+  "plot_entrypoints_checked": [
+    {
+      "entrypoint": "figures/main/fig2.py",
+      "returncode": 0
+    },
+    {
+      "entrypoint": "figures/supplement/figS1.py",
+      "returncode": 0
+    },
+    {
+      "entrypoint": "figures/supplement/figS5.py",
+      "returncode": 0
+    },
+    {
+      "entrypoint": "figures/supplement/figS8.py",
+      "returncode": 0
+    },
+    {
+      "entrypoint": "figures/supplement/figS2.py",
+      "returncode": 0
+    },
+    {
+      "entrypoint": "figures/supplement/figS6.py",
+      "returncode": 0
+    },
+    {
+      "check": "Figure2 wrapper reproduces adopted SVG bytes",
+      "pass": true
+    }
+  ],
+  "python_sources_parsed": [
+    "figures/main/fig2.py",
+    "figures/main/fig2_source_20261020/draw_figure.py",
+    "figures/supplement/figS1.py",
+    "figures/supplement/figS2.py",
+    "figures/supplement/figS5.py",
+    "figures/supplement/figS6.py",
+    "figures/supplement/figS8.py",
+    "figures/supplement/redraw_S1_S5_S8_20261022.py",
+    "figures/supplement/redraw_s2_s6.py"
+  ],
+  "changed_text_local_home_and_credential_pattern_scan": "PASS",
+  "new_model_fits": 0,
+  "new_scores": 0,
+  "new_bootstrap_draws": 0,
+  "external_raw_to_model_reproduction": false,
+  "full_manuscripts_and_submission_archives_in_git": false,
+  "verification_command": "python scripts/verify_publication.py",
+  "limitations": [
+    "Figure2 SVG generation requires installed fonts; its PNG export remains separate.",
+    "S4 standalone source export differs from the final Word embedding; the exact image is figS4_submission.png.",
+    "Rendering checks do not require cross-platform byte identity for the five supplementary plots.",
+    "Original-material checks report earlier author-side work, not an independent reader-run reconstruction."
+  ]
+}

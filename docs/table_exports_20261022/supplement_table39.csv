@@ -1,0 +1,7 @@
+﻿Display condition,Run ID,Unchanged model ID,Encoded columns
+M-off/Hnone,A0,directM_off_Hnone,29
+M-on/Hnone,B0,directM_on_Hnone,79
+M-off/H7,A1,directM_off_H7,49
+M-on/H7,B1,directM_on_H7,99
+M-off/Horig,A2,directM_off_Horig,49
+M-on/Horig,B2,directM_on_Horig,99

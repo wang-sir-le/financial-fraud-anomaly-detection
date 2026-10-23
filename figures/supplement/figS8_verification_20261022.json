@@ -1,0 +1,394 @@
+{
+  "figure": "S8",
+  "source_json_sha256": "edafd7b60edfbcd5d10036a3380c291a10ed3fd33205966365fb3fb03b472c26",
+  "inches": [
+    6.6,
+    4.5008333333333335
+  ],
+  "pixels": [
+    4290,
+    2925
+  ],
+  "effective_dpi_xy": [
+    650.0,
+    649.8796519163118
+  ],
+  "minimum_visible_font_pt": 8.0,
+  "fonts_pdf": [
+    {
+      "font": "/BLMWLY+ArialMT",
+      "subtype": "/Type0",
+      "embedded": true
+    }
+  ],
+  "svg_text_outlined": true,
+  "all_text_within_canvas": true,
+  "scientific": {
+    "panels": [
+      {
+        "dataset": "paysim",
+        "metric": "delta_ap",
+        "matrix": [
+          [
+            0.13459735131331207,
+            -0.004065784957909838,
+            -0.11914145952360089
+          ],
+          [
+            0.01898553774319489,
+            -0.04343100209987735,
+            0.04021336055541336
+          ]
+        ],
+        "display_strings": [
+          "+0.1346",
+          "-0.0041",
+          "-0.1191",
+          "+0.0190",
+          "-0.0434",
+          "+0.0402"
+        ],
+        "color_range": [
+          -0.13459735131331207,
+          0.13459735131331207
+        ]
+      },
+      {
+        "dataset": "paysim",
+        "metric": "delta_recall_pp",
+        "matrix": [
+          [
+            56.90763052208836,
+            53.33333333333334,
+            40.488841657810845
+          ],
+          [
+            1.4056224899598457,
+            1.7307692307692246,
+            0.5419766206163579
+          ]
+        ],
+        "display_strings": [
+          "+56.91",
+          "+53.33",
+          "+40.49",
+          "+1.41",
+          "+1.73",
+          "+0.54"
+        ],
+        "color_range": [
+          -56.90763052208836,
+          56.90763052208836
+        ]
+      },
+      {
+        "dataset": "ieee_cis",
+        "metric": "delta_ap",
+        "matrix": [
+          [
+            0.0029591393038364555,
+            -0.0024748675866049785,
+            -0.01545875039692135
+          ],
+          [
+            -0.006824412232450616,
+            0.0005369109385229276,
+            0.03428851709727043
+          ]
+        ],
+        "display_strings": [
+          "+0.0030",
+          "-0.0025",
+          "-0.0155",
+          "-0.0068",
+          "+0.0005",
+          "+0.0343"
+        ],
+        "color_range": [
+          -0.03428851709727043,
+          0.03428851709727043
+        ]
+      },
+      {
+        "dataset": "ieee_cis",
+        "metric": "delta_recall_pp",
+        "matrix": [
+          [
+            0.16236867239732278,
+            -0.16496846191169645,
+            -3.687302304563933
+          ],
+          [
+            -1.1079274116523374,
+            0.24260067928190132,
+            4.527790329868953
+          ]
+        ],
+        "display_strings": [
+          "+0.16",
+          "-0.16",
+          "-3.69",
+          "-1.11",
+          "+0.24",
+          "+4.53"
+        ],
+        "color_range": [
+          -4.527790329868953,
+          4.527790329868953
+        ]
+      }
+    ],
+    "numeric_cells": 24,
+    "intervals": 0,
+    "independent_symmetric_scales": true,
+    "paysim_history_is_PTH_minus_P0": true
+  },
+  "new_fits_scores_resampling": 0,
+  "text_records": [
+    {
+      "text": "+0.1346",
+      "size_pt": 8.5
+    },
+    {
+      "text": "-0.0041",
+      "size_pt": 8.5
+    },
+    {
+      "text": "-0.1191",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+0.0190",
+      "size_pt": 8.5
+    },
+    {
+      "text": "-0.0434",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+0.0402",
+      "size_pt": 8.5
+    },
+    {
+      "text": "F1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F3",
+      "size_pt": 8.0
+    },
+    {
+      "text": "History",
+      "size_pt": 8.0
+    },
+    {
+      "text": "Weighting",
+      "size_pt": 8.0
+    },
+    {
+      "text": "(a) PaySim: AP",
+      "size_pt": 9.5
+    },
+    {
+      "text": "+56.91",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+53.33",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+40.49",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+1.41",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+1.73",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+0.54",
+      "size_pt": 8.5
+    },
+    {
+      "text": "F1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F3",
+      "size_pt": 8.0
+    },
+    {
+      "text": "History",
+      "size_pt": 8.0
+    },
+    {
+      "text": "Weighting",
+      "size_pt": 8.0
+    },
+    {
+      "text": "(b) PaySim: Recall (pp)",
+      "size_pt": 9.5
+    },
+    {
+      "text": "+0.0030",
+      "size_pt": 8.5
+    },
+    {
+      "text": "-0.0025",
+      "size_pt": 8.5
+    },
+    {
+      "text": "-0.0155",
+      "size_pt": 8.5
+    },
+    {
+      "text": "-0.0068",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+0.0005",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+0.0343",
+      "size_pt": 8.5
+    },
+    {
+      "text": "F1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F3",
+      "size_pt": 8.0
+    },
+    {
+      "text": "History",
+      "size_pt": 8.0
+    },
+    {
+      "text": "Weighting",
+      "size_pt": 8.0
+    },
+    {
+      "text": "(c) IEEE-CIS: AP",
+      "size_pt": 9.5
+    },
+    {
+      "text": "+0.16",
+      "size_pt": 8.5
+    },
+    {
+      "text": "-0.16",
+      "size_pt": 8.5
+    },
+    {
+      "text": "-3.69",
+      "size_pt": 8.5
+    },
+    {
+      "text": "-1.11",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+0.24",
+      "size_pt": 8.5
+    },
+    {
+      "text": "+4.53",
+      "size_pt": 8.5
+    },
+    {
+      "text": "F1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F3",
+      "size_pt": 8.0
+    },
+    {
+      "text": "History",
+      "size_pt": 8.0
+    },
+    {
+      "text": "Weighting",
+      "size_pt": 8.0
+    },
+    {
+      "text": "(d) IEEE-CIS: Recall (pp)",
+      "size_pt": 9.5
+    },
+    {
+      "text": "-0.135",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0.135",
+      "size_pt": 8.0
+    },
+    {
+      "text": "-56.9",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0",
+      "size_pt": 8.0
+    },
+    {
+      "text": "56.9",
+      "size_pt": 8.0
+    },
+    {
+      "text": "-0.034",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0.034",
+      "size_pt": 8.0
+    },
+    {
+      "text": "-4.5",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0",
+      "size_pt": 8.0
+    },
+    {
+      "text": "4.5",
+      "size_pt": 8.0
+    }
+  ],
+  "files": {
+    "png": "a6d8b4b8e5a9a8e1633675e8bb3bf5a5d82a2d056ef41accc5339956c6935c89",
+    "pdf": "99827c7ccd2d05df9db5042e4b86b6d0159002fd519711a8756775ee2dcbe2d0",
+    "svg": "424a23fc25f3d8dcf4f890d624c70ca467629d2f1a58b2000ebeea93b478a4f6"
+  }
+}

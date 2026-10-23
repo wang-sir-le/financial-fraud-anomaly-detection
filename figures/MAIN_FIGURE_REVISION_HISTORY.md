@@ -51,3 +51,7 @@ Archived the five-panel Figure 6 adopted in the manuscript on October 14. The cu
 ## 2026-10-16 Final adopted Figures 1 and 5
 
 Figure 1 fits the Decisions text within the card while retaining the 8 pt font and scientific content. Figure 5 adopts the three-column single-row numerical layout with horizontal TP intervals, a taller forest area and larger points, lighter borders, blue/orange signed effects and a right-aligned CI column. All 81 reported values and original interval endpoints remain unchanged. Colours encode direction rather than significance. Public scripts read adjacent aggregate inputs and reproduce the adopted layout without author-local template directories. Figure 6 retains the previously synchronized five-panel presentation. No new experimental results were generated.
+
+## Local adopted Figure 2 update — 2026-10-20
+
+The local dated addendum adopts the current three-column Figure 2 PNG and editable SVG, exact SVG drawing source and caption. The prior 2026-10-17 Figure 2 files are preserved as historical sources under ../history/fig2_20261017/. Only presentation provenance is updated. No fitted result, original experimental commit or uncertainty estimate is changed. The source regenerates SVG only; adopted PNG export was not rerun in the materials audit.

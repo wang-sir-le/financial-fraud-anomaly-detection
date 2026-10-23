@@ -1,0 +1,1 @@
+Fig. S6 Empirical cumulative distribution of the existing PaySim Fold 3 weighting-effect draws. Dashed lines mark the observed effect and original percentile endpoints. Primary L=7 covers the fixed 345-step window. This figure is a post-hoc view of retained draws, not new uncertainty analysis

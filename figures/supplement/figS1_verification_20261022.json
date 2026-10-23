@@ -1,0 +1,273 @@
+{
+  "figure": "S1",
+  "source_json_sha256": "d709dc383f43eab91a8ad2fbe5342cb267613ae4a21b1428c79049950aad807a",
+  "inches": [
+    6.6,
+    3.301569335083115
+  ],
+  "pixels": [
+    4290,
+    2146
+  ],
+  "effective_dpi_xy": [
+    650.0,
+    649.9939217378198
+  ],
+  "minimum_visible_font_pt": 8.0,
+  "fonts_pdf": [
+    {
+      "font": "/CETKUS+ArialMT",
+      "subtype": "/Type0",
+      "embedded": true
+    }
+  ],
+  "svg_text_outlined": true,
+  "all_text_within_canvas": true,
+  "scientific": {
+    "points": [
+      {
+        "dataset": "paysim",
+        "fold": 1,
+        "component": "History",
+        "x": 0.13459735131331207,
+        "y": 56.90763052208836
+      },
+      {
+        "dataset": "paysim",
+        "fold": 1,
+        "component": "Weighting",
+        "x": 0.01898553774319489,
+        "y": 1.4056224899598457
+      },
+      {
+        "dataset": "paysim",
+        "fold": 2,
+        "component": "History",
+        "x": -0.004065784957909838,
+        "y": 53.33333333333334
+      },
+      {
+        "dataset": "paysim",
+        "fold": 2,
+        "component": "Weighting",
+        "x": -0.04343100209987735,
+        "y": 1.7307692307692246
+      },
+      {
+        "dataset": "paysim",
+        "fold": 3,
+        "component": "History",
+        "x": -0.11914145952360089,
+        "y": 40.488841657810845
+      },
+      {
+        "dataset": "paysim",
+        "fold": 3,
+        "component": "Weighting",
+        "x": 0.04021336055541336,
+        "y": 0.5419766206163579
+      },
+      {
+        "dataset": "ieee_cis",
+        "fold": 1,
+        "component": "History",
+        "x": 0.0029591393038364555,
+        "y": 0.16236867239732278
+      },
+      {
+        "dataset": "ieee_cis",
+        "fold": 1,
+        "component": "Weighting",
+        "x": -0.006824412232450616,
+        "y": -1.1079274116523374
+      },
+      {
+        "dataset": "ieee_cis",
+        "fold": 2,
+        "component": "History",
+        "x": -0.0024748675866049785,
+        "y": -0.16496846191169645
+      },
+      {
+        "dataset": "ieee_cis",
+        "fold": 2,
+        "component": "Weighting",
+        "x": 0.0005369109385229276,
+        "y": 0.24260067928190132
+      },
+      {
+        "dataset": "ieee_cis",
+        "fold": 3,
+        "component": "History",
+        "x": -0.01545875039692135,
+        "y": -3.687302304563933
+      },
+      {
+        "dataset": "ieee_cis",
+        "fold": 3,
+        "component": "Weighting",
+        "x": 0.03428851709727043,
+        "y": 4.527790329868953
+      }
+    ],
+    "intervals": 0,
+    "independent_dataset_axes": true,
+    "all_four_IEEE_origin_labels_separated": true
+  },
+  "new_fits_scores_resampling": 0,
+  "text_records": [
+    {
+      "text": "F1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F3",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F3",
+      "size_pt": 8.0
+    },
+    {
+      "text": "AP difference",
+      "size_pt": 8.5
+    },
+    {
+      "text": "−0.1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0.0",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0.1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "Recall difference (pp)",
+      "size_pt": 8.5
+    },
+    {
+      "text": "0",
+      "size_pt": 8.0
+    },
+    {
+      "text": "20",
+      "size_pt": 8.0
+    },
+    {
+      "text": "40",
+      "size_pt": 8.0
+    },
+    {
+      "text": "60",
+      "size_pt": 8.0
+    },
+    {
+      "text": "(a) PaySim",
+      "size_pt": 9.5
+    },
+    {
+      "text": "History",
+      "size_pt": 8.5
+    },
+    {
+      "text": "Weighting",
+      "size_pt": 8.5
+    },
+    {
+      "text": "F1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F1",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F3",
+      "size_pt": 8.0
+    },
+    {
+      "text": "F3",
+      "size_pt": 8.0
+    },
+    {
+      "text": "AP difference",
+      "size_pt": 8.5
+    },
+    {
+      "text": "−0.02",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0.00",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0.02",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0.04",
+      "size_pt": 8.0
+    },
+    {
+      "text": "Recall difference (pp)",
+      "size_pt": 8.5
+    },
+    {
+      "text": "−4",
+      "size_pt": 8.0
+    },
+    {
+      "text": "−2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "0",
+      "size_pt": 8.0
+    },
+    {
+      "text": "2",
+      "size_pt": 8.0
+    },
+    {
+      "text": "4",
+      "size_pt": 8.0
+    },
+    {
+      "text": "6",
+      "size_pt": 8.0
+    },
+    {
+      "text": "(b) IEEE-CIS",
+      "size_pt": 9.5
+    }
+  ],
+  "files": {
+    "png": "5688fb4c7ecd9678f0ab052a92c0852cf7df2594127b52674530663d9e2e57e6",
+    "pdf": "1df3c03b6bad2a104993fe7cbb07f1cae978bacf5a9eae05b663dd63aa5706d8",
+    "svg": "84c89297080eca8227361078c778603e87edcd0b8c4477c91eef776fe89dfbaa"
+  }
+}

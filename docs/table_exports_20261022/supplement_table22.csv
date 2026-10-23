@@ -1,0 +1,7 @@
+﻿Dataset,Fold,Conditions,First fit,After retry,Unresolved
+PaySim,1,5,5,0,None
+PaySim,2,5,5,0,None
+PaySim,3,5,5,0,None
+IEEE-CIS,1,4,0,4,None
+IEEE-CIS,2,4,0,4,None
+IEEE-CIS,3,4,0,4,None

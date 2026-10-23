@@ -1,0 +1,358 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="167.64mm" height="97.79mm" viewBox="0 0 2400 1400" role="img" aria-labelledby="title desc">
+<title id="title">Study-specific experimental framework</title>
+<desc id="desc">Current-input baselines and optional temporal-history increments define separate component configurations. W denotes positive-class weight two in PTHW. Models fit Train labels independently by dataset. PaySim uses raw, clipped and Platt scores, with earlier-Validation calibration and later-Validation cost-minimising threshold selection under a 3 percent alert cap. Full-Test-score AP is separate from decision-based evaluation. PaySim also has separate exact-3-percent component contrasts; IEEE-CIS and BankSim use a primary 3 percent exact top-k budget on completed Test windows. Test labels are used only for metrics, never review selection. History construction excludes fraud labels and current groups. All icons and matrices are schematic.</desc>
+<defs>
+      <linearGradient id="outerBlue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8f3fb"/><stop offset="1" stop-color="#f5faff"/></linearGradient>
+      <linearGradient id="outerCream" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf4e8"/><stop offset="1" stop-color="#fffdf8"/></linearGradient>
+      <linearGradient id="modelFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5fbff"/><stop offset="1" stop-color="#e5f1fb"/></linearGradient>
+      <linearGradient id="node" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#526d88"/><stop offset="1" stop-color="#8499ad"/></linearGradient>
+      <linearGradient id="gear" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4d6c8b"/><stop offset="1" stop-color="#a0b5c7"/></linearGradient>
+      <linearGradient id="scoreBand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d8ebf9"/><stop offset=".55" stop-color="#91badd"/><stop offset="1" stop-color="#3a77ae"/></linearGradient>
+    </defs>
+<rect x="0" y="0" width="2400" height="1400" rx="0" fill="white" stroke="white" stroke-width="0"></rect>
+<rect x="24" y="70" width="710" height="1280" rx="26" fill="url(#outerBlue)" stroke="#c7dfef" stroke-width="1.2"></rect>
+<rect x="795" y="70" width="700" height="1280" rx="26" fill="url(#outerCream)" stroke="#ecdfc7" stroke-width="1.2"></rect>
+<rect x="1550" y="70" width="825" height="1280" rx="26" fill="url(#outerBlue)" stroke="#c7dfef" stroke-width="1.2"></rect>
+<text x="379" y="126" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="#102846" text-anchor="middle">Features &amp; supervised learning</text>
+<text x="1145" y="126" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="#102846" text-anchor="middle">Datasets &amp; model training</text>
+<text x="1962" y="126" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="#102846" text-anchor="middle">Scores &amp; review decisions</text>
+<rect x="45" y="165" width="302" height="360" rx="12" fill="#fbfdff" stroke="#8fb7d7" stroke-width="1.4" stroke-dasharray="5 4"></rect>
+<rect x="405" y="165" width="302" height="360" rx="12" fill="#fbfdff" stroke="#8fb7d7" stroke-width="1.4" stroke-dasharray="5 4"></rect>
+<text x="196" y="214" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="middle">Raw / current</text>
+<text x="196" y="262" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="middle">attributes</text>
+<text x="556" y="214" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="middle">Past-only</text>
+<text x="556" y="262" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="middle">history</text>
+<path d="M81,288 L81,316 C81,330 116,330 116,316 L116,288" fill="white" stroke="#3477b7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M81,288 C81,302 116,302 116,288" fill="none" stroke="#3477b7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M81,308 C81,322 116,322 116,308" fill="none" stroke="#3477b7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M81,328 C81,342 116,342 116,328" fill="none" stroke="#3477b7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<ellipse cx="98.5" cy="288" rx="17.5" ry="11" fill="#edf6fc" stroke="#3477b7" stroke-width="3"></ellipse>
+<polygon points="73,364 81,364 88,394 120,394 129,371 85,371" fill="#8397a9" stroke="#536d89" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<circle cx="93" cy="404" r="4" fill="#536d89" stroke="none" stroke-width="2"></circle>
+<circle cx="116" cy="404" r="4" fill="#536d89" stroke="none" stroke-width="2"></circle>
+<circle cx="98" cy="454" r="21" fill="white" stroke="#536d89" stroke-width="3"></circle>
+<polyline points="98,442.03 98,454 107.66,457" fill="none" stroke="#536d89" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<g opacity="1">
+<rect x="150.0" y="300.0" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="188.0" y="300.0" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="226.0" y="300.0" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="264.0" y="300.0" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="150.0" y="323.5" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="188.0" y="323.5" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="226.0" y="323.5" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="264.0" y="323.5" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="150.0" y="347.0" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="188.0" y="347.0" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="226.0" y="347.0" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="264.0" y="347.0" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="150.0" y="370.5" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="188.0" y="370.5" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="226.0" y="370.5" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="264.0" y="370.5" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="150.0" y="394.0" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="188.0" y="394.0" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="226.0" y="394.0" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="264.0" y="394.0" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="150.0" y="417.5" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="188.0" y="417.5" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="226.0" y="417.5" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="264.0" y="417.5" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="150.0" y="441.0" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="188.0" y="441.0" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="226.0" y="441.0" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="264.0" y="441.0" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="150.0" y="464.5" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="188.0" y="464.5" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="226.0" y="464.5" width="38.0" height="23.5" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="264.0" y="464.5" width="38.0" height="23.5" rx="0" fill="#d6eaf8" stroke="#89a7c0" stroke-width="0.9"></rect>
+</g>
+<text x="320" y="500" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="middle">…</text>
+<g opacity="1">
+<rect x="429.0" y="300.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="460.8" y="300.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="492.6" y="300.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="524.4" y="300.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="556.2" y="300.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="429.0" y="323.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="460.8" y="323.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="492.6" y="323.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="524.4" y="323.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="556.2" y="323.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="429.0" y="346.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="460.8" y="346.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="492.6" y="346.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="524.4" y="346.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="556.2" y="346.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="429.0" y="369.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="460.8" y="369.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="492.6" y="369.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="524.4" y="369.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="556.2" y="369.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="429.0" y="392.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="460.8" y="392.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="492.6" y="392.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="524.4" y="392.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="556.2" y="392.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+</g>
+<g opacity="1">
+<rect x="453.0" y="325.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="484.8" y="325.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="516.6" y="325.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="548.4" y="325.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="580.2" y="325.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="453.0" y="348.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="484.8" y="348.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="516.6" y="348.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="548.4" y="348.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="580.2" y="348.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="453.0" y="371.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="484.8" y="371.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="516.6" y="371.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="548.4" y="371.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="580.2" y="371.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="453.0" y="394.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="484.8" y="394.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="516.6" y="394.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="548.4" y="394.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="580.2" y="394.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="453.0" y="417.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="484.8" y="417.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="516.6" y="417.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="548.4" y="417.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="580.2" y="417.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+</g>
+<g opacity="1">
+<rect x="477.0" y="350.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="508.8" y="350.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="540.6" y="350.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="572.4" y="350.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="604.2" y="350.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="477.0" y="373.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="508.8" y="373.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="540.6" y="373.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="572.4" y="373.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="604.2" y="373.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="477.0" y="396.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="508.8" y="396.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="540.6" y="396.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="572.4" y="396.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="604.2" y="396.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="477.0" y="419.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="508.8" y="419.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="540.6" y="419.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="572.4" y="419.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="604.2" y="419.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="477.0" y="442.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="508.8" y="442.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="540.6" y="442.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="572.4" y="442.0" width="31.8" height="23.0" rx="0" fill="#f5e7c8" stroke="#89a7c0" stroke-width="0.9"></rect>
+<rect x="604.2" y="442.0" width="31.8" height="23.0" rx="0" fill="white" stroke="#89a7c0" stroke-width="0.9"></rect>
+</g>
+<polyline points="445,487 667,487" fill="none" stroke="#3477b7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="667,487 658.0,482.05 658.0,491.95" fill="#3477b7" stroke="#3477b7" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<text x="196" y="575" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="middle">Baseline</text>
+<text x="556" y="575" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="middle">Optional</text>
+<polyline points="196,590 196,615" fill="none" stroke="#4b637d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="196,615 201.5,605.0 190.5,605.0" fill="#4b637d" stroke="#4b637d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<polyline points="556,590 556,615" fill="none" stroke="#4b637d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="556,615 561.5,605.0 550.5,605.0" fill="#4b637d" stroke="#4b637d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<rect x="70" y="630" width="640" height="370" rx="16" fill="#ffffff" stroke="#bcd8ed" stroke-width="1.3"></rect>
+<text x="95" y="675" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Contrast configurations</text>
+<text x="95" y="725" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">PaySim: P0 = Raw</text>
+<text x="95" y="767" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">PT · PH · PTH · PTHW</text>
+<text x="95" y="809" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="start">T: time transforms · H: history</text>
+<text x="95" y="851" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="start">W: positive-class weight 2</text>
+<text x="95" y="893" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">IEEE-CIS: M0–M3</text>
+<text x="95" y="935" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">BankSim: B0 / B0H</text>
+<text x="95" y="977" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">B1 / B1H</text>
+<rect x="70" y="1030" width="640" height="285" rx="16" fill="url(#modelFill)" stroke="#3477b7" stroke-width="1.3"></rect>
+<line x1="166" y1="1135" x2="124" y2="1187" stroke="#536d89" stroke-width="4" stroke-linecap="round"></line>
+<line x1="166" y1="1135" x2="208" y2="1187" stroke="#536d89" stroke-width="4" stroke-linecap="round"></line>
+<line x1="124" y1="1187" x2="98" y2="1237" stroke="#536d89" stroke-width="4" stroke-linecap="round"></line>
+<line x1="124" y1="1187" x2="142" y2="1237" stroke="#536d89" stroke-width="4" stroke-linecap="round"></line>
+<line x1="208" y1="1187" x2="188" y2="1237" stroke="#536d89" stroke-width="4" stroke-linecap="round"></line>
+<line x1="208" y1="1187" x2="233" y2="1237" stroke="#536d89" stroke-width="4" stroke-linecap="round"></line>
+<circle cx="166" cy="1135" r="21" fill="url(#node)" stroke="#70889f" stroke-width="1"></circle>
+<circle cx="124" cy="1187" r="14" fill="url(#node)" stroke="#70889f" stroke-width="1"></circle>
+<circle cx="208" cy="1187" r="14" fill="url(#node)" stroke="#70889f" stroke-width="1"></circle>
+<circle cx="98" cy="1237" r="14" fill="url(#node)" stroke="#70889f" stroke-width="1"></circle>
+<circle cx="142" cy="1237" r="14" fill="url(#node)" stroke="#70889f" stroke-width="1"></circle>
+<circle cx="188" cy="1237" r="14" fill="url(#node)" stroke="#70889f" stroke-width="1"></circle>
+<circle cx="233" cy="1237" r="14" fill="url(#node)" stroke="#70889f" stroke-width="1"></circle>
+<text x="270" y="1073" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Supervised models</text>
+<text x="270" y="1118" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="start">PaySim / IEEE-CIS</text>
+<text x="270" y="1166" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">LGBM · Logistic</text>
+<text x="270" y="1210" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="start">BankSim</text>
+<text x="270" y="1258" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">LGBM · XGB</text>
+<rect x="815" y="165" width="660" height="190" rx="14" fill="#fffefa" stroke="#dfd8cc" stroke-width="1.3"></rect>
+<rect x="842" y="181" width="245" height="55" rx="7" fill="#6b9849" stroke="#6b9849" stroke-width="0"></rect>
+<text x="964" y="221" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="white" text-anchor="middle">PaySim</text>
+<text x="844" y="282" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Source: 6,362,620</text>
+<text x="844" y="334" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="start">Recipient history</text>
+<path d="M1254,243 L1254,298 C1254,312 1318,312 1318,298 L1318,243" fill="white" stroke="#6b9849" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M1254,243 C1254,257 1318,257 1318,243" fill="none" stroke="#6b9849" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M1254,263 C1254,277 1318,277 1318,263" fill="none" stroke="#6b9849" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M1254,283 C1254,297 1318,297 1318,283" fill="none" stroke="#6b9849" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<ellipse cx="1286.0" cy="243" rx="32.0" ry="11" fill="#edf6fc" stroke="#6b9849" stroke-width="3"></ellipse>
+<rect x="1353" y="256" width="44" height="72" rx="6" fill="#f5fbff" stroke="#3477b7" stroke-width="3"></rect>
+<line x1="1363" y1="268" x2="1387" y2="268" stroke="#3477b7" stroke-width="2" stroke-linecap="round"></line>
+<circle cx="1375.0" cy="317" r="3" fill="#3477b7" stroke="none" stroke-width="2"></circle>
+<text x="1375.0" y="307" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#3477b7" text-anchor="middle">$</text>
+<polyline points="1329,279 1345,279" fill="none" stroke="#6b9849" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="1345,279 1338.0,275.15 1338.0,282.85" fill="#6b9849" stroke="#6b9849" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<rect x="815" y="365" width="660" height="190" rx="14" fill="#fffefa" stroke="#dfd8cc" stroke-width="1.3"></rect>
+<rect x="842" y="381" width="245" height="55" rx="7" fill="#ed8127" stroke="#ed8127" stroke-width="0"></rect>
+<text x="964" y="421" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="white" text-anchor="middle">IEEE-CIS</text>
+<text x="844" y="482" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Source: 590,540</text>
+<text x="844" y="534" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="start">Card-related history</text>
+<rect x="1252" y="438" width="110" height="65" rx="7" fill="#f3f8fe" stroke="#3477b7" stroke-width="3"></rect>
+<rect x="1252" y="452" width="110" height="14" rx="0" fill="#3477b7" stroke="#3477b7" stroke-width="0"></rect>
+<rect x="1264" y="478" width="19" height="12" rx="2" fill="#cee1ef" stroke="#84a9c7" stroke-width="1"></rect>
+<line x1="1298" y1="488" x2="1350" y2="488" stroke="#8aabc7" stroke-width="3" stroke-linecap="round"></line>
+<rect x="1293" y="470" width="110" height="65" rx="7" fill="#f3f8fe" stroke="#3477b7" stroke-width="3"></rect>
+<rect x="1293" y="484" width="110" height="14" rx="0" fill="#3477b7" stroke="#3477b7" stroke-width="0"></rect>
+<rect x="1305" y="510" width="19" height="12" rx="2" fill="#cee1ef" stroke="#84a9c7" stroke-width="1"></rect>
+<line x1="1339" y1="520" x2="1391" y2="520" stroke="#8aabc7" stroke-width="3" stroke-linecap="round"></line>
+<rect x="815" y="565" width="660" height="190" rx="14" fill="#fffefa" stroke="#dfd8cc" stroke-width="1.3"></rect>
+<rect x="842" y="581" width="245" height="55" rx="7" fill="#7953b1" stroke="#7953b1" stroke-width="0"></rect>
+<text x="964" y="621" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="white" text-anchor="middle">BankSim</text>
+<text x="844" y="682" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Source: 594,643</text>
+<text x="844" y="734" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="start">Merchant history</text>
+<rect x="1267" y="662" width="112" height="67" rx="3" fill="#f3f8fc" stroke="#3477b7" stroke-width="3"></rect>
+<polygon points="1256,662 1269,638 1377,638 1390,662" fill="#d8e9f7" stroke="#3477b7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<rect x="1256.0" y="662" width="26.8" height="14" rx="1" fill="#d2e4f3" stroke="#3477b7" stroke-width="1"></rect>
+<rect x="1282.8" y="662" width="26.8" height="14" rx="1" fill="#7f9fbd" stroke="#3477b7" stroke-width="1"></rect>
+<rect x="1309.6" y="662" width="26.8" height="14" rx="1" fill="#d2e4f3" stroke="#3477b7" stroke-width="1"></rect>
+<rect x="1336.4" y="662" width="26.8" height="14" rx="1" fill="#7f9fbd" stroke="#3477b7" stroke-width="1"></rect>
+<rect x="1363.2" y="662" width="26.8" height="14" rx="1" fill="#d2e4f3" stroke="#3477b7" stroke-width="1"></rect>
+<rect x="1278" y="691" width="30" height="37" rx="2" fill="white" stroke="#3477b7" stroke-width="2"></rect>
+<rect x="1322" y="691" width="35" height="22" rx="2" fill="white" stroke="#3477b7" stroke-width="2"></rect>
+<polyline points="1010,773 1010,791 1260,791 1260,773" fill="none" stroke="#4b637d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polyline points="1135,791 1135,852" fill="none" stroke="#4b637d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="1135,852 1143.25,837.0 1126.75,837.0" fill="#4b637d" stroke="#4b637d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<rect x="845" y="870" width="610" height="210" rx="17" fill="url(#modelFill)" stroke="#3477b7" stroke-width="1.3"></rect>
+<polygon points="970.0,954.0 969.6235739004477,959.7431524576823 959.1505743582409,962.8826696279185 957.7075455557874,967.1336953987699 964.1051177665153,976.0 960.9075469728143,980.7855028763837 950.2679047303224,978.2679047303224 946.8926922435793,981.2278866387952 948.0,992.1051177665153 942.838071024064,994.6506994304966 934.8826696279185,987.1505743582409 930.4796589169922,988.0263876423492 926.0,998.0 920.2568475423177,997.6235739004477 917.1173303720815,987.1505743582409 912.8663046012301,985.7075455557874 904.0,992.1051177665153 899.2144971236163,988.9075469728143 901.7320952696776,978.2679047303224 898.7721133612048,974.8926922435793 887.8948822334847,976.0 885.3493005695034,970.838071024064 892.8494256417591,962.8826696279185 891.9736123576508,958.4796589169922 882.0,954.0 882.3764260995523,948.2568475423177 892.8494256417591,945.1173303720815 894.2924544442126,940.8663046012301 887.8948822334847,932.0 891.0924530271857,927.2144971236163 901.7320952696776,929.7320952696778 905.1073077564207,926.7721133612048 904.0,915.8948822334847 909.161928975936,913.3493005695034 917.1173303720815,920.8494256417591 921.5203410830078,919.9736123576508 926.0,910.0 931.7431524576823,910.3764260995523 934.8826696279185,920.8494256417591 939.1336953987699,922.2924544442126 948.0,915.8948822334847 952.7855028763837,919.0924530271857 950.2679047303224,929.7320952696776 953.2278866387952,933.1073077564207 964.1051177665153,932.0 966.6506994304966,937.161928975936 959.1505743582409,945.1173303720815 960.0263876423492,949.5203410830078" fill="url(#gear)" stroke="#718aa3" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<circle cx="926" cy="954" r="17.16" fill="#f5f8fb" stroke="#6e87a0" stroke-width="2"></circle>
+<polygon points="1007.0,909.0 1006.7604561184667,912.6547333821615 1000.0958200461532,914.6526079450391 999.1775289900465,917.3578061628535 1003.2487113059643,923.0 1001.2138935281546,926.0453200122441 994.4432121011142,924.4432121011142 992.2953496095505,926.3268369519606 993.0,933.2487113059643 989.7151361062225,934.868626910316 984.6526079450391,930.0958200461532 981.850692038086,930.653155772404 979.0,937.0 975.3452666178385,936.7604561184667 973.347392054961,930.0958200461532 970.6421938371465,929.1775289900465 965.0,933.2487113059643 961.9546799877559,931.2138935281546 963.5567878988858,924.4432121011142 961.6731630480394,922.2953496095505 954.7512886940357,923.0 953.131373089684,919.7151361062225 957.9041799538468,914.6526079450391 957.346844227596,911.850692038086 951.0,909.0 951.2395438815333,905.3452666178385 957.9041799538468,903.3473920549609 958.8224710099535,900.6421938371465 954.7512886940357,895.0 956.7861064718454,891.9546799877559 963.5567878988858,893.5567878988858 965.7046503904495,891.6731630480394 965.0,884.7512886940357 968.2848638937775,883.131373089684 973.347392054961,887.9041799538468 976.149307961914,887.346844227596 979.0,881.0 982.6547333821615,881.2395438815333 984.652607945039,887.9041799538468 987.3578061628535,888.8224710099535 993.0,884.7512886940357 996.0453200122441,886.7861064718454 994.4432121011142,893.5567878988858 996.3268369519606,895.7046503904495 1003.2487113059643,895.0 1004.868626910316,898.2848638937775 1000.0958200461532,903.3473920549609 1000.653155772404,906.149307961914" fill="url(#gear)" stroke="#718aa3" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<circle cx="979" cy="909" r="10.92" fill="#f5f8fb" stroke="#6e87a0" stroke-width="2"></circle>
+<text x="1035" y="921" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Training &amp; scoring</text>
+<text x="1035" y="964" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Fit on Train labels</text>
+<text x="1035" y="1005" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Per-workflow fits</text>
+<text x="1150" y="1053" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="middle">Weights: PaySim / IEEE-CIS</text>
+<polyline points="1135,1094 1135,1127" fill="none" stroke="#4b637d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="1135,1127 1141.6,1115.0 1128.4,1115.0" fill="#4b637d" stroke="#4b637d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<rect x="850" y="1145" width="600" height="195" rx="15" fill="#ffffff" stroke="#ded9cf" stroke-width="1.3"></rect>
+<text x="1150" y="1187" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="middle">Model scores</text>
+<text x="875" y="1235" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">PaySim: raw / clipped / Platt</text>
+<text x="875" y="1280" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">IEEE-CIS: raw scores</text>
+<text x="875" y="1325" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">BankSim: raw margins</text>
+<polyline points="720,815 758,815 758,978 832,978" fill="none" stroke="#4b637d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="832,978 818.0,970.3 818.0,985.7" fill="#4b637d" stroke="#4b637d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<polyline points="720,1172 777,1172 777,978 832,978" fill="none" stroke="#4b637d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="832,978 819.0,970.85 819.0,985.15" fill="#4b637d" stroke="#4b637d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<polyline points="1459,1248 1516,1248 1516,225" fill="none" stroke="#4b637d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polyline points="1516,225 1556,225" fill="none" stroke="#4b637d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="1556,225 1542.0,217.3 1542.0,232.7" fill="#4b637d" stroke="#4b637d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<polyline points="1516,488 1556,488" fill="none" stroke="#4b637d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="1556,488 1542.0,480.3 1542.0,495.7" fill="#4b637d" stroke="#4b637d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<rect x="1570" y="165" width="785" height="120" rx="16" fill="#ffffff" stroke="#bcd5e8" stroke-width="1.3"></rect>
+<rect x="1595" y="189" width="66" height="70" rx="7" fill="#f8fcff" stroke="#78a2c5" stroke-width="2"></rect>
+<circle cx="1607" cy="207" r="3" fill="#3477b7" stroke="none" stroke-width="2"></circle>
+<line x1="1617" y1="207" x2="1652" y2="207" stroke="#3477b7" stroke-width="3" stroke-linecap="round"></line>
+<circle cx="1607" cy="225" r="3" fill="#3477b7" stroke="none" stroke-width="2"></circle>
+<line x1="1617" y1="225" x2="1643" y2="225" stroke="#3477b7" stroke-width="3" stroke-linecap="round"></line>
+<circle cx="1607" cy="243" r="3" fill="#3477b7" stroke="none" stroke-width="2"></circle>
+<line x1="1617" y1="243" x2="1635" y2="243" stroke="#3477b7" stroke-width="3" stroke-linecap="round"></line>
+<text x="1694" y="211" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Ranking</text>
+<text x="1694" y="264" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">All Test scores + labels</text>
+<rect x="2250" y="192" width="85" height="65" rx="10" fill="#e6f1fb" stroke="#c4d9eb" stroke-width="1"></rect>
+<text x="2292" y="240" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#3477b7" text-anchor="middle">AP</text>
+<rect x="1570" y="305" width="785" height="150" rx="16" fill="#ffffff" stroke="#bcd5e8" stroke-width="1.3"></rect>
+<rect x="1595" y="339" width="66" height="87" rx="7" fill="#f8fcff" stroke="#78a2c5" stroke-width="2"></rect>
+<rect x="1605" y="353.0" width="16" height="16" rx="2" fill="#3477b7" stroke="#3477b7" stroke-width="1"></rect>
+<polyline points="1608,361.0 1612,365.0 1618,357.0" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<line x1="1629" y1="362.0" x2="1649" y2="362.0" stroke="#b2ccdf" stroke-width="2" stroke-linecap="round"></line>
+<rect x="1605" y="371.6666666666667" width="16" height="16" rx="2" fill="#3477b7" stroke="#3477b7" stroke-width="1"></rect>
+<polyline points="1608,379.6666666666667 1612,383.6666666666667 1618,375.6666666666667" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<line x1="1629" y1="380.6666666666667" x2="1649" y2="380.6666666666667" stroke="#b2ccdf" stroke-width="2" stroke-linecap="round"></line>
+<rect x="1605" y="390.3333333333333" width="16" height="16" rx="2" fill="#3477b7" stroke="#3477b7" stroke-width="1"></rect>
+<polyline points="1608,398.3333333333333 1612,402.3333333333333 1618,394.3333333333333" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<line x1="1629" y1="399.3333333333333" x2="1649" y2="399.3333333333333" stroke="#b2ccdf" stroke-width="2" stroke-linecap="round"></line>
+<text x="1694" y="350" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Review</text>
+<text x="2330" y="350" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="end">Test labels: metrics only</text>
+<text x="1694" y="398" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">TP / FP / FN · Precision · Recall</text>
+<text x="1694" y="441" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Alert rate: A/N</text>
+<text x="1595" y="506" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Review rules</text>
+<rect x="1570" y="530" width="375" height="340" rx="14" fill="#ffffff" stroke="#bad3e7" stroke-width="1.3"></rect>
+<rect x="1960" y="530" width="395" height="340" rx="14" fill="#ffffff" stroke="#bad3e7" stroke-width="1.3"></rect>
+<text x="1595" y="574" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">PaySim transfer</text>
+<line x1="1915" y1="552" x2="1940" y2="552" stroke="#3477b7" stroke-width="2.5" stroke-linecap="round"></line>
+<circle cx="1922" cy="552" r="5" fill="white" stroke="#3477b7" stroke-width="2"></circle>
+<line x1="1915" y1="573" x2="1940" y2="573" stroke="#3477b7" stroke-width="2.5" stroke-linecap="round"></line>
+<circle cx="1933" cy="573" r="5" fill="white" stroke="#3477b7" stroke-width="2"></circle>
+<text x="1595" y="630" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Early Val → Platt</text>
+<text x="1595" y="678" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Late Val → τ*</text>
+<text x="1595" y="726" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">min cost; A/N≤3%</text>
+<text x="1595" y="774" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Test: same τ*</text>
+<text x="1595" y="822" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Variable alerts</text>
+<text x="2000" y="574" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Exact top-k</text>
+<rect x="2288" y="550" width="46" height="45" rx="5" fill="#f8fcff" stroke="#78a2c5" stroke-width="2"></rect>
+<polyline points="2294,560 2297,563 2302,557" fill="none" stroke="#3477b7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<line x1="2308" y1="560" x2="2326" y2="560" stroke="#86abc9" stroke-width="2" stroke-linecap="round"></line>
+<polyline points="2294,572 2297,575 2302,569" fill="none" stroke="#3477b7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<line x1="2308" y1="572" x2="2326" y2="572" stroke="#86abc9" stroke-width="2" stroke-linecap="round"></line>
+<polyline points="2294,584 2297,587 2302,581" fill="none" stroke="#3477b7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<line x1="2308" y1="584" x2="2326" y2="584" stroke="#86abc9" stroke-width="2" stroke-linecap="round"></line>
+<text x="1971" y="630" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">IEEE-CIS / BankSim</text>
+<text x="1971" y="670" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Primary 3%</text>
+<text x="1971" y="722" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">PaySim: component</text>
+<text x="1971" y="762" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">contrasts at 3%</text>
+<text x="1971" y="814" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Completed Test</text>
+<text x="1971" y="854" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">windows</text>
+<polyline points="1767,530 1767,520 2167,520 2167,530" fill="none" stroke="#4b637d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polyline points="1962,520 1962,459" fill="none" stroke="#4b637d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polygon points="1962,459 1958.15,466.0 1965.85,466.0" fill="#4b637d" stroke="#4b637d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></polygon>
+<rect x="1570" y="895" width="785" height="190" rx="14" fill="#ffffff" stroke="#bad3e7" stroke-width="1.3"></rect>
+<text x="1595" y="940" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Time splits</text>
+<text x="2330" y="940" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#536d89" text-anchor="end">Train / Val / Test</text>
+<text x="1595" y="990" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">PaySim / IEEE-CIS</text>
+<text x="1595" y="1045" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">3 folds</text>
+<rect x="1785" y="1012" width="110" height="8" rx="0" fill="#c4deef" stroke="#9fc2db" stroke-width="0.8"></rect>
+<rect x="1895" y="1012" width="27" height="8" rx="0" fill="#efdfbe" stroke="#d2bd92" stroke-width="0.8"></rect>
+<rect x="1922" y="1012" width="45" height="8" rx="0" fill="#7facd3" stroke="#608fba" stroke-width="0.8"></rect>
+<rect x="1785" y="1029" width="135" height="8" rx="0" fill="#c4deef" stroke="#9fc2db" stroke-width="0.8"></rect>
+<rect x="1920" y="1029" width="27" height="8" rx="0" fill="#efdfbe" stroke="#d2bd92" stroke-width="0.8"></rect>
+<rect x="1947" y="1029" width="45" height="8" rx="0" fill="#7facd3" stroke="#608fba" stroke-width="0.8"></rect>
+<rect x="1785" y="1046" width="160" height="8" rx="0" fill="#c4deef" stroke="#9fc2db" stroke-width="0.8"></rect>
+<rect x="1945" y="1046" width="27" height="8" rx="0" fill="#efdfbe" stroke="#d2bd92" stroke-width="0.8"></rect>
+<rect x="1972" y="1046" width="45" height="8" rx="0" fill="#7facd3" stroke="#608fba" stroke-width="0.8"></rect>
+<text x="2100" y="990" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">BankSim</text>
+<text x="2100" y="1045" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">1 Test</text>
+<rect x="2100" y="1063" width="145" height="8" rx="0" fill="#c4deef" stroke="#9fc2db" stroke-width="0.8"></rect>
+<rect x="2245" y="1063" width="30" height="8" rx="0" fill="#efdfbe" stroke="#d2bd92" stroke-width="0.8"></rect>
+<rect x="2275" y="1063" width="45" height="8" rx="0" fill="#7facd3" stroke="#608fba" stroke-width="0.8"></rect>
+<rect x="1570" y="1110" width="785" height="65" rx="12" fill="#ffffff" stroke="#bad3e7" stroke-width="1.3"></rect>
+<circle cx="1602" cy="1142" r="18" fill="white" stroke="#536d89" stroke-width="3"></circle>
+<polyline points="1602,1131.74 1602,1142 1610.28,1145" fill="none" stroke="#536d89" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<text x="1638" y="1155" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">History: past-only · no fraud labels</text>
+<rect x="1570" y="1200" width="395" height="140" rx="12" fill="#ffffff" stroke="#bad3e7" stroke-width="1.3"></rect>
+<rect x="1980" y="1200" width="375" height="140" rx="12" fill="#ffffff" stroke="#bad3e7" stroke-width="1.3"></rect>
+<text x="1590" y="1238" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Analytical cost</text>
+<rect x="1595" y="1253" width="55" height="40" rx="5" fill="#f8fcff" stroke="#78a2c5" stroke-width="2"></rect>
+<rect x="1603" y="1259" width="39" height="9" rx="1" fill="#d5e8f6" stroke="#78a2c5" stroke-width="1"></rect>
+<rect x="1606" y="1276" width="6" height="4" rx="1" fill="#3477b7" stroke="#3477b7" stroke-width="0"></rect>
+<rect x="1606" y="1286" width="6" height="4" rx="1" fill="#3477b7" stroke="#3477b7" stroke-width="0"></rect>
+<rect x="1620" y="1276" width="6" height="4" rx="1" fill="#3477b7" stroke="#3477b7" stroke-width="0"></rect>
+<rect x="1620" y="1286" width="6" height="4" rx="1" fill="#3477b7" stroke="#3477b7" stroke-width="0"></rect>
+<rect x="1634" y="1276" width="6" height="4" rx="1" fill="#3477b7" stroke="#3477b7" stroke-width="0"></rect>
+<rect x="1634" y="1286" width="6" height="4" rx="1" fill="#3477b7" stroke="#3477b7" stroke-width="0"></rect>
+<text x="1680" y="1284" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">FP + c × FN</text>
+<text x="1590" y="1326" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">PaySim, IEEE-CIS</text>
+<text x="2000" y="1238" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700" fill="#102846" text-anchor="start">Conditional CIs</text>
+<text x="2000" y="1284" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Paired bootstrap</text>
+<text x="2000" y="1326" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="400" fill="#102846" text-anchor="start">Fixed models</text>
+<line x1="2263" y1="1321" x2="2333" y2="1321" stroke="#3477b7" stroke-width="2.5" stroke-linecap="round"></line>
+<line x1="2263" y1="1313" x2="2263" y2="1329" stroke="#3477b7" stroke-width="2.5" stroke-linecap="round"></line>
+<line x1="2333" y1="1313" x2="2333" y2="1329" stroke="#3477b7" stroke-width="2.5" stroke-linecap="round"></line>
+<circle cx="2298" cy="1321" r="5" fill="#3477b7" stroke="none" stroke-width="2"></circle>
+</svg>
