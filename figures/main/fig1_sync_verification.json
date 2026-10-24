@@ -1,34 +1,76 @@
 {
   "figure": "fig1",
-  "adopted_revision": "fig1_decisions_fit_20261016",
-  "adopted_export_bytes_preserved": {
-    "png": true,
-    "svg": true
-  },
-  "adopted_visible_svg_text_labels": 98,
-  "redraw_labels_match_adopted": true,
-  "two_independent_redraws_byte_identical_in_recorded_environment": {
-    "png": true,
-    "svg": true,
-    "pdf": true
-  },
-  "pdf_pages": 1,
-  "pdf_raster_images": 0,
-  "all_svg_text_labels_found_in_publication_pdf": true,
-  "editable_svg_has_no_raster_images": true,
+  "adopted_revision": "semantic_data_icons_20261024",
+  "canvas_mm": [
+    170.0,
+    115.28735632183908
+  ],
+  "geometry_coordinate_units": [
+    174.0,
+    118.0
+  ],
   "minimum_font_pt": 8.0,
-  "visual_qa": "passed; publication/redraw PDFs rendered to PNG and inspected",
+  "maximum_font_pt": 11.0,
+  "minimum_stroke_pt": 0.4,
+  "font_family": "Arial",
+  "all_required_glyphs_present": true,
+  "all_113_labels_inside_canvas_and_assigned_cells": true,
+  "pairwise_text_overlap_issues": 0,
+  "outlined_svg_text_elements": 0,
+  "editable_svg_text_elements": 113,
+  "both_svgs_raster_image_count": 0,
+  "pdf_pages": 1,
+  "pdf_size_mm": [
+    169.99999999999028,
+    115.28735632182195
+  ],
+  "pdf_raster_images": 0,
+  "pdf_fonts": [
+    {
+      "base_font": "/EETFRL+Arial-BoldMT",
+      "type": "/Type0",
+      "embedded_truetype": true
+    },
+    {
+      "base_font": "/RYRAPA+ArialMT",
+      "type": "/Type0",
+      "embedded_truetype": true
+    }
+  ],
+  "all_svg_text_labels_found_in_publication_pdf": true,
+  "missing_pdf_labels": [],
+  "png": {
+    "pixels": [
+      4015,
+      2723
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  "authoritative_caption_matches_CAPTIONS": true,
+  "source_protocol_sha256": "3e5863cd422e6a6263d616e9e3b7df6d5f4ce10278023691619f41a8293c8c7a",
+  "protocol_unchanged": true,
   "python_script_parse": "passed",
-  "inputs_modified": false,
+  "visual_qa": "passed; 600-dpi publication PNG and independently rendered vector PDF inspected",
   "draw_only_no_models_predictions_or_resampling": true,
   "cross_platform_byte_identity_claimed": false,
   "publication_sha256": {
-    "png": "ba8fb76e0f6c1a16919441fd37afff64b6edf299521328141477508dc0b56343",
-    "svg": "c1804c397637fd92606f5892830b6dcb059460b425910ae624f770c14c59bf8f",
-    "pdf": "13f155473f8d92ce9a709689e2b81b0ebc463117d998ca7c6bb7f87f093a4443"
+    "fig1.svg": "6f31421efff8d6fc822bec3c4f40474aa04b891f5f26d6689c670965cbffe4e9",
+    "fig1_editable.svg": "73399f6f454c119838735fa3a3dcc8ed32c39831798316e9450b4de348522f36",
+    "fig1.pdf": "86c5754e50ab19e9e9c6adb1627ddac6f8efd5814bece1fa213b0784d484cdcd",
+    "fig1.eps": "fa07d5ae32c4673419747f8867f232cc743d320aac2d42e581aa8bf2edf40026",
+    "fig1.png": "49394324f4b12259e67e162583eafe61e109de948e0f08f164525acd0fc697ff",
+    "fig1_preview.png": "df4d51cad046d65676b941b3da3227f7e570a8c367371946567f7ff25367710d"
   },
-  "pdf_origin": "Updated public Matplotlib script; source Decisions-fit revision supplied no PDF",
-  "decisions_font_pt": 8,
-  "all_text_inside_canvas_and_assigned_cells": true,
-  "redraw_maximum_svg_label_coordinate_difference_pt": 0.049
+  "caption_sha256": "4c1eb31e9d98916760923beabeed94da01d9eb1b0f132ac361a990f75b06ac6e",
+  "independent_external_cwd_redraw_identical_in_recorded_environment": {
+    "fig1.png": true,
+    "fig1.pdf": true,
+    "fig1.svg": true,
+    "fig1.eps": true,
+    "fig1_editable.svg": true
+  },
+  "other_main_figure_captions_unchanged": true
 }

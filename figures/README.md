@@ -1,8 +1,10 @@
 # Current adopted figures
 
-This directory corresponds to the final clean manuscripts prepared on 2026-10-22. The 2026-10-23 repository synchronization publishes their adopted figures and drawing sources. `docs/PUBLIC_ARTIFACT_MAP_20261022.csv` maps every adopted image and all 65 table transcriptions to a repository path and SHA-256. `docs/SUBMISSION_VERSION_20261022.json` identifies the separate final manuscript and supplementary files.
+This directory corresponds to the revised main manuscript with Figure 1 adopted on 2026-10-24, and the unchanged supplementary document prepared on 2026-10-22. The current repository synchronization was finalized on 2026-10-25. `docs/PUBLIC_ARTIFACT_MAP_20261024.csv` maps every adopted image and all 65 table transcriptions to a repository path and SHA-256. `docs/SUBMISSION_VERSION_20261024.json` identifies the separate revised main and unchanged supplementary files. October 22/23 records remain historical snapshots.
 
 Main Figures 1–6 are `main/fig1.png` through `main/fig6.png`. Supplementary Figures S1–S9 are `supplement/figS1.png` through `figS9.png`, except that the exact Word-embedded S4 is `supplement/figS4_submission.png`. The historical `figS4.py` uses a different P_WEIGHT contrast; the final S4 contrast view uses `figS4_adopted.py`. Its standalone `figS4_adopted.png` is a separate renderer export and is not byte- or pixel-identical to the Word embedding; both contain the adopted contrast selection. All 15 PNGs selected by the artifact map match the final Word embeddings exactly. Final captions are the adjacent `*_caption_submission.txt` files and each directory's `CAPTIONS.md`.
+
+Figure 1 uses named feature fields (n, μ, Δt), report fields (AP/Recall/Cost) and saved-file icons (Scores/Draws), with definitions in the adopted caption. Its exact 170 mm width preserves 8–11 pt type. `python figures/main/fig1.py --out-dir /tmp/fig1-redraw` exports the PNG and vector formats from any working directory using the adjacent unchanged protocol JSON; read `main/fig1_README.md` for font and verification details.
 
 Figure 2 uses the October 20 framework. `python figures/main/fig2.py` regenerates its editable SVG, not its separately exported PNG. Read `main/fig2_README.md` for installed-font and export limitations.
 

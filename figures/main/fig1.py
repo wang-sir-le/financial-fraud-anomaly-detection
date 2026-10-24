@@ -1,310 +1,413 @@
-"""Figure 1 with the adopted Decisions text fit; original three-panel layout preserved.
+"""Draw the adopted Figure 1 with named feature, metric and saved-output icons.
 
-Usage: python fig1.py [--out-dir PATH]
-Requires Python 3.10+, matplotlib, and the adjacent data/fig1_protocol.json.
-Source manuscript hashes are metadata only; redraw opens no manuscript file.
-Adopted media retain the recorded author exports. Fonts/renderers may change
-redrawn bytes; see fig1_README.md for the publication and redraw distinction.
-No model training, synthetic outcomes, score distributions, or experiment calls.
+Usage: python fig1.py [--out-dir PATH] [--font-family FAMILY]
+Requires Python 3.10+, Matplotlib and adjacent data/fig1_protocol.json.
+The protocol is authenticated before drawing. No manuscript, author workspace,
+model fitting, prediction, resampling, network service or private dependency is
+used. Physical output width is exactly 170 mm, with minimum 8 pt lettering.
 """
-
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
-from typing import cast
+import re
+import xml.etree.ElementTree as ET
 
 import matplotlib
-
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_agg import FigureCanvasAgg
-from matplotlib.patches import Arc, Circle, Ellipse, FancyArrowPatch, FancyBboxPatch, Rectangle
+from matplotlib import font_manager
+from matplotlib.ft2font import FT2Font
+from matplotlib.patches import Arc, Circle, Ellipse, FancyArrowPatch, FancyBboxPatch, PathPatch, Polygon, Rectangle
+from matplotlib.path import Path as MPath
 
 PROTOCOL_HASH = "3e5863cd422e6a6263d616e9e3b7df6d5f4ce10278023691619f41a8293c8c7a"
 
-W, H = 167.64, 138.0  # millimetres, intended full-width manuscript placement
-INK = "#25333D"
-MUTED = "#536775"
-EDGE = "#B7C9D4"
-BLUE = "#E5F0FA"
-GREEN = "#E2F0EA"
-PINK = "#F8EBEB"
-TRAIN = "#A9CBE0"
-VAL = "#DCE9F1"
-TEST = "#E9C5C3"
-FONT = "Arial"
+def resolve_font(requested: str | None) -> tuple[str, str]:
+    """Prefer installed Arial, then the metric-compatible Liberation Sans."""
+    candidates = [requested] if requested else ["Arial", "Liberation Sans"]
+    for family in candidates:
+        try:
+            filename = font_manager.findfont(font_manager.FontProperties(family=family), fallback_to_default=False)
+        except ValueError:
+            continue
+        return str(family), filename
+    raise RuntimeError("No suitable installed font found. Install Arial or Liberation Sans, or use --font-family; glyph and geometry checks still apply.")
 
-
-def draw(protocol: dict, dest: Path) -> dict:
-    plt.rcParams.update(
-        {
-            "font.family": "sans-serif",
-            "font.sans-serif": [FONT, "DejaVu Sans"],
-            "font.size": 8,
-            "svg.fonttype": "none",
-            "svg.hashsalt": "fig01-text-reduced-v1",
-            "pdf.fonttype": 42,
-            "ps.fonttype": 42,
-            "axes.unicode_minus": True,
-        }
-    )
-    fig = plt.figure(figsize=(W / 25.4, H / 25.4), facecolor="white")
+def draw(P: dict, DEST: Path, font_family: str, font_path: str) -> dict:
+    DEST.mkdir(parents=True, exist_ok=True)
+    W, H = 174.0, 118.0
+    INK, MUTED, EDGE = '#152126', '#37484E', '#57666A'
+    PAPER, PANEL = '#FFFFFF', '#FCFCFA'
+    TRAIN, VAL, TEST = '#B7CEE0', '#C9DDC6', '#F2B8AB'
+    BLUE, CORAL, SLATE, GREEN, LILAC = '#DFEDF0', '#F9DFD6', '#E2E9EE', '#E1EDDE', '#EDE1EF'
+    plt.rcParams.update({
+        'font.family': font_family, 'font.size': 8.0, 'axes.unicode_minus': True,
+        'svg.hashsalt': 'kais-fig1-meaningful-data-icons-20261024',
+        'svg.fonttype': 'path', 'pdf.fonttype': 42, 'ps.fonttype': 42,
+        'savefig.facecolor': PAPER, 'hatch.linewidth': 0.4,
+    })
+    physical_w = 170.0
+    physical_h = physical_w * H / W
+    coordinate_to_mm = physical_w / W
+    fig = plt.figure(figsize=(physical_w / 25.4, physical_h / 25.4), facecolor=PAPER)
     ax = fig.add_axes((0, 0, 1, 1))
-    ax.set(xlim=(0, W), ylim=(0, H))
+    ax.set(xlim=(0, W), ylim=(H, 0), aspect='equal')
     ax.set_axis_off()
-    labels = []
+    labels, regions, strokes = [], [], []
 
-    def label(x, y, value, *, size=8, weight="normal", color=INK, align="left", bounds=None):
-        obj = ax.text(x, y, value, fontsize=size, fontweight=weight, color=color, va="center", ha=align, linespacing=1.22, zorder=8)
-        labels.append((obj, bounds))
-        return obj
+    def text(x, y, value, size=8, bold=False, align='left', color=INK, region=None):
+        t = ax.text(x, y, value, fontsize=size, fontweight='bold' if bold else 'normal',
+                    color=color, ha=align, va='center', zorder=10, linespacing=1.16)
+        labels.append((t, region))
+        return t
 
-    def card(x, y, w, h, fill, radius=1.7, line=0):
-        ax.add_patch(
-            FancyBboxPatch(
-                (x, y),
-                w,
-                h,
-                boxstyle=f"round,pad=0,rounding_size={radius}",
-                facecolor=fill,
-                edgecolor=EDGE if line else "none",
-                linewidth=line,
-                zorder=1,
-            )
-        )
+    def rect(x, y, w, h, fill='white', edge=EDGE, lw=.5, r=0, z=1, dash=None):
+        if r:
+            p = FancyBboxPatch((x,y), w,h, boxstyle=f'round,pad=0,rounding_size={r}',
+                              facecolor=fill, edgecolor=edge if lw else 'none', linewidth=lw, zorder=z)
+        else:
+            p = Rectangle((x,y), w,h, facecolor=fill, edgecolor=edge if lw else 'none', linewidth=lw, zorder=z)
+        if dash: p.set_linestyle((0,dash))
+        ax.add_patch(p)
+        if lw: strokes.append(lw)
+        return p
 
-    def line(x1, y1, x2, y2, color=EDGE, width=0.7):
-        ax.plot([x1, x2], [y1, y2], color=color, lw=width, zorder=3)
+    def line(x1,y1,x2,y2, color=EDGE, lw=.5, dash=None, z=3):
+        ln, = ax.plot([x1,x2], [y1,y2], color=color, lw=lw, zorder=z, solid_capstyle='round')
+        if dash: ln.set_linestyle((0,dash))
+        strokes.append(lw)
 
-    def arrow(x1, y1, x2, y2):
-        ax.add_patch(FancyArrowPatch((x1, y1), (x2, y2), arrowstyle="-|>", mutation_scale=6.5, linewidth=0.7, color=MUTED, zorder=5))
+    def arrow(x1,y1,x2,y2, color=INK, lw=.65, head=6):
+        ax.add_patch(FancyArrowPatch((x1,y1),(x2,y2), arrowstyle='->', color=color,
+                                   lw=lw, mutation_scale=head, shrinkA=0, shrinkB=0, zorder=7))
+        strokes.append(lw)
 
-    def database(cx, cy):
-        ax.add_patch(Rectangle((cx - 3.0, cy - 2.2), 6.0, 4.4, facecolor="white", edgecolor=INK, lw=0.85, zorder=3))
-        for dy in (-2.2, 0.0):
-            ax.add_patch(Arc((cx, cy + dy), 6, 2, theta1=180, theta2=360, edgecolor=INK, lw=0.85, zorder=4))
-        ax.add_patch(Ellipse((cx, cy + 2.2), 6, 2, facecolor="white", edgecolor=INK, lw=0.85, zorder=4))
+    def circle(x,y,r,fill='white',edge=EDGE,lw=.5,z=4):
+        ax.add_patch(Circle((x,y),r,facecolor=fill,edgecolor=edge,lw=lw,zorder=z))
+        strokes.append(lw)
 
-    def mini_tree(cx, cy):
-        for a, b in [
-            ((cx, cy + 3), (cx - 4, cy)),
-            ((cx, cy + 3), (cx + 4, cy)),
-            ((cx - 4, cy), (cx - 6, cy - 3)),
-            ((cx - 4, cy), (cx - 2, cy - 3)),
-            ((cx + 4, cy), (cx + 2, cy - 3)),
-            ((cx + 4, cy), (cx + 6, cy - 3)),
-        ]:
-            line(*a, *b, color=MUTED, width=0.65)
-        for dx, dy in [(0, 3), (-4, 0), (4, 0), (-6, -3), (-2, -3), (2, -3), (6, -3)]:
-            ax.add_patch(Circle((cx + dx, cy + dy), 0.9, edgecolor=MUTED, facecolor=TRAIN if dy >= 0 else "white", lw=0.7, zorder=4))
+    def ellipse(x,y,w,h,fill='white',edge=EDGE,lw=.5,z=4):
+        ax.add_patch(Ellipse((x,y),w,h,facecolor=fill,edgecolor=edge,lw=lw,zorder=z))
+        strokes.append(lw)
 
-    def review(cx, cy):
-        ax.add_patch(Rectangle((cx - 4.5, cy - 4), 8, 9, edgecolor=INK, facecolor="white", lw=0.95, zorder=3))
-        for dy in (2.8, 0.6, -1.6):
-            line(cx - 3, cy + dy, cx + 1.8, cy + dy, INK, 0.85)
-        ax.add_patch(Circle((cx + 3.3, cy - 2.8), 2.4, edgecolor=INK, facecolor="white", lw=1.05, zorder=5))
-        line(cx + 4.9, cy - 4.4, cx + 7.2, cy - 6.6, INK, 1.05)
+    def outline_path(vertices, codes, fill='none', color=EDGE, lw=.55, z=4):
+        ax.add_patch(PathPatch(MPath(vertices,codes),facecolor=fill,edgecolor=color,linewidth=lw,
+                              joinstyle='round',capstyle='round',zorder=z))
+        strokes.append(lw)
 
-    def split_table(x, rows):
-        positions = [x + 14.75, x + 28.75, x + 42.75]
-        for cx, value in zip(positions, ("Train", "Val", "Test")):
-            label(cx, 106.3, value, size=8, color=MUTED, align="center")
-        for row_index, (name, values) in enumerate(rows):
-            cy = 101.2 - row_index * 4.6
-            label(x + 4.2, cy, name, size=8, weight="bold", align="center")
-            for cx, value, fill in zip(positions, values, (TRAIN, VAL, TEST)):
-                card(cx - 6.5, cy - 1.8, 13, 3.6, fill, radius=0.5)
-                label(cx, cy, value, size=8, align="center", bounds=(cx - 6.5, cy - 1.8, cx + 6.5, cy + 1.8))
+    def band(letter, title, y, height):
+        rect(2.2,y,169.6,height,fill=PANEL,edge=INK,lw=.6,r=6.5,dash=(3.1,2.4))
+        text(1.5,y,letter,size=11,bold=True)
+        t = text(6.5,y,title,size=10,bold=True)
+        t.set_bbox(dict(facecolor=PAPER,edgecolor='none',pad=2.0))
 
-    # (a): three parallel study environments, no cross-dataset transfer arrows.
-    label(3, 134, "a", size=12, weight="bold")
-    label(8, 134, "Separate temporal designs", size=10, weight="bold")
-    label(8, 129.2, "Steps: PaySim / BankSim; IEEE-CIS: % of all labelled rows.", size=8, color=MUTED)
-    panel_w = (W - 6 - 6) / 3
-    xs = [3 + i * (panel_w + 3) for i in range(3)]
-    configs = [
-        ("PaySim", "Mobile-money simulation", protocol["pay_sim"]["total_rows"], BLUE),
-        ("IEEE-CIS", "Anonymised transactions", protocol["ieee_cis"]["total_labelled_rows"], BLUE),
-        ("BankSim", "External payment simulation", protocol["bank_sim"]["total_rows"], GREEN),
-    ]
-    for x, (name, description, count, fill) in zip(xs, configs):
-        card(x, 78, panel_w, 48, fill)
-        card(x + 1.5, 79.5, panel_w - 3, 45, "#FFFFFF", radius=1.2)
-        label(x + 3, 121.2, name, size=10, weight="bold")
-        label(x + 3, 117.0, description, size=8, color=MUTED, bounds=(x + 1.5, 114.8, x + panel_w - 1.5, 119))
-        database(x + 6.5, 111.5)
-        label(x + 12, 111.5, f"{count:,} rows", size=8.5, weight="bold", bounds=(x + 10, 109.4, x + panel_w - 1.5, 114.0))
+    def database(x,y,w=7.2,h=9):
+        rect(x-w/2,y-h/2,w,h-1.25,fill='#F7F8F5',edge=INK,lw=.55,z=4)
+        for yy in (y+h/2-1.25,y+.5,y-2):
+            ax.add_patch(Arc((x,yy),w,2.5,theta1=0,theta2=180,color=INK,lw=.55,zorder=5))
+        ellipse(x,y-h/2,w,2.5,fill='#F7F8F5',edge=INK,lw=.55,z=5)
 
-    def ranges(v):
-        return f"{v[0]}–{v[1]}"
-    pay_rows = [(f"F{f['fold']}", [ranges(f[k]) for k in ("train", "validation", "test")]) for f in protocol["pay_sim"]["folds"]]
-    split_table(xs[0], pay_rows)
-    label(xs[0] + 3, 86.2, "LightGBM (5 seeds)", size=8)
-    label(xs[0] + 3, 82.0, "Later logistic", size=8, color=MUTED)
+    def chevron(x,y,w,h,color):
+        ax.add_patch(Polygon([(x,y-h/2),(x+w-1,y-h/2),(x+w,y),(x+w-1,y+h/2),
+                              (x,y+h/2),(x+1,y)],closed=True,facecolor=color,edgecolor=EDGE,lw=.5,zorder=3))
+        strokes.append(.5)
 
-    ieee_rows = []
-    for f in protocol["ieee_cis"]["folds"]:
-        ieee_rows.append((f"F{f['fold']}", [f"{f[k + '_percent_of_full_labelled_rows']:.0f}%" for k in ("train", "validation", "test")]))
-    split_table(xs[1], ieee_rows)
-    label(xs[1] + 3, 86.2, "Test: 59,054 rows/fold", size=8)
-    label(xs[1] + 3, 82.0, "LightGBM; later logistic", size=8, color=MUTED)
+    def trees(cx,cy,s=1):
+        # Branching trees indicate the fitted boosting models, avoiding NN imagery.
+        for dx,dy in ((-3.7,-.8),(3.7,.8)):
+            x,y=cx+dx*s,cy+dy*s
+            line(x,y-2.8*s,x-2.0*s,y,lw=.5)
+            line(x,y-2.8*s,x+2.0*s,y,lw=.5)
+            line(x-2.0*s,y,x-3.0*s,y+2.4*s,lw=.5)
+            line(x-2.0*s,y,x-1.0*s,y+2.4*s,lw=.5)
+            for xx,yy in ((x,y-2.8*s),(x-2*s,y),(x+2*s,y),(x-3*s,y+2.4*s),(x-1*s,y+2.4*s)):
+                circle(xx,yy,.66*s,fill='#C9CBBE',lw=.45)
 
-    bsplit = protocol["bank_sim"]["split"]
-    split_table(xs[2], [("", [ranges(bsplit[k]["steps"]) for k in ("train", "validation", "test")])])
-    label(xs[2] + 3, 95.6, "LightGBM / XGBoost (5 seeds)", size=8)
-    label(xs[2] + 3, 91.0, "Freeze before fits / Test access", size=8, color=MUTED)
-    label(xs[2] + 3, 86.5, "B1 / seed 42: Val selection", size=8, color=MUTED)
-    label(xs[2] + 3, 82.0, "Selected settings held fixed", size=8, color=MUTED)
+    def folder(cx,cy):
+        x,y=cx-6.3,cy-3.7
+        outline_path([(x,y+1),(x+.6,y),(x+3.5,y),(x+4.3,y+1),(x+9.1,y+1),
+                      (x+9.8,y+2),(x+9.3,y+6.8),(x,y+6.8),(x,y+1)],
+                     [MPath.MOVETO]+[MPath.LINETO]*7+[MPath.CLOSEPOLY],fill='#D3E0E2')
+        outline_path([(x,y+6.8),(x+1.1,y+2.4),(x+10.4,y+2.4),(x+9.3,y+6.8),(x,y+6.8)],
+                     [MPath.MOVETO]+[MPath.LINETO]*3+[MPath.CLOSEPOLY],fill='#F9FCFB')
+        circle(cx+3.8,cy+2.1,1.8,fill=BLUE)
+        line(cx+2.8,cy+2.1,cx+4.8,cy+2.1,lw=.6,z=6)
+        line(cx+3.8,cy+1.1,cx+3.8,cy+3.1,lw=.6,z=6)
+        # Small event groups, deliberately without measured axes or curves.
+        for j in range(3):
+            rect(cx+6.8+j*.8,cy-2.6,.35,4.8,fill=('#B4C7C4','#9A86AF','#BEC9CF')[j],lw=0,z=4)
 
-    # (b): the visual pathway is schematic; decision rules remain dataset specific.
-    label(3, 72.3, "b", size=12, weight="bold")
-    label(8, 72.3, "Study-specific workflows", size=10, weight="bold")
-    label(8, 67.6, "PaySim: later exact-3% contrasts.", size=8, color=MUTED)
-    cw = (W - 6 - 4 * 3) / 5
-    flow_x = [3 + i * (cw + 3) for i in range(5)]
-    titles = ("Inputs", "Features", "Models", "Decisions", "Readouts")
-    for i, (x, title, fill) in enumerate(zip(flow_x, titles, (BLUE, PINK, BLUE, GREEN, BLUE))):
-        card(x, 26, cw, 39, fill)
-        label(x + cw / 2, 61.2, title, size=8.5, weight="bold", align="center", bounds=(x + 0.7, 59.2, x + cw - 0.7, 63.2))
-        card(x + 1.3, 27.3, cw - 2.6, 30.8, "#FFFFFF", radius=1.0)
-        if i < 4:
-            arrow(x + cw + 0.15, 46.3, x + cw + 2.85, 46.3)
+    def features_icon(cx,cy):
+        # Named history quantities and symbols; no invented feature measurements.
+        x,y,w,h=cx-12.5,61.5,25,9.6
+        rect(x,y,w,h,fill='#FFFFFF',edge=EDGE,lw=.45,r=.4,z=4)
+        rect(x+19.2,y+.1,5.7,h-.2,fill='#F8E8DF',lw=0,z=5)
+        line(x+19.2,y,x+19.2,y+h,lw=.4,z=6)
+        for yy in (y+3.2,y+6.4):line(x,yy,x+w,yy,lw=.4,z=6)
+        for row,(name,symbol) in enumerate((('Prior count','n'),('Mean amount','μ'),('Recency','Δt'))):
+            yy=y+1.6+row*3.2
+            text(x+1.0,yy,name,region=(x+.7,y+.05,x+18.9,y+h-.05))
+            text(x+22.1,yy,symbol,align='center',region=(x+19.4,y+.05,x+w-.1,y+h-.05))
 
-    x = flow_x[0]
-    table_x, table_y, table_w, table_h = x + 2.8, 35.5, cw - 5.6, 20.5
-    ax.add_patch(Rectangle((table_x, table_y), table_w, table_h, facecolor="white", edgecolor=EDGE, lw=0.7, zorder=3))
-    for j, name in enumerate(("Attributes", "Time group", "Entity key", "Prior events")):
-        cy = table_y + table_h - (j + 0.5) * table_h / 4
-        label(table_x + 1.3, cy, name, size=8)
-        if j:
-            line(table_x, table_y + table_h - j * table_h / 4, table_x + table_w, table_y + table_h - j * table_h / 4)
-    label(x + cw / 2, 30.9, "Schematic fields", size=8, color=MUTED, align="center")
+    def scales(cx,cy):
+        line(cx,cy-2.3,cx,cy+2.5,lw=.45)
+        line(cx-2.5,cy-1.5,cx+2.5,cy-2.1,lw=.45)
+        line(cx-1.6,cy+2.6,cx+1.6,cy+2.6,lw=.45)
+        for dx,dy in ((-2.1,-1.55),(2.1,-2.0)):
+            line(cx+dx,cy+dy,cx+dx-1.1,cy+dy+2.5,lw=.4)
+            line(cx+dx,cy+dy,cx+dx+1.1,cy+dy+2.5,lw=.4)
+            ax.add_patch(Arc((cx+dx,cy+dy+2.35),2.2,1.1,theta1=0,theta2=180,edgecolor=EDGE,lw=.45,zorder=5))
 
-    x = flow_x[1]
-    for j, name in enumerate(("Current context", "Past history", "Entity aggregates")):
-        cy = 53.0 - j * 7.1
-        card(x + 2.4, cy - 2.6, cw - 4.8, 5.2, "#FCF3F3", radius=0.8, line=0.55)
-        label(x + cw / 2, cy, name, size=8, align="center", bounds=(x + 2.4, cy - 2.6, x + cw - 2.4, cy + 2.6))
-    label(x + cw / 2, 30.9, "Strictly earlier events", size=8, color=MUTED, align="center")
+    def people(cx,cy):
+        for dx,dy,fill in ((-1.4,0,'#F0C2B7'),(1.4,-1.4,'#BDCFCB'),(1.4,1.5,'#CDBDD9')):
+            circle(cx+dx,cy+dy-.65,.55,fill=fill,lw=.4)
+            ellipse(cx+dx,cy+dy+.65,1.9,1.05,fill=fill,lw=.4)
 
-    x = flow_x[2]
-    mini_tree(x + cw / 2, 52.5)
-    label(x + cw / 2, 44.2, "Original", size=8, weight="bold", align="center")
-    label(x + cw / 2, 39.7, "LightGBM; XGBoost*", size=8, align="center")
-    line(x + 3, 36.8, x + cw - 3, 36.8)
-    label(x + cw / 2, 34, "Later logistic", size=8, align="center")
-    label(x + cw / 2, 30, "*BankSim only", size=8, color=MUTED, align="center")
+    def readout(cx,cy):
+        # A report schema with explicit metric names, rather than an unlabeled map.
+        x,y,w,h=146.0,61.5,18.0,9.6
+        outline_path([(x,y),(x+w-1.6,y),(x+w,y+1.6),(x+w,y+h),(x,y+h),(x,y)],
+                     [MPath.MOVETO]+[MPath.LINETO]*4+[MPath.CLOSEPOLY],fill='#FCFAFD',lw=.5,z=4)
+        line(x+w-1.6,y,x+w-1.6,y+1.6,lw=.4,z=6)
+        line(x+w-1.6,y+1.6,x+w,y+1.6,lw=.4,z=6)
+        for row,name in enumerate(('AP','Recall','Cost')):
+            yy=y+1.6+row*3.2
+            text(x+1.4,yy,name,region=(x+1,y+.05,x+11.4,y+h-.05))
+            line(x+11.8,yy+.35,x+w-1.3,yy+.35,color='#89949C',lw=.45,z=6)
 
-    x = flow_x[3]
-    decision_bounds = (x + 1.3, 27.3, x + cw - 1.3, 58.1)
-    label(x + cw / 2, 54.9, "PaySim", size=8, weight="bold", align="center", bounds=decision_bounds)
-    label(x + cw / 2, 50.7, "Val alert cap ≤3%", size=8, align="center", bounds=decision_bounds)
-    label(x + cw / 2, 46.5, "Threshold → Test", size=8, align="center", bounds=decision_bounds)
-    label(x + cw / 2, 42.3, "Test workload varies", size=8, color=MUTED, align="center", bounds=decision_bounds)
-    line(x + 3, 40.5, x + cw - 3, 40.5)
-    label(x + cw / 2, 38.7, "IEEE-CIS/BankSim", size=8, weight="bold", align="center", bounds=decision_bounds)
-    label(x + cw / 2, 35.5, "Completed Test", size=8, align="center", bounds=decision_bounds)
-    label(x + cw / 2, 32.4, "ranking", size=8, align="center", bounds=decision_bounds)
-    label(x + cw / 2, 29.3, "k = ceil(0.03N)", size=8, align="center", bounds=decision_bounds)
+    def saved_output(x,y,w,h,name):
+        # Existing saved artifact, not a new numerical result.
+        outline_path([(x,y),(x+w-1.3,y),(x+w,y+1.3),(x+w,y+h),(x,y+h),(x,y)],
+                     [MPath.MOVETO]+[MPath.LINETO]*4+[MPath.CLOSEPOLY],fill='#FAFBFC',lw=.45,z=4)
+        line(x+w-1.3,y,x+w-1.3,y+1.3,lw=.4,z=6)
+        line(x+w-1.3,y+1.3,x+w,y+1.3,lw=.4,z=6)
+        text(x+w/2-.2,y+h/2,name,align='center',region=(x+.3,y+.3,x+w-.5,y+h-.3))
 
-    x = flow_x[4]
-    review(x + cw / 2 - 1, 51.2)
-    for cy, name in zip((42.3, 38.2, 34.1, 30.0), ("AP by stage", "Recall / capture", "Test workload", "Analytical cost")):
-        label(x + cw / 2, cy, name, size=8, align="center")
+    # a: separate temporal designs. Every displayed number is taken from protocol.
+    band('a','Separate temporal designs',4.2,39.2)
+    line(74,8.1,74,40.7,color='#B3BDBF',lw=.45,dash=(2,2))
+    line(119,8.1,119,40.7,color='#B3BDBF',lw=.45,dash=(2,2))
+    region_pay=(4.8,7.7,72.2,41.8)
+    region_ieee=(76.5,7.7,117,41.8)
+    region_bank=(121,7.7,169.5,41.8)
+    regions.extend([region_pay,region_ieee,region_bank])
+    database(9.8,16,7.3,9.2)
+    text(17.1,9.8,'PaySim',9.5,True,region=region_pay)
+    text(17.1,13.4,'Mobile-money simulation',region=region_pay)
+    text(17.1,16.8,f"n = {P['pay_sim']['total_rows']:,} rows",bold=True,region=region_pay)
+    for xx,lab in zip((23,41,59),('Train','Val','Test')): text(xx,20.6,lab,align='center',region=region_pay)
+    for row,f in enumerate(P['pay_sim']['folds']):
+        y=24.3+row*3.9
+        text(6.2,y,f"F{f['fold']}",bold=True,region=region_pay)
+        for col,(key,colr) in enumerate(zip(('train','validation','test'),(TRAIN,VAL,TEST))):
+            x=14+col*18
+            width=18 if not (row==2 and col==2) else 21
+            chevron(x,y,width,3.65,colr)
+            text(x+width/2,y,f"{f[key][0]}–{f[key][1]}",align='center',region=(x+.8,y-1.7,x+width-.5,y+1.7))
+    text(6.2,36.5,'LightGBM (5 seeds)',region=region_pay)
+    text(45.1,36.5,'Post-hoc logistic',region=region_pay)
+    text(6.2,40,'Simulation steps',color=MUTED,region=region_pay)
 
-    # (c): keep existing-output analysis distinct from later model development.
-    label(3, 21.4, "c", size=12, weight="bold")
-    label(8, 21.4, "Later analyses and scope", size=10, weight="bold")
-    small_w = (W - 6 - 3) / 2
-    for x, fill in ((3, "#EEF3F6"), (6 + small_w, "#EDF4F0")):
-        card(x, 4.4, small_w, 12.9, fill, radius=1.2)
-    label(6, 14.1, "S21 | Existing outputs", size=8.5, weight="bold")
-    label(6, 10.2, "Headroom / exchanges / time structure", size=8)
-    label(6, 6.5, "No new fits / scores / bootstrap draws", size=8, color=MUTED)
-    right_x = 9 + small_w
-    label(right_x, 14.1, "S22 | Retrospective development", size=8.5, weight="bold")
-    label(right_x, 10.2, "Exposed BankSim; 6 LightGBM C07 fits", size=8)
-    label(right_x, 6.5, "Seed 42; no independent validation", size=8, color=MUTED)
-    label(W / 2, 1.85, "Icons and split cells are schematic; studies are not pooled.", size=8, color=MUTED, align="center")
+    text(77,9.8,'IEEE-CIS',9.5,True,region=region_ieee)
+    text(77,13.4,'Anonymised transactions',region=region_ieee)
+    text(77,16.8,f"n = {P['ieee_cis']['total_labelled_rows']:,} rows",bold=True,region=region_ieee)
+    for xx,lab in zip((88,98.8,109.6),('Train','Val','Test')): text(xx,20.6,lab,align='center',region=region_ieee)
+    for row,f in enumerate(P['ieee_cis']['folds']):
+        y=24.3+row*3.9
+        text(77,y,f"F{f['fold']}",bold=True,region=region_ieee)
+        for col,(key,colr) in enumerate(zip(('train','validation','test'),(TRAIN,VAL,TEST))):
+            x=82.6+col*10.8
+            rect(x,y-1.825,10.8,3.65,fill=colr,lw=.45,z=3)
+            text(x+5.4,y,f"{f[key+'_percent_of_full_labelled_rows']:.0f}%",align='center',region=(x+.2,y-1.7,x+10.6,y+1.7))
+    text(77,36.5,'Test: 59,054 rows/fold',region=region_ieee)
+    text(77,40,'LightGBM (5 seeds)',region=region_ieee)
 
-    # Physical-size QA: every label is at least 8 pt, unclipped and in its cell.
+    text(122,9.8,'BankSim',9.5,True,region=region_bank)
+    text(122,13.4,'Simulated bank payments',region=region_bank)
+    text(122,16.8,f"n = {P['bank_sim']['total_rows']:,} rows",bold=True,region=region_bank)
+    database(165.2,13.7,5.8,6.4)
+    for xx,lab in zip((129.5,145,160.5),('Train','Val','Test')): text(xx,20.6,lab,align='center',region=region_bank)
+    for col,(key,colr) in enumerate(zip(('train','validation','test'),(TRAIN,VAL,TEST))):
+        x=121.8+col*15.5
+        chevron(x,24.3,15.5,3.65,colr)
+        a,b=P['bank_sim']['split'][key]['steps']
+        text(x+7.75,24.3,f'{a}–{b}',align='center',region=(x+.5,22.6,x+15,26.0))
+    for y,lab in zip((28.8,32.5,36.2,39.9),(
+            'LightGBM / XGBoost (5 seeds)',
+            'Local protocol frozen pre-fit',
+            'B1 / seed 42: Val-only selection',
+            'Settings locked before Test')):
+        text(122,y,lab,region=region_bank)
+    text(W/2,46.3,'Steps: PaySim / BankSim; IEEE-CIS: % of all labelled rows.',align='center',color=MUTED)
+    arrow(W/2,48.2,W/2,50.1,lw=.65,head=5)
+
+    # b: original five-card workflow, with dataset-specific decisions retained.
+    band('b','Study-specific workflows',51.4,41.8)
+    cards=[(5,27,'Inputs',BLUE),(35,29,'Features',CORAL),(67,29,'Models',SLATE),
+           (99,39,'Decisions',GREEN),(141,28,'Readouts',LILAC)]
+    for x,w,title,fill in cards:
+        rect(x,55.2,w,33.2,fill=fill,lw=0,r=5.2)
+        text(x+w/2,58.9,title,9.2,True,align='center',region=(x+.8,55.5,x+w-.8,62))
+        if x!=141: arrow(x+w+.35,73.6,x+w+2.65,73.6,lw=.65,head=5)
+
+    folder(18.2,66)
+    for y,label in zip((72.0,75.6,79.2,82.8),('Attributes','Time group','Entity key','Prior events')):
+        text(18.5,y,label,align='center',region=(6,70,31,88))
+    text(18.5,86.4,'Schematic fields',align='center',color=MUTED,region=(6,70,31,88))
+    features_icon(49.5,66)
+    for y,label in zip((73.1,77.3,81.5,85.7),('Current context','Strict prior history','Entity aggregates','No label history')):
+        text(49.5,y,label,align='center',region=(35.8,70,63.2,88))
+    trees(81.5,64.0,.64)
+    for y,label,bold in ((68.4,'Original: 5 seeds',True),(72.0,'LightGBM: all three',False),
+                         (75.6,'XGBoost: BankSim',False),(79.2,'Post-hoc logistic',True),
+                         (82.8,'PaySim / IEEE-CIS',False),(86.4,'1 model / condition',False)):
+        text(81.5,y,label,bold=bold,align='center',region=(67.7,66.7,95.3,88.2))
+    line(71,77.4,92,77.4,color='#BEBBAE',lw=.45)
+    scales(103.3,58.7)
+    people(133.7,58.9)
+    for y,label,bold in (
+        (63.6,'PaySim',True),(66.8,'Earlier Val: Platt',False),
+        (70.0,'Later Val: threshold',False),(73.2,'Fixed → Test; Val cap ≤3%',False),
+        (76.4,'Test workload varies',False),(80.1,'IEEE-CIS / BankSim',True),
+        (83.3,'Completed Test ranking',False),(86.5,'k = ceil(0.03N)',False)):
+        text(118.5,y,label,bold=bold,align='center',region=(100.2,62.0,136.8,88.2))
+    line(104,78.25,133,78.25,color='#BFC4AA',lw=.45)
+    readout(154.7,65.7)
+    for y,label in zip((72.9,76.3,79.7,83.1,86.5),('AP; TP / recall','Precision / alert rate','Score-stage audit*','*PaySim only','Analytical cost')):
+        text(155,y,label,align='center',region=(142,71.2,168,88.2))
+    text(W/2,91,'PaySim: later exact-3% contrasts are separate.',align='center',color=MUTED)
+    arrow(W/2,94.0,W/2,96.3,lw=.65,head=5)
+
+    # c: separate subsequent analyses; S22 explicitly has new historical fits.
+    band('c','Later analyses and scope',98.4,15.1)
+    rect(5,101.6,80.5,10.1,fill='#E8EBED',lw=0,r=2.8)
+    rect(88.5,101.6,80.5,10.1,fill='#E8EBED',lw=0,r=2.8)
+    text(7.5,103.8,'S21 | Existing outputs',8.5,True,region=(6.8,102,70,112))
+    text(7.5,107.1,'Headroom / exchanges / time structure',region=(6.8,102,70,112))
+    text(7.5,110.3,'No new fits / scores / resampling',region=(6.8,102,70,112))
+    saved_output(71.5,102.2,11.5,4.2,'Scores')
+    saved_output(71.5,107.0,11.5,4.2,'Draws')
+    text(91,103.8,'S22 | Retrospective development',8.5,True,region=(90.2,102,155.8,112))
+    text(91,107.1,'Exposed BankSim; 6 LightGBM C07 fits',region=(90.2,102,155.8,112))
+    text(91,110.3,'Seed 42; no CIs or independent validation',region=(90.2,102,155.8,112))
+    trees(161.4,106.5,.8)
+    text(W/2,116,'Named fields and files are schematic; datasets and fits remain separate.',align='center',color=MUTED)
+
+    # Verify used glyphs in the actual regular/bold font faces before export.
+    font_faces = []
+    for weight in ("normal", "bold"):
+        face = font_manager.findfont(font_manager.FontProperties(family=font_family, weight=weight), fallback_to_default=False)
+        available = FT2Font(face).get_charmap()
+        used = {character for obj,_ in labels if obj.get_fontweight() == weight for character in obj.get_text() if not character.isspace()}
+        missing = sorted(character for character in used if ord(character) not in available)
+        if missing:
+            raise RuntimeError(f"Font {font_family!r} ({weight}) lacks required glyphs: {missing}")
+        font_faces.append({"weight":weight,"font_file_name":Path(face).name,"all_used_glyphs_available":True})
+    # Check real rendered lettering, assigned cells, canvas and overlaps.
     fig.canvas.draw()
-    renderer = cast(FigureCanvasAgg, fig.canvas).get_renderer()
+    renderer = fig.canvas.get_renderer()
     inverse = ax.transData.inverted()
-    problems = []
-    text_records = []
-    panel_regions: list[tuple[float, float, float, float]] = [(x, 78, x + panel_w, 126) for x in xs]
-    panel_regions += [(x, 26, x + cw, 65) for x in flow_x]
-    panel_regions += [(3, 4.4, 3 + small_w, 17.3), (6 + small_w, 4.4, 6 + 2 * small_w, 17.3)]
-    for obj, bounds in labels:
+    issues, records = [], []
+    for obj, region in labels:
         bbox = obj.get_window_extent(renderer=renderer).transformed(inverse)
-        box = [float(bbox.x0), float(bbox.y0), float(bbox.x1), float(bbox.y1)]
-        text_records.append({"text": obj.get_text(), "font_pt": obj.get_fontsize(), "bbox_mm": box})
-        if float(obj.get_fontsize()) < 8:
-            problems.append("Font below 8 pt: " + obj.get_text())
-        if bbox.x0 < 0 or bbox.y0 < 0 or bbox.x1 > W or bbox.y1 > H:
-            problems.append("Outside canvas: " + obj.get_text())
-        px, py = obj.get_position()
-        if bounds is None:
-            for region in panel_regions:
-                if region[0] <= px <= region[2] and region[1] <= py <= region[3]:
-                    bounds = region
-                    break
-        if bounds and (bbox.x0 < bounds[0] or bbox.y0 < bounds[1] or bbox.x1 > bounds[2] or bbox.y1 > bounds[3]):
-            problems.append("Outside assigned cell: " + obj.get_text())
-    if problems:
-        raise AssertionError("\n".join(problems))
-
-    dest.mkdir(parents=True, exist_ok=True)
-    stem = dest / "fig1"
-    fig.savefig(stem.with_suffix(".svg"), metadata={"Date": None, "Creator": "Reproducible Matplotlib schematic"})
-    fig.savefig(stem.with_suffix(".pdf"), metadata={"CreationDate": None, "ModDate": None, "Creator": "Reproducible Matplotlib schematic"})
-    fig.savefig(dest / "fig1.png", dpi=600)
-    fig.savefig(dest / "fig1_preview.png", dpi=240)
-    plt.close(fig)
-    svg = stem.with_suffix(".svg").read_text(encoding="utf-8")
-    root_start = svg.index("<svg")
-    root_end = svg.index(">", root_start) + 1
-    accessibility = (
-        "\n <title>Separate study designs, decision pathways and later analysis roles</title>"
-        "\n <desc>Protocol facts verified against the current main manuscript and supplement. "
-        "PaySim and BankSim show exact step bounds. IEEE-CIS percentages use all 590540 labelled rows "
-        "as denominator. Split cells are schematic, not proportional bars. "
-        "No empirical curves or outcomes are simulated. Studies are not pooled.</desc>"
-    )
-    stem.with_suffix(".svg").write_text(svg[:root_end] + accessibility + svg[root_end:], encoding="utf-8")
+        x0,x1 = sorted((float(bbox.x0), float(bbox.x1)))
+        y0,y1 = sorted((float(bbox.y0), float(bbox.y1)))
+        record = {"text":obj.get_text(), "font_pt":obj.get_fontsize(),
+                  "bounds_coordinate_units":[x0,y0,x1,y1],
+                  "bounds_mm":[v*coordinate_to_mm for v in (x0,y0,x1,y1)]}
+        records.append(record)
+        if obj.get_fontsize() < 8:
+            issues.append({"kind":"font_below_8_pt", "label":record})
+        if x0 < 0 or y0 < 0 or x1 > W or y1 > H:
+            issues.append({"kind":"canvas", "label":record})
+        if region:
+            a,b,c,d = region
+            if x0<a-.03 or y0<b-.03 or x1>c+.03 or y1>d+.03:
+                issues.append({"kind":"cell", "region":region, "label":record})
+    for index,a in enumerate(records):
+        for b in records[index+1:]:
+            x0,y0,x1,y1 = a["bounds_coordinate_units"]
+            a0,b0,a1,b1 = b["bounds_coordinate_units"]
+            if min(x1,a1)-max(x0,a0)>.03 and min(y1,b1)-max(y0,b0)>.03:
+                issues.append({"kind":"text_overlap", "a":a["text"], "b":b["text"]})
     report = {
-        "canvas_mm": [W, H],
-        "minimum_font_pt": min(t["font_pt"] for t in text_records),
-        "text_count": len(text_records),
-        "all_text_inside_canvas_and_assigned_cells": True,
-        "protocol_sha256": hashlib.sha256(json.dumps(protocol, sort_keys=True).encode()).hexdigest(),
-        "text": text_records,
+        "figure":"fig1", "adopted_revision":"semantic_data_icons_20261024",
+        "canvas_mm":[physical_w,physical_h], "geometry_coordinate_units":[W,H],
+        "minimum_font_pt":min(t.get_fontsize() for t,_ in labels),
+        "maximum_font_pt":max(t.get_fontsize() for t,_ in labels),
+        "minimum_stroke_pt":min(strokes), "text_count":len(labels),
+        "font_family":font_family, "font_file_name":Path(font_path).name, "font_faces":font_faces,
+        "protocol_sha256":PROTOCOL_HASH,
+        "all_text_inside_canvas_and_assigned_cells":not issues,
+        "draw_only_no_models_predictions_or_resampling":True,
+        "cross_platform_byte_identity_claimed":False,
+        "semantic_icon_definitions":{
+            "Features":"Prior count n, prior mean amount μ, recency Δt: named field definitions, without measured values.",
+            "Readouts":"Report fields AP, Recall and Cost: no fabricated performance values.",
+            "S21":"Scores and Draws: existing saved score vectors and bootstrap draws; the draw-distribution diagnostic is specific to PaySim."
+        },
+        "issues":issues, "text":records
     }
-    (dest / "fig1_validation.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
-    return {k: v for k, v in report.items() if k != "text"}
+    (DEST/"fig1_validation.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    if issues:
+        raise AssertionError("Figure geometry check failed: "+json.dumps(issues,ensure_ascii=False))
+    metadata = {
+        "Title":"Separate temporal designs, study-specific workflows and subsequent analyses",
+        "Description":"Named feature fields, metric reports and saved-output icons replace decorative matrices. Study-specific protocols and S21/S22 analysis boundaries remain distinct.",
+        "Creator":"Python / Matplotlib; native vector primitives", "Date":None
+    }
+    fig.savefig(DEST/"fig1.svg", metadata=metadata)
+    with matplotlib.rc_context({"svg.fonttype":"none"}):
+        fig.savefig(DEST/"fig1_editable.svg", metadata=metadata)
+    fig.savefig(DEST/"fig1.pdf",metadata={"Title":metadata["Title"],"Creator":metadata["Creator"],"CreationDate":None,"ModDate":None})
+    os.environ.setdefault("SOURCE_DATE_EPOCH","0")
+    fig.savefig(DEST/"fig1.eps", metadata={"Creator":metadata["Creator"]})
+    fig.savefig(DEST/"fig1.png",dpi=600)
+    fig.savefig(DEST/"fig1_preview.png",dpi=300)
+    namespace={"s":"http://www.w3.org/2000/svg"}
+    for filename in ("fig1.svg","fig1_editable.svg"):
+        path=DEST/filename
+        svg=path.read_text(encoding="utf-8")
+        svg=re.sub(r'(<svg\b[^>]*?)width="[^"]+" height="[^"]+"',
+                   rf'\1width="{physical_w:g}mm" height="{physical_h:.12f}mm"',svg,count=1)
+        svg=svg.replace('<svg ','<svg role="img" aria-labelledby="fig1-title fig1-desc" ',1)
+        accessibility=(
+            '<title id="fig1-title">Separate temporal designs and study-specific workflows</title>'
+            '<desc id="fig1-desc">Named prior-count, amount-mean and recency fields; AP/Recall/Cost report fields; saved Scores and Draws files. No invented measurements. Dataset designs, model scopes and S21/S22 analysis boundaries remain separate.</desc>'
+        )
+        svg=re.sub(r'(<svg\b.*?>)',lambda match:match.group(1)+"\n "+accessibility,svg,count=1,flags=re.S)
+        path.write_text(svg,encoding="utf-8")
+        root=ET.parse(path).getroot()
+        report.setdefault("exports",{})[filename]={
+            "text_elements":len(root.findall('.//s:text',namespace)),
+            "image_elements":len(root.findall('.//s:image',namespace)),
+            "width":root.get("width"), "height":root.get("height")
+        }
+    plt.close(fig)
+    report["publication_sha256"]={
+        filename:hashlib.sha256((DEST/filename).read_bytes()).hexdigest()
+        for filename in ("fig1.svg","fig1_editable.svg","fig1.pdf","fig1.eps","fig1.png","fig1_preview.png")
+    }
+    (DEST/"fig1_validation.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    return {key:value for key,value in report.items() if key not in ("text","semantic_icon_definitions")}
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--protocol", type=Path, default=Path(__file__).resolve().parent / "data" / "fig1_protocol.json")
-    parser.add_argument("--out-dir", type=Path, default=Path(__file__).parent)
-    args = parser.parse_args()
-    raw_protocol = args.protocol.read_bytes()
-    assert hashlib.sha256(raw_protocol).hexdigest() == PROTOCOL_HASH, "Frozen protocol changed"
-    protocol = json.loads(raw_protocol.decode("utf-8-sig"))
-    assert protocol["pay_sim"]["total_rows"] == 6362620
-    assert protocol["ieee_cis"]["total_labelled_rows"] == 590540
-    assert protocol["bank_sim"]["split"]["validation"]["steps"] == [108, 125]
-    assert protocol["bank_sim"]["split"]["train"]["steps"] == [0, 107]
-    for f in protocol["ieee_cis"]["folds"]:
-        assert f["test_rows"] == 59054
-        assert f["train_percent_of_full_labelled_rows"] == f["train_rows"] / 590540 * 100
-    print(json.dumps(draw(protocol, args.out_dir), indent=2))
+def main() -> None:
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--out-dir",type=Path,default=Path(__file__).resolve().parent)
+    parser.add_argument("--font-family",help="Installed font family; default Arial, then metric-compatible Liberation Sans")
+    args=parser.parse_args()
+    source=Path(__file__).resolve().parent/"data"/"fig1_protocol.json"
+    raw=source.read_bytes()
+    if hashlib.sha256(raw).hexdigest()!=PROTOCOL_HASH:
+        raise RuntimeError("Frozen figure protocol SHA-256 mismatch")
+    protocol=json.loads(raw.decode("utf-8-sig"))
+    family,path=resolve_font(args.font_family)
+    print(json.dumps(draw(protocol,args.out_dir,family,path),indent=2,ensure_ascii=False))
 
-
-if __name__ == "__main__":
+if __name__=="__main__":
     main()

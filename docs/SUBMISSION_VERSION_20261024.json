@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-24",
+  "experimental_public_commit": "b52524caf6a0e84e1bf1d6ce22f833c52122724e",
+  "public_presentation_base_commit": "573df8718db1183390d45032712f870655310628",
+  "remote_verification": "Anonymous fixed-snapshot tree URLs and experimental commit API returned HTTP 200 on 2026-10-20; both fixed recursive trees had truncated=false; no releases were listed",
+  "current_package_status": "Figure 1 and caption adopted in the separately retained revised main manuscript. Current figure exports, source and version records are published; full manuscripts and submission ZIPs remain outside this public repository. No journal upload performed.",
+  "manuscripts": {
+    "main": {
+      "filename": "Manuscript_20261024.docx",
+      "sha256": "9034faa85321fb7424adcb0f9c375ba65a9dc47036bde97b0e42703894604b0c"
+    },
+    "supplement": {
+      "filename": "ESM_1_Supplementary_20261022.docx",
+      "sha256": "c3d0029086a4fb42c828793de18cb4ceccfc789a389c3e6950e08346f10dc67f"
+    },
+    "supplement_pdf": {
+      "filename": "ESM_1.pdf",
+      "sha256": "4481a177e3601cec6d4eea9aea54a7800a4bcc9a42525a5a6c71c6c00ef95330"
+    }
+  },
+  "main_figures": 6,
+  "supplement_figures": 9,
+  "main_tables": 10,
+  "main_tables_status": "Exact manuscript transcriptions; not independent result reconstruction",
+  "new_model_fits": 0,
+  "new_scores": 0,
+  "new_bootstrap_draws": 0,
+  "package_name": "ESM_5_Figures_and_Version_Map_20261022.zip",
+  "adopted_figure2_date": "2026-10-20",
+  "historical_package": "ESM_5_Figures_and_Version_Map_20261017.zip",
+  "experimental_commit_unchanged": true,
+  "separate_OR2_OR3_OR4_full_archives_status": "Submission copies add a bibliographic cover and self-excluded submission manifest. All 1838 original members are hash-identical to the received archives; original files remain retained locally.",
+  "table8_original_aggregate_status": "Hash-matched original ieee_fold_metrics.csv obtained; 60seed records to12fold rows and printed Table8 verified; no transaction-level AP recomputation",
+  "previous_presentation_package": "2026-10-22 content, retained separately under the old upload directory with the same Online Resource filename",
+  "supplement_figures_updated": [
+    "S1",
+    "S2",
+    "S5",
+    "S6",
+    "S8"
+  ],
+  "updated_figure_raster_dpi": "Approximately650 at unchanged Word extents",
+  "updated_figure_font_minimum_pt": 8,
+  "updated_figure_pdf_fonts": "Embedded TrueType",
+  "updated_figure_svg_text": "Outlined",
+  "supplement_table32_change": "All40seeds -> All40seededconditions; terminology only",
+  "contribution_focus": "4localparagraphs; abstract/RQ/relatedwork retained after review",
+  "s22_original_artifacts_status": "Original run01/run02 artifacts and cached-output consistency audited; private original collection distinct from portable reader-run archive",
+  "submission_preparation_changes": "Figure 1 and its caption are updated: named prior-count/amount-mean/recency fields, AP/Recall/Cost report fields and saved Scores/Draws icons replace undefined matrices. Study-specific model, score-stage, decision and S21/S22 boundaries are explicit; logistic has one final model per condition, not necessarily one fitting operation. Figure 1 placement geometry changed to 170 mm width. Other 14 adopted images, all 65 table transcriptions, all equations, all scientific results and companion ESM1–4 files are unchanged.",
+  "companion_resources": [
+    {
+      "resource": 2,
+      "filename": "ESM_2_cross_model_C.zip",
+      "source_sha256": "7f4a18244235edbe4efcf28f5589e69e556318c3d9e87aba461780d9bc4cc33c",
+      "sha256": "2e55dcc23f164e8947f5a2a88e01e62d28b5d94f75064f2db6b7f90fc7792073",
+      "bytes": 119320446,
+      "original_members_preserved": 1483,
+      "added_members": 2,
+      "CRC_pass": true,
+      "all_original_member_hashes_pass": true
+    },
+    {
+      "resource": 3,
+      "filename": "ESM_3_BankSim.zip",
+      "source_sha256": "4d0732343ace5893e266a225c7b19567b13b010e72ec09865ec91bab78144bf2",
+      "sha256": "8019d6c75c6afe34efba61699e19e2e2992b8cd94d03d6d31914f99d1f5eb676",
+      "bytes": 12717907,
+      "original_members_preserved": 319,
+      "added_members": 2,
+      "CRC_pass": true,
+      "all_original_member_hashes_pass": true
+    },
+    {
+      "resource": 4,
+      "filename": "ESM_4_Posthoc_revision.zip",
+      "source_sha256": "e5fb9eb24527dfaabe5687e993316dfd4ed3d1a5ec2df2fec9505b7b0847742e",
+      "sha256": "801a55ef531c4b587736c7d301acf98aaf33b7b13d03eb8b39a9fd2f0fe198ed",
+      "bytes": 2670147,
+      "original_members_preserved": 36,
+      "added_members": 2,
+      "CRC_pass": true,
+      "all_original_member_hashes_pass": true
+    }
+  ],
+  "adopted_figure1_date": "2026-10-24",
+  "updated_figure1_raster_dpi": 600,
+  "updated_figure1_font_minimum_pt": 8,
+  "updated_figure1_width_mm": 170,
+  "updated_figure1_height_mm": 115.28735632183908,
+  "updated_figure1_scope": "Drawing and caption only; no fitting, scoring or resampling",
+  "unchanged_companion_document_dates": {
+    "supplement": "2026-10-22",
+    "supplement_pdf": "2026-10-22",
+    "cover_letter": "2026-10-22"
+  },
+  "content_updated": "2026-10-24",
+  "revision": "semantic_data_icons_20261024",
+  "retained_upload_filename_reason": "Matches existing main-manuscript and supplementary-text Online Resource 5 references; version and hashes identify the updated contents",
+  "publication_date": "2026-10-25",
+  "previous_public_commit": "0f4bbaa3800f4517842f2338fbbd1e5f0e1c7391",
+  "repository_path_crosswalk": "docs/PUBLIC_ARTIFACT_MAP_20261024.csv",
+  "archive_path_crosswalk": "docs/MANUSCRIPT_VERSION_MAP_20261024.csv; paths inside the separate ESM5 ZIP, not repository paths",
+  "package_sha256": "9d91b6a50c2c3032e5b19b6abc194b46b493adec681dee66b76063a148caef8b",
+  "package_filename_status": "Original Online Resource 5 filename is retained to match existing main and supplementary references; content revision is 2026-10-24.",
+  "historical_record": "docs/SUBMISSION_VERSION_20261022.json"
+}
